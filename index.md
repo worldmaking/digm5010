@@ -13,6 +13,8 @@
 
 **Instructor:** [Graham Wakefield](https://ampd.yorku.ca/profile/graham-wakefield/)
 
+**Team:** [Microsoft Team here](https://teams.microsoft.com/l/team/19%3a100337fd7f524597bb019d9e088971a2%40thread.tacv2/conversations?groupId=7aec1ee8-8b98-481f-a503-0aa15267e985&tenantId=34531318-7011-4fd4-87f0-a43816c49bd0)
+
 ## Motivation
 
 The purpose of *Foundations* is to equip and assist you to undertake **graduate-level research** in Digital Media. 
@@ -61,7 +63,8 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Topic: [**Machines, Automata // Programs, Data**](automata.html)
    - Practice: 
      - [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes)
-     - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes). [See sketches here](sketches.html)
+     - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes). 
+    - [In class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) <!--[See sketches here](sketches.html)-->
    - Action items for next week:
      - [Add your self-introduction slides](assignments.html)) to [the Google Slide deck here](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit?usp=sharing).
      - Install [VSCode](https://code.visualstudio.com) (or a different terminal console & code editor). 
