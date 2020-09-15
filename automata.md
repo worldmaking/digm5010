@@ -23,10 +23,20 @@ notes: Analog computing enjoyed a heydey from Lord Kelvin's tide-predicting mach
 - A hydropowered mechanical astronomical clock invented by Ismail al-Jazari in 1206, was the first programmable analog computer.
 - Mechanical calculators by Wilhelm Shickard (1623) and Blaise Pascal (1642); Leibniz designs logic machines and 'reckoners' using binary systems (not built) 
 
+---image:img/Hero_of_Alexandria.png
+
+Hero of Alexandria (c. 10 AD – c. 70) was a Greek mathematician and engineer who is often considered the greatest experimenter of antiquity, and his work is representative of the Hellenistic scientific tradition. Hero published a well-recognized description of a steam-powered device called an aeolipile (sometimes called a "Hero engine"). Among his most famous inventions was a windwheel, constituting the earliest instance of wind harnessing on land, the first coin-operated vending machine, and a programmable cart that was powered by a falling weight. The "program" consisted of strings wrapped around the drive axle.
+
+Among his literary works is "Automata", a description of machines which enable wonders in temples by mechanical or pneumatical means.
+
+---image:img/The_Engine_(Gulliver).png
+
+The Engine is a fictional device described in the 1726 satirical novel Gulliver's Travels by Jonathan Swift. It is possibly the earliest known reference to a device in any way resembling a modern computer. The Engine is a device that generates permutations of word sets.
+
+"Every one knew how laborious the usual method is of attaining to arts and sciences; whereas, by his contrivance, the most ignorant person, at a reasonable charge, and with a little bodily labour, might write books in philosophy, poetry, politics, laws, mathematics, and theology, without the least assistance from genius or study."
+
 
 ---image:img/jacquardloom.jpg
-
-notes:
 
 Jacquard machine, invented in 1804, attaches to loom as a controller to produce complex patterns and weaves according to chain of replaceable punch-card instructions. Jacquard shedding made possible the automatic production of unlimited varieties of pattern weaving.
 
@@ -34,19 +44,13 @@ See also: piano roll
 
 ---image:img/Difference_engine_plate_1853.jpg
 
-notes:
-
 1833: After building a mechanical calculator ("Difference engine"), Charles Babbage designed a programmable computer ("Analytical engine") with both program and data using punched cards, that would have been the world's first Turing-complete machine, and a similar architecture to the von Neumann design underlying most computers today. 
 
 ---youtube:IXXoG2PqPOY
 
-notes:
-
 Babbage's machine was documented by Ada Lovelace, including the first written description of programming. Lovelace designed the first algorithm intended to be executed by a computer, corrected others' work, added proofs, and imagined its potential effects on society.
 
 ---image:img/Reprogramming_ENIAC.png
-
-notes:
 
 - The word "computer" was a job title assigned to primarily women who used mechanical or electromechanical calculators, cash registers, and accounting machines. By 1943, almost all people employed as computers were women. A kilogirl of energy was "equivalent to roughly a thousand hours of computing labor." The programmers of the ENIAC computer in 1944 were six female mathematicians; since designing hardware was "men's work" and programming software was "women's work." 
 
@@ -60,8 +64,6 @@ notes:
 - By the end of the 1960s programmers were no longer predominantly women, and few were promoted to leadership roles; gender disparity in computing remains quite severe in many countries today.
 
 ---image:img/universal_turing_machine.png
-
-notes:
 
 The "Turing Machine" was originally an abstract reformulation of Gödel's incompletness theorem about the limits of proof and computability/decidability (that in any formal system, there are 'statements' that cannot be proved/decided within that system). Note: Gödel's proof depended on a digital encoding, by turning algebraic statements into numbers. That is, the 'data' (numbers) and the 'operations' (e.g. `+`) are flattened to the same ontological level. Code <=> data.
 
@@ -87,7 +89,6 @@ Turing also talked about other kinds of machines, such as "Oracle machines", whi
 
 ---image:img/metalinguistic_abstraction.png
 
-notes: 
 
 A near-equivalent (and arguably more elegant) model to the Post-Turing Machine was also put forward in the 1930's by Alonzo Church, in the form of the [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus), which flattens the ontology to functions rather than to numbers. The Lambda Calculus is the root of all functional programming languages such as LISP, Scheme, Haskell etc.
 
@@ -100,8 +101,6 @@ Terminology to watch out for: in these languages, the focus is on the behaviour 
 
 ---image:img/vonneumannarchitecture.png
 
-notes:
-
 Today's digital machines all have what is known as the "von Neumann" architecture, after John von Neumann, which may have been influenced by the Turing Machine. The key insight is that the **program is data** that the machine chews its way through step by step, as if enacting the eternally recurring question of 'what to do next':
 
 - memory stores both data **and** instructions (**stored program**), 
@@ -112,8 +111,6 @@ von Neumann, John (1945), [First Draft of a Report on the EDVAC](https://web.arc
 
 ---image:img/67-rechender-raum.jpg
 
-notes:
-
 Again, this was also anticipated back in 1937, by [Konrad Zuse](https://en.wikipedia.org/wiki/Konrad_Zuse), who submitted two patent applications in which machine instructions could be stored in the same storage used for data. 
 
 Zuse wanted to be an artist but was forced by his family into civil engineering; rather than design aircraft engines by doing the math on paper, he created computing machines to do it for him, despite being in total isolation from other researchers until after World War II. 
@@ -121,8 +118,6 @@ Zuse wanted to be an artist but was forced by his family into civil engineering;
 Zuse created one of the first plotters, used by early computer artist Frieder Nake in the early 1960's, and went on to suggest that the universe is a giant cellular automaton. 
 
 ---image:img/500px-Snakes_and_Ladders.jpg
-
-notes:
 
 One thing that makes computers more intersting than mechanical looms is the way they can redirect themselves as they chew through the instructions: the **control flow**. There are a few common structures of control flow, such as `goto`, `if`, etc. Sometimes it's useful to understand these structures as if they are played out on a board game, with memory being stacks of cards, the instructions being the board, etc.
 
@@ -157,8 +152,6 @@ Christopher Langton, C. G. Artificial Life: An Overview. MIT Press, Cambridge, M
 
 ---image:img/neumanUniversalConstructor.png
 
-notes: 
-
 In the 1940s [John von Neumann](https://en.wikipedia.org/wiki/Von_Neumann_universal_constructor) also explored theoretical possibility of machines that can construct other machines, including replicating themselves or producing more complex machines than themselves. He demonstrated such a universal constructor using a 2D cellular automaton.
 
 (He also developed models for artificial neurons.)
@@ -167,7 +160,7 @@ Can you make a self-reproducing machine?
 
 ---youtube:2iDc4C6vbcc
 
-notes: Decades later Christopher Langton proposed a more concise self-reproducing CA, which has since been further improved upon using artificial evolutionary techniques.
+Decades later Christopher Langton proposed a more concise self-reproducing CA, which has since been further improved upon using artificial evolutionary techniques.
 
 ---
 
@@ -182,7 +175,6 @@ Fontana, W., Wagner, G. and Buss, L. W. Beyond Digital Naturalism. Artificial Li
 
 ---image:img/wolfram_all_rules.png
 
-notes:
 Stephen Wolfram explored such questions by considering the evolution of simple 1D cellular automata. 
 
 How would you do it?
