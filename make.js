@@ -27,7 +27,6 @@ function generate(file) {
 	if (match) {
 		try {
 			let header = JSON5.parse(match[1])
-			console.log(match)
 			Object.assign(meta, header);
 			src = src.replace(/<!--\s*(\{[\S\s]+?\})\s*-->/gm, "")
 		} catch (e) {
@@ -63,9 +62,10 @@ function generate(file) {
 
 	let html = template(fs.readFileSync(meta.template, "utf8"), meta);
 
-	const writepath = path.join(__dirname, `${file.name}.html`)
+	const writename = `${file.name}.html`
+	const writepath = path.join(__dirname, writename)
 	fs.writeFileSync(writepath, html)
-	return writepath;
+	return writename;
 }
 
 console.log("written:", fs.readdirSync(__dirname, "utf8").map(file=>path.parse(file)).filter(file=>file.ext==".md").map(generate))
