@@ -78,7 +78,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Practice: Version control using `git` (with Michael Palumbo), 
    - *(Time permitting) Practice: Collaborative creativity, using [Node.js](https://nodejs.org/en/)*
    - Action items for next week: 
-     - Set up your online journal.
+     - Set up your online journal using Github Pages.
      - Post your first sketch-study
      - [Post step 1 of the Literature Review assignment](assignments.html).
 3. 
