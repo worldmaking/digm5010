@@ -1,11 +1,6 @@
 <!--
 {
 }
-
-<div class="mediaelement">
-<img src="img/foundations.png" />
-</div>
-	
 -->
 # DIGM 5010 Foundations of Digital Media
 
@@ -64,18 +59,24 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Practice: 
      - [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes)
      - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes). 
-    - [In class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) <!--[See sketches here](sketches.html)-->
+    - [In class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
    - Action items for next week:
      - [Add your self-introduction slides](assignments.html)) to [the Google Slide deck here](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit?usp=sharing).
      - Install [VSCode](https://code.visualstudio.com) (or a different terminal console & code editor). 
-     - Install `git`.
-     - Register an account on [Github](https://github.com) and on [codepen](https://codepen.io).
+     - Install `git` using [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+       - Mac users: You might already have it! Try typing `git --version` in a Terminal. Or, if you already have [Homebrew](https://brew.sh/) installed, you can also just type `brew install git`. 
+       - Windows users, I recommend using the [git SCM installer](https://git-scm.com/download/win)
+     - Register for a free account on [Github](https://github.com). Or, you can sign up for the free [Github education developer pack](https://education.github.com/pack) using your Yorku email address.
+     - Register for a free account on [codepen](https://codepen.io).
+     - Making prompts to share in the next class: Mutate a sketch, and/or, an *interesting* random program, and/or the Maeda prompt.
      - Choose an article or two from [The New Media Reader](http://www.newmediareader.com/book_contents.html) -- most of these can be found online -- to start your literature review. 
-     - Making prompts: Mutate a sketch, and/or, an *interesting* random program, and/or the Maeda prompt.
 2. 
-   - Introductions
-   - Topic: **Research**
-   - Practice: Version control using `git` (with Michael Palumbo), collaborative creativity
+   - [Introductions](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit#slide=id.p)
+   - Sharing code mutations of [last week's in class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
+     - [Sketches from last year](sketches.html)
+   - Topic: [**Research**](research.html)
+   - Practice: Version control using `git` (with Michael Palumbo), 
+   - *(Time permitting) Practice: Collaborative creativity, using [Node.js](https://nodejs.org/en/)*
    - Action items for next week: 
      - Set up your online journal.
      - Post your first sketch-study

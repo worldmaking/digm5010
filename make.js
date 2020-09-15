@@ -20,6 +20,8 @@ function generate(file) {
 	console.log("parsing", file.name)
 	// lazy deep copy of meta defaults:
 	let meta = JSON.parse(JSON.stringify(meta_default)) 
+	meta.src = src;
+
 	// update metadata from JSON header:
 	let match = (/<!--\s*(\{[\S\s]+?\})\s*-->/gm).exec(src)
 	if (match) {
@@ -39,9 +41,19 @@ function generate(file) {
 		//console.warn("unable to find/parse title")
 	}
 
-	meta.src = src
-		// auto slide break at heading 1 titles:
+	const isSlides = meta.template == "slides.html";
+
+	if (isSlides) {
+		meta.src = meta.src
+			// auto slide break at any heading titles:
+			.replace(/\n(#+\s[^\n]+)/g, "\n---\n\n$1")
+	} else {
+		meta.src = meta.src
+		// auto hr break at heading 1 titles:
 		.replace(/\n(#\s[^\n]+)/g, "\n---\n\n$1")
+	}
+
+	meta.src = meta.src
 		// replace @image:path as background contain 
 		.replace(/\n---image:([^\s]+)/g, `\n---\n<!-- .slide: data-background-image="$1" data-background-size="contain" -->`)
 		// // replace @youtube:ID as background video

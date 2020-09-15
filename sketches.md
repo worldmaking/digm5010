@@ -23,6 +23,8 @@ For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/r
 
 ---
 
+<!--
+
 Scripts from last year:
 
 <p class="codepen" data-height="300" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="qBWgeaZ" data-preview="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="week 2">
@@ -49,7 +51,9 @@ dynadraw - with gl-matrix</a> by Graham (<a href="https://codepen.io/grrrwaaa">@
 on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-- Making prompts: Mutate any of the projects we built in class. OR: can you merge two of them?
+-->
+
+- Making prompts: Mutate the code we built in class. 
   - See also the collection of interface-instruments at [SoundToys](http://www.soundtoys.net) or other apps like [Nodal](http://nodalmusic.com), [SoundDrop](https://www.youtube.com/watch?v=63FyqOMpORI) etc. Perhaps pick your favourite from these, and perhaps start trying to implement it, and we can take it further in class next week.
   
 - Further reading: 
