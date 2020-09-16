@@ -43,8 +43,9 @@ Consider this year's DCA curatorial themes of [**Invisibility :: Complexity :: R
   - Not everything has to be an academic paper, but ensure that at least 75% of your references are academic publications (conference articles, journal articles, etc.). 
   - See [York SPARK's guide to annotated bibliographies here](https://spark.library.yorku.ca/wp-content/themes/glendonits-spark-20151125/resources/Annotated%20Bibliography%20Overview.pdf). The annotation for each paper would be 100-400 words, making around 2500 words total.
 4. Post the results into your journal:
-  - The specific topic title or research question
+  - The specific topic title or
   - The keywords or search terms
+  - The research question/problem statement/abstract
   - Your initial Reading List
   - Your final Annotated Bibliography
   - Any commentary on observations you found while researching the topic that are not specific to the papers -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
