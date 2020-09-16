@@ -56,3 +56,12 @@ Micheal's recommended links:
 - Recommended Markdown editors
   - MacDown [https://macdown.uranusjr.com/]()
   - Haroopad [http://pad.haroopress.com/]()
+
+
+Git colours in terminal:
+
+```
+git config --global color.ui auto
+git config --global color.branch auto
+git config --global color.status auto
+```
