@@ -63,7 +63,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes). 
     - [In class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
    - Action items for next week:
-     - [Add your self-introduction slides](assignments.html)) to [the Google Slide deck here](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit?usp=sharing).
+     - [Add your self-introduction slides](assignments.html) to [the Google Slide deck here](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit?usp=sharing).
      - Install [VSCode](https://code.visualstudio.com) (or a different terminal console & code editor). 
      - Install `git` using [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
        - Mac users: You might already have it! Try typing `git --version` in a Terminal. Or, if you already have [Homebrew](https://brew.sh/) installed, you can also just type `brew install git`. 
@@ -76,6 +76,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - [Introductions](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit#slide=id.p)
    - Sharing code mutations of [last week's in class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
      - [Sketches from last year](sketches.html)
+     - Interesting random programs?
    - Topic: [**Research**](research.html)
    - Practice: Version control using `git` (with Michael Palumbo), 
    - *(Time permitting) Practice: Collaborative creativity, using [Node.js](https://nodejs.org/en/)*
