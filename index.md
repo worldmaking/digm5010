@@ -10,6 +10,8 @@
 
 **Team:** [Microsoft Team here](https://teams.microsoft.com/l/team/19%3a100337fd7f524597bb019d9e088971a2%40thread.tacv2/conversations?groupId=7aec1ee8-8b98-481f-a503-0aa15267e985&tenantId=34531318-7011-4fd4-87f0-a43816c49bd0)
 
+[**Zoom recordings** are in Teams under Files](https://teams.microsoft.com/_#/school/files/General?threadId=19:ef5cfda6bcf0493e8ecae3b0e05d163f@thread.tacv2&ctx=channel) 
+
 ## Motivation
 
 The purpose of *Foundations* is to equip and assist you to undertake **graduate-level research** in Digital Media. 
