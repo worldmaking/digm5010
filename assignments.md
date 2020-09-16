@@ -21,11 +21,9 @@ As the course progresses, this journal will capture your progress in development
 
 I recommend posting practice studies each week onto your journal. Every week I will share some prompts for these studies. These studies can be relatively simple but should demonstrate something you have learned or document an investigation you have made. Make, make make!
 
-[See the sketch prompts here](sketches.html)
+- What would be a generator of *interesting* random programs? (What does *interesting* mean to you?)
+- [See the sketch prompts here](sketches.html)
 
-<!-- The first prompt:
-
-Create an *interesting* random program. Document how you approached your sense of what *interesting* means, and how you translated that to code. -->
 
 ## Literature Review.
 
