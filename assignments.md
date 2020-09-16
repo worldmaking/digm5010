@@ -65,7 +65,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 
 ## Final Paper
 
-1. The topic of the paper can be developed from material earlier in the course, and/or refer to the curatorial themes of **Invisibility :: Complexity :: Resistance :: Intentionality**. You may document & contextualize your practice studies or one of your artworks. You could write a 'white paper' on a technique. You might re-implement a known research paper, and analyze the results. Or you might discuss more deeply ideas encountered in the bibliography. Perhaps pen a manifesto. 
+1. The topic of the paper can be developed from material earlier in the course, and/or refer to the curatorial themes of [**Invisibility :: Complexity :: Resistance :: Intentionality**](http://alicelab.world/digm5010/pdf/DCA_theme_2020-2021.pdf). You may document & contextualize your practice studies or one of your artworks. You could write a 'white paper' on a technique. You might re-implement a known research paper, and analyze the results. Or you might discuss more deeply ideas encountered in the bibliography. Perhaps pen a manifesto. 
   -  Find a few other papers online that have similar focus, and analyze their structure as a guide.
 2. The format will be a very modern, online-first academic article. That is, one designed to be read online, with at least some active components, rather than primarily on paper. The notion of publishing in academia has been rapidly changing, and these changes are accelerating under pandemic conditions.
   - See [https://distill.pub]() for an example of a modern, web-based peer-reviewed journal with embedded visualizations and interactive components. 
