@@ -77,6 +77,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Sharing code mutations of [last week's in class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
      - [Sketches from last year](sketches.html)
      - Interesting random programs?
+     - [Edge-bounce variant](https://codepen.io/grrrwaaa/pen/GRZBjrr?editors=0010), scripts by [Kieran](https://codepen.io/kieranmaraj/pen/YzqvMPw?editors=0010), [Zian](https://codepen.io/zian-liu/pen/OJNEXKg?editors=0010), [Ilze](https://codepen.io/Ka-Vi/pen/OJNwBRw?editors=0010)
    - Topic: [**Research**](research.html)
    - Practice: Version control using `git` (with Michael Palumbo), 
    - *(Time permitting) Practice: Collaborative creativity, using [Node.js](https://nodejs.org/en/)*
