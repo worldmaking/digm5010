@@ -27,19 +27,6 @@ I recommend posting practice studies each week onto your journal. Every week I w
 
 Create an *interesting* random program. Document how you approached your sense of what *interesting* means, and how you translated that to code. -->
 
-## Video Tutorial
-
-Research is about *sharing*. Sometimes, that requires sharing *how*. 
-
-1. Create a video-based tutorial (roughly 10-20mins) to introduce a technical topic.
-	- It could be an introduction to a platform we are not covering in class
-	- or an exploration of a library/API or SDK etc. available for one of our platforms
-	- or alternatively, it could be a tutorial on a technique or algorithm or mechanism or a part of mathematics etc.
-2. Whichever you choose, it should cover both of: 
-	- introducing the key concepts, the unusual and interesting parts, and related work
-	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
-3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like Dan Shiffman or 3Blue1Brown do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
-
 ## Literature Review.
 
 Consider this year's DCA curatorial themes of [**Invisibility :: Complexity :: Resistance :: Intentionality**](pdf/DCA_theme_2020-2021.pdf), responding to this time in pandemia. 
@@ -62,6 +49,21 @@ Consider this year's DCA curatorial themes of [**Invisibility :: Complexity :: R
   - Your initial Reading List
   - Your final Annotated Bibliography
   - Any commentary on observations you found while researching the topic that are not specific to the papers -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
+
+
+## Video Tutorial
+
+Research is about *sharing*. Sometimes, that requires sharing *how*. 
+
+1. Create a video-based tutorial (roughly 10-20mins) to introduce a technical topic.
+	- It could be an introduction to a platform we are not covering in class
+	- or an exploration of a library/API or SDK etc. available for one of our platforms
+	- or alternatively, it could be a tutorial on a technique or algorithm or mechanism or a part of mathematics etc.
+2. Whichever you choose, it should cover both of: 
+	- introducing the key concepts, the unusual and interesting parts, and related work
+	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
+3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like Dan Shiffman or 3Blue1Brown do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
+
 
 ## Final Paper
 
