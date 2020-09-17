@@ -56,7 +56,7 @@ Micheal's recommended links:
 - Recommended Markdown editors
   - MacDown [https://macdown.uranusjr.com/]()
   - Haroopad [http://pad.haroopress.com/]()
-
+- [Explaining git using D3](https://onlywei.github.io/explain-git-with-d3/)
 
 Git colours in terminal:
 
