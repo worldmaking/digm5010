@@ -79,15 +79,15 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [Edge-bounce variant](https://codepen.io/grrrwaaa/pen/GRZBjrr?editors=0010), scripts by [Kieran](https://codepen.io/kieranmaraj/pen/YzqvMPw?editors=0010), [Zian](https://codepen.io/zian-liu/pen/OJNEXKg?editors=0010), [Ilze](https://codepen.io/Ka-Vi/pen/OJNwBRw?editors=0010)
    - Practice: Version control using `git` (with Michael Palumbo) [Notes here](gitnotes.html)
    - Topic: [**Research**](research.html)
-   - *(Time permitting) Practice: Collaborative creativity, using [Node.js](https://nodejs.org/en/)*
    - Action items for next week: 
      - Set up your online journal using Github Pages.
      - Post your first sketch-study
      - [Post step 1 of the Literature Review assignment](assignments.html).
 3. 
    - Sharing: 
-     - Github pages
-     - Interesting random programs?
+     - Discussion: Research/Github/journal/article search etc.
+     - Interesting sketches / random programs?
+   - Practice: Collaborative creativity, using [Node.js](https://nodejs.org/en/)
    - Topic: **Space & Simulation I**
    - Action items for next week: 
      - [Post step 2 of the Literature Review assignment](assignments.html).
