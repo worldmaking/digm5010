@@ -3,6 +3,7 @@ const fs = require("fs"),
 
 const JSON5 = require("json5")
 const marked = require("marked")
+const hljs   = require('highlight.js')
 const template = require('es6-dynamic-template')
 
 
@@ -13,6 +14,12 @@ const meta_default = {
 	description: "",
 }
 
+marked.setOptions({
+	highlight: function(code, lang) {
+		console.log("lang", lang)
+	  return hljs.highlight(lang, code).value;
+	}
+});
 
 function generate(file) {
 	let src = fs.readFileSync(path.format(file), "utf8");

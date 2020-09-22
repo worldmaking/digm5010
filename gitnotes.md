@@ -60,7 +60,7 @@ Micheal's recommended links:
 
 Git colours in terminal:
 
-```
+```sh
 git config --global color.ui auto
 git config --global color.branch auto
 git config --global color.status auto

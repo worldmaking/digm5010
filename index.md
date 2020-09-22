@@ -87,7 +87,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Sharing: 
      - Discussion: Research/Github/journal/article search etc.
      - Interesting sketches / random programs?
-   - Practice: Collaborative creativity, using [Node.js](https://nodejs.org/en/)
+   - [Practice Notes](practice.md): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
    - Topic: **Space & Simulation I**
    - Action items for next week: 
      - [Post step 2 of the Literature Review assignment](assignments.html).
