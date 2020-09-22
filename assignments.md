@@ -25,7 +25,7 @@ I recommend posting practice studies each week onto your journal. Every week I w
 - [See the sketch prompts here](sketches.html)
 
 
-## Literature Review.
+## Literature Review
 
 Consider this year's DCA curatorial themes of [**Invisibility :: Complexity :: Resistance :: Intentionality**](pdf/DCA_theme_2020-2021.pdf), responding to this time in pandemia. 
 

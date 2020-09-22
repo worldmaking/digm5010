@@ -14,14 +14,8 @@ const meta_default = {
 	description: "",
 }
 
-marked.setOptions({
-	highlight: function(code, lang) {
-		console.log("lang", lang)
-	  return hljs.highlight(lang, code).value;
-	}
-});
-
 function generate(file) {
+
 	let src = fs.readFileSync(path.format(file), "utf8");
 
 	console.log("parsing", file.name)
@@ -53,19 +47,50 @@ function generate(file) {
 		meta.src = meta.src
 			// auto slide break at any heading titles:
 			.replace(/\n(#+\s[^\n]+)/g, "\n---\n\n$1")
+			// replace @image:path as background contain 
+			.replace(/\n---image:([^\s]+)/g, `\n---\n<!-- .slide: data-background-image="$1" data-background-size="contain" -->\n\nnotes:\n`)
+			// // replace @youtube:ID as background video
+			.replace(/\n---youtube:([^\s]+)/g, `\n---\n<!-- .slide: data-background-interactive data-background-iframe="https://youtube.com/embed/$1?rel=0&autoplay=1&start=0" -->\n\nnotes:\n`)
 	} else {
 		meta.src = meta.src
 		// auto hr break at heading 1 titles:
 		.replace(/\n(#\s[^\n]+)/g, "\n---\n\n$1")
+		// replace @image:path as background contain 
+		.replace(/\n---image:([^\s]+)/g, `\n<img src="$1" />\n`)
+		// // replace @youtube:ID as background video
+		.replace(/\n---youtube:([^\s]+)/g, `<iframe width="720" height="540" src="https://youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe>`)
+
 	}
 
-	meta.src = meta.src
-		// replace @image:path as background contain 
-		.replace(/\n---image:([^\s]+)/g, `\n---\n<!-- .slide: data-background-image="$1" data-background-size="contain" -->\n\nnotes:\n`)
-		// // replace @youtube:ID as background video
-		.replace(/\n---youtube:([^\s]+)/g, `\n---\n<!-- .slide: data-background-interactive data-background-iframe="https://youtube.com/embed/$1?rel=0&autoplay=1&start=0" -->\n\nnotes:\n`)
+
+	
+	let toc = []
+	let renderer = new marked.Renderer();
+	let heading = renderer.heading.bind(renderer);
+	renderer.heading = function(text, level, ...args) {
+		const html = heading(text, level, ...args)
+		const match = /id="(.+)"/gm.exec(html)
+		if (match && match.length > 1) {
+			const id = match[1]
+			console.log(text, level, id)
+			toc.push({
+				level: level,
+				text: text,
+				id: id,
+			})
+		}
+		return html
+	}
+	marked.setOptions({
+		renderer: renderer,
+		highlight: function(code, lang) {
+			return hljs.highlight(lang, code).value;
+		}
+	});
 
 	meta.body = marked(meta.src);
+	meta.toc = toc.length > 1 ? marked(toc.map(item => `${"  ".repeat(item.level-1)}- [${item.text}](#${item.id})`).join("\n")) : "";
+	console.log(meta.toc)
 
 	let html = template(fs.readFileSync(meta.template, "utf8"), meta);
 

@@ -42,7 +42,9 @@ Every resource will be online at or linked from [this website](http://alicelab.w
 
 *Attendance to the Zoom sessions is highly recommended of course, given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the pandemic situation, and moreover allows some time to review any material that may have seemed to fly too fast.  You are all coming from different backgrounds, this is also inevitable.*
 
-[Assignments](assignments.html)
+### Assignments
+
+[See detailed assignment instructions here](assignments.html)
 
 - Your weekly practice-study work and other activities as documented in the online journal will account for **40%** of the final grade. 
 - In addition, each of you will focus on a specific research topic (chosen in consultation of the instructor, ideally intersecting with one of [this year's curatorial themes](pdf/DCA_theme_2020-2021.pdf)) to develop a new project, whose goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. It implies a more significant project than the weekly practice work, but it could be a continuation of one of them.
@@ -60,7 +62,6 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Topic: [**Machines, Automata // Programs, Data**](automata.html)
    - Practice: 
      - [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes)
-     - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes). 
     - [In class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
    - Action items for next week:
      - [Add your self-introduction slides](assignments.html) to [the Google Slide deck here](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit?usp=sharing).
@@ -73,11 +74,13 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - Making prompts to share in the next class: Mutate a sketch, and/or, an *interesting* random program, and/or the Maeda prompt.
      - Choose an article or two from [The New Media Reader](http://www.newmediareader.com/book_contents.html) -- most of these can be found online -- to start your literature review. 
 2. 
-   - [Introductions](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit#slide=id.p)
-   - Sharing code mutations of [last week's in class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
+   - Sharing: 
+     - [Introductions](https://docs.google.com/presentation/d/12pSOctt3mEv9KZjOAu7Ljw756xhFN8wrI0l20V1Xx7c/edit#slide=id.p)
+     - Code mutations of [last week's in class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
      - [Sketches from last year](sketches.html)
      - [Edge-bounce variant](https://codepen.io/grrrwaaa/pen/GRZBjrr?editors=0010), scripts by [Kieran](https://codepen.io/kieranmaraj/pen/YzqvMPw?editors=0010), [Zian](https://codepen.io/zian-liu/pen/OJNEXKg?editors=0010), [Ilze](https://codepen.io/Ka-Vi/pen/OJNwBRw?editors=0010)
-   - Practice: Version control using `git` (with Michael Palumbo) [Notes here](gitnotes.html)
+   - Systems: 
+     - Version control using `git` (with Michael Palumbo) [Notes here](gitnotes.html)
    - Topic: [**Research**](research.html)
    - Action items for next week: 
      - Set up your online journal using Github Pages.
@@ -87,10 +90,20 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Sharing: 
      - Discussion: Research/Github/journal/article search etc.
      - Interesting sketches / random programs?
-   - [Practice Notes](practice.md): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
+     - [More sketches from last year](sketches.html)
+   - Systems: 
+     - [Notes on Node.js](nodejs.html): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
    - Topic: **Space & Simulation I**
+     - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
+     - [Vehicles](vehicles.html)
    - Action items for next week: 
      - [Post step 2 of the Literature Review assignment](assignments.html).
+     - [Suggested further reading](https://teams.microsoft.com/_#/school/files/General?threadId=19:100337fd7f524597bb019d9e088971a2@thread.tacv2&replyChainId=1600708335091&ctx=channel&rootfolder=%252Fsites%252FFA-DIGM5010%252FShared%2520Documents%252FGeneral%252FReadings):
+       - Two by von Foerster:
+        - Von Foerster, Heinz. "Perception of the future and the future of perception." Instructional Science 1.1 (1972): 31-43.
+        - Von Foerster, Heinz. "On constructing a reality." Understanding understanding. Springer, New York, NY, 2003. 211-227.
+       - Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.
+       - [Rodney Brooks. "What is it like to be a robot". Online: https://rodneybrooks.com/what-is-it-like-to-be-a-robot/ March, 2017](https://rodneybrooks.com/what-is-it-like-to-be-a-robot/)
 4. 
    - Topic: **Space & Simulation II**
    - Action items for next week: 

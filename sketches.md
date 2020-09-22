@@ -1,6 +1,4 @@
-# Notes from practice sessions
-
-## Practice Session 1: Interfaces as instruments: From reactive graphics to audio-visual canvasses
+# Practice Session 1: Interfaces as instruments: From reactive graphics to audio-visual canvasses
 
 What makes the screen different from paper? What makes the mouse different from a pen?
 
@@ -22,8 +20,6 @@ One of Maeda's students -- [Golan Levin](http://www.flong.com) -- now professor 
 For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/report_yellowtail/).
 
 ---
-
-<!--
 
 Scripts from last year:
 
@@ -51,7 +47,6 @@ dynadraw - with gl-matrix</a> by Graham (<a href="https://codepen.io/grrrwaaa">@
 on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
--->
 
 - Making prompts: Mutate the code we built in class. 
   - See also the collection of interface-instruments at [SoundToys](http://www.soundtoys.net) or other apps like [Nodal](http://nodalmusic.com), [SoundDrop](https://www.youtube.com/watch?v=63FyqOMpORI) etc. Perhaps pick your favourite from these, and perhaps start trying to implement it, and we can take it further in class next week.
