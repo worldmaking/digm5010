@@ -41,7 +41,7 @@ console.log("I repeat myself when under stress,");
 ${content}
 `
 
-fs.writeFileSync("index.js", "utf8");
+fs.writeFileSync("index.js", content, "utf8");
 ```
 
 Run a few times. (Hint, up arrow)
@@ -77,7 +77,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 ```
