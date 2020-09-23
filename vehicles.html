@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vehicular Agents</title>
+<meta name="description" content="">
+<meta name="author" content="Graham Wakefield">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/github.css" type="text/css" />
+<style>
+header {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+
+footer {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+</style>
+</head>
+
+<body class="centremaxwidth960">
+<header><a href="index.html">Foundations of Digital Media</a></header>
+<ul>
+<li><a href="#vehicular-agents">Vehicular Agents</a><ul>
+<li><a href="#tortoises">Tortoises</a></li>
+<li><a href="#vehicles">Vehicles</a></li>
+</ul>
+</li>
+</ul>
+
+<hr>
+<h1 id="vehicular-agents">Vehicular Agents</h1>
+<h2 id="tortoises">Tortoises</h2>
+<p><img src="http://www.rutherfordjournal.org/images/020101-05.jpg" alt="Machina Speculatrix"> </p>
+<p>In the late 1940&#39;s and early 1950&#39;s, Cyberneticist Grey Walter pioneered the engineering of autonomous agents, as early examples of self-directed robots, with his series of <em>tortoises</em>. </p>
+<iframe width="720" height="540" src="https://youtube.com/embed/lLULRlmXkKo" frameborder="0" allowfullscreen></iframe>
+<iframe width="720" height="540" src="https://youtube.com/embed/wQE82derooc" frameborder="0" allowfullscreen></iframe>
+
+<p>Remarkably, this direction of research was largely forgotten as efforts in artificial intelligence concentrated on symbolic thinking. A brief history <a href="http://www.rutherfordjournal.org/article020101.html">can be read here</a> -- but the story of Walter and other British Cyberneticians is truly fascinating; I highly recommend Andrew Pickering&#39;s account in <a href="http://press.uchicago.edu/ucp/books/book/chicago/C/bo8169881.html">The Cybernetic Brain</a>. This wasn&#39;t just random tinkering, there was an explicit agenda of understanding human and machine together.</p>
+<p>Walter&#39;s tortoises have inspired many great research products of the last century, including:</p>
+<ul>
+<li>the <strong>turtle graphics</strong> of Logo, which might be before your time, but initiated a whole generation of children into computer programming decades ago and led to LEGO Mindstorms among other things,</li>
+<li>the <strong>situated robotics</strong> of Rodney Brooks (which you may know of as the &quot;iRobot&quot; vaccuum cleaner), </li>
+<li>the <strong>flocking simulations</strong> of Craig Reynolds (which you have seen in hundreds of films, games, etc.), </li>
+<li>digital artworks, notably <a href="https://reas.com/tissue_p/">Casey Reas&#39; Tissue series</a></li>
+<li>the ever-resurgent waves of <strong>Cybernetics</strong>, including Valentino Braitenberg&#39;s Vehicles (which we will look at in more depth now).</li>
+</ul>
+<p><img src="img/reas_tissue_p_13.jpg" alt=""></p>
+<h2 id="vehicles">Vehicles</h2>
+<p><img src="http://www.ini.uzh.ch/~conradt/research/BraitenbergVehicle/Braitenberg%20Vehikels_files/BVinh.jpg" alt="Vehicle"></p>
+<blockquote>
+<p>A Braitenberg vehicle is an agent that can autonomously move around. It has primitive sensors (measuring some stimulus at a point) and wheels (each driven by its own motor) that function as actuators or effectors. A sensor, in the simplest configuration, is directly connected to an effector, so that a sensed signal immediately produces a movement of the wheel. Depending on how sensors and wheels are connected, the vehicle exhibits different behaviors (which can be goal-oriented).  <a href="http://en.wikipedia.org/wiki/Braitenberg_vehicle">wikipedia</a></p>
+</blockquote>
+<p><a href="https://mitpress.mit.edu/books/vehicles">Braitenberg, V. (1984). Vehicles: Experiments in synthetic psychology. Cambridge, MA: MIT Press.</a></p>
+<blockquote>
+<p>Cyberneticist Valentino Braitenberg argues that his extraordinarily simple mechanical vehicles manifest behaviors that appear identifiable as fear, aggression, love, foresight, and optimism. The vehicle idea was a thought experiment conceived to show that complex, apparently purposive behaviour did not need to depend on complex representations of the environment inside a creature or agents brain. In fact simply by reacting to the environment in a consistent manner was more than enough to explain the low level reactive behaviours exhibited by many animals.</p>
+</blockquote>
+<p>This book is quite short, but richly dense. There&#39;s a copy of Ch1-6 in our Teams Readings folder.</p>
+<hr>
+<p>Vehicles have also been constructed in hardware of course // see examples <a href="http://www.ini.uzh.ch/~conradt/research/BraitenbergVehicle/">here</a>, <a href="http://blog.electricbricks.com/en/2010/05/vehiculos-braitenberg-nxt-g/">here</a>, <a href="http://tinkerlog.com/2009/06/07/mini-braitenberg-vehicle/">here</a>.</p>
+<!--
+
+From pesudo-code to [vehicles 2 & 3](https://codepen.io/grrrwaaa/pen/wvwRGyW):
+
+<p class="codepen" data-height="300" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="yLBmyNM" data-preview="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="week 4 - vehicle 2 and 3: cowardly and aggressive, liking &amp;amp; exploring">
+<span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/yLBmyNM">
+week 4 - vehicle 2 and 3: cowardly and aggressive, liking &amp; exploring</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<p class="codepen" data-height="319" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="wvwRGyW" data-preview="true" style="height: 319px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vehicles">
+    <span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/wvwRGyW">
+    Vehicles</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span></p>
+
+-->
+
+<hr>
+<ul>
+<li>Prompts! See if you can either <ul>
+<li>a) Extend our vehicles code into later models from the book</li>
+<li>b) Find a way to blend work from last week with the vehicles model</li>
+</ul>
+</li>
+</ul>
+
+<footer>2020</footer>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+</html>
