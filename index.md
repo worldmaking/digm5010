@@ -93,9 +93,6 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [More sketches from last year](sketches.html)
    - Systems: 
      - [Notes on Node.js](nodejs.html): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
-   - Topic: **Space & Simulation I**
-     - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
-     - [Vehicles](vehicles.html)
    - Action items for next week: 
      - [Post step 2 of the Literature Review assignment](assignments.html).
      - [Suggested further reading](https://teams.microsoft.com/_#/school/files/General?threadId=19:100337fd7f524597bb019d9e088971a2@thread.tacv2&replyChainId=1600708335091&ctx=channel&rootfolder=%252Fsites%252FFA-DIGM5010%252FShared%2520Documents%252FGeneral%252FReadings):
@@ -105,7 +102,11 @@ Every resource will be online at or linked from [this website](http://alicelab.w
        - Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.
        - [Rodney Brooks. "What is it like to be a robot". Online: https://rodneybrooks.com/what-is-it-like-to-be-a-robot/ March, 2017](https://rodneybrooks.com/what-is-it-like-to-be-a-robot/)
 4. 
-   - Topic: **Space & Simulation II**
+   - Topic: **Space & Simulation I**
+     - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
+     - [Vehicles](vehicles.html)
+   - Systems: 
+     - [Notes on Node.js](nodejs.html): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
    - Action items for next week: 
      - Post a sketch-study
 5. *Oct 7.*

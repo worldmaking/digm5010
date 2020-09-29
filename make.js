@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require("fs"),
 	path = require("path")
 
@@ -15,14 +17,13 @@ const meta_default = {
 }
 
 function generate(file) {
-
 	let src = fs.readFileSync(path.format(file), "utf8");
 
 	console.log("parsing", file.name)
 	// lazy deep copy of meta defaults:
 	let meta = JSON.parse(JSON.stringify(meta_default)) 
 	meta.src = src;
-
+	
 	// update metadata from JSON header:
 	let match = (/<!--\s*(\{[\S\s]+?\})\s*-->/gm).exec(src)
 	if (match) {
