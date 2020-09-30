@@ -105,12 +105,13 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Topic: **Space & Simulation I**
      - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
      - [Vehicles](vehicles.html)
-   - Systems: 
-     - [Notes on Node.js](nodejs.html): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
+     - [Codepen script of Vehicles from the class](https://codepen.io/grrrwaaa/pen/VwaOVdZ?editors=0010)
    - Action items for next week: 
-     - Post a sketch-study
+     - Post a sketch-study, expanding upon the Vehicles code and concepts!
 5. *Oct 7.*
    - Topic: **Sentience I**. 
+   - Systems: 
+     - [Notes on Node.js](nodejs.html): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
    - Action items for next week: 
      - [Post step 3 of the Literature Review assignment](assignments.html).
 6. **Reading week** 
