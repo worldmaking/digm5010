@@ -116,7 +116,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [Better Explained](https://www.youtube.com/user/betterexplained/videos)
    - Sharing: 
      - Literature Review/Annotated Bibliography progress
-     - Forks of [Vehicles](vehicles.html)
+     - Forks of [Vehicles](vehicles.html) - Thanks [Zian](https://codepen.io/zian-liu/pen/vYGoeZe?editors=0010), [Kavi](https://codepen.io/Ka-Vi/pen/Yzqbgmy?editors=0010)!
    - Topic: **Sentience I: Sharing, Adaptation, Learning**. 
      - [Mindstorms](vehicles.html#mindstorms-1980)
    - Action items for next week: 

@@ -137,7 +137,7 @@ Recall the notion of "tapes" and "machines" from our first lecture:
 ### Practice! Make!
 
 - Perhaps we can build a turtle-language interpreter? (And vice-versa: generator. Value of bidirectional translations!)
-  - Perhaps it can produce 'marks' as we did with [Yellowtail](sketches.html) 
+  - Perhaps it can produce 'marks' as we did with [Yellowtail](sketches.html) -- maybe start from our [edgebounce variant](https://codepen.io/grrrwaaa/pen/GRZBjrr)
     - (and vice versa: perhaps we can "draw" to generate turtle-language)?
     - I.e.: a string of turtlang <=> a list of "lines"?
   - Perhaps it can produce 'forces' or 'senses' as we did with [Vehicles](vehicles.html)
