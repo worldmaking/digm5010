@@ -35,8 +35,6 @@ Scripts from last year:
 
 ---codepen:https://codepen.io/grrrwaaa/pen/gOYQyrd
 
-
-
 - Making prompts: Mutate the code we built in class. 
   - See also the collection of interface-instruments at [SoundToys](http://www.soundtoys.net) or other apps like [Nodal](http://nodalmusic.com), [SoundDrop](https://www.youtube.com/watch?v=63FyqOMpORI) etc. Perhaps pick your favourite from these, and perhaps start trying to implement it, and we can take it further in class next week.
   

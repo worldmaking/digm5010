@@ -121,11 +121,12 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [Mindstorms](vehicles.html#mindstorms-1980)
    - Action items for next week: 
      - [Post step 3 of the Literature Review assignment](assignments.html).
-       - Preparing for practice: make your own "microworld" playground
+     - Preparing for practice: make your own "microworld" playground/interpreter, following the prompt [here](vehicles.html#mindstorms-1980) 
 6. **Reading week** 
    - [ISEA](https://isea2020.isea-international.org/).
    - Action items for next week: 
      - [Post step 4 of the Literature Review assignment](assignments.html).
+     - Preparing for practice: continue making your own "microworld" playground/interpreter, following the prompt [here](vehicles.html#mindstorms-1980)
 7. 
    - Topic: **Time I**. 
    - **Due:** [Literature Review](assignments.html).
