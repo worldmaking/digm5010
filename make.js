@@ -60,6 +60,9 @@ function generate(file) {
 		.replace(/\n---image:([^\s]+)/g, `\n<img src="$1" />\n`)
 		// // replace @youtube:ID as background video
 		.replace(/\n---youtube:([^\s]+)/g, `<iframe width="720" height="540" src="https://youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe>`)
+		// auto-embed codepens:
+		.replace(/\n---codepen:https?:\/\/codepen.io\/+([^\/]+)\/pen\/([^\/\n]+)\/?/g, 
+			`<p class="codepen" data-height="520" data-default-tab="js,result" data-user="$1" data-slug-hash="$2" data-preview="true"><span><a href="https://codepen.io/$1/pen/$2">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>`)
 
 	}
 

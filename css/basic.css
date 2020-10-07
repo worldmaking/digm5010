@@ -73,18 +73,24 @@ ul ul ul {
 	list-style-type: square; }
 
 
-	pre {
-		display: block;
-		font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-		word-wrap: break-word;
-		padding: 8px;	
-		
-		border: solid 1px #ccc;
-		border-radius: 3px;
-		background: #f6f6f6;	
-		color: #333;
-	}
+pre {
+	display: block;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	word-wrap: break-word;
+	padding: 8px;	
+	
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	background: #f6f6f6;	
+	color: #333;
+}
 
+
+blockquote {
+	border-left: 15px solid #eee;
+	margin: 1.5em 0px;
+		padding: 0em 15px;
+}
 	
 a {
 	color: #e31837;

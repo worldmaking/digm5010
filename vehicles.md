@@ -15,14 +15,13 @@ Remarkably, this direction of research was largely forgotten as efforts in artif
 
 Walter's tortoises have inspired many great research products of the last century, including:
 
-- the **turtle graphics** of Logo, which might be before your time, but initiated a whole generation of children into computer programming decades ago and led to LEGO Mindstorms among other things,
+- the [**turtle graphics**](#mindstorms-1980) of Logo, which might be before your time, but initiated a whole generation of children into computer programming decades ago and led to LEGO Mindstorms among other things,
 - the **situated robotics** of Rodney Brooks (which you may know of as the "iRobot" vaccuum cleaner), 
 - the **flocking simulations** of Craig Reynolds (which you have seen in hundreds of films, games, etc.), 
 - digital artworks, notably [Casey Reas' Tissue series](https://reas.com/tissue_p/)
 - the ever-resurgent waves of **Cybernetics**, including Valentino Braitenberg's Vehicles (which we will look at in more depth now).
 
 ![](img/reas_tissue_p_13.jpg)
-
 
 ## Vehicles
 
@@ -38,30 +37,125 @@ This book is quite short, but richly dense. There's a copy of Ch1-6 in our Teams
 
 ---
 
-
-
-
 Vehicles have also been constructed in hardware of course // see examples [here](http://www.ini.uzh.ch/~conradt/research/BraitenbergVehicle/), [here](http://blog.electricbricks.com/en/2010/05/vehiculos-braitenberg-nxt-g/), [here](http://tinkerlog.com/2009/06/07/mini-braitenberg-vehicle/).
 
-<!--
-
-From pesudo-code to [vehicles 2 & 3](https://codepen.io/grrrwaaa/pen/wvwRGyW):
-
-<p class="codepen" data-height="300" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="yLBmyNM" data-preview="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="week 4 - vehicle 2 and 3: cowardly and aggressive, liking &amp;amp; exploring">
-<span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/yLBmyNM">
-week 4 - vehicle 2 and 3: cowardly and aggressive, liking &amp; exploring</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
-on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
-<p class="codepen" data-height="319" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="wvwRGyW" data-preview="true" style="height: 319px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vehicles">
-	<span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/wvwRGyW">
-	Vehicles</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
-	on <a href="https://codepen.io">CodePen</a>.</span></p>
-
--->
-
 ---
+
+### Practice! Make!
+
+First class script:
+
+---codepen:https://codepen.io/grrrwaaa/pen/VwaOVdZ
 
 - Prompts! See if you can either 
 	- a) Extend our vehicles code into later models from the book
 	- b) Find a way to blend work from last week with the vehicles model
+
+For example:
+
+---codepen:https://codepen.io/grrrwaaa/pen/XWKrJoG
+
+- Tweak factors for each force component (use Console to live tweak!)
+- Scale sensor response by #neighbours (i.e. averaged)
+- Distance power law
+- Filtered response (instead of friction)
+- Full vehicle reset on boundary
+- Cheap trails via fillRect (not ideal; leaves stain, doesn't "exist" as such)
+  - Can we make a better trail with lines?
+
+Extensions:
+
+- Can we progress to later chapters of the book?
+  - Vehicle 3c: different wiring/inversion for different senses. Perhaps according to sensed vehicle type?
+  - Vehicle 4a/b: adding different response curves and thresholds to sensors; e.g. use [Desmos](https://www.desmos.com/calculator) to try some graph functions
+  - Vehicle 5: intermediate threshold nodes (logic), feedback paths (memory)... 
+    - Can we generate these at random?
+    - Could they *learn*?
+  - Vehicle 6: selection
+- Can we think of ways to merge ideas with our drawing apps?
+- Can we use our [Node.js](nodejs.html) progress to place our different vehicles into the same world? Where does the 'thinking' happen?
+
+## Mindstorms (1980)
+
+Papert, Seymour A. Mindstorms: Children, Computers, and Powerful Ideas (2nd Edition). Basic books, 1993.
+
+> (The PDF is in our class files in Teams)
+
+![logo](https://upload.wikimedia.org/wikipedia/commons/2/2c/Remi_turtlegrafik.png)
+
+Seymour Papert was a psychologist and mathematician, and education theorist, deeply inspired by Jean Piaget's influential research into how children learn. **Mindstorms** is the book that started the computer revolution in schools, pioneering the invention of creative ways to learn through computing. 
+
+(It did this through an innovative language called **LOGO** that put children in charge of a drawing turtle. This simple model has had a remarkable impact on a whole generation of thinkers and makers, and also reflects a lineage back to earlier cybernetic "turtles"...)
+
+- Papert is interested in how learning happens, how understanding *grows*
+- Inspired as a child by **gears** as a model to understand mathematics & physics (and more). 
+	- Gears serve as a transitional object/metaphor, and use "body knowledge" and putting yourself in their place ("You can *be* the gear".) Gears as an **"object-to-think-with"**, using the full range of human sensitivities.
+- "Anything is easy if you can assimilate it to your collection of **models**. If you can't, it will be painfully difficult... What an individual can learn, and how one learns it, depends on what models one has available."
+- (Piaget: children build their own intellectual structures) 
+- The deepest things **we teach ourselves**, and they are accompanied by a **feeling of love** for it (affinity, not talent)
+	- "Intellectual structures grow out of one another... they acquire both logical and emotional form"
+- Education, as fostering learning, is about creating the conditions under which intellectual models take root. 
+
+> "My thesis could be summarized as: What the gears cannot do the computer might. The computer is the Proteus of machines. Its essence is its universality, its power to simulate. Because it can take on a thousand forms and can serve a thousand functions, it can appeal to a thousand tastes. [Mindstorms] is a result of my own attempts... to turn computers into flexible enough instruments that many children can each create for themselves something like what the gears were for me."
+
+- Against the "schizophrenic" 'two cultures' separation of humanists-artists and scientists-engineers. Suggests computers may be a tool to break this division.
+  - In practice, **knowing-that** (propositional knowledge) and **knowing-how** (procedural knowledge) are very rarely separated.
+
+- Computer-aided instruction should not mean making the computer teach--"the computer programming the child"--instead the child must program the computer, attaining mastery and intimate contact with some of the deepest ideas. 
+- Starts with analogy of learning a language, in an active sense: having a conversation with the machine.
+	- Design an environment in which a conversational approach becomes natural, informal, interesting 
+	- Not instructing mathematics, but exploring in "mathland" (not teaching French, but living in France)
+- **Child as builder**: builder needs materials; art of making good materials in the world around the builder
+- Starts with **Turtle** as object-to-think-with. The child "talks" to the turtle by giving instructions, which the turtle interprets from its own perspective, to move around, sometimes drawing lines, or making sounds, etc.
+
+
+- Sympathetic reasoning: To understand how to draw a square, you walk the square yourself, talking "TURTLE TALK" to figure out what to do. It also draws on well-established "body geometry" and other embodied cognition.
+- Turtles can be on-screen, or physical; they can get quite advanced. Children are learning to program, and learning mathematics, without being taught.
+- Introduces concept of "**microworlds**", such as the simple mathland of the Turtle. A place where a certain kind of knowledge can grow with ease, because of the basic materials that are ready-to-hand. 
+	- A rich space of behaviours (e.g. Kaleidoscopes) possible if one turtle can give another turtle instructions.
+	- Another example microworld that can teach Newtonian physics, begins not with forces, but with "dynaturtles" that are always moving, talking when they meet.
+	- Soon students are thinking about what to add to a turtle-nature, what to add to a world-nature.
+
+[Logo in the browser](http://logo.twentygototen.org)
+
+[An archive from Byte magazine, 1982](https://archive.org/stream/byte-magazine-1982-08/1982_08_BYTE_07-08_Logo#page/n0/mode/2up)
+
+### Interpreters
+
+Recall the notion of "tapes" and "machines" from our first lecture:
+
+- For a moment, don't think of a program as a tool, but as a pattern of data, a string of bits. This is clearer in data-driven representations of programs, e.g. state machine tables.
+  - Can you generate a random program?
+  - Can the same string of bits be interpreted in different ways (semantics)?
+  	- Interpreter A: when I see X do Q, when I see Y do R.
+  	- Interpreter B: when I see X do S, when I see Y do T.
+  	- Interpreter C: when I see X create A, when I see Y create B... 
+  	- Interpreter D: when I see X become C, when I see Y become D... 
+  - Can you make a self-reproducing machine?
+- And recall the notes on Control Flow (snakes and ladders): the default assumed flow moves from one step to the next, other control flows redirect that. 
+
+### Practice! Make!
+
+- Perhaps we can build a turtle-language interpreter? (And vice-versa: generator. Value of bidirectional translations!)
+  - Perhaps it can produce 'marks' as we did with [Yellowtail](sketches.html) 
+    - (and vice versa: perhaps we can "draw" to generate turtle-language)?
+    - I.e.: a string of turtlang <=> a list of "lines"?
+  - Perhaps it can produce 'forces' or 'senses' as we did with [Vehicles](vehicles.html)
+    - (and vice versa: perhaps vehicles can generate turtle-language)?
+  - Can we explore Papert's suggestion "if one turtle can give another turtle instructions" ?
+    - Could this be a form of communication? Viral infection?
+
+- What are the primitives of our microworld? What is the basic "instruction set"?
+  - Delta coding (recall delta coding from our [notes on git](gitnotes.html)): 
+    - Forward, turn, scale? 
+      - Could using [matrix representations](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) to make the language more generic?
+	- Pen up/down?
+    - Forces? Random deviations?
+    - Wait for time to pass?
+  - Elements of control flow (remember the snakes & ladders)?
+    - Are senses actions?
+    - Is the creation of a new 'turtle' an instruction? 
+    - Other 'meta-level' instructions?
+
+Tips: design the API first, led by examples (pseudocode). Then, Make it work / make it right / make it better.
+

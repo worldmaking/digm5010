@@ -109,15 +109,24 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Action items for next week: 
      - Post a sketch-study, expanding upon the Vehicles code and concepts!
 5. *Oct 7.*
-   - Topic: **Sentience I**. 
+   - Sharing: 
+     - Literature Review/Annotated Bibliography progress
+     - Forks of [Vehicles](vehicles.html)
+   - Topic: **Sentience I: Sharing, Adaptation, Learning**. 
+     - [Mindstorms](vehicles.html#mindstorms-1980)
    - Systems: 
      - [Notes on Node.js](nodejs.html): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
+   - Tips & math help:
+     - [Desmos](https://www.desmos.com/calculator) is a quick online grapher
+     - [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) -- e.g. "essence of linear algebra"
+     - [Better Explained](https://www.youtube.com/user/betterexplained/videos)
    - Action items for next week: 
      - [Post step 3 of the Literature Review assignment](assignments.html).
+       - Preparing for practice: make your own "microworld" playground
 6. **Reading week** 
    - [ISEA](https://isea2020.isea-international.org/).
    - Action items for next week: 
-     - Post step 4 of the Literature Review assignment.
+     - [Post step 4 of the Literature Review assignment](assignments.html).
 7. 
    - Topic: **Time I**. 
    - **Due:** [Literature Review](assignments.html).

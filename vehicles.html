@@ -30,7 +30,15 @@ footer {
 <ul>
 <li><a href="#vehicular-agents">Vehicular Agents</a><ul>
 <li><a href="#tortoises">Tortoises</a></li>
-<li><a href="#vehicles">Vehicles</a></li>
+<li><a href="#vehicles">Vehicles</a><ul>
+<li><a href="#practice-make">Practice! Make!</a></li>
+</ul>
+</li>
+<li><a href="#mindstorms-1980">Mindstorms (1980)</a><ul>
+<li><a href="#interpreters">Interpreters</a></li>
+<li><a href="#practice-make-1">Practice! Make!</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -46,7 +54,7 @@ footer {
 <p>Remarkably, this direction of research was largely forgotten as efforts in artificial intelligence concentrated on symbolic thinking. A brief history <a href="http://www.rutherfordjournal.org/article020101.html">can be read here</a> -- but the story of Walter and other British Cyberneticians is truly fascinating; I highly recommend Andrew Pickering&#39;s account in <a href="http://press.uchicago.edu/ucp/books/book/chicago/C/bo8169881.html">The Cybernetic Brain</a>. This wasn&#39;t just random tinkering, there was an explicit agenda of understanding human and machine together.</p>
 <p>Walter&#39;s tortoises have inspired many great research products of the last century, including:</p>
 <ul>
-<li>the <strong>turtle graphics</strong> of Logo, which might be before your time, but initiated a whole generation of children into computer programming decades ago and led to LEGO Mindstorms among other things,</li>
+<li>the <a href="#mindstorms-1980"><strong>turtle graphics</strong></a> of Logo, which might be before your time, but initiated a whole generation of children into computer programming decades ago and led to LEGO Mindstorms among other things,</li>
 <li>the <strong>situated robotics</strong> of Rodney Brooks (which you may know of as the &quot;iRobot&quot; vaccuum cleaner), </li>
 <li>the <strong>flocking simulations</strong> of Craig Reynolds (which you have seen in hundreds of films, games, etc.), </li>
 <li>digital artworks, notably <a href="https://reas.com/tissue_p/">Casey Reas&#39; Tissue series</a></li>
@@ -65,24 +73,11 @@ footer {
 <p>This book is quite short, but richly dense. There&#39;s a copy of Ch1-6 in our Teams Readings folder.</p>
 <hr>
 <p>Vehicles have also been constructed in hardware of course // see examples <a href="http://www.ini.uzh.ch/~conradt/research/BraitenbergVehicle/">here</a>, <a href="http://blog.electricbricks.com/en/2010/05/vehiculos-braitenberg-nxt-g/">here</a>, <a href="http://tinkerlog.com/2009/06/07/mini-braitenberg-vehicle/">here</a>.</p>
-<!--
-
-From pesudo-code to [vehicles 2 & 3](https://codepen.io/grrrwaaa/pen/wvwRGyW):
-
-<p class="codepen" data-height="300" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="yLBmyNM" data-preview="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="week 4 - vehicle 2 and 3: cowardly and aggressive, liking &amp;amp; exploring">
-<span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/yLBmyNM">
-week 4 - vehicle 2 and 3: cowardly and aggressive, liking &amp; exploring</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
-on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
-<p class="codepen" data-height="319" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="wvwRGyW" data-preview="true" style="height: 319px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vehicles">
-    <span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/wvwRGyW">
-    Vehicles</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span></p>
-
--->
-
 <hr>
+<h3 id="practice-make">Practice! Make!</h3>
+<p>First class script:</p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="VwaOVdZ" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/VwaOVdZ">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 <ul>
 <li>Prompts! See if you can either <ul>
 <li>a) Extend our vehicles code into later models from the book</li>
@@ -90,8 +85,151 @@ on <a href="https://codepen.io">CodePen</a>.</span>
 </ul>
 </li>
 </ul>
+<p>For example:</p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="XWKrJoG" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/XWKrJoG">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<ul>
+<li>Tweak factors for each force component (use Console to live tweak!)</li>
+<li>Scale sensor response by #neighbours (i.e. averaged)</li>
+<li>Distance power law</li>
+<li>Filtered response (instead of friction)</li>
+<li>Full vehicle reset on boundary</li>
+<li>Cheap trails via fillRect (not ideal; leaves stain, doesn&#39;t &quot;exist&quot; as such)<ul>
+<li>Can we make a better trail with lines?</li>
+</ul>
+</li>
+</ul>
+<p>Extensions:</p>
+<ul>
+<li>Can we progress to later chapters of the book?<ul>
+<li>Vehicle 3c: different wiring/inversion for different senses. Perhaps according to sensed vehicle type?</li>
+<li>Vehicle 4a/b: adding different response curves and thresholds to sensors; e.g. use <a href="https://www.desmos.com/calculator">Desmos</a> to try some graph functions</li>
+<li>Vehicle 5: intermediate threshold nodes (logic), feedback paths (memory)... <ul>
+<li>Can we generate these at random?</li>
+<li>Could they <em>learn</em>?</li>
+</ul>
+</li>
+<li>Vehicle 6: selection</li>
+</ul>
+</li>
+<li>Can we think of ways to merge ideas with our drawing apps?</li>
+<li>Can we use our <a href="nodejs.html">Node.js</a> progress to place our different vehicles into the same world? Where does the &#39;thinking&#39; happen?</li>
+</ul>
+<h2 id="mindstorms-1980">Mindstorms (1980)</h2>
+<p>Papert, Seymour A. Mindstorms: Children, Computers, and Powerful Ideas (2nd Edition). Basic books, 1993.</p>
+<blockquote>
+<p>(The PDF is in our class files in Teams)</p>
+</blockquote>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Remi_turtlegrafik.png" alt="logo"></p>
+<p>Seymour Papert was a psychologist and mathematician, and education theorist, deeply inspired by Jean Piaget&#39;s influential research into how children learn. <strong>Mindstorms</strong> is the book that started the computer revolution in schools, pioneering the invention of creative ways to learn through computing. </p>
+<p>(It did this through an innovative language called <strong>LOGO</strong> that put children in charge of a drawing turtle. This simple model has had a remarkable impact on a whole generation of thinkers and makers, and also reflects a lineage back to earlier cybernetic &quot;turtles&quot;...)</p>
+<ul>
+<li>Papert is interested in how learning happens, how understanding <em>grows</em></li>
+<li>Inspired as a child by <strong>gears</strong> as a model to understand mathematics &amp; physics (and more). <ul>
+<li>Gears serve as a transitional object/metaphor, and use &quot;body knowledge&quot; and putting yourself in their place (&quot;You can <em>be</em> the gear&quot;.) Gears as an <strong>&quot;object-to-think-with&quot;</strong>, using the full range of human sensitivities.</li>
+</ul>
+</li>
+<li>&quot;Anything is easy if you can assimilate it to your collection of <strong>models</strong>. If you can&#39;t, it will be painfully difficult... What an individual can learn, and how one learns it, depends on what models one has available.&quot;</li>
+<li>(Piaget: children build their own intellectual structures) </li>
+<li>The deepest things <strong>we teach ourselves</strong>, and they are accompanied by a <strong>feeling of love</strong> for it (affinity, not talent)<ul>
+<li>&quot;Intellectual structures grow out of one another... they acquire both logical and emotional form&quot;</li>
+</ul>
+</li>
+<li>Education, as fostering learning, is about creating the conditions under which intellectual models take root. </li>
+</ul>
+<blockquote>
+<p>&quot;My thesis could be summarized as: What the gears cannot do the computer might. The computer is the Proteus of machines. Its essence is its universality, its power to simulate. Because it can take on a thousand forms and can serve a thousand functions, it can appeal to a thousand tastes. [Mindstorms] is a result of my own attempts... to turn computers into flexible enough instruments that many children can each create for themselves something like what the gears were for me.&quot;</p>
+</blockquote>
+<ul>
+<li><p>Against the &quot;schizophrenic&quot; &#39;two cultures&#39; separation of humanists-artists and scientists-engineers. Suggests computers may be a tool to break this division.</p>
+<ul>
+<li>In practice, <strong>knowing-that</strong> (propositional knowledge) and <strong>knowing-how</strong> (procedural knowledge) are very rarely separated.</li>
+</ul>
+</li>
+<li><p>Computer-aided instruction should not mean making the computer teach--&quot;the computer programming the child&quot;--instead the child must program the computer, attaining mastery and intimate contact with some of the deepest ideas. </p>
+</li>
+<li><p>Starts with analogy of learning a language, in an active sense: having a conversation with the machine.</p>
+<ul>
+<li>Design an environment in which a conversational approach becomes natural, informal, interesting </li>
+<li>Not instructing mathematics, but exploring in &quot;mathland&quot; (not teaching French, but living in France)</li>
+</ul>
+</li>
+<li><p><strong>Child as builder</strong>: builder needs materials; art of making good materials in the world around the builder</p>
+</li>
+<li><p>Starts with <strong>Turtle</strong> as object-to-think-with. The child &quot;talks&quot; to the turtle by giving instructions, which the turtle interprets from its own perspective, to move around, sometimes drawing lines, or making sounds, etc.</p>
+</li>
+</ul>
+<ul>
+<li>Sympathetic reasoning: To understand how to draw a square, you walk the square yourself, talking &quot;TURTLE TALK&quot; to figure out what to do. It also draws on well-established &quot;body geometry&quot; and other embodied cognition.</li>
+<li>Turtles can be on-screen, or physical; they can get quite advanced. Children are learning to program, and learning mathematics, without being taught.</li>
+<li>Introduces concept of &quot;<strong>microworlds</strong>&quot;, such as the simple mathland of the Turtle. A place where a certain kind of knowledge can grow with ease, because of the basic materials that are ready-to-hand. <ul>
+<li>A rich space of behaviours (e.g. Kaleidoscopes) possible if one turtle can give another turtle instructions.</li>
+<li>Another example microworld that can teach Newtonian physics, begins not with forces, but with &quot;dynaturtles&quot; that are always moving, talking when they meet.</li>
+<li>Soon students are thinking about what to add to a turtle-nature, what to add to a world-nature.</li>
+</ul>
+</li>
+</ul>
+<p><a href="http://logo.twentygototen.org">Logo in the browser</a></p>
+<p><a href="https://archive.org/stream/byte-magazine-1982-08/1982_08_BYTE_07-08_Logo#page/n0/mode/2up">An archive from Byte magazine, 1982</a></p>
+<h3 id="interpreters">Interpreters</h3>
+<p>Recall the notion of &quot;tapes&quot; and &quot;machines&quot; from our first lecture:</p>
+<ul>
+<li>For a moment, don&#39;t think of a program as a tool, but as a pattern of data, a string of bits. This is clearer in data-driven representations of programs, e.g. state machine tables.<ul>
+<li>Can you generate a random program?</li>
+<li>Can the same string of bits be interpreted in different ways (semantics)?<ul>
+<li>Interpreter A: when I see X do Q, when I see Y do R.</li>
+<li>Interpreter B: when I see X do S, when I see Y do T.</li>
+<li>Interpreter C: when I see X create A, when I see Y create B... </li>
+<li>Interpreter D: when I see X become C, when I see Y become D... </li>
+</ul>
+</li>
+<li>Can you make a self-reproducing machine?</li>
+</ul>
+</li>
+<li>And recall the notes on Control Flow (snakes and ladders): the default assumed flow moves from one step to the next, other control flows redirect that. </li>
+</ul>
+<h3 id="practice-make-1">Practice! Make!</h3>
+<ul>
+<li><p>Perhaps we can build a turtle-language interpreter? (And vice-versa: generator. Value of bidirectional translations!)</p>
+<ul>
+<li>Perhaps it can produce &#39;marks&#39; as we did with <a href="sketches.html">Yellowtail</a> <ul>
+<li>(and vice versa: perhaps we can &quot;draw&quot; to generate turtle-language)?</li>
+<li>I.e.: a string of turtlang &lt;=&gt; a list of &quot;lines&quot;?</li>
+</ul>
+</li>
+<li>Perhaps it can produce &#39;forces&#39; or &#39;senses&#39; as we did with <a href="vehicles.html">Vehicles</a><ul>
+<li>(and vice versa: perhaps vehicles can generate turtle-language)?</li>
+</ul>
+</li>
+<li>Can we explore Papert&#39;s suggestion &quot;if one turtle can give another turtle instructions&quot; ?<ul>
+<li>Could this be a form of communication? Viral infection?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>What are the primitives of our microworld? What is the basic &quot;instruction set&quot;?</p>
+<ul>
+<li>Delta coding (recall delta coding from our <a href="gitnotes.html">notes on git</a>): <ul>
+<li>Forward, turn, scale? <ul>
+<li>Could using <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">matrix representations</a> to make the language more generic?</li>
+</ul>
+</li>
+<li>Pen up/down?</li>
+<li>Forces? Random deviations?</li>
+<li>Wait for time to pass?</li>
+</ul>
+</li>
+<li>Elements of control flow (remember the snakes &amp; ladders)?<ul>
+<li>Are senses actions?</li>
+<li>Is the creation of a new &#39;turtle&#39; an instruction? </li>
+<li>Other &#39;meta-level&#39; instructions?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Tips: design the API first, led by examples (pseudocode). Then, Make it work / make it right / make it better.</p>
 
 <footer>2020</footer>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </body>
 </html>
