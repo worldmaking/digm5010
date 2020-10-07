@@ -19,33 +19,22 @@ One of Maeda's students -- [Golan Levin](http://www.flong.com) -- now professor 
 
 For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/report_yellowtail/).
 
+Here's our script from this week:
+
+---codepen:https://codepen.io/grrrwaaa/pen/rNevzbL
+
 ---
 
 Scripts from last year:
 
-<p class="codepen" data-height="300" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="qBWgeaZ" data-preview="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="week 2">
-<span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/qBWgeaZ">
-week 2</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
-on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+---codepen:https://codepen.io/grrrwaaa/pen/qBWgeaZ
 
-<p class="codepen" data-height="300" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="VwZqazN" data-preview="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Yellowtail">
-<span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/VwZqazN">
-Yellowtail</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
-on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+---codepen:https://codepen.io/grrrwaaa/pen/VwZqazN
 
-<p class="codepen" data-height="300" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="wvwQOPm" data-preview="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="dynadraw">
-<span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/wvwQOPm">
-dynadraw</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
-on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+---codepen:https://codepen.io/grrrwaaa/pen/wvwQOPm
 
-<p class="codepen" data-height="300" data-theme-id="18447" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="gOYQyrd" data-preview="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="dynadraw - with gl-matrix">
-<span>See the Pen <a href="https://codepen.io/grrrwaaa/pen/gOYQyrd">
-dynadraw - with gl-matrix</a> by Graham (<a href="https://codepen.io/grrrwaaa">@grrrwaaa</a>)
-on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+---codepen:https://codepen.io/grrrwaaa/pen/gOYQyrd
+
 
 
 - Making prompts: Mutate the code we built in class. 
