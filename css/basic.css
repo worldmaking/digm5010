@@ -85,6 +85,9 @@ pre {
 	color: #333;
 }
 
+img {
+	max-width: 80%;
+}
 
 blockquote {
 	border-left: 15px solid #eee;

@@ -128,12 +128,12 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [Post step 4 of the Literature Review assignment](assignments.html).
      - Preparing for practice: continue making your own "microworld" playground/interpreter, following the prompt [here](vehicles.html#mindstorms-1980)
 7. 
-   - Topic: **Time I**. 
+   - Topic: [**Time I**](time.html). 
    - **Due:** [Literature Review](assignments.html).
    - Action items for next week: 
      - Research your video tutorial
 8. 
-   - Topic: **Time II**. 
+   - Topic: [**Time II**](time.html). 
    - Action items for next week: 
      - Complete your [Video Tutorial](assignments.html)
 9.  *Nov 4.*
