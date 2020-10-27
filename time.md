@@ -337,10 +337,11 @@ Let's take a look at how this works today in Max (a program whose name acknowled
   - chopping breaks
   - Sampling 
   - Feedback & delay: a whole spectrum of effects from this
+  - Spectral effects
   - Granular
   - OLA via 'tape loop' analogy
 
-What about sco-space?
+What about `sco`-space?
 
 A moment of reflection: remember 'machines & tapes'; that tapes are data are code. To what extent is an audio signal a 'tape of instructions'? E.g. a signal stream of triggers to activate an oscillator. Or something more complex, e.g. MIDI data streams; show MIDI *interpreter* example. Or something more complex (calculator example). So... what kind of interpreter would you write to articulate structure?
 
