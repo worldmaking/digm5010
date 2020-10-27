@@ -358,6 +358,10 @@ SynthDef(\example, {
 </ul>
 <p>What about sco-space?</p>
 <p>A moment of reflection: remember &#39;machines &amp; tapes&#39;; that tapes are data are code. To what extent is an audio signal a &#39;tape of instructions&#39;? E.g. a signal stream of triggers to activate an oscillator. Or something more complex, e.g. MIDI data streams; show MIDI <em>interpreter</em> example. Or something more complex (calculator example). So... what kind of interpreter would you write to articulate structure?</p>
+<ul>
+<li>Quick demo: Node for Max player</li>
+<li>Limitations</li>
+</ul>
 <h2 id="a-new-engine">A new engine</h2>
 <p>Although low-dimensional, audio programming can be surprisingly demanding. New data must be generated at reliable, steady rates of forty thousand samples per second or better, and latencies must remain low for musical sensitivity. It occupies a fascinating boundary between the apparently continuous (analog) but actually discrete (digital), and brings software architecture and user-experience issues to the fore in the mapping of perceptual/musical concepts to actual implementations. </p>
 <p>Let&#39;s try to dig down to low levels of what&#39;s really going on here, and see if we can build it back up again. Let&#39;s say, we wanted to build a general Music-III style program in Node.js, where we can throw a whole range of Javascript flexibility at it. </p>

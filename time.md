@@ -344,6 +344,9 @@ What about sco-space?
 
 A moment of reflection: remember 'machines & tapes'; that tapes are data are code. To what extent is an audio signal a 'tape of instructions'? E.g. a signal stream of triggers to activate an oscillator. Or something more complex, e.g. MIDI data streams; show MIDI *interpreter* example. Or something more complex (calculator example). So... what kind of interpreter would you write to articulate structure?
 
+- Quick demo: Node for Max player
+- Limitations
+
 ## A new engine
 
 Although low-dimensional, audio programming can be surprisingly demanding. New data must be generated at reliable, steady rates of forty thousand samples per second or better, and latencies must remain low for musical sensitivity. It occupies a fascinating boundary between the apparently continuous (analog) but actually discrete (digital), and brings software architecture and user-experience issues to the fore in the mapping of perceptual/musical concepts to actual implementations. 
