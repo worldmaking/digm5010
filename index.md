@@ -52,6 +52,8 @@ Every resource will be online at or linked from [this website](http://alicelab.w
   - will demonstrate your foundational computational literacy and ability to understand and transfer research into creative applications (**20%**),
   - and will be documented in a research paper with scholarly citations suitable to submit to conferences or other appropriate venues (**20%**).
 
+
+
 *Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
 
 ---
@@ -148,6 +150,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
     - Topic: **Languages and Codes**
    - Action items for next week: 
      - Paper/project review
+     - Deadline Nov 25 to submit "Expression of Interest" for Digital Media exhibition
 12. 
    - Topic: **Sentience II**
 	- Paper/project review
@@ -156,3 +159,27 @@ Every resource will be online at or linked from [this website](http://alicelab.w
 13. **Presentations.** *Dec 2.*  
    - Action items for next week: 
     - **Due:** [Final online paper](assignments.html). 
+     - Deadline Dec 9 to submit work for Digital Media exhibition
+
+### 2020 Digital Media Curatorial Theme
+
+[-:: Invisibility :: Complexity :: Resistance :: Intentionality ::-](pdf/DCA_theme_2020-2021.pdf))
+
+We are seeking work that responds to the theme Invisibility, Complexity, Resistance, Intentionality (see below) for an online exhibition of works to be presented during the week of December 14th, 2020. Works can be works you created in the past, or are planning to have completed by the end of the term. It is okay if they have been exhibited in the past already. We are open to proposals that challenge the online medium as a format for presentation and encourage alternative ways of viewing, including AR, VR, interactive, or unconventional presentations of work. 
+
+Submission process:
+
+1. Expression of Interest, we request an expression of interest be sent to the Department of Computational Arts chair by November 25th. The expression of interest should include:
+- Working title
+- Name(s)
+- A one paragraph description of the work
+- Any special technologies needed to present the work (video, audio, VR, AR, etc.)
+
+This step is not required, but this will help in the planning of the exhibition and facilitation of your work, and will greatly increase your chances of having the work shown.
+
+2. Deadline to Submit work - December 9th (hard deadline) to Department of Computational Arts chair. This should be an updated and finalized version of the expression of interest:
+- Title
+- Name(s)
+- A one paragraph description of the work
+- Any special technologies needed to present the work (video, audio, VR, AR, etc.)
+- Link to the materials
