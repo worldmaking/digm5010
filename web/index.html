@@ -1,0 +1,50 @@
+<!doctype html>  
+<html lang="en">  
+<head>
+<meta charset="utf-8">  
+<title>My page</title>  
+</head>  
+<body>
+OK :-)
+<script>
+
+const addr = `ws://${window.location.hostname}:${window.location.port || 80}`;
+console.log("connecting to ", addr)
+
+// this is how to create a client socket in the browser:
+let socket = new WebSocket(addr);
+
+// let's know when it works:
+socket.onopen = function() { 
+    // or document.write("websocket connected to "+addr); 
+    console.log("websocket connected to "+addr); 
+}
+socket.onerror = function(err) { 
+    console.error(err); 
+}
+socket.onclose = function(e) { 
+    console.log("websocket disconnected from "+addr); 
+}
+socket.onmessage = function(msg) {
+    console.log(msg.data);
+}
+
+let gesture = {
+	pos: [0, 0]
+}
+
+document.addEventListener("pointermove", e => {
+    // is the socket available?
+	if (socket.readyState !== WebSocket.OPEN) return;
+	
+	gesture.pos[0] = e.clientX;
+	gesture.pos[1] = e.clientY;
+
+    // we can send any old string:
+    socket.send(JSON.stringify(gesture))
+});
+
+
+</script>
+</body>  
+</html>
