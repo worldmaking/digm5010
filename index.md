@@ -140,6 +140,11 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - Complete your [Video Tutorial](assignments.html)
 9. Topic: [**Space I**](space.html).   *Nov 4.*
    - **Due:** [Video Tutorials](assignments.html).
+   - Scripts from today:
+     - [Basic WebGL template](https://codepen.io/grrrwaaa/pen/bmmGjL?editors=0011)
+     - [ShaderToy shader in the template](https://codepen.io/grrrwaaa/pen/bGejGpa)
+     - [Ray tracer in WebGL](https://codepen.io/grrrwaaa/pen/mdEjdNx)
+     - [Sphere tracing renderer](https://codepen.io/grrrwaaa/pen/vYKaEoP)
    - Action items for next week: 
      - [Post the abstract of your final paper/project](assignments.html)
 10. 
