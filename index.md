@@ -95,6 +95,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [More sketches from last year](sketches.html)
    - Systems: 
      - [Notes on Node.js](nodejs.html): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
+     - [This week's code is here in github](https://github.com/worldmaking/digm5010/tree/week3)
    - Action items for next week: 
      - [Post step 2 of the Literature Review assignment](assignments.html).
      - [Suggested further reading](https://teams.microsoft.com/_#/school/files/General?threadId=19:100337fd7f524597bb019d9e088971a2@thread.tacv2&replyChainId=1600708335091&ctx=channel&rootfolder=%252Fsites%252FFA-DIGM5010%252FShared%2520Documents%252FGeneral%252FReadings):
@@ -130,10 +131,11 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [Post step 4 of the Literature Review assignment](assignments.html).
      - Preparing for practice: continue making your own "microworld" playground/interpreter, following the prompt [here](vehicles.html#mindstorms-1980)
 7. Topic: [**Time I**](time.html). 
+   - [This week's code (audio in Node.js) is here in Github](https://github.com/worldmaking/digm5010/tree/week7)
    - **Due:** [Literature Review](assignments.html).
    - Action items for next week: 
      - Research your video tutorial
-8. Topic: [**Time II**](time.html). 
+8. Topic: [**Time II**](time.html).   
    - Action items for next week: 
      - Complete your [Video Tutorial](assignments.html)
 9.  *Nov 4.*
@@ -141,16 +143,16 @@ Every resource will be online at or linked from [this website](http://alicelab.w
    - Action items for next week: 
      - [Post the abstract of your final paper/project](assignments.html)
 10. 
-	- Topic: **Networks and Complexity**. 
+	- Topic: **Space II**. 
    - Action items for next week: 
      - [Post a draft of your final paper/project for review](assignments.html)
 11. 
-    - Topic: **Languages and Codes**
+   - Topic: **Languages and Codes**
    - Action items for next week: 
      - Paper/project review
      - Deadline Nov 25 to submit "Expression of Interest" for Digital Media exhibition
 12. 
-   - Topic: **Sentience II**
+	- Topic: **Networks and Complexity**. 
 	- Paper/project review
 	- Action items for next week: 
        - [Finalize paper (step 3)](assignments.html)
