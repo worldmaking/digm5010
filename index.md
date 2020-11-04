@@ -138,7 +138,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
 8. Topic: [**Time II**](time.html).   
    - Action items for next week: 
      - Complete your [Video Tutorial](assignments.html)
-9.  *Nov 4.*
+9. Topic: [**Space I**](space.html).   *Nov 4.*
    - **Due:** [Video Tutorials](assignments.html).
    - Action items for next week: 
      - [Post the abstract of your final paper/project](assignments.html)
