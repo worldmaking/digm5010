@@ -70,8 +70,8 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 1. The topic of the paper can be developed from material earlier in the course, and/or refer to the curatorial themes of [**Invisibility :: Complexity :: Resistance :: Intentionality**](http://alicelab.world/digm5010/pdf/DCA_theme_2020-2021.pdf). You may document & contextualize your practice studies or one of your artworks. You could write a 'white paper' on a technique. You might re-implement a known research paper, and analyze the results. Or you might discuss more deeply ideas encountered in the bibliography. Perhaps pen a manifesto. 
   -  Find a few other papers online that have similar focus, and analyze their structure as a guide.
 2. The format will be a very modern, online-first academic article. That is, one designed to be read online, with at least some active components, rather than primarily on paper. The notion of publishing in academia has been rapidly changing, and these changes are accelerating under pandemic conditions.
-  - See [https://distill.pub]() for an example of a modern, web-based peer-reviewed journal with embedded visualizations and interactive components. 
-  - See [https://jar-online.net]() for a different example more focused on art theory & practice.
+  - See [https://distill.pub](https://distill.pub) for an example of a modern, web-based peer-reviewed journal with embedded visualizations and interactive components. 
+  - See [https://jar-online.net](https://jar-online.net) for a different example more focused on art theory & practice.
   - We may develop a template in class, using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
   - Nevertheless, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
 3. Post your final paper online -- either inside or linked from your journal.
