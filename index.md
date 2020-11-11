@@ -156,7 +156,6 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - Paper/project review
      - Deadline Nov 25 to submit "Expression of Interest" for Digital Media exhibition
 12. 
-	- Topic: **Networks and Complexity**. 
 	- Paper/project review
 	- Action items for next week: 
        - [Finalize paper (step 3)](assignments.html)
