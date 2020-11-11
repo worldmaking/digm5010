@@ -147,8 +147,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [Sphere tracing renderer](https://codepen.io/grrrwaaa/pen/vYKaEoP)
    - Action items for next week: 
      - [Post the abstract of your final paper/project](assignments.html)
-10. 
-	- Topic: **Space II**. 
+10. Discussion of paper/project, journal, etc.
    - Action items for next week: 
      - [Post a draft of your final paper/project for review](assignments.html)
 11. 
