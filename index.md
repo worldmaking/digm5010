@@ -138,7 +138,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
 8. Topic: [**Time II**](time.html).   
    - Action items for next week: 
      - Complete your [Video Tutorial](assignments.html)
-9. Topic: [**Space I**](space.html).   *Nov 4.*
+9. Topic: [**Space & Simulation II**](space.html).   *Nov 4.*
    - **Due:** [Video Tutorials](assignments.html).
    - Scripts from today:
      - [Basic WebGL template](https://codepen.io/grrrwaaa/pen/bmmGjL?editors=0011)
