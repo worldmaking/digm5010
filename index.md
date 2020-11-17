@@ -149,20 +149,19 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [Post the abstract of your final paper/project](assignments.html)
 10. Discussion of paper/project, journal, etc.
    - Action items for next week: 
-     - [Post a draft of your final paper/project for review](assignments.html)
-11. 
+     - Post a draft of your final paper/project for peer review [to this form here](https://forms.gle/oLEoZtaeZegf7nwcA)
+11. [Peer review research](assignments.html#reviews)
    - Topic: **Languages and Codes**
    - Action items for next week: 
-     - Paper/project review
+     - Due next week: [complete the peer review form](https://forms.gle/g8iFMz5Aw9pfqfFa6) for each of the assigned submissions
      - Deadline Nov 25 to submit "Expression of Interest" for Digital Media exhibition
-12. 
-	- Paper/project review
+12. Paper/project peer review
 	- Action items for next week: 
        - [Finalize paper (step 3)](assignments.html)
 13. **Presentations.** *Dec 2.*  
    - Action items for next week: 
     - **Due:** [Final online paper](assignments.html). 
-     - Deadline Dec 9 to submit work for Digital Media exhibition
+    - Deadline Dec 9 to submit work for Digital Media exhibition
 
 ### 2020 Digital Media Curatorial Theme
 

@@ -64,7 +64,6 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like Dan Shiffman or 3Blue1Brown do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
-
 ## Final Paper
 
 1. The topic of the paper can be developed from material earlier in the course, and/or refer to the curatorial themes of [**Invisibility :: Complexity :: Resistance :: Intentionality**](http://alicelab.world/digm5010/pdf/DCA_theme_2020-2021.pdf). You may document & contextualize your practice studies or one of your artworks. You could write a 'white paper' on a technique. You might re-implement a known research paper, and analyze the results. Or you might discuss more deeply ideas encountered in the bibliography. Perhaps pen a manifesto. 
@@ -80,3 +79,32 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 
 <!-- - UPDATE LIST HERE: https://docs.google.com/spreadsheets/d/1fROB-TOaRKT9M5ZwaQ0Kl-Y35UlsHQPkp5luJwV4YkQ/edit#gid=0
 -->	
+
+
+## Reviews
+
+[Reviewing research](research.html#/33)
+
+Between week 11 and week 12 will will run an 'internal review' process, emulating what is frequently done in conference submission review processes. Typically this means:
+
+- A call for work (papers, demonstrations, artworks, panels, etc.) is made public 
+- Authors submit a draft or extended abstract of a paper (or a proposal for an artwork etc.) by a certain deadline for review, usually using an online interface. 
+- Reviews are most often performed "blind" or "double-blind" (that is, reviewers and authors are anonymized).
+- Each draft is sent to a handful of reviewers. Members of the review body are usually made up of many previous authors at the conferene. Though a conference may have hundreds of submissions, usually reviewers only have a handful assigned to them. 
+- Reviewers complete a review of the submission, usually using an online interface, by a certain deadline. Sometimes a meta-review is performed by a lead jury member of the conference to synthesize the reviews and reach a verdict on acceptance. Sometimes submissions are accepted, sometimes rejected, sometimes accepted but on different terms (e.g. long paper submission may be accepted as a short paper, with requirement to reduce length.)
+- These reviews are sent back to authors, along with the accept/reject verdict. Authors of accepted papers must act upon any requirements or corrections identified by reviewers, and may follow further recommendations. Then the final submission is resubmitted with these changes by a new deadline (usually very shortly after receiving reviews).
+
+For our purposes, you will act both as authors and reviewers: each of you will act as reviewers for the others' submissions. 
+
+For general review guidelines, [see here](https://www.wikihow.com/Review-a-Journal-Article) and [here](https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html) or [here](https://www.elsevier.com/reviewers/how-to-review), or [here](https://www.springer.com/authors/manuscript+guidelines?SGWID=0-40162-6-1261021-0#:~:text=Reviews%20should%20be%20conducted%20fairly,less%20useful%20to%20your%20field.):
+
+> "The purpose of peer review is to improve the quality of the manuscript under review, and of the material that is eventually published. Conscientious peer review is a time¬-consuming task but is essential to assure the quality of scientific journals." 
+> Reviews should be conducted fairly and objectively. Personal criticism of the author is inappropriate. If the research reported in the manuscript is flawed, criticize the science, not the scientist. Criticisms should be objective, not merely differences of opinion, and intended to help the author improve his or her paper.
+> Comments should be constructive and designed to enhance the manuscript. You should consider yourself the authors’ mentor. Make your comments as complete and detailed as possible. Express your views clearly with supporting arguments and references as necessary. Include clear opinions about the strengths, weaknesses and relevance of the manuscript, its originality and its importance to the field. Specific comments that cite line numbers are most helpful. 
+> Begin by identifying the major contributions of the paper. What are its major strengths and weaknesses, and its suitability for publication? Please include both general and specific comments bearing on these questions, and emphasize your most significant points. Support your general comments, positive or negative, with specific evidence.
+> Is the aim clearly stated? Do the title, abstract, key words, introduction, and conclusions accurately and consistently reflect the major point(s) of the paper? Is the writing concise, easy to follow, and interesting, without repetition?
+> Are the methods appropriate, sound, current, and described clearly enough that the work could be repeated by someone else? Is the research ethical and have the appropriate approvals/consent been obtained? Are appropriate analyses used? Are they sufficiently justified and explained? Are statements of significance justified? Are results supported by data? Are any of . the results counterintuitive? Are the conclusions supported by the data presented?
+> Are the references cited the most appropriate to support the manuscript? Are citations provided for all assertions of fact not supported by the data in this paper? Are any key citations missing? 
+> Should any portions of the paper should be expanded, condensed, combined, or deleted? 
+
+As a structure, we will base our [review form](https://forms.gle/g8iFMz5Aw9pfqfFa6) on materials as used by the SIGGRAPH Art Papers review body. 
