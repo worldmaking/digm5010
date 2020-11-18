@@ -152,6 +152,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - Post a draft of your final paper/project for peer review [to this form here](https://forms.gle/oLEoZtaeZegf7nwcA)
 11. [Peer review research](assignments.html#reviews)
    - Topic: **Languages and Codes**
+     - [Learning grammar by making a new language](http://alicelab.world/workshop_nime_2017/index.html)
    - Action items for next week: 
      - Due next week: [complete the peer review form](https://forms.gle/g8iFMz5Aw9pfqfFa6) for each of the assigned submissions
      - Deadline Nov 25 to submit "Expression of Interest" for Digital Media exhibition
