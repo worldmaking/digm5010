@@ -145,6 +145,7 @@ Every resource will be online at or linked from [this website](http://alicelab.w
      - [ShaderToy shader in the template](https://codepen.io/grrrwaaa/pen/bGejGpa)
      - [Ray tracer in WebGL](https://codepen.io/grrrwaaa/pen/mdEjdNx)
      - [Sphere tracing renderer](https://codepen.io/grrrwaaa/pen/vYKaEoP)
+       - [A more complex example](https://codepen.io/grrrwaaa/pen/NWrmpBR?editors=0011)
    - Action items for next week: 
      - [Post the abstract of your final paper/project](assignments.html)
 10. Discussion of paper/project, journal, etc.
