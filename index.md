@@ -53,6 +53,21 @@ Every digital resource will be online at or linked from [this website](http://al
   - *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the pandemic situation, and moreover allows some time to review any material that may have seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
 - You are expected to **make** in response, and to show what you have made both in class and by posting to an online journal. 
 
+
+## Evaluation
+
+- Your weekly practice-work, commentaries, and other activities as documented in the online journal will account for **40%** of the final grade. 
+- In addition, each of you will focus on a specific research topic (chosen in consultation of the instructor, ideally intersecting with one of the year's themes, <!--](pdf/DCA_theme_2020-2021.pdf))--> 
+- to develop a new project, whose goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. It implies a more significant project than the weekly practice work, but it could be a continuation of one of them.
+  - It will be grounded through an **extensive literature review** (**20%**),
+  - will demonstrate your foundational computational literacy and ability to understand and transfer research into creative applications (**20%**),
+  - and will be documented in **a research paper** with scholarly citations **suitable to submit to conferences or other appropriate venues** (**20%**).
+
+
+
+*Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
+
+
 -----
 ## Schedule
 
@@ -439,17 +454,3 @@ This step is not required, but this will help in the planning of the exhibition 
 -->
 
 -----
-## Evaluation
-
-[See detailed assignment instructions here](assignments.html)
-
-- Your weekly practice-work, commentaries, and other activities as documented in the online journal will account for **40%** of the final grade. 
-- In addition, each of you will focus on a specific research topic (chosen in consultation of the instructor, ideally intersecting with one of the year's themes, <!--](pdf/DCA_theme_2020-2021.pdf))--> 
-- to develop a new project, whose goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. It implies a more significant project than the weekly practice work, but it could be a continuation of one of them.
-  - It will be grounded through an **extensive literature review** (**20%**),
-  - will demonstrate your foundational computational literacy and ability to understand and transfer research into creative applications (**20%**),
-  - and will be documented in **a research paper** with scholarly citations **suitable to submit to conferences or other appropriate venues** (**20%**).
-
-
-
-*Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
