@@ -1,13 +1,22 @@
 #!/usr/bin/env node
 
 const fs = require("fs"),
-	path = require("path")
+	path = require("path"),
+	url = require("url"),
+	http = require("http"),
+	assert = require("assert");
+const { networkInterfaces } = require('os');
 
+const express = require("express")
+const WebSocket = require("ws")
 const JSON5 = require("json5")
 const marked = require("marked")
 const hljs   = require('highlight.js')
 const template = require('es6-dynamic-template')
 
+const server_path = __dirname;
+const public_path = server_path; //path.join(server_path, "public");
+const PORT = 8080
 
 const meta_default = {
 	author: "Graham Wakefield",
@@ -66,8 +75,6 @@ function generate(file) {
 			`<p class="codepen" data-height="520" data-default-tab="js,result" data-user="$1" data-slug-hash="$2" data-preview="true"><span><a href="https://codepen.io/$1/pen/$2">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>`)
 
 	}
-
-
 	
 	let toc = []
 	let renderer = new marked.Renderer();
@@ -75,7 +82,7 @@ function generate(file) {
 	renderer.heading = function(text, level, ...args) {
 		const html = heading(text, level, ...args)
 		const match = /id="(.+)"/gm.exec(html)
-		if (match && match.length > 1) {
+		if (match && match.length > 1 && level < 3) {
 			const id = match[1]
 			console.log(text, level, id)
 			toc.push({
@@ -105,7 +112,103 @@ function generate(file) {
 	return writename;
 }
 
-console.log("written:", fs.readdirSync(__dirname, "utf8").map(file=>path.parse(file)).filter(file=>file.ext==".md").map(generate))
+console.log("written:", fs.readdirSync(server_path, "utf8").map(file=>path.parse(file)).filter(file=>file.ext==".md").map(generate))
+
+// watch for file changes:
+fs.watch(server_path, (event, filename)=>{
+	console.log(event, filename)
+	let file = path.parse(filename)
+	if (file.ext == ".md") {
+		console.log("generating", file)
+		generate(file);
+		send_all_clients("reload")
+	}
+})
+
+// start a little server:
+
+const app = express();
+app.use(express.static(public_path))
+app.get('/', function(req, res) {
+	res.sendFile(path.join(public_path, 'index.html'));
+});
+
+//app.get('*', function(req, res) { console.log(req); });
+const server = http.createServer(app);
+// add a websocket service to the http server:
+const wss = new WebSocket.Server({ server });
+
+// send a (string) message to all connected clients:
+function send_all_clients(msg) {
+	wss.clients.forEach(client => {
+		try {
+			client.send(msg);
+		} catch (e) {
+			console.error(e);
+		};
+	});
+}
 
 
+// whenever a client connects to this websocket:
+wss.on('connection', function(ws, req) {
+	console.log("server received a connection");
+	console.log("server has "+wss.clients.size+" connected clients");
+	
+	const location = url.parse(req.url, true);
+	// You might use location.query.access_token to authenticate or share sessions
+	// or req.headers.cookie (see http://stackoverflow.com/a/16395220/151312)
+	
+	ws.on('error', function (e) {
+		if (e.message === "read ECONNRESET") {
+			// ignore this, client will still emit close event
+			console.error("websocket ECONNRESET: ", e.message);
+		} else {
+			console.error("websocket error: ", e.message);
+		}
+	});
 
+	// what to do if client disconnects?
+	ws.on('close', function(connection) {
+		console.log("connection closed");
+        console.log("server has "+wss.clients.size+" connected clients");
+	});
+	
+	// respond to any messages from the client:
+	ws.on('message', function(e, isBinary) {
+		if (isBinary) {
+			// get an arraybuffer from the message:
+			const ab = e.buffer.slice(e.byteOffset,e.byteOffset+e.byteLength);
+			console.log("received arraybuffer", ab);
+			// as float32s:
+			//console.log(new Float32Array(ab));
+		} else {
+			e = e.toString()
+			console.log("message", e)
+		}
+		// echo back:
+		ws.send(e);
+    });
+});
+
+const nets = networkInterfaces();
+const selfIPs = []
+const results = Object.create(null); // Or just '{}', an empty object
+for (const name of Object.keys(nets)) {
+    for (const net of nets[name]) {
+        // Skip over non-IPv4 and internal (i.e. 127.0.0.1) addresses
+        if (net.family === 'IPv4' && !net.internal) {
+            if (!results[name]) {
+                results[name] = [];
+            }
+            results[name].push(net.address);
+			selfIPs.push(net.address)
+        }
+    }
+}
+
+server.listen(PORT, "127.0.0.1", function() {
+	console.log(server.address())
+	//console.log(`server listening on http://${server.address().address}:${server.address().port}`);
+	console.log(`server listening on http://localhost:${server.address().port}`);
+});

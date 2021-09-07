@@ -29,7 +29,7 @@ Hero of Alexandria (c. 10 AD – c. 70) was a Greek mathematician and engineer w
 
 Among his literary works is "Automata", a description of machines which enable wonders in temples by mechanical or pneumatical means.
 
----image:img/The_Engine_(Gulliver).png
+---image:img/gulliver.png
 
 The Engine is a fictional device described in the 1726 satirical novel Gulliver's Travels by Jonathan Swift. It is possibly the earliest known reference to a device in any way resembling a modern computer. The Engine is a device that generates permutations of word sets.
 
