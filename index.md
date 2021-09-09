@@ -91,6 +91,8 @@ Every digital resource will be online at or linked from [this website](http://al
 -----
 ### Week 0
 
+
+
 [Automata](automata.html) - History, theory, implementation; programs as data
 
 Computational sketching
@@ -113,15 +115,18 @@ Maeda's courses challenged students to rethink the medium from its most basic el
 
 Let's start sketching.
 
+- The HTML5 trio: the HTML (DOM), CSS, and JavaScript
+- [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
+- What is an API? The MDN documentation.
+- 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
+
 Register for a free account on [codepen](https://codepen.io), and create your first sketch-study
 
-[Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
-
-2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
-
-**Make:** Mutate the code we build in class. Can you introduce randomness in a way that increases interest? What is an interesting random program?
+**Make:** Mutate [the code we build in class](https://codepen.io/grrrwaaa/pen/bGRgJMr?editors=0010). Can you bring in more behaviour that extends or mutates drawings using the space and time of the mouse, as Maeda indicated? Can you "create a parametric drawing that illustrates repetition, variety, or rhythm"? Or can you introduce randomness in a way that increases interest? (What is an interesting random program?)
 
 **Read:** [Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.]()
+
+**Zoom:** [Recording](https://yorku.zoom.us/rec/share/zhukln8wNMfNxuCWmIlkq_1eYK-xyE2Rj4mCFunVfSupf_GHnWfiujC6_OGkjNlg.m6glOo6NmWkc2Ud_)
 
 ### Self-Introduction
 
