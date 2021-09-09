@@ -105,8 +105,6 @@ Key insights:
   - the most **interesting** pixels on the screen are the mouse
   - the mouse represents not just **space** but also **time** -- use it
 
-One of Maeda's students -- [Golan Levin](http://www.flong.com) -- now professor at Carnegie Mellon University, and a key figure in the Art & Code community. His [Masters's thesis](http://www.flong.com/texts/publications/thesis/) focused specifically on the creation of audiovisual instruments, responding directly to Maeda's project. For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/report_yellowtail/).
-
 Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (and thence P5.js). 
 
 Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
@@ -123,6 +121,8 @@ Let's start sketching.
 Register for a free account on [codepen](https://codepen.io), and create your first sketch-study
 
 **Make:** Mutate [the code we build in class](https://codepen.io/grrrwaaa/pen/bGRgJMr?editors=0010). Can you bring in more behaviour that extends or mutates drawings using the space and time of the mouse, as Maeda indicated? Can you "create a parametric drawing that illustrates repetition, variety, or rhythm"? Or can you introduce randomness in a way that increases interest? (What is an interesting random program?)
+
+One of Maeda's students -- [Golan Levin](http://www.flong.com) -- now professor at Carnegie Mellon University, and a key figure in the Art & Code community. His [Masters's thesis](http://www.flong.com/texts/publications/thesis/) focused specifically on the creation of audiovisual instruments, responding directly to Maeda's project. For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/report_yellowtail/).
 
 **Read:** [Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.]()
 
