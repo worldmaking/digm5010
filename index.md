@@ -1,5 +1,5 @@
 
-# DIGM5010 Foundations of Digital Media
+# DIGM5010 is all about the Foundations of Digital Media
 
 **Instructor:** [Graham Wakefield](https://ampd.yorku.ca/profile/graham-wakefield/) grrrwaaa at york u dot ca
 
