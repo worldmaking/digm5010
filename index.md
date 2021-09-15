@@ -10,6 +10,8 @@
 
 [Zoom meeting](https://yorku.zoom.us/j/93423823634?pwd=NlI3NzVFaURidDNRa3h5ZllMREE4UT09)
 
+[Course information](course.html)
+
 <!--
 **Team:** [Microsoft Team here](https://teams.microsoft.com/l/team/19%3a100337fd7f524597bb019d9e088971a2%40thread.tacv2/conversations?groupId=7aec1ee8-8b98-481f-a503-0aa15267e985&tenantId=34531318-7011-4fd4-87f0-a43816c49bd0)
 
@@ -25,47 +27,6 @@ This means:
 
 *(Reading, writing, making!)*
 
-
-## Motivation
-
-The Digital Media graduate program's academic objectives include promotion of an interdisciplinary approach to computational art-making and technology development, providing students with 21st century “real-world” skills in tandem with research acumen. To work and conduct research in this area means skillfully bridging literacies in art, science and engineering practices. 
-
-The goals of *Foundations* are therefore:
-- to learn the essential technical and methodological skills of graduate-level research in areas of digital media and computational arts
-- to attain literacy in mathematical, theoretical, and computational bases as they intersect with world of digital art-making,
-- to develop deep understanding and a real feel for computation as a creative medium.
-- to be able to adequately place one's research within a larger network of relations and lineages, and be able to articulate its relevance and identify its values in context.
-
-
-Establishing these foundations is ultimately evaluated through the ability to understand and transfer published research in these fields into creative applications, recreating or mutating established research results, projects, or works to the specific interests of your research area(s). We will examine exemplary methods and projects in diverse practices of computational art, music, video games, information visualization, web-based media, responsive architecture, physical computing, etc., including the examination of landmark texts and projects in the history of digital media, computational arts and culture, addressing the continual overlap between artistic and scientific practices. 
-
-## Format
-
-Every digital resource will be online at or linked from [this website](http://alicelab.world/digm5010/). Keep it bookmarked!
-
-- Course meetings will include 
-  - lecture material, 
-  - discussion based on readings and related works, as well as 
-  - coding or other algorithmic reconstructions (we will introduce a variety of software and programming languages/interfaces), 
-  - sharing work, 
-  - and group discussion.
-- Whether in-person or remote, the instructor will always present via Zoom with sessions recorded and uploaded for asynchronous review as soon as possible. 
-  - *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the pandemic situation, and moreover allows some time to review any material that may have seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
-- You are expected to **make** in response, and to show what you have made both in class and by posting to an online journal. 
-
-
-## Evaluation
-
-- Your weekly practice-work, commentaries, and other activities as documented in the online journal will account for **40%** of the final grade. 
-- In addition, each of you will focus on a specific research topic (chosen in consultation of the instructor, ideally intersecting with one of the year's themes, <!--](pdf/DCA_theme_2020-2021.pdf))--> 
-- to develop a new project, whose goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. It implies a more significant project than the weekly practice work, but it could be a continuation of one of them.
-  - It will be grounded through an **extensive literature review** (**20%**),
-  - will demonstrate your foundational computational literacy and ability to understand and transfer research into creative applications (**20%**),
-  - and will be documented in **a research paper** with scholarly citations **suitable to submit to conferences or other appropriate venues** (**20%**).
-
-
-
-*Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
 
 
 -----
@@ -124,7 +85,7 @@ Register for a free account on [codepen](https://codepen.io), and create your fi
 
 One of Maeda's students -- [Golan Levin](http://www.flong.com) -- now professor at Carnegie Mellon University, and a key figure in the Art & Code community. His [Masters's thesis](http://www.flong.com/texts/publications/thesis/) focused specifically on the creation of audiovisual instruments, responding directly to Maeda's project. For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/report_yellowtail/).
 
-**Read:** [Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.]()
+**Read:** [Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
 
 **Zoom:** [Recording](https://yorku.zoom.us/rec/share/zhukln8wNMfNxuCWmIlkq_1eYK-xyE2Rj4mCFunVfSupf_GHnWfiujC6_OGkjNlg.m6glOo6NmWkc2Ud_)
 
@@ -142,13 +103,18 @@ Please add 2-4 slides to [The Google Slide deck here](https://docs.google.com/pr
 
 [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI)
 
+Sharing codepen sketches from last week
+
 [Vehicles](vehicles.html)
 
 Implementing Vehicles. Geometry, vectors, forces. 
 
-Register for a free account on [Github](https://github.com). Or, you can sign up for the free [Github education developer pack](https://education.github.com/pack) using your Yorku email address. Set up your online journal using Github markdown.
+**Do:** Register for a free account on [Github](https://github.com). Or, you can sign up for the free [Github education developer pack](https://education.github.com/pack) using your Yorku email address. Set up your online journal using Github markdown.
 
-Make: 
+**Make:**
+
+Extend / mutate the code we built in class. 
+
 ### Online Journal & Practice Studies
 
 You will create an online journal. If you set up a github repository, you can use the **wiki** feature as a very simple, markdown-flavoured online note taker; or simply create markdown files in the github repository itself. 
@@ -457,5 +423,3 @@ This step is not required, but this will help in the planning of the exhibition 
 - Any special technologies needed to present the work (video, audio, VR, AR, etc.)
 - Link to the materials
 -->
-
------

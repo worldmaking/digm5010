@@ -33,7 +33,7 @@ Walter's tortoises have inspired many great research products of the last centur
 
 > Cyberneticist Valentino Braitenberg argues that his extraordinarily simple mechanical vehicles manifest behaviors that appear identifiable as fear, aggression, love, foresight, and optimism. The vehicle idea was a thought experiment conceived to show that complex, apparently purposive behaviour did not need to depend on complex representations of the environment inside a creature or agents brain. In fact simply by reacting to the environment in a consistent manner was more than enough to explain the low level reactive behaviours exhibited by many animals.
 
-This book is quite short, but richly dense. There's a copy of Ch1-6 in our Teams Readings folder.
+This book is quite short, but richly dense. There's a copy of Ch1-6 in our Readings folder.
 
 ---
 
