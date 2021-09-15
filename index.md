@@ -35,7 +35,7 @@ This means:
 | Week                        | Topic | Due | Reading |
 | :--                         | :--   | :-- | :--     |
 | Sep 08: [Week 0](#week-0)   | [Automata](automata.html), [JavaScript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) | | [Braitenberg, Vehicles](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) |
-| Sep 15: [Week 1](#week-1)   | [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI), [Making Vehicles]([vehicles.html](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI)) | [Introduction slides](#self-introduction), Codepen Practice | [Papert, Seymour A. Mindstorms (Excerpts)](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI) |
+| Sep 15: [Week 1](#week-1)   | [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI), [Making Vehicles]([vehicles.html](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)) | [Introduction slides](#self-introduction), Codepen Practice | [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) |
 | Sep 22: [Week 2](#week-2)   | [Research](research.html), [From Vehicles to Mindstorms](vehicles.html) | [Practice (Journal)](#online-journal--practice-studies)  |
 | Sep 29: [Week 3](#week-3)   | Space | [Lit Review step 1](#literature-review-1)  |
 | Oct 06: [Week 4](#week-4)   | Sound | [Practice (Journal)](#online-journal--practice-studies)
@@ -105,13 +105,13 @@ Please add 2-4 slides to [The Google Slide deck here](https://docs.google.com/pr
 
 Sharing code sketches from last week. Curly paths.
 
-Implementing [Vehicles](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI). Geometry, vectors (see [canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes)), forces. 
+Implementing [Vehicles](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y). Geometry, vectors (see [canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes)), forces. 
 
 **Do:** Register for a free account on [Github](https://github.com). Or, you can sign up for the free [Github education developer pack](https://education.github.com/pack) using your Yorku email address. Set up your online journal using Github markdown.
 
 **Make:** Extend / mutate the code we built in class. 
 
-**Read:** [Papert, Seymour A. Mindstorms (Excerpts)](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI)
+**Read:** [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
 
 ### Online Journal & Practice Studies
 
