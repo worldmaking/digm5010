@@ -35,12 +35,12 @@ This means:
 | Week                        | Topic | Due | Reading |
 | :--                         | :--   | :-- | :--     |
 | Sep 08: [Week 0](#week-0)   | [Automata](automata.html), [JavaScript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) | | [Braitenberg, Vehicles](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) |
-| Sep 15: [Week 1](#week-1)   | [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI), [Vehicles](vehicles.html) | [Introduction slides](#self-introduction), Codepen Practice |
-| Sep 22: [Week 2](#week-2)   | [Research](research.html) | [Practice (Journal)](#online-journal--practice-studies)  |
-| Sep 29: [Week 3](#week-3)   | Space | [Lit Review step 1](#literature-review)  |
+| Sep 15: [Week 1](#week-1)   | [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI), [Making Vehicles]([vehicles.html](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI)) | [Introduction slides](#self-introduction), Codepen Practice | [Papert, Seymour A. Mindstorms (Excerpts)](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI) |
+| Sep 22: [Week 2](#week-2)   | [Research](research.html), [From Vehicles to Mindstorms](vehicles.html) | [Practice (Journal)](#online-journal--practice-studies)  |
+| Sep 29: [Week 3](#week-3)   | Space | [Lit Review step 1](#literature-review-1)  |
 | Oct 06: [Week 4](#week-4)   | Sound | [Practice (Journal)](#online-journal--practice-studies)
 | Oct 13: [Reading Week](#reading-week) | | (work on Lit Review step 2)  |
-| Oct 20: [Week 5](#week-5)   | Image | [Lit Review step 2](#literature-review) |
+| Oct 20: [Week 5](#week-5)   | Image | [Lit Review step 2](#literature-review-2) |
 | Oct 27: [Week 6](#week-6)   | Data | [Practice (Journal)](#online-journal--practice-studies)
 | Nov 03: [Week 7](#week-7)   | Space | [Paper-project abstract](assignments.html#final-paper) |
 | Nov 10: [Week 8](#week-8)   | Parallelism | [Video tutorial](assignments.html#video-tutorial) |
@@ -103,17 +103,15 @@ Please add 2-4 slides to [The Google Slide deck here](https://docs.google.com/pr
 
 [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI)
 
-Sharing codepen sketches from last week
+Sharing code sketches from last week. Curly paths.
 
-[Vehicles](vehicles.html)
-
-Implementing Vehicles. Geometry, vectors, forces. 
+Implementing [Vehicles](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI). Geometry, vectors (see [canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes)), forces. 
 
 **Do:** Register for a free account on [Github](https://github.com). Or, you can sign up for the free [Github education developer pack](https://education.github.com/pack) using your Yorku email address. Set up your online journal using Github markdown.
 
-**Make:**
+**Make:** Extend / mutate the code we built in class. 
 
-Extend / mutate the code we built in class. 
+**Read:** [Papert, Seymour A. Mindstorms (Excerpts)](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI)
 
 ### Online Journal & Practice Studies
 
@@ -128,13 +126,19 @@ As the course progresses, this journal will capture your progress in development
 -----
 ### Week 2
 
-### Literature Review
+Sharing code sketches from last week
+
+[What is research](research.html)?
+
+[From Vehicles to Mindstorms](vehicles.html)
+
+### Literature Review 1
 
 <!-- Consider this year's topic of "Predicting the Future". -->
 
 <!-- Consider this year's DCA curatorial themes of [**Invisibility :: Complexity :: Resistance :: Intentionality**](pdf/DCA_theme_2020-2021.pdf), responding to this time in pandemia. -->
 
-1. You will investigate a **topic** that ideally intersects this year's topic/theme with something of value to your own research goals. Good research always begins by seeking out key papers and other relevant research resources. 
+You will investigate a **topic** that ideally intersects this year's topic/theme with something of value to your own research goals. Good research always begins by seeking out key papers and other relevant research resources. 
   - Some investigative tips:
     - Use Wikipedia to identify **keywords or terms**, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellet network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.
     - Use these terms and publications in [Google Scholar](https://scholar.google.com/) and other academic search engines to find for papers that address the questions and issues. Follow `cited by` and `related articles` trails to find new leads. Aim to find the most significant (qualitatively & quantitatively) papers. You should be aiming for a collection of 25-50 potentially interesting papers on the topic at this point. 
@@ -147,7 +151,21 @@ As the course progresses, this journal will capture your progress in development
     - The keywords or search terms
     - The research question/problem statement/abstract
     - Your initial Reading List
-2. From this reading list, select 8-12 of them to study in more careful detail as you create an **Annotated Bibliography**. 
+
+
+
+-----
+### Week 3
+
+
+-----
+### Reading Week
+
+
+
+### Literature Review 2 
+
+From your reading list, select 8-12 of them to study in more careful detail as you create an **Annotated Bibliography**. 
   - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
   - Aim for diversity. Avoid using the same authors for the majority of the selection. Include distinct and opposing viewpoints if possible. 
   - Use primary sources where possible (in particular avoid blog posts, news articles, etc.), unless the secondary source adds a significant new idea (in which case you may want to cite both).
@@ -163,14 +181,6 @@ As the course progresses, this journal will capture your progress in development
 
 
 -----
-### Week 3
-
-
------
-### Reading Week
-
-
------
 ### Week 5
 
 
@@ -179,14 +189,10 @@ As the course progresses, this journal will capture your progress in development
 
 
 
-
+[Paper-project abstract](assignments.html#final-paper)
 
 -----
 ### Week 7
-
-
------
-### Week 8
 
 
 ### Video Tutorial
@@ -202,7 +208,12 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like Dan Shiffman or 3Blue1Brown do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
+-----
+### Week 8
 
+
+
+[Final paper](assignments.html#final-paper) [draft for review](assignments.html#peer-review)
 
 -----
 ### Week 9
