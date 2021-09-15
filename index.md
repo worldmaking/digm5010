@@ -106,7 +106,7 @@ Implementing [Vehicles](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-Ji
 
 **Do:** Register for a free account on [Github](https://github.com). Or, you can sign up for the free [Github education developer pack](https://education.github.com/pack) using your Yorku email address. Set up your online journal using Github markdown.
 
-**Make:** Extend / mutate the code we built in class. 
+**Make:** Extend / mutate [the code we built in class](https://codepen.io/grrrwaaa/pen/mdwqLqX?editors=0010) 
 
 **Read:** [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
 
