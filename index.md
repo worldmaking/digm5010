@@ -110,6 +110,8 @@ Implementing [Vehicles](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-Ji
 
 **Read:** [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
 
+**Zoom:** [Recording](https://yorku.zoom.us/rec/share/jlIIbibCktVGhuoXFmtrLO8jm0fQoF3Aw1Vs0iXyQSi7xc8QrEpIOgpeuu3abNxK.NGk1HC0078BpRVS4)
+
 ### Online Journal & Practice Studies
 
 You will create an online journal. If you set up a github repository, you can use the **wiki** feature as a very simple, markdown-flavoured online note taker; or simply create markdown files in the github repository itself. 
