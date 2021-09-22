@@ -41,16 +41,12 @@ Vehicles have also been constructed in hardware of course // see examples [here]
 
 ---
 
-### Practice! Make!
-
-First class script:
+### Past class scripts:
 
 ---codepen:https://codepen.io/grrrwaaa/pen/VwaOVdZ
 
-- Prompts! See if you can either 
-	- a) Extend our vehicles code into later models from the book
-	- b) Find a way to blend work from last week with the vehicles model
-
+- Prompt! See if you can extend our vehicles code into later models from the book. 
+  
 For example:
 
 ---codepen:https://codepen.io/grrrwaaa/pen/XWKrJoG
@@ -77,11 +73,12 @@ Extensions:
 
 ## Mindstorms (1980)
 
-Papert, Seymour A. Mindstorms: Children, Computers, and Powerful Ideas (2nd Edition). Basic books, 1993.
-
-> (The PDF is in our class files in Teams)
 
 ![logo](https://upload.wikimedia.org/wikipedia/commons/2/2c/Remi_turtlegrafik.png)
+
+#### Annotated bibliography notes:
+
+**Papert, Seymour A. Mindstorms: Children, Computers, and Powerful Ideas (2nd Edition). Basic books, 1993.**
 
 Seymour Papert was a psychologist and mathematician, and education theorist, deeply inspired by Jean Piaget's influential research into how children learn. **Mindstorms** is the book that started the computer revolution in schools, pioneering the invention of creative ways to learn through computing. 
 
@@ -108,7 +105,6 @@ Seymour Papert was a psychologist and mathematician, and education theorist, dee
 - **Child as builder**: builder needs materials; art of making good materials in the world around the builder
 - Starts with **Turtle** as object-to-think-with. The child "talks" to the turtle by giving instructions, which the turtle interprets from its own perspective, to move around, sometimes drawing lines, or making sounds, etc.
 
-
 - Sympathetic reasoning: To understand how to draw a square, you walk the square yourself, talking "TURTLE TALK" to figure out what to do. It also draws on well-established "body geometry" and other embodied cognition.
 - Turtles can be on-screen, or physical; they can get quite advanced. Children are learning to program, and learning mathematics, without being taught.
 - Introduces concept of "**microworlds**", such as the simple mathland of the Turtle. A place where a certain kind of knowledge can grow with ease, because of the basic materials that are ready-to-hand. 
@@ -116,9 +112,10 @@ Seymour Papert was a psychologist and mathematician, and education theorist, dee
 	- Another example microworld that can teach Newtonian physics, begins not with forces, but with "dynaturtles" that are always moving, talking when they meet.
 	- Soon students are thinking about what to add to a turtle-nature, what to add to a world-nature.
 
-[Logo in the browser](http://logo.twentygototen.org)
+Related links:
 
-[An archive from Byte magazine, 1982](https://archive.org/stream/byte-magazine-1982-08/1982_08_BYTE_07-08_Logo#page/n0/mode/2up)
+- [Logo in the browser](http://logo.twentygototen.org)
+- [An archive from Byte magazine, 1982](https://archive.org/stream/byte-magazine-1982-08/1982_08_BYTE_07-08_Logo#page/n0/mode/2up)
 
 ### Interpreters
 
@@ -137,16 +134,16 @@ Recall the notion of "tapes" and "machines" from our first lecture:
 ### Practice! Make!
 
 - Perhaps we can build a turtle-language interpreter? (And vice-versa: generator. Value of bidirectional translations!)
-  - Perhaps it can produce 'marks' as we did with [Yellowtail](sketches.html) -- maybe start from our [edgebounce variant](https://codepen.io/grrrwaaa/pen/GRZBjrr)
+  - Perhaps it can produce multiple 'marks' as we did with our first drawing program?
     - (and vice versa: perhaps we can "draw" to generate turtle-language)?
     - I.e.: a string of turtlang <=> a list of "lines"?
-  - Perhaps it can produce 'forces' or 'senses' as we did with [Vehicles](vehicles.html)
+  - Perhaps it can produce 'forces' or 'senses' as we do with [Vehicles](vehicles.html)
     - (and vice versa: perhaps vehicles can generate turtle-language)?
   - Can we explore Papert's suggestion "if one turtle can give another turtle instructions" ?
     - Could this be a form of communication? Viral infection?
 
 - What are the primitives of our microworld? What is the basic "instruction set"?
-  - Delta coding (recall delta coding from our [notes on git](gitnotes.html)): 
+  - Delta coding (encoding *relative changes*): 
     - Forward, turn, scale? 
       - Could using [matrix representations](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) to make the language more generic?
 	- Pen up/down?

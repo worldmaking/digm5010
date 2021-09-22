@@ -125,11 +125,13 @@ As the course progresses, this journal will capture your progress in development
 -----
 ### Week 2
 
-Sharing code sketches from last week
-
 [What is research](research.html)?
 
+Research step 1: survey the field / [literature review](#literature-review-1)
+
 [From Vehicles to Mindstorms](vehicles.html)
+
+Sharing code sketches (drawing, vehicles)
 
 ### Literature Review 1
 
