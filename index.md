@@ -133,6 +133,10 @@ Research step 1: survey the field / [literature review](#literature-review-1)
 
 Sharing code sketches (drawing, vehicles)
 
+[**Zoom recording**](https://yorku.zoom.us/rec/share/DPZrN3q7kWcU6weYwy_n_qQxBMh2s_ck-SRUeEgJTbGsB4kGydGFQSH1C3uZ9ZXv.Uy0rj9H84_W1jUAu) 
+
+Please remember to **email me** with a link to your online journal, including the sketches and notes taken so far, and your literature review/reading list as you develop it!
+
 ### Literature Review 1
 
 <!-- Consider this year's topic of "Predicting the Future". -->
