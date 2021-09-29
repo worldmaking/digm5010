@@ -34,7 +34,7 @@ This means:
 | Sep 08: [Week 0](#week-0)   | [Automata](automata.html), [JavaScript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) | | [Braitenberg, Vehicles](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) |
 | Sep 15: [Week 1](#week-1)   | [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI), [Making Vehicles]([vehicles.html](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)) | [Introduction slides](#self-introduction), Codepen Practice | [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) |
 | Sep 22: [Week 2](#week-2)   | [Research](research.html), [From Vehicles to Mindstorms](vehicles.html) | [Practice (Journal)](#online-journal--practice-studies)  |
-| Sep 29: [Week 3](#week-3)   | Space | [Lit Review step 1](#literature-review-1)  |
+| Sep 29: [Week 3](#week-3)   | Practice! | [Lit Review step 1](#literature-review-1)  |
 | Oct 06: [Week 4](#week-4)   | Sound | [Practice (Journal)](#online-journal--practice-studies)
 | Oct 13: [Reading Week](#reading-week) | | (work on Lit Review step 2)  |
 | Oct 20: [Week 5](#week-5)   | Image | [Lit Review step 2](#literature-review-2) |
