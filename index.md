@@ -139,11 +139,7 @@ Please remember to **email me** with a link to your online journal, including th
 
 ### Literature Review 1
 
-<!-- Consider this year's topic of "Predicting the Future". -->
-
-<!-- Consider this year's DCA curatorial themes of [**Invisibility :: Complexity :: Resistance :: Intentionality**](pdf/DCA_theme_2020-2021.pdf), responding to this time in pandemia. -->
-
-You will investigate a **topic** that ideally intersects this year's topic/theme with something of value to your own research goals. Good research always begins by seeking out key papers and other relevant research resources. 
+You will investigate a **topic** that ideally intersects this year's topic/theme (AI) with something of value to your own research goals. Good research always begins by seeking out key papers and other relevant research resources. 
   - Some investigative tips:
     - Use Wikipedia to identify **keywords or terms**, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellet network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.
     - Use these terms and publications in [Google Scholar](https://scholar.google.com/) and other academic search engines to find for papers that address the questions and issues. Follow `cited by` and `related articles` trails to find new leads. Aim to find the most significant (qualitatively & quantitatively) papers. You should be aiming for a collection of 25-50 potentially interesting papers on the topic at this point. 
@@ -162,6 +158,21 @@ You will investigate a **topic** that ideally intersects this year's topic/theme
 -----
 ### Week 3
 
+Practice / Review
+
+Places to look:
+- [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+- [Desmos](https://www.desmos.com/calculator) is a quick online grapher
+- [Math as code](https://github.com/Jam3/math-as-code) -- how to translate between math notation and JS code
+- [Explorable Explanations](https://explorabl.es) -- far more than math! 
+
+[Microworlds](vehicles.html)
+
+**Homework**: choose an Explorable Explanation that relates to your research topic. For practice, try to reconstruct part of the explorable system!
+
+-----
+
+### Week 4
 
 -----
 ### Reading Week
