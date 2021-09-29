@@ -167,7 +167,9 @@ Places to look:
 - [Math as code](https://github.com/Jam3/math-as-code) -- how to translate between math notation and JS code
 - [Explorable Explanations](https://explorabl.es) -- far more than math! 
 
-[Microworlds](vehicles.html)
+[Microworlds](vehicles.html) - [Turtle talk](https://codepen.io/grrrwaaa/pen/KKqJGQK?editors=0010)
+
+[**Zoom recording**](https://yorku.zoom.us/rec/share/ARbKcbdmZykOw61DZ12Uq5W2ALgRpQN8Vso22emu57jmsf4Sfmwp1x0cCra6S_Si.JVycVe4Oy80CPDRk) 
 
 **Homework**: choose an Explorable Explanation that relates to your research topic. For practice, try to reconstruct part of the explorable system!
 
