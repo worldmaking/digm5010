@@ -153,7 +153,8 @@ You will investigate a **topic** that ideally intersects this year's topic/theme
     - The research question/problem statement/abstract
     - Your initial Reading List
 
-
+- [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
+- [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
 -----
 ### Week 3
