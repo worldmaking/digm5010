@@ -35,12 +35,12 @@ This means:
 | Sep 15: [Week 1](#week-1)   | [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI), [Making Vehicles]([vehicles.html](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)) | [Introduction slides](#self-introduction), Codepen Practice | [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) |
 | Sep 22: [Week 2](#week-2)   | [Research](research.html), [From Vehicles to Mindstorms](vehicles.html) | [Practice (Journal)](#online-journal--practice-studies)  |
 | Sep 29: [Week 3](#week-3)   | Practice/Review | [Lit Review step 1](#literature-review-1)  |
-| Oct 06: [Week 4](#week-4)   | Sound | [Practice (Journal)](#online-journal--practice-studies)
+| Oct 06: [Week 4](#week-4)   | Annotated Bibliographies | [Practice (Journal)](#online-journal--practice-studies):    [Explorable Explanations](https://explorabl.es)
 | Oct 13: [Reading Week](#reading-week) | | (work on Lit Review step 2)  |
 | Oct 20: [Week 5](#week-5)   | Image | [Lit Review step 2](#literature-review-2) |
 | Oct 27: [Week 6](#week-6)   | Data | [Practice (Journal)](#online-journal--practice-studies)
 | Nov 03: [Week 7](#week-7)   | Space | [Paper-project abstract](assignments.html#final-paper) |
-| Nov 10: [Week 8](#week-8)   | Parallelism | [Video tutorial](assignments.html#video-tutorial) |
+| Nov 10: [Week 8](#week-8)   | Sound | [Video tutorial](assignments.html#video-tutorial) |
 | Nov 17: [Week 9](#week-9)   | Language | [Final paper](assignments.html#final-paper) [draft for review](assignments.html#peer-review) |
 | Nov 24: [Week 10](#week-10) | Sentience | [Peer review](assignments.html#peer-review)  |
 | Dec 01: [Week 11](#week-11) | | Presentation |
@@ -177,27 +177,52 @@ Places to look:
 
 ### Week 4
 
------
-### Reading Week
+- Sharing Explorable Explanations!
+  - [My fireflies](https://codepen.io/grrrwaaa/pen/rNwXydw?editors=0010)
 
+<!--
+
+git?
+node.js?
+data?
+space?
+time?
+
+-->
 
 
 ### Literature Review 2 
 
-From your reading list, select 8-12 of them to study in more careful detail as you create an **Annotated Bibliography**. 
+- From your reading list, select at least 8 of them to study in more careful detail as you create an **Annotated Bibliography**. 
   - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
   - Aim for diversity. Avoid using the same authors for the majority of the selection. Include distinct and opposing viewpoints if possible. 
   - Use primary sources where possible (in particular avoid blog posts, news articles, etc.), unless the secondary source adds a significant new idea (in which case you may want to cite both).
   - Not everything has to be an academic paper, but ensure that at least 75% of your references are academic publications (conference articles, journal articles, etc.). 
-  - See [York SPARK's guide to annotated bibliographies here](https://spark.library.yorku.ca/wp-content/themes/glendonits-spark-20151125/resources/Annotated%20Bibliography%20Overview.pdf). The annotation for each paper would be 100-400 words, making around 2500 words total.
-  - Post the results into your journal:
-    - The specific topic title or
-    - The keywords or search terms
-    - The research question/problem statement/abstract
-    - Your initial Reading List
-    - Your final Annotated Bibliography
-    - Any commentary on observations you found while researching the topic that are not specific to the papers -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
+- Once your list is shortened, perform a deep read of each one, taking notes as you go. The annotation for each paper could typically be 200-500 words. 
+  - I recommend highlighting PDFs but taking notes in a separate plain text document. 
+  - Don't note everything, focus on what the key points are to get a condensed overview of the whole paper. (A well-written paper makes one main point per paragraph, and not all points are significant.)
+    - Distinguish clearly between 
+      - what is a summary of the paper, 
+      - what is a quotation from the paper (use quotation marks), 
+      - and what is your own thought in response (you could use (parentheses) or [square brackets] to indicate these). 
+    - Note page numbers in the text document as you take notes. 
+  - See [York SPARK's guide to annotated bibliographies here](https://spark.library.yorku.ca/wp-content/themes/glendonits-spark-20151125/resources/Annotated%20Bibliography%20Overview.pdf). 
+  - However, unlike the format and examples in that guide, I support and encourage bullet-point style summaries.
+  - I also encourage you to copy out any specific quotations that you find significant, inspiring, or which neatly summarize the authors' points. 
+- After deep note-taking on each paper, read them again with your notes, and correct any mistakes or misunderstandings, amend your analyses, and note any new thoughts. This is your **annotation** for each paper. 
+- Post the results into your journal:
+  - The specific topic title or
+  - The keywords or search terms
+  - The research question/problem statement/abstract
+  - Your initial Reading List
+  - Your final Annotated Bibliography
+  - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
 
+For example, [here's](http://localhost:8080/vehicles.html#annotated-notes) my own annotated bibliography notes on Seymour Papert's Mindstorms.
+
+### Reading Week
+
+Work on your annotated bibliography and your project!
 
 -----
 ### Week 5
@@ -345,25 +370,8 @@ As a structure, we will base our [review form](https://forms.gle/g8iFMz5Aw9pfqfF
    - Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.
    - [Rodney Brooks. "What is it like to be a robot". Online: https://rodneybrooks.com/what-is-it-like-to-be-a-robot/ March, 2017](https://rodneybrooks.com/what-is-it-like-to-be-a-robot/)
 
-#### Week 3
-- Topic: **Space & Simulation I**
- - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
- - [Vehicles](vehicles.html)
-<!--  - [Codepen script of Vehicles from the class](https://codepen.io/grrrwaaa/pen/VwaOVdZ?editors=0010) 
-- Action items for next week: 
- - Post a sketch-study, expanding upon the Vehicles code and concepts!
 
 #### Week 4
-- Tips & math help:
- - [Math as code](https://github.com/Jam3/math-as-code) -- how to translate between math notation and JS code
- - [Desmos](https://www.desmos.com/calculator) is a quick online grapher
- - [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) -- e.g. "essence of linear algebra"
- - [Better Explained](https://www.youtube.com/user/betterexplained/videos)
-- Sharing: 
- - Literature Review/Annotated Bibliography progress
-<!--    - Forks of [Vehicles](vehicles.html) - Thanks [Zian](https://codepen.io/zian-liu/pen/vYGoeZe?editors=0010), [Kavi](https://codepen.io/Ka-Vi/pen/Yzqbgmy?editors=0010)! 
-- Topic: **Sentience I: Sharing, Adaptation, Learning**. 
- - [Mindstorms](vehicles.html#mindstorms-1980)
 - Action items for next week: 
  - [Post step 3 of the Literature Review assignment](assignments.html).
  - Preparing for practice: make your own "microworld" playground/interpreter, following the prompt [here](vehicles.html#mindstorms-1980) 
@@ -428,28 +436,3 @@ As a structure, we will base our [review form](https://forms.gle/g8iFMz5Aw9pfqfF
 - Action items for next week: 
 - **Due Dec 10:** [Final online paper](assignments.html). 
 <!-- - Deadline Dec 9 to submit work for Digital Media exhibition 
-
-<!--
-### 2020 Digital Media Curatorial Theme
-
-[-:: Invisibility :: Complexity :: Resistance :: Intentionality ::-](pdf/DCA_theme_2020-2021.pdf))
-
-We are seeking work that responds to the theme Invisibility, Complexity, Resistance, Intentionality (see below) for an online exhibition of works to be presented during the week of December 14th, 2020. Works can be works you created in the past, or are planning to have completed by the end of the term. It is okay if they have been exhibited in the past already. We are open to proposals that challenge the online medium as a format for presentation and encourage alternative ways of viewing, including AR, VR, interactive, or unconventional presentations of work. 
-
-Submission process:
-
-1. Expression of Interest, we request an expression of interest be sent to the Department of Computational Arts chair by November 25th. The expression of interest should include:
-- Working title
-- Name(s)
-- A one paragraph description of the work
-- Any special technologies needed to present the work (video, audio, VR, AR, etc.)
-
-This step is not required, but this will help in the planning of the exhibition and facilitation of your work, and will greatly increase your chances of having the work shown.
-
-2. Deadline to Submit work - December 9th (hard deadline) to Department of Computational Arts chair. This should be an updated and finalized version of the expression of interest:
-- Title
-- Name(s)
-- A one paragraph description of the work
-- Any special technologies needed to present the work (video, audio, VR, AR, etc.)
-- Link to the materials
--->

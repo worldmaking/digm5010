@@ -76,7 +76,7 @@ Extensions:
 
 ![logo](https://upload.wikimedia.org/wikipedia/commons/2/2c/Remi_turtlegrafik.png)
 
-#### Annotated bibliography notes:
+#### Annotated notes
 
 **Papert, Seymour A. Mindstorms: Children, Computers, and Powerful Ideas (2nd Edition). Basic books, 1993.**
 
@@ -116,6 +116,8 @@ Related links:
 
 - [Logo in the browser](http://logo.twentygototen.org)
 - [An archive from Byte magazine, 1982](https://archive.org/stream/byte-magazine-1982-08/1982_08_BYTE_07-08_Logo#page/n0/mode/2up)
+
+[An excellent explorable explanation by computing pioneer Alan Kay, from turtles to mindstorms and beyond](https://tinlizzie.org/tinkertoy/)
 
 ### Interpreters
 
