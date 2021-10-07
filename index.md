@@ -180,6 +180,8 @@ Places to look:
 - Sharing Explorable Explanations!
   - [My fireflies](https://codepen.io/grrrwaaa/pen/rNwXydw?editors=0010)
 
+**[Zoom Recording](https://yorku.zoom.us/rec/share/LGURDi70u4a3U4q7ri7IUg89xNPcf5MP00LQ3d4PbGvq7L4mOBSR8-4WGYtpt54Z.Xi-Dv-jrUnppTFkk)*
+
 <!--
 
 git?
