@@ -220,7 +220,7 @@ time?
   - Your final Annotated Bibliography
   - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
 
-For example, [here's](http://localhost:8080/vehicles.html#annotated-notes) my own annotated bibliography notes on Seymour Papert's Mindstorms.
+For example, [here's](https://alicelab.world/digm5010/vehicles.html#annotated-notes) my own annotated bibliography notes on Seymour Papert's Mindstorms.
 
 ### Reading Week
 
