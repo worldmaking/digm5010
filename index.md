@@ -229,6 +229,8 @@ Work on your annotated bibliography and your project!
 -----
 ### Week 5
 
+- News: [AI:Talks series in Digital Media](ai_talks.pdf)
+
 ![Markov](https://upload.wikimedia.org/wikipedia/commons/2/2b/Markovkate_01.svg)
 
 - The question at the heart of an automoton: "what to do next?"
