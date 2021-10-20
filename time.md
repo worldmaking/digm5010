@@ -28,7 +28,7 @@ We don't really know how time works. Physics tells us that time is not *continuo
 
 A spatial metaphor of time forms a line from past to future. The line could be **ordinal** (a sequence or list, such as the script for a play) or **metric**, in which ecah event has a numeric position and/or each duration has a measurable length, with respect to some measure or clock. This clock is not necessarily 'real time'. 
 
-**Finite linear time** has a definite beginning (zero time) and end; **infinite linear time** has no definite beginning or end. For example, a pre-recorded DVD encodes finite linear time, while the real-time video stream from a CCTV camera has no definite end. 
+**Finite linear time** has a definite beginning (zero time) and end; **infinite linear time** has no definite beginning or end, it just keeps coming. For example, a pre-recorded DVD encodes finite linear time, while the real-time video stream from a CCTV camera has no definite end. 
 
 **Cyclic** or circular time represents a period that repeats; such as a clock. Within this period, time seems finite. The inverse of the period is the frequency (rate of repetition), with respect to another period/rate. Linear and cyclic time can be combined by representation as a spiral, such as a calendar. Linearizing time suggests the ability to navigate around it: rewind, fast-forward, skipping, scrubbing, scratching.
 
@@ -42,19 +42,25 @@ Considering time as a line "spatializes" it, giving a perspective from outside i
 
 A complemenatary view to time as a line is the view of time as a **set of nested durations of presence**, of which the shortest possible duration is the infinitessmial point of the passing present. Longer durations represent the degrees to which the past endures into the future, as a nested set of widening 'windows' of unity. If I act upon a memory, I effectively persist that memory into a newly made future; in effect, the past of that memory is co-present. 
 
+Another view of time, perhaps we can call it **interactive**, is the eternal recurrence of the question: 'what happens next?'
+
 
 ## Static and dynamic (unity and change)
 
-Perhaps a simpler distinction we can make separates that which changes from that which does not. Time-based arts (music, film, etc.) can be broken down into "vertical" and "horizontal" structures. Similarly computations can be broken down into the unchanging "static" and variable "dynamic" components. These can be relative divisions; a 'scene' in a film is a relative constant with respect to the frame, but ephemeral (dynamic) with respect to an act. Similarly, a variable may endure for the shortest for loop iteration, or may persist over the entire program's lifetime.
+A simpler distinction we can make separates that which changes from that which does not. Time-based arts (music, film, etc.) can be broken down into "vertical" and "horizontal" structures. The **vertical** structure provides unity: that which remains relatively constant throughout, and thus encompasses the qualities of the whole. Since it influences all parts, vertical structure is often largely outlined in early stages of a work. **Horizontal** structure refers to the temporal form of change: difference, movement, events, repetitions, expectations, surprises, resolutions. 
 
-**Vertical**: The vertical structure provides unity: that which remains relatively constant throughout, and thus encompasses the qualities of the whole. Since it influences all parts, vertical structure is often largely outlined in early stages of a work.
+Similarly computations can be broken down into the unchanging **static** and variable **dynamic** components. The rules of a programming *language* are usually **static**: they are not expected to change during the run-time of the program. On the other hand, the flow of control is partly determined as a program runs, and values in memory can change ("variables") or be allocated and freed as it goes; these are examples of **dynamic** components. 
+
+These can be relative divisions; a 'scene' in a film is a relative constant with respect to the frame, but ephemeral (dynamic) with respect to an act. Similarly, a variable may endure for the shortest for loop iteration, or may persist over the entire program's lifetime.
+
+**Vertical**:
 
 - Medum, macroform, frame, style
 - Materials, technologies, techniques, constraints, rules
 - Composed by associative, metaphorical, normative and hierarchical relations
 - Semantics, intentions. Vertical elements of unity may be chosen to best convey the idea, feel, atmosphere, message; or as an experiment to liberate new creativity.
 
-**Horizontal** structure refers to the temporal form of change: difference, movement, events, repetitions, expectations, surprises, resolutions.
+**Horizontal**:
 
 - Progressions: beginning as one thing and becoming another.
 - Also reflections, recollections, repetitions.
@@ -66,7 +72,7 @@ Perhaps a simpler distinction we can make separates that which changes from that
 - Effects, causes, intentions, story, destiny, chance.
 - The subtle energies of dynamic equilibria, homeostatic identity, excitable but quiescent media
 
-Eisenstein believed that “art is always conflict”, the opposition of forces that motivates and shapes action. The opposed forces are dissonance/consonance or tension/release; expectations and their satisfactions or frustrations. But in art the distinctions between horizontal and vertical, and between constrast and affinity, need not be hard and fast. Principles of unity in a work may be guidelines fit to be broken when needed, or a work may pass through phases of different unities or even thread multiple unities into a larger dynamic whole.
+<!-- Eisenstein believed that “art is always conflict”, the opposition of forces that motivates and shapes action. The opposed forces are dissonance/consonance or tension/release; expectations and their satisfactions or frustrations. But in art the distinctions between horizontal and vertical, and between constrast and affinity, need not be hard and fast. Principles of unity in a work may be guidelines fit to be broken when needed, or a work may pass through phases of different unities or even thread multiple unities into a larger dynamic whole. 
 
 ### Static and dynamic components in computing
 
@@ -97,7 +103,6 @@ setInterval(fun, period)
 requestAnimationFrame(fun)
 ```
 
-
 Consider how these could be combined with the various kinds of control flow we encountered in the first lecture:
 
 1. Halt / exit
@@ -108,13 +113,17 @@ Consider how these could be combined with the various kinds of control flow we e
 6. Parallelism: interrupts / Signals / Multi-threading
 7. Dynamic code (linking, plugins, eval)
 
+-->
+
+## Time waits for no machine
+
 ![error](img/error.png)
 
-Unfortunately, for multimedia, the practical constraints of **real-time** are unavoidable; this is especially sensitive for audio signal processing. To be **timely**, an operation must produce results in less time than the playback of the results requires. Any failure to do so results in a break in the output. Time waits for no machine.
+Unfortunately, for multimedia, the practical constraints of **real-time** are unavoidable; this is especially sensitive for audio signal processing. To be **timely**, an operation must produce results in less time than the playback of the results requires. Any failure to do so results in a break in the output. 
 
-The amount of time it takes for an input event to pass through the computing system and cause experienceable output is the **latency**. Interactive software requires low latency (small fractions of a second) to feel natural. VR and musical applications can require especially low latencies of 10ms or less. 
+The amount of time it takes for an input event to pass through the computing system and cause experienceable output is the **latency**. Interactive software requires low latency (small fractions of a second) to feel natural. VR and musical applications can require especially low latencies of 5ms or less. 
 
-In the conventional view, software development occurs before and after a program runs, that is, outside of **run-time**. But with server programming, in-app scripting, shell scripting, in-game development, live coding etc. this assumption breaks down. The computer music community has been especially active in elevating time to a first-class citizen in programming. 
+In the conventional view, software development occurs before and after a program runs, that is, outside of **run-time**. But with server programming, in-app scripting, shell scripting, in-game development, live coding etc. this assumption breaks down. The computer music community has been especially active in elevating time to a first-class citizen in programming, through the performance practices of **live coding**. 
 
 Further discussion here:
 
@@ -124,7 +133,9 @@ Further discussion here:
 
 ## Articulations of sonic time
 
+<!--
 We have lived in a visually-dominated culture over the last century; it is therefore worthwhile looking at non-visual trajectories for alternate perspectives. For example, how the articulation of sound, particularly music, illuminates the capacities and problematics of time. 
+-->
 
 Technology has been integral to music history, from luthiers (instrument builders) to composers (techniques) to archives (notational systems) to auditoria (acoustic architecture) to automation (piano rolls) etc. Sound in digital computational media inherited two principal pre-histories, both of which emerged in large part from a musical tradition that was expanding its scope from limited scale systems through serialism and futurism to encompass "any sound whatsoever":
 
@@ -133,7 +144,7 @@ Technology has been integral to music history, from luthiers (instrument builder
 	- that is, time-series data, captured from the real world and re-structured
 		- speed changes, reversing, fading, mixing & layering, echo delays and tape loops, re-processing through rooms and springs, etc.
 - Electronic
-	- construction of sound from analog circuits of resistors, capacitors, transistors etc.
+	- construction of raw sound from analog circuits of resistors, capacitors, transistors etc.
 	- that is, systems amenable to mathematical modeling and precise articulation
 		- oscillators, filters, envelopes, etc.
 		- some research in this area tended toward attempts to replicate realistic sounds of instruments and voices; other research explicitly sought sounds previously unknown
@@ -142,15 +153,15 @@ Technology has been integral to music history, from luthiers (instrument builder
 
 Composers of the time also began to see all musical parameters as articulations of time at different scales, from macro-structures of an entire composition down to the microstructures of an individual sound event's timbre. 
 
-With the advent of computers it became possible to store and replay sound as a discrete sequence of digitally-encoded numbers that reconstruct the undulations of the pressure waves of sound. This promised a kind of unification of the electronic and electroacoustic spaces, since stored data can be both manipulated extensively (electroacoustic) and generated algorithmically (electronic). That is, the ability to represent sound as data allowed the complete exploration of "any sound whatsoever" to numeric, algorithmic analysis. Composers such as Iannis Xenakis and Herbert Brun attempted to build algorithms that would specify works from individual samples up, disovering entire new realms of noise. 
+## Digital representation of sound
 
-## Recording and playback
-
+<!--
 Sound recording/playback technology requires a mechanism to transform the ephemeral undulations of sound pressure (what we can hear) into a persistent recording medium, such as hardened wax, and another mechanism to the transcribe this record back into waves of sound pressure. In the phonograph (below), introduced in 1877, vibrations cause patterns to be etched into a rotating cylinder. 
 
 ![phonograph](http://upload.wikimedia.org/wikipedia/commons/a/a0/EdisonPhonograph.jpg)
+ The modern record player adds an electronic amplifier to drive the movements of a loudspeaker cone, but otherwise follows the same princple. --> 
 
-The modern record player adds an electronic amplifier to drive the movements of a loudspeaker cone, but otherwise follows the same princple. Here are vinyl record grooves under an electron microscope:
+Here are vinyl record grooves under an electron microscope:
 
 ![http://www.synthgear.com/2010/audio-gear/record-grooves-electron-microscope/](https://thevinylfactory.com/wp-content/uploads/2014/10/LongwaysViewElectronMicroscopeImageOfVinlyRecordGroove1-660x400.jpg)
 
@@ -160,9 +171,13 @@ These grooves are smooth and continuous, since records are an **analog** represe
 
 At the simplest level, sounds are represented digitally as **a discrete sequence of (binary encoded) numbers**, representing a time series of quantized amplitude values that relate to the variations of compression an expansion in the air pressure waves we hear as sound. 
 
+The advent of digital computers promised a kind of unification of the electronic and electroacoustic spaces, since data as a sequence of numbers can be both manipulated as memory (electroacoustic) and generated algorithmically (electronic). That is, the ability to represent sound as data allowed the complete exploration of "any sound whatsoever" to numeric, algorithmic analysis. Composers such as Iannis Xenakis and Herbert Brun attempted to build algorithms that would specify works from individual samples up, disovering entire new realms of noise. 
+
 ## Sampling
 
-This is bound by the sampling theorem and other aspects of [information theory](http://en.wikipedia.org/wiki/Information_theory), just like any other digital representation. Although we can represent continuous *functions* in the computer (e.g. by name, as in `Math.sin`), we cannot accurately represent continuous signals they produce, as they would require infinite memory. Instead we **sample** a function, such as a sound being recorded, so rapidly that we produce a series of values that seem perceptually continuous. Digitized audio a discrete-time, discrete-level signal of an electrical signal. Samples are quantized to a specific bit depth and encoded in series at a specific rate, called the **sampling rate**. 
+<!-- This is bound by the sampling theorem and other aspects of [information theory](http://en.wikipedia.org/wiki/Information_theory), just like any other digital representation. -->
+
+Although we can represent continuous *functions* in the computer (e.g. by name, as in `Math.sin`), we cannot accurately represent continuous signals they produce, as they would require infinite memory. Instead we **sample** a function, such as a sound being recorded, so rapidly, that we produce a series of values that seem perceptually continuous. Digitized audio a discrete-time, discrete-level signal of an electrical signal. Samples are quantized to a specific bit depth and encoded in series at a specific rate, called the **sampling rate**. 
 
 ![Sampling](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Analog_digital_series.svg/220px-Analog_digital_series.svg.png)
 
@@ -186,6 +201,7 @@ In units:
 
 *Image taken from **Roads, Curtis. Microsound. MIT press, 2004.*** 
 
+<!-- 
 - The sun's traversal of the Earth's sky has a period of 1 day (approximately 93,600 seconds), which is 0.00001068376 cycles per second (Hz). Long periods imply low frequencies.
 - Echoic memory can persist up to a few seconds (demonstration with noise loops). 
 - The heart beats around 60-100 times a minute (bpm). This also happens to be the typical range of frequencies for musical meter. 60bpm is a frequency of 1 cycle per second (1Hz).
@@ -197,30 +213,31 @@ In units:
 - What we perceive as timbre, or sound color, consists mostly of frequencies above 100Hz well into the thousands of Hz (kHz). For example, we distinguish between different vowel sounds according to proportions of frequencies (called formants) in the range of 240 to 2500 Hz. A high hat cymbal is largely made of a complexity of much higher frequencies.
 - Human auditory perception begins to trail off above 10000 - 20000 Hz (10 - 20kHz), depending greatly on age. Sounds above these frequencies are audible to many other species. A high frequency of 20kHz implies a cyclic duration of just 0.00005 seconds. High frequencies imply short durations.
 - Standard audio CDs are encoded at a sampling rate of 44100Hz, which means a frequency of 44100 samples per second. That implies they can represent frequencies of up to 22050Hz, close to the limit of human perception. Web audio processing today is also usually sampled at 44100Hz.
+-->
 
 The fact that the whole gamut of musical phenomena, from an entire composition of movements, to meter and rhythm, to pitch and finally sound color can be described by a single continuum of time has been noted by composers such as Charles Ives, Henry Cowell, Iannis Xenakis and Karlheinz Stockhausen.
-
-
 
 ----
 
 ## The Great Computer Music Problem
 
-Many of the early electronic and computer music composers, including Xenakis and Stockhausen, were attracted to the medium for the apparently unlimited range of possible timbres it could produce. Rather than being limited to the sounds we can coerce physical objects to emanate, we have the entire spectrum available, every possible variation of placing sample values in a sequence, without limitation. In addition to the potential to find [the new sound](http://www.youtube.com/watch?v=pQLlR4pvhyg), the computer was also attractive to composers as a precise, accurate and moreover obedient performer. Never before could a composer realize such control over every tiny detail of a composition: the computer will perfectly reproduce the commands issued to it. (Of course, both of these trends mirror the industrial era from which they were borne.)
+Many of these early electronic and computer music composers were attracted to the medium for the apparently unlimited range of possible timbres it could produce. Rather than being limited to the sounds we can coerce physical objects to emanate, we have the entire spectrum available, every possible variation of placing sample values in a sequence, without limitation. In addition to the potential to find [the new sound](http://www.youtube.com/watch?v=pQLlR4pvhyg), the computer was also attractive to composers as a precise, accurate and moreover obedient performer. Never before could a composer realize such control over every tiny detail of a composition: the computer will perfectly reproduce the commands issued to it. (Of course, both of these trends mirror the industrial era from which they were borne.)
 
-Unfortunately, although the space of possible sounds in just one second of CD-quality audio is practically infinite, the vast majority of them are uninteresting, and quite likely unpleasant. 
+Unfortunately, although the space of possible sounds in just one second of CD-quality audio is practically infinite, the vast majority of them are uninteresting, and quite likely unpleasant.
 
 > This is perhaps emblematic of a more general problem: with so much data, and so much ability to generate & transform it, how to make *sense* out of it? How to retain that promise of infinity without becoming lost in noise, or resting too much upon what is already known?
 
-For example, selecting samples randomly results in psychologically indistinguishable white noise. But specifying each sample manually would be beyond tedious. So, with all the infinite possibilities of sounds available, the question is **how should one navigate and determine the space of all possible sample sequences to find things that are interesting**? 
+For example, selecting samples randomly results in psychologically indistinguishable white noise. But specifying each sample manually would be beyond tedious. So, with all the infinite possibilities of sounds available, the question is **how should one navigate and determine the space of all possible sample sequences to find things that are interesting**?  How should one **organize sound**?
 
 > This is could be a great prompt for making: **to design a function to map from discrete time to an interesting sequence of data as sound**. Without borrowing or leaning too much on things you already know, how would you approach this problem; how would you break it down? For example, what are the salient general features that we perceive in sound, how can they be generated algorithmically, with what kinds of meaningful control?
 
-We must also be careful to not let the regular space of digital sound (or indeed pixel space in images) mislead us. The ear is not equally sensitive across frequencies and amplitudes, and there are perceptual effects such as fusion and masking, phantom fundamentals etc. to take into account.
+> We must also be careful to not let the regular space of digital sound (or indeed pixel space in images) mislead us. The ear is not equally sensitive across frequencies and amplitudes, and there are perceptual effects such as fusion and masking, phantom fundamentals etc. to take into account.
 
 ![](img/fletcher-munson.png)	
 
 - [Variance between species](https://en.wikipedia.org/wiki/Hearing_range)
+
+---
 
 ## Music-III
 
@@ -318,11 +335,12 @@ With modern languages we can overcome many of the limitations in the 1950's prog
 
 How would you implement this today?
 
+<!--
 # Demystifcation
 
 ## Ugens
 
-Let's take a look at how this works today in Max (a program whose name acknowledges Max Matthews!):
+Let's take a look at how this works today in Max:
 
 - Electronic realm:
   - oscillator as a function of time, via an accumulator
@@ -343,10 +361,11 @@ Let's take a look at how this works today in Max (a program whose name acknowled
 
 What about `sco`-space?
 
-A moment of reflection: remember 'machines & tapes'; that tapes are data are code. To what extent is an audio signal a 'tape of instructions'? E.g. a signal stream of triggers to activate an oscillator. Or something more complex, e.g. MIDI data streams; show MIDI *interpreter* example. Or something more complex (calculator example). So... what kind of interpreter would you write to articulate structure?
+A moment of reflection: remember 'machines & tapes'; that tapes are data are code. To what extent can a signal be a 'tape of instructions'? E.g. a signal stream of triggers to activate an oscillator. Or something more complex, e.g. MIDI data streams; (show MIDI *interpreter* example). Or something more complex (calculator example). So... what kind of interpreter would you write to articulate structure?
 
 - Quick demo: Node for Max player
 - Limitations
+
 
 ## A new engine
 
@@ -407,7 +426,7 @@ Limitations:
 **Heisenberg Uncertainty Principle:** the more accurately you can determine position, the less you can know the conjugate variable of momentum.  Similarly for temporal precision vs. frequency precision: a greater frequency resolution (more bins) requires a longer period to produce it, which smears time. The uncertainty principle is inherent in the properties of all wave-like systems, which means, pretty much everything. (Note: not the same as the "observer effect".) 
 
 
+-->
 
 
 [![animation](http://25.media.tumblr.com/b5bbc21c3907802325301007ce31303f/tumblr_mjksjiMKYr1qamt2wo1_500.gif)](http://www.thisiscolossal.com/2012/05/delightful-paper-pop-ups-by-jenny-chen/)
-

@@ -37,7 +37,7 @@ This means:
 | Sep 29: [Week 3](#week-3)   | Practice/Review | [Lit Review step 1](#literature-review-1)  |
 | Oct 06: [Week 4](#week-4)   | Annotated Bibliographies | [Practice (Journal)](#online-journal--practice-studies):    [Explorable Explanations](https://explorabl.es)
 | Oct 13: [Reading Week](#reading-week) | | (work on Lit Review step 2)  |
-| Oct 20: [Week 5](#week-5)   |  | [Lit Review step 2](#literature-review-2) |
+| Oct 20: [Week 5](#week-5)   | What to do next? | [Lit Review step 2](#literature-review-2) |
 | Oct 27: [Week 6](#week-6)   |  | [Practice (Journal)](#online-journal--practice-studies)
 | Nov 03: [Week 7](#week-7)   |  | [Paper-project abstract](assignments.html#final-paper) |
 | Nov 10: [Week 8](#week-8)   |  | [Video tutorial](assignments.html#video-tutorial) |
@@ -229,7 +229,13 @@ Work on your annotated bibliography and your project!
 -----
 ### Week 5
 
+![Markov](https://upload.wikimedia.org/wikipedia/commons/2/2b/Markovkate_01.svg)
 
+- The question at the heart of an automoton: "what to do next?"
+- State machines, [Markov processes](https://en.wikipedia.org/wiki/Markov_chain); text analysis and resynthesis
+- Remember [Turtle Talk](https://codepen.io/grrrwaaa/pen/KKqJGQK)
+- [Time and sound](time.html)
+  
 -----
 ### Week 6
 
