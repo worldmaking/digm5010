@@ -238,7 +238,7 @@ Work on your annotated bibliography and your project!
 - Remember [Turtle Talk](https://codepen.io/grrrwaaa/pen/KKqJGQK)
 - [Time and sound](time.html)
 
-**[Zoom Recording](https://yorku.zoom.us/rec/share/6YYZPp4vWaRW5RnfBYc6Oguw-TFTdjxQiQgYEyy9I5k68eHengzzmk-c8QnOdbSJ.YliQmxM1_hCXNhH4)
+**[Zoom Recording](hhttps://yorku.zoom.us/rec/share/aK1K9GIV1o7dndxYPUPEDlcjmyedVQM3JgBhB6t9dJV2iVEz2FK_Rpy7w2AZLdQ.qKbhoPp028yMmKHK)
   
 -----
 ### Week 6
