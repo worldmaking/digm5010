@@ -237,6 +237,8 @@ Work on your annotated bibliography and your project!
 - State machines, [Markov processes](https://en.wikipedia.org/wiki/Markov_chain); text analysis and resynthesis
 - Remember [Turtle Talk](https://codepen.io/grrrwaaa/pen/KKqJGQK)
 - [Time and sound](time.html)
+
+**[Zoom Recording](https://yorku.zoom.us/rec/share/6YYZPp4vWaRW5RnfBYc6Oguw-TFTdjxQiQgYEyy9I5k68eHengzzmk-c8QnOdbSJ.YliQmxM1_hCXNhH4)
   
 -----
 ### Week 6
