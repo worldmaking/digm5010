@@ -39,12 +39,12 @@ This means:
 | Oct 13: [Reading Week](#reading-week) | | (work on Lit Review step 2)  |
 | Oct 20: [Week 5](#week-5)   | What to do next? | [Lit Review step 2](#literature-review-2) | [Oulipo Selections](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
 | Oct 27: [Week 6](#week-6)   |  | [Practice (Journal)](#online-journal--practice-studies)
-| Nov 03: [Week 7](#week-7)   |  | [Paper-project abstract](assignments.html#final-paper) |
-| Nov 10: [Week 8](#week-8)   |  | [Video tutorial](assignments.html#video-tutorial) |
-| Nov 17: [Week 9](#week-9)   |  | [Final paper](assignments.html#final-paper) [draft for review](assignments.html#peer-review) |
-| Nov 24: [Week 10](#week-10) |  | [Peer review](assignments.html#peer-review)  |
+| Nov 03: [Week 7](#week-7)   |  | [Paper-project abstract](#final-paper) |
+| Nov 10: [Week 8](#week-8)   |  | [Video tutorial](#video-tutorial) |
+| Nov 17: [Week 9](#week-9)   |  | [Final paper](#final-paper) [draft for review](#peer-review) |
+| Nov 24: [Week 10](#week-10) |  | [Peer review](#peer-review)  |
 | Dec 01: [Week 11](#week-11) | | Presentation |
-| Dec 10:  | | [Final Paper](assignments.html#final-paper) |
+| Dec 10:  | | [Final Paper](#final-paper) |
 
 -----
 ### Week 0
@@ -182,15 +182,6 @@ Places to look:
 
 **[Zoom Recording](https://yorku.zoom.us/rec/share/LGURDi70u4a3U4q7ri7IUg89xNPcf5MP00LQ3d4PbGvq7L4mOBSR8-4WGYtpt54Z.Xi-Dv-jrUnppTFkk)*
 
-<!--
-
-git?
-node.js?
-data?
-space?
-time?
-
--->
 
 
 ### Literature Review 2 
@@ -238,18 +229,19 @@ Work on your annotated bibliography and your project!
 - Remember [Turtle Talk](https://codepen.io/grrrwaaa/pen/KKqJGQK)
 - [Time and sound](time.html)
 
-**[Zoom Recording](hhttps://yorku.zoom.us/rec/share/aK1K9GIV1o7dndxYPUPEDlcjmyedVQM3JgBhB6t9dJV2iVEz2FK_Rpy7w2AZLdQ.qKbhoPp028yMmKHK)
+**[Zoom Recording](hhttps://yorku.zoom.us/rec/share/aK1K9GIV1o7dndxYPUPEDlcjmyedVQM3JgBhB6t9dJV2iVEz2FK_Rpy7w2AZLdQ.qKbhoPp028yMmKHK)**
   
 -----
 ### Week 6
 
-
-
-[Paper-project abstract](assignments.html#final-paper)
+- [Time and sound](time.html) continued
+ 
+Due next week: [Paper-project abstract](#final-paper)
 
 -----
 ### Week 7
 
+Due next week: [Video Tutorial](#video-tutorial)
 
 ### Video Tutorial
 
@@ -269,7 +261,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 
 
 
-[Final paper](assignments.html#final-paper) [draft for review](assignments.html#peer-review)
+[Final paper](#final-paper) [draft for review](#peer-review)
 
 -----
 ### Week 9
@@ -309,6 +301,15 @@ As a structure, we will base our [review form](https://forms.gle/g8iFMz5Aw9pfqfF
 ### Week 10
 
 
+<!--
+
+git?
+node.js?
+data?
+space?
+time?
+
+-->
 
 
 -----
@@ -332,119 +333,3 @@ As a structure, we will base our [review form](https://forms.gle/g8iFMz5Aw9pfqfF
   - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
 3. Post your final paper online -- either inside or linked from your journal.
 
-<!-- For example: - [Art Machines 2](https://www.cityu.edu.hk/artmachines2/message-symposium-director), Deadline Dec 15. -->
-
-<!-- - UPDATE LIST HERE: https://docs.google.com/spreadsheets/d/1fROB-TOaRKT9M5ZwaQ0Kl-Y35UlsHQPkp5luJwV4YkQ/edit#gid=0
--->	
-
-
-<!--
-----
- - [In class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) -->
-<!--: Mutate a sketch, and/or, an *interesting* random program, and/or the Maeda prompt.-->
-<!--  - Install [VSCode](https://code.visualstudio.com) (or a different terminal console & code editor). -->
-<!-- -  Install `git` using [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-   - Mac users: You might already have it! Try typing `git --version` in a Terminal. Or, if you already have [Homebrew](https://brew.sh/) installed, you can also just type `brew install git`. 
-   - Windows users, I recommend using the [git SCM installer](https://git-scm.com/download/win) -->
-
-<!-- - Choose an article from [The New Media Reader](http://www.newmediareader.com/book_contents.html) to start your literature review. (Most of these can be found online) 
-
-#### Week 1
-
-- [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI)
-
-<!--     - Code mutations of [last week's in class example](https://codepen.io/grrrwaaa/pen/rNevzbL?editors=0010) 
- - [Sketches from last year](sketches.html) 
- - [Edge-bounce variant](https://codepen.io/grrrwaaa/pen/GRZBjrr?editors=0010), scripts by [Kieran](https://codepen.io/kieranmaraj/pen/YzqvMPw?editors=0010), [Zian](https://codepen.io/zian-liu/pen/OJNEXKg?editors=0010), [Ilze](https://codepen.io/Ka-Vi/pen/OJNwBRw?editors=0010) 
-<!--    - Systems: 
- - Version control using `git` (with Michael Palumbo) [Notes here](gitnotes.html) 
-- Action items for next week: 
- - Set up your online journal using Github Pages.
- - Post your first sketch-study
- - [Post step 1 of the Literature Review assignment](assignments.html).
-  
-#### Week 2
-
-- Topic: [**Research**](research.html)
-- Sharing: 
- - Discussion: Research/Github/journal/article search etc.
- - Interesting sketches / random programs?
- - [More sketches from last year](sketches.html)
-- Systems: 
- - [Notes on Node.js](nodejs.html): Collaborative creativity, using [Node.js](https://nodejs.org/en/)
- - [This week's code is here in github](https://github.com/worldmaking/digm5010/tree/week3)
-- Action items for next week: 
- - [Post step 2 of the Literature Review assignment](assignments.html).
- - [Suggested further reading](https://teams.microsoft.com/_#/school/files/General?threadId=19:100337fd7f524597bb019d9e088971a2@thread.tacv2&replyChainId=1600708335091&ctx=channel&rootfolder=%252Fsites%252FFA-DIGM5010%252FShared%2520Documents%252FGeneral%252FReadings):
-   - Two by von Foerster:
-    - Von Foerster, Heinz. "Perception of the future and the future of perception." Instructional Science 1.1 (1972): 31-43.
-    - Von Foerster, Heinz. "On constructing a reality." Understanding understanding. Springer, New York, NY, 2003. 211-227.
-   - Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.
-   - [Rodney Brooks. "What is it like to be a robot". Online: https://rodneybrooks.com/what-is-it-like-to-be-a-robot/ March, 2017](https://rodneybrooks.com/what-is-it-like-to-be-a-robot/)
-
-
-#### Week 4
-- Action items for next week: 
- - [Post step 3 of the Literature Review assignment](assignments.html).
- - Preparing for practice: make your own "microworld" playground/interpreter, following the prompt [here](vehicles.html#mindstorms-1980) 
-
-
-#### Reading week
- <!--  - [ISEA](https://isea2020.isea-international.org/). 
-   - Action items for next week: 
-     - [Post step 4 of the Literature Review assignment](assignments.html).
-
-#### Week 5
-- Topic: [**Time I**](time.html). 
-<!-- - [This week's code (audio in Node.js) is here in Github](https://github.com/worldmaking/digm5010/tree/week7) 
-- **Due:** [Literature Review](assignments.html).
-- Action items for next week: 
- - Research your video tutorial
-
-
-#### Week 6
-- Topic: [**Time II**](time.html).   
-- Action items for next week: 
- - Complete your [Video Tutorial](assignments.html)
-
-
-#### Week 7
-- Topic: [**Space & Simulation II**](space.html).   
-- **Due:** [Video Tutorials](assignments.html).
-
-<!--  - Scripts from today:
- - [Basic WebGL template](https://codepen.io/grrrwaaa/pen/bmmGjL?editors=0011)
- - [ShaderToy shader in the template](https://codepen.io/grrrwaaa/pen/bGejGpa)
- - [Ray tracer in WebGL](https://codepen.io/grrrwaaa/pen/mdEjdNx)
- - [Sphere tracing renderer](https://codepen.io/grrrwaaa/pen/vYKaEoP)
-   - [A more complex example](https://codepen.io/grrrwaaa/pen/NWrmpBR?editors=0011) 
-- Action items for next week: 
- - [Post the abstract of your final paper/project](assignments.html)
-
-
-#### Week 8
-- Discussion of paper/project, journal, etc.
-- Action items for next week: 
- - Post a draft of your final paper/project for peer review [to this form here](https://forms.gle/oLEoZtaeZegf7nwcA)
-
-
-#### Week 9
-- [Peer review research](assignments.html#reviews)
-- Action items for next week: 
- - Due next week: [complete the peer review form](https://forms.gle/g8iFMz5Aw9pfqfFa6) for each of the assigned submissions
- <!-- - Deadline Nov 25 to submit "Expression of Interest" for Digital Media exhibition 
-
-
-#### Week 10
-- Paper/project peer review
-- Topic: **Languages and Codes**
- - [Learning grammar by making a new language](http://alicelab.world/workshop_nime_2017/index.html)
-- Action items for next week: 
-	- Prepare project/paper presentations for next week
-
-#### Week 11
-
-*Dec 1st.*  
-- Action items for next week: 
-- **Due Dec 10:** [Final online paper](assignments.html). 
-<!-- - Deadline Dec 9 to submit work for Digital Media exhibition 
