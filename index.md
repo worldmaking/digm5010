@@ -230,6 +230,8 @@ Work on your annotated bibliography and your project!
 - [Time and sound](time.html)
 
 **[Zoom Recording](hhttps://yorku.zoom.us/rec/share/aK1K9GIV1o7dndxYPUPEDlcjmyedVQM3JgBhB6t9dJV2iVEz2FK_Rpy7w2AZLdQ.qKbhoPp028yMmKHK)**
+
+- [An example JS library for advanced Markov-driven text analysis & resynthesis](https://github.com/dhowe/ritajs#a-simple-sketch)
   
 -----
 ### Week 6
