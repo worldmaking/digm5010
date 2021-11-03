@@ -38,8 +38,8 @@ This means:
 | Oct 06: [Week 4](#week-4)   | Annotated Bibliographies | [Practice (Journal)](#online-journal--practice-studies):    [Explorable Explanations](https://explorabl.es)
 | Oct 13: [Reading Week](#reading-week) | | (work on Lit Review step 2)  |
 | Oct 20: [Week 5](#week-5)   | What to do next? (Markov, [Time](time.html)) | [Lit Review step 2](#literature-review-2) | [Oulipo Selections](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
-| Oct 27: [Week 6](#week-6)   | [Time and sound](time.html) | [Practice (Journal)](#online-journal--practice-studies) | [Mathews: An Acoustic Compiler](http://ia601505.us.archive.org/7/items/bstj40-3-677/bstj40-3-677.pdf)
-| Nov 03: [Week 7](#week-7)   |  | [Paper-project abstract](#final-paper) |
+| Oct 27: [Week 6](#week-6)   | Project work | [Practice (Journal)](#online-journal--practice-studies) | [Mathews: An Acoustic Compiler](http://ia601505.us.archive.org/7/items/bstj40-3-677/bstj40-3-677.pdf)
+| Nov 03: [Week 7](#week-7)   | [Time and sound](time.html)  | [Paper-project abstract](#final-paper) |
 | Nov 10: [Week 8](#week-8)   |  | [Video tutorial](#video-tutorial) |
 | Nov 17: [Week 9](#week-9)   |  | [Final paper](#final-paper) [draft for review](#peer-review) |
 | Nov 24: [Week 10](#week-10) |  | [Peer review](#peer-review)  |
@@ -229,6 +229,10 @@ Work on your annotated bibliography and your project!
 - Remember [Turtle Talk](https://codepen.io/grrrwaaa/pen/KKqJGQK)
 - [Time and sound](time.html)
 
+- Scripts:
+  - [Markov text generator](https://codepen.io/grrrwaaa/pen/YzxGxWv)
+  - [Markov text generator 2](https://codepen.io/grrrwaaa/pen/YzxWRNx)
+
 **[Zoom Recording](hhttps://yorku.zoom.us/rec/share/aK1K9GIV1o7dndxYPUPEDlcjmyedVQM3JgBhB6t9dJV2iVEz2FK_Rpy7w2AZLdQ.qKbhoPp028yMmKHK)**
 
 - [An example JS library for advanced Markov-driven text analysis & resynthesis](https://github.com/dhowe/ritajs#a-simple-sketch)
@@ -236,13 +240,18 @@ Work on your annotated bibliography and your project!
 -----
 ### Week 6
 
-- [Time and sound](time.html) continued
-  - Music-N, instruments and sequences
+- Project work
  
 Due next week: [Paper-project abstract](#final-paper)
 
 -----
+
 ### Week 7
+
+- [Paper-project abstracts](#final-paper) & discussion
+
+- [Time and sound](time.html) continued
+  - Music-N, instruments and sequences
 
 Due next week: [Video Tutorial](#video-tutorial)
 
