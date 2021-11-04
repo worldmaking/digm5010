@@ -252,8 +252,12 @@ Due next week: [Paper-project abstract](#final-paper)
 
 - [Time and sound](time.html) continued
   - Music-N, instruments and sequences
+  - [In class script](https://codepen.io/grrrwaaa/pen/oNepMZz)
+  - [Pre-baked script](https://codepen.io/grrrwaaa/pen/XWajXXM)
 
 Due next week: [Video Tutorial](#video-tutorial)
+
+**[Zoom recording](https://yorku.zoom.us/rec/share/WEje6R6vErTm9yfs_Kkg-qRCfIzq11u66eWiQMS1qfMPS5DoiOwRvSCaeztH0iRd.RtHLq4a01H66xe2O)**
 
 ### Video Tutorial
 
