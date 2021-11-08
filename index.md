@@ -40,7 +40,7 @@ This means:
 | Oct 20: [Week 5](#week-5)   | What to do next? (Markov, [Time](time.html)) | [Lit Review step 2](#literature-review-2) | [Oulipo Selections](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
 | Oct 27: [Week 6](#week-6)   | Project work | [Practice (Journal)](#online-journal--practice-studies) | [Mathews: An Acoustic Compiler](http://ia601505.us.archive.org/7/items/bstj40-3-677/bstj40-3-677.pdf)
 | Nov 03: [Week 7](#week-7)   | [Time and sound](time.html)  | [Paper-project abstract](#final-paper) |
-| Nov 10: [Week 8](#week-8)   |  | [Video tutorial](#video-tutorial) |
+| Nov 10: [Week 8](#week-8)   | Papers focus | [Video tutorial](#video-tutorial) |
 | Nov 17: [Week 9](#week-9)   |  | [Final paper](#final-paper) [draft for review](#peer-review) |
 | Nov 24: [Week 10](#week-10) |  | [Peer review](#peer-review)  |
 | Dec 01: [Week 11](#week-11) | | Presentation |
@@ -275,14 +275,21 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 -----
 ### Week 8
 
-
+- Discussion about abstracts, final papers, and 
+- Peer review preview: 
+  - Sharing past reviews (and reviewing)
+  - Example: SIGGRAPH Art Papers
+  - [The form](https://forms.gle/pWesCCBQkeMKWX6y7)
+- Video tutorials
 
 [Final paper](#final-paper) [draft for review](#peer-review)
 
 -----
 ### Week 9
 
-
+- Performing & responding to peer reviews
+- [The form](https://forms.gle/pWesCCBQkeMKWX6y7)is based on the real peer review format of the SIGGRAPH Art Papers section https://blog.siggraph.org/tag/art-papers/. That process was double-blind (both authors & reviewers anonymized), but since we know each other, we'll run our review single-blind (authors anonymized). Each of you will be randomly assigned up to 3 papers to review. 
+- Two weeks to presentation
 
 ### Peer Review
 
@@ -310,7 +317,7 @@ For general review guidelines, [see here](https://www.wikihow.com/Review-a-Journ
 > Are the references cited the most appropriate to support the manuscript? Are citations provided for all assertions of fact not supported by the data in this paper? Are any key citations missing? 
 > Should any portions of the paper should be expanded, condensed, combined, or deleted? 
 
-As a structure, we will base our [review form](https://forms.gle/g8iFMz5Aw9pfqfFa6) on materials as used by the SIGGRAPH Art Papers review body. 
+As a structure, we will base our [review form](https://forms.gle/pWesCCBQkeMKWX6y7) on materials as used by the SIGGRAPH Art Papers review body. 
 
 
 -----
