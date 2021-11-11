@@ -291,6 +291,8 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 - [The form](https://forms.gle/pWesCCBQkeMKWX6y7)is based on the real peer review format of the SIGGRAPH Art Papers section https://blog.siggraph.org/tag/art-papers/. That process was double-blind (both authors & reviewers anonymized), but since we know each other, we'll run our review single-blind (authors anonymized). Each of you will be randomly assigned up to 3 papers to review. 
 - Two weeks to presentation
 
+**[Zoom recording](https://yorku.zoom.us/rec/share/tcnLkfrrxxapfsjmWn15gcox0LM-MYQg8BQVgs3iCLqsFL82eqkj7oa1ruGgeIC1.erXQvut-v6uZlJDP)**
+
 ### Peer Review
 
 [Reviewing research](research.html#/33)
