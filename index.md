@@ -41,8 +41,8 @@ This means:
 | Oct 27: [Week 6](#week-6)   | Project work | [Practice (Journal)](#online-journal--practice-studies) | [Mathews: An Acoustic Compiler](http://ia601505.us.archive.org/7/items/bstj40-3-677/bstj40-3-677.pdf)
 | Nov 03: [Week 7](#week-7)   | [Time and sound](time.html)  | [Paper-project abstract](#final-paper) |
 | Nov 10: [Week 8](#week-8)   | Papers focus | [Video tutorial](#video-tutorial) |
-| Nov 17: [Week 9](#week-9)   |  | [Final paper](#final-paper) [draft for review](#peer-review) |
-| Nov 24: [Week 10](#week-10) |  | [Peer review](#peer-review)  |
+| Nov 17: [Week 9](#week-9)   | Peer reviewing | [Final paper](#final-paper) [draft for review](#peer-review) |
+| Nov 24: [Week 10](#week-10) | [Time and sound](time.html): gen |  |
 | Dec 01: [Week 11](#week-11) | | Presentation |
 | Dec 10:  | | [Final Paper](#final-paper) |
 
@@ -325,6 +325,7 @@ As a structure, we will base our [review form](https://forms.gle/pWesCCBQkeMKWX6
 -----
 ### Week 10
 
+- Time & Sound: gen~
 
 <!--
 
