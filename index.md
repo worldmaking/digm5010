@@ -326,6 +326,7 @@ As a structure, we will base our [review form](https://forms.gle/pWesCCBQkeMKWX6
 ### Week 10
 
 - Time & Sound: gen~
+- **[Zoom recording](https://yorku.zoom.us/rec/share/5qPQPGpqXj3_Z0ZKsrRIQ80POnrvI0IPJNYPbGFl6CHngtp2ikOWHgf4QInXwsu4.xCE8R0lMZZfOKCwr)**
 
 <!--
 
