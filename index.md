@@ -344,6 +344,7 @@ time?
 
 **Presentations**
 
+**[Zoom recording](https://yorku.zoom.us/rec/share/5rAiHyTvJyGDkuS1uX2d9JJiGK9K2rPE1dOFTbNEzR-p8Jm_kBF90qMIyPOW-KEc.HDXLmo_u2kk_wT1v)**
 
 ### Final Paper
 
