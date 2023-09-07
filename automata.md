@@ -65,27 +65,35 @@ Babbage's machine was documented by Ada Lovelace, including the first written de
 
 ---image:img/universal_turing_machine.png
 
-The "Turing Machine" was originally an abstract reformulation of Gödel's incompletness theorem about the limits of proof and computability/decidability (that in any formal system, there are 'statements' that cannot be proved/decided within that system). Note: Gödel's proof depended on a digital encoding, by turning algebraic statements into numbers. That is, the 'data' (numbers) and the 'operations' (e.g. `+`) are flattened to the same ontological level. Code <=> data.
-
-Turing's machine showed that this is both mechanisable and universal:
-
-"It is possible to invent a single machine which can be used to compute any computable sequence. If this machine U is supplied with a tape on the beginning of which is written the S.D ["standard description" of an action table] of some computing machine M, then U will compute the same sequence as M." Alan Turing 1936, in Davis, Martin (2000), Engines of Logic: Mathematicians and the origin of the Computer.
+The "Turing Machine" was originally an abstract reformulation of Gödel's incompletness theorem about the limits of proof and computability/decidability (that in any formal system, there are 'statements' that cannot be proved/decided within that system). Note: Gödel's proof depended on a digital encoding, by turning algebraic statements into numbers. That is, the 'data' (numbers) and the 'operations' (e.g. `+`) are flattened to the same ontological level. 
 
 ---
 
-Since no formal computing machine can compute something beyond what a UTM can, then the limits of computabliity (per Gödel) on a UTM apply to **all** such computing machines. That is, in theory, no computing machine can solve more problems than a UTM; anything that can be "computed" can be computed by a UTM. 
+By saying that we can represent mathematical procedures as *numbers*, Turing showed how math can operate on itself. 
+
+This was the genius step that also effectively makes tools into computers: 
+
+**code = data**
+
+Data can be read, and executed, as code. Code can modify data. 
+
+What are the implications of this?
+
+----
+
+As a mathematician, Turing was interested in theoretical limits. 
+
+"It is possible to invent a single machine which can be used to compute **any** computable sequence. If this machine U is supplied with a tape on the beginning of which is written the S.D ["standard description" of an action table] of some computing machine M, then U will compute the same sequence as M." Alan Turing 1936, in Davis, Martin (2000), Engines of Logic: Mathematicians and the origin of the Computer.
+
+This is the "Universal Turing Machine" (UTM). Since no formal computing machine can compute something beyond what a UTM can, then the limits of computablity of a UTM apply to **all** such computing machines. That is, in theory, no computing machine can solve more problems than a UTM; anything that can be "computed" can be computed by a UTM. 
 
 ...in theory there's no difference between theory and practice... 
 
-The UTM itself is an abstract idea, and doesn't physically exist, since it includes in its definition the possibility of infinite space (memory) and time (operations). Our *real* machines are bounded by the limits of a UTM, but cannot even reach those bounds.
+The UTM itself is an abstract idea, and doesn't physically exist, since it includes in its definition the possibility of infinite space (memory) and time (operations). 
 
 notes:
 
 The universal computing machine was simultaneously invented by [Emil Post](https://en.wikipedia.org/wiki/Emil_Leon_Post), also in 1936, based on string rewriting. It should really be called the Post-Turing Machine.
-
-Turing also talked about other kinds of machines, such as "Oracle machines", which could incorporate operations that are not themselves computable, and thus have greater computing capacity than UTMs. Some theorists have argued that this interactive machines have this quality.
-
----youtube:My8AsV7bA94
 
 ---image:img/metalinguistic_abstraction.png
 
@@ -94,7 +102,17 @@ A near-equivalent (and arguably more elegant) model to the Post-Turing Machine w
 
 This image taken from a wonderfully mind-blowing textbook on functional programming using Scheme: [Abelson, Harold, and Gerald Jay Sussman. Structure and interpretation of computer programs. The MIT Press, 1996.](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html) -- the entire book is online.
 
-Terminology to watch out for: in these languages, the focus is on the behaviour of the machine itself, and what we would normally consider as "output" is referred to as "side-effects" (with no negative connotation).
+---
+
+There's something else profound hidden in the Post-Turing UTM (and the Lambda calculus): 
+
+Given the data that describes a machine "M", a UTM will then compute the same sequence as "M". So,
+
+> "Computers should be viewed as second-order machines–given the formal specification of a first-order machine, they will ‘become’ that machine." 
+
+notes: 
+
+Christopher Langton, C. G. Artificial Life: An Overview. MIT Press, Cambridge, MA, USA, 1995.
 
 ---youtube:WkI_Vbwn14g
 
@@ -117,6 +135,10 @@ Zuse wanted to be an artist but was forced by his family into civil engineering;
 
 Zuse created one of the first plotters, used by early computer artist Frieder Nake in the early 1960's, and went on to suggest that the universe is a giant cellular automaton. 
 
+
+---youtube:My8AsV7bA94
+
+
 ---image:img/500px-Snakes_and_Ladders.jpg
 
 One thing that makes computers more intersting than mechanical looms is the way they can redirect themselves as they chew through the instructions: the **control flow**. There are a few common structures of control flow, such as `goto`, `if`, etc. Sometimes it's useful to understand these structures as if they are played out on a board game, with memory being stacks of cards, the instructions being the board, etc.
@@ -133,21 +155,16 @@ Perhaps the most striking form of control flow--though not always considered as 
 
 (A wonderful summary of these concepts is [Fisher, David A. "A survey of control structures in programming languages." ACM SIGPLAN Notices 7.11 (1972): 1-13.](https://dl.acm.org/doi/pdf/10.1145/987361.987363?casa_token=ok8oYYAQkTcAAAAA:O3WZ7upUTpQrrjpFIIHstf2UGtlBkbq1SNdfjk2-HsjldXWvIfdfJvoQpZZvs10QYJLJf3qr2TxL5g))
 
----
 
-- For a moment, don't think of a program as a tool, but as a pattern of data, a string of bits. This is clearer in data-driven representations of programs, e.g. state machine tables.
-- Can the same string of bits be interpreted in different ways (semantics)? 
-	- Interpreter A: when I see X do Q, when I see Y do R. <!-- .element: class="fragment" -->
-	- Interpreter B: when I see X do S, when I see Y do T. <!-- .element: class="fragment" -->
-	- Interpreter C: when I see X create A, when I see Y create B... <!-- .element: class="fragment" -->
-	- Interpreter D: when I see X become C, when I see Y become D... <!-- .element: class="fragment" -->
-- Are the semantics are in the X,Y... or the A,B... or the Q,R...? Or all of them? Or none? <!-- .element: class="fragment" -->
 
 ---
 
-> "Computers should be viewed as second-order machines–given the formal specification of a first-order machine, they will ‘become’ that machine." 
+For a moment, don't think of a program as a tool, but as a pattern of data, a string of bits. This is clearer in data-driven representations of programs, e.g. state machine tables, or cellular automata images. 
 
-Christopher Langton, C. G. Artificial Life: An Overview. MIT Press, Cambridge, MA, USA, 1995.
+- If different interpreter-programs read the same string of bits but do different things, where are the semantics? 
+- If an interpreter-program reads the string of bits to become a different interepreter-program, where are the semantics?
+
+
 
 
 ---image:img/neumanUniversalConstructor.png
@@ -189,9 +206,10 @@ How would you do it?
 
 ---image:img/yinyang-bg.png
 
-<div style="text-align:center;">
-Theory
-<br/><br/><br/><br/><br/><br/><br/>
-Practice
-</div>
+data & code
+
+theory & practice
+
+? & ?
+
 

@@ -1,28 +1,128 @@
 
 # DIGM5010 Foundations of Digital Media
 
-**Instructor:** [Graham Wakefield](https://ampd.yorku.ca/profile/graham-wakefield/) grrrwaaa at york u dot ca
+Thursdays, 1.30pm-4.30pm, Fall 2023, Fine Arts building room ACW 103
 
-[Course Materials](https://alicelab.world/digm5010)
+**Instructor:** [Graham Wakefield](https://ampd.yorku.ca/profile/graham-wakefield/) grrrwaaa a t york u do t ca
 
-[Zoom meeting](https://yorku.zoom.us/j/93423823634?pwd=NlI3NzVFaURidDNRa3h5ZllMREE4UT09)
+**Hello and welcome!**
 
-[Course information](course.html)
-
-<!--
-**Team:** [Microsoft Team here](https://teams.microsoft.com/l/team/19%3a100337fd7f524597bb019d9e088971a2%40thread.tacv2/conversations?groupId=7aec1ee8-8b98-481f-a503-0aa15267e985&tenantId=34531318-7011-4fd4-87f0-a43816c49bd0)
-
-[**Zoom recordings** are in Teams under Files](https://teams.microsoft.com/_#/school/files/General?threadId=19:100337fd7f524597bb019d9e088971a2@thread.tacv2&ctx=channel) 
-*-->
+## What is DIGM 5010 "Foundations"?
 
 **Synopsis:** The purpose of Foundations is to equip and assist students to undertake **graduate-level research** in **Digital Media**. 
+
+DIGM5010 is foundational core course in the [Digital Media Graduate Program](https://www.yorku.ca/gradstudies/digitalmedia/) (MA/MSc/PhD), co-organized by the [Department of Computational Arts](https://computationalarts.ampd.yorku.ca) in the School of the Arts, Media, Performance & Design, and the department of [Electrical Engineering and Computer Science](https://lassonde.yorku.ca/eecs/) in the Lassonde School of Engineering, York University.
+
+> "The Graduate Program in Digital Media provides highly qualified students with the opportunity to do specialised hybrid research work in a program that uniquely combines computational science and artistic practices. Work in digital media focuses on a broad range of current and emerging forms of digitally supported media, with applications that range from computer games to interactive art."
+
+> The Digital Media graduate program's academic objectives include promotion of an interdisciplinary approach to computational art-making and technology development, providing students with 21st century “real-world” skills in tandem with research acumen. To work and conduct research in this area means skillfully bridging literacies in art, science and engineering practices. 
+
+Developing these research literacies is what DIGM5010 is all about. 
+
+The goals of the *Foundations* course are therefore:
+- to learn the essential methodological skills of graduate-level research in areas of digital media and computational arts
+- to develop deep understanding and a real feel for computation as a creative medium, 
+- to develop the skills to attain literacy in mathematical, theoretical, and computational bases as they intersect with worlds of digital art-making,
+- to be able to adequately place your research within a larger network of relations and lineages, and to be able to articulate its relevance and identify its values in context.
 
 This means:
 - being aware of the broad range of the field along with its nearer and farther histories, narrow and broader presents, and implicated or possible futures,
 - being able to find, read, and understand the languages through which research is articulated, in both theoretical and practical terms, 
 - being able to create work across of a broad range of digital media that is effective and/or innovative.
+  
+Establishing these foundations is ultimately evaluated through the potential to understand, transfer, and extend published research in these fields into new creative applications, recreating or mutating established research results, projects, or works to the specific interests of your research area(s) and creative domain(s). 
 
 *(Reading, writing, making!)*
+
+**Format and evaluation** 
+
+Each weekly meeting will vary in format, but always at the heart is the discussion between all of us. This isn't a course with a static syllabus of material -- it is an adaptive living system. 
+
+In the early part of the course the instructor may bring lecture material or assign readings or research tasks; and we will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice. You are also expected to bring work to share, **making things** in response to our discussions and course topic. You should be keeping your notes, studies and practices documented in a **public journal**. (Class participation, making and journalling make up the first 25% of the course grade.)
+
+As this goes on, each of you will develop a focus on a specific topic to research in depth, leading to a project documented in a research paper. The project's goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. 
+  - It will be grounded through an **extensive literature review** (25%),
+  - will demonstrate your foundational computational literacy and ability to understand and transfer research into creative applications (25%),
+  - and will be documented in **a research paper** with scholarly citations **suitable to submit to conferences or other appropriate venues** (25%).
+
+We will go through draft processes and a simulated conference submission and review procedure later in the course to help understand academic research structures and refine your work. In the past years, some students have also been successful in submitting their final papers to real academic conferences.
+
+**Online resources**
+
+Almost everything about this course will be linked from https://alicelab.world/digm5010 -- bookmark this URL!
+
+Previously we have also used a Microsoft Teams account for sharing file materials etc., but I have found it somewhat unreliable/unstable and I am open to alternatives if there are good suggestions.
+
+**Remote participation**
+
+Regardless whether we are meet in person or remotely, I usually prefer to open a Zoom session for my classes, and use share screen for the most part. 
+- [Zoom meeting (same link every week)](https://yorku.zoom.us/j/92512579632?pwd=c3FPSitZQlZIelQ2dC9CeE1RU0tnUT09)
+- [Add it to your calendar (.ics file)](https://yorku.zoom.us/meeting/tJYoduutqTIsGda4SneIiTtcx1cvMsRwU70F/ics?icsToken=98tyKuCqqzooH9OcthqFRowQGYj4a-_wtlhdjadcyCzrBglaVhf1LrNBJJ9sIs_l)
+
+I normally also record all sessions and share recordings with the course participants (so long as no participants have objections to this), as I have heard that it has been useful for many students to be able to review sessions after class hours, including when, due to factors outside their control, they could not attend in class time. *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the graduate situation, and moreover allows some time to review any material if it seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
+
+----
+
+*Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
+
+-----
+
+## Class notes
+### Week 0 Sep 7, 2023
+
+**Hello and welcome!**
+
+We are in a program of digital media, co-run by computational arts and computer science. Art & science as "two cultures", meeting through a cybernetic medium of computation. 
+
+But perhaps "meeting" is too gentle a word. Sometimes it feels like a tectonic collision. To discover something new, we cannot follow a single path. Collisions between trajectories derail and open into new possibilities, that wouldn't be found if you only followed trend lines or deductive trails. 
+
+So, be comfortable to get out of your comfort zone. Learn from each other. It's OK to be awkward. Children are the most awkward, and the fastest learners, so let us be children again from time to time -- so long as we work hard at it! 
+
+So for example, what does "computation" mean to you?
+
+Take some time to think about this: 
+
+- Why did you want to study in the Digital Media program -- why do you want to dedicate several precious years of your life to research in computational art & science -- what does this mean for you? Is there a great risk, or a great unseen opportunity, in the computational/digital media world -- present and future -- one that also speaks to you?
+
+[Write into the form here](https://forms.gle/u8w51vRS9Gckry7SA)
+
+[Meditations on automata and computation](automata.html) - History, theory, implementation; programs as data
+
+### Computational sketching
+
+Take [John Maeda](https://en.wikipedia.org/wiki/John_Maeda), the designer & MIT Media Lab professor, who pioneered reactive graphics in the era of the Macintosh and CD-ROM. [Read a statement here](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
+
+> **Design By Numbers (John Maeda, 1999)**   
+> Drawing by hand, using pencil on paper, is undisputedly the most natural means for visual expression. When moving on to the world of digital expression, however, the most natural means is not pencil and paper, but rather, computation. Today, many people strive to combine the traditional arts with the computer, and while they may succeed at producing a digitally empowered version of their art, they are not producing true digital art. True digital art embodies the core characteristics of the digital medium, which cannot be replicated in any other'
+> 
+> Compuatation is intrinsically different from existing media because it is the only medium where the material and the process for shaping the material coexiist in the same entity: numbers. The only other medium where a similar phenomenon occurs is pure thought. It naturally follows that computational media could eventually present the rare opportunity to express a conceptual art that is not polluted by textual or other visual representation. This exciting future is still at least a decade or two away. For the moment, we are forced to settle with society's current search for true meaning in an enhanced, interactive version of the art that we have always known."
+
+Maeda studied with Muriel Cooper and Paul Rand, and redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, which helped lay the groundwork for interactive motion graphics as seen on the web today.
+
+Other key insights from Maeda's interactive graphics explorations:
+
+  - the most **interesting** pixels on the screen are the mouse
+  - the mouse represents not just **space** but also **time** -- use it
+
+Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (and thence P5.js). 
+
+Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
+
+> Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
+
+Let's start sketching.
+
+<!--
+
+
+
+
+
+
+**Team:** [Microsoft Team here](https://teams.microsoft.com/l/team/19%3a100337fd7f524597bb019d9e088971a2%40thread.tacv2/conversations?groupId=7aec1ee8-8b98-481f-a503-0aa15267e985&tenantId=34531318-7011-4fd4-87f0-a43816c49bd0)
+
+[**Zoom recordings** are in Teams under Files](https://teams.microsoft.com/_#/school/files/General?threadId=19:100337fd7f524597bb019d9e088971a2@thread.tacv2&ctx=channel) 
+
 
 
 
@@ -46,30 +146,27 @@ This means:
 | Dec 01: [Week 11](#week-11) | | Presentation |
 | Dec 10:  | | [Final Paper](#final-paper) |
 
------
-### Week 0
+*-->
+
+<!--
+Sep 14, 2023
+Sep 21, 2023
+Sep 28, 2023
+Oct 5, 2023
+(Oct 12 No class -- York Reading Week)
+Oct 19, 2023
+Oct 26, 2023
+Nov 2, 2023
+Nov 9, 2023
+Nov 16, 2023
+Nov 23, 2023
+Nov 30, 2023
 
 
 
 [Automata](automata.html) - History, theory, implementation; programs as data
 
-Computational sketching
 
-Take [John Maeda](https://en.wikipedia.org/wiki/John_Maeda), the designer & MIT Media Lab professor, who pioneered reactive graphics in the era of the Macintosh and CD-ROM. [Read a statement here](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
-Maeda studied with Muriel Cooper and Paul Rand, redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, helped lay the groundwork for interactive motion graphics as seen on the web today.
-
-Key insights:
-
-  - the most **interesting** pixels on the screen are the mouse
-  - the mouse represents not just **space** but also **time** -- use it
-
-Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (and thence P5.js). 
-
-Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
-
-> Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
-
-Let's start sketching.
 
 - The HTML5 trio: the HTML (DOM), CSS, and JavaScript
 - [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
@@ -141,7 +238,7 @@ Please remember to **email me** with a link to your online journal, including th
 
 You will investigate a **topic** that ideally intersects this year's topic/theme (AI) with something of value to your own research goals. Good research always begins by seeking out key papers and other relevant research resources. 
   - Some investigative tips:
-    - Use Wikipedia to identify **keywords or terms**, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellet network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.
+    - Use Wikipedia to identify **keywords or terms**, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellent network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.
     - Use these terms and publications in [Google Scholar](https://scholar.google.com/) and other academic search engines to find for papers that address the questions and issues. Follow `cited by` and `related articles` trails to find new leads. Aim to find the most significant (qualitatively & quantitatively) papers. You should be aiming for a collection of 25-50 potentially interesting papers on the topic at this point. 
     - At the same time, look for conferences or journals that are more specific to your topic, and see if they have collections of proceedings online to browse through. 
     - Not all papers are available as PDFs online. You might be able to find them via [York Libraries](https://www.library.yorku.ca/web/bbl/e-resources/) or also communities like [ResearchGate](https://www.researchgate.net/), but do not let this roadblock your progress -- find alternatives to work from instead.
@@ -328,15 +425,6 @@ As a structure, we will base our [review form](https://forms.gle/pWesCCBQkeMKWX6
 - Time & Sound: gen~
 - **[Zoom recording](https://yorku.zoom.us/rec/share/5qPQPGpqXj3_Z0ZKsrRIQ80POnrvI0IPJNYPbGFl6CHngtp2ikOWHgf4QInXwsu4.xCE8R0lMZZfOKCwr)**
 
-<!--
-
-git?
-node.js?
-data?
-space?
-time?
-
--->
 
 
 -----
@@ -360,4 +448,7 @@ time?
   - Alternatively, create your own using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
   - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
 3. Post your final paper online -- either inside or linked from your journal.
+-->
+
+-------
 
