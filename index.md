@@ -68,6 +68,7 @@ I normally also record all sessions and share recordings with the course partici
 -----
 
 ## Class notes
+
 ### Week 0 Sep 7, 2023
 
 **Hello and welcome!**
@@ -107,22 +108,24 @@ Please add 2-4 slides to introduce yourself in The Google Slide deck here: https
 I said in class we should look at others’ Masters & PhD theses/dissertations for inspiration. Here’s the Masters thesis of Golan Levin, from when he was a student at MIT. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. Have a good read and bring some thoughts and questions for next week:
 http://www.flong.com/archive/texts/publications/thesis/index.html
 
-### From Machines to Computation
-
-A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. 
-
 ---
+
+### Week 1 Sep 14, 2023
+
+[Introductions](https://docs.google.com/presentation/d/1gukRi55omVeeQcjFBdKagZdfs3_pPLlhgsHfG1go4DU)
+
+
 
 ### Computational sketching
 
-Sometimes it helps to step into the shoes of those that have gone before, to see how we ended up here, and what we may have lost or missed along the way. 
+A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. So it can be helful sometimes to step into the shoes of those that have gone before, to see how we ended up here, and what we may have lost or missed along the way. 
 
 Take [John Maeda](https://en.wikipedia.org/wiki/John_Maeda), the designer & MIT Media Lab professor, who pioneered reactive graphics in the era of the Macintosh and CD-ROM. 
 
 > **Design By Numbers (John Maeda, 1999)**   
 > "Drawing by hand, using pencil on paper, is undisputedly the most natural means for visual expression. When moving on to the world of digital expression, however, the most natural means is not pencil and paper, but rather, computation. Today, many people strive to combine the traditional arts with the computer, and while they may succeed at producing a digitally empowered version of their art, they are not producing true digital art. True digital art embodies the core characteristics of the digital medium, which cannot be replicated in any other.
 > 
-> "Compuatation is intrinsically different from existing media because it is the only medium where the material and the process for shaping the material coexiist in the same entity: numbers. The only other medium where a similar phenomenon occurs is pure thought. It naturally follows that computational media could eventually present the rare opportunity to express a conceptual art that is not polluted by textual or other visual representation. This exciting future is still at least a decade or two away. For the moment, we are forced to settle with society's current search for true meaning in an enhanced, interactive version of the art that we have always known."
+> "Computation is intrinsically different from existing media because it is the only medium where the material and the process for shaping the material coexiist in the same entity: numbers. The only other medium where a similar phenomenon occurs is pure thought. It naturally follows that computational media could eventually present the rare opportunity to express a conceptual art that is not polluted by textual or other visual representation. This exciting future is still at least a decade or two away. For the moment, we are forced to settle with society's current search for true meaning in an enhanced, interactive version of the art that we have always known."
 
 Maeda studied with Muriel Cooper and Paul Rand, and redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, which helped lay the groundwork for interactive motion graphics as seen on the web today.
 
@@ -131,15 +134,24 @@ Other key insights from Maeda's interactive graphics explorations:
   - the most **interesting** pixels on the screen are the mouse
   - the mouse represents not just **space** but also **time** -- use it
 
-Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (and thence P5.js). 
+Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (and thence [P5.js](https://p5js.org/)). 
 
 Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
 
 > Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
 
-Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/report_yellowtail/).)
+Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/report_yellowtail/).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?
 
 Let's start sketching.
+
+<!--
+
+- The HTML5 trio: the HTML (DOM), CSS, and JavaScript
+- [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
+- What is an API? The MDN documentation.
+- 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
+
+-->
 
 ----
 
@@ -149,14 +161,17 @@ Let's start sketching.
 
 <!--
 
+----
 
-Read: Levin
-Do: Sketch
-Do: Introduction
+### Read
 
-**Team:** [Microsoft Team here](https://teams.microsoft.com/l/team/19%3a100337fd7f524597bb019d9e088971a2%40thread.tacv2/conversations?groupId=7aec1ee8-8b98-481f-a503-0aa15267e985&tenantId=34531318-7011-4fd4-87f0-a43816c49bd0)
+[Braitenberg, Vehicles](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
 
-[**Zoom recordings** are in Teams under Files](https://teams.microsoft.com/_#/school/files/General?threadId=19:100337fd7f524597bb019d9e088971a2@thread.tacv2&ctx=channel) 
+### Make
+
+Register for a free account on [codepen](https://codepen.io), and create your first sketch-study
+
+**Make:** Mutate [the code we build in class](https://codepen.io/grrrwaaa/pen/bGRgJMr?editors=0010). Can you bring in more behaviour that extends or mutates drawings using the space and time of the mouse, as Maeda indicated? Can you "create a parametric drawing that illustrates repetition, variety, or rhythm"? Or can you introduce randomness in a way that increases interest? (What is an interesting random program?)
 
 
 -----
@@ -195,34 +210,6 @@ Nov 16, 2023
 Nov 23, 2023
 Nov 30, 2023
 
-
-
-[Automata](automata.html) - History, theory, implementation; programs as data
-
-
-
-- The HTML5 trio: the HTML (DOM), CSS, and JavaScript
-- [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
-- What is an API? The MDN documentation.
-- 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
-
-Register for a free account on [codepen](https://codepen.io), and create your first sketch-study
-
-**Make:** Mutate [the code we build in class](https://codepen.io/grrrwaaa/pen/bGRgJMr?editors=0010). Can you bring in more behaviour that extends or mutates drawings using the space and time of the mouse, as Maeda indicated? Can you "create a parametric drawing that illustrates repetition, variety, or rhythm"? Or can you introduce randomness in a way that increases interest? (What is an interesting random program?)
-
-
-
-**Read:** [Braitenberg, Valentino. Vehicles: Experiments in synthetic psychology. MIT press, 1986.](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
-
-**Zoom:** [Recording](https://yorku.zoom.us/rec/share/zhukln8wNMfNxuCWmIlkq_1eYK-xyE2Rj4mCFunVfSupf_GHnWfiujC6_OGkjNlg.m6glOo6NmWkc2Ud_)
-
-### Self-Introduction
-
-Please add 2-4 slides to [The Google Slide deck here](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI) to introduce yourself. 
-- I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
-- You can include a more formal bio, or artist statement, or something more informal about the inspirations that brought you to the program.
-- Remember to include your name, and reference details (name, link etc.) for any images or media you add.
-- Please be careful not to delete your colleague's slides!
 
 -----
 
