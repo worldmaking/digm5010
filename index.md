@@ -67,9 +67,8 @@ I normally also record all sessions and share recordings with the course partici
 
 -----
 
-## Class notes
-
-### Week 0 Sep 7, 2023
+## Week 0 
+Sep 7, 2023
 
 **Hello and welcome!**
 
@@ -108,9 +107,17 @@ Please add 2-4 slides to introduce yourself in The Google Slide deck here: https
 I said in class we should look at others’ Masters & PhD theses/dissertations for inspiration. Here’s the Masters thesis of Golan Levin, from when he was a student at MIT. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. Have a good read and bring some thoughts and questions for next week:
 http://www.flong.com/archive/texts/publications/thesis/index.html
 
----
 
-### Week 1 Sep 14, 2023
+----
+
+## Zoom recordings
+
+[Zoom recording week 0](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
+
+----
+
+## Week 1 
+Sep 14, 2023
 
 [Introductions](https://docs.google.com/presentation/d/1gukRi55omVeeQcjFBdKagZdfs3_pPLlhgsHfG1go4DU)
 
@@ -140,22 +147,20 @@ Maeda's courses challenged students to rethink the medium from its most basic el
 
 > Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
 
-Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/texts/reports/report_yellowtail/).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?
+Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?
 
-Let's start sketching.
+-----
 
-<!--
+Let's get making.
 
+
+-----
+
+- A shareable workspace: [codepen](https://codepen.io)
 - The HTML5 trio: the HTML (DOM), CSS, and JavaScript
 - [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
-- What is an API? The MDN documentation.
+- What is an API? E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
 - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
-
--->
-
-----
-
-[Zoom recording week 0](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
 
 
 
