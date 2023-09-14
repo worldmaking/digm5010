@@ -153,6 +153,9 @@ Golan Levin was one of Maeda's students, and went on to focus specifically on th
 
 Let's get making.
 
+-----
+
+[Zoom recording](https://yorku.zoom.us/rec/share/XMIksojrWFZErVLjX0FiaJME1gwLLveluuWP1nlptE6Z_LaPjRlOQ9VC1CvCdk9J.5NNUm16JSFdgBxfr)
 
 -----
 
