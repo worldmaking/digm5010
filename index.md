@@ -110,9 +110,7 @@ http://www.flong.com/archive/texts/publications/thesis/index.html
 
 ----
 
-## Zoom recordings
-
-[Zoom recording week 0](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
+[Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
 
 ----
 
@@ -151,10 +149,16 @@ Golan Levin was one of Maeda's students, and went on to focus specifically on th
 
 -----
 
-Let's get making.
+[Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
 
+## Week 2 
+Sep 21, 2023
+
+[What is research?](research.html)
 
 -----
+
+Let's get making.
 
 - A shareable workspace: [codepen](https://codepen.io)
 - The HTML5 trio: the HTML (DOM), CSS, and JavaScript
@@ -165,7 +169,7 @@ Let's get making.
 
 
 <!--
-
+[Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
 ----
 
 ### Read
