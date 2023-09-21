@@ -169,27 +169,29 @@ footer {
 <ul>
 <li><p>Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let&#39;s focus on behaviour first.</p>
 </li>
-<li><p>Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work for one, before making it work for many.</p>
+<li><p>Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.</p>
 </li>
-<li><p>Try to write the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn&#39;t often the right thing to do. Once the method becomes clearer, start converting pseudocode into &quot;minimum viable&quot; code.</p>
+<li><p>Try to work out the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn&#39;t often the right thing to do. Once the method becomes clearer, start converting pseudocode into &quot;minimum viable&quot; code.</p>
 </li>
-<li><p>Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things</p>
+<li><p>Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. </p>
+</li>
+<li><p>Figure out working conditions logically from basic requirements. E.g. for anything to animate we&#39;re going to need to clear the screen on each frame, which means we&#39;re going to have to redraw everything every time, which means...</p>
 </li>
 <li><p>Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.</p>
 </li>
-<li><p>Use abstractions (functions, objects) to encapsulate and structure ideas more easily &amp; clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable &quot;support routines&quot; from the code that represents the main ideas. </p>
+<li><p>Test often. Each time you add one minor element, make sure it works for all likely input. </p>
 </li>
 <li><p>Handle special cases: starting values, boundary cases, error handling... </p>
 </li>
-<li><p>Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.</p>
-</li>
-<li><p>Test often. Each time you add one minor element, make sure it works for all likely input. </p>
-</li>
 <li><p>Don&#39;t worry about trying to make anything optimal -- make the most naive way that works, then refine from there. </p>
 </li>
-<li><p>Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.</p>
+<li><p>Use abstractions (functions, objects) to encapsulate and structure ideas more easily &amp; clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable &quot;support routines&quot; from the code that represents the main ideas. </p>
 </li>
 <li><p>Comment the code and use good variable names -- you&#39;ll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)</p>
+</li>
+<li><p>Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.</p>
+</li>
+<li><p>Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.</p>
 </li>
 </ul>
 <!--

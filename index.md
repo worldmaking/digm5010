@@ -174,25 +174,29 @@ Some rules of thumb:
 
 - Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
 
-- Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work for one, before making it work for many.
+- Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.
 
-- Try to write the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
-- Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things
+- Try to work out the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
+
+- Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. 
+
+- Figure out working conditions logically from basic requirements. E.g. for anything to animate we're going to need to clear the screen on each frame, which means we're going to have to redraw everything every time, which means...
 
 - Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.
 
-- Use abstractions (functions, objects) to encapsulate and structure ideas more easily & clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable "support routines" from the code that represents the main ideas. 
-- Handle special cases: starting values, boundary cases, error handling... 
-
-- Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
-
 - Test often. Each time you add one minor element, make sure it works for all likely input. 
+
+- Handle special cases: starting values, boundary cases, error handling... 
 
 - Don't worry about trying to make anything optimal -- make the most naive way that works, then refine from there. 
 
-- Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
+- Use abstractions (functions, objects) to encapsulate and structure ideas more easily & clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable "support routines" from the code that represents the main ideas. 
 
 - Comment the code and use good variable names -- you'll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)
+
+- Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
+
+- Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
 <!--
 [Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
