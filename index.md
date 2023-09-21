@@ -198,6 +198,10 @@ Some rules of thumb:
 
 - Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
+----
+
+[Second codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
+
 <!--
 [Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
 ----
