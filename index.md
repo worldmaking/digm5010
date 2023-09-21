@@ -149,7 +149,7 @@ Golan Levin was one of Maeda's students, and went on to focus specifically on th
 
 -----
 
-[Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
+[Zoom recording](https://yorku.zoom.us/rec/share/XMIksojrWFZErVLjX0FiaJME1gwLLveluuWP1nlptE6Z_LaPjRlOQ9VC1CvCdk9J.5NNUm16JSFdgBxfr)
 
 ## Week 2 
 Sep 21, 2023
@@ -166,7 +166,7 @@ Let's get making.
 - What is an API? E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
 - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
 
-
+[First codepen](https://codepen.io/grrrwaaa/pen/Yzdxwgj)
 
 <!--
 [Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)

@@ -94,8 +94,7 @@ v = U*xy + V*yy + <span class="hljs-number">1</span>*ty;
  <span class="hljs-comment">// the identity matrix (the transform that has no effect)</span>
  [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
   <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,
-  <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>]
-</code></pre>
+  <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>]</code></pre>
 <p>When working in 3D space we do the same trick, adding a 4th row to represent translation, and a a 4th column, whose unit vector componets are normally zero and whose translation component is normally 1:</p>
 <pre><code class="language-js"><span class="hljs-comment">// the components of a 4x4 matrix:</span>
 [xx, xy, xz, <span class="hljs-number">0</span>, <span class="hljs-comment">// X axis unit vector</span>
@@ -107,8 +106,7 @@ v = U*xy + V*yy + <span class="hljs-number">1</span>*ty;
  [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
   <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
   <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,
-  <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>]
-</code></pre>
+  <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>]</code></pre>
 <blockquote>
 <p>Note: This 4th column has certain advantages later when dealing with perspective rendering -- and also happens to be just as efficient on a GPU, where most instructions work on vectors of 4 or 16 elements anyway. </p>
 </blockquote>
@@ -146,14 +144,10 @@ v = U*xy + V*yy + <span class="hljs-number">1</span>*ty;
 <p><a href="http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Chapter-1:-The-Graphics-Pipeline.html"><img src="http://duriansoftware.com/joe/media/gl1-pipeline-01.png" alt="Duran Software image of pipeline"></a></p>
 <p>Your task is to organize the CPU code at the start to prepare the vertex/index/texture etc. data and parameters and manage scheduling these; and to write the GPU code for the <strong>vertex shader</strong> and the <strong>fragment shader</strong>. OpenGL/WebGL takes care of the other stages. </p>
 <p>Here, for example, is a minimal script to generate a coloured rectangle that fills the canvas:</p>
-<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="bmmGjL
-" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/bmmGjL
-">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="bmmGjL" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/bmmGjL">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <p>Here&#39;s the same example but using the webgl2fundamentals utils to simplify the setup code:</p>
-<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="XWKqypJ
-" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/XWKqypJ
-">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="XWKqypJ" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/XWKqypJ">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <h2 id="image-order-and-object-order-rendering">Image-order and object-order rendering</h2>
 <p>There are essentially two main principles of how to render a 2D image of a 3D scene. </p>
@@ -195,8 +189,7 @@ use of the one shader output you have: the pixel color!</p>
 <span class="hljs-keyword">uniform</span> <span class="hljs-type">mat4</span> u_viewmatrix_inverse;
 
 <span class="hljs-comment">// eye position is the first three elements of the 4th row of matrix</span>
-<span class="hljs-type">vec3</span> eye = u_viewmatrix_inverse[<span class="hljs-number">3</span>].xyz;
-</code></pre>
+<span class="hljs-type">vec3</span> eye = u_viewmatrix_inverse[<span class="hljs-number">3</span>].xyz;</code></pre>
 <pre><code class="language-js"><span class="hljs-comment">// in Javascript</span>
 <span class="hljs-comment">// get references to the uniforms:</span>
 <span class="hljs-keyword">const</span> u_mouse = gl.getUniformLocation(program, <span class="hljs-string">&quot;u_mouse&quot;</span>);
@@ -213,8 +206,7 @@ gl.uniform1f(u_time, performance.now * <span class="hljs-number">0.001</span>);
 mat4.lookAt(viewmat, eye, center, up);
 <span class="hljs-keyword">let</span> viewmat_inverse = mat4.invert(mat4.create(), viewmat)
 gl.uniformMatrix4fv(u_viewmatrix, <span class="hljs-literal">false</span>, viewmat);
-gl.uniformMatrix4fv(u_viewmatrix_inverse, <span class="hljs-literal">false</span>, viewmat_inverse);
-</code></pre>
+gl.uniformMatrix4fv(u_viewmatrix_inverse, <span class="hljs-literal">false</span>, viewmat_inverse);</code></pre>
 <h3 id="ray-based-rendering">Ray-based rendering</h3>
 <p>Can be traced back to techniques of 16th century artist
 Albrecht Dürer -- using notions of perspective, optics, and more generally the <strong>simulation</strong> of the physics of light. A full simulation is practically impossible, but conducive effects can be achieved with a modicum of linear algebra and tricks.</p>
@@ -225,8 +217,7 @@ Albrecht Dürer -- using notions of perspective, optics, and more generally the 
 <pre><code class="language-js"><span class="hljs-comment">// basic line equation:</span>
 point = origin + direction*distance;
 <span class="hljs-comment">// or more concisely:</span>
-p = ro + rd*t;
-</code></pre>
+p = ro + rd*t;</code></pre>
 <p>In our fragment shader:</p>
 <pre><code class="language-glsl"><span class="hljs-comment">// an input variable that represents the clip space of the fragment</span>
 <span class="hljs-comment">// going from -1 to 1 between the frame edges in X and Y axes:</span>
@@ -250,29 +241,24 @@ p = ro + rd*t;
 
 <span class="hljs-comment">// debug tests:</span>
 outColor = <span class="hljs-type">vec4</span>(ro, <span class="hljs-number">1.</span>);
-outColor = <span class="hljs-type">vec4</span>(rd, <span class="hljs-number">1.</span>);
-</code></pre>
+outColor = <span class="hljs-type">vec4</span>(rd, <span class="hljs-number">1.</span>);</code></pre>
 <p><img src="https://2.bp.blogspot.com/-GtcGfy5C5rY/VblG-Gn5saI/AAAAAAAAAKE/KVo3wT_dlhA/s640/ray_casting_tracing.png" alt="nearplane"></p>
 <p>For a more configurable frustum, we would need to pass in the aspect ratio (frame width divided by frame height) and the vertical field of view angle (in radians), and use these to scale our normalized coordinates accordingly. (And to change the view direction, we could multiply this vector by a rotation matrix.)</p>
 <pre><code class="language-glsl"><span class="hljs-keyword">uniform</span> u_aspect, u_fovy;
 
 <span class="hljs-comment">// ray direction</span>
 <span class="hljs-comment">// still pointing in Z axis, but now taking into account aspect ratio and field of view:</span>
-<span class="hljs-type">vec3</span> rd = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(snorm*<span class="hljs-type">vec2</span>(u_aspect, <span class="hljs-number">1.0</span>)*<span class="hljs-built_in">tan</span>(u_fovy/<span class="hljs-number">2.0</span>), <span class="hljs-number">1.</span>));
-</code></pre>
+<span class="hljs-type">vec3</span> rd = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(snorm*<span class="hljs-type">vec2</span>(u_aspect, <span class="hljs-number">1.0</span>)*<span class="hljs-built_in">tan</span>(u_fovy/<span class="hljs-number">2.0</span>), <span class="hljs-number">1.</span>));</code></pre>
 <p>Now we have a ray, we just need a way to send that ray through space and see if it hits something -- and we need a something to hit. The simplest something is probably a sphere, which we can define as a point (the sphere centre) and a radius.  Now we just need a way to find out <a href="https://en.wikipedia.org/wiki/Line%E2%80%93sphere_intersection">if (and where) a line and sphere intersect</a>. </p>
 <hr>
-<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="ZEORywY
-" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/ZEORywY
-">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="ZEORywY" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/ZEORywY">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <p>Working with direct intersection functions like this is not always possible -- we might be dealing with &#39;participating media&#39; (like looking through a haze or mist), or dealing with complex scenes made of objects that don&#39;t have analytic intersection functions. In these cases we may opt for a <strong>ray marching</strong> method instead: starting from the ray origin (or, from a surface facet for reflections), we move along the ray in small increments until we &#39;hit&#39; some object that changes our lighting. A basic ray marcher will do this in small sized steps, which can be incredibly expensive.</p>
 <h3 id="sphere-tracing">Sphere tracing</h3>
 <p>AKA signed distance-function based rendering. This is a very popular method for generating scenes in fragment shaders. The core idea is to represent all elements of a scene as an implicit distance function, that is, a function which, given a 3D point in space, returns the distance from that point to the object&#39;s nearest surface. For a number of shapes these functions are fairly simple. For example, to compute the distance to a sphere at the origin:</p>
 <pre><code class="language-glsl"><span class="hljs-type">float</span> fSphere(<span class="hljs-type">vec3</span> p, <span class="hljs-type">float</span> r) {
     <span class="hljs-keyword">return</span> <span class="hljs-built_in">length</span>(p) - r;
-}
-</code></pre>
+}</code></pre>
 <blockquote>
 <p>This code is taken from the fantastic collection of functions, examples, and resources at <a href="https://mercury.sexy/hg_sdf/">hg_sdf</a> -- let&#39;s borrow some of these!</p>
 </blockquote>
@@ -301,16 +287,12 @@ t2 = fBox(p, boxdims);
 tunion = <span class="hljs-built_in">min</span>(t1, t2); 
 tintersection = <span class="hljs-built_in">max</span>(t1, t2);
 tdifference1 = <span class="hljs-built_in">max</span>(t1, -t2);
-tdifference2 = <span class="hljs-built_in">max</span>(t2, -t1);
-</code></pre>
+tdifference2 = <span class="hljs-built_in">max</span>(t2, -t1);</code></pre>
 <p>To move things from the origin we usse domain manipulations, which means, changes of coordinate frame. For example, to render a sphere at +1.0 unit in the X axis, we shift the coordinate space -1.0 unit in X. </p>
-<pre><code class="language-glsl">fSphere(p - <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>), radius);
-</code></pre>
+<pre><code class="language-glsl">fSphere(p - <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>), radius);</code></pre>
 <p>Rotations work in the same way. But not scaling, since this breaks the metric of distance; the only safe way to scale is to scale uniformly in all dimensions, and apply the inverse scale to the distance that is computed. Other transformations including symmetries of mirroring: for example, by taking the absolute value of <code>p.x</code> we get a mirror in the YZ plane.  In the same vein, a rather interesting possibility is to apply a modulus operation to space -- that is, folding space by infinite mirrorrs -- which results in repeated shapes! </p>
 <p>So, with a combination of shape functions, shape combinations, and space foldings, a quite extensive range of possibilities emerge! </p>
-<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="zYBaaQX
-" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/zYBaaQX
-">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="zYBaaQX" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/zYBaaQX">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <hr>
 <blockquote>

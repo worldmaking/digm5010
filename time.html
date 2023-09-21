@@ -214,13 +214,11 @@ Sound recording/playback technology requires a mechanism to transform the epheme
 <p>An event that occurs repeatedly, like the sun rising and setting, can be described in terms of its repetition period, or cyclic frequency (the one is the inverse of the other).</p>
 <pre><code>period = 1 / frequency
 
-frequency = 1 / period
-</code></pre>
+frequency = 1 / period</code></pre>
 <p>In units:</p>
 <pre><code>seconds = 1 / Hertz
 
-Hertz = 1 / seconds
-</code></pre>
+Hertz = 1 / seconds</code></pre>
 <img src="img/timescales_of_music.png" />
 
 
@@ -320,26 +318,21 @@ SynthDef(\example, {
         SinOsc.ar(rrand(400, 800), 0, 0.2) * Line.kr(1, 0, 1, doneAction: 2)
     )
 }).play;
-)
-</code></pre>
+)</code></pre>
 <h4 id="sequencer">Sequencer</h4>
 <p>A separate program, called the <strong>sequencer</strong>, receives score data, and for each note, the sequencer &quot;plays&quot; the corresponding instrument program, with the note parameters to specify frequency, volume, duration etc. The outputs of each note program are mixed into an output stream, which is finally converted into sound.  Score events included:</p>
 <ul>
-<li><p>Specifying the generation of <em>wavetables</em>, or other static data.</p>
-</li>
-<li><p>Specifying the time scale / tempo.</p>
-</li>
-<li><p>Specify note events (with parameters including instrument, duration, and other instrument-specific controls). </p>
-</li>
-<li><p>Punctuation: </p>
-<ul>
+<li>Specifying the generation of <em>wavetables</em>, or other static data.</li>
+<li>Specifying the time scale / tempo.</li>
+<li>Specify note events (with parameters including instrument, duration, and other instrument-specific controls). </li>
+<li>Punctuation: <ul>
 <li>rests, </li>
 <li>synchronization points, </li>
 <li>end of the work.</li>
 </ul>
-<h4 id="acoustic-compiler">Acoustic compiler</h4>
 </li>
 </ul>
+<h4 id="acoustic-compiler">Acoustic compiler</h4>
 <p>In summary, Max Matthews&#39; <em>Music-III</em> system comprises/requires:</p>
 <ul>
 <li>A set of pre-defined &quot;unit generators&quot;<ul>
