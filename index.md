@@ -149,15 +149,6 @@ Golan Levin was one of Maeda's students, and went on to focus specifically on th
 
 -----
 
-[Zoom recording](https://yorku.zoom.us/rec/share/XMIksojrWFZErVLjX0FiaJME1gwLLveluuWP1nlptE6Z_LaPjRlOQ9VC1CvCdk9J.5NNUm16JSFdgBxfr)
-
-## Week 2 
-Sep 21, 2023
-
-[What is research?](research.html)
-
------
-
 Let's get making.
 
 - A shareable workspace: [codepen](https://codepen.io)
@@ -167,6 +158,41 @@ Let's get making.
 - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
 
 [First codepen](https://codepen.io/grrrwaaa/pen/Yzdxwgj)
+
+[Zoom recording](https://yorku.zoom.us/rec/share/XMIksojrWFZErVLjX0FiaJME1gwLLveluuWP1nlptE6Z_LaPjRlOQ9VC1CvCdk9J.5NNUm16JSFdgBxfr)
+
+## Week 2 
+Sep 21, 2023
+
+[What is research?](research.html)
+
+-----
+
+Let's get making -- drawing an example from Golan Levin's research-creation thesis?
+
+Some rules of thumb:
+
+- Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
+
+- Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work for one, before making it work for many.
+
+- Try to write the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
+- Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things
+
+- Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.
+
+- Use abstractions (functions, objects) to encapsulate and structure ideas more easily & clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable "support routines" from the code that represents the main ideas. 
+- Handle special cases: starting values, boundary cases, error handling... 
+
+- Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
+
+- Test often. Each time you add one minor element, make sure it works for all likely input. 
+
+- Don't worry about trying to make anything optimal -- make the most naive way that works, then refine from there. 
+
+- Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
+
+- Comment the code and use good variable names -- you'll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)
 
 <!--
 [Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
