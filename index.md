@@ -202,7 +202,33 @@ Some rules of thumb:
 
 [Second codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
 
+- Please continue this work toward reconstruction of one of Golan Levin's thesis projects; or extend and mutate it into a new direction. We will share each other's codepens in the next class. 
+
 [Zoom recording](https://yorku.zoom.us/rec/share/CI1R6kjxq5zygln3fEXChIMnqGH3AT_9w0YHQlE5ZEOhsczLHPV_4bf0ZubYMTI8.6rytu_aq1kgeVydk)
+
+----
+
+**Literature review part 1: Reading List**
+
+In this course you will investigate a topic within a sub-area of the digital media realm that intersects with something of value to your own research goals in the program. 
+
+In the first phase you will build up a **reading list** on your chosen topic. Please create an online document that you can share (e.g. a github page, a google doc, etc.) to collect your notes and references as you develop this reading list.
+
+As we saw in class, good research needs a good research question, but that doesn't always become apparent at first. Start wider until you are ready to go deep & narrow. Seek out key papers, conferences, and other key resources for the topic. 
+
+- Some investigative tips:
+    - Use Wikipedia to identify **keywords or terms**, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellent network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.
+    - Use these terms and publications in [Google Scholar](https://scholar.google.com/), [Zotero](https://www.zotero.org) and other academic search engines to find for papers that address the questions and issues. Follow `cited by` and `related articles` trails to find new leads. Aim to find the most significant (qualitatively & quantitatively) papers. You should be aiming for a collection of 25-50 potentially interesting papers on the topic at this point. 
+    - At the same time, look for conferences or journals that are more specific to your topic, and see if they have collections of proceedings online to browse through. 
+    - Not all papers are available as PDFs online. You might be able to find them via [York Libraries](https://www.library.yorku.ca/web/bbl/e-resources/) or also communities like [ResearchGate](https://www.researchgate.net/), but do not let this roadblock your progress -- find alternatives to work from instead.
+    - At this point you may be able to formulate a first draft of a title of the topic or area, perhaps even a key question or problem statement; but don't worry at this stage if you haven't yet.
+  - Collect this list as a **Reading List** along with:
+    - The specific topic title or
+    - The keywords or search terms
+    - The work-in-progress research question/problem statement/abstract
+
+- [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
+- [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
 <!--
 [Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
