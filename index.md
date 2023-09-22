@@ -170,6 +170,17 @@ Sep 21, 2023
 
 Let's get making -- drawing an example from Golan Levin's research-creation thesis?
 
+----
+
+[Zoom recording](https://yorku.zoom.us/rec/share/CI1R6kjxq5zygln3fEXChIMnqGH3AT_9w0YHQlE5ZEOhsczLHPV_4bf0ZubYMTI8.6rytu_aq1kgeVydk)
+
+
+[Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
+
+----
+
+Please continue this work toward reconstruction of one of Golan Levin's thesis projects; or extend and mutate it into a new direction. We will share each other's codepens in the next class. 
+
 Some rules of thumb:
 
 - Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
@@ -197,14 +208,6 @@ Some rules of thumb:
 - Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
 
 - Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
-
-----
-
-[Second codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
-
-- Please continue this work toward reconstruction of one of Golan Levin's thesis projects; or extend and mutate it into a new direction. We will share each other's codepens in the next class. 
-
-[Zoom recording](https://yorku.zoom.us/rec/share/CI1R6kjxq5zygln3fEXChIMnqGH3AT_9w0YHQlE5ZEOhsczLHPV_4bf0ZubYMTI8.6rytu_aq1kgeVydk)
 
 ----
 
