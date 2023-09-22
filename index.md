@@ -202,6 +202,8 @@ Some rules of thumb:
 
 [Second codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
 
+[Zoom recording](https://yorku.zoom.us/rec/share/CI1R6kjxq5zygln3fEXChIMnqGH3AT_9w0YHQlE5ZEOhsczLHPV_4bf0ZubYMTI8.6rytu_aq1kgeVydk)
+
 <!--
 [Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
 ----
