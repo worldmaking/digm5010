@@ -233,6 +233,17 @@ As we saw in class, good research needs a good research question, but that doesn
 - [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
 - [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
+----
+
+## Week 3 
+Sep 28, 2023
+
+- Sharing code experiments
+- Discussing reading lists
+
+A possible focus: [Connected Minds](https://www.yorku.ca/research/connected-minds/)
+
+
 <!--
 [Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
 ----
