@@ -254,11 +254,13 @@ For the purposes of our DIGM5010 course: what are some of the **foundations** of
 
 [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
 
+[Zoom recording](https://drive.google.com/file/d/1_4fOobVXYf6WecRKCWsi6b0j9EzCQzD6/view?usp=drive_link)
+
+**References**
 - [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
 - [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
 - [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
 - [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
-
 
 ----
 
