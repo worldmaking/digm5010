@@ -5,21 +5,33 @@
 
 ![Machina Speculatrix](http://www.rutherfordjournal.org/images/020101-05.jpg) 
 
-In the late 1940's and early 1950's, Cyberneticist Grey Walter pioneered the engineering of autonomous agents, as early examples of self-directed robots, with his series of *tortoises*. 
+Perhaps the earliest example of cohabiting human and machine intelligent agents are Grey Walter's Tortoises. 
+
+In the late 1940's and early 1950's, Grey Walter pioneered the engineering of autonomous agents, as early examples of self-directed robots. 
 
 ---youtube:lLULRlmXkKo
 
 ---youtube:wQE82derooc
 
-Remarkably, this direction of research was largely forgotten as efforts in artificial intelligence concentrated on symbolic thinking. A brief history [can be read here](http://www.rutherfordjournal.org/article020101.html) -- but the story of Walter and other British Cyberneticians is truly fascinating; I highly recommend Andrew Pickering's account in [The Cybernetic Brain](http://press.uchicago.edu/ucp/books/book/chicago/C/bo8169881.html). This wasn't just random tinkering, there was an explicit agenda of understanding human and machine together.
+This wasn't just tinkering at home however, there was an explicit agenda of understanding human and machine together, as part of a wider field of Cybernetics. Remarkably, this direction of more biologically-inspired and practically-integrated research was largely forgotten as academic efforts for artificial intelligence shifted sharply toward symbolic thinking, until the "rediscovery" of neural networks with deep learning in the last decades. 
 
-Walter's tortoises have inspired many great research products of the last century, including:
+A brief history of Grey Walter's work [can be read here](http://www.rutherfordjournal.org/article020101.html) -- or for a deeper reading of Walter and other British Cyberneticians I highly recommend Andrew Pickering's account in [The Cybernetic Brain](http://press.uchicago.edu/ucp/books/book/chicago/C/bo8169881.html). 
 
-- the [**turtle graphics**](#mindstorms-1980) of Logo, which might be before your time, but initiated a whole generation of children into computer programming decades ago and led to LEGO Mindstorms among other things,
-- the **situated robotics** of Rodney Brooks (which you may know of as the "iRobot" vaccuum cleaner), 
-- the **flocking simulations** of Craig Reynolds (which you have seen in hundreds of films, games, etc.), 
-- digital artworks, notably [Casey Reas' Tissue series](https://reas.com/tissue_p/)
-- the ever-resurgent waves of **Cybernetics**, including Valentino Braitenberg's Vehicles (which we will look at in more depth now).
+Walter's tortoises have inspired many great research products of the last century. Here are some particular examples:
+
+- the **turtle graphics** of Logo, 
+  - which initiated a whole generation of children into computer programming decades ago
+    - which led on to LEGO Mindstorms among other things, 
+  - turtle graphics influences still live on in many graphics APIs, including somewhat in the browser Canvas 2D context with commands like `moveTo()` and `lineTo()`.
+- the **situated robotics** of Rodney Brooks
+  - Brooks who decried the abstract nature of symbolic AI and simulations that are never tested in real-world contexts 
+    - he pointed out that living systems process a complex noisy world far faster than rational analysis, and proposed a "subsumption architecture" model to emulate it in robots
+  - you may have experienced this via the [iRobot Roomba](https://www.irobot.ca/) vaccuum cleaner
+    - or their educational robotics kits
+- the **flocking simulations** of Craig Reynolds 
+  - (which you have certainly seen in hundreds of films, games, digital artworks, etc.) 
+- or more directly in many other digital artworks, such as [Casey Reas' Tissue series](https://reas.com/tissue_p/)
+- the philosophical discussions of [Valentino Braitenberg's Vehicles](https://en.wikipedia.org/wiki/Braitenberg_vehicle)
 
 ![](img/reas_tissue_p_13.jpg)
 
@@ -72,7 +84,6 @@ Extensions:
 - Can we use our [Node.js](nodejs.html) progress to place our different vehicles into the same world? Where does the 'thinking' happen?
 
 ## Mindstorms (1980)
-
 
 ![logo](https://upload.wikimedia.org/wikipedia/commons/2/2c/Remi_turtlegrafik.png)
 

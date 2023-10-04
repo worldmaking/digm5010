@@ -238,38 +238,94 @@ As we saw in class, good research needs a good research question, but that doesn
 ## Week 3 
 Sep 28, 2023
 
+- Review of code sketching.
+
+Topic: machine intelligence and artificial agents.
+
+One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
+
+For instance, York University recently established [The Center for AI & Society](https://www.yorku.ca/research/cais/) organized research unit, and was awarded $80M from federal funding for the [Connected Minds](https://www.yorku.ca/research/connected-minds/) program. See the [announcement here](https://www.yorku.ca/news/2023/04/28/york-university-leads-318-4m-first-of-kind-inclusive-next-gen-technology-research-initiative/). There will be many multidisciplinary projects funded through this, for which you might be hired as research assistants. There will be scholarships for graduate students (and post-doctroral research appointments) through this, to which you may apply. 
+
+What are the research questions, and especially, what can our field contribute? Where does this overlap or intersect with *your* interests? How will you articulate this?
+
+---
+
+For the purposes of our DIGM5010 course: what are some of the **foundations** of our field that may inform this?
+
+[Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+
+- [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
+- [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
+- [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
+- [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
+
+
+----
+
+## Week 4
+Oct 5, 2023
+
 - Sharing code experiments
 - Discussing reading lists
 
-A possible focus: [Connected Minds](https://www.yorku.ca/research/connected-minds/)
-
 
 <!--
-[Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
-----
-
-### Read
-
-[Braitenberg, Vehicles](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
-
-### Make
-
-Register for a free account on [codepen](https://codepen.io), and create your first sketch-study
-
-**Make:** Mutate [the code we build in class](https://codepen.io/grrrwaaa/pen/bGRgJMr?editors=0010). Can you bring in more behaviour that extends or mutates drawings using the space and time of the mouse, as Maeda indicated? Can you "create a parametric drawing that illustrates repetition, variety, or rhythm"? Or can you introduce randomness in a way that increases interest? (What is an interesting random program?)
 
 
------
-## Schedule
+Research step 1: survey the field / [literature review](#literature-review-1)
+ 
+## Week 4
+Oct 5, 2023
 
-| Week                        | Topic | Due | Reading |
-| :--                         | :--   | :-- | :--     |
-| Sep 08: [Week 0](#week-0)   | [Automata](automata.html), [JavaScript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) | | [Braitenberg, Vehicles](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) |
-| Sep 15: [Week 1](#week-1)   | [Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI), [Making Vehicles]([vehicles.html](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)) | [Introduction slides](#self-introduction), Codepen Practice | [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) |
-| Sep 22: [Week 2](#week-2)   | [Research](research.html), [From Vehicles to Mindstorms](vehicles.html) | [Practice (Journal)](#online-journal--practice-studies)  |
+
+Places to look:
+- [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+- [Desmos](https://www.desmos.com/calculator) is a quick online grapher
+- [Math as code](https://github.com/Jam3/math-as-code) -- how to translate between math notation and JS code
+- [Explorable Explanations](https://explorabl.es) -- far more than math! 
+
+[Microworlds](vehicles.html) - [Turtle talk](https://codepen.io/grrrwaaa/pen/KKqJGQK?editors=0010)
+
+**Homework**: choose an Explorable Explanation that relates to your research topic. For practice, try to reconstruct part of the explorable system!
+
+
+### Literature Review 2 
+
+- From your reading list, select at least 8 of them to study in more careful detail as you create an **Annotated Bibliography**. 
+  - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
+  - Aim for diversity. Avoid using the same authors for the majority of the selection. Include distinct and opposing viewpoints if possible. 
+  - Use primary sources where possible (in particular avoid blog posts, news articles, etc.), unless the secondary source adds a significant new idea (in which case you may want to cite both).
+  - Not everything has to be an academic paper, but ensure that at least 75% of your references are academic publications (conference articles, journal articles, etc.). 
+- Once your list is shortened, perform a deep read of each one, taking notes as you go. The annotation for each paper could typically be 200-500 words. 
+  - I recommend highlighting PDFs but taking notes in a separate plain text document. 
+  - Don't note everything, focus on what the key points are to get a condensed overview of the whole paper. (A well-written paper makes one main point per paragraph, and not all points are significant.)
+    - Distinguish clearly between 
+      - what is a summary of the paper, 
+      - what is a quotation from the paper (use quotation marks), 
+      - and what is your own thought in response (you could use (parentheses) or [square brackets] to indicate these). 
+    - Note page numbers in the text document as you take notes. 
+  - See [York SPARK's guide to annotated bibliographies here](https://spark.library.yorku.ca/wp-content/themes/glendonits-spark-20151125/resources/Annotated%20Bibliography%20Overview.pdf). 
+  - However, unlike the format and examples in that guide, I support and encourage bullet-point style summaries.
+  - I also encourage you to copy out any specific quotations that you find significant, inspiring, or which neatly summarize the authors' points. 
+- After deep note-taking on each paper, read them again with your notes, and correct any mistakes or misunderstandings, amend your analyses, and note any new thoughts. This is your **annotation** for each paper. 
+- Post the results into your journal:
+  - The specific topic title or
+  - The keywords or search terms
+  - The research question/problem statement/abstract
+  - Your initial Reading List
+  - Your final Annotated Bibliography
+  - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
+
+For example, [here's](https://alicelab.world/digm5010/vehicles.html#annotated-notes) my own annotated bibliography notes on Seymour Papert's Mindstorms.
+
+
+
 | Sep 29: [Week 3](#week-3)   | Practice/Review | [Lit Review step 1](#literature-review-1)  |
-| Oct 06: [Week 4](#week-4)   | Annotated Bibliographies | [Practice (Journal)](#online-journal--practice-studies):    [Explorable Explanations](https://explorabl.es)
+| Oct 06: [Week 4](#week-4)   | Annotated Bibliographies 
+[Explorable Explanations](https://explorabl.es)
+
 | Oct 13: [Reading Week](#reading-week) | | (work on Lit Review step 2)  |
+
 | Oct 20: [Week 5](#week-5)   | What to do next? (Markov, [Time](time.html)) | [Lit Review step 2](#literature-review-2) | [Oulipo Selections](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
 | Oct 27: [Week 6](#week-6)   | Project work | [Practice (Journal)](#online-journal--practice-studies) | [Mathews: An Acoustic Compiler](http://ia601505.us.archive.org/7/items/bstj40-3-677/bstj40-3-677.pdf)
 | Nov 03: [Week 7](#week-7)   | [Time and sound](time.html)  | [Paper-project abstract](#final-paper) |
@@ -282,10 +338,6 @@ Register for a free account on [codepen](https://codepen.io), and create your fi
 *-->
 
 <!--
-Sep 14, 2023
-Sep 21, 2023
-Sep 28, 2023
-Oct 5, 2023
 (Oct 12 No class -- York Reading Week)
 Oct 19, 2023
 Oct 26, 2023
@@ -296,23 +348,21 @@ Nov 23, 2023
 Nov 30, 2023
 
 
+Data: 
+characters, oulipo to gpt
+code is also data
+pixels, shaders, 
+samples, signals
+data art, viz, open data, ...
+
 -----
 
-### Week 1
 
-[Introductions](https://docs.google.com/presentation/d/1wTLZmtzhs499XpWeVgWC-YsCW5471OH7yRfoWykEeNI)
+Implementing Vehicles. Now we need vectors and forces. 
 
-Sharing code sketches from last week. Curly paths.
-
-Implementing [Vehicles](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y). Geometry, vectors (see [canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes)), forces. 
-
-**Do:** Register for a free account on [Github](https://github.com). Or, you can sign up for the free [Github education developer pack](https://education.github.com/pack) using your Yorku email address. Set up your online journal using Github markdown.
 
 **Make:** Extend / mutate [the code we built in class](https://codepen.io/grrrwaaa/pen/mdwqLqX?editors=0010) 
 
-**Read:** [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y)
-
-**Zoom:** [Recording](https://yorku.zoom.us/rec/share/jlIIbibCktVGhuoXFmtrLO8jm0fQoF3Aw1Vs0iXyQSi7xc8QrEpIOgpeuu3abNxK.NGk1HC0078BpRVS4)
 
 ### Online Journal & Practice Studies
 
