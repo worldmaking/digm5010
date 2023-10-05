@@ -264,6 +264,12 @@ For the purposes of our DIGM5010 course: what are some of the **foundations** of
 
 ----
 
+Completing the Yellowtail
+- [Zoom recording](https://drive.google.com/file/d/1YolHbf3uddSZOZ-taQPXe1pF25l5icMg/view?usp=drive_link)
+- [Codepen code](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
+
+----
+
 ## Week 4
 Oct 5, 2023
 
