@@ -40,6 +40,8 @@ Each weekly meeting will vary in format, but always at the heart is the discussi
 
 In the early part of the course the instructor may bring lecture material or assign readings or research tasks; and we will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice. You are also expected to bring work to share, **making things** in response to our discussions and course topic. You should be keeping your notes, studies and practices documented in a **public journal**. (Class participation, making and journalling make up the first 25% of the course grade.)
 
+[You can submit codepen sketches through this form](https://forms.gle/NW9xsLq7B3rSjeSw8)
+
 As this goes on, each of you will develop a focus on a specific topic to research in depth, leading to a project documented in a research paper. The project's goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. 
   - It will be grounded through an **extensive literature review** (25%),
   - will demonstrate your foundational computational literacy and ability to understand and transfer research into creative applications (25%),
@@ -304,7 +306,7 @@ Begin working toward your **annotated bibliographies**:
   - However, unlike the format and examples in that guide, I support and encourage bullet-point style summaries.
   - I also encourage you to copy out any specific quotations that you find significant, inspiring, or which neatly summarize the authors' points. 
 - After deep note-taking on each paper, read them again with your notes, and correct any mistakes or misunderstandings, amend your analyses, and note any new thoughts. This is your **annotation** for each paper. 
-- Work on this in a document you can send or share:
+- [You can submit the Annotated Reading list in this form, including](https://forms.gle/dw2CuCxeAnHWRJ2u6)
   - The specific topic title or
   - The keywords or search terms
   - The research question/problem statement/abstract
@@ -319,6 +321,10 @@ Oct 19, 2023
 
 - Sharing & discussing code experiments
 - Sharing & discussing bibliographies
+
+---
+
+[You can submit all of your codepen sketches as we go along through this form](https://forms.gle/NW9xsLq7B3rSjeSw8)
 
 <!--
 
