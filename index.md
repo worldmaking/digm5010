@@ -313,6 +313,7 @@ Begin working toward your **annotated bibliographies**:
   - Your initial Reading List
   - Your final Annotated Bibliography
   - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
+- The final deadline for submission is Oct 25th. 
 
 ---
 
