@@ -173,8 +173,6 @@ Let's get making -- drawing an example from Golan Levin's research-creation thes
 ----
 
 [Zoom recording](https://yorku.zoom.us/rec/share/CI1R6kjxq5zygln3fEXChIMnqGH3AT_9w0YHQlE5ZEOhsczLHPV_4bf0ZubYMTI8.6rytu_aq1kgeVydk)
-
-
 [Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
 
 ----
@@ -266,16 +264,61 @@ For the purposes of our DIGM5010 course: what are some of the **foundations** of
 
 Completing the Yellowtail
 - [Zoom recording](https://drive.google.com/file/d/1YolHbf3uddSZOZ-taQPXe1pF25l5icMg/view?usp=drive_link)
-- [Codepen code](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
+
+---codepen:https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010
 
 ----
 
 ## Week 4
 Oct 5, 2023
 
-- Sharing code experiments
-- Discussing reading lists
+Continuing code sketching, with turtles and mindstorms
 
+- [Zoom recording](https://drive.google.com/file/d/1_yZch7K50LojaVojQeUDublwyVCf5GAh/view?usp=sharing)
+
+---codepen:https://codepen.io/grrrwaaa/pen/mdaoRKa
+---codepen:https://codepen.io/grrrwaaa/pen/LYMayEE
+---codepen:https://codepen.io/grrrwaaa/pen/PoXLmVe
+
+---
+
+## Week 5 
+Reading week
+
+Begin working toward your **annotated bibliographies**:
+
+- From your reading list, select at least 8 item to study in more careful detail as you create an **Annotated Bibliography**. 
+  - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
+  - Aim for diversity. Avoid using the same authors for the majority of the selection. Include distinct and opposing viewpoints if possible. 
+  - Use primary sources where possible (in particular avoid blog posts, news articles, etc.), unless the secondary source adds a significant new idea (in which case you may want to cite both).
+  - Not everything has to be an academic paper, but ensure that at least 75% of your references are academic publications (conference articles, journal articles, etc.). 
+- Once your list is shortened, perform a deep read of each one, taking notes as you go. The annotation for each paper could typically be 200-500 words. 
+  - I recommend highlighting PDFs but taking notes in a separate plain text document. 
+  - Don't note everything, focus on what the key points are to get a condensed overview of the whole paper. (A well-written paper makes one main point per paragraph, and not all points are significant.)
+    - Distinguish clearly between 
+      - what is a summary of the paper, 
+      - what is a quotation from the paper (use quotation marks), 
+      - and what is your own thought in response (you could use (parentheses) or [square brackets] to indicate these). 
+    - Note page numbers in the text document as you take notes. 
+  - See [York SPARK's guide to annotated bibliographies here](https://spark.library.yorku.ca/wp-content/themes/glendonits-spark-20151125/resources/Annotated%20Bibliography%20Overview.pdf). 
+  - However, unlike the format and examples in that guide, I support and encourage bullet-point style summaries.
+  - I also encourage you to copy out any specific quotations that you find significant, inspiring, or which neatly summarize the authors' points. 
+- After deep note-taking on each paper, read them again with your notes, and correct any mistakes or misunderstandings, amend your analyses, and note any new thoughts. This is your **annotation** for each paper. 
+- Work on this in a document you can send or share:
+  - The specific topic title or
+  - The keywords or search terms
+  - The research question/problem statement/abstract
+  - Your initial Reading List
+  - Your final Annotated Bibliography
+  - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
+
+---
+
+## Week 6
+Oct 19, 2023
+
+- Sharing & discussing code experiments
+- Sharing & discussing bibliographies
 
 <!--
 
