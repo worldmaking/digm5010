@@ -287,7 +287,11 @@ Continuing code sketching, with turtles and mindstorms
 ## Week 5 
 Reading week
 
-Begin working toward your **annotated bibliographies**:
+Begin working toward your **annotated bibliographies**
+
+---
+
+## Annotated Bibliography
 
 - From your reading list, select at least 8 item to study in more careful detail as you create an **Annotated Bibliography**. 
   - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
@@ -313,7 +317,7 @@ Begin working toward your **annotated bibliographies**:
   - Your initial Reading List
   - Your final Annotated Bibliography
   - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
-- The final deadline for submission is Oct 25th. 
+- The final deadline for submission is **~~Oct 25th~~ Oct 29th**.
 
 ---
 
@@ -322,6 +326,197 @@ Oct 19, 2023
 
 - Sharing & discussing code experiments
 - Sharing & discussing bibliographies
+
+---
+
+## Week 7
+Oct 26, 2023
+
+- Review of schedule for remainder of semester
+  - The research paper (which can be a continuation of your bibliography and/or codework)
+    - The final submission
+    - The call for papers
+    - (First draft due in two weeks!)
+    - The peer review
+  - The video tutorial (which can support your paper)
+
+- For the students we didn't have time for last week:
+  - Sharing & discussing bibliographies (and code experiments)
+
+- [Explorable Explanations](https://explorabl.es)
+  - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
+  
+- **Annotated bibliographies due Sunday (change of due date)!**
+
+---
+
+## The Call for Papers
+
+(This call for papers is adapted from calls for the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) and the [ISEA (International Symposium on Electronic Arts)](https://isea2024.isea-international.org/academicsubmissions/))
+
+*(Broad terms of call, with theme(s) and topics)* 
+
+The "DIGM Computational Art Symposium" papers track program acts as a bridge between culture and technology to rethink and explore the future of our society. It’s about questions, debate, perspectives, and solutions. The dream is to bring art and engineering communities back together, as has been so fruitful in history. We understand art in its broadest sense, encompassing different fields from fine art to design and architecture. Submissions exploring how computer science and interactive techniques — especially those linked to recent developments in AI, machine learning, robotics, the metaverse, AR,  blockchain, and so on — that relate to societal and environmental questions are particularly encouraged. We encourage submissions that discuss and explore within the fields of electronic arts, creative technology, digital culture and all manners of art-science-technology collaboration not yet born. We would like you to engage in the Renaissance of the 21st century!
+
+Topics of interest include, but are not limited by:
+
+- All modes of augmented, mixed, extended and virtual realities from interactive digital worlds to metaverse
+- Art-science collaborations and practices
+- Bio-art and artificial life
+- ‘Bleeding edge’ concepts from art-science-technology
+- Computational media art as a critical and constructive intervention to the ongoing construction of social reality
+- Creative robotics and human-machine partnerships
+- Data visualization, sonification, data arts
+- Explorable explanations: complex ideas conveyed through interactive experiences
+- Indigenous futures
+- Machine learning as a co-creator
+- Media art archiving
+- New approaches to computational art research and creative practice-based methodologies
+- Posthuman, transhuman, and ’more than human’ paradigms
+- Theories of post-image, new aesthetics, and computer vision
+- Transmedia storytelling
+
+*(Submission categories)* 
+
+Prospective authors may consider one of the following categories as they prepare their work for submission.
+
+- **Projects and case studies.** Papers in this category rigorously document a realized project that combines computational techniques with creative practice. They also critically explore its social, cultural, and affective impact.
+- **Methodological contributions.** Papers in this category identify, document, and explore emergent methodological approaches that open new pathways to the practice and scholarship of computational art and/or engineering development as well as art-engineering collaboration. This could be in the form of a "white paper" about a new technique. 
+- **Reproduction of research.** Re-implmeent a known and significant research paper, and analyze the results. 
+- **Innovation through art practices.** Papers in this category explore, through artistic practice including technology development research, the potential use of emerging digital technologies and their impact for users and citizens. They may also express a transdisciplinary work between digital engineering and art practices to develop solutions that confront the major challenges of our times.
+- **History, theory, and criticism.** Papers in this category offer new technically-informed historical, theoretical, and critical perspectives on computational art and on the technical artifacts, infrastructures, and communities that support them.
+- **Novel approach to literature as manifesto.** Discuss more deeply ideas encountered in the bibliography as the basis for a foundational manifesto. Include both the discussion/argumentation as well as the resulting manifesto in the submission.
+- An **Explorable Explanation**. Inspired by the [Explorable Explanation](https://explorabl.es) website, you can either
+  - a) present a new topic that could be represented and conveyed more effectively as a dynamic system, and in your paper discuss the design and implementation of it, or
+  - b) choose one of the systems in [Explorable Explanations](https://explorabl.es) and first offer a critique and second attempt to reproduce it, as an example of replicating research. Document what you observe, e.g. how it (meaningfully) differs (if it does), comparing related work, discussing what new avenues you find or suggest. 
+  - In either case don't concern yourself with a slick design, concentrate on what are the core mechanics of the idea, and how they convey an otherwise difficult subject.
+
+*(Paper requirements)*
+
+We invite paper submissions for original and substantial research, both traditional and non-traditional, that has not been previously published. Papers will follow full academic practices, for instance, through an extensive literature review, argumentation, and observations or evaluations of impact. All papers must follow academic standards and will undergo blind peer review based on quality, relevance, originality, and impact. 
+
+(See notes on the [Final Paper submission](#final-paper) for details about formatting.)
+
+Submissions will be uploaded online. We also ask you to add a very short text explaining why your submission is important for the academic and wider community, from raising critical issues to opening perspectives or generating solutions. In doing so, we aim to enhance the impact of your cultural contributions.
+
+Authors will be required to present their papers with a duration of 15 minutes. Authors may also be requested to provide a short video. 
+
+---
+
+## Week 8
+Nov 2, 2023
+
+Steering: vehicles and flocks
+
+- Work on your paper draft. It **must be submitted before next week's class**
+
+---
+
+## Week 9
+Nov 9, 2023
+
+- **Paper draft online submission due for peer review.**
+  
+- Peer review discussion: sharing past reviews (and reviewing)
+
+- **For next week**:
+  - Submit your [Peer reviews](#peer-review)
+  - Submit your [Video Tutorial](#video-tutorial)
+
+---
+
+## Peer Review
+
+Recall our slides on [reviewing research](research.html#/33)
+
+Between week 9 and 10 we will run an 'internal review' process, emulating what is frequently done in conference submission review processes. Typically this means:
+
+- A call for work (papers, demonstrations, artworks, panels, etc.) is made public.
+- Authors submit a draft or extended abstract of a paper (or a proposal for an artwork etc.) by a certain deadline for review, usually using an online interface. 
+- Reviews are most often performed "blind" or "double-blind" (that is, reviewers and authors are anonymized).
+- Each draft is sent to a handful of reviewers. Members of the review body are usually made up of many previous authors at the conferene. Though a conference may have hundreds of submissions, usually reviewers only have a handful assigned to them. 
+- Reviewers complete a review of the submission, usually using an online interface, by a certain deadline. Sometimes a meta-review is performed by a lead jury member of the conference to synthesize the reviews and reach a verdict on acceptance. Sometimes submissions are accepted, sometimes rejected, sometimes accepted but on different terms (e.g. long paper submission may be accepted as a short paper, with requirement to reduce length.)
+- These reviews are sent back to authors, along with the accept/reject verdict. Authors of accepted papers must act upon any requirements or corrections identified by reviewers, and may follow further recommendations. Then the final submission is resubmitted with these changes by a new deadline (usually very shortly after receiving reviews).
+
+**For our purposes, you will act as both author and reviewer: each of you will act as reviewers for the other students' submissions.**
+
+For general review guidelines, [see here](https://www.wikihow.com/Review-a-Journal-Article) and [here](https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html) or [here](https://www.elsevier.com/reviewers/how-to-review), or [here](https://www.springer.com/authors/manuscript+guidelines?SGWID=0-40162-6-1261021-0#:~:text=Reviews%20should%20be%20conducted%20fairly,less%20useful%20to%20your%20field.). Here are key points:
+
+> "The purpose of peer review is to improve the quality of the manuscript under review, and of the material that is eventually published. Conscientious peer review is a time-consuming task but is essential to assure the quality of scientific journals." 
+
+> Reviews should be conducted fairly and objectively. Personal criticism of the author is inappropriate. If the research reported in the manuscript is flawed, criticize the science, not the scientist. Criticisms should be objective, not merely differences of opinion, and intended to help the author improve his or her paper.
+
+> Comments should be constructive and designed to enhance the manuscript. You should consider yourself the authors’ mentor. Make your comments as complete and detailed as possible. Express your views clearly with supporting arguments and references as necessary. Include clear opinions about the strengths, weaknesses and relevance of the manuscript, its originality and its importance to the field. Specific comments that cite line numbers are most helpful. 
+
+> Begin by identifying the major contributions of the paper. What are its major strengths and weaknesses, and its suitability for publication? Please include both general and specific comments bearing on these questions, and emphasize your most significant points. Support your general comments, positive or negative, with specific evidence.
+
+> Is the aim clearly stated? Do the title, abstract, key words, introduction, and conclusions accurately and consistently reflect the major point(s) of the paper? Is the writing concise, easy to follow, and interesting, without repetition?
+
+> Are the methods appropriate, sound, current, and described clearly enough that the work could be repeated by someone else? Is the research ethical and have the appropriate approvals/consent been obtained? Are appropriate analyses used? Are they sufficiently justified and explained? Are statements of significance justified? Are results supported by data? Are any of . the results counterintuitive? Are the conclusions supported by the data presented?
+
+> Are the references cited the most appropriate to support the manuscript? Are citations provided for all assertions of fact not supported by the data in this paper? Are any key citations missing? 
+
+> Should any portions of the paper should be expanded, condensed, combined, or deleted? 
+
+As a structure, our [review form](https://forms.gle/skNKhyUtp9qS4DeD6) is based on materials as used by the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) review body. That process was double-blind (both authors & reviewers anonymized), but since we know each other, we'll run our review single-blind (authors anonymized). Each of you will be randomly assigned up to 3 papers to review. 
+
+---
+
+## Video Tutorial
+
+Research is about *sharing*. Sometimes, that requires sharing *how*. 
+
+1. Create a video-based tutorial (roughly 10-20mins) to introduce a technical topic.
+	- It could be an introduction to a platform we are not covering in class
+	- or an exploration of a library/API or SDK etc. in Javascript
+	- or alternatively, it could be a tutorial on a technique or algorithm or mechanism or a part of mathematics etc.
+2. Whichever you choose, it should cover both of: 
+	- introducing the key concepts, the unusual and interesting parts, and related work
+	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
+3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
+
+---
+
+## Week 10
+Nov 16, 2023
+
+- **Peer reviews due:** [review form](https://forms.gle/skNKhyUtp9qS4DeD6). 
+- **Video tutorials due**
+  
+- Review outcome & process discussion.
+  
+- **Two weeks to final paper & presentation**
+
+---
+
+## Week 11
+Nov 23, 2023
+
+---
+
+## Week 12
+Nov 30, 2023
+
+**Final presentations**
+
+---
+
+## Final Paper
+
+1. The final paper continues from the [Literature Review](#annotated-bibliography[), and responds to the ]Call for Papers](#the-call-for-papers). 
+  - Find a few other papers online that have similar focus, and analyze their structure as a guide.
+  - Find related conferences/symposia/journals/etc. to contrast other papers as well as submission and review criteria. 
+  - You should identify at least one conference/festival/other appropriate venue to submit your research or research-creation. Investigate papers submitted to this in past years, and the submission requirements and review criteria. 
+  - Document these findings in your journal.
+2. Papers can range from 2000-5000 words. You have two choices for publication format. 
+   1. A traditional conference-style paper. Papers must follow the standard template (adapted from ISEA2024) available [here](https://docs.google.com/document/d/1WZkAN9oaT8pvVVKBRwRRgbwnuKmAU0JJ/edit?usp=share_link&ouid=112275914788197824145&rtpof=true&sd=true) or [here](https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx)
+   2. A very modern, online-first academic article. That is, one designed to be read online, with at least some active components, rather than primarily on paper. The notion of publishing in academia has been rapidly changing, and these changes accelerated during the pandemic.
+     - See [https://www.pubpub.org](https://www.pubpub.org) for an example of a modern online-first collaborative publishing venue. Many conferences in recent years have moved over to this format (e.g. NIME, ICLC). 
+     - See [https://distill.pub](https://distill.pub) for an example of a modern, web-based peer-reviewed journal with embedded visualizations and interactive components. 
+     - See [https://jar-online.net](https://jar-online.net) for a different example more focused on art theory & practice.
+     - Alternatively, create your own using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
+     - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
+3. Post your final paper online to our final submission form.
 
 ---
 
@@ -481,7 +676,7 @@ Places to look:
 
 [**Zoom recording**](https://yorku.zoom.us/rec/share/ARbKcbdmZykOw61DZ12Uq5W2ALgRpQN8Vso22emu57jmsf4Sfmwp1x0cCra6S_Si.JVycVe4Oy80CPDRk) 
 
-**Homework**: choose an Explorable Explanation that relates to your research topic. For practice, try to reconstruct part of the explorable system!
+**Homework**: choose an [Explorable Explanation](https://explorabl.es) that relates to your research topic. For practice, try to reconstruct part of the explorable system!
 
 -----
 
@@ -597,40 +792,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 -----
 ### Week 9
 
-- Performing & responding to peer reviews
-- [The form](https://forms.gle/pWesCCBQkeMKWX6y7)is based on the real peer review format of the SIGGRAPH Art Papers section https://blog.siggraph.org/tag/art-papers/. That process was double-blind (both authors & reviewers anonymized), but since we know each other, we'll run our review single-blind (authors anonymized). Each of you will be randomly assigned up to 3 papers to review. 
-- Two weeks to presentation
-
 **[Zoom recording](https://yorku.zoom.us/rec/share/tcnLkfrrxxapfsjmWn15gcox0LM-MYQg8BQVgs3iCLqsFL82eqkj7oa1ruGgeIC1.erXQvut-v6uZlJDP)**
-
-### Peer Review
-
-[Reviewing research](research.html#/33)
-
-Between week 9 and 10 we will run an 'internal review' process, emulating what is frequently done in conference submission review processes. Typically this means:
-
-- A call for work (papers, demonstrations, artworks, panels, etc.) is made public.
-- Authors submit a draft or extended abstract of a paper (or a proposal for an artwork etc.) by a certain deadline for review, usually using an online interface. 
-- Reviews are most often performed "blind" or "double-blind" (that is, reviewers and authors are anonymized).
-- Each draft is sent to a handful of reviewers. Members of the review body are usually made up of many previous authors at the conferene. Though a conference may have hundreds of submissions, usually reviewers only have a handful assigned to them. 
-- Reviewers complete a review of the submission, usually using an online interface, by a certain deadline. Sometimes a meta-review is performed by a lead jury member of the conference to synthesize the reviews and reach a verdict on acceptance. Sometimes submissions are accepted, sometimes rejected, sometimes accepted but on different terms (e.g. long paper submission may be accepted as a short paper, with requirement to reduce length.)
-- These reviews are sent back to authors, along with the accept/reject verdict. Authors of accepted papers must act upon any requirements or corrections identified by reviewers, and may follow further recommendations. Then the final submission is resubmitted with these changes by a new deadline (usually very shortly after receiving reviews).
-
-For our purposes, you will act both as authors and reviewers: each of you will act as reviewers for the others' submissions. 
-
-For general review guidelines, [see here](https://www.wikihow.com/Review-a-Journal-Article) and [here](https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html) or [here](https://www.elsevier.com/reviewers/how-to-review), or [here](https://www.springer.com/authors/manuscript+guidelines?SGWID=0-40162-6-1261021-0#:~:text=Reviews%20should%20be%20conducted%20fairly,less%20useful%20to%20your%20field.):
-
-> "The purpose of peer review is to improve the quality of the manuscript under review, and of the material that is eventually published. Conscientious peer review is a time¬-consuming task but is essential to assure the quality of scientific journals." 
-> Reviews should be conducted fairly and objectively. Personal criticism of the author is inappropriate. If the research reported in the manuscript is flawed, criticize the science, not the scientist. Criticisms should be objective, not merely differences of opinion, and intended to help the author improve his or her paper.
-> Comments should be constructive and designed to enhance the manuscript. You should consider yourself the authors’ mentor. Make your comments as complete and detailed as possible. Express your views clearly with supporting arguments and references as necessary. Include clear opinions about the strengths, weaknesses and relevance of the manuscript, its originality and its importance to the field. Specific comments that cite line numbers are most helpful. 
-> Begin by identifying the major contributions of the paper. What are its major strengths and weaknesses, and its suitability for publication? Please include both general and specific comments bearing on these questions, and emphasize your most significant points. Support your general comments, positive or negative, with specific evidence.
-> Is the aim clearly stated? Do the title, abstract, key words, introduction, and conclusions accurately and consistently reflect the major point(s) of the paper? Is the writing concise, easy to follow, and interesting, without repetition?
-> Are the methods appropriate, sound, current, and described clearly enough that the work could be repeated by someone else? Is the research ethical and have the appropriate approvals/consent been obtained? Are appropriate analyses used? Are they sufficiently justified and explained? Are statements of significance justified? Are results supported by data? Are any of . the results counterintuitive? Are the conclusions supported by the data presented?
-> Are the references cited the most appropriate to support the manuscript? Are citations provided for all assertions of fact not supported by the data in this paper? Are any key citations missing? 
-> Should any portions of the paper should be expanded, condensed, combined, or deleted? 
-
-As a structure, we will base our [review form](https://forms.gle/pWesCCBQkeMKWX6y7) on materials as used by the SIGGRAPH Art Papers review body. 
-
 
 -----
 ### Week 10
@@ -640,27 +802,6 @@ As a structure, we will base our [review form](https://forms.gle/pWesCCBQkeMKWX6
 
 
 
------
-### Week 11
-
-**Presentations**
-
-**[Zoom recording](https://yorku.zoom.us/rec/share/5rAiHyTvJyGDkuS1uX2d9JJiGK9K2rPE1dOFTbNEzR-p8Jm_kBF90qMIyPOW-KEc.HDXLmo_u2kk_wT1v)**
-
-### Final Paper
-
-1. The final paper can continue from the Literature Review. You may incorporate documenting & contextualize your practice studies or one of your artworks. You could write a 'white paper' on a technique. You might re-implement a known research paper, and analyze the results. Or you might discuss more deeply ideas encountered in the bibliography. Perhaps pen a manifesto. 
-  - Find a few other papers online that have similar focus, and analyze their structure as a guide.
-  - Find related conferences/symposia/journals/etc. to contrast other papers as well as submission and review criteria. 
-  - You should identify at least one conference/festival/other appropriate venue to submit your research or research-creation. Investigate papers submitted to this in past years, and the submission requirements and review criteria. 
-  - Document these findings in your journal.
-2. The format will be a very modern, online-first academic article. That is, one designed to be read online, with at least some active components, rather than primarily on paper. The notion of publishing in academia has been rapidly changing, and these changes are accelerating under pandemic conditions.
-  - See [https://www.pubpub.org](https://www.pubpub.org) for an example of a modern online-first collaborative publishing venue. Many conferences in recent years have moved over to this format (e.g. NIME, ICLC). 
-  - See [https://distill.pub](https://distill.pub) for an example of a modern, web-based peer-reviewed journal with embedded visualizations and interactive components. 
-  - See [https://jar-online.net](https://jar-online.net) for a different example more focused on art theory & practice.
-  - Alternatively, create your own using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
-  - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
-3. Post your final paper online -- either inside or linked from your journal.
 -->
 
 -------
