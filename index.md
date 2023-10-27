@@ -350,6 +350,10 @@ Oct 26, 2023
 
 ---
 
+[Zoom recording](https://yorku.zoom.us/rec/share/ydBsTO_cShKJr6m4HSosOmmj0JPosbTi1KnZ7rcp16O1mBGwYbFpEUJsuCvRkypY.9L3Y1RsmL0YcwucL)
+
+---
+
 ## The Call for Papers
 
 (This call for papers is adapted from calls for the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) and the [ISEA (International Symposium on Electronic Arts)](https://isea2024.isea-international.org/academicsubmissions/))
