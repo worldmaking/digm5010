@@ -97,7 +97,8 @@ vec2.normalize(out, a);
 <span class="hljs-comment">// linear interpolation, a mix or blend along line between a (when t=0) and b (when t=1)</span>
 vec2.lerp(out, a, b, t); 
 <span class="hljs-comment">// place &quot;out&quot; at a random point on a circle of radius &quot;r&quot;</span>
-vec2.random(out, r)</code></pre>
+vec2.random(out, r)
+</code></pre>
 <p><a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">More cheat-sheets for gl-matrix</a></p>
 <h2 id="locomotion">Locomotion</h2>
 <ul>
@@ -124,7 +125,8 @@ vec2.limit = <span class="hljs-function"><span class="hljs-keyword">function</sp
     <span class="hljs-keyword">const</span> limited_len = <span class="hljs-built_in">Math</span>.min(len, limit)
     vec2.scale(out, v, limited_len/len)
     <span class="hljs-keyword">return</span> out
-}</code></pre>
+}
+</code></pre>
 <h2 id="steering">Steering</h2>
 <p>Now all we need to do is work out the force, which can be a sum of multiple forces, external and internal</p>
 <ul>
@@ -142,7 +144,8 @@ vec2.relativewrap = <span class="hljs-function"><span class="hljs-keyword">funct
     out[<span class="hljs-number">0</span>] = <span class="hljs-built_in">Math</span>.mod(v[<span class="hljs-number">0</span>] + w/<span class="hljs-number">2</span>, w) - w/<span class="hljs-number">2</span>;
     out[<span class="hljs-number">1</span>] = <span class="hljs-built_in">Math</span>.mod(v[<span class="hljs-number">1</span>] + h/<span class="hljs-number">2</span>, h) - h/<span class="hljs-number">2</span>;
     <span class="hljs-keyword">return</span> out;
-}</code></pre>
+}
+</code></pre>
 <h2 id="ui">UI</h2>
 <p>We&#39;re starting to get more parameters, and it would be nice to be able to tweak them to see how it changes behviours. For a quick solution, search for the &quot;dat-gui&quot; library in the JS extensions. <a href="https://github.com/dataarts/dat.gui/blob/master/API.md">Here&#39;s the API docs</a>. Cheatsheet:</p>
 <pre><code class="language-js"><span class="hljs-comment">// an container of parameters to control:</span>
@@ -153,7 +156,8 @@ vec2.relativewrap = <span class="hljs-function"><span class="hljs-keyword">funct
 <span class="hljs-comment">// create the interface:</span>
 <span class="hljs-keyword">let</span> gui = <span class="hljs-keyword">new</span> dat.GUI({<span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;My GUI&#x27;</span>});
 <span class="hljs-comment">// add a slider for params.speed, in the range of 0 to 10, stepping in 1&#x27;s</span>
-gui.add(params, <span class="hljs-string">&#x27;speed&#x27;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">1</span>);</code></pre>
+gui.add(params, <span class="hljs-string">&#x27;speed&#x27;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">1</span>);
+</code></pre>
 <p>(If it doesn&#39;t show up, it might be because of the CSS setting: if you have <code>* { overflow: hidden; }</code> change it to <code>body { overflow: hidden; }</code>)</p>
 <h2 id="boids-flocking-swarms">Boids, flocking, swarms</h2>
 <p>Reynolds&#39; most significant contribution combined several steering forces to a proposed model of animal motion emulating flocks, herds and schools. Each agent, or <strong>&quot;boid&quot;</strong>, follows a set of rules based on simple principles:</p>

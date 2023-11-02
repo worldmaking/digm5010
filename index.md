@@ -410,7 +410,7 @@ Authors will be required to present their papers with a duration of 15 minutes. 
 ## Week 8
 Nov 2, 2023
 
-Steering: vehicles and flocks
+[Steering: vehicles and flocks](steering.html)
 
 - Work on your paper draft. It **must be submitted before next week's class**
 
