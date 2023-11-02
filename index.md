@@ -412,6 +412,8 @@ Nov 2, 2023
 
 [Steering: vehicles and flocks](steering.html)
 
+[Zoom recording](https://yorku.zoom.us/rec/share/eQ8bNlcNDwH98beo9TC0vz-52s0oY0xyzXhQN2agr4TMS0YdkDLE-8Nt5MhKCn6k.zmcgRL-i9JIjq8NB)
+
 - Work on your paper draft. It **must be submitted before next week's class**
 
 ---
