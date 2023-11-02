@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="author" content="Graham Wakefield">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/github.css" type="text/css" />
+<style>
+img {
+	max-height: 75vh;
+}
+td { vertical-align: top;}
+header {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+
+footer {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+</style>
+</head>
+
+<body class="centremaxwidth960">
+<header><a href="index.html">Foundations of Digital Media</a></header>
+<ul>
+<li><a href="#steering-behaviours">Steering Behaviours</a><ul>
+<li><a href="#vectors">Vectors</a></li>
+<li><a href="#locomotion">Locomotion</a></li>
+<li><a href="#steering">Steering</a></li>
+<li><a href="#ui">UI</a></li>
+<li><a href="#boids-flocking-swarms">Boids, flocking, swarms</a></li>
+<li><a href="#ideas-for-extensions">Ideas for extensions</a></li>
+</ul>
+</li>
+</ul>
+
+<h1 id="steering-behaviours">Steering Behaviours</h1>
+<iframe width="720" height="540" src="https://youtube.com/embed/V4f_1_r80RY" frameborder="0" allowfullscreen></iframe>
+
+<p>In the late 1980s Craig Reynolds proposed a model of animal motion to model flocks, herds and schools, which he named boids. Reynolds&#39; paper <a href="https://www.red3d.com/cwr/steer/gdc99/">Steering Behaviors for Autonomous Characters</a> covers boids as an aggregate of other steering behaviours. The paper has been very influential in robotics, game design, special effects and simulation, and remains well worth exploring as a collection of patterns for autonomous agent movements, so we will work through it in more detail.</p>
+<blockquote>
+<p>Notice that in the &quot;related work&quot; section the paper refences Grey Walter&#39;s Tortoises, Rodney Brooks&#39; robotics, and Valentino Braitenberg&#39;s Vehicles.</p>
+</blockquote>
+<p>The paper breaks agent movement in general into three layers:</p>
+<ul>
+<li><strong>Action Selection</strong>: selecting actions to perform according to environmental input and goals to achieve.</li>
+<li><strong>Steering</strong>: path determination according to the action selected. Many different behaviors can be used; the essential strategy is to compute a new force, which is often in terms of a desired velocity minus current velocity</li>
+<li><strong>Locomotion</strong>: mechanisms of conversion of steering into actual movement.</li>
+</ul>
+<p>His paper concentrates on several different steering algorithms. Action selection is not dealt with, but also arguably independent. Locomotion is extremely simple -- equivalent to a single force vector on a point mass -- but a more complex (and thus constrained) locomotion system could be swapped in without changing the steering model significantly. Many ideas for combining different steering force behaviours are given. </p>
+<p><a href="https://codepen.io/grrrwaaa/full/XXevBb">Flock simulation example</a></p>
+<p><a href="https://codepen.io/grrrwaaa/full/GRqWxMx">Another</a></p>
+<h2 id="vectors">Vectors</h2>
+<p>The simple vehicle model, and all of the behaviours, make use of vectors -- representing positions in space, relative distances, velocities, forces and accelerations etc.  We might need to add, subtract, scale, rotate, randomize etc. vectors. We could write a set of routines to do these things, or we could make use of an existing library such as <a href="https://glmatrix.net/docs/module-vec2.html">gl-matrix</a>.</p>
+<blockquote>
+<p>In the Codepen JS tab, click the settings wheel to open up the JS settings. Search for &quot;gl-matrix&quot; in the &quot;External scripts&quot; &quot;Search CDNjs&quot; section, and select the &quot;gl-Matrix&quot; option. It will add the gl-matrix library to your script, e.g. &quot;<a href="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/3.4.2/gl-matrix-min.js&quot;">https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/3.4.2/gl-matrix-min.js&quot;</a></p>
+</blockquote>
+<p>A quick &quot;cheat-sheet&quot; of <code>vec2</code> (writing your own cheat sheets is a great way to keep notes on a library, API, SDK etc.)</p>
+<pre><code class="language-js"><span class="hljs-comment">// vectors are stored in array form as [x, y]</span>
+<span class="hljs-keyword">let</span> v = vec2.create() <span class="hljs-comment">// [0, 0]</span>
+<span class="hljs-keyword">let</span> v2 = vec2.clone(v)
+
+<span class="hljs-comment">// most operations have an &quot;out&quot; argument first</span>
+v3 = [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>];
+vec2.add(v3, v1, v2); <span class="hljs-comment">// v3 = v1 + v2</span>
+<span class="hljs-comment">// or simply:</span>
+v3 = vec2.add([<span class="hljs-number">0</span>, <span class="hljs-number">0</span>], v1, v2);
+vec2.sub(out, a, b); <span class="hljs-comment">// out = a - b</span>
+vec2.mul(out, a, b);
+vec2.div(out, a, b);
+vec2.scale(out, a, n); <span class="hljs-comment">// out[0] = n * a[0]; out[1] = n * a[1]</span>
+vec2.negate(out, a); <span class="hljs-comment">// out[0] = -a[0]; out[1] = -a[1]</span>
+
+vec2.set(out, x, y); <span class="hljs-comment">// out[0] = x; out[1] = y</span>
+vec2.copy(out, a); <span class="hljs-comment">// out[0] = a[0]; out[1] = a[1]</span>
+
+<span class="hljs-comment">// length of vector:</span>
+<span class="hljs-keyword">let</span> d = vec2.length(a);
+<span class="hljs-comment">// distance between two points</span>
+<span class="hljs-keyword">let</span> d = vec2.distance(a, b); 
+
+<span class="hljs-comment">// set &quot;out&quot; to rotation of &quot;a&quot; by &quot;angle&quot; around &quot;origin&quot;:</span>
+vec2.rotate(out, a, origin, angle);
+
+<span class="hljs-comment">// make vector length equal 1, no change of direction</span>
+vec2.normalize(out, a);
+<span class="hljs-comment">// linear interpolation, a mix or blend along line between a (when t=0) and b (when t=1)</span>
+vec2.lerp(out, a, b, t); 
+<span class="hljs-comment">// place &quot;out&quot; at a random point on a circle of radius &quot;r&quot;</span>
+vec2.random(out, r)
+</code></pre>
+<p><a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">More cheat-sheets for gl-matrix</a></p>
+<h2 id="locomotion">Locomotion</h2>
+<ul>
+<li>Acceleration = force / mass  (we often assume mass=1 for simplicity)<ul>
+<li>Limit magnitude of acceleration as pseudo-friction</li>
+<li>(Or, accel = (old accel * inertia) + force)</li>
+</ul>
+</li>
+<li>Velocity += acceleration<ul>
+<li>Limit to max speed</li>
+</ul>
+</li>
+<li>Position += velocity<ul>
+<li>Limit or wrap in space?</li>
+</ul>
+</li>
+</ul>
+<p>position, velocity, acceleration, force can all be represented as <code>vec2</code></p>
+<p>Start with something simple -- a single agent, moving in space by a velocity, then by acceleration, then with a simple force (e.g. downward)</p>
+<p>We may need to write our own function to limit a vector&#39;s length (for  velocity limit, force limit etc.). E.g. get the length of the vector, limit it using Math.min(), and scale the vector by however much you reduced the length:</p>
+<pre><code class="language-js"><span class="hljs-comment">// limit the length of vector `v` to be no greater than `limit`</span>
+vec2.limit = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">out, v, limit</span>) </span>{
+    <span class="hljs-keyword">const</span> len = vec2.length(v)
+    <span class="hljs-keyword">const</span> limited_len = <span class="hljs-built_in">Math</span>.min(len, limit)
+    vec2.scale(out, v, limited_len/len)
+    <span class="hljs-keyword">return</span> out
+}
+</code></pre>
+<h2 id="steering">Steering</h2>
+<p>Now all we need to do is work out the force, which can be a sum of multiple forces, external and internal</p>
+<ul>
+<li>Global direction, e.g. gravity, wind</li>
+<li>Random walk</li>
+<li>Seek &amp; flee: derive desired velocity from a the relative vector toward (or away from) a target point. Given a desired velocity, the steering force is obtained by subtracting the current velocity. Intensity decreases as distance decreases.</li>
+<li>Avoidance (e.g. avoiding obstacles, and/or each other): intensity increases as relative distance decreases.</li>
+</ul>
+<p>It may be better to separate force calculation and locomotion into different loops over the population. Why?</p>
+<p>If you want to have a &#39;toroidal&#39; space, where exiting one edge means re-entering at the opposite edge, you may need to compute relative position vectors wrapped in a range of -canvas.width/2 to +canvas.width/2. For example:</p>
+<pre><code class="language-js"><span class="hljs-comment">// wrap vector `v` in the region of [-w/2, -h/2] to [w/2, h/2]</span>
+vec2.relativewrap = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">out, v, w, h</span>) </span>{
+    <span class="hljs-keyword">const</span> w = space.width;
+    <span class="hljs-keyword">const</span> h = space.height;
+    out[<span class="hljs-number">0</span>] = <span class="hljs-built_in">Math</span>.mod(v[<span class="hljs-number">0</span>] + w/<span class="hljs-number">2</span>, w) - w/<span class="hljs-number">2</span>;
+    out[<span class="hljs-number">1</span>] = <span class="hljs-built_in">Math</span>.mod(v[<span class="hljs-number">1</span>] + h/<span class="hljs-number">2</span>, h) - h/<span class="hljs-number">2</span>;
+    <span class="hljs-keyword">return</span> out;
+}
+</code></pre>
+<h2 id="ui">UI</h2>
+<p>We&#39;re starting to get more parameters, and it would be nice to be able to tweak them to see how it changes behviours. For a quick solution, search for the &quot;dat-gui&quot; library in the JS extensions. <a href="https://github.com/dataarts/dat.gui/blob/master/API.md">Here&#39;s the API docs</a>. Cheatsheet:</p>
+<pre><code class="language-js"><span class="hljs-comment">// an container of parameters to control:</span>
+<span class="hljs-keyword">let</span> params = {
+    <span class="hljs-attr">speed</span>: <span class="hljs-number">1</span>
+}
+
+<span class="hljs-comment">// create the interface:</span>
+<span class="hljs-keyword">let</span> gui = <span class="hljs-keyword">new</span> dat.GUI({<span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;My GUI&#x27;</span>});
+<span class="hljs-comment">// add a slider for params.speed, in the range of 0 to 10, stepping in 1&#x27;s</span>
+gui.add(params, <span class="hljs-string">&#x27;speed&#x27;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">1</span>);
+</code></pre>
+<p>(If it doesn&#39;t show up, it might be because of the CSS setting: if you have <code>* { overflow: hidden; }</code> change it to <code>body { overflow: hidden; }</code>)</p>
+<h2 id="boids-flocking-swarms">Boids, flocking, swarms</h2>
+<p>Reynolds&#39; most significant contribution combined several steering forces to a proposed model of animal motion emulating flocks, herds and schools. Each agent, or <strong>&quot;boid&quot;</strong>, follows a set of rules based on simple principles:</p>
+<ul>
+<li><strong>Avoidance</strong>: Move away from other boids that are too close (avoid collision)</li>
+<li><strong>Center</strong>: Move toward the center of the flock (avoid exposure)<ul>
+<li>The force depends on the average location of neighbors, relative to the agent.</li>
+</ul>
+</li>
+<li><strong>Alignment</strong>: Fly in the same general direction as other nearby boids<ul>
+<li>The force depends on the average velocity of neighbors.</li>
+</ul>
+</li>
+</ul>
+<p>First, we need to scale up from one agent to a population -- just as we did before, using an array (list) of agents, and looping over them to update, move, draw, etc. </p>
+<p>Computing the forces means we need to compare each boid to every other. The simplest way is a nested loop (be careful not to compare to self). There are more efficient ways, but they can be complex, and for small numbers of boids do not make much difference.  </p>
+<p>To make this more realistic, we can consider that each boid can only perceive other boids within a certain distance, and possibly also limited viewing angle. Take care for the case where no neighbors are found.</p>
+<p>The average of a set of vectors is just the sum of the vectors divided by the number of vectors.</p>
+<p>In addition we might want to add a random walk force, especially so that boids that can&#39;t see anyone else have some life to them.</p>
+<p>Play around with different weights for the forces and limits (e.g. via a dat.gui interface) to understand the ranges of behaviour.</p>
+<p>Reynolds says: </p>
+<ul>
+<li>&quot;for better control it is helpful to first normalize the three steering components, and then to scale them by three weighting factors before summing them.&quot; </li>
+<li>suggests using different neighborhood areas for each force. </li>
+<li>the avoidance rule might need to take precedence over the other rules. </li>
+</ul>
+<h2 id="ideas-for-extensions">Ideas for extensions</h2>
+<ul>
+<li>Adding obstacles to the space, which also trigger avoidance forces, can make behaviours more interesting.</li>
+<li>Gary Flake also recommends adding an influence for View: to move laterally away from any boid blocking the view.</li>
+<li>Adding a &quot;predator&quot; agent to the space, and giving an &quot;evasion&quot; force to each of the boids to run away from the predator. </li>
+<li>Adding a &quot;leader&quot; object, which triggers seek forces in boids, allows for guided flocks.</li>
+<li>We could visualize trails of where boids have gone, just as we did for the turtle drawing example. </li>
+<li>We could also visualize the neighbor connections between boids. </li>
+<li>We can add a social behaviour -- perhaps neighbors like to become the same hue, while loners randomize their hue more. Perhaps the weights of cohesion, alignment and avoidance vary with the hue?</li>
+<li>Reynolds talks near the end of the paper about prioritizing different forces at different times. This could be somewhat randomized, or could be the beginning of action selection intelligence. We could, for example, adapt our turtle-program system to the selection of different actions over time, perhaps setting different force weights or enabling and disabling seek/flee/etc. behaviours.</li>
+</ul>
+
+<footer>DIGM5010 2021-22</footer>
+</body>
+<script src="js/connect.js"></script>
+</html>
