@@ -2,6 +2,8 @@
 
 ---youtube:V4f_1_r80RY
 
+![Fish](http://underthecblog.files.wordpress.com/2014/02/fishschool.gif)
+
 In the late 1980s Craig Reynolds proposed a model of animal motion to model flocks, herds and schools, which he named boids. Reynolds' paper [Steering Behaviors for Autonomous Characters](https://www.red3d.com/cwr/steer/gdc99/) covers boids as an aggregate of other steering behaviours. The paper has been very influential in robotics, game design, special effects and simulation, and remains well worth exploring as a collection of patterns for autonomous agent movements, so we will work through it in more detail.
 
 > Notice that in the "related work" section the paper refences Grey Walter's Tortoises, Rodney Brooks' robotics, and Valentino Braitenberg's Vehicles.
@@ -17,6 +19,7 @@ His paper concentrates on several different steering algorithms. Action selectio
 [Flock simulation example](https://codepen.io/grrrwaaa/full/XXevBb)
 
 [Another](https://codepen.io/grrrwaaa/full/GRqWxMx)
+
 
 ## Vectors
 
