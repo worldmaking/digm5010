@@ -9,7 +9,7 @@ Note that this representation assumes knowledge of the origin and axes, the *coo
 
 ![OpenGL coordinate convention](img/coordSystem.jpg)
 
-The Cartesian model is not the only possible representation of a space. For example, we can also model the location of a point in 2D space relative to the origin in terms of a distance and angle; the *polar* representation](http://en.wikipedia.org/wiki/Polar_coordinate_system). To extend polar coordinates to 3D space we can use cylindrical (x, y, angle) or spherical (e.g. distance, azimuth, elevation) coordinate systems.f
+The Cartesian model is not the only possible representation of a space. For example, we can also model the location of a point in 2D space relative to the origin in terms of a distance and angle; the *polar* representation](http://en.wikipedia.org/wiki/Polar_coordinate_system). To extend polar coordinates to 3D space we can use cylindrical (x, y, angle) or spherical (e.g. distance, azimuth, elevation) coordinate systems.
 
 > Note that we also use the term 'space' for parametric, multi-dimensional systems that are not necessarily related to spatial extension as such. For example, we can consider a space of possible colors (perhaps three dimensions of red, green and blue components), or a space of possible joint positions and orientations of a robot arm (with as many dimensions as there are moveable parts), or even a space of possibly very high-dimensional input parameters to a neural network. 
 
@@ -82,7 +82,7 @@ When working in 3D space we do the same trick, adding a 4th row to represent tra
 
 > Note: This 4th column has certain advantages later when dealing with perspective rendering -- and also happens to be just as efficient on a GPU, where most instructions work on vectors of 4 or 16 elements anyway. 
 
-Now, to transform from any coordinate frame to another, we just multiploy by the matrix; and to transform back, we multiply by the `inverse` of the matrix. A large amount of the work in creating a 3D rendering is appropriate mapping between different spaces: object space, world space, view/eye space, screen/depth space, texture spaces, color spaces, light spaces, and so on; and we can use matrices for practically all of them. 
+Now, to transform from any coordinate frame to another, we just multiply by the matrix; and to transform back, we multiply by the `inverse` of the matrix. A large amount of the work in creating a 3D rendering is appropriate mapping between different spaces: object space, world space, view/eye space, screen/depth space, texture spaces, color spaces, light spaces, and so on; and we can use matrices for practically all of them. 
 
 ![Space is big.](img/space_is_big.gif)
 
