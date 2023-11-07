@@ -414,14 +414,14 @@ Nov 2, 2023
 
 [Zoom recording](https://yorku.zoom.us/rec/share/eQ8bNlcNDwH98beo9TC0vz-52s0oY0xyzXhQN2agr4TMS0YdkDLE-8Nt5MhKCn6k.zmcgRL-i9JIjq8NB)
 
-- Work on your paper draft. It **must be submitted before next week's class**
+- Work on your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://forms.gle/wh63vFi6JkqcsKES7)
 
 ---
 
 ## Week 9
 Nov 9, 2023
 
-- **Paper draft online submission due for peer review.**
+- **Paper draft online submission due for peer review.** - [submit the paper with this form](https://forms.gle/wh63vFi6JkqcsKES7)
   
 - Peer review discussion: sharing past reviews (and reviewing)
 
