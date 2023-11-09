@@ -423,17 +423,28 @@ Nov 9, 2023
 
 - **Paper draft online submission due for peer review.** - [submit the paper with this form](https://forms.gle/wh63vFi6JkqcsKES7)
   
-- Peer review discussion: sharing past reviews (and reviewing)
+- Peer review discussion
+
+What qualifies as *good* research? One way of knowing this is to look at how research is *reviewed*. Again, most grant appplications, but also journals and conference review bodies often publish guidelines for reviewers. These are the criteria by which your work will be evaluated. 
+
+- [Wikihow](https://www.wikihow.com/Review-a-Journal-Article) to review an article!
+- Guidelines from [Springer](https://www.springer.com/authors/manuscript+guidelines?SGWID=0-40162-6-1261021-0#:~:text=Reviews%20should%20be%20conducted%20fairly,less%20useful%20to%20your%20field.), [Wiley](https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html), [Elsevier](https://www.elsevier.com/reviewers/how-to-review)
+
+These are general guidelines, but practices and cultures of value can differ very greatly between different research communities -- and we are often transdiscplinary... 
+
+- Past reviews
+
+- **During class**:
+  - Submit your [Peer reviews](#peer-review)
 
 - **For next week**:
-  - Submit your [Peer reviews](#peer-review)
   - Submit your [Video Tutorial](#video-tutorial)
 
 ---
 
 ## Peer Review
 
-Recall our slides on [reviewing research](research.html#/33)
+Recall our slides on [reviewing research](research.html#/36)
 
 Between week 9 and 10 we will run an 'internal review' process, emulating what is frequently done in conference submission review processes. Typically this means:
 
