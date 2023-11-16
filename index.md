@@ -492,14 +492,17 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
+[Submit your video tutorial here](https://forms.gle/VGxSpLq8eESqKD4h8)
+
 ---
 
 ## Week 10
 Nov 16, 2023
 
-- **Peer reviews due:** [review form](https://forms.gle/skNKhyUtp9qS4DeD6). 
+- **Peer reviews received** 
 - **Video tutorials due**
-  
+  - [Submit your video tutorial here](https://forms.gle/VGxSpLq8eESqKD4h8)
+
 - Review outcome & process discussion.
   
 - **Two weeks to final paper & presentation**
