@@ -500,10 +500,10 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 Nov 16, 2023
 
 - **Peer reviews received** 
+  - Review outcome & process discussion. 
+
 - **Video tutorials due**
   - [Submit your video tutorial here](https://forms.gle/VGxSpLq8eESqKD4h8)
-
-- Review outcome & process discussion.
   
 - **Two weeks to final paper & presentation**
 
@@ -511,6 +511,8 @@ Nov 16, 2023
 
 ## Week 11
 Nov 23, 2023
+
+One-on-one guidance for papers & presentations preparation
 
 ---
 
