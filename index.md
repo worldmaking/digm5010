@@ -544,10 +544,12 @@ We have about 10-15 minutes per presentation, plus 5 miniutes for questions & di
      - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
 3. Post your final paper online to our final submission form here: [https://forms.gle/zHPbsvSrtoA16xzAA](https://forms.gle/zHPbsvSrtoA16xzAA)
 
+Please submit your final papers by December 8th, thank you!!
+
+
 ---
 
-[You can submit all of your codepen sketches as we go along through this form](https://forms.gle/NW9xsLq7B3rSjeSw8). Please submit your final papers by December 8th, thank you!!
-
+[You can submit all of your codepen sketches as we go along through this form](https://forms.gle/NW9xsLq7B3rSjeSw8). 
 <!--
 
 
