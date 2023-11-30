@@ -521,6 +521,10 @@ Nov 30, 2023
 
 **Final presentations**
 
+To accommodate the Digital Media graduate colloquium presentations are being held via zoom. 
+
+We have about 10-15 minutes per presentation, plus 5 miniutes for questions & discussion! 
+
 ---
 
 ## Final Paper
@@ -538,11 +542,11 @@ Nov 30, 2023
      - See [https://jar-online.net](https://jar-online.net) for a different example more focused on art theory & practice.
      - Alternatively, create your own using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
      - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
-3. Post your final paper online to our final submission form.
+3. Post your final paper online to our final submission form here: [https://forms.gle/zHPbsvSrtoA16xzAA](https://forms.gle/zHPbsvSrtoA16xzAA)
 
 ---
 
-[You can submit all of your codepen sketches as we go along through this form](https://forms.gle/NW9xsLq7B3rSjeSw8)
+[You can submit all of your codepen sketches as we go along through this form](https://forms.gle/NW9xsLq7B3rSjeSw8). Please submit your final papers by December 8th, thank you!!
 
 <!--
 
