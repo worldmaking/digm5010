@@ -525,6 +525,8 @@ To accommodate the Digital Media graduate colloquium presentations are being hel
 
 We have about 10-15 minutes per presentation, plus 5 miniutes for questions & discussion! 
 
+[Zoom recording](https://yorku.zoom.us/rec/share/99TfEFAgXaklPBZdmx9u5TRDJGjn28DUPJIQZvnImOzhsTCX2GCPkZIAg3N8AhOQ.n4PrI8uAqSOaHr0f)
+
 ---
 
 ## Final Paper
