@@ -1,7 +1,7 @@
 
 # DIGM5010 Foundations of Digital Media
 
-Thursdays, 1.30pm-4.30pm, Fall 2023, Fine Arts building room ACW 103
+Thursdays, 1.30pm-4.30pm, Fall 2024, Fine Arts building room ACW 103
 
 **Instructor:** [Graham Wakefield](https://ampd.yorku.ca/profile/graham-wakefield/) grrrwaaa a t york u do t ca
 
@@ -40,7 +40,7 @@ Each weekly meeting will vary in format, but always at the heart is the discussi
 
 In the early part of the course the instructor may bring lecture material or assign readings or research tasks; and we will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice. You are also expected to bring work to share, **making things** in response to our discussions and course topic. You should be keeping your notes, studies and practices documented in a **public journal**. (Class participation, making and journalling make up the first 25% of the course grade.)
 
-[You can submit codepen sketches through this form](https://forms.gle/NW9xsLq7B3rSjeSw8)
+[You can submit codepen sketches through this form](https://docs.google.com/forms/d/e/1FAIpQLSdUCztWAi-z4x5r_RTXhsWnvqiw46hPZRIh7eqChm7FGoFGqQ/viewform?usp=sf_link)
 
 As this goes on, each of you will develop a focus on a specific topic to research in depth, leading to a project documented in a research paper. The project's goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. 
   - It will be grounded through an **extensive literature review** (25%),
@@ -70,7 +70,7 @@ I normally also record all sessions and share recordings with the course partici
 -----
 
 ## Week 0 
-Sep 7, 2023
+Sep 5, 2023
 
 **Hello and welcome!**
 
@@ -84,7 +84,7 @@ So for example, what does "computation" mean to you?
 
 ---
 
-[Meditations on automata and computation](automata.html) - History, theory, implementation; programs as data
+Deep dive: [What is computation?](automata.html) - History, theory, implementation; programs as data
 
 ---
 
@@ -94,11 +94,11 @@ Take some time to think about this:
 
 - Why did you want to study in the Digital Media program -- why do you want to dedicate several precious years of your life to research in computational art & science -- what does this mean for you? Is there a great risk, or a great unseen opportunity, in the computational/digital media world -- present and future -- one that also speaks to you?
 
-[Write into the form here](https://forms.gle/u8w51vRS9Gckry7SA)
+[Write into the form here](https://docs.google.com/forms/d/e/1FAIpQLSdGbObBWxsQpDoewMLRYDhqJ16EJEsZbbbrpbnNrNkN2u03EA/viewform?usp=sf_link)
 
 ### An introduction.
 
-Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1gukRi55omVeeQcjFBdKagZdfs3_pPLlhgsHfG1go4DU/edit
+Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1lvAaIH7lXHz0sc02L7JXVsM_QySOY4SPPdc5tNI5HC4/edit
  - I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
 - You can include a more formal bio, or artist statement, or something more informal about the inspirations that brought you to the program.
 - Remember to include your name, and reference details (name, link etc.) for any images or media you add.
@@ -112,16 +112,10 @@ http://www.flong.com/archive/texts/publications/thesis/index.html
 
 ----
 
-[Zoom recording](https://yorku.zoom.us/rec/share/_tOTSOJlb0Q_mO03BgOt-yh_MmGJqv39ZlvI-5k4HLCWbOjI8MPm_7EvjYHP2ZVH.038001g19Vz0EihA)
-
-----
-
 ## Week 1 
-Sep 14, 2023
+Sep 12, 2023
 
 [Introductions](https://docs.google.com/presentation/d/1gukRi55omVeeQcjFBdKagZdfs3_pPLlhgsHfG1go4DU)
-
-
 
 ### Computational sketching
 
@@ -159,204 +153,29 @@ Let's get making.
 - What is an API? E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
 - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
 
+<!--
 [First codepen](https://codepen.io/grrrwaaa/pen/Yzdxwgj)
-
-[Zoom recording](https://yorku.zoom.us/rec/share/XMIksojrWFZErVLjX0FiaJME1gwLLveluuWP1nlptE6Z_LaPjRlOQ9VC1CvCdk9J.5NNUm16JSFdgBxfr)
-
-## Week 2 
-Sep 21, 2023
-
-[What is research?](research.html)
+-->
 
 -----
 
-Let's get making -- drawing an example from Golan Levin's research-creation thesis?
+Can you continue by drawing an example from Golan Levin's research-creation thesis?
 
-----
 
-[Zoom recording](https://yorku.zoom.us/rec/share/CI1R6kjxq5zygln3fEXChIMnqGH3AT_9w0YHQlE5ZEOhsczLHPV_4bf0ZubYMTI8.6rytu_aq1kgeVydk)
-[Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
 
-----
+## Week 2 
+Sep 19, 2023
 
-Please continue this work toward reconstruction of one of Golan Levin's thesis projects; or extend and mutate it into a new direction. We will share each other's codepens in the next class. 
+Deep dive: [What is research?](research.html)
 
-Some rules of thumb:
+-----
 
-- Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
+## A Call for Papers
 
-- Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.
+Through this course you will write a research paper and take it through the process of literature review and development, drafting a paper in response to a call for research, and peer review and completion thereof, modeled on real processes of academic research publication.  The call for papers we will use is adapted from calls for the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) and the [ISEA (International Symposium on Electronic Arts)](https://isea2025.isea-international.org/submission/submission-guideline/). 
 
-- Try to work out the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
-
-- Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. 
-
-- Figure out working conditions logically from basic requirements. E.g. for anything to animate we're going to need to clear the screen on each frame, which means we're going to have to redraw everything every time, which means...
-
-- Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.
-
-- Test often. Each time you add one minor element, make sure it works for all likely input. 
-
-- Handle special cases: starting values, boundary cases, error handling... 
-
-- Don't worry about trying to make anything optimal -- make the most naive way that works, then refine from there. 
-
-- Use abstractions (functions, objects) to encapsulate and structure ideas more easily & clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable "support routines" from the code that represents the main ideas. 
-
-- Comment the code and use good variable names -- you'll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)
-
-- Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
-
-- Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
-
-----
-
-**Literature review part 1: Reading List**
-
-In this course you will investigate a topic within a sub-area of the digital media realm that intersects with something of value to your own research goals in the program. 
-
-In the first phase you will build up a **reading list** on your chosen topic. Please create an online document that you can share (e.g. a github page, a google doc, etc.) to collect your notes and references as you develop this reading list.
-
-As we saw in class, good research needs a good research question, but that doesn't always become apparent at first. Start wider until you are ready to go deep & narrow. Seek out key papers, conferences, and other key resources for the topic. 
-
-- Some investigative tips:
-    - Use Wikipedia to identify **keywords or terms**, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellent network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.
-    - Use these terms and publications in [Google Scholar](https://scholar.google.com/), [Zotero](https://www.zotero.org) and other academic search engines to find for papers that address the questions and issues. Follow `cited by` and `related articles` trails to find new leads. Aim to find the most significant (qualitatively & quantitatively) papers. You should be aiming for a collection of 25-50 potentially interesting papers on the topic at this point. 
-    - At the same time, look for conferences or journals that are more specific to your topic, and see if they have collections of proceedings online to browse through. 
-    - Not all papers are available as PDFs online. You might be able to find them via [York Libraries](https://www.library.yorku.ca/web/bbl/e-resources/) or also communities like [ResearchGate](https://www.researchgate.net/), but do not let this roadblock your progress -- find alternatives to work from instead.
-    - At this point you may be able to formulate a first draft of a title of the topic or area, perhaps even a key question or problem statement; but don't worry at this stage if you haven't yet.
-  - Collect this list as a **Reading List** along with:
-    - The specific topic title or
-    - The keywords or search terms
-    - The work-in-progress research question/problem statement/abstract
-
-- [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
-- [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
-
-----
-
-## Week 3 
-Sep 28, 2023
-
-- Review of code sketching.
-
-Topic: machine intelligence and artificial agents.
-
-One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
-
-For instance, York University recently established [The Center for AI & Society](https://www.yorku.ca/research/cais/) organized research unit, and was awarded $80M from federal funding for the [Connected Minds](https://www.yorku.ca/research/connected-minds/) program. See the [announcement here](https://www.yorku.ca/news/2023/04/28/york-university-leads-318-4m-first-of-kind-inclusive-next-gen-technology-research-initiative/). There will be many multidisciplinary projects funded through this, for which you might be hired as research assistants. There will be scholarships for graduate students (and post-doctroral research appointments) through this, to which you may apply. 
-
-What are the research questions, and especially, what can our field contribute? Where does this overlap or intersect with *your* interests? How will you articulate this?
-
----
-
-For the purposes of our DIGM5010 course: what are some of the **foundations** of our field that may inform this?
-
-[Tortoises, turtles, robot flocks and vehicle societies](agents.html)
-
-[Zoom recording](https://drive.google.com/file/d/1_4fOobVXYf6WecRKCWsi6b0j9EzCQzD6/view?usp=drive_link)
-
-**References**
-- [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
-- [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
-- [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
-- [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
-
-----
-
-Completing the Yellowtail
-- [Zoom recording](https://drive.google.com/file/d/1YolHbf3uddSZOZ-taQPXe1pF25l5icMg/view?usp=drive_link)
-
----codepen:https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010
-
-----
-
-## Week 4
-Oct 5, 2023
-
-Continuing code sketching, with turtles and mindstorms
-
-- [Zoom recording](https://drive.google.com/file/d/1_yZch7K50LojaVojQeUDublwyVCf5GAh/view?usp=sharing)
-
----codepen:https://codepen.io/grrrwaaa/pen/mdaoRKa
----codepen:https://codepen.io/grrrwaaa/pen/LYMayEE
----codepen:https://codepen.io/grrrwaaa/pen/PoXLmVe
-
----
-
-## Week 5 
-Reading week
-
-Begin working toward your **annotated bibliographies**
-
----
-
-## Annotated Bibliography
-
-- From your reading list, select at least 8 item to study in more careful detail as you create an **Annotated Bibliography**. 
-  - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
-  - Aim for diversity. Avoid using the same authors for the majority of the selection. Include distinct and opposing viewpoints if possible. 
-  - Use primary sources where possible (in particular avoid blog posts, news articles, etc.), unless the secondary source adds a significant new idea (in which case you may want to cite both).
-  - Not everything has to be an academic paper, but ensure that at least 75% of your references are academic publications (conference articles, journal articles, etc.). 
-- Once your list is shortened, perform a deep read of each one, taking notes as you go. The annotation for each paper could typically be 200-500 words. 
-  - I recommend highlighting PDFs but taking notes in a separate plain text document. 
-  - Don't note everything, focus on what the key points are to get a condensed overview of the whole paper. (A well-written paper makes one main point per paragraph, and not all points are significant.)
-    - Distinguish clearly between 
-      - what is a summary of the paper, 
-      - what is a quotation from the paper (use quotation marks), 
-      - and what is your own thought in response (you could use (parentheses) or [square brackets] to indicate these). 
-    - Note page numbers in the text document as you take notes. 
-  - See [York SPARK's guide to annotated bibliographies here](https://spark.library.yorku.ca/wp-content/themes/glendonits-spark-20151125/resources/Annotated%20Bibliography%20Overview.pdf). 
-  - However, unlike the format and examples in that guide, I support and encourage bullet-point style summaries.
-  - I also encourage you to copy out any specific quotations that you find significant, inspiring, or which neatly summarize the authors' points. 
-- After deep note-taking on each paper, read them again with your notes, and correct any mistakes or misunderstandings, amend your analyses, and note any new thoughts. This is your **annotation** for each paper. 
-- [You can submit the Annotated Reading list in this form, including](https://forms.gle/dw2CuCxeAnHWRJ2u6)
-  - The specific topic title or
-  - The keywords or search terms
-  - The research question/problem statement/abstract
-  - Your initial Reading List
-  - Your final Annotated Bibliography
-  - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
-- The final deadline for submission is **~~Oct 25th~~ Oct 29th**.
-
----
-
-## Week 6
-Oct 19, 2023
-
-- Sharing & discussing code experiments
-- Sharing & discussing bibliographies
-
----
-
-## Week 7
-Oct 26, 2023
-
-- Review of schedule for remainder of semester
-  - The research paper (which can be a continuation of your bibliography and/or codework)
-    - The final submission
-    - The call for papers
-    - (First draft due in two weeks!)
-    - The peer review
-  - The video tutorial (which can support your paper)
-
-- For the students we didn't have time for last week:
-  - Sharing & discussing bibliographies (and code experiments)
-
-- [Explorable Explanations](https://explorabl.es)
-  - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
-  
-- **Annotated bibliographies due Sunday (change of due date)!**
-
----
-
-[Zoom recording](https://yorku.zoom.us/rec/share/ydBsTO_cShKJr6m4HSosOmmj0JPosbTi1KnZ7rcp16O1mBGwYbFpEUJsuCvRkypY.9L3Y1RsmL0YcwucL)
-
----
-
-## The Call for Papers
-
-(This call for papers is adapted from calls for the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) and the [ISEA (International Symposium on Electronic Arts)](https://isea2024.isea-international.org/academicsubmissions/))
+- Note that ISEA 2025 (Seoul, Korea) has a deadline of 15 November 2024 -- if we can move quickly enough in the course you could submit to it! 
+- Siggraph 2025 will be in Vancouver, but (as of writing) the submission deadlines are not yet published. It might be between January to March. 
 
 *(Broad terms of call, with theme(s) and topics)* 
 
@@ -403,25 +222,216 @@ We invite paper submissions for original and substantial research, both traditio
 
 Submissions will be uploaded online. We also ask you to add a very short text explaining why your submission is important for the academic and wider community, from raising critical issues to opening perspectives or generating solutions. In doing so, we aim to enhance the impact of your cultural contributions.
 
-Authors will be required to present their papers with a duration of 15 minutes. Authors may also be requested to provide a short video. 
+Authors will be required to present their papers with a duration of 15 minutes. 
+
+-----
+
+As the first step in this process, you will begin with preparing a collection of papers related to your research topic/question.
+
+**Literature review part 1: Reading List**
+
+In this course you will investigate a topic within a sub-area of the digital media realm that intersects with something of value to your own research goals in the program. 
+
+In the first phase you will build up a **reading list** on your chosen topic. Please create an online document that you can share (e.g. a github page, a google doc, etc.) to collect your notes and references as you develop this reading list.
+
+As we saw in class, good research needs a good research question, but that doesn't always become apparent at first. Start wider until you are ready to go deep & narrow. Seek out key papers, conferences, and other key resources for the topic. 
+
+- Some investigative tips:
+    - Use Wikipedia to identify **keywords or terms**, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellent network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.
+    - Use these terms and publications in [Google Scholar](https://scholar.google.com/), [Zotero](https://www.zotero.org) and other academic search engines to find for papers that address the questions and issues. Follow `cited by` and `related articles` trails to find new leads. Aim to find the most significant (qualitatively & quantitatively) papers. You should be aiming for a collection of 25-50 potentially interesting papers on the topic at this point. 
+    - At the same time, look for conferences or journals that are more specific to your topic, and see if they have collections of proceedings online to browse through. 
+    - Not all papers are available as PDFs online. You might be able to find them via [York Libraries](https://www.library.yorku.ca/web/bbl/e-resources/) or also communities like [ResearchGate](https://www.researchgate.net/), but do not let this roadblock your progress -- find alternatives to work from instead.
+    - At this point you may be able to formulate a first draft of a title of the topic or area, perhaps even a key question or problem statement; but don't worry at this stage if you haven't yet.
+  - Collect this list as a **Reading List** along with:
+    - The specific topic title or
+    - The keywords or search terms
+    - The work-in-progress research question/problem statement/abstract
+
+- [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
+- [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
+
+
+----
+
+<!--
+[Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
+-->
+----
+
+**Making**
+
+Please continue working toward reconstruction of one of Golan Levin's thesis projects; or better still, to extend and mutate it into a new direction! We will share each other's codepens in the next class. 
+
+Some rules of thumb:
+
+- Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
+
+- Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.
+
+- Try to work out the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
+
+- Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. 
+
+- Figure out working conditions logically from basic requirements. E.g. for anything to animate we're going to need to clear the screen on each frame, which means we're going to have to redraw everything every time, which means...
+
+- Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.
+
+- Test often. Each time you add one minor element, make sure it works for all likely input. 
+
+- Handle special cases: starting values, boundary cases, error handling... 
+
+- Don't worry about trying to make anything optimal -- make the most naive way that works, then refine from there. 
+
+- Use abstractions (functions, objects) to encapsulate and structure ideas more easily & clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable "support routines" from the code that represents the main ideas. 
+
+- Comment the code and use good variable names -- you'll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)
+
+- Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
+
+- Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
+
+
+## Week 3 
+Sep 26, 2023
+
+- Reading list discussion
+
+- Review of code sketching
+
+Topic: machine intelligence and artificial agents.
+
+One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
+
+For instance, York University recently established [The Center for AI & Society](https://www.yorku.ca/research/cais/) organized research unit, and was awarded $80M from federal funding for the [Connected Minds](https://www.yorku.ca/research/connected-minds/) program. See the [announcement here](https://www.yorku.ca/news/2023/04/28/york-university-leads-318-4m-first-of-kind-inclusive-next-gen-technology-research-initiative/). There will be many multidisciplinary projects funded through this, for which you might be hired as research assistants. There will be scholarships for graduate students (and post-doctroral research appointments) through this, to which you may apply. 
+
+What are the research questions, and especially, what can our field contribute? Where does this overlap or intersect with *your* interests? How will you articulate this?
+
+---
+
+For the purposes of our DIGM5010 course: what are some of the **foundations** of our field that may inform this?
+
+[Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+
+<!--
+[Zoom recording](https://drive.google.com/file/d/1_4fOobVXYf6WecRKCWsi6b0j9EzCQzD6/view?usp=drive_link)
+-->
+
+**References**
+- [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
+- [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
+- [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
+- [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
+
+----
+
+<!--
+Completing the Yellowtail
+- [Zoom recording](https://drive.google.com/file/d/1YolHbf3uddSZOZ-taQPXe1pF25l5icMg/view?usp=drive_link)
+
+---codepen:https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010
+-->
+
+----
+
+## Week 4
+Oct 3, 2023
+
+Begin developing your readling list into an **annotated bibliography**
+
+---
+
+## Annotated Bibliography
+
+- From your reading list, select at least 8 item to study in more careful detail as you create an **Annotated Bibliography**. 
+  - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
+  - Aim for diversity. Avoid using the same authors for the majority of the selection. Include distinct and opposing viewpoints if possible. 
+  - Use primary sources where possible (in particular avoid blog posts, news articles, etc.), unless the secondary source adds a significant new idea (in which case you may want to cite both).
+  - Not everything has to be an academic paper, but ensure that at least 75% of your references are academic publications (conference articles, journal articles, etc.). 
+- Once your list is shortened, perform a deep read of each one, taking notes as you go. The annotation for each paper could typically be 200-500 words. 
+  - I recommend highlighting PDFs but taking notes in a separate plain text document. 
+  - Don't note everything, focus on what the key points are to get a condensed overview of the whole paper. (A well-written paper makes one main point per paragraph, and not all points are significant.)
+    - Distinguish clearly between 
+      - what is a summary of the paper, 
+      - what is a quotation from the paper (use quotation marks), 
+      - and what is your own thought in response (you could use (parentheses) or [square brackets] to indicate these). 
+    - Note page numbers in the text document as you take notes. 
+  - See [York SPARK's guide to annotated bibliographies here](https://spark.library.yorku.ca/wp-content/themes/glendonits-spark-20151125/resources/Annotated%20Bibliography%20Overview.pdf). 
+  - However, unlike the format and examples in that guide, I support and encourage bullet-point style summaries.
+  - I also encourage you to copy out any specific quotations that you find significant, inspiring, or which neatly summarize the authors' points. 
+- After deep note-taking on each paper, read them again with your notes, and correct any mistakes or misunderstandings, amend your analyses, and note any new thoughts. This is your **annotation** for each paper. 
+- [You can submit the Annotated Reading list in this form, including](https://forms.gle/dw2CuCxeAnHWRJ2u6)
+  - The specific topic title or
+  - The keywords or search terms
+  - The research question/problem statement/abstract
+  - Your initial Reading List
+  - Your final Annotated Bibliography
+  - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
+- The final deadline for submission is **Sunday Oct 13th**.
+
+-----
+
+Continuing code sketching, with turtles and mindstorms
+
+<!--
+- [Zoom recording](https://drive.google.com/file/d/1_yZch7K50LojaVojQeUDublwyVCf5GAh/view?usp=sharing)
+
+---codepen:https://codepen.io/grrrwaaa/pen/mdaoRKa
+---codepen:https://codepen.io/grrrwaaa/pen/LYMayEE
+---codepen:https://codepen.io/grrrwaaa/pen/PoXLmVe
+-->
+
+## Week 5 
+Oct 10 
+
+- Review of schedule for remainder of semester
+  - The research paper (which can be a continuation of your bibliography and/or codework)
+    - The final submission
+    - The call for papers
+    - The peer review
+  - The video tutorial (which can support your paper)
+
+- Complete your annotated bibliography
+- **Annotated bibliographies due Sunday Oct 13th**
+
+- Next week is reading week -- a perfect time for you work on your paper's first draft! 
+  
+- Sharing & discussing work so far
+
+- 1-on-1 Q&As
+
+- Continuing exploring code sketching
+
+---
+
+## Week 6
+[Reading Week]
+
+- Work on your paper draft for the peer review session
+
+---
+
+## Week 7
+Oct 24, 2023
+
+- Sharing & discussing, writing & code
+
+- [Explorable Explanations](https://explorabl.es)
+  - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
+  
+- [Steering: vehicles and flocks](steering.html)
+<!--
+---
+[Zoom recording](https://yorku.zoom.us/rec/share/ydBsTO_cShKJr6m4HSosOmmj0JPosbTi1KnZ7rcp16O1mBGwYbFpEUJsuCvRkypY.9L3Y1RsmL0YcwucL)
+-->
+
+- Complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
 
 ---
 
 ## Week 8
-Nov 2, 2023
+Oct 31, 2023
 
-[Steering: vehicles and flocks](steering.html)
-
-[Zoom recording](https://yorku.zoom.us/rec/share/eQ8bNlcNDwH98beo9TC0vz-52s0oY0xyzXhQN2agr4TMS0YdkDLE-8Nt5MhKCn6k.zmcgRL-i9JIjq8NB)
-
-- Work on your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://forms.gle/wh63vFi6JkqcsKES7)
-
----
-
-## Week 9
-Nov 9, 2023
-
-- **Paper draft online submission due for peer review.** - [submit the paper with this form](https://forms.gle/wh63vFi6JkqcsKES7)
+**Make sure your paper is submitted to the link above before this class!!**
   
 - Peer review discussion
 
@@ -435,10 +445,7 @@ These are general guidelines, but practices and cultures of value can differ ver
 - Past reviews
 
 - **During class**:
-  - Submit your [Peer reviews](#peer-review)
-
-- **For next week**:
-  - Submit your [Video Tutorial](#video-tutorial)
+  - Submit your [Peer reviews](#peer-review) to [the peer review form here]([review form](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link))
 
 ---
 
@@ -446,7 +453,7 @@ These are general guidelines, but practices and cultures of value can differ ver
 
 Recall our slides on [reviewing research](research.html#/36)
 
-Between week 9 and 10 we will run an 'internal review' process, emulating what is frequently done in conference submission review processes. Typically this means:
+We will run an 'internal review' process, emulating what is frequently done in conference submission review processes. Typically this means:
 
 - A call for work (papers, demonstrations, artworks, panels, etc.) is made public.
 - Authors submit a draft or extended abstract of a paper (or a proposal for an artwork etc.) by a certain deadline for review, usually using an online interface. 
@@ -475,63 +482,24 @@ For general review guidelines, [see here](https://www.wikihow.com/Review-a-Journ
 
 > Should any portions of the paper should be expanded, condensed, combined, or deleted? 
 
-As a structure, our [review form](https://forms.gle/skNKhyUtp9qS4DeD6) is based on materials as used by the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) review body. That process was double-blind (both authors & reviewers anonymized), but since we know each other, we'll run our review single-blind (authors anonymized). Each of you will be randomly assigned up to 3 papers to review. 
+As a structure, our review is based on materials as used by the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) review body. That process was double-blind (both authors & reviewers anonymized), but since we know each other, we'll run our review single-blind (authors anonymized). Each of you will be randomly assigned up to 3 papers to review. 
 
----
+-----
 
-## Video Tutorial
-
-Research is about *sharing*. Sometimes, that requires sharing *how*. 
-
-1. Create a video-based tutorial (roughly 10-20mins) to introduce a technical topic.
-	- It could be an introduction to a platform we are not covering in class
-	- or an exploration of a library/API or SDK etc. in Javascript
-	- or alternatively, it could be a tutorial on a technique or algorithm or mechanism or a part of mathematics etc.
-2. Whichever you choose, it should cover both of: 
-	- introducing the key concepts, the unusual and interesting parts, and related work
-	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
-3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
-
-[Submit your video tutorial here](https://forms.gle/VGxSpLq8eESqKD4h8)
-
----
-
-## Week 10
-Nov 16, 2023
+## Week 9
+Nov 7, 2023
 
 - **Peer reviews received** 
   - Review outcome & process discussion. 
 
-- **Video tutorials due**
-  - [Submit your video tutorial here](https://forms.gle/VGxSpLq8eESqKD4h8)
-  
-- **Two weeks to final paper & presentation**
+- Catch-up time for any coding work
 
----
+- Group and/or 1-on-1 discussion for final paper
 
-## Week 11
-Nov 23, 2023
-
-One-on-one guidance for papers & presentations preparation
-
----
-
-## Week 12
-Nov 30, 2023
-
-**Final presentations**
-
-To accommodate the Digital Media graduate colloquium presentations are being held via zoom. 
-
-We have about 10-15 minutes per presentation, plus 5 miniutes for questions & discussion! 
-
-[Zoom recording](https://yorku.zoom.us/rec/share/99TfEFAgXaklPBZdmx9u5TRDJGjn28DUPJIQZvnImOzhsTCX2GCPkZIAg3N8AhOQ.n4PrI8uAqSOaHr0f)
-
----
 
 ## Final Paper
 
-1. The final paper continues from the [Literature Review](#annotated-bibliography[), and responds to the ]Call for Papers](#the-call-for-papers). 
+1. The final paper continues from the [Literature Review](#annotated-bibliography[), and responds to the [Call for Papers](#the-call-for-papers). 
   - Find a few other papers online that have similar focus, and analyze their structure as a guide.
   - Find related conferences/symposia/journals/etc. to contrast other papers as well as submission and review criteria. 
   - You should identify at least one conference/festival/other appropriate venue to submit your research or research-creation. Investigate papers submitted to this in past years, and the submission requirements and review criteria. 
@@ -551,9 +519,56 @@ Please submit your final papers by December 8th, thank you!!
 
 ---
 
-[You can submit all of your codepen sketches as we go along through this form](https://forms.gle/NW9xsLq7B3rSjeSw8). 
-<!--
+## Week 10
+Nov 14, 2023
 
+
+- **For next week**:
+  - Submit your [Video Tutorial](#video-tutorial)
+
+---
+
+## Video Tutorial
+
+Research is about *sharing*. Sometimes, that requires sharing *how*. 
+
+1. Create a video-based tutorial (roughly 10-20mins) to introduce a technical topic.
+	- It could be an introduction to a platform we are not covering in class
+	- or an exploration of a library/API or SDK etc. in Javascript
+	- or alternatively, it could be a tutorial on a technique or algorithm or mechanism or a part of mathematics etc.
+2. Whichever you choose, it should cover both of: 
+	- introducing the key concepts, the unusual and interesting parts, and related work
+	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
+3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
+
+---
+
+## Week 11
+Nov 21, 2023
+
+- **Video tutorials due**
+  - [Add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing)
+
+One-on-one guidance for papers & presentations preparation
+
+---
+
+## Week 12
+Nov 28, 2023
+
+**Final presentations**
+
+We have about 10-15 minutes per presentation, plus 5 minutes for questions & discussion! 
+
+<!--
+[Zoom recording](https://yorku.zoom.us/rec/share/99TfEFAgXaklPBZdmx9u5TRDJGjn28DUPJIQZvnImOzhsTCX2GCPkZIAg3N8AhOQ.n4PrI8uAqSOaHr0f)
+-->
+
+---
+
+[You can submit all of your codepen sketches as we go along through this form](https://docs.google.com/forms/d/e/1FAIpQLSdUCztWAi-z4x5r_RTXhsWnvqiw46hPZRIh7eqChm7FGoFGqQ/viewform?usp=sf_link). 
+
+<!--
 
 Research step 1: survey the field / [literature review](#literature-review-1)
  
