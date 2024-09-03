@@ -419,6 +419,8 @@ Oct 24, 2023
   - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
   
 - [Steering: vehicles and flocks](steering.html)
+
+
 <!--
 ---
 [Zoom recording](https://yorku.zoom.us/rec/share/ydBsTO_cShKJr6m4HSosOmmj0JPosbTi1KnZ7rcp16O1mBGwYbFpEUJsuCvRkypY.9L3Y1RsmL0YcwucL)
@@ -445,7 +447,7 @@ These are general guidelines, but practices and cultures of value can differ ver
 - Past reviews
 
 - **During class**:
-  - Submit your [Peer reviews](#peer-review) to [the peer review form here]([review form](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link))
+  - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link)
 
 ---
 
@@ -491,10 +493,12 @@ Nov 7, 2023
 
 - **Peer reviews received** 
   - Review outcome & process discussion. 
+  - Group and/or 1-on-1 discussion for final paper
 
-- Catch-up time for any coding work
+- Possible topics: 
+  - An introduction to git?
+  - An introduction to Node.js?
 
-- Group and/or 1-on-1 discussion for final paper
 
 
 ## Final Paper
@@ -522,6 +526,9 @@ Please submit your final papers by December 8th, thank you!!
 ## Week 10
 Nov 14, 2023
 
+- Possible topics: 
+  - An introduction to git?
+  - An introduction to Node.js?
 
 - **For next week**:
   - Submit your [Video Tutorial](#video-tutorial)
