@@ -58,8 +58,9 @@ Previously we have also used a Microsoft Teams account for sharing file material
 **Remote participation**
 
 Regardless whether we are meet in person or remotely, I usually prefer to open a Zoom session for my classes, and use share screen for the most part. 
-- [Zoom meeting (same link every week)](https://yorku.zoom.us/j/92512579632?pwd=c3FPSitZQlZIelQ2dC9CeE1RU0tnUT09)
-- [Add it to your calendar (.ics file)](https://yorku.zoom.us/meeting/tJYoduutqTIsGda4SneIiTtcx1cvMsRwU70F/ics?icsToken=98tyKuCqqzooH9OcthqFRowQGYj4a-_wtlhdjadcyCzrBglaVhf1LrNBJJ9sIs_l)
+- [Zoom meeting (same link every week)](https://yorku.zoom.us/j/91019623418?pwd=75h0gYM5Je5nz5Pzbi2vGmWb3G96j4.1)
+- [Add it to your calendar (.ics file)](https://yorku.zoom.us/meeting/tJUtduCurDguG9ygI0mac22YuOOK5vLzj_wb/ics?icsToken=98tyKuCprjojHNaWtBiPRowcAoj4Xe7zpnZbjfpEmza1DiFQMFHPI81tGedpPMLa
+)
 
 I normally also record all sessions and share recordings with the course participants (so long as no participants have objections to this), as I have heard that it has been useful for many students to be able to review sessions after class hours, including when, due to factors outside their control, they could not attend in class time. *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the graduate situation, and moreover allows some time to review any material if it seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
 
