@@ -70,7 +70,7 @@ I normally also record all sessions and share recordings with the course partici
 
 -----
 
-## Week 0 
+# Week 0 
 Sep 5, 2023
 
 **Hello and welcome!**
@@ -89,7 +89,7 @@ Deep dive: [What is computation?](automata.html) - History, theory, implementati
 
 ---
 
-### A question.
+## A question
 
 Take some time to think about this: 
 
@@ -97,7 +97,7 @@ Take some time to think about this:
 
 [Write into the form here](https://docs.google.com/forms/d/e/1FAIpQLSdGbObBWxsQpDoewMLRYDhqJ16EJEsZbbbrpbnNrNkN2u03EA/viewform?usp=sf_link)
 
-### An introduction.
+## An introduction
 
 Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1lvAaIH7lXHz0sc02L7JXVsM_QySOY4SPPdc5tNI5HC4/edit
  - I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
@@ -105,7 +105,7 @@ Please add 2-4 slides to introduce yourself in The Google Slide deck here: https
 - Remember to include your name, and reference details (name, link etc.) for any images or media you add.
 - Please be careful not to delete your colleague's slides!
 
-### A reading.
+## A reading
 
 I said in class we should look at others’ Masters & PhD theses/dissertations for inspiration. Here’s the Masters thesis of Golan Levin, from when he was a student at MIT. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. Have a good read and bring some thoughts and questions for next week:
 http://www.flong.com/archive/texts/publications/thesis/index.html
@@ -113,12 +113,12 @@ http://www.flong.com/archive/texts/publications/thesis/index.html
 
 ----
 
-## Week 1 
+# Week 1 
 Sep 12, 2023
 
 [Introductions](https://docs.google.com/presentation/d/1gukRi55omVeeQcjFBdKagZdfs3_pPLlhgsHfG1go4DU)
 
-### Computational sketching
+## Computational sketching
 
 A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. So it can be helful sometimes to step into the shoes of those that have gone before, to see how we ended up here, and what we may have lost or missed along the way. 
 
@@ -142,21 +142,25 @@ Maeda's courses challenged students to rethink the medium from its most basic el
 
 > Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
 
-Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?
+Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?  (Also note the document structure.)
 
 -----
 
-Let's get making.
+## Let's get making
 
 - A shareable workspace: [codepen](https://codepen.io)
 - The HTML5 trio: the HTML (DOM), CSS, and JavaScript
+  - HMTL: the page container and structure. The language forms a **declarative** data structure, roughly in a tree structure. 
+  - CSS: the rules of layout, rendering and style. The language forms a set of **declarative** definitions. 
+  - JS: dynamic generation and behaviour. The language forms **procedural** steps of action, invoked in response to events. 
 - [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
-- What is an API? E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
+- What is an API? 
+  - E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.
 - 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
 
-<!--
-[First codepen](https://codepen.io/grrrwaaa/pen/Yzdxwgj)
--->
+---
+
+https://codepen.io/grrrwaaa/pen/Yzdxwgj
 
 -----
 
@@ -164,10 +168,12 @@ Can you continue by drawing an example from Golan Levin's research-creation thes
 
 
 
-## Week 2 
+# Week 2 
 Sep 19, 2023
 
-Deep dive: [What is research?](research.html)
+## What is Research?
+
+Deep dive [presentation](research.html) & discussion
 
 -----
 
@@ -227,6 +233,8 @@ Authors will be required to present their papers with a duration of 15 minutes.
 
 -----
 
+## Preparing a Reading List
+
 As the first step in this process, you will begin with preparing a collection of papers related to your research topic/question.
 
 **Literature review part 1: Reading List**
@@ -259,7 +267,7 @@ As we saw in class, good research needs a good research question, but that doesn
 -->
 ----
 
-**Making**
+## Making
 
 Please continue working toward reconstruction of one of Golan Levin's thesis projects; or better still, to extend and mutate it into a new direction! We will share each other's codepens in the next class. 
 
@@ -292,7 +300,7 @@ Some rules of thumb:
 - Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
 
-## Week 3 
+# Week 3 
 Sep 26, 2023
 
 - Reading list discussion
@@ -334,7 +342,7 @@ Completing the Yellowtail
 
 ----
 
-## Week 4
+# Week 4
 Oct 3, 2023
 
 Begin developing your readling list into an **annotated bibliography**
@@ -381,7 +389,7 @@ Continuing code sketching, with turtles and mindstorms
 ---codepen:https://codepen.io/grrrwaaa/pen/PoXLmVe
 -->
 
-## Week 5 
+# Week 5 
 Oct 10 
 
 - Review of schedule for remainder of semester
@@ -404,14 +412,14 @@ Oct 10
 
 ---
 
-## Week 6
+# Week 6
 [Reading Week]
 
 - Work on your paper draft for the peer review session
 
 ---
 
-## Week 7
+# Week 7
 Oct 24, 2023
 
 - Sharing & discussing, writing & code
@@ -431,7 +439,7 @@ Oct 24, 2023
 
 ---
 
-## Week 8
+# Week 8
 Oct 31, 2023
 
 **Make sure your paper is submitted to the link above before this class!!**
@@ -489,7 +497,7 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 
 -----
 
-## Week 9
+# Week 9
 Nov 7, 2023
 
 - **Peer reviews received** 
@@ -524,7 +532,7 @@ Please submit your final papers by December 8th, thank you!!
 
 ---
 
-## Week 10
+# Week 10
 Nov 14, 2023
 
 - Possible topics: 
@@ -551,7 +559,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 
 ---
 
-## Week 11
+# Week 11
 Nov 21, 2023
 
 - **Video tutorials due**
@@ -561,7 +569,7 @@ One-on-one guidance for papers & presentations preparation
 
 ---
 
-## Week 12
+# Week 12
 Nov 28, 2023
 
 **Final presentations**
@@ -580,7 +588,7 @@ We have about 10-15 minutes per presentation, plus 5 minutes for questions & dis
 
 Research step 1: survey the field / [literature review](#literature-review-1)
  
-## Week 4
+# Week 4
 Oct 5, 2023
 
 
@@ -595,7 +603,7 @@ Places to look:
 **Homework**: choose an Explorable Explanation that relates to your research topic. For practice, try to reconstruct part of the explorable system!
 
 
-### Literature Review 2 
+## Literature Review 2 
 
 - From your reading list, select at least 8 of them to study in more careful detail as you create an **Annotated Bibliography**. 
   - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
@@ -670,7 +678,7 @@ Implementing Vehicles. Now we need vectors and forces.
 **Make:** Extend / mutate [the code we built in class](https://codepen.io/grrrwaaa/pen/mdwqLqX?editors=0010) 
 
 
-### Online Journal & Practice Studies
+## Online Journal & Practice Studies
 
 You will create an online journal. If you set up a github repository, you can use the **wiki** feature as a very simple, markdown-flavoured online note taker; or simply create markdown files in the github repository itself. 
 
@@ -681,7 +689,7 @@ This weekly post should include practice studies, such as links to (or embeds of
 As the course progresses, this journal will capture your progress in development towards the major assignments, which will also be added to the journal. 
 
 -----
-### Week 2
+## Week 2
 
 [What is research](research.html)?
 
@@ -695,7 +703,7 @@ Sharing code sketches (drawing, vehicles)
 
 Please remember to **email me** with a link to your online journal, including the sketches and notes taken so far, and your literature review/reading list as you develop it!
 
-### Literature Review 1
+## Literature Review 1
 
 You will investigate a **topic** that ideally intersects this year's topic/theme (AI) with something of value to your own research goals. Good research always begins by seeking out key papers and other relevant research resources. 
   - Some investigative tips:
@@ -715,7 +723,7 @@ You will investigate a **topic** that ideally intersects this year's topic/theme
 - [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
 -----
-### Week 3
+## Week 3
 
 Practice / Review
 
@@ -733,7 +741,7 @@ Places to look:
 
 -----
 
-### Week 4
+## Week 4
 
 - Sharing Explorable Explanations!
   - [My fireflies](https://codepen.io/grrrwaaa/pen/rNwXydw?editors=0010)
@@ -742,7 +750,7 @@ Places to look:
 
 
 
-### Literature Review 2 
+## Literature Review 2 
 
 - From your reading list, select at least 8 of them to study in more careful detail as you create an **Annotated Bibliography**. 
   - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
@@ -771,12 +779,12 @@ Places to look:
 
 For example, [here's](https://alicelab.world/digm5010/vehicles.html#annotated-notes) my own annotated bibliography notes on Seymour Papert's Mindstorms.
 
-### Reading Week
+## Reading Week
 
 Work on your annotated bibliography and your project!
 
 -----
-### Week 5
+## Week 5
 
 - News: [AI:Talks series in Digital Media](ai_talks.pdf)
 
@@ -796,7 +804,7 @@ Work on your annotated bibliography and your project!
 - [An example JS library for advanced Markov-driven text analysis & resynthesis](https://github.com/dhowe/ritajs#a-simple-sketch)
   
 -----
-### Week 6
+## Week 6
 
 - Project work
  
@@ -804,7 +812,7 @@ Due next week: [Paper-project abstract](#final-paper)
 
 -----
 
-### Week 7
+## Week 7
 
 - [Paper-project abstracts](#final-paper) & discussion
 
@@ -817,7 +825,7 @@ Due next week: [Video Tutorial](#video-tutorial)
 
 **[Zoom recording](https://yorku.zoom.us/rec/share/WEje6R6vErTm9yfs_Kkg-qRCfIzq11u66eWiQMS1qfMPS5DoiOwRvSCaeztH0iRd.RtHLq4a01H66xe2O)**
 
-### Video Tutorial
+## Video Tutorial
 
 Research is about *sharing*. Sometimes, that requires sharing *how*. 
 
@@ -831,7 +839,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like Dan Shiffman or 3Blue1Brown do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
 -----
-### Week 8
+## Week 8
 
 - Discussion about abstracts, final papers, and 
 - Peer review preview: 
@@ -843,12 +851,12 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 [Final paper](#final-paper) [draft for review](#peer-review)
 
 -----
-### Week 9
+## Week 9
 
 **[Zoom recording](https://yorku.zoom.us/rec/share/tcnLkfrrxxapfsjmWn15gcox0LM-MYQg8BQVgs3iCLqsFL82eqkj7oa1ruGgeIC1.erXQvut-v6uZlJDP)**
 
 -----
-### Week 10
+## Week 10
 
 - Time & Sound: gen~
 - **[Zoom recording](https://yorku.zoom.us/rec/share/5qPQPGpqXj3_Z0ZKsrRIQ80POnrvI0IPJNYPbGFl6CHngtp2ikOWHgf4QInXwsu4.xCE8R0lMZZfOKCwr)**
