@@ -1,7 +1,7 @@
 
 # DIGM5010 Foundations of Digital Media
 
-Thursdays, 1.30pm-4.30pm, Fall 2024, Fine Arts building room ACW 103
+Thursdays, 1.30pm-4.30pm, Fall 2024, Fine Arts building room ACW 102
 
 **Instructor:** [Graham Wakefield](https://ampd.yorku.ca/profile/graham-wakefield/) grrrwaaa a t york u do t ca
 
