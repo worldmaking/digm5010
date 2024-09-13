@@ -266,7 +266,7 @@ As we saw in class, good research needs a good research question, but that doesn
 
 ----
 
-## Making
+## Making 2: animate drawing
 
 Let's continue from last week's drawing app. 
 
