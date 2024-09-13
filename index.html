@@ -218,13 +218,13 @@ footer {
 <p>Deep dive <a href="research.html">presentation</a> &amp; discussion</p>
 <hr>
 <h2 id="a-call-for-papers">A Call for Papers</h2>
-<p>Through this course you will write a research paper and take it through the process of literature review and development, drafting a paper in response to a call for research, and peer review and completion thereof, modeled on real processes of academic research publication.  The call for papers we will use is adapted from calls for the <a href="https://s2023.siggraph.org/program/art-papers/">SIGGRAPH Art Papers</a> and the <a href="https://isea2025.isea-international.org/submission/submission-guideline/">ISEA (International Symposium on Electronic Arts)</a>. </p>
+<p>Through this course you will write a research paper and take it through the process of literature review and development, drafting a paper in response to a call for research, and peer review and completion thereof, modeled on real processes of academic research publication.  The call for papers we will use is adapted from calls for the <a href="https://s2024.siggraph.org/program/art-papers/">SIGGRAPH Art Papers</a> and the <a href="https://isea2025.isea-international.org/submission/submission-guideline/">ISEA (International Symposium on Electronic Arts)</a>. </p>
 <ul>
 <li>Note that ISEA 2025 (Seoul, Korea) has a deadline of 15 November 2024 -- if we can move quickly enough in the course you could submit to it! </li>
 <li>Siggraph 2025 will be in Vancouver, but (as of writing) the submission deadlines are not yet published. It might be between January to March. </li>
 </ul>
 <p><em>(Broad terms of call, with theme(s) and topics)</em> </p>
-<p>The &quot;DIGM Computational Art Symposium&quot; papers track program acts as a bridge between culture and technology to rethink and explore the future of our society. It’s about questions, debate, perspectives, and solutions. The dream is to bring art and engineering communities back together, as has been so fruitful in history. We understand art in its broadest sense, encompassing different fields from fine art to design and architecture. Submissions exploring how computer science and interactive techniques — especially those linked to recent developments in AI, machine learning, robotics, the metaverse, AR,  blockchain, and so on — that relate to societal and environmental questions are particularly encouraged. We encourage submissions that discuss and explore within the fields of electronic arts, creative technology, digital culture and all manners of art-science-technology collaboration not yet born. We would like you to engage in the Renaissance of the 21st century!</p>
+<p>The &quot;DIGM Computational Art Symposium&quot; acts as a bridge between art and technology to rethink and explore our future. The dream is to bring art and engineering communities together, as has been so fruitful in history. We understand art in its broadest sense, encompassing different fields from fine art to design and architecture. Submissions exploring how computer science and interactive techniques — especially those linked to recent developments — that relate to questions of the future are particularly encouraged. We encourage submissions that discuss and explore within the fields of electronic arts, creative technology, digital culture and all manners of art-science-technology collaboration not yet born. We would like you to engage in the Renaissance of the 21st century!</p>
 <p>Topics of interest include, but are not limited by:</p>
 <ul>
 <li>All modes of augmented, mixed, extended and virtual realities from interactive digital worlds to metaverse</li>
@@ -260,10 +260,10 @@ footer {
 </li>
 </ul>
 <p><em>(Paper requirements)</em></p>
-<p>We invite paper submissions for original and substantial research, both traditional and non-traditional, that has not been previously published. Papers will follow full academic practices, for instance, through an extensive literature review, argumentation, and observations or evaluations of impact. All papers must follow academic standards and will undergo blind peer review based on quality, relevance, originality, and impact. </p>
+<p>We invite paper submissions for original and substantial research, both traditional and non-traditional, that has not been previously published. Papers will follow full academic practices, through an extensive literature review, argumentation, and observations or evaluations of impact. All papers must follow academic standards and will undergo blind peer review based on quality, relevance, originality, and impact. </p>
 <p>(See notes on the <a href="#final-paper">Final Paper submission</a> for details about formatting.)</p>
 <p>Submissions will be uploaded online. We also ask you to add a very short text explaining why your submission is important for the academic and wider community, from raising critical issues to opening perspectives or generating solutions. In doing so, we aim to enhance the impact of your cultural contributions.</p>
-<p>Authors will be required to present their papers with a duration of 15 minutes. </p>
+<p>Authors will be required to present their papers with a duration of 10 minutes. </p>
 <hr>
 <h2 id="preparing-a-reading-list">Preparing a Reading List</h2>
 <p>As the first step in this process, you will begin with preparing a collection of papers related to your research topic/question.</p>
@@ -293,19 +293,32 @@ footer {
 </li>
 </ul>
 <hr>
+<h2 id="making">Making</h2>
+<p>Let&#39;s continue from last week&#39;s drawing app. </p>
+<ul>
+<li><p>We saw how we can draw in response to mouse/touch movements, and add generative variation to them. </p>
+</li>
+<li><p>We talked about Maeda&#39;s comment &quot;the most interesting pixels are the mouse&quot; and this represents not just space but also <strong>time</strong>. How can we use the timing of a drawing gesture to modify the result? Can you think of ways to use speeds, rhythms, echoes, ?</p>
+</li>
+<li><p>Last week we also saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?</p>
+</li>
+<li><p>Or: how can we combine both sketching and animating? How can we draw a line that then animates?</p>
+</li>
+<li><p>With these steps, we should be in a position to attempt to reconstruct Golan Levin&#39;s Curly/Yellowtail, for example. </p>
+</li>
+</ul>
 <!--
 [Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
 -->
 <hr>
-<h2 id="making">Making</h2>
 <p>Please continue working toward reconstruction of one of Golan Levin&#39;s thesis projects; or better still, to extend and mutate it into a new direction! We will share each other&#39;s codepens in the next class. </p>
 <p>Some rules of thumb:</p>
 <ul>
 <li><p>Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let&#39;s focus on behaviour first.</p>
 </li>
-<li><p>Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.</p>
+<li><p>Break a problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.</p>
 </li>
-<li><p>Try to work out the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn&#39;t often the right thing to do. Once the method becomes clearer, start converting pseudocode into &quot;minimum viable&quot; code.</p>
+<li><p>Try to work out a problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn&#39;t often the right thing to do. Once the method becomes clearer, start converting pseudocode into &quot;minimum viable&quot; code.</p>
 </li>
 <li><p>Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. </p>
 </li>
@@ -325,7 +338,7 @@ footer {
 </li>
 <li><p>Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.</p>
 </li>
-<li><p>Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.</p>
+<li><p>Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.</p>
 </li>
 </ul>
 <hr>

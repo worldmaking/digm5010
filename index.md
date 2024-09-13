@@ -183,14 +183,14 @@ Deep dive [presentation](research.html) & discussion
 
 ## A Call for Papers
 
-Through this course you will write a research paper and take it through the process of literature review and development, drafting a paper in response to a call for research, and peer review and completion thereof, modeled on real processes of academic research publication.  The call for papers we will use is adapted from calls for the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) and the [ISEA (International Symposium on Electronic Arts)](https://isea2025.isea-international.org/submission/submission-guideline/). 
+Through this course you will write a research paper and take it through the process of literature review and development, drafting a paper in response to a call for research, and peer review and completion thereof, modeled on real processes of academic research publication.  The call for papers we will use is adapted from calls for the [SIGGRAPH Art Papers](https://s2024.siggraph.org/program/art-papers/) and the [ISEA (International Symposium on Electronic Arts)](https://isea2025.isea-international.org/submission/submission-guideline/). 
 
 - Note that ISEA 2025 (Seoul, Korea) has a deadline of 15 November 2024 -- if we can move quickly enough in the course you could submit to it! 
 - Siggraph 2025 will be in Vancouver, but (as of writing) the submission deadlines are not yet published. It might be between January to March. 
 
 *(Broad terms of call, with theme(s) and topics)* 
 
-The "DIGM Computational Art Symposium" papers track program acts as a bridge between culture and technology to rethink and explore the future of our society. It’s about questions, debate, perspectives, and solutions. The dream is to bring art and engineering communities back together, as has been so fruitful in history. We understand art in its broadest sense, encompassing different fields from fine art to design and architecture. Submissions exploring how computer science and interactive techniques — especially those linked to recent developments in AI, machine learning, robotics, the metaverse, AR,  blockchain, and so on — that relate to societal and environmental questions are particularly encouraged. We encourage submissions that discuss and explore within the fields of electronic arts, creative technology, digital culture and all manners of art-science-technology collaboration not yet born. We would like you to engage in the Renaissance of the 21st century!
+The "DIGM Computational Art Symposium" acts as a bridge between art and technology to rethink and explore our future. The dream is to bring art and engineering communities together, as has been so fruitful in history. We understand art in its broadest sense, encompassing different fields from fine art to design and architecture. Submissions exploring how computer science and interactive techniques — especially those linked to recent developments — that relate to questions of the future are particularly encouraged. We encourage submissions that discuss and explore within the fields of electronic arts, creative technology, digital culture and all manners of art-science-technology collaboration not yet born. We would like you to engage in the Renaissance of the 21st century!
 
 Topics of interest include, but are not limited by:
 
@@ -227,13 +227,13 @@ Prospective authors may consider one of the following categories as they prepare
 
 *(Paper requirements)*
 
-We invite paper submissions for original and substantial research, both traditional and non-traditional, that has not been previously published. Papers will follow full academic practices, for instance, through an extensive literature review, argumentation, and observations or evaluations of impact. All papers must follow academic standards and will undergo blind peer review based on quality, relevance, originality, and impact. 
+We invite paper submissions for original and substantial research, both traditional and non-traditional, that has not been previously published. Papers will follow full academic practices, through an extensive literature review, argumentation, and observations or evaluations of impact. All papers must follow academic standards and will undergo blind peer review based on quality, relevance, originality, and impact. 
 
 (See notes on the [Final Paper submission](#final-paper) for details about formatting.)
 
 Submissions will be uploaded online. We also ask you to add a very short text explaining why your submission is important for the academic and wider community, from raising critical issues to opening perspectives or generating solutions. In doing so, we aim to enhance the impact of your cultural contributions.
 
-Authors will be required to present their papers with a duration of 15 minutes. 
+Authors will be required to present their papers with a duration of 10 minutes. 
 
 -----
 
@@ -266,12 +266,22 @@ As we saw in class, good research needs a good research question, but that doesn
 
 ----
 
+## Making
+
+Let's continue from last week's drawing app. 
+
+- We saw how we can draw in response to mouse/touch movements, and add generative variation to them. 
+- We talked about Maeda's comment "the most interesting pixels are the mouse" and this represents not just space but also **time**. How can we use the timing of a drawing gesture to modify the result? Can you think of ways to use speeds, rhythms, echoes, ?
+
+- Last week we also saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
+- Or: how can we combine both sketching and animating? How can we draw a line that then animates?
+
+- With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/Yellowtail, for example. 
+
 <!--
 [Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
 -->
 ----
-
-## Making
 
 Please continue working toward reconstruction of one of Golan Levin's thesis projects; or better still, to extend and mutate it into a new direction! We will share each other's codepens in the next class. 
 
@@ -279,9 +289,9 @@ Some rules of thumb:
 
 - Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
 
-- Break the problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.
+- Break a problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.
 
-- Try to work out the problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
+- Try to work out a problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
 
 - Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. 
 
@@ -301,7 +311,7 @@ Some rules of thumb:
 
 - Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
 
-- Make many copies, saving a version for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
+- Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
 
 # Week 3 
