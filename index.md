@@ -276,7 +276,7 @@ Let's continue from last week's drawing app.
 - Last week we also saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
 - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
 
-- With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/Yellowtail, for example. 
+- With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
 
 <!--
 [Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
@@ -321,6 +321,8 @@ Sep 26, 2023
 
 - Review of code sketching
 
+----
+
 Topic: machine intelligence and artificial agents.
 
 One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
@@ -358,6 +360,14 @@ Completing the Yellowtail
 
 # Week 4
 Oct 3, 2023
+
+
+- [Explorable Explanations](https://explorabl.es)
+  - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
+  
+- [Steering: vehicles and flocks](steering.html)
+
+---
 
 Begin developing your readling list into an **annotated bibliography**
 
@@ -437,12 +447,6 @@ Oct 10
 Oct 24, 2023
 
 - Sharing & discussing, writing & code
-
-- [Explorable Explanations](https://explorabl.es)
-  - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
-  
-- [Steering: vehicles and flocks](steering.html)
-
 
 <!--
 ---
