@@ -270,11 +270,20 @@ As we saw in class, good research needs a good research question, but that doesn
 
 Let's continue from last week's drawing app. 
 
+> First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have `line()` and `background()` etc.  That's good: we are in the stage of *reproducing research*. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that's good too -- we aren't limited to what's already given because we know how to remake it, and maybe we'll have a discovery that can advance research! 
+
 - We saw how we can draw in response to mouse/touch movements, and add generative variation to them. 
 - We talked about Maeda's comment "the most interesting pixels are the mouse" and this represents not just space but also **time**. How can we use the timing of a drawing gesture to modify the result? Can you think of ways to use speeds, rhythms, echoes, ?
 
+  - Can we *reify* the time of the gesture?
+
+A more complex example, inspired by Paul Haberli's *Dynadraw*: 
+
+https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010
+
 - Last week we also saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
 - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
+  - Can we *reify* the drawing?
 
 - With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
 

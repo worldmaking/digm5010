@@ -295,14 +295,28 @@ footer {
 <hr>
 <h2 id="making-2-animate-drawing">Making 2: animate drawing</h2>
 <p>Let&#39;s continue from last week&#39;s drawing app. </p>
+<blockquote>
+<p>First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have <code>line()</code> and <code>background()</code> etc.  That&#39;s good: we are in the stage of <em>reproducing research</em>. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that&#39;s good too -- we aren&#39;t limited to what&#39;s already given because we know how to remake it, and maybe we&#39;ll have a discovery that can advance research! </p>
+</blockquote>
 <ul>
 <li><p>We saw how we can draw in response to mouse/touch movements, and add generative variation to them. </p>
 </li>
 <li><p>We talked about Maeda&#39;s comment &quot;the most interesting pixels are the mouse&quot; and this represents not just space but also <strong>time</strong>. How can we use the timing of a drawing gesture to modify the result? Can you think of ways to use speeds, rhythms, echoes, ?</p>
+<ul>
+<li>Can we <em>reify</em> the time of the gesture?</li>
+</ul>
 </li>
+</ul>
+<p>A more complex example, inspired by Paul Haberli&#39;s <em>Dynadraw</em>: </p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="gOYQyrd?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<ul>
 <li><p>Last week we also saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?</p>
 </li>
 <li><p>Or: how can we combine both sketching and animating? How can we draw a line that then animates?</p>
+<ul>
+<li>Can we <em>reify</em> the drawing?</li>
+</ul>
 </li>
 <li><p>With these steps, we should be in a position to attempt to reconstruct Golan Levin&#39;s Curly/<a href="http://www.flong.com/archive/projects/yellowtail/index.html">Yellowtail</a>, for example. </p>
 </li>
