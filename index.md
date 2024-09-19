@@ -283,7 +283,13 @@ A more complex example, inspired by Paul Haberli's *Dynadraw*:
 
 https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010
 
-- Last week we also saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
+[Today's script](https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011)
+
+
+# Week 3 
+Sep 26, 2023
+
+- Last week we saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
 - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
   - Can we *reify* the drawing?
 
@@ -324,13 +330,10 @@ Some rules of thumb:
 
 - Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
-
-# Week 3 
-Sep 26, 2023
-
 - Reading list discussion
 
 - Review of code sketching
+
 
 ----
 
