@@ -175,6 +175,8 @@ Can you continue by drawing an example from Golan Levin's research-creation thes
 # Week 2 
 Sep 19, 2023
 
+- Online class today: - [Zoom meeting link](https://yorku.zoom.us/j/91019623418?pwd=75h0gYM5Je5nz5Pzbi2vGmWb3G96j4.1)
+
 ## What is Research?
 
 Deep dive [presentation](research.html) & discussion
