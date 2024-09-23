@@ -297,7 +297,28 @@ Sep 26, 2023
   - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
     - Can we *reify* the drawing?
 
-  - With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
+With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
+
+> "Yellowtail repeats a user's strokes end-over-end, enabling simultaneous specification of a line's shape and quality of movement. Each line repeats according to its own period, producing an ever-changing and responsive display of lively, worm-like textures."
+
+Detailed description from page 73 of the [thesis](http://www.flong.com/archive/storage/pdf/articles/thesis300.pdf):
+
+> "a user’s linear marks transform into an animated display of lively,
+worm-like lines. After the user deposited a mark, the system
+would then procedurally displace that mark end-over-end, making
+possible the simultaneous specification of both a line’s shape as
+well as its quality of movement. Straight marks would move along
+the direction of their own principal axes, while circular marks
+would chase their own tails. Marks with more irregular shapes
+would move in similarly irregular, but nonetheless rhythmic
+patterns."
+
+> The " screen space obeyed periodic (toroidal-topology)
+boundary conditions, such that marks which crossed the edge of
+the screen would reëmerge on the screen’s opposite side, rather
+than disappearing altogether."
+
+Notice also the self-observation and critique, see p79. Although this project does not achieve the goal of the thesis, these observations inform the progress that follows. This is a positive research path. 
 
 Some rules of thumb while coding:
 

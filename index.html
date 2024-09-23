@@ -327,16 +327,35 @@ footer {
 </ul>
 <h2 id="reproducing-curlyyellowtail">Reproducing Curly/Yellowtail</h2>
 <ul>
-<li><p>Last week we saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?</p>
-</li>
-<li><p>Or: how can we combine both sketching and animating? How can we draw a line that then animates?</p>
-<ul>
+<li>Last week we saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?</li>
+<li>Or: how can we combine both sketching and animating? How can we draw a line that then animates?<ul>
 <li>Can we <em>reify</em> the drawing?</li>
 </ul>
 </li>
-<li><p>With these steps, we should be in a position to attempt to reconstruct Golan Levin&#39;s Curly/<a href="http://www.flong.com/archive/projects/yellowtail/index.html">Yellowtail</a>, for example. </p>
-</li>
 </ul>
+<p>With these steps, we should be in a position to attempt to reconstruct Golan Levin&#39;s Curly/<a href="http://www.flong.com/archive/projects/yellowtail/index.html">Yellowtail</a>, for example. </p>
+<blockquote>
+<p>&quot;Yellowtail repeats a user&#39;s strokes end-over-end, enabling simultaneous specification of a line&#39;s shape and quality of movement. Each line repeats according to its own period, producing an ever-changing and responsive display of lively, worm-like textures.&quot;</p>
+</blockquote>
+<p>Detailed description from page 73 of the <a href="http://www.flong.com/archive/storage/pdf/articles/thesis300.pdf">thesis</a>:</p>
+<blockquote>
+<p>&quot;a user’s linear marks transform into an animated display of lively,
+worm-like lines. After the user deposited a mark, the system
+would then procedurally displace that mark end-over-end, making
+possible the simultaneous specification of both a line’s shape as
+well as its quality of movement. Straight marks would move along
+the direction of their own principal axes, while circular marks
+would chase their own tails. Marks with more irregular shapes
+would move in similarly irregular, but nonetheless rhythmic
+patterns.&quot;</p>
+</blockquote>
+<blockquote>
+<p>The &quot; screen space obeyed periodic (toroidal-topology)
+boundary conditions, such that marks which crossed the edge of
+the screen would reëmerge on the screen’s opposite side, rather
+than disappearing altogether.&quot;</p>
+</blockquote>
+<p>Notice also the self-observation and critique, see p79. Although this project does not achieve the goal of the thesis, these observations inform the progress that follows. This is a positive research path. </p>
 <p>Some rules of thumb while coding:</p>
 <ul>
 <li><p>Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let&#39;s focus on behaviour first.</p>
