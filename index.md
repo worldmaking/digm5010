@@ -289,20 +289,17 @@ https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010
 # Week 3 
 Sep 26, 2023
 
-- Last week we saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
-- Or: how can we combine both sketching and animating? How can we draw a line that then animates?
-  - Can we *reify* the drawing?
+- Reading list discussion
 
-- With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
+## Reproducing Curly/Yellowtail
 
-<!--
-[Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
--->
-----
+  - Last week we saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
+  - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
+    - Can we *reify* the drawing?
 
-Please continue working toward reconstruction of one of Golan Levin's thesis projects; or better still, to extend and mutate it into a new direction! We will share each other's codepens in the next class. 
+  - With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
 
-Some rules of thumb:
+Some rules of thumb while coding:
 
 - Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
 
@@ -330,14 +327,15 @@ Some rules of thumb:
 
 - Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
-- Reading list discussion
 
-- Review of code sketching
+Please continue working toward reconstruction of one of Golan Levin's thesis projects; or better still, to extend and mutate it into a new direction! We will share each other's codepens in the next class. 
 
-
+<!--
+[Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
+-->
 ----
 
-Topic: machine intelligence and artificial agents.
+## Machine intelligence and autonomous agents
 
 One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
 
@@ -345,11 +343,11 @@ For instance, York University recently established [The Center for AI & Society]
 
 What are the research questions, and especially, what can our field contribute? Where does this overlap or intersect with *your* interests? How will you articulate this?
 
----
-
 For the purposes of our DIGM5010 course: what are some of the **foundations** of our field that may inform this?
 
-[Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+Slides: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+
+Reproducing research: [Steering behaviours for vehicles and flocks](steering.html)
 
 <!--
 [Zoom recording](https://drive.google.com/file/d/1_4fOobVXYf6WecRKCWsi6b0j9EzCQzD6/view?usp=drive_link)
@@ -375,11 +373,12 @@ Completing the Yellowtail
 # Week 4
 Oct 3, 2023
 
+## Explorable explanations
 
 - [Explorable Explanations](https://explorabl.es)
   - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
   
-- [Steering: vehicles and flocks](steering.html)
+- [Continuing with steering behaviours](steering.html)
 
 ---
 
@@ -414,10 +413,6 @@ Begin developing your readling list into an **annotated bibliography**
   - Your final Annotated Bibliography
   - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
 - The final deadline for submission is **Sunday Oct 13th**.
-
------
-
-Continuing code sketching, with turtles and mindstorms
 
 <!--
 - [Zoom recording](https://drive.google.com/file/d/1_yZch7K50LojaVojQeUDublwyVCf5GAh/view?usp=sharing)
