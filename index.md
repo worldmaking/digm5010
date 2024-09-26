@@ -299,6 +299,8 @@ Sep 26, 2023
 
 With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
 
+**This is an example of reproducing research.**  First we should sketch out what is required based on the source material, and work from there to refine from a sketch through pseudo-code and implementation of components until we have the final result. 
+
 > "Yellowtail repeats a user's strokes end-over-end, enabling simultaneous specification of a line's shape and quality of movement. Each line repeats according to its own period, producing an ever-changing and responsive display of lively, worm-like textures."
 
 Detailed description from page 73 of the [thesis](http://www.flong.com/archive/storage/pdf/articles/thesis300.pdf):
@@ -319,6 +321,20 @@ the screen would reëmerge on the screen’s opposite side, rather
 than disappearing altogether."
 
 Notice also the self-observation and critique, see p79. Although this project does not achieve the goal of the thesis, these observations inform the progress that follows. This is a positive research path. 
+
+---
+
+OK so let's start by pseudo-coding Yellowtail!
+
+---
+
+[past version 1](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
+
+[past version 2](https://codepen.io/grrrwaaa/pen/aagQzY?editors=0010)
+
+---
+
+Please continue working toward reconstruction of one of Golan Levin's thesis projects; or better still, to extend and mutate it into a new direction! We will share each other's codepens in the next class. 
 
 Some rules of thumb while coding:
 
@@ -348,12 +364,6 @@ Some rules of thumb while coding:
 
 - Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
-
-Please continue working toward reconstruction of one of Golan Levin's thesis projects; or better still, to extend and mutate it into a new direction! We will share each other's codepens in the next class. 
-
-<!--
-[Second class codepen](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
--->
 ----
 
 ## Machine intelligence and autonomous agents
@@ -370,26 +380,12 @@ Slides: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
 
 Reproducing research: [Steering behaviours for vehicles and flocks](steering.html)
 
-<!--
-[Zoom recording](https://drive.google.com/file/d/1_4fOobVXYf6WecRKCWsi6b0j9EzCQzD6/view?usp=drive_link)
--->
-
 **References**
 - [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
 - [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
 - [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
 - [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
 
-----
-
-<!--
-Completing the Yellowtail
-- [Zoom recording](https://drive.google.com/file/d/1YolHbf3uddSZOZ-taQPXe1pF25l5icMg/view?usp=drive_link)
-
----codepen:https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010
--->
-
-----
 
 # Week 4
 Oct 3, 2023
