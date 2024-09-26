@@ -289,6 +289,8 @@ https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010
 # Week 3 
 Sep 26, 2023
 
+[Zoom recording](https://yorku.zoom.us/rec/share/XAq2NPYpbqCVBtvR9gTmcTZspvcMPikuRRy7-m0ibmowUEfFi0B7Sp_LxRO3fScy.up7ZoH5Adud0amiq)
+
 - Reading list discussion
 
 ## Reproducing Curly/Yellowtail
@@ -325,6 +327,8 @@ Notice also the self-observation and critique, see p79. Although this project do
 ---
 
 OK so let's start by pseudo-coding Yellowtail!
+
+https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
 ---
 
