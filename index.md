@@ -328,6 +328,8 @@ Notice also the self-observation and critique, see p79. Although this project do
 
 OK so let's start by pseudo-coding Yellowtail!
 
+Here's what we ended up with as pseudo-code in class, before we started coding:
+
 ```
 there is a canvas
 
@@ -372,6 +374,8 @@ draw:
 	if currentpath exists
 		drawpath(currentpath)
 ```
+
+And here's the final code we ended up with, with a couple of little refinements added:
 
 https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
