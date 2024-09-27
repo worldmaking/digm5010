@@ -379,6 +379,16 @@ And here's the final code we ended up with, with a couple of little refinements 
 
 https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
+Please continue working on extending and mutating this into a new direction! We will share each other's codepens in the next class. 
+- We talked about how these lines are still fairly passive, as they just follow the series of instructions given to them by the initial gesture. How could they become a bit more autonomous?
+- Each segment holds a relative change. Can we do something interesting with that?
+- Are there more interesting things we could do with the boundaries?
+- Should segments continue forever? 
+- Each segment holds a relative time, but we aren't really using that in the animation yet. E.g. if you pause mid-gesture, then continue, the animated line moves but it does not have a pause. Can you figure out how to fix that?
+- There was a good suggestion in class: with multiple lines, they are not aware of each other. Is there a way that they could be?
+- How about time -- is there a way to synchronize them to an underlying meter, for example?
+- Or if you want to try to figure it out, how would you add sound to each line?
+
 ---
 
 [past version 1](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
@@ -386,8 +396,6 @@ https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 [past version 2](https://codepen.io/grrrwaaa/pen/aagQzY?editors=0010)
 
 ---
-
-Please continue working toward reconstruction of one of Golan Levin's thesis projects; or better still, to extend and mutate it into a new direction! We will share each other's codepens in the next class. 
 
 Some rules of thumb while coding:
 

@@ -406,11 +406,21 @@ draw:
 <p>And here&#39;s the final code we ended up with, with a couple of little refinements added:</p>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="vYoOLqL?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+<p>Please continue working on extending and mutating this into a new direction! We will share each other&#39;s codepens in the next class. </p>
+<ul>
+<li>We talked about how these lines are still fairly passive, as they just follow the series of instructions given to them by the initial gesture. How could they become a bit more autonomous?</li>
+<li>Each segment holds a relative change. Can we do something interesting with that?</li>
+<li>Are there more interesting things we could do with the boundaries?</li>
+<li>Should segments continue forever? </li>
+<li>Each segment holds a relative time, but we aren&#39;t really using that in the animation yet. E.g. if you pause mid-gesture, then continue, the animated line moves but it does not have a pause. Can you figure out how to fix that?</li>
+<li>There was a good suggestion in class: with multiple lines, they are not aware of each other. Is there a way that they could be?</li>
+<li>How about time -- is there a way to synchronize them to an underlying meter, for example?</li>
+<li>Or if you want to try to figure it out, how would you add sound to each line?</li>
+</ul>
 <hr>
 <p><a href="https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010">past version 1</a></p>
 <p><a href="https://codepen.io/grrrwaaa/pen/aagQzY?editors=0010">past version 2</a></p>
 <hr>
-<p>Please continue working toward reconstruction of one of Golan Levin&#39;s thesis projects; or better still, to extend and mutate it into a new direction! We will share each other&#39;s codepens in the next class. </p>
 <p>Some rules of thumb while coding:</p>
 <ul>
 <li><p>Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let&#39;s focus on behaviour first.</p>
