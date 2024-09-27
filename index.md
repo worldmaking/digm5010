@@ -328,6 +328,51 @@ Notice also the self-observation and critique, see p79. Although this project do
 
 OK so let's start by pseudo-coding Yellowtail!
 
+```
+there is a canvas
+
+state:
+	mouse: x, y, buttonstate
+	time
+	currentpath = null
+	list of finished paths
+		start position
+		list of segments (dx, dy change vectors)
+
+pointerdown:
+	create a new currentpath object, with start position at mouse x,y & t
+
+pointerup:
+	if currentpath
+		add my currentpath to the list of finished paths
+		currentpath = null again
+
+pointermove:
+	if currentpath exists
+		add mouse dx,dy & t to currentpath's list of segments
+
+animate:
+	for each path of finished paths
+		remove 1st segment (shift)
+		(something about coordinates)
+		stick it onto the end (push)
+		wrap around canvas width/height 
+			e.g. if x > width; x -= width, etc. for 4 boundaries
+
+drawpath:
+	begin position at path's start position
+	for each segment of the path
+		line from last position to new position by adding segment change
+		(path, moveto, lineto, stroke)
+
+draw:
+	clear screen
+	for each path of finished paths
+		drawpath(line)
+	if currentpath exists
+		drawpath(currentpath)
+```
+
 https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
 ---

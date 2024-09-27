@@ -360,6 +360,48 @@ than disappearing altogether.&quot;</p>
 <p>Notice also the self-observation and critique, see p79. Although this project does not achieve the goal of the thesis, these observations inform the progress that follows. This is a positive research path. </p>
 <hr>
 <p>OK so let&#39;s start by pseudo-coding Yellowtail!</p>
+<pre><code>there is a canvas
+
+state:
+    mouse: x, y, buttonstate
+    time
+    currentpath = null
+    list of finished paths
+        start position
+        list of segments (dx, dy change vectors)
+
+pointerdown:
+    create a new currentpath object, with start position at mouse x,y &amp; t
+
+pointerup:
+    if currentpath
+        add my currentpath to the list of finished paths
+        currentpath = null again
+
+pointermove:
+    if currentpath exists
+        add mouse dx,dy &amp; t to currentpath&#x27;s list of segments
+
+animate:
+    for each path of finished paths
+        remove 1st segment (shift)
+        (something about coordinates)
+        stick it onto the end (push)
+        wrap around canvas width/height 
+            e.g. if x &gt; width; x -= width, etc. for 4 boundaries
+
+drawpath:
+    begin position at path&#x27;s start position
+    for each segment of the path
+        line from last position to new position by adding segment change
+        (path, moveto, lineto, stroke)
+
+draw:
+    clear screen
+    for each path of finished paths
+        drawpath(line)
+    if currentpath exists
+        drawpath(currentpath)</code></pre>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="vYoOLqL?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <hr>
