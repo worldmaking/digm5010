@@ -679,14 +679,15 @@ Nov 7, 2023
   - Find related conferences/symposia/journals/etc. to contrast other papers as well as submission and review criteria. 
   - You should identify at least one conference/festival/other appropriate venue to submit your research or research-creation. Investigate papers submitted to this in past years, and the submission requirements and review criteria. 
   - Document these findings in your journal.
-2. Papers can range from 2000-5000 words. You have two choices for publication format. 
+2. Papers can range from 2000-5000 words. You have three choices for publication format. 
    1. A traditional conference-style paper. Papers must follow the standard template (adapted from ISEA2024) available [here](https://docs.google.com/document/d/1WZkAN9oaT8pvVVKBRwRRgbwnuKmAU0JJ/edit?usp=share_link&ouid=112275914788197824145&rtpof=true&sd=true) or [here](https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx)
    2. A very modern, online-first academic article. That is, one designed to be read online, with at least some active components, rather than primarily on paper. The notion of publishing in academia has been rapidly changing, and these changes accelerated during the pandemic.
-     - See [https://www.pubpub.org](https://www.pubpub.org) for an example of a modern online-first collaborative publishing venue. Many conferences in recent years have moved over to this format (e.g. NIME, ICLC). 
+     - See [https://www.pubpub.org](https://www.pubpub.org) for an example of a modern online-first collaborative publishing venue. Many conferences in recent years have moved over to this format (e.g. NIME, ICLC). [Here's an example of an online-first paper I published in 2021](https://nime.pubpub.org/pub/0u3ruj23/release/1)
      - See [https://distill.pub](https://distill.pub) for an example of a modern, web-based peer-reviewed journal with embedded visualizations and interactive components. 
      - See [https://jar-online.net](https://jar-online.net) for a different example more focused on art theory & practice.
      - Alternatively, create your own using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
      - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
+   3. An "Explorable Explanation", following the ideas outlined [here](#explorable-explanations) 
 3. Post your final paper online to our final submission form here: [https://forms.gle/zHPbsvSrtoA16xzAA](https://forms.gle/zHPbsvSrtoA16xzAA)
 
 Please submit your final papers by December 8th, thank you!!
