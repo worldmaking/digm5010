@@ -502,7 +502,7 @@ This is great advice for a researcher, and great things to do while annotating a
 
 > "A typical reading tool, such as a book or website, displays the author's argument, and nothing else. The reader's line of thought remains internal and invisible, vague and speculative. We form questions, but can't answer them. We consider alternatives, but can't explore them. We question assumptions, but can't verify them. And so, in the end, we blindly trust, or blindly don't, and we miss the deep understanding that comes from dialogue and exploration."
 
-Against this "Explorable Explanations":
+Against this he suggests creating "Explorable Explanations":
 
 > "The goal is to change people's relationship with text. People currently think of text as information to be consumed. I want text to be used as an environment to think in."
 
