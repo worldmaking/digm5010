@@ -375,7 +375,7 @@ draw:
 		drawpath(currentpath)
 ```
 
-And here's the final code we ended up with, with a couple of little refinements added:
+And here's the final code we ended up with (with a couple of little refinements added):
 
 https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
@@ -425,29 +425,6 @@ Some rules of thumb while coding:
 
 - Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
-----
-
-## Machine intelligence and autonomous agents
-
-One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
-
-For instance, York University recently established [The Center for AI & Society](https://www.yorku.ca/research/cais/) organized research unit, and was awarded $80M from federal funding for the [Connected Minds](https://www.yorku.ca/research/connected-minds/) program. See the [announcement here](https://www.yorku.ca/news/2023/04/28/york-university-leads-318-4m-first-of-kind-inclusive-next-gen-technology-research-initiative/). There will be many multidisciplinary projects funded through this, for which you might be hired as research assistants. There will be scholarships for graduate students (and post-doctroral research appointments) through this, to which you may apply. 
-
-What are the research questions, and especially, what can our field contribute? Where does this overlap or intersect with *your* interests? How will you articulate this?
-
-For the purposes of our DIGM5010 course: what are some of the **foundations** of our field that may inform this?
-
-Slides: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
-
-Reproducing research: [Steering behaviours for vehicles and flocks](steering.html)
-
-**References**
-- [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
-- [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
-- [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
-- [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
-
-
 # Week 4
 Oct 3, 2023
 
@@ -473,8 +450,6 @@ Featured Artworks / Artists:
 - *Blue Dot (Shadow)*, Evangeline Y Brooks
  
 Presented by the collaborative initiative of @thecreativeschl and @cityofto Creative Technology Office - Future Makers Collective and the Human Feedback Foundation.
- 
-
 
 ## Explorable explanations
 
@@ -524,6 +499,30 @@ Begin developing your readling list into an **annotated bibliography**
 ---codepen:https://codepen.io/grrrwaaa/pen/LYMayEE
 ---codepen:https://codepen.io/grrrwaaa/pen/PoXLmVe
 -->
+
+
+----
+
+## Machine intelligence and autonomous agents
+
+One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
+
+For instance, York University recently established [The Center for AI & Society](https://www.yorku.ca/research/cais/) organized research unit, and was awarded $80M from federal funding for the [Connected Minds](https://www.yorku.ca/research/connected-minds/) program. See the [announcement here](https://www.yorku.ca/news/2023/04/28/york-university-leads-318-4m-first-of-kind-inclusive-next-gen-technology-research-initiative/). There will be many multidisciplinary projects funded through this, for which you might be hired as research assistants. There will be scholarships for graduate students (and post-doctroral research appointments) through this, to which you may apply. 
+
+What are the research questions, and especially, what can our field contribute? Where does this overlap or intersect with *your* interests? How will you articulate this?
+
+For the purposes of our DIGM5010 course: what are some of the **foundations** of our field that may inform this?
+
+Slides: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+
+Reproducing research: [Steering behaviours for vehicles and flocks](steering.html)
+
+**References**
+- [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
+- [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
+- [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
+- [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
+
 
 # Week 5 
 Oct 10 
