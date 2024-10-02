@@ -451,6 +451,31 @@ Reproducing research: [Steering behaviours for vehicles and flocks](steering.htm
 # Week 4
 Oct 3, 2023
 
+**News about an exhibition next week**
+
+[![illuminarium](img/illuminarium.jpg)](https://www.instagram.com/p/DAjS88aSAlT/?fbclid=IwY2xjawFo4KtleHRuA2FlbQIxMAABHQI92JyX-yxVum1eUtR5RRSeETmgu2OIj3BLExtiknkv4oTbeMeXuqPf0g_aem_NHutBsopKfT8WwBFJ2V79A&img_index=1)
+
+[Entangled Dimensions: Art in the Age of Neural Media](https://www.eventbrite.ca/e/entangled-dimensions-art-in-the-age-of-neural-media-tickets-1034058876937#:~:text=Presented%20by%20Future%20Makers%20in,digital%20and%20neural%20media%20art.) at [Illuminarium](https://www.google.com/maps/place/Illuminarium+Toronto/@43.64993,-79.3631862,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb80a6a8c87b:0x2c884e51f04efab!8m2!3d43.64993!4d-79.3606059!16s%2Fg%2F11svk7p37t?entry=tts&g_ep=EgoyMDI0MDkyNS4wKgBIAVAD), Toronto
+- Oct 8: 12:00 PM - 5:00 PM
+- Oct 9: 12:00 PM - 8:00 PM
+ 
+This immersive exhibition explores the intricate connections between human and non-human intelligences through digital and neural media art.
+Curated by Ryan Kelln, we invite you to experience the work of Toronto-based artists and dive into a world of cutting-edge art featuring AI-driven creations, EEG/brainwave-powered pieces, 3D-printed marvels, and other pioneering forms of digital expression.
+ 
+Featured Artworks / Artists:
+ 
+- *We Are Entanglement*, Artificial Nature: Haru Ji & Graham Wakefield
+- *Living Sculptures*, Vladimir Kankc (@vladdkanic ) 
+- *(ex)tending towards*, Jane Tingley (York University)
+- *The Wail*, Wilfred Lee (@theartistsjourney )
+- *IWTBNA: I want to be new again*, Nava Messas Waxman (@navawaxman_m )
+- *what abides*, Ben McCarthy (@paleeyesmusic)
+- *Blue Dot (Shadow)*, Evangeline Y Brooks
+ 
+Presented by the collaborative initiative of @thecreativeschl and @cityofto Creative Technology Office - Future Makers Collective and the Human Feedback Foundation.
+ 
+
+
 ## Explorable explanations
 
 - [Explorable Explanations](https://explorabl.es)
