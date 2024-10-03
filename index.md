@@ -455,6 +455,8 @@ Presented by the collaborative initiative of @thecreativeschl and @cityofto Crea
 
 **Reproducing & sharing research through making**: discussion & sharing of your codepens! 
 
+https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
+
 ---
 
 **Research paper work**: Begin developing your readling list into an **annotated bibliography**
@@ -489,7 +491,6 @@ Presented by the collaborative initiative of @thecreativeschl and @cityofto Crea
 
 ---
 
-
 ## Explorable explanations
 
 It was mentioned earlier that, as an alternative to a paper, one option for the final submission is an "explorable explanation". What does that mean?
@@ -512,7 +513,7 @@ He shows a few examples of how we can embed reactive elements and interactive si
 
 By interacting with these elements we can verify statements, develop intuition, make discoveries, and explore new questions about the topic. 
 
-
+- A simple example is his [model-driven debate](https://worrydream.com/ClimateChange/#media-debate) -- drag the green text!
 
 - Many examples of [Explorable Explanations](https://explorabl.es)
   - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
@@ -520,9 +521,6 @@ By interacting with these elements we can verify statements, develop intuition, 
 - An academic journal based on this format is [Distill](https://distill.pub)
 - A platform for "repdroducible research" is [Nextjournal](https://nextjournal.com) -- see [examples](https://nextjournal.com/explore)
 - A platform for building observable data apps at [Observable](https://observablehq.com) -- see [examples](https://observablehq.com/explore)
-  
-- Follow the links in the 2024 Postscript [at the end of the original article](https://worrydream.com/ExplorableExplanations/#update-2024) 
-  - A simple example is his [model-driven debate](https://worrydream.com/ClimateChange/#media-debate) -- drag the green text!
   
 - [Further reading](https://explorabl.es/reading/)
   - An important precursor, also acknowledged by Explorabl.es, is Seymour Papert's [Mindstorms](https://mindstorms.media.mit.edu) for computation and early education in the 1980's, which we will read more about next
