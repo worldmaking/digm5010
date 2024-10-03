@@ -541,17 +541,20 @@ There are also scholarships for graduate students (and post-doctroral research a
 
 What are the research questions, and especially, what can our field contribute? Where does this overlap or intersect with *your* interests? How will you articulate this?
 
-For the purposes of our DIGM5010 course: what are some of the **foundations** of our field that may inform this?
+---
 
-Slides: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+There's lots of different ways we could approach this subject. For the purposes of our DIGM5010 course: what are some of the **foundations** of our field that may inform this? 
 
-Reproducing research: [Steering behaviours for vehicles and flocks](steering.html)
+Let's follow back through a selective history.
 
-**References**
-- [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
-- [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
-- [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
-- [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
+- Slides: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+- Refrences:
+  - [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
+  - [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
+  - [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
+  - [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
+- Reproducing research: [Steering behaviours for vehicles and flocks](steering.html)
+
 
 <!--
 - [Zoom recording](https://drive.google.com/file/d/1_yZch7K50LojaVojQeUDublwyVCf5GAh/view?usp=sharing)
