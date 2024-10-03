@@ -428,6 +428,8 @@ Some rules of thumb while coding:
 # Week 4
 Oct 3, 2023
 
+[Zoom recording](https://yorku.zoom.us/rec/share/ltxHxOsTrgCAxwpIIutXO7HE4q385v48vuh7nVxaFoQKtF7NEv-WrTtPUacHzDD0.tKWuFAPp79sCAH-D)
+
 **Announcement** about an exhibition next week:
 
 [![illuminarium](img/illuminarium.jpg)](https://www.instagram.com/p/DAjS88aSAlT/?fbclid=IwY2xjawFo4KtleHRuA2FlbQIxMAABHQI92JyX-yxVum1eUtR5RRSeETmgu2OIj3BLExtiknkv4oTbeMeXuqPf0g_aem_NHutBsopKfT8WwBFJ2V79A&img_index=1)
