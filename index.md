@@ -533,7 +533,11 @@ By interacting with these elements we can verify statements, develop intuition, 
 
 One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
 
-For instance, York University recently established [The Center for AI & Society](https://www.yorku.ca/research/cais/) organized research unit, and was awarded $80M from federal funding for the [Connected Minds](https://www.yorku.ca/research/connected-minds/) program. See the [announcement here](https://www.yorku.ca/news/2023/04/28/york-university-leads-318-4m-first-of-kind-inclusive-next-gen-technology-research-initiative/). There will be many multidisciplinary projects funded through this, for which you might be hired as research assistants. There will be scholarships for graduate students (and post-doctroral research appointments) through this, to which you may apply. 
+For instance, York University recently established [The Center for AI & Society](https://www.yorku.ca/research/cais/) organized research unit, and was awarded $80M from federal funding for the [Connected Minds](https://www.yorku.ca/research/connected-minds/) program. See the [announcement here](https://www.yorku.ca/news/2023/04/28/york-university-leads-318-4m-first-of-kind-inclusive-next-gen-technology-research-initiative/). There will be many multidisciplinary projects funded through this, for which you might be hired as research assistants. 
+
+There are also scholarships for graduate students (and post-doctroral research appointments) through this, to which you may apply:
+- [Masters](https://www.yorku.ca/research/connected-minds/connected-minds-masters-scholarships/)
+- [PhD](https://www.yorku.ca/research/connected-minds/phd-scholarships/)
 
 What are the research questions, and especially, what can our field contribute? Where does this overlap or intersect with *your* interests? How will you articulate this?
 
@@ -670,7 +674,7 @@ Nov 7, 2023
   - An introduction to git?
   - An introduction to Node.js?
 
-
+`
 
 ## Final Paper
 
