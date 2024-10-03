@@ -95,13 +95,16 @@ Seymour Papert was a psychologist and mathematician, and education theorist, dee
 
 He remembered being inspired as a child by **gears**, as **"object-to-think-with"**, which he used practically as a model to understand mathematics & physics (and more).
 
-> "My thesis could be summarized as: What the gears cannot do the computer might. The computer's essence is its universality, its power to simulate. Because it can take on a thousand forms and can serve a thousand functions, it can appeal to a thousand tastes. [Mindstorms] is a result of my own attempts... to turn computers into flexible enough instruments that many children can each create for themselves something like what the gears were for me."
+> "My thesis could be summarized as: What the gears cannot do the computer might. The computer's essence is its universality, its power to simulate. Because it can take on a thousand forms and can serve a thousand functions, it can appeal to a thousand tastes."
 
 notes:
 
 A relevant aside: Papert was also firmly against the "schizophrenic" separation of humanists-artists and scientists-engineers (because in practice, **knowing-that** (propositional knowledge) and **knowing-how** (procedural knowledge) are very rarely separated.) He believed that computers may be a tool to break this division. 
 
 ---
+
+> "[Mindstorms] is a result of my own attempts... to turn computers into flexible enough instruments that many children can each create for themselves something like what the gears were for me."
+
 
 This shouldn't mean making the computer teach--"the computer programming the child"--instead the child must program the computer, through having a conversation with it.
 

@@ -545,13 +545,17 @@ There's lots of different ways we could approach this subject. For the purposes 
 
 Let's follow back through a selective history.
 
-- Slides: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+- **Slides**: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
 - Refrences:
   - [Papert, Seymour A. Mindstorms (Excerpts)](https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y) 
-  - [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/)
+  - [Alan Kay. Marvin Minsky & The Ultimate Tinkertoy](https://tinlizzie.org/tinkertoy/) -- with an embedded explorable
+  - [An archive from Byte magazine, 1982](https://archive.org/stream/byte-magazine-1982-08/1982_08_BYTE_07-08_Logo#page/n0/mode/2up) -- pages 88 to 290
+    - Can you make a Logo emulator?
   - [Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
+    - Can you make a Vehicle world?
   - [Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
-- Reproducing research: [Steering behaviours for vehicles and flocks](steering.html)
+    - Can you make a flocking simulator?
+- **Reproducing research**: [Steering behaviours for vehicles and flocks](steering.html)
 
 
 <!--
