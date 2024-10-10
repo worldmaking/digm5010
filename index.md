@@ -575,21 +575,23 @@ Oct 10
 
 - Review of schedule for remainder of semester
   - The research paper (which can be a continuation of your bibliography and/or codework)
-    - The final submission
-    - The call for papers
-    - The peer review
-  - The video tutorial (which can support your paper)
+    - The [call for papers](#a-call-for-papers)
+    - The [peer review](#peer-review)
+    - The [final submission](#final-paper)
+  - The [video tutorial](#video-tutorial) (which can support your paper)
 
-- Complete your annotated bibliography
+- Complete your [annotated bibliography](#annotated-bibliography)
 - **Annotated bibliographies due Sunday Oct 13th**
 
-- Next week is reading week -- a perfect time for you work on your paper's first draft! 
-  
-- Sharing & discussing work so far
+- Next week is reading week -- a perfect time for you work on your **paper's first draft!**
 
 - 1-on-1 Q&As
+  - We have 12 students, so up to 12 minutes each
+  - Please email me a link to your work in progress and bring over your laptop etc. 
 
 ---
+
+If we have time to spare, we can press on with **Reproducing research**: [Steering behaviours for vehicles and flocks](steering.html)
 
 # Week 6
 [Reading Week]
