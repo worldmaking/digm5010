@@ -6,7 +6,11 @@
 
 In the late 1980s Craig Reynolds proposed a model of animal motion to model flocks, herds and schools, which he named boids. Reynolds' paper [Steering Behaviors for Autonomous Characters](https://www.red3d.com/cwr/steer/gdc99/) covers boids as an aggregate of other steering behaviours. The paper has been very influential in robotics, game design, special effects and simulation, and remains well worth exploring as a collection of patterns for autonomous agent movements, so we will work through it in more detail.
 
-> Notice that in the "related work" section the paper refences Grey Walter's Tortoises, Rodney Brooks' robotics, and Valentino Braitenberg's Vehicles.
+[Flock simulation example](https://codepen.io/grrrwaaa/full/XXevBb)
+
+[Another](https://codepen.io/grrrwaaa/full/GRqWxMx)
+
+## Reynold's three layers
 
 The paper breaks agent movement in general into three layers:
 
@@ -14,12 +18,9 @@ The paper breaks agent movement in general into three layers:
 - **Steering**: path determination according to the action selected. Many different behaviors can be used; the essential strategy is to compute a new force, which is often in terms of a desired velocity minus current velocity
 - **Locomotion**: mechanisms of conversion of steering into actual movement.
 
-His paper concentrates on several different steering algorithms. Action selection is not dealt with, but also arguably independent. Locomotion is extremely simple -- equivalent to a single force vector on a point mass -- but a more complex (and thus constrained) locomotion system could be swapped in without changing the steering model significantly. Many ideas for combining different steering force behaviours are given. 
+His paper concentrates on several different steering algorithms. Action selection is not dealt with, as it is considered independent. Locomotion is extremely simple -- equivalent to a single force vector on a point mass -- but a more complex (and thus constrained) locomotion system could be swapped in without changing the steering model significantly. Many ideas for combining different steering force behaviours are given. 
 
-[Flock simulation example](https://codepen.io/grrrwaaa/full/XXevBb)
-
-[Another](https://codepen.io/grrrwaaa/full/GRqWxMx)
-
+> Notice that in the "related work" section the paper refences Grey Walter's Tortoises, Rodney Brooks' robotics, and Valentino Braitenberg's Vehicles.
 
 ## Vectors
 
@@ -91,18 +92,23 @@ vec2.limit = function (out, v, limit) {
 }
 ```
 
+Perhaps it is a good idea to script a simple sketch with locomoting agents before going further.
+
+Perhaps we should start from pseudocode?
+
 ## Steering
 
 Now all we need to do is work out the force, which can be a sum of multiple forces, external and internal
 
 - Global direction, e.g. gravity, wind
-- Random walk
-- Seek & flee: derive desired velocity from a the relative vector toward (or away from) a target point. Given a desired velocity, the steering force is obtained by subtracting the current velocity. Intensity decreases as distance decreases.
+- Random walks
+- Seek & flee: derive desired velocity from the relative vector toward (or away from) a target point. Given a desired velocity, the steering force is obtained by subtracting the current velocity. Intensity decreases as distance decreases. 
+  - Perhaps the desired/feared point is the mouse?
 - Avoidance (e.g. avoiding obstacles, and/or each other): intensity increases as relative distance decreases.
 
-It may be better to separate force calculation and locomotion into different loops over the population. Why?
+It may be better to separate force calculation and locomotion into different loops over the population. Why would that be?
 
-If you want to have a 'toroidal' space, where exiting one edge means re-entering at the opposite edge, you may need to compute relative position vectors wrapped in a range of -canvas.width/2 to +canvas.width/2. For example:
+What to do for force calculations around the edges? If you want to have a 'toroidal' space, where exiting one edge means re-entering at the opposite edge, you may need to compute relative position vectors wrapped in a range of -canvas.width/2 to +canvas.width/2. For example:
 
 ```js
 // wrap vector `v` in the region of [-w/2, -h/2] to [w/2, h/2]
@@ -166,7 +172,54 @@ Reynolds says:
 - Gary Flake also recommends adding an influence for View: to move laterally away from any boid blocking the view.
 - Adding a "predator" agent to the space, and giving an "evasion" force to each of the boids to run away from the predator. 
 - Adding a "leader" object, which triggers seek forces in boids, allows for guided flocks.
-- We could visualize trails of where boids have gone, just as we did for the turtle drawing example. 
-- We could also visualize the neighbor connections between boids. 
+- We could visualize the neighbor connections between boids. 
+
+### Trails
+
+We could also visualize trails of where boids have gone, much as was done for Casey Reas' famous works. 
+
+There's a couple of different ways we could do this. One is to store paths each agent has gone into memory, and redraw these paths on every frame, just like we stored and redrawed the paths in Yellowtail. 
+
+Another way is to create a secondary canvas to draw into, one that exists "in memory" rather than in our HTML page, and which is more persistent (much like our first drawing sketches), which we can then draw into our background on each animation frame. We can create an additional canvas like this:
+
+```js
+const trailCanvas = document.createElement("canvas");
+const trailCtx = turtleCanvas.getContext("2d");
+```
+
+Make it match the main canvas size with
+
+```js
+trailCanvas.width = canvas.width;
+trailCanvas.height = canvas.height;
+```
+
+Draw into this canvas using `trailCtx` instead of our usual main canvas context, using the same kinds of routines (e.g. `trailCtx.beginPath()` etc.)
+
+In the draw loop, after clearing our main canvas, we can draw in our offscreen trail canvas with `ctx.drawImage(trailCanvas, 0, 0);`
+
+## Intelligence
+
+So far there is only a kind of primal, almost physical intelligence. How can we introduce a higher level of intelligence -- perhaps the "action selection" suggested by Reynolds, or something else?
+
 - We can add a social behaviour -- perhaps neighbors like to become the same hue, while loners randomize their hue more. Perhaps the weights of cohesion, alignment and avoidance vary with the hue?
 - Reynolds talks near the end of the paper about prioritizing different forces at different times. This could be somewhat randomized, or could be the beginning of action selection intelligence. We could, for example, adapt our turtle-program system to the selection of different actions over time, perhaps setting different force weights or enabling and disabling seek/flee/etc. behaviours.
+- What about the Braitenberg Vehicles -- can any of those ideas be incorporated here?
+
+
+## Vehicles
+
+What are these Braitenberg vehicles that keep getting mentioned?
+
+![vehicle](img/Braitenberg_Vehicle_2ab.png)
+
+[Braitenberg, V. (1984). Vehicles: Experiments in synthetic psychology. Cambridge, MA: MIT Press.](https://mitpress.mit.edu/books/vehicles)
+
+> A Braitenberg vehicle is an agent that can autonomously move around. It has primitive sensors (measuring some stimulus at a point) and wheels (each driven by its own motor) that function as actuators or effectors. A sensor, in the simplest configuration, is directly connected to an effector, so that a sensed signal immediately produces a movement of the wheel. Depending on how sensors and wheels are connected, the vehicle exhibits different behaviors (which can be goal-oriented).  [wikipedia](http://en.wikipedia.org/wiki/Braitenberg_vehicle)
+
+[Examples of the first couple of vehicles in a browser-based environment](https://www.braitenberg.world/) -- but please read the book, because they get a lot stranger and more interesting!
+
+> Cyberneticist Valentino Braitenberg argues that his extraordinarily simple mechanical vehicles manifest behaviors that appear identifiable as fear, aggression, love, foresight, and optimism. The vehicle idea was a thought experiment conceived to show that complex, apparently purposive behaviour did not need to depend on complex representations of the environment inside a creature or agents brain. In fact simply by reacting to the environment in a consistent manner was more than enough to explain the low level reactive behaviours exhibited by many animals.
+
+[This book is quite short, but richly dense.](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
+

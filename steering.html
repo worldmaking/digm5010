@@ -33,12 +33,15 @@ footer {
 <header><a href="index.html">Foundations of Digital Media</a></header>
 <ul>
 <li><a href="#steering-behaviours">Steering Behaviours</a><ul>
+<li><a href="#reynolds-three-layers">Reynold&#39;s three layers</a></li>
 <li><a href="#vectors">Vectors</a></li>
 <li><a href="#locomotion">Locomotion</a></li>
 <li><a href="#steering">Steering</a></li>
 <li><a href="#ui">UI</a></li>
 <li><a href="#boids-flocking-swarms">Boids, flocking, swarms</a></li>
 <li><a href="#ideas-for-extensions">Ideas for extensions</a></li>
+<li><a href="#intelligence">Intelligence</a></li>
+<li><a href="#vehicles">Vehicles</a></li>
 </ul>
 </li>
 </ul>
@@ -48,18 +51,19 @@ footer {
 
 <p><img src="http://underthecblog.files.wordpress.com/2014/02/fishschool.gif" alt="Fish"></p>
 <p>In the late 1980s Craig Reynolds proposed a model of animal motion to model flocks, herds and schools, which he named boids. Reynolds&#39; paper <a href="https://www.red3d.com/cwr/steer/gdc99/">Steering Behaviors for Autonomous Characters</a> covers boids as an aggregate of other steering behaviours. The paper has been very influential in robotics, game design, special effects and simulation, and remains well worth exploring as a collection of patterns for autonomous agent movements, so we will work through it in more detail.</p>
-<blockquote>
-<p>Notice that in the &quot;related work&quot; section the paper refences Grey Walter&#39;s Tortoises, Rodney Brooks&#39; robotics, and Valentino Braitenberg&#39;s Vehicles.</p>
-</blockquote>
+<p><a href="https://codepen.io/grrrwaaa/full/XXevBb">Flock simulation example</a></p>
+<p><a href="https://codepen.io/grrrwaaa/full/GRqWxMx">Another</a></p>
+<h2 id="reynolds-three-layers">Reynold&#39;s three layers</h2>
 <p>The paper breaks agent movement in general into three layers:</p>
 <ul>
 <li><strong>Action Selection</strong>: selecting actions to perform according to environmental input and goals to achieve.</li>
 <li><strong>Steering</strong>: path determination according to the action selected. Many different behaviors can be used; the essential strategy is to compute a new force, which is often in terms of a desired velocity minus current velocity</li>
 <li><strong>Locomotion</strong>: mechanisms of conversion of steering into actual movement.</li>
 </ul>
-<p>His paper concentrates on several different steering algorithms. Action selection is not dealt with, but also arguably independent. Locomotion is extremely simple -- equivalent to a single force vector on a point mass -- but a more complex (and thus constrained) locomotion system could be swapped in without changing the steering model significantly. Many ideas for combining different steering force behaviours are given. </p>
-<p><a href="https://codepen.io/grrrwaaa/full/XXevBb">Flock simulation example</a></p>
-<p><a href="https://codepen.io/grrrwaaa/full/GRqWxMx">Another</a></p>
+<p>His paper concentrates on several different steering algorithms. Action selection is not dealt with, as it is considered independent. Locomotion is extremely simple -- equivalent to a single force vector on a point mass -- but a more complex (and thus constrained) locomotion system could be swapped in without changing the steering model significantly. Many ideas for combining different steering force behaviours are given. </p>
+<blockquote>
+<p>Notice that in the &quot;related work&quot; section the paper refences Grey Walter&#39;s Tortoises, Rodney Brooks&#39; robotics, and Valentino Braitenberg&#39;s Vehicles.</p>
+</blockquote>
 <h2 id="vectors">Vectors</h2>
 <p>The simple vehicle model, and all of the behaviours, make use of vectors -- representing positions in space, relative distances, velocities, forces and accelerations etc.  We might need to add, subtract, scale, rotate, randomize etc. vectors. We could write a set of routines to do these things, or we could make use of an existing library such as <a href="https://glmatrix.net/docs/module-vec2.html">gl-matrix</a>.</p>
 <blockquote>
@@ -125,16 +129,21 @@ vec2.limit = <span class="hljs-function"><span class="hljs-keyword">function</sp
     vec2.scale(out, v, limited_len/len)
     <span class="hljs-keyword">return</span> out
 }</code></pre>
+<p>Perhaps it is a good idea to script a simple sketch with locomoting agents before going further.</p>
+<p>Perhaps we should start from pseudocode?</p>
 <h2 id="steering">Steering</h2>
 <p>Now all we need to do is work out the force, which can be a sum of multiple forces, external and internal</p>
 <ul>
 <li>Global direction, e.g. gravity, wind</li>
-<li>Random walk</li>
-<li>Seek &amp; flee: derive desired velocity from a the relative vector toward (or away from) a target point. Given a desired velocity, the steering force is obtained by subtracting the current velocity. Intensity decreases as distance decreases.</li>
+<li>Random walks</li>
+<li>Seek &amp; flee: derive desired velocity from the relative vector toward (or away from) a target point. Given a desired velocity, the steering force is obtained by subtracting the current velocity. Intensity decreases as distance decreases. <ul>
+<li>Perhaps the desired/feared point is the mouse?</li>
+</ul>
+</li>
 <li>Avoidance (e.g. avoiding obstacles, and/or each other): intensity increases as relative distance decreases.</li>
 </ul>
-<p>It may be better to separate force calculation and locomotion into different loops over the population. Why?</p>
-<p>If you want to have a &#39;toroidal&#39; space, where exiting one edge means re-entering at the opposite edge, you may need to compute relative position vectors wrapped in a range of -canvas.width/2 to +canvas.width/2. For example:</p>
+<p>It may be better to separate force calculation and locomotion into different loops over the population. Why would that be?</p>
+<p>What to do for force calculations around the edges? If you want to have a &#39;toroidal&#39; space, where exiting one edge means re-entering at the opposite edge, you may need to compute relative position vectors wrapped in a range of -canvas.width/2 to +canvas.width/2. For example:</p>
 <pre><code class="language-js"><span class="hljs-comment">// wrap vector `v` in the region of [-w/2, -h/2] to [w/2, h/2]</span>
 vec2.relativewrap = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">out, v, w, h</span>) </span>{
     <span class="hljs-keyword">const</span> w = space.width;
@@ -186,11 +195,38 @@ gui.add(params, <span class="hljs-string">&#x27;speed&#x27;</span>, <span class=
 <li>Gary Flake also recommends adding an influence for View: to move laterally away from any boid blocking the view.</li>
 <li>Adding a &quot;predator&quot; agent to the space, and giving an &quot;evasion&quot; force to each of the boids to run away from the predator. </li>
 <li>Adding a &quot;leader&quot; object, which triggers seek forces in boids, allows for guided flocks.</li>
-<li>We could visualize trails of where boids have gone, just as we did for the turtle drawing example. </li>
-<li>We could also visualize the neighbor connections between boids. </li>
+<li>We could visualize the neighbor connections between boids. </li>
+</ul>
+<h3 id="trails">Trails</h3>
+<p>We could also visualize trails of where boids have gone, much as was done for Casey Reas&#39; famous works. </p>
+<p>There&#39;s a couple of different ways we could do this. One is to store paths each agent has gone into memory, and redraw these paths on every frame, just like we stored and redrawed the paths in Yellowtail. </p>
+<p>Another way is to create a secondary canvas to draw into, one that exists &quot;in memory&quot; rather than in our HTML page, and which is more persistent (much like our first drawing sketches), which we can then draw into our background on each animation frame. We can create an additional canvas like this:</p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> trailCanvas = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;canvas&quot;</span>);
+<span class="hljs-keyword">const</span> trailCtx = turtleCanvas.getContext(<span class="hljs-string">&quot;2d&quot;</span>);</code></pre>
+<p>Make it match the main canvas size with</p>
+<pre><code class="language-js">trailCanvas.width = canvas.width;
+trailCanvas.height = canvas.height;</code></pre>
+<p>Draw into this canvas using <code>trailCtx</code> instead of our usual main canvas context, using the same kinds of routines (e.g. <code>trailCtx.beginPath()</code> etc.)</p>
+<p>In the draw loop, after clearing our main canvas, we can draw in our offscreen trail canvas with <code>ctx.drawImage(trailCanvas, 0, 0);</code></p>
+<h2 id="intelligence">Intelligence</h2>
+<p>So far there is only a kind of primal, almost physical intelligence. How can we introduce a higher level of intelligence -- perhaps the &quot;action selection&quot; suggested by Reynolds, or something else?</p>
+<ul>
 <li>We can add a social behaviour -- perhaps neighbors like to become the same hue, while loners randomize their hue more. Perhaps the weights of cohesion, alignment and avoidance vary with the hue?</li>
 <li>Reynolds talks near the end of the paper about prioritizing different forces at different times. This could be somewhat randomized, or could be the beginning of action selection intelligence. We could, for example, adapt our turtle-program system to the selection of different actions over time, perhaps setting different force weights or enabling and disabling seek/flee/etc. behaviours.</li>
+<li>What about the Braitenberg Vehicles -- can any of those ideas be incorporated here?</li>
 </ul>
+<h2 id="vehicles">Vehicles</h2>
+<p>What are these Braitenberg vehicles that keep getting mentioned?</p>
+<p><img src="img/Braitenberg_Vehicle_2ab.png" alt="vehicle"></p>
+<p><a href="https://mitpress.mit.edu/books/vehicles">Braitenberg, V. (1984). Vehicles: Experiments in synthetic psychology. Cambridge, MA: MIT Press.</a></p>
+<blockquote>
+<p>A Braitenberg vehicle is an agent that can autonomously move around. It has primitive sensors (measuring some stimulus at a point) and wheels (each driven by its own motor) that function as actuators or effectors. A sensor, in the simplest configuration, is directly connected to an effector, so that a sensed signal immediately produces a movement of the wheel. Depending on how sensors and wheels are connected, the vehicle exhibits different behaviors (which can be goal-oriented).  <a href="http://en.wikipedia.org/wiki/Braitenberg_vehicle">wikipedia</a></p>
+</blockquote>
+<p><a href="https://www.braitenberg.world/">Examples of the first couple of vehicles in a browser-based environment</a> -- but please read the book, because they get a lot stranger and more interesting!</p>
+<blockquote>
+<p>Cyberneticist Valentino Braitenberg argues that his extraordinarily simple mechanical vehicles manifest behaviors that appear identifiable as fear, aggression, love, foresight, and optimism. The vehicle idea was a thought experiment conceived to show that complex, apparently purposive behaviour did not need to depend on complex representations of the environment inside a creature or agents brain. In fact simply by reacting to the environment in a consistent manner was more than enough to explain the low level reactive behaviours exhibited by many animals.</p>
+</blockquote>
+<p><a href="https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA">This book is quite short, but richly dense.</a></p>
 
 <footer>DIGM5010 2021-22</footer>
 </body>

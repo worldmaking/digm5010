@@ -560,15 +560,6 @@ Let's follow back through a selective history.
 - **Reproducing research**: [Steering behaviours for vehicles and flocks](steering.html)
 
 
-<!--
-- [Zoom recording](https://drive.google.com/file/d/1_yZch7K50LojaVojQeUDublwyVCf5GAh/view?usp=sharing)
-
----codepen:https://codepen.io/grrrwaaa/pen/mdaoRKa
----codepen:https://codepen.io/grrrwaaa/pen/LYMayEE
----codepen:https://codepen.io/grrrwaaa/pen/PoXLmVe
--->
-
-
 
 # Week 5 
 Oct 10 
@@ -585,25 +576,38 @@ Oct 10
 
 - Next week is reading week -- a perfect time for you work on your **paper's first draft!**
 
-- 1-on-1 Q&As
+## 1-on-1 Q&As
   - We have 12 students, so up to 12 minutes each
   - Please email me a link to your work in progress and bring over your laptop etc. 
 
----
 
-If we have time to spare, we can press on with **Reproducing research**: [Steering behaviours for vehicles and flocks](steering.html)
 
 # Week 6
-[Reading Week]
+
+## Reading Week
 
 - Work on your paper draft for the peer review session
 
----
 
 # Week 7
 Oct 24, 2023
 
 - Sharing & discussing, writing & code
+
+## Reproducing Research: Steering Behaviours
+
+First a quick reminder of what we looked at back in week 4:
+
+- **Slides**: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+
+[Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
+    - Can we reproduce a Vehicle world?
+
+[Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
+    - Can we reproduce a flocking simulator?
+
+[Steering behaviours for vehicles and flocks](steering.html)
+
 
 <!--
 ---
@@ -612,7 +616,6 @@ Oct 24, 2023
 
 - Complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
 
----
 
 # Week 8
 Oct 31, 2023
