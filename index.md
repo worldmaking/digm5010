@@ -730,16 +730,14 @@ Nov 21, 2023
 - **Video tutorials due**
   - [Add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing)
 
-One-on-one guidance for papers & presentations preparation
-
 ---
 
 # Week 12
 Nov 28, 2023
 
-**Final presentations**
+## Final presentations
 
-We have about 10-15 minutes per presentation, plus 5 minutes for questions & discussion! 
+We have about 10 minutes per presentation, plus 5 minutes for questions & discussion! 
 
 <!--
 [Zoom recording](https://yorku.zoom.us/rec/share/99TfEFAgXaklPBZdmx9u5TRDJGjn28DUPJIQZvnImOzhsTCX2GCPkZIAg3N8AhOQ.n4PrI8uAqSOaHr0f)
