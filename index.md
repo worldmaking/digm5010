@@ -592,7 +592,7 @@ Oct 10
 # Week 7
 Oct 24, 2023
 
-- Sharing & discussing, writing & code
+**For next week**, complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
 
 ## Reproducing Research: Steering Behaviours
 
@@ -607,14 +607,6 @@ First a quick reminder of what we looked at back in week 4:
     - Can we reproduce a flocking simulator?
 
 [Steering behaviours for vehicles and flocks](steering.html)
-
-
-<!--
----
-[Zoom recording](https://yorku.zoom.us/rec/share/ydBsTO_cShKJr6m4HSosOmmj0JPosbTi1KnZ7rcp16O1mBGwYbFpEUJsuCvRkypY.9L3Y1RsmL0YcwucL)
--->
-
-- Complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
 
 
 # Week 8
@@ -632,11 +624,6 @@ What qualifies as *good* research? One way of knowing this is to look at how res
 These are general guidelines, but practices and cultures of value can differ very greatly between different research communities -- and we are often transdiscplinary... 
 
 - Past reviews
-
-- **During class**:
-  - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link)
-
----
 
 ## Peer Review
 
@@ -673,21 +660,19 @@ For general review guidelines, [see here](https://www.wikihow.com/Review-a-Journ
 
 As a structure, our review is based on materials as used by the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) review body. That process was double-blind (both authors & reviewers anonymized), but since we know each other, we'll run our review single-blind (authors anonymized). Each of you will be randomly assigned up to 3 papers to review. 
 
------
+- **During class**:
+  - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link)
 
 # Week 9
 Nov 7, 2023
 
-- **Peer reviews received** 
-  - Review outcome & process discussion. 
-  - Group and/or 1-on-1 discussion for final paper
+- Review peer review outcome & process discussion. 
+- Group and/or 1-on-1 discussion for final paper
 
-- Possible topics: 
+- Possible topics if time permits: 
   - An introduction to git?
   - An introduction to Node.js?
-
-`
-
+  
 ## Final Paper
 
 1. The final paper continues from the [Literature Review](#annotated-bibliography[), and responds to the [Call for Papers](#the-call-for-papers). 
@@ -706,8 +691,9 @@ Nov 7, 2023
    3. An "Explorable Explanation", following the ideas outlined [here](#explorable-explanations) 
 3. Post your final paper online to our final submission form here: [https://forms.gle/zHPbsvSrtoA16xzAA](https://forms.gle/zHPbsvSrtoA16xzAA)
 
-Please submit your final papers by December 8th, thank you!!
+If you want to submit your paper to ISEA2025, the deadline is currently Nov 15th **at 11am EST**; I don't know if that will be extended yet. 
 
+For the purposes of the course, please submit your final papers by December 8th, thank you!!
 
 ---
 
