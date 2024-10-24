@@ -70,7 +70,9 @@ footer {
 <p>In the Codepen JS tab, click the settings wheel to open up the JS settings. Search for &quot;gl-matrix&quot; in the &quot;External scripts&quot; &quot;Search CDNjs&quot; section, and select the &quot;gl-Matrix&quot; option. It will add the gl-matrix library to your script, e.g. &quot;<a href="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/3.4.2/gl-matrix-min.js&quot;">https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/3.4.2/gl-matrix-min.js&quot;</a></p>
 </blockquote>
 <p>A quick &quot;cheat-sheet&quot; of <code>vec2</code> (writing your own cheat sheets is a great way to keep notes on a library, API, SDK etc.)</p>
-<pre><code class="language-js"><span class="hljs-comment">// vectors are stored in array form as [x, y]</span>
+<pre><code class="language-js"><span class="hljs-keyword">let</span> { vec2 } = glMatrix;
+
+<span class="hljs-comment">// vectors are stored in array form as [x, y]</span>
 <span class="hljs-keyword">let</span> v = vec2.create() <span class="hljs-comment">// [0, 0]</span>
 <span class="hljs-keyword">let</span> v2 = vec2.clone(v)
 
@@ -123,11 +125,11 @@ vec2.random(out, r)</code></pre>
 <p>Start with something simple -- a single agent, moving in space by a velocity, then by acceleration, then with a simple force (e.g. downward)</p>
 <p>We may need to write our own function to limit a vector&#39;s length (for  velocity limit, force limit etc.). E.g. get the length of the vector, limit it using Math.min(), and scale the vector by however much you reduced the length:</p>
 <pre><code class="language-js"><span class="hljs-comment">// limit the length of vector `v` to be no greater than `limit`</span>
-vec2.limit = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">out, v, limit</span>) </span>{
-    <span class="hljs-keyword">const</span> len = vec2.length(v)
-    <span class="hljs-keyword">const</span> limited_len = <span class="hljs-built_in">Math</span>.min(len, limit)
-    vec2.scale(out, v, limited_len/len)
-    <span class="hljs-keyword">return</span> out
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">vec2_maxlength</span>(<span class="hljs-params">out, v, limit</span>) </span>{
+  <span class="hljs-keyword">const</span> len = vec2.length(v);
+  <span class="hljs-keyword">const</span> limited_len = <span class="hljs-built_in">Math</span>.min(len, limit);
+  vec2.scale(out, v, limited_len / len);
+  <span class="hljs-keyword">return</span> out;
 }</code></pre>
 <p>Perhaps it is a good idea to script a simple sketch with locomoting agents before going further.</p>
 <p>Perhaps we should start from pseudocode?</p>
@@ -145,12 +147,10 @@ vec2.limit = <span class="hljs-function"><span class="hljs-keyword">function</sp
 <p>It may be better to separate force calculation and locomotion into different loops over the population. Why would that be?</p>
 <p>What to do for force calculations around the edges? If you want to have a &#39;toroidal&#39; space, where exiting one edge means re-entering at the opposite edge, you may need to compute relative position vectors wrapped in a range of -canvas.width/2 to +canvas.width/2. For example:</p>
 <pre><code class="language-js"><span class="hljs-comment">// wrap vector `v` in the region of [-w/2, -h/2] to [w/2, h/2]</span>
-vec2.relativewrap = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">out, v, w, h</span>) </span>{
-    <span class="hljs-keyword">const</span> w = space.width;
-    <span class="hljs-keyword">const</span> h = space.height;
-    out[<span class="hljs-number">0</span>] = <span class="hljs-built_in">Math</span>.mod(v[<span class="hljs-number">0</span>] + w/<span class="hljs-number">2</span>, w) - w/<span class="hljs-number">2</span>;
-    out[<span class="hljs-number">1</span>] = <span class="hljs-built_in">Math</span>.mod(v[<span class="hljs-number">1</span>] + h/<span class="hljs-number">2</span>, h) - h/<span class="hljs-number">2</span>;
-    <span class="hljs-keyword">return</span> out;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">vec2_relativewrap</span>(<span class="hljs-params">out, v, w, h</span>) </span>{
+  out[<span class="hljs-number">0</span>] = ((((v[<span class="hljs-number">0</span>] + w / <span class="hljs-number">2</span>) % w) + w) % w) - w / <span class="hljs-number">2</span>;
+  out[<span class="hljs-number">1</span>] = ((((v[<span class="hljs-number">1</span>] + h / <span class="hljs-number">2</span>) % h) + h) % h) - h / <span class="hljs-number">2</span>;
+  <span class="hljs-keyword">return</span> out;
 }</code></pre>
 <h2 id="ui">UI</h2>
 <p>We&#39;re starting to get more parameters, and it would be nice to be able to tweak them to see how it changes behviours. For a quick solution, search for the &quot;dat-gui&quot; library in the JS extensions. <a href="https://github.com/dataarts/dat.gui/blob/master/API.md">Here&#39;s the API docs</a>. Cheatsheet:</p>

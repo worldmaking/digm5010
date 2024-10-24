@@ -608,6 +608,10 @@ First a quick reminder of what we looked at back in week 4:
 
 [Steering behaviours for vehicles and flocks](steering.html)
 
+Our script so far:
+
+https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
+
 
 # Week 8
 Oct 31, 2023

@@ -31,6 +31,8 @@ The simple vehicle model, and all of the behaviours, make use of vectors -- repr
 A quick "cheat-sheet" of `vec2` (writing your own cheat sheets is a great way to keep notes on a library, API, SDK etc.)
 
 ```js
+let { vec2 } = glMatrix;
+
 // vectors are stored in array form as [x, y]
 let v = vec2.create() // [0, 0]
 let v2 = vec2.clone(v)
@@ -84,11 +86,11 @@ We may need to write our own function to limit a vector's length (for  velocity 
 
 ```js 
 // limit the length of vector `v` to be no greater than `limit`
-vec2.limit = function (out, v, limit) {
-	const len = vec2.length(v)
-	const limited_len = Math.min(len, limit)
-	vec2.scale(out, v, limited_len/len)
-	return out
+function vec2_maxlength(out, v, limit) {
+  const len = vec2.length(v);
+  const limited_len = Math.min(len, limit);
+  vec2.scale(out, v, limited_len / len);
+  return out;
 }
 ```
 
@@ -112,12 +114,10 @@ What to do for force calculations around the edges? If you want to have a 'toroi
 
 ```js
 // wrap vector `v` in the region of [-w/2, -h/2] to [w/2, h/2]
-vec2.relativewrap = function (out, v, w, h) {
-	const w = space.width;
-	const h = space.height;
-	out[0] = Math.mod(v[0] + w/2, w) - w/2;
-	out[1] = Math.mod(v[1] + h/2, h) - h/2;
-	return out;
+function vec2_relativewrap(out, v, w, h) {
+  out[0] = ((((v[0] + w / 2) % w) + w) % w) - w / 2;
+  out[1] = ((((v[1] + h / 2) % h) + h) % h) - h / 2;
+  return out;
 }
 ```
 
