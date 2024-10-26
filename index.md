@@ -673,9 +673,7 @@ Nov 7, 2023
 - Review peer review outcome & process discussion. 
 - Group and/or 1-on-1 discussion for final paper
 
-- Possible topics if time permits: 
-  - An introduction to git?
-  - An introduction to Node.js?
+- Continuing with **reproducing research**: [steering behaviours for vehicles and flocks part II](steering.html)
   
 ## Final Paper
 
