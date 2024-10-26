@@ -616,7 +616,7 @@ https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
 # Week 8
 Oct 31, 2023
 
-**Make sure your paper is submitted to the link above before this class!!**
+**Make sure your paper is submitted (by email to me) before this class!!**
   
 - Peer review discussion
 
