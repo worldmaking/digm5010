@@ -618,33 +618,17 @@ Oct 31, 2023
 
 **Make sure your paper is submitted (by email to me) before this class!!**
   
-- Peer review discussion
+## What is peer review of research?
 
 What qualifies as *good* research? One way of knowing this is to look at how research is *reviewed*. Again, most grant appplications, but also journals and conference review bodies often publish guidelines for reviewers. These are the criteria by which your work will be evaluated. 
 
+Guidelines from 
+- [Wiley](https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html), 
+- [Elsevier](https://www.elsevier.com/reviewers/how-to-review),
+- [Springer](https://www.springer.com/authors/manuscript+guidelines?SGWID=0-40162-6-1261021-0#:~:text=Reviews%20should%20be%20conducted%20fairly,less%20useful%20to%20your%20field.), 
 - [Wikihow](https://www.wikihow.com/Review-a-Journal-Article) to review an article!
-- Guidelines from [Springer](https://www.springer.com/authors/manuscript+guidelines?SGWID=0-40162-6-1261021-0#:~:text=Reviews%20should%20be%20conducted%20fairly,less%20useful%20to%20your%20field.), [Wiley](https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html), [Elsevier](https://www.elsevier.com/reviewers/how-to-review)
 
-These are general guidelines, but practices and cultures of value can differ very greatly between different research communities -- and we are often transdiscplinary... 
-
-- Past reviews
-
-## Peer Review
-
-Recall our slides on [reviewing research](research.html#/36)
-
-We will run an 'internal review' process, emulating what is frequently done in conference submission review processes. Typically this means:
-
-- A call for work (papers, demonstrations, artworks, panels, etc.) is made public.
-- Authors submit a draft or extended abstract of a paper (or a proposal for an artwork etc.) by a certain deadline for review, usually using an online interface. 
-- Reviews are most often performed "blind" or "double-blind" (that is, reviewers and authors are anonymized).
-- Each draft is sent to a handful of reviewers. Members of the review body are usually made up of many previous authors at the conferene. Though a conference may have hundreds of submissions, usually reviewers only have a handful assigned to them. 
-- Reviewers complete a review of the submission, usually using an online interface, by a certain deadline. Sometimes a meta-review is performed by a lead jury member of the conference to synthesize the reviews and reach a verdict on acceptance. Sometimes submissions are accepted, sometimes rejected, sometimes accepted but on different terms (e.g. long paper submission may be accepted as a short paper, with requirement to reduce length.)
-- These reviews are sent back to authors, along with the accept/reject verdict. Authors of accepted papers must act upon any requirements or corrections identified by reviewers, and may follow further recommendations. Then the final submission is resubmitted with these changes by a new deadline (usually very shortly after receiving reviews).
-
-**For our purposes, you will act as both author and reviewer: each of you will act as reviewers for the other students' submissions.**
-
-For general review guidelines, [see here](https://www.wikihow.com/Review-a-Journal-Article) and [here](https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html) or [here](https://www.elsevier.com/reviewers/how-to-review), or [here](https://www.springer.com/authors/manuscript+guidelines?SGWID=0-40162-6-1261021-0#:~:text=Reviews%20should%20be%20conducted%20fairly,less%20useful%20to%20your%20field.). Here are key points:
+Here are key points:
 
 > "The purpose of peer review is to improve the quality of the manuscript under review, and of the material that is eventually published. Conscientious peer review is a time-consuming task but is essential to assure the quality of scientific journals." 
 
@@ -662,7 +646,28 @@ For general review guidelines, [see here](https://www.wikihow.com/Review-a-Journ
 
 > Should any portions of the paper should be expanded, condensed, combined, or deleted? 
 
-As a structure, our review is based on materials as used by the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) review body. That process was double-blind (both authors & reviewers anonymized), but since we know each other, we'll run our review single-blind (authors anonymized). Each of you will be randomly assigned up to 3 papers to review. 
+> **Do not upload any part of a submitted paper** to a cloud service, such as a grammar checker or AI tool; nor should you share it with anyone else. 
+
+These are general guidelines, but practices and cultures of value can differ very greatly between different research communities -- and we are often transdiscplinary... 
+
+- Recall our slides on [reviewing research](research.html#/36)
+- Look at the SIGGRAPH reviewer guideline presentation
+- Look at some past reviews
+
+## Peer Review
+
+We are running an 'internal review' process, emulating what is frequently done in conference submission review processes. Typically this means:
+
+- A call for work (papers, demonstrations, artworks, panels, etc.) is made public.
+- Authors submit a draft or extended abstract of a paper (or a proposal for an artwork etc.) by a certain deadline for review, usually using an online interface. 
+- Reviews are most often performed "blind" or "double-blind" (that is, reviewers and authors are anonymized).
+- Each draft is sent to a handful of reviewers. Members of the review body are usually made up of many previous authors at the conference. Though a conference may have hundreds of submissions, usually reviewers only have a handful assigned to them. 
+- Reviewers complete a review of the submission, usually using an online interface, by a certain deadline. Sometimes a meta-review is performed by a lead jury member of the conference to synthesize the reviews and reach a verdict on acceptance. Sometimes submissions are accepted, sometimes rejected, sometimes accepted but on different terms (e.g. long paper submission may be accepted as a short paper, with requirement to reduce length.)
+- These reviews are sent back to authors, along with the accept/reject verdict. Authors of accepted papers must act upon any requirements or corrections identified by reviewers, and may follow further recommendations. Then the final submission is resubmitted with these changes by a new deadline (usually very shortly after receiving reviews).
+
+**For our purposes, you will act as both author and reviewer: each of you will act as reviewers for the other students' submissions.**
+
+As a structure, our review is based on materials as used by the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) review body. Each of you will be randomly assigned up to 3 papers to review. 
 
 - **During class**:
   - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link)
