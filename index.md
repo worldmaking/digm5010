@@ -675,9 +675,8 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 # Week 9
 Nov 7, 2023
 
-- Review peer review outcome & process discussion. 
-- Group and/or 1-on-1 discussion for final paper
-
+- Review peer review stats, outcomes, & process discussion. 
+  
 - Continuing with **reproducing research**: [steering behaviours for vehicles and flocks part II](steering.html)
   
 ## Final Paper
@@ -706,6 +705,8 @@ For the purposes of the course, please submit your final papers by December 8th,
 
 # Week 10
 Nov 14, 2023
+
+
 
 - Possible topics: 
   - An introduction to git?
