@@ -675,7 +675,8 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 # Week 9
 Nov 7, 2023
 
-- Review peer review stats, outcomes, & process discussion. 
+- Paper process discussion -- one week to ISEA deadline: https://isea2025.isea-international.org/submission/submission-guideline/ 
+  - Note, that deadline says 11:59pm KST -- which is **9.59am** here in Toronto!
   
 - Continuing with **reproducing research**: [steering behaviours for vehicles and flocks part II](steering.html)
   

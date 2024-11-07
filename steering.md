@@ -141,37 +141,50 @@ gui.add(params, 'speed', 0, 10, 1);
 
 ## Boids, flocking, swarms
 
-Reynolds' most significant contribution combined several steering forces to a proposed model of animal motion emulating flocks, herds and schools. Each agent, or **"boid"**, follows a set of rules based on simple principles:
+Reynolds' most significant contribution combined several steering forces to a proposed model of animal motion emulating flocks, herds and schools. 
 
-- **Avoidance**: Move away from other boids that are too close (avoid collision)
-- **Center**: Move toward the center of the flock (avoid exposure)
+So first, we need to scale up from one agent to a population -- using an array (list) of agents, and looping over them to update state, move, draw, etc.  (Q: why do we do these as separate loops?)
+
+Each agent, or **"boid"**, follows a set of rules based on simple principles:
+
+- **Avoidance**: Avoid collisions -- Move away from any other boids (or any other objects in the space) that are too close. This should get much more intense when distnaces are very short. It also may need to consider sizes of objects. 
+- **Center**: Avoid exposure by moving toward the center of the flock. 
 	- The force depends on the average location of neighbors, relative to the agent.
-- **Alignment**: Fly in the same general direction as other nearby boids
-	- The force depends on the average velocity of neighbors.
+- **Alignment**: Fly with the same general velocity as other nearby boids
 
-First, we need to scale up from one agent to a population -- just as we did before, using an array (list) of agents, and looping over them to update, move, draw, etc. 
+Computing the forces means we need to compare each boid to every other. The simplest way is a nested loop. Just be careful not to compare to ourself! 
 
-Computing the forces means we need to compare each boid to every other. The simplest way is a nested loop (be careful not to compare to self). There are more efficient ways, but they can be complex, and for small numbers of boids do not make much difference.  
+*This is called an "N-squared" algorithm, because for N agents it implies making NxN comparisons. For small numbers of agents this is fine, but if you start having very large populations you might look into more complex "spatial accelerator" methods that can reduce the NxN complexity.*
 
 To make this more realistic, we can consider that each boid can only perceive other boids within a certain distance, and possibly also limited viewing angle. Take care for the case where no neighbors are found.
 
-The average of a set of vectors is just the sum of the vectors divided by the number of vectors.
-
 In addition we might want to add a random walk force, especially so that boids that can't see anyone else have some life to them.
-
-Play around with different weights for the forces and limits (e.g. via a dat.gui interface) to understand the ranges of behaviour.
 
 Reynolds says: 
 - "for better control it is helpful to first normalize the three steering components, and then to scale them by three weighting factors before summing them." 
 - suggests using different neighborhood areas for each force. 
-- the avoidance rule might need to take precedence over the other rules. 
+- the avoidance rule might need to take precedence over the other rules. (Q: how would you do that?)
+
+Let's pseudocode before we do anything! 
+
+Note: The average of a set of vectors is just the sum of the vectors divided by the number of vectors.
+
+Some things will be easier to compute if they are converted to the local perspective of an agent. 
+
+Remember, if you use a toroidal (donut) space, we should wrap any relative vectors too, so that the relative vector always is the shortest path around. 
+
+Once working, let's play around with different weights for the forces and limits (e.g. via a dat.gui interface) to understand the ranges of behaviour. 
+
 
 ## Ideas for extensions
 
-- Adding obstacles to the space, which also trigger avoidance forces, can make behaviours more interesting.
+- Can we make agents have different sizes? How what affect things?
+- Perhaps agents can "predict" where they will be, and where their neighbors will be, and avoid potential collisions that way?
 - Gary Flake also recommends adding an influence for View: to move laterally away from any boid blocking the view.
+- Adding obstacles to the space, which also trigger avoidance forces, can make behaviours more interesting. Obstacles may have different sizes, and might also move.
 - Adding a "predator" agent to the space, and giving an "evasion" force to each of the boids to run away from the predator. 
-- Adding a "leader" object, which triggers seek forces in boids, allows for guided flocks.
+- Adding a "leader" object, which triggers seek forces in boids, allows for guided flocks. E.g. can you lead the flock with your mouse?
+- Can we vizualize the boid state with shape and color? E.g. identify the boids that can't see any neighbors?
 - We could visualize the neighbor connections between boids. 
 
 ### Trails
@@ -203,9 +216,11 @@ In the draw loop, after clearing our main canvas, we can draw in our offscreen t
 So far there is only a kind of primal, almost physical intelligence. How can we introduce a higher level of intelligence -- perhaps the "action selection" suggested by Reynolds, or something else?
 
 - We can add a social behaviour -- perhaps neighbors like to become the same hue, while loners randomize their hue more. Perhaps the weights of cohesion, alignment and avoidance vary with the hue?
-- Reynolds talks near the end of the paper about prioritizing different forces at different times. This could be somewhat randomized, or could be the beginning of action selection intelligence. We could, for example, adapt our turtle-program system to the selection of different actions over time, perhaps setting different force weights or enabling and disabling seek/flee/etc. behaviours.
-- What about the Braitenberg Vehicles -- can any of those ideas be incorporated here?
+- Can we bring out some of the behaviours we saw in "The Wisdom of Crowds", like contagions?
+- Can we have variable populations -- predators eating, or obstacles/boundaries destroying, mates birthing, etc. 
+- Reynolds talks near the end of the paper about prioritizing different forces at different times. This could be somewhat randomized, or could be the beginning of action selection intelligence. We could, for example, set different force weights or enable/disable seek/flee/etc. behaviours. 
 
+What about the Braitenberg Vehicles -- can any of those ideas be incorporated here?
 
 ## Vehicles
 
