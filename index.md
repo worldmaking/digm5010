@@ -675,10 +675,14 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 # Week 9
 Nov 7, 2023
 
+[Zoom recording](https://yorku.zoom.us/rec/share/U81PF8sbNNdLunWTVUA49hy033RDKzB5N4UcseM54-L6kQODHyP7l5WENZfb8VNN.4y1sgYVagbvipCff)
+
 - Paper process discussion -- one week to ISEA deadline: https://isea2025.isea-international.org/submission/submission-guideline/ 
   - Note, that deadline says 11:59pm KST -- which is **9.59am** here in Toronto!
   
-- Continuing with **reproducing research**: [steering behaviours for vehicles and flocks part II](steering.html)
+- Continuing with **reproducing research**: [steering behaviours for vehicles and flocks part II](steering.html). Today's code:
+
+https://codepen.io/grrrwaaa/pen/KKOGLqW?editors=0010
   
 ## Final Paper
 
