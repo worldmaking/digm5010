@@ -160,6 +160,8 @@ socket.onerror = <span class="hljs-function"><span class="hljs-keyword">function
 }
 socket.onclose = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ 
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;websocket disconnected from &quot;</span>+addr); 
+    <span class="hljs-comment">// during development you might want to try reloading the page whenever the server restarts:</span>
+    location.reload();
 }</code></pre>
 <p>Assuming this hand-shaking works, we can start adding some conversational back &amp; forth. In the client, let&#39;s tell the server if our mouse is moving:</p>
 <pre><code class="language-js"><span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">&quot;pointermove&quot;</span>, <span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
@@ -171,7 +173,7 @@ socket.onclose = <span class="hljs-function"><span class="hljs-keyword">function
 });
 
 socket.onmessage = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(msg.data);
+    <span class="hljs-built_in">console</span>.log(msg.data.toString());
 }</code></pre>
 <p>And, in the server, we can make a reply. Now here we have to be more careful: the server might have connections to MANY clients at once, so we need to handle it <em>inside</em> the wss.on(&#39;connection&#39;) handler:</p>
 <pre><code class="language-js">wss.on(<span class="hljs-string">&#x27;connection&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">client</span>) </span>{
@@ -179,11 +181,19 @@ socket.onmessage = <span class="hljs-function"><span class="hljs-keyword">functi
     <span class="hljs-comment">// all per-client code goes here now.</span>
 
     client.on(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-function"><span class="hljs-params">msg</span> =&gt;</span> {
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I got a message!&quot;</span>, msg);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I got a message!&quot;</span>, msg.toString());
 
         <span class="hljs-comment">// reply:</span>
         client.send(<span class="hljs-string">&quot;who?&quot;</span>)
     });
+
+    <span class="hljs-comment">// to send a message to *everyone else*:</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sendAllOtherClients</span>(<span class="hljs-params">message</span>) </span>{
+      wss.clients.forEach(<span class="hljs-function"><span class="hljs-params">other</span> =&gt;</span> {
+        <span class="hljs-keyword">if</span> (client == other) <span class="hljs-keyword">return</span>;
+          other.send(message);
+      });
+    }
 });
 
 <span class="hljs-comment">// to send a message to *everyone*:</span>

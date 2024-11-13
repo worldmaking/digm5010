@@ -714,7 +714,24 @@ Nov 14, 2023
 - **ISEA DEADLINE EXTENDED** to Nov 30 **at 10am EST**!
 
 - A quick introduction to [Node.js](nodejs.html)
-  - How about a multi-user version of a sketch app? E.g. how about a multi-user Yellowtail?
+  - How to go about building a multi-user local network version of a sketch app, or Yellowtail?
+    - Get a basic server with static serving index.html page on local network
+    - Start from our codepen at https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0110 
+    - Get websockets going. 
+    - What to send / receive? 
+      - E.g. from "pointerup", after completing a path, share that path with the server?
+        - JSON.stringify(path)
+      - Server then shares that path with all connected clients? `wss.clients.forEach(other => {})`
+        - Don't send to self (`other == client`)? Or do?
+      - Clients receiving paths add them to the state.paths? `state.paths.push(JSON.parse(msg.data.toString()));`
+    - Should a newly connecting client get all paths so far? How?
+      - Send different kinds of messages by wrapping, e.g. `{ cmd:"add", path: path }`
+    - How to tell server to delete a path?
+      - Do we need to give unique names to our paths -- in the server?
+    - Reload page and the paths restart; also different folks have different canvas resolutions... 
+      - sounds like we may need to also sync path positions?
+  - How about adding sounds?
+    - Maybe adapt from this codepen: https://codepen.io/grrrwaaa/pen/LYwqwPw?editors=0010
 
 - **For next week**:
   - Submit your [Video Tutorial](#video-tutorial)

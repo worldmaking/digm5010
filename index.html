@@ -771,7 +771,40 @@ Curated by Ryan Kelln, we invite you to experience the work of Toronto-based art
 </li>
 <li><p>A quick introduction to <a href="nodejs.html">Node.js</a></p>
 <ul>
-<li>How about a multi-user version of a sketch app? E.g. how about a multi-user Yellowtail?</li>
+<li>How to go about building a multi-user local network version of a sketch app, or Yellowtail?<ul>
+<li>Get a basic server with static serving index.html page on local network</li>
+<li>Start from our codepen at <a href="https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0110">https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0110</a> </li>
+<li>Get websockets going. </li>
+<li>What to send / receive? <ul>
+<li>E.g. from &quot;pointerup&quot;, after completing a path, share that path with the server?<ul>
+<li>JSON.stringify(path)</li>
+</ul>
+</li>
+<li>Server then shares that path with all connected clients? <code>wss.clients.forEach(other =&gt; {})</code><ul>
+<li>Don&#39;t send to self (<code>other == client</code>)? Or do?</li>
+</ul>
+</li>
+<li>Clients receiving paths add them to the state.paths? <code>state.paths.push(JSON.parse(msg.data.toString()));</code></li>
+</ul>
+</li>
+<li>Should a newly connecting client get all paths so far? How?<ul>
+<li>Send different kinds of messages by wrapping, e.g. <code>{ cmd:&quot;add&quot;, path: path }</code></li>
+</ul>
+</li>
+<li>How to tell server to delete a path?<ul>
+<li>Do we need to give unique names to our paths -- in the server?</li>
+</ul>
+</li>
+<li>Reload page and the paths restart; also different folks have different canvas resolutions... <ul>
+<li>sounds like we may need to also sync path positions?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>How about adding sounds?<ul>
+<li>Maybe adapt from this codepen: <a href="https://codepen.io/grrrwaaa/pen/LYwqwPw?editors=0010">https://codepen.io/grrrwaaa/pen/LYwqwPw?editors=0010</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p><strong>For next week</strong>:</p>

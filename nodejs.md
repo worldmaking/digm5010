@@ -164,6 +164,8 @@ socket.onerror = function(err) {
 }
 socket.onclose = function(e) { 
 	console.log("websocket disconnected from "+addr); 
+	// during development you might want to try reloading the page whenever the server restarts:
+	location.reload();
 }
 ```
 
@@ -179,7 +181,7 @@ document.addEventListener("pointermove", e => {
 });
 
 socket.onmessage = function(msg) {
-	console.log(msg.data);
+	console.log(msg.data.toString());
 }
 ```
 
@@ -191,11 +193,19 @@ wss.on('connection', function(client) {
 	// all per-client code goes here now.
 
 	client.on('message', msg => {
-		console.log("I got a message!", msg);
+		console.log("I got a message!", msg.toString());
 		
 		// reply:
 		client.send("who?")
 	});
+
+	// to send a message to *everyone else*:
+    function sendAllOtherClients(message) {
+      wss.clients.forEach(other => {
+		if (client == other) return;
+      	other.send(message);
+      });
+    }
 });
 
 // to send a message to *everyone*:
