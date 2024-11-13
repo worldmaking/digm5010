@@ -1,5 +1,5 @@
 
-# Practice Notes from Week 3: Node.js
+# Practice Notes for Node.js
 
 Node.js was designed to support scalable network applications. Initially conceived as a *server-side* engine, it has grown to become a fantastic environment for desktop console-based scripting in general. 
 

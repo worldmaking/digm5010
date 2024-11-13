@@ -711,11 +711,10 @@ For the purposes of the course, please submit your final papers by December 8th,
 # Week 10
 Nov 14, 2023
 
+- **ISEA DEADLINE EXTENDED** to Nov 30 **at 10am EST**!
 
-
-- Possible topics: 
-  - An introduction to git?
-  - An introduction to Node.js?
+- A quick introduction to [Node.js](nodejs.html)
+  - How about a multi-user version of a sketch app? E.g. how about a multi-user Yellowtail?
 
 - **For next week**:
   - Submit your [Video Tutorial](#video-tutorial)
@@ -739,6 +738,10 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 
 # Week 11
 Nov 21, 2023
+
+- 1 on 1 paper sessions
+
+- A quick introduction to [Git](gitnotes.html)
 
 - **Video tutorials due**
   - [Add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing)

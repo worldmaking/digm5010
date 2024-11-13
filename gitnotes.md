@@ -49,7 +49,7 @@ Great, you now have a local copy of the repo. Now you can make changes and pull 
   - Your update should now be live, or will be within a few minutes
 
 
-Micheal's recommended links:
+Micheal Palumbo's recommended links:
 
 - [Git best practices](https://github.com/worldmaking/worldmaking.github.io/wiki/Git-Best-Practices) on Alice lab wiki
 - [Mozilla Open Leaders](https://foundation.mozilla.org/en/initiatives/mozilla-open-leaders/)
