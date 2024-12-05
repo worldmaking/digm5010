@@ -40,8 +40,6 @@ Each weekly meeting will vary in format, but always at the heart is the discussi
 
 In the early part of the course the instructor may bring lecture material or assign readings or research tasks; and we will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice. You are also expected to bring work to share, **making things** in response to our discussions and course topic. You should be keeping your notes, studies and practices documented in a **public journal**. (Class participation, making and journalling make up the first 25% of the course grade.)
 
-[You can submit codepen sketches through this form](https://docs.google.com/forms/d/e/1FAIpQLSdUCztWAi-z4x5r_RTXhsWnvqiw46hPZRIh7eqChm7FGoFGqQ/viewform?usp=sf_link)
-
 As this goes on, each of you will develop a focus on a specific topic to research in depth, leading to a project documented in a research paper. The project's goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. 
   - It will be grounded through an **extensive literature review** (25%),
   - will demonstrate your foundational computational literacy and ability to understand and transfer research into creative applications (25%),
@@ -778,7 +776,13 @@ We have about 10 minutes per presentation, plus 5 minutes for questions & discus
 
 ---
 
-[You can submit all of your codepen sketches as we go along through this form](https://docs.google.com/forms/d/e/1FAIpQLSdUCztWAi-z4x5r_RTXhsWnvqiw46hPZRIh7eqChm7FGoFGqQ/viewform?usp=sf_link). 
+Final submissions:
+
+- [Video Tutorials](#video-tutorial) -- please [add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing) by **Dec 12th**. 
+- [Final paper](#final-paper) -- please send me an email with your reading list, annotated bibliography, and final paper, by **Dec 19th**. 
+- **Class journal** -- please submit the link to your online documentation of notes, study sketches (codepen or otherwise), and your reflections on your work in this course to the [slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing). Please ensure that your documentation is public access.  Due by **Dec 19th**. 
+
+Thank you everyone for a wonderful semester! 
 
 <!--
 
