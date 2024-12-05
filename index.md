@@ -776,7 +776,7 @@ We have about 10 minutes per presentation, plus 5 minutes for questions & discus
 
 ---
 
-Final submissions:
+# Final submissions
 
 - [Video Tutorials](#video-tutorial) -- please [add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing) by **Dec 12th**. 
 - [Final paper](#final-paper) -- please send me an email with your reading list, annotated bibliography, and final paper, by **Dec 19th**. 
