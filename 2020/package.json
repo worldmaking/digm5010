@@ -5,7 +5,7 @@
   "main": "make.js",
   "dependencies": {
     "es6-dynamic-template": "^2.0.0",
-    "express": "^4.17.1",
+    "express": "^4.21.2",
     "highlight": "^0.2.4",
     "highlight.js": "^10.2.0",
     "hljs": "^6.2.3",
