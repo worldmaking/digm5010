@@ -1,11 +1,28 @@
 
 # DIGM5010 Foundations of Digital Media
 
-Thursdays, 1.30pm-4.30pm, Fall 2024, Fine Arts building room ACW 102
+Thursdays, 1.30pm-4.20pm, Fall 2024, Fine Arts building room ACW 102
 
-**Instructor:** [Graham Wakefield](https://ampd.yorku.ca/profile/graham-wakefield/) grrrwaaa a t york u do t ca
+**Instructor:** [Graham Wakefield](https://discover.academics.yorku.ca/Graham.Wakefield) g rrr w aaa a t yor ku do t ca
 
 **Hello and welcome!**
+
+| Date | Topic | Activity | Academic paper workflow |
+|:--- |:--- |:--- |:--- |
+| [9/4](#week-0)   | [Computational Arts + Computer Science](#what-is-computation) |                              | Identify motivations, areas, &  [Call for Papers](#a-call-for-papers) |
+| [9/11](#week-1)   | [What is Research?](#what-is-research)                 | Introductions                       | Focused topic selection |
+| [9/18](#week-2)   | [Computational Sketching](#computational-sketching)    | Live Coding                         | [Initial reading list](#preparing-a-reading-list) |
+| [9/25](#week-3)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail) | Live Coding               | Problem/thesis statement |
+| [10/2](#week-4)   |                                                        |                                     | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
+| [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
+| [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
+| [10/23](#week-6)   |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
+| [10/30](#week-7)   | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
+| [11/6](#week-8)   |                                                        | Paper 1-on-1's                      | Revisions |
+| [11/13](#week-9)   |                                                        |                                     | [Final paper](#final-paper) |
+| [11/20](#week-10) |                                                        | Video/Tutorial                      |  |
+| [11/27](#week-11) | [Final presentations](#final-presentations)            |                                     |  |
+
 
 ## What is DIGM 5010 "Foundations"?
 
@@ -56,11 +73,10 @@ Previously we have also used a Microsoft Teams account for sharing file material
 **Remote participation**
 
 Regardless whether we are meet in person or remotely, I usually prefer to open a Zoom session for my classes, and use share screen for the most part. 
-- [Zoom meeting (same link every week)](https://yorku.zoom.us/j/91019623418?pwd=75h0gYM5Je5nz5Pzbi2vGmWb3G96j4.1)
-- [Add it to your calendar (.ics file)](https://yorku.zoom.us/meeting/tJUtduCurDguG9ygI0mac22YuOOK5vLzj_wb/ics?icsToken=98tyKuCprjojHNaWtBiPRowcAoj4Xe7zpnZbjfpEmza1DiFQMFHPI81tGedpPMLa
-)
+- [Zoom meeting (same link every week)](https://yorku.zoom.us/j/96026498749?pwd=GxDnvrbaakCBVHMnYGfjjV2BSzfnbz.1)
+- [Add it to your calendar (.ics file)](https://yorku.zoom.us/meeting/tJItde-spzMtHt2UWm0pooTbObZTyzHvRwPp/ics?icsToken=DJlLMsOiQytAOL9xOwAALAAAAP3hyC5IHSyy_0JNFK0XI0DAmhtXfKy49b4w4jNx0sBDpXbmJQkrwr_szFDfq7YyOSxD5SoN28ejXz-oBjAwMDAwMQ&meetingMasterEventId=NIR5etiQTrCVoHcvUzJ5zw)
 
-I normally also record all sessions and share recordings with the course participants (so long as no participants have objections to this), as I have heard that it has been useful for many students to be able to review sessions after class hours, including when, due to factors outside their control, they could not attend in class time. *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the graduate situation, and moreover allows some time to review any material if it seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
+I normally also record sessions and share recordings with the course participants (so long as no participants have objections to this), as I have heard that it has been useful for many students to be able to review sessions after class hours, including when, due to factors outside their control, they could not attend in class time. *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the graduate situation, and moreover allows some time to review any material if it seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
 
 ----
 
@@ -68,8 +84,9 @@ I normally also record all sessions and share recordings with the course partici
 
 -----
 
-# Week 0 
-Sep 5, 2023
+## Week 0 
+Sep 4, 2023
+[Class Recording](#zoom-recordings)
 
 **Hello and welcome!**
 
@@ -81,7 +98,7 @@ So, be comfortable to get out of your comfort zone. Learn from each other. It's 
 
 So for example, what does "computation" mean to you?
 
----
+## What is computation?
 
 Deep dive: [What is computation?](automata.html) - History, theory, implementation; programs as data
 
@@ -91,106 +108,26 @@ Deep dive: [What is computation?](automata.html) - History, theory, implementati
 
 Take some time to think about this: 
 
-- Why did you want to study in the Digital Media program -- why do you want to dedicate several precious years of your life to research in computational art & science -- what does this mean for you? Is there a great risk, or a great unseen opportunity, in the computational/digital media world -- present and future -- one that also speaks to you?
+- Why did you want to study in the Digital Media program?
+  - why do you want to dedicate several precious years of your life to research in computational arts & computer science -- what does this mean for you? 
+  - Is there a great risk, or a great unseen opportunity, in the computational/digital media world -- present and/or future -- one that also speaks to you?
 
 [Write into the form here](https://docs.google.com/forms/d/e/1FAIpQLSdGbObBWxsQpDoewMLRYDhqJ16EJEsZbbbrpbnNrNkN2u03EA/viewform?usp=sf_link)
 
-## An introduction
-
-Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1lvAaIH7lXHz0sc02L7JXVsM_QySOY4SPPdc5tNI5HC4/edit
- - I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
-- You can include a more formal bio, or artist statement, or something more informal about the inspirations that brought you to the program.
-- Remember to include your name, and reference details (name, link etc.) for any images or media you add.
-- Please be careful not to delete your colleague's slides!
-
-## A reading
-
-I said in class we should look at others’ Masters & PhD theses/dissertations for inspiration. Here’s the Masters thesis of Golan Levin, from when he was a student at MIT. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. Have a good read and bring some thoughts and questions for next week:
-http://www.flong.com/archive/texts/publications/thesis/index.html
-
-
-----
-
-# Week 1 
-Sep 12, 2023
-
-[Introductions](https://docs.google.com/presentation/d/1gukRi55omVeeQcjFBdKagZdfs3_pPLlhgsHfG1go4DU)
-
-## Computational sketching
-
-A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. So it can be helful sometimes to step into the shoes of those that have gone before, to see how we ended up here, and what we may have lost or missed along the way. 
-
-Take [John Maeda](https://en.wikipedia.org/wiki/John_Maeda), the designer & MIT Media Lab professor, who pioneered reactive graphics in the era of the Macintosh and CD-ROM. 
-
-> **Design By Numbers (John Maeda, 1999)**   
-> "Drawing by hand, using pencil on paper, is undisputedly the most natural means for visual expression. When moving on to the world of digital expression, however, the most natural means is not pencil and paper, but rather, computation. Today, many people strive to combine the traditional arts with the computer, and while they may succeed at producing a digitally empowered version of their art, they are not producing true digital art. True digital art embodies the core characteristics of the digital medium, which cannot be replicated in any other.
-> 
-> "Computation is intrinsically different from existing media because it is the only medium where the material and the process for shaping the material coexiist in the same entity: numbers. The only other medium where a similar phenomenon occurs is pure thought. It naturally follows that computational media could eventually present the rare opportunity to express a conceptual art that is not polluted by textual or other visual representation. This exciting future is still at least a decade or two away. For the moment, we are forced to settle with society's current search for true meaning in an enhanced, interactive version of the art that we have always known."
-
-Maeda studied with Muriel Cooper and Paul Rand, and redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, which helped lay the groundwork for interactive motion graphics as seen on the web today.
-
-Other key insights from Maeda's interactive graphics explorations:
-
-  - the most **interesting** pixels on the screen are the mouse
-  - the mouse represents not just **space** but also **time** -- use it
-
-Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (and thence [P5.js](https://p5js.org/)). 
-
-Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
-
-> Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
-
-Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?  (Also note the document structure.)
-
------
-
-## Let's get making
-
-- A shareable workspace: [codepen](https://codepen.io)
-- The HTML5 trio: the HTML (DOM), CSS, and JavaScript
-  - HMTL: the page container and structure. The language forms a **declarative** data structure, roughly in a tree structure. 
-  - CSS: the rules of layout, rendering and style. The language forms a set of **declarative** definitions. 
-  - JS: dynamic generation and behaviour. The language forms **procedural** steps of action, invoked in response to events. 
-- [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
-- What is an API? 
-  - E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.
-- 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
-
 ---
-
-https://codepen.io/grrrwaaa/pen/yLdrXNQ
-
----
-
-https://codepen.io/grrrwaaa/pen/Yzdxwgj
-
------
-
-Can you continue by drawing an example from Golan Levin's research-creation thesis?
-
-
-
-# Week 2 
-Sep 19, 2023
-
-- Online class today: - [Zoom meeting link](https://yorku.zoom.us/j/91019623418?pwd=75h0gYM5Je5nz5Pzbi2vGmWb3G96j4.1)
-
-## What is Research?
-
-Deep dive [presentation](research.html) & discussion
-
------
 
 ## A Call for Papers
 
 Through this course you will write a research paper and take it through the process of literature review and development, drafting a paper in response to a call for research, and peer review and completion thereof, modeled on real processes of academic research publication.  The call for papers we will use is adapted from calls for the [SIGGRAPH Art Papers](https://s2024.siggraph.org/program/art-papers/) and the [ISEA (International Symposium on Electronic Arts)](https://isea2025.isea-international.org/submission/submission-guideline/). 
 
+<!--
 - Note that ISEA 2025 (Seoul, Korea) has a deadline of 15 November 2024 -- if we can move quickly enough in the course you could submit to it! 
 - Siggraph 2025 will be in Vancouver, but (as of writing) the submission deadlines are not yet published. It might be between January to March. 
+-->
 
 *(Broad terms of call, with theme(s) and topics)* 
 
-The "DIGM Computational Art Symposium" acts as a bridge between art and technology to rethink and explore our future. The dream is to bring art and engineering communities together, as has been so fruitful in history. We understand art in its broadest sense, encompassing different fields from fine art to design and architecture. Submissions exploring how computer science and interactive techniques — especially those linked to recent developments — that relate to questions of the future are particularly encouraged. We encourage submissions that discuss and explore within the fields of electronic arts, creative technology, digital culture and all manners of art-science-technology collaboration not yet born. We would like you to engage in the Renaissance of the 21st century!
+The "DIGM Computational Art/Sci Symposium" acts as a bridge between art and technology to rethink and explore our future. The dream is to bring art and engineering communities together, as has been so fruitful in history. We understand art in its broadest sense, encompassing different fields from fine art to design and architecture. Submissions exploring how computer science and interactive techniques — especially those linked to recent developments — that relate to questions of the future are particularly encouraged. We encourage submissions that discuss and explore within the fields of electronic arts, creative technology, digital culture and all manners of art-science-technology collaboration not yet born. We would like you to engage in the Renaissance of the 21st century!
 
 Topics of interest include, but are not limited by:
 
@@ -235,7 +172,91 @@ Submissions will be uploaded online. We also ask you to add a very short text ex
 
 Authors will be required to present their papers with a duration of 10 minutes. 
 
+## An introduction
+
+Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1lvAaIH7lXHz0sc02L7JXVsM_QySOY4SPPdc5tNI5HC4/edit
+ - I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
+- You can include a more formal bio, or artist statement, or something more informal about the inspirations that brought you to the program.
+- More importantly: let us know what you want to *do*, what you want to *research*!
+- Remember to include your name, and reference details (name, link etc.) for any images or media you add.
+- Please be careful not to delete your colleague's slides!
+
+## A reading
+
+I said in class we should look at others’ Masters & PhD theses/dissertations for inspiration. Here’s the Masters thesis of Golan Levin, from when he was a student at MIT. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. Have a good read and bring some thoughts and questions for next week:
+http://www.flong.com/archive/texts/publications/thesis/index.html
+
+## Your Journal
+
+
+
+## Week 1 
+Sep 11, 2023
+[Class Recording](#zoom-recordings)
+
+[Introductions](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU)
+
+## Computational sketching
+
+A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. So it can be helful sometimes to step into the shoes of those that have gone before, to see how we ended up here, and what we may have lost or missed along the way. 
+
+Take [John Maeda](https://en.wikipedia.org/wiki/John_Maeda), the designer & MIT Media Lab professor, who pioneered reactive graphics in the era of the Macintosh and CD-ROM. 
+
+> **Design By Numbers (John Maeda, 1999)**   
+> "Drawing by hand, using pencil on paper, is undisputedly the most natural means for visual expression. When moving on to the world of digital expression, however, the most natural means is not pencil and paper, but rather, computation. Today, many people strive to combine the traditional arts with the computer, and while they may succeed at producing a digitally empowered version of their art, they are not producing true digital art. True digital art embodies the core characteristics of the digital medium, which cannot be replicated in any other.
+> 
+> "Computation is intrinsically different from existing media because it is the only medium where the material and the process for shaping the material coexiist in the same entity: numbers. The only other medium where a similar phenomenon occurs is pure thought. It naturally follows that computational media could eventually present the rare opportunity to express a conceptual art that is not polluted by textual or other visual representation. This exciting future is still at least a decade or two away. For the moment, we are forced to settle with society's current search for true meaning in an enhanced, interactive version of the art that we have always known."
+
+Maeda studied with Muriel Cooper and Paul Rand, and redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, which helped lay the groundwork for interactive motion graphics as seen on the web today.
+
+Other key insights from Maeda's interactive graphics explorations:
+
+  - the most **interesting** pixels on the screen are the mouse
+  - the mouse represents not just **space** but also **time** -- use it
+
+Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (and thence [P5.js](https://p5js.org/)). 
+
+Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
+
+> Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
+
+Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?  (Also note the document structure.)
+
 -----
+
+### Let's get making
+
+- A shareable workspace: [codepen](https://codepen.io)
+- The HTML5 trio: the HTML (DOM), CSS, and JavaScript
+  - HMTL: the page container and structure. The language forms a **declarative** data structure, roughly in a tree structure. 
+  - CSS: the rules of layout, rendering and style. The language forms a set of **declarative** definitions. 
+  - JS: dynamic generation and behaviour. The language forms **procedural** steps of action, invoked in response to events. 
+- [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
+- What is an API? 
+  - E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.
+- 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
+
+---
+
+https://codepen.io/grrrwaaa/pen/yLdrXNQ
+
+---
+
+https://codepen.io/grrrwaaa/pen/Yzdxwgj
+
+-----
+
+Can you continue by drawing an example from Golan Levin's research-creation thesis?
+
+
+
+## Week 2 
+Sep 18, 2023
+[Class Recording](#zoom-recordings)
+
+## What is Research?
+
+Deep dive [presentation](research.html) & discussion
 
 ## Preparing a Reading List
 
@@ -284,14 +305,7 @@ https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010
 [Today's script](https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011)
 
 
-# Week 3 
-Sep 26, 2023
-
-[Zoom recording](https://yorku.zoom.us/rec/share/XAq2NPYpbqCVBtvR9gTmcTZspvcMPikuRRy7-m0ibmowUEfFi0B7Sp_LxRO3fScy.up7ZoH5Adud0amiq)
-
-- Reading list discussion
-
-## Reproducing Curly/Yellowtail
+### Reproducing Curly/Yellowtail
 
   - Last week we saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
   - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
@@ -423,35 +437,19 @@ Some rules of thumb while coding:
 
 - Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
-# Week 4
-Oct 3, 2023
 
-[Zoom recording](https://yorku.zoom.us/rec/share/ltxHxOsTrgCAxwpIIutXO7HE4q385v48vuh7nVxaFoQKtF7NEv-WrTtPUacHzDD0.tKWuFAPp79sCAH-D)
+## Week 3 
+Sep 25, 2023
+[Class Recording](#zoom-recordings)
 
-**Announcement** about an exhibition next week:
+[Zoom recording](https://yorku.zoom.us/rec/share/XAq2NPYpbqCVBtvR9gTmcTZspvcMPikuRRy7-m0ibmowUEfFi0B7Sp_LxRO3fScy.up7ZoH5Adud0amiq)
 
-[![illuminarium](img/illuminarium.jpg)](https://www.instagram.com/p/DAjS88aSAlT/?fbclid=IwY2xjawFo4KtleHRuA2FlbQIxMAABHQI92JyX-yxVum1eUtR5RRSeETmgu2OIj3BLExtiknkv4oTbeMeXuqPf0g_aem_NHutBsopKfT8WwBFJ2V79A&img_index=1)
+- Reading list discussion
 
-[Entangled Dimensions: Art in the Age of Neural Media](https://www.eventbrite.ca/e/entangled-dimensions-art-in-the-age-of-neural-media-tickets-1034058876937#:~:text=Presented%20by%20Future%20Makers%20in,digital%20and%20neural%20media%20art.) at [Illuminarium](https://www.google.com/maps/place/Illuminarium+Toronto/@43.64993,-79.3631862,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb80a6a8c87b:0x2c884e51f04efab!8m2!3d43.64993!4d-79.3606059!16s%2Fg%2F11svk7p37t?entry=tts&g_ep=EgoyMDI0MDkyNS4wKgBIAVAD), Toronto
-- Oct 8: 12:00 PM - 5:00 PM
-- Oct 9: 12:00 PM - 8:00 PM
- 
-This immersive exhibition explores the intricate connections between human and non-human intelligences through digital and neural media art.
-Curated by Ryan Kelln, we invite you to experience the work of Toronto-based artists and dive into a world of cutting-edge art featuring AI-driven creations, EEG/brainwave-powered pieces, 3D-printed marvels, and other pioneering forms of digital expression.
- 
-Featured Artworks / Artists:
- 
-- *We Are Entanglement*, [Artificial Nature: Haru Ji & Graham Wakefield](https://artificialnature.net)
-- *Living Sculptures*, Vladimir Kankc (@vladdkanic ) 
-- *(ex)tending towards*, Jane Tingley (York University)
-- *The Wail*, Wilfred Lee (@theartistsjourney )
-- *IWTBNA: I want to be new again*, Nava Messas Waxman (@navawaxman_m )
-- *what abides*, Ben McCarthy (@paleeyesmusic)
-- *Blue Dot (Shadow)*, Evangeline Y Brooks
- 
-Presented by the collaborative initiative of @thecreativeschl and @cityofto Creative Technology Office - Future Makers Collective and the Human Feedback Foundation.
+## Week 4
+Oct 2, 2023
+[Class Recording](#zoom-recordings)
 
----
 
 **Reproducing & sharing research through making**: discussion & sharing of your codepens! 
 
@@ -527,6 +525,8 @@ By interacting with these elements we can verify statements, develop intuition, 
 
 ---
 
+<!--
+
 ## Machine intelligence and autonomous agents
 
 One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world. 
@@ -557,39 +557,24 @@ Let's follow back through a selective history.
     - Can you make a flocking simulator?
 - **Reproducing research**: [Steering behaviours for vehicles and flocks](steering.html)
 
+-->
 
-
-# Week 5 
-Oct 10 
+## Week 5 
+Oct 9 
+[Class Recording](#zoom-recordings)
 
 - Review of schedule for remainder of semester
-  - The research paper (which can be a continuation of your bibliography and/or codework)
-    - The [call for papers](#a-call-for-papers)
-    - The [peer review](#peer-review)
-    - The [final submission](#final-paper)
-  - The [video tutorial](#video-tutorial) (which can support your paper)
 
-- Complete your [annotated bibliography](#annotated-bibliography)
-- **Annotated bibliographies due Sunday Oct 13th**
-
-- Next week is reading week -- a perfect time for you work on your **paper's first draft!**
-
-## 1-on-1 Q&As
-  - We have 12 students, so up to 12 minutes each
-  - Please email me a link to your work in progress and bring over your laptop etc. 
-
-
-
-# Week 6
 
 ## Reading Week
 
-- Work on your paper draft for the peer review session
 
 
-# Week 7
-Oct 24, 2023
+## Week 6
+Oct 23, 2023
+[Class Recording](#zoom-recordings)
 
+<!--
 **For next week**, complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
 
 ## Reproducing Research: Steering Behaviours
@@ -609,12 +594,13 @@ First a quick reminder of what we looked at back in week 4:
 Our script so far:
 
 https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
+-->
+
+## Week 7
+Oct 30, 2023
+[Class Recording](#zoom-recordings)
 
 
-# Week 8
-Oct 31, 2023
-
-**Make sure your paper is submitted (by email to me) before this class!!**
   
 ## What is peer review of research?
 
@@ -670,10 +656,13 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 - **During class**:
   - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link)
 
-# Week 9
-Nov 7, 2023
+## Week 8
+Nov 6, 2023
+[Class Recording](#zoom-recordings)
 
 [Zoom recording](https://yorku.zoom.us/rec/share/U81PF8sbNNdLunWTVUA49hy033RDKzB5N4UcseM54-L6kQODHyP7l5WENZfb8VNN.4y1sgYVagbvipCff)
+
+<!--
 
 - Paper process discussion -- one week to ISEA deadline: https://isea2025.isea-international.org/submission/submission-guideline/ 
   - Note, that deadline says 11:59pm KST -- which is **9.59am** here in Toronto!
@@ -681,7 +670,8 @@ Nov 7, 2023
 - Continuing with **reproducing research**: [steering behaviours for vehicles and flocks part II](steering.html). Today's code:
 
 https://codepen.io/grrrwaaa/pen/KKOGLqW?editors=0010
-  
+-->
+
 ## Final Paper
 
 1. The final paper continues from the [Literature Review](#annotated-bibliography[), and responds to the [Call for Papers](#the-call-for-papers). 
@@ -706,10 +696,11 @@ For the purposes of the course, please submit your final papers by December 8th,
 
 ---
 
-# Week 10
-Nov 14, 2023
+## Week 9
+Nov 13, 2023
+[Class Recording](#zoom-recordings)
 
-- **ISEA DEADLINE EXTENDED** to Nov 30 **at 10am EST**!
+<!--
 
 - A quick introduction to [Node.js](nodejs.html)
   - How to go about building a multi-user local network version of a sketch app, or Yellowtail?
@@ -733,8 +724,7 @@ Nov 14, 2023
 
 - **For next week**:
   - Submit your [Video Tutorial](#video-tutorial)
-
----
+-->
 
 ## Video Tutorial
 
@@ -749,30 +739,27 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
----
+## Week 10
+Nov 20, 2023
+[Class Recording](#zoom-recordings)
 
-# Week 11
-Nov 21, 2023
-
+<!--
 - 1 on 1 paper sessions
 
 - A quick introduction to [Git](gitnotes.html)
 
 - **Video tutorials due**
   - [Add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing)
+-->
 
----
 
-# Week 12
-Nov 28, 2023
+## Week 11
+Nov 27, 2023
+[Class Recording](#zoom-recordings)
 
 ## Final presentations
 
 We have about 10 minutes per presentation, plus 5 minutes for questions & discussion! 
-
-<!--
-[Zoom recording](https://yorku.zoom.us/rec/share/99TfEFAgXaklPBZdmx9u5TRDJGjn28DUPJIQZvnImOzhsTCX2GCPkZIAg3N8AhOQ.n4PrI8uAqSOaHr0f)
--->
 
 ---
 
@@ -1067,3 +1054,22 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 
 -------
 
+
+## Class Recordings
+
+Recordings of the weekly sessions will be here:
+
+<!-- 
+- [Week 0 Class Recording - first patching](https://yorku.zoom.us/rec/share/ZL5_tEz7cuDZHNk585qCGx3GwyIf-ui4tt6ScNreRbT1ma-lIToigpasxu9n24I0.up3Jixd74Ti1Cb1j)
+- [Week 1 Class Recording - ramps and beat slicer](https://yorku.zoom.us/rec/share/c48SeyUAO5fOMAsi4FHKUKhfC0cuqSElXscdCOm3_45viQCBLXB_2ntBETZTwlS_.T6avFZCTHbIMSuZz)
+- [Week 2 Class Recording - more ramp processing, from ramps to LFOs, and other shapes](https://yorku.zoom.us/rec/share/FgkO9V8vK-bC27z-XJsfaLdsN4dWlLjAPzCVJFIwj404-GM60I0Nblq0rZ3OLW4h.moN-NS8z43sjb4Z4)
+- [Week 3 Class Recording - noise, uncertainty, chaos, simple sequencer](https://yorku.zoom.us/rec/share/hOsXZrPLHHdsrvByV6L08t2bL4ST8_trA-W3ZcYc4YZ_Q-v0vUgAMgtObdhrrF-P.v7jIU_hzeyU-p94H)
+- [Week 4 Class Recording - pitch conversions, quantizing, shift register sequencer](https://yorku.zoom.us/rec/share/ueNEZRT55KuhCN73jZc2CtstoEZTK5uaOe2App3gWOQqk8Ut-Hhm6jVVVjkZZBVs.3IT8WxYZVMXVVEVG)
+- [Week 5 Class Recording 1 - catching up: Euclidean Rhythms, pitch quantizers, and audio bitcrushing](https://yorku.zoom.us/rec/share/iDWJhpSMjXnuglzEKIoD_iDxK6lIEw8sl4YwyhMBZXSGlN5A1IeqIUIl6ZSEADKb.wXZvqRpiamOTxXFz)
+- [Week 5 Class Recording 2 - filters, lines, slews, more filters](https://yorku.zoom.us/rec/share/i59rxlt_NoYpDxxoQGfmQPdsBREseAF4UuGiONZbUbpEVLax8A7UiJ9OPD8moqXy.dhqkOLQaIpN2-jQR)
+- [Week 6 Class Recording - delay effects](https://yorku.zoom.us/rec/share/zzaFDAYbv7VFpi641qbFF2xhVpTqhHTJU6JX9ivVI-4346Tca9UPm36zS4w5SSLv.12-v5HytdmCvgxlo)
+- [Week 7 Class Recording - frequent modulations 1](https://yorku.zoom.us/rec/share/NcKhkz2hqEuPfgNeidRFCWjEg_XtTYNeWrLSeAajHI-tmRTv1C4EvCkZHUQb2ZJu.R2756ONcU45ty3Cl)
+-  [Week 8 Class Recording - frequent modulations 2](https://yorku.zoom.us/rec/share/JbhqKvgQSunZmXES36cWoPhb-Xbg2HnrLvvIDH24KGVt31oTPC8AMDAuiiUjLKbG.cV3jn3RI6ULzVk1v)
+- [Week 11 Class Recording - Windows of Time](https://drive.google.com/file/d/1B0tmhEzHsrVFWWHT0z8NBpOT0XC_27OO/view?usp=share_link)
+- [Week 12 Class Recording - Exporting from RNBO](https://yorku.zoom.us/rec/share/tbwgGy0hvaaGOjo0cey8YDgnq1xM9m7LTzZF3DjhMGEKJ0wxRxWT3bbI1rcKdLcf.oKShC9mLhw7KDKJu)
+-->

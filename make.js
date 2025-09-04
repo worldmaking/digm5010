@@ -64,7 +64,7 @@ function generate(file) {
 	} else {
 		meta.src = meta.src
 		// auto hr break at heading 1 titles:
-		.replace(/\n(#\s[^\n]+)/g, "\n---\n\n$1")
+		.replace(/\n(##\s[^\n]+)/g, '\n---\n<a href="#top"><img src="img/up.png"></a>\n$1')
 		// replace @image:path as background contain 
 		.replace(/\n---image:([^\s]+)/g, `\n<img src="$1" />\n`)
 		// // replace @youtube:ID as background video
@@ -107,8 +107,8 @@ function generate(file) {
 	});
 
 	meta.body = marked(meta.src);
-	meta.toc = toc.length > 1 ? marked(toc.map(item => `${"  ".repeat(item.level-1)}- [${item.text}](#${item.id})`).join("\n")) : "";
-	console.log(meta.toc)
+	//meta.toc = toc.length > 1 ? marked(toc.map(item => `${"  ".repeat(item.level-1)}- [${item.text}](#${item.id})`).join("\n")) : "";
+	// console.log(meta.toc)
 
 	let html = template(fs.readFileSync(meta.template, "utf8"), meta);
 

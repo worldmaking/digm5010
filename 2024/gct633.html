@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Programming and space</title>
+<meta name="description" content="">
+<meta name="author" content="Graham Wakefield">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/github.css" type="text/css" />
+<style>
+img {
+	max-height: 75vh;
+}
+td { vertical-align: top;}
+header {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+
+footer {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+</style>
+</head>
+
+<body class="centremaxwidth960">
+<header><a href="index.html">Foundations of Digital Media</a></header>
+<ul>
+<li><a href="#programming-and-space">Programming and space</a><ul>
+<li><a href="#perception-of-space">Perception of space</a></li>
+<li><a href="#good-old-fashioned-opengl-1">Good old-fashioned OpenGL 1</a></li>
+<li><a href="#shader-program">Shader program</a></li>
+<li><a href="#vertex-shader">Vertex shader</a></li>
+<li><a href="#fragment-shader">Fragment shader</a></li>
+<li><a href="#vertex-buffers">Vertex buffers</a></li>
+</ul>
+</li>
+<li><a href="#programming">Programming</a><ul>
+<li><a href="#semiotics">Semiotics</a></li>
+<li><a href="#programming-languages">Programming languages</a></li>
+<li><a href="#compiled-language-example-c">Compiled language example: C</a></li>
+<li><a href="#dynamic-language-example-lua">Dynamic language example: Lua</a></li>
+<li><a href="#data-structures">Data structures</a></li>
+<li><a href="#live-programming-live-coding">Live Programming, Live Coding</a></li>
+<li><a href="#further-reading">Further reading</a></li>
+<li><a href="#setting-up-a-c-development-environment">Setting up a C development environment</a></li>
+</ul>
+</li>
+<li><a href="#audio-programming">Audio Programming</a><ul>
+<li><a href="#excitation-resonance-and-other-physical-models">Excitation-resonance and other physical models</a></li>
+<li><a href="#granular-synthesis-and-microsounds">Granular synthesis and microsounds</a></li>
+<li><a href="#sounds-as-summations-of-cyclic-rotations-fourier">Sounds as summations of cyclic rotations (Fourier)</a></li>
+<li><a href="#non-histories-of-computer-music">Non-histories of computer music</a></li>
+<li><a href="#general-resources">General Resources</a></li>
+</ul>
+</li>
+</ul>
+
+<p><a href="http://www.theexternalworld.com/"><img src="http://31.media.tumblr.com/313e7e2747af1accbb03b89c5b552986/tumblr_mffehkOZca1qfc46ko1_500.gif" alt="cat portal"></a></p>
+<hr>
+<h1 id="programming-and-space">Programming and space</h1>
+<p>Just as with time, to work with space we need to understand how space can be represented, how spaces can be mapped and transformed, and what representations and transformations are used by existing programming libraries. But we also need to understand how space is perceived.</p>
+<h2 id="perception-of-space">Perception of space</h2>
+<h3 id="picture-plane-and-frame">Picture plane and frame</h3>
+<p>The picture plane is the (normally rectangular) space of the projection screen, LCD screen, monitor, touchscreen etc.; the frame as a physical object. The frame is a window onto our work, part of its limiting edges – just like when we use our fingers to limit a view. </p>
+<ul>
+<li>The relationship of objects (or points of attention) and frame can convey meaning. Photographers and painters know the &#39;rule of thirds&#39;: placing important objects at one- or two-thirds of the horizontal or vertical span. Cutting an object by the frame can be very jarring. </li>
+</ul>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Rivertree_thirds_md.gif" alt="rule of thirds"></p>
+<ul>
+<li>With movement, the frame can also convey the meaning of the view: a distanced, objective world-view, a passive observer, a point-of-view subjectivity, an abstract or dream-like perception...</li>
+<li>We can split the screen space into divisions. Cinema has used this for parallel timelines, software interfaces use this for modal inspectors, menu bars, etc. </li>
+<li>We can break the boundary of the frame by imposing a new frame shape (such as a circular vignette) or boundary (blurred edges). </li>
+<li>We can suppress consciousness of the bounding frame and emphasize &quot;open space&quot;. Open space increases immersion and involvement of the viewer. <ul>
+<li>By eliminating objects that emphasize the frame (horizontal and vertical lines, or using lighted subjects within a black world)</li>
+<li>By creating movement that is stronger than the frame: random multi-directional movements, long tracks into or out of the frame, and hand-held camera style.</li>
+</ul>
+</li>
+<li>With multi-projector systems or head-mounted displays, we can attempt to erase the frame entirely and create a fully immersive environment.</li>
+</ul>
+<p><img src="http://www.allosphere.ucsb.edu/cosm/img/banff.jpg" alt="cosm at banff"></p>
+<ul>
+<li>With augmented reality and mixed devices, we can overlay (or underlay) real and virtual content dynamically. Nevertheless, we must still be sensitive to the effects of framing, particularly when it cuts stereoscopic depth.</li>
+</ul>
+<h3 id="depth">Depth</h3>
+<p>The Screen is a 2-D surface, with no real depth. Most moving images create an illusion of natural 3-D space upon this screen. <a href="http://en.wikipedia.org/wiki/Depth_perception">Depth cues</a> that can increase or decrease the sense of depth:</p>
+<ul>
+<li>Size: Distant objects are smaller</li>
+<li>Perspective convergence – aided by using angled lines with vanishing points (one, two or three+), with many different suggestive energies. These lines may belong to land, buildings, objects, actors, or abstract forms.</li>
+<li>Stereopsis – applying correct perspective shift (parallax) for each eye. </li>
+<li>Occlusion – overlapping objects suggest depth.</li>
+<li>Lighting and shading - accurate modeling of lighting effects can give a strong sense of three dimensionality and depth.</li>
+<li>Movement – lateral movement diminishes depth sensation, while depth movement or depth-relative movements can reinforce perspective. Rotation displays three-dimensional form, even when reduced to silhouette (the <em>kinetic depth effect</em>). </li>
+<li>Camera movement – dollying shots tend to emphasize depth by motion parallax (no matter the direction), whereas pans and zooms tend to flatten the image.</li>
+<li>Camera movement</li>
+<li>Textural diffusion – distant objects are smaller and thus carry less textural detail. In computer graphics this is sometimes referred to as <em>level of detail</em>. </li>
+<li>Shadows help to locate an otherwise ambiguous object by reference with other objects, particularly when shadows fall on a ground plane.</li>
+<li>Saturation and contrast tends to attenuate with distance, due to scattering effects of atmospheric particles; this is more pronounced in dense fog. </li>
+<li>Brightness &amp; color separation – bright objects are usually perceived as being nearer than dark objects, and warm colors (red, orange, yellow) are perceived as being nearer than cold colors (green, blue). Mountains are blue. Increasing tonal or brightness contrast over the various depths in the scene also assist depth cueing. </li>
+<li>Focus – objects that are out of focus lose many depth cue features, and thus an out-of-focus shot usually creates a more planar perspective.</li>
+</ul>
+<p>The absence of depth cues tends to produce a flat space, while ambiguous and contraditctory cues can create an ambiguous or disorienting perception of space. </p>
+<p>A film utilizes <strong>deep space</strong> when significant elements of an image are positioned both near to and distant from the camera. For deep space these objects do not have to be in focus.     In narrative contexts, it can integrate the characters into their natural surroundings, map out the actual distances involved between one location and another.</p>
+<p><img src="http://www.mat.ucsb.edu/~wakefield/amv/img/cpdeep4.jpg" alt="deep space"></p>
+<p>In shallow space the image is staged with very little depth. The figures in the image occupy the same or closely positioned planes. While the resulting image loses realistic appeal, its flatness enhances its pictorial qualities. Shallow space can be staged, or it can also be achieved optically, with the use of a telephoto lens.This is particularly useful for creating claustrophic images, since it makes the characters look like they are being crushed against the background.</p>
+<p><img src="http://www.mat.ucsb.edu/~wakefield/amv/img/totshal3.jpg" alt="shallow space"></p>
+<p>Animation begins in an ambiguous space, and much work is required to create convincing depth cues; photography however begins in real space, and effort is required to create (and maintain) an ambiguous space, since our perception always works to map the phenomenological space to a particular scale &amp; position.</p>
+<h3 id="form">Form</h3>
+<ul>
+<li>Foreground and background<ul>
+<li>figure-ground relations, subject and environment, positive and negative space</li>
+</ul>
+</li>
+<li>Proportion<ul>
+<li>rule of thirds, golden ratio, harmonic ratios</li>
+</ul>
+</li>
+<li>Balance and symmetry<ul>
+<li>symmetry/balance suggests contemplation and stability, asymmetry/imbalance suggests emotion and change</li>
+<li>parallel and perpendicular</li>
+</ul>
+</li>
+<li>Enclosure creates sub-spaces and volume</li>
+<li>Texture suggests tactile sensation</li>
+</ul>
+<p>Consider Kandinsky&#39;s <a href="http://books.google.co.kr/books?id=dIvm5kmGZWkC&amp;dq=point+and+line+to+plane">Point and Line to Plane</a> and Klee&#39;s <a href="http://ing.univaq.it/continenza/Corso%20di%20Disegno%20dell&#39;Architettura%202/TESTI%20D&#39;AUTORE/Paul-klee-Pedagogical-Sketchbook.pdf">Pedagogical Sketchbook</a>.</p>
+<h2 id="good-old-fashioned-opengl-1">Good old-fashioned OpenGL 1</h2>
+<p>Before leaping into GL 2.1, it&#39;s worth seeing how things used to be done, because although it is less flexible or efficient, in many ways it is easier to learn.</p>
+<p>The first thing to learn is that OpenGL is highly <strong>stateful</strong>. For example, <strong>gl.Color()</strong> will set the current color, and any geometry drawn after it will use that color, until another <strong>gl.Color()</strong> changes it. You can think of it like the current brush in your hand. OpenGL also uses state to store spatial transformations, such as the view and object (gl.MODELVIEW) and the current perspective (gl.PROJECTION). </p>
+<h3 id="geometry">Geometry</h3>
+<p>Geometry in OpenGL is specified as a series of <em>vertices</em>, where each vertex has a position in space, and possibly other attributes such as color, texture coordinate, normal direction, and so on. Vertices simply define a set of points, but we can instruct OpenGL to interpret them as surfaces (or lines, or points) using the following constants:</p>
+<p><img src="img/GL_GeometricPrimitives.png" alt="GL_GeometricPrimitives.png"></p>
+<p>In OpenGL 1 this is done using the <strong>gl.Begin()</strong> call, e.g. <strong>gl.Begin(gl.LINES)</strong>. After a <strong>gl.Begin()</strong> we can issue a number of vertices using <strong>gl.Vertex()</strong>, and finally finish our shape using <strong>gl.End()</strong>:</p>
+<pre><code>local gl = require &quot;gl&quot;
+
+function draw()
+    gl.Color(1, 1, 1)
+    gl.Begin(gl.LINES)
+        gl.Vertex(0, 0, 0)
+        gl.Vertex(1, 1, 0)
+    gl.End()
+end</code></pre>
+<p>To change attributes of each vertex, we must call the attribute setters before the corresponding <strong>gl.Vertex()</strong>:</p>
+<pre><code>local gl = require &quot;gl&quot;
+
+function draw()
+    gl.Begin(gl.LINES)
+        gl.Color(0, 0, 1)
+        gl.Vertex(0, 0, 0)
+
+        gl.Color(1, 0, 0)    
+        gl.Vertex(1, 1, 0)
+    gl.End()
+end</code></pre>
+<p>Some common geometries have been abstracted in the <strong>draw2D</strong> module:</p>
+<pre><code>local draw2D = require &quot;draw2D&quot;
+
+function draw()
+    draw2D.color(1, 0, 0)
+    draw2D.rect(0, 0, 1, 1)
+
+    draw2D.color(1, 1, 0)
+    draw2D.ellipse(0, 0, 1, 1)
+end</code></pre>
+<h3 id="transformation-stacks">Transformation stacks</h3>
+<p>If we want to render the same geometry at different locations, scales and rotations in space, we would normally have to recalculate the positions of each argument to each <strong>gl.Vertex()</strong>. Instead, OpenGL provides transformation stacks. The default stack is the <em>MODELVIEW</em> stack, which represents the current location, scale and orientation of geometry in the world. You can <em>translate</em>, <em>rotate</em> and <em>scale</em> the modelview.  You could think of translation as meaning changing the &#39;start point&#39; (in mathematical terms, the &quot;origin&quot;) of drawing. Or you could think of it as moving the underlying &quot;graph paper&quot; that we are drawing onto. Similarly for the rotating the paper, or scaling it. </p>
+<pre><code>local draw2D = require &quot;draw2D&quot;
+
+function draw()
+    draw2D.translate(-1, 0)
+    draw2D.scale(0.5, 0.5)
+
+    draw2D.color(1, 0, 0)
+    draw2D.rect(0, 0, 1, 1)
+
+    draw2D.color(1, 1, 0)
+    draw2D.ellipse(0, 0, 1, 1)
+end</code></pre>
+<p>Unlike gl.Color(), draw2D&#39;s <em>translate()</em>, <em>scale()</em> and <em>rotate()</em> do not replace the previous values; instead they accumulate on top of each other into a hidden state called the transformation matrix, which is a fancy name for how we get from the coordinate system in which we are currently drawing to the coordinate system of the actual output pixels. </p>
+<p>Note that the order of transformations is important: translate followed by scale is quite different to scale followed by translate. For controlling an object, usually the order used is &quot;translate, rotate, scale&quot;. </p>
+<p>The transformation stack is called a <em>stack</em> because you can push and pop it:</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/2/29/Data_stack.svg" alt="Stack"></p>
+<p><em>Pushing</em> the stack allows you to modify the transformation temporarily, and then later <em>pop</em> back to the previous state. Usually OpenGL provides up to 16 possible transformations on the stack.</p>
+<pre><code>local draw2D = require &quot;draw2D&quot;
+
+function draw()
+    draw2D.push()
+        draw2D.translate(-1, 0)
+        draw2D.scale(0.5, 0.5)
+
+        draw2D.color(1, 0, 0)
+        draw2D.rect(0, 0, 1, 1)
+    draw2D.pop()
+
+    draw2D.color(1, 1, 0)
+    draw2D.ellipse(0, 0, 1, 1)
+end</code></pre>
+<p>The <strong>draw2D</strong> module provides push, pop, translate, rotate and scale for 2D rendering. For more complex rendering, use <strong>gl.LoadMatrix()</strong> (to replace the previous value) or <strong>gl.MultMatrix()</strong> (to accumulate with the previous value) in combination with one of the matrix transform generators in the <strong>mat4</strong> module:</p>
+<pre><code>-- this does the same thing as the previous script:
+
+local gl = require &quot;gl&quot;
+local draw2D = require &quot;draw2D&quot;
+local mat4 = require &quot;mat4&quot;
+
+function draw()
+    gl.PushMatrix()
+        gl.LoadMatrix(mat4.translate(-1, 0, 0))
+        gl.MultMatrix(mat4.scale(0.5, 0.5, 1))
+
+        draw2D.color(1, 0, 0)
+        draw2D.rect(0, 0, 1, 1)
+    gl.PopMatrix()
+
+    draw2D.color(1, 1, 0)
+    draw2D.ellipse(0, 0, 1, 1)
+end</code></pre>
+<p>With this we can easily now create ideal visual forms, and then create instances of these forms with different position, scale and rotation, however we please. We&#39;re about ready for some generative design...</p>
+<blockquote>
+<p>Warning: if you want to do something computational according to the position, it&#39;s better not to use the OpenGL transformation stack, as it does not give you access to the computed position. Instead you&#39;ll have to compute it manually... </p>
+</blockquote>
+<h2 id="shader-program">Shader program</h2>
+<p>At any time the GPU may have one shader program bound. Typically the shader program will contain a vertex shader and a fragment shader. These allow us to insert our own code into the rendering pipeline at the vertex transformation and fragment coloring stages.</p>
+<h2 id="vertex-shader">Vertex shader</h2>
+<p>Each vertex in the vertex array is sent through the vertex program. The vertex program determines how to modify each vertex. At minimum, it must compute the actual position of the vertex in screen space (by setting the <strong>gl_Position</strong> variable). </p>
+<p>Here is a simple vertex shader:</p>
+<pre><code>// the input position of the vertex:
+attribute vec3 position;
+
+void main() {
+    gl_Position = vec4(position.x, position.y, 0., 1.);
+}</code></pre>
+<p>Vertex shaders may make use of <strong>attributes</strong>, values that are set for each input vertex. Typical vertex attributes are position, color, normal (surface direction), texture coordinate (for applying texture mapping).</p>
+<p>Note that the GLSL language provides support for vector types (vec2, vec3, vec4) and matrix types (mat2, mat3, mat4) in the language itself, since these are so fundamental to graphics programming. </p>
+<h2 id="fragment-shader">Fragment shader</h2>
+<p>For each pixel of a rendered triangle, the fragment shader is run to compute the pixel color (by setting the <strong>gl_FragColor</strong> variable). Here is a simple fragment shader:</p>
+<pre><code>uniform vec3 lightcolor;
+
+void main() {
+    // paint all pixels opaque red:
+    vec3 red = vec3(1, 0, 0);
+    // compute pixel color by multiplying with the light color:
+    vec3 color = lightcolor * red;
+    // store that as the result, with an alpha (opacity) value of 1:
+    gl_FragColor = vec4(color, 1);
+}</code></pre>
+<p>A <strong>uniform</strong> is a way to pass data from the CPU to either vertex or fragment shader. Uniform data has the same value for all vertices/fragments, but can change in successive renders. References to textures are also passed as uniforms (of type <strong>sampler2D</strong>).</p>
+<p>Loading, compiling, linking and using shaders requires some fiddly OpenGL code, which we have abstracted into the <strong>shader</strong> module (take a look inside it to see how it works):</p>
+<pre><code>-- load in the shader utility module:
+local shader = require &quot;shader&quot;
+
+-- write the GLSL code:
+local vertex_code = [[
+    // the input position of the vertex:
+    attribute vec3 position;
+
+    void main() {
+        gl_Position = vec4(position.x, position.y, 0., 1.);
+    }
+]]
+local fragment_code = [[
+    uniform vec3 lightcolor;
+
+    void main() {
+        // paint all pixels opaque red:
+        vec3 red = vec3(1, 0, 0);
+        // compute pixel color by multiplying with the light color:
+        vec3 color = lightcolor * red;
+        // store that as the result, with an alpha (opacity) value of 1:
+        gl_FragColor = vec4(color, 1);
+    }
+]]
+
+-- use this GLSL code to create a new shader program:
+local myshaderprogram = shader(vertex_code, fragment_code)
+
+-- the rendering callback:
+function draw()
+    -- start using the shader:
+    myshaderprogram:bind()
+    -- set a shader uniform:
+    myshaderprogram:uniform(&quot;lightcolor&quot;, 0.5, 0.5, 0.5)
+
+    -- RENDER VERTICES HERE
+
+    -- done using the shader:
+    myshaderprogram:unbind()
+end</code></pre>
+<h2 id="vertex-buffers">Vertex buffers</h2>
+<p>To make use of the shader we must send some vertices. Each vertex may have a number of attributes, including location, normal, color, texture coordainates, etc. All these together make the vertex buffer.</p>
+<blockquote>
+<p>We can also supply an additional <em>element array</em>, which is an array of indices into the vertex buffer specifying the order to render them. This allows us to use one vertex more than once, or even skip a vertex we don&#39;t want to use. It determines how the vertices become triangles.</p>
+</blockquote>
+<p>Creating and using vertex buffers requires some fiddly OpenGL code, because it can be very generic. We have abstracted the most common case into the <strong>vbo</strong> module (take a look inside it to see how it works):</p>
+<pre><code>-- load in the utility module for vertex buffer objects
+local vbo = require &quot;vbo&quot;
+
+-- create a VBO object to store vertex position and color data
+-- this vbo contains 3 vertices (1 triangle):
+local vertices = vbo(15)
+
+-- set the vertex positions:
+vertices[0].position:set(-1, -1, 0)
+vertices[0].position:set( 1, -1, 0)
+vertices[0].position:set( 0,  1, 0)
+
+
+function draw()
+    -- start using the shader:
+    myshaderprogram:bind()
+    -- set a shader uniform:
+    myshaderprogram:uniform(&quot;lightcolor&quot;, 0.5, 0.5, 0.5)
+
+    -- tell the shader_program where to find the 
+    -- &#x27;position&#x27; attributes
+    -- when looking in the vertices VBO:
+    vertices:enable_position_attribute(myshaderprogram)
+
+    -- render using the data in the VBO:
+    vertices:draw()
+
+    -- detach the shader_program attributes:
+    vertices:disable_position_attribute(myshaderprogram)
+
+    -- detach the shader:
+    myshaderprogram:unbind()
+end</code></pre>
+<hr>
+<p><a href="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/1146629_10152155549169896_1044586992_n.jpg"><img src="http://25.media.tumblr.com/0d0b57119830ca73f0abb18258e9f48f/tumblr_mr7bnwCN8M1qamt2wo1_500.jpg" alt="what my camera sees"></a></p>
+<hr>
+<p><a href="http://www.opengl.org/sdk/docs/man2/">OpenGL 2.1 Reference Pages</a>
+<a href="http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Table-of-Contents.html">An intro to modern OpenGL</a>
+<a href="http://www.lighthouse3d.com/tutorials/glsl-tutorial/">Lighthouse GLSL 1.2 Tutorial</a></p>
+<p><img src="http://wondermark.com/comics/190.gif" alt="wondermark"></p>
+<hr>
+<h1 id="programming">Programming</h1>
+<blockquote>
+<p><a href="http://en.wikipedia.org/wiki/Programming_language">wikipedia:</a> A programming language is a formal language designed to communicate instructions to a machine, particularly a computer. Programming languages can be used to create programs that control the behavior of a machine and/or to express algorithms precisely. The earliest programming languages preceded the invention of the computer, and were used to direct the behavior of machines such as Jacquard looms and <a href="http://en.wikipedia.org/wiki/Player_piano">player pianos</a>. Thousands of different programming languages have been created, mainly in the computer field, and still many are being created every year. Most programming languages describe computation in an imperative style, i.e., as a sequence of commands, although some languages, such as those that support functional programming or logic programming, use alternative forms of description.</p>
+</blockquote>
+<p>When using a natural language to communicate with other people, human authors and speakers can be ambiguous and make small errors, and still expect their intent to be understood. However, figuratively speaking, computers &quot;do exactly what they are told to do&quot;, and cannot &quot;understand&quot; what code the programmer intended to write. The combination of the language definition, a program, and the program&#39;s inputs must fully specify the external behavior that occurs when the program is executed. To make this easier, programming languages and implementations may provide many tools of specification and abstraction, and many libraries of re-usable routines and capabilities.</p>
+<h2 id="semiotics">Semiotics</h2>
+<p>Programming languages and implementations can be understood in terms of semiotics: the syntax, semantics and pragmatics.</p>
+<h3 id="syntax">Syntax</h3>
+<p><strong>The relations among signs in formal structures.</strong> Syntax specifies all possible (valid) combinations of the surface form. Usually textual, but can also be graphical. May be described using a grammar. </p>
+<p>A syntax checker verifies the input text matches the syntax rules, or may indicate an error otherwise. A syntactically correct piece of code is not necessarily semantically correct, just as a syntactically correct English sentence does not necessarily have a logical meaning (<a href="http://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously">E.g. Chomsky&#39;s &quot;Colourless Green Ideas Sleep Furiously&quot;</a>)</p>
+<blockquote>
+<p>The study of grammar, the rules of correct structure of language, can be traced back two and half thousand years in ancient India, where the belief had been held that the correct structure and intonation of words had power.</p>
+</blockquote>
+<h3 id="semantics">Semantics</h3>
+<p><strong>The relation between signs and meaning (the things to which they refer).</strong> Semantics maps from program language syntax to program behavior. Some semantic constraints can be analyzed from the source code, others may only be detectable once the program runs. Industry languages tend to include more features aimed to detect semantic errors at compile-time, such as strict type systems.</p>
+<h3 id="pragmatics">Pragmatics</h3>
+<p><strong>The relation between signs and sign-using agents (e.g. programmers!).</strong> In linguistics, pragmatics describes the relation between signs and the agent using them, and the way context relates to meaning. In computing, this may encompass the hardware (or virtual machine implementation) that a program runs on, the available libraries and resources, as well as real-world interactions and performance. </p>
+<p>The standard library and run-time system provided by a language implementation can be more important than the language itself.</p>
+<h2 id="programming-languages">Programming languages</h2>
+<p>There are thousands of programming languages in use today. From a purely abstract, mathematical point of view, most of them have equivalent computing power (delimited by the <a href="http://en.wikipedia.org/wiki/Turing-computable_function#Models_equivalent_to_the_Turing_machine_model">universal Turing machine</a>). Practically however the choice of language/implementation to use may depend on factors of performance, familiarity, the quality of documentation and supporting libraries, ease of distribution, and so on. </p>
+<h3 id="try-out-different-languages-in-the-browser">Try out different languages in the browser</h3>
+<ul>
+<li><a href="http://codepad.org/">Codepad.org</a></li>
+<li><a href="http://www.repl.it/languages">Repl.it</a></li>
+</ul>
+<h3 id="hello-world">Hello, world</h3>
+<p>Since the K&amp;R book <a href="http://cm.bell-labs.com/cm/cs/cbook/">&quot;The C Programming Language&quot;</a>, many language tutorials begin with the <a href="http://en.wikipedia.org/wiki/Hello_world_program">&quot;hello, world&quot;</a> program: a program that simply prints &quot;hello, world&quot; and exits.</p>
+<pre><code class="language-cpp"><span class="hljs-comment">// hello, world in C:</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;hello, world\n&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<pre><code class="language-java"><span class="hljs-comment">// hello, world in Java:</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String [] args)</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;hello, world&quot;</span>);
+    }
+}</code></pre>
+<pre><code class="language-php"><span class="hljs-comment">// hello, world in PHP:</span>
+&amp;lt;?php <span class="hljs-keyword">echo</span>(<span class="hljs-string">&quot;hello, world&quot;</span>); ?&amp;gt;</code></pre>
+<pre><code class="language-javascript"><span class="hljs-comment">// hello, world in JavaScript:</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;hello, world&quot;</span>);</code></pre>
+<pre><code class="language-python">---
+
+<span class="hljs-comment"># hello, world in Python:</span>
+print(<span class="hljs-string">&quot;hello, world&quot;</span>)</code></pre>
+<pre><code class="language-lua"><span class="hljs-comment">-- hello, world in lua:</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;hello, world&quot;</span>)</code></pre>
+<p>See <a href="http://codepad.org/hello-world">more examples at codepad.org</a></p>
+<h2 id="compiled-language-example-c">Compiled language example: C</h2>
+<p>The <strong>C</strong> programming language is one of the oldest still in wide use today, originally developed between 1969 and 1973 at AT&amp;T Bell Labs. It became the &#39;de facto&#39; language for system development in UNIX, and continues to be a primary language for software, operating systems, hardware devices, etc. today. It aims to provide a higher-level language that nevertheless does not obscure details of the underlying system. It is extremely well-defined and thus also serves as a consistent application binary interface (ABI) for operating between different programs and languages. For example, <a href="http://luajit.org/ext_ffi.html">LuaJIT can easily inter-operate with C via a foreign-function interface (FFI)</a>. </p>
+<p>Programs written in C stored in text files (with &quot;.c&quot; extension) and converted to binary applications (and libraries) using a <strong>compiler</strong> such as <code>gcc</code> or <code>clang</code>; or simply invoked by the alias <code>cc</code>. The following terminal command tells the compiler to compile the file <code>hello.c</code> and save the binary executable output (via the <code>-o</code> flag) to be called <code>hello</code>:</p>
+<pre><code>cc hello.c -o hello</code></pre>
+<p>Now we can run this file like so:</p>
+<pre><code>./hello</code></pre>
+<p>On Windows <a href="http://msdn.microsoft.com/en-us/library/ms235639.aspx">it looks slightly different</a>:</p>
+<pre><code>cl hello.c
+hello</code></pre>
+<h3 id="linking-with-a-library">Linking with a library</h3>
+<p>What if the standard C run-time library doesn&#39;t offer capabilities we need? Then we can search for a library that already exists and link to that (so long as the license fits our needs). For example, C doesn&#39;t know how to read and write sound files, but the <a href="https://github.com/erikd/libsndfile">libsndfile</a> library is designed to do just that. So the first thing we need to do is download &amp; install it. </p>
+<pre><code>...</code></pre>
+<p>Once installed, we need to tell the compiler where to find it. There are two parts to a library: the <strong>binaries</strong> which contain the actual machine code, and the <strong>headers</strong>, which are text files definining functions and types that tell you (and the compiler) how you can use the binaries. For example, library binaries might be installed into <em>/usr/lib</em> or <em>/usr/local/lib</em> on OSX/Linux, and headers into <em>/usr/include</em> or <em>/usr/local/include</em>. We can tell the compiler where to look using the <strong>-I</strong> and <strong>-L</strong> flags (<strong>/I</strong> and <strong>/link /LIBPATH</strong> on Windows):</p>
+<pre><code>cc -I/usr/local/include hello.c -L/usr/local/lib -o hello</code></pre>
+<p>But that only tells the compiler where to look. To actually use the headers we need to <strong>#include</strong> them in the source:</p>
+<pre><code>&amp;#35;include &amp;lt;sndfile.h&amp;gt;</code></pre>
+<p>And we also must tell the compiler to link the binary in our command, using the <strong>-l</strong> flag (or just the library name on Windows):</p>
+<pre><code>cc -I/usr/local/include hello.c -L/usr/local/lib -lsndfile -o hello</code></pre>
+<p>Sometimes the header file of a library is enough to understand how to use it, but usually we also want to refer to human-friendly <a href="http://www.mega-nerd.com/libsndfile/api.html">documentation and tutorial material</a>. </p>
+<p>This is only a <em>very very very basic</em> introduction to compiling C from the command line; reality can be <em>far far far more complicated</em>. Too complicated, really.</p>
+<h2 id="dynamic-language-example-lua">Dynamic language example: Lua</h2>
+<p>See <a href="lua.html">lua tutorial</a></p>
+<h2 id="data-structures">Data structures</h2>
+<p>A data structure is a way to meaningfully organize data. Principally the task is to design a layout schema for memory that provides optimal performance for the desired task(s) the data structure will be used for. </p>
+<h3 id="contiguous-memory">Contiguous memory</h3>
+<p>E.g. 1D Arrays and regular structs in C. </p>
+<ul>
+<li>If all data is local (no references or pointers to other locations), then the memory describes plain-old-data (<strong>POD</strong>), which can be very easily copied, stored, retrieved etc. Sometimes there may be some &#39;unused&#39; space in arrays or structs, e.g. to align struct fields or array rows on certain byte-length boundaries. </li>
+<li>Multi-dimensional dense arrays. We can represent a 10x10-element <strong>2D array</strong> using a 100-element 1D array, simply by addressing the memory accordingly. If we consider the 2D array in terms of rows and columns, we must choose between row-major or column-major ordering, i.e. whether horizontal or vertical neighbors are contiguous. This determines how iteration loops are nested (i.e. is the inner loop over X or Y?). The same principle can be applied to 3D or higher-dimensional arrays. </li>
+<li>Nested structures. A struct describes the semantics of a block of memory: what <strong>type</strong> of data is to be found at a particular <strong>offset</strong> within the memory block. It is composable: we can create arrays of structs, and structs that embed arrays and other structs. So long as all nested structures are POD, the whole is POD. </li>
+<li>Access. Accessing a desired point in an array or struct is extremely fast and cheap, especially if the region accessed is nearby other regions that were recently accessed. This applies equally to nested structures. </li>
+</ul>
+<h3 id="non-contiguous-memory">Non-contiguous memory.</h3>
+<p>Any data structure that uses pointers or references. </p>
+<p>One problem with POD data is that it cannot grow or shrink in size: the size is determined when it is allocated, because memory cannot move. For example, a list of active notes may need to dynamically vary according to performer behavior, or a list of active agents in a game varies according to player behavior. </p>
+<blockquote>
+<p>One POD-friendly solution is to pre-allocate enough space for a maximum number of items, and do not allow this to be exceeded. Another is to allocate a new, larger array when needed, and copy data from the old to the new, updating any references that were using it. Reallocation can be expensive and should not be used frequently.</p>
+</blockquote>
+<p>The non-contiguous solution is to create a linked data structure, such as a linked list. A <strong>linked list</strong> contains a variable number of nodes, each of which contains or refers to the desired objects of the list, as well as <em>link</em> references to neighbor nodes. For example, a singly-linked list:</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/408px-Singly-linked-list.svg.png" alt="linked list"></p>
+<p>(images courtesy of <a href="http://en.wikipedia.org/wiki/Linked_list">wikipedia</a>)</p>
+<p>Each node could be in a totally different area of memory, but we can easily &quot;walk the list&quot; by following the links. The advantage of this approach is that we can easily insert or remove an item from the middle of the list, simply by changing the link references:</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/CPT-LinkedLists-deletingnode.svg/380px-CPT-LinkedLists-deletingnode.svg.png" alt="linked list removal"></p>
+<p>A <strong>doubly linked list</strong> nodes have references in both directions, allowing traversal in either direction as well as simplifying removal:</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png" alt="doubly linked list"></p>
+<p>A <strong>circular linked list</strong> maps the tail to the head, allowing infinite traversal:</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Circularly-linked-list.svg/350px-Circularly-linked-list.svg.png" alt="circular linked list"></p>
+<p>By adding another link we can define structures with hierarchy, such as trees.</p>
+<p><img src="http://cslibrary.stanford.edu/109/tree.gif" alt="tree"></p>
+<p>Using both arrays and linked lists we can create a number of useful data structures. Which one to use depends on the frequent and possible use cases in context. All the possible use cases must be supported, and the frequent use cases should perform optimally. Generally, if we require fast &quot;random&quot; access, an array is ideal, however if we require fast insertion and removal, a linked list is far better. </p>
+<h3 id="stack">Stack</h3>
+<p>With a <a href="http://en.wikipedia.org/wiki/Stack_(data_structure)">stack</a> we only ever manipulate one end of the list, adding or removing items. This is also called <strong>LIFO</strong> (last-in, first-out). If implemented using an array, all we need is an integer to indicate where the current top of the stack is. If using a linked list, all we need is a singly-linked list and a pointer to the current top. Stacks are very important to computing, and widely used in low-level language implementations. They are also used at higher levels, such as the Undo/Redo stack in any application.</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/391px-Data_stack.svg.png" alt="Stack"></p>
+<h3 id="queue">Queue</h3>
+<p>A <a href="http://en.wikipedia.org/wiki/Queue_(data_structure)">queue</a> is also known as a FIFO (first-in, first-out), and implements pipe and stream behavior. We always add data at one end, and remove data at the other end.  It can be implemented on a fixed-size array using two &#39;head&#39; and &#39;tail&#39; indices, though this limits the maximum number of elements in the queue. It can be implemented on a linked list by keeping a reference to the head and tail nodes. </p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/300px-Data_Queue.svg.png" alt="Queue"></p>
+<p>A <strong>deque</strong> (pronounced &quot;deck&quot;, like a deck of cards) is a &quot;double-ended queue&quot;, in which items can be added and removed at both ends. It can be implemented on a doubly-linked list.</p>
+<p>The elements of a <strong>priority queue</strong> also have an associated &quot;priority&quot;, with which they are ordered (sorted). High priority events are served before low ones. For example, the start time of an event can be used to sort a list of events, such that earlier events are served first. Generally the two main tasks are to a) insert element with priority, and b) retrieve/remove the highest priority element. Often the list is preserved in a sorted state by being careful to only insert at the right location (a random-access insert). This is called &quot;insertion sort&quot;. By doing so, retrieval/removal always occurs at one end. </p>
+<h3 id="dictionary-aka-associative-array-or-map">Dictionary (aka Associative array or Map)</h3>
+<p>A <a href="http://en.wikipedia.org/wiki/Associative_array">dictionary</a> stores pairs, mapping from keys to values. Keys are unique (no key appears twice). The dictionary can be indexed at random by a key to return the value, and new pairs can be added, old pairs can be removed or old keys assigned new values. The Lua table is essentially a dictonary. Implementation challenges center on how to quickly resolve a given key, often via a <em>hash</em>.</p>
+<h3 id="other-structures">Other structures</h3>
+<p>Sets, multisets, multimaps, trees, graphs, strings, ... </p>
+<h2 id="live-programming-live-coding">Live Programming, Live Coding</h2>
+<p><a href="http://www.infoq.com/presentations/Live-Programming">Zen and the art of Live Programming</a>
+<a href="http://toplap.org/">TOPLAP</a>
+<a href="http://www.youtube.com/watch?v=TxQJPNSzl9s">Strange Places (Andrew Sorensen)</a></p>
+<h2 id="further-reading">Further reading</h2>
+<p><a href="http://www.stepanovpapers.com/notes.pdf">Notes on Programming (Alexander Stepanov)</a></p>
+<ol>
+<li>code should be partitioned into functions; </li>
+<li>every function should be most 20 lines of code; </li>
+<li>functions should not depend on the global state but only on the arguments; </li>
+<li>every function is either general or application specific, where general function is 
+useful to other applications; </li>
+<li>every function that could be made general – should be made general; </li>
+<li>the interface to every function should be documented; </li>
+<li>the global state should be documented by describing both semantics of individual 
+variables and the global invariants. </li>
+</ol>
+<hr>
+<h2 id="setting-up-a-c-development-environment">Setting up a C development environment</h2>
+<p>** THIS SECTION IS INCOMPLETE **</p>
+<p>Your operating system might not come with a compiler built-in, and it probably doesn&#39;t have all the libraries you need. Here&#39;s some quick notes on getting set up:</p>
+<h3 id="linux">Linux</h3>
+<p>Getting a compiler:</p>
+<pre><code>sudo apt-get install gcc</code></pre>
+<p>For any other libraries, you can often get them with</p>
+<pre><code>sudo apt-get install &amp;lt;libraryname&amp;gt;</code></pre>
+<p>In this case, <em>sudo</em> means execute with administrative privileges, <em>apt-get</em> is a program for installing software and libraries (a &quot;package manager&quot;), <em>install</em> is the action for apt-get, and <em>gcc</em> is the application we will install (it will also install all dependencies).</p>
+<h3 id="osx">OSX</h3>
+<p>Getting a compiler: For recent versions of OSX you must install command line tools manually. <a href="http://stackoverflow.com/questions/9329243/xcode-4-4-command-line-tools">You can do this from inside Xcode, or as a direct download from Apple</a>. Either way you will need to register with the Apple developer center. </p>
+<p>For any other libraries: There is no built-in &quot;package manager&quot; for OSX, but there are several that people have written. I currently recommend using one called &quot;brew&quot;, which you can install by <a href="http://brew.sh">following the instructions here</a>. Once installed, run <em>brew doctor</em> to ensure your system is properly configured; do whatever it says until it is happy. Then, to install librares:</p>
+<pre><code>brew install &amp;lt;libraryname&amp;gt;</code></pre>
+<h3 id="windows">Windows</h3>
+<p>Install a recent Visual Studio (e.g. Visual Studio 2012); this includes a compiler and a command line, found in the Start menu under &quot;Visual Studio command prompt&quot;.</p>
+<p>Package managers for Windows are less usual; many libraries provide binaries or installers directly instead.</p>
+<p><a href="http://0800-putaria.tumblr.com/"><img src="http://24.media.tumblr.com/tumblr_m26e2n7kQt1r8o4qmo1_500.gif" alt="stochastics"></a></p>
+<hr>
+<h1 id="audio-programming">Audio Programming</h1>
+<h3 id="bit-depth">Bit depth</h3>
+<p>The quantization bit depth of the representation determines the signal to noise ratio (SNR), or dynamic range. Every bit of resolution gives about 6dB of dynamic range, so a 24 bit audio representation has 144dB. </p>
+<p>The <a href="http://en.wikipedia.org/wiki/Decibel">decibel</a> (dB) is a logarithmic unit to represent a ratio between to quantities of intensity. &quot;The number of decibels is ten times the logarithm to base 10 of the ratio of the two power quantities.&quot; (IEEE Standard 100 Dictionary of IEEE Standards Terms). A change by a factor of 10 is a 10dB change, and a change by a factor of 2 is about a 3dB change.</p>
+<p>Decibels are frequently used in two ways in audio: </p>
+<ol>
+<li>To represent the acoustic power of a signal, relative to a standard measure approximating the minimum theshold of perception. The loudness of different sound-making devices can be measured in decibels, which will typically be positive (louder than the reference threshold).</li>
+<li>To represent the signal-to-noise ratio of a digital representation. In this case signals are measured in reference to the <em>maximum</em> power signal (amplitude value of +/- 1), and thus are typically negative. OdB indicates full power. Positive dB indicates signals above the representation range, which will be clipped, and negative dB indicates quieter signals. The range between full power and the smallest representable (nonzero) signal specificies the signal-to-noise ratio of a representation. </li>
+</ol>
+<p>The human ear can discriminate around 120dB of dynamic range, though this is frequency dependent. A 16 bit depth (standard CDs) provides around 120dB. However when operating and transforming audio greater headroom is needed.</p>
+<h2 id="excitation-resonance-and-other-physical-models">Excitation-resonance and other physical models</h2>
+<p>It is widely and often commented that purely electronic sounds are too thin, shallow, artificial, cold, pure, etc. We should know that this criticism does not apply to computer-generated sound <em>in principle</em>, as we can reconstruct rich, deep, impure sounds during sample playback. The criticism really applies to the mathematical models that have been often been used to solve the computer music problem. </p>
+<p>One response to this has been to attempt to recreate nature in the computer, by running simulations of the physical (usually kinetic, mechanical) systems of musical instruments. In the computer music community it is often referred to as <strong>physical modeling</strong>. A &quot;model&quot; predicts the behavior of a physical system from an initial state and input forces. A &quot;physical model&quot; is one using systems drawn from physics, such as mass-spring-damper systems. </p>
+<p><a href="https://ccrma.stanford.edu/~jos/pasp/">Julius Smith&#39;s online book of physical modeling</a></p>
+<p>Most acoustic physical models describe a process in which a source of energy (the &quot;excitation&quot;) is transduced into the physical system, and then propagates as waves constrained by the system as a medium (&quot;resonance&quot;), some of which energy is transferred to pressure waves in the air (&quot;sound&quot;) reaching our ears (&quot;reception&quot;). In fact most sounds that we hear in nature follow this form of excitation -&gt; resonance. Several pheonomena are common:</p>
+<ul>
+<li>After the excitation is removed, energy gradually dissipates away</li>
+<li>The resonant objects (including the physical environment) emphasize certain frequencies over others (this is the &quot;resonating&quot; aspect), </li>
+<li>High frequencies typically dissipate sooner than lower frequencies</li>
+</ul>
+<p>These are such fundamental aspects of natural sound that our psychoacoustic experience is hard-wired to them. Sustained sounds suggest a continuous input of energy. Crescendoes in nature are rare (wind, waves, approaching elephants). </p>
+<h3 id="vibrating-strings">Vibrating strings</h3>
+<p>Perhaps the simplest physical model is the vibrating string, such as found on a guitar or gayagum. The excitation is by plectrum or finger rubbing against and displacing the string (a short burst of randomized energy), or a bow continuously imparting random displacements (a longer, sustained input of noise). The resonance of the string is the vibrations it supports, which gradually decay as the energy dissipates into the instrument body. The body itself also resonates in a rich way, transducing energy to airborne sound.</p>
+<p>Because the string is constrained at each end, the only waveforms of vibration that can remain stable are proportional to integer divisions of the string length. This strongly constrains the sound produced, turning the rich spectrum of the noisy pluck into a more organized, decaying mixture of tones:</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Harmonic_partials_on_strings.svg/220px-Harmonic_partials_on_strings.svg.png" alt="Fundamental and overtones of a vibrating string"></p>
+<p><a href="http://www.youtube.com/watch?v=XkSglALOueM">Slow motion video of a bass string vibration</a></p>
+<p>The simplest model of a vibrating string was presented by Karplus and Strong:</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/9/9d/Karplus-strong-schematic.png" alt="KP string"></p>
+<ol>
+<li>A noise burst (representing the pluck) is used as input added to a delay line. </li>
+<li>The delay line length defines the fundamental tone of the string. </li>
+<li>The feedback path includes a filter to emulate the way energy is gradually dissipated from the string (usually removing higher frequencies more quickly than lower ones). The gain of the filter must be less than 1 to avoid saturated feedback.</li>
+</ol>
+<hr>
+<h2 id="granular-synthesis-and-microsounds">Granular synthesis and microsounds</h2>
+<p>Granular synthesis is a basic sound synthesis method that operates by creating sonic events (often called &quot;grains&quot;) at the microsound time scale.</p>
+<blockquote>
+<p>Microsound includes all sounds on the time scale shorter than musical notes, the sound object time scale, and longer than the sample time scale. Typically this is shorter than one tenth of a second and longer than ten milliseconds, including the audio frequency range (20 Hz to 20 kHz) and the infrasonic frequency range (below 20 Hz, rhythm). </p>
+</blockquote>
+<ul>
+<li><a href="http://books.google.co.kr/books/about/Microsound.html">Microsound (Curtis Roads)</a> is the principal textbook</li>
+</ul>
+<p>Microsound was pioneered by physicist Denis Gabor and explored by composers Iannis Xenakis, <a href="http://www.youtube.com/watch?v=0mQ8zRZOlrk">Curtis Roads</a>, <a href="http://www.youtube.com/watch?v=K-FjnKiDWQc">Horacio Vaggione</a>, <a href="http://www.youtube.com/watch?v=X7FoPo-kyoM">Barry Truax</a>, <a href="http://www.youtube.com/watch?v=lekLl7o8yrc">Trevor Wishart</a>, and many more.</p>
+<p>Besides this, what is it useful for?</p>
+<ul>
+<li>Impulse trains</li>
+<li>Physical modeling of shaker-like instruments</li>
+<li>Speech synthesis (e.g. FOF)</li>
+<li>Wavelet analysis/resynthesis</li>
+<li>Time/frequency resampling effects such as pitch-shifting and time-stretching</li>
+<li>Separated processing of transients and stable waveforms, e.g. </li>
+<li>Cricket chirps, frog croaks, etc.</li>
+<li>Many other sonic textures of variable density, color, quality, and stochastic distributions</li>
+</ul>
+<p>Implementing a granular synthesis techinque involves two challenges:</p>
+<ol>
+<li><strong>Specify the grain</strong>: How to synthesize the individual samples of a grain (the <em>content</em>), how to specify the <em>duration</em>, what overall amplitude shape (the <em>envelope</em>) to apply, and how these can be parametrically controlled. </li>
+<li><strong>Specify how grains are parameterized and laid out in time</strong>: Whether to arrange grains at equal or unequal spacing, how densely they overlap, and so on; how to distribute parameter variations through the grains of a particular granular &quot;cloud&quot;. Often clouds include stochastic distributions.</li>
+</ol>
+<h3 id="grain-content">Grain content</h3>
+<p>Any sound source can be turned into a grain, by limiting the duration and choosing the envelope shape. It could be a mathematical synthesis technique, from a pure sine wave or noise source to a complex timbre. Or it could be a routine to select portions out of an existing waveform or input stream (&quot;granulation&quot;). </p>
+<p>With large populations of grains it can be very expensive to run complex routines for each grain. However as grain durations get shorter, there is less audible information stored in a grain and the exact synthesis algorithm becomes less important. Thus wavetable playback is often utilized.</p>
+<h3 id="grain-envelope">Grain envelope</h3>
+<p>Similarly, envelopes can be either computed dynamically, or read from precalculated wavetable data. The shape of an envelope becomes increasingly important in determining the perceived sound as durations get shorter. Most envelopes begin and end at zero amplitude. Denis Gabor originally suggesed a Gaussian envelope shape, but today applications can make use of many mathematical and procedural envelope shapes. </p>
+<p>Often the envelope chosen is symmetric in time, rising from zero to peak at half-duration and falling back to zero; these shapes are frequently also used as <strong>window</strong> functions for signal analysis. The spectral properties of windows, represented by their Fourier transforms, are very significant in determining how well they suppress aliasing noise in the analysis (aliasing noise results from a time/space trade-off due to finite discretization). If we define &quot;norm&quot; as a ramp from 0 to 1 over the duration, and &quot;snorm&quot; as a ramp from -1 to 1 over the duration, we can define many classic window shapes:</p>
+<ul>
+<li>Parabolic: 1 - snorm^2</li>
+<li>Cosine/Welch: sin(pi*norm), </li>
+<li>Bartlett/Triangle: 2*min(norm, (1-norm))</li>
+<li>Gaussian: exp(-0.5 * (n*snorm)^2)</li>
+<li>Blackmann: 0.42-0.5*(cos(2<em>pi</em>norm)) + 0.08<em>cos(4</em>pi*norm)</li>
+<li>Hamming: 0.53836 - 0.46164<em>cos(2</em>pi*norm)</li>
+<li>Hann: 0.5*(1-cos(pi<em>2</em>norm))</li>
+<li>Sinc/Lanczos: sin(pi<em>snorm)/(pi</em>snorm)</li>
+<li>Nutall: 0.355768 - 0.487396<em>cos(2</em>pi<em>norm) + 0.144323</em>cos(4<em>pi</em>norm) - 0.012604<em>cos(6</em>pi*norm)</li>
+<li>Blackman-Harris: 0.35875-0.48829<em>cos(2</em>pi<em>norm)+0.14128</em>cos(4<em>pi</em>norm)-0.01168<em>cos(6</em>pi*norm)</li>
+<li>Blackman-Nutall: 0.3635819-0.4891775<em>cos(2</em>pi<em>norm)+0.1365995</em>cos(4<em>pi</em>norm)-0.0106411<em>cos(6</em>pi*norm)</li>
+<li>FlatTop / Kaiser-Bessel: 0.22*(1-1.93<em>cos(2</em>pi<em>norm)+1.29</em>cos(4<em>pi</em>norm)-0.388<em>cos(6</em>pi<em>norm)+0.032</em>cos(8<em>pi</em>norm))</li>
+<li>Bessel: 0.402-0.498<em>cos(2</em>pi<em>norm)+0.098</em>cos(4<em>pi</em>norm)-0.001<em>cos(6</em>pi*norm)</li>
+</ul>
+<p>These an many other more complex window shapes are detailed <a href="http://en.wikipedia.org/wiki/Window_function">on the wikipedia page</a>, including time and frequency domain representations.</p>
+<p>Other envelope shapes are non-symmetric, and will impart stronger percussive or reverse effects to the sounds:</p>
+<ul>
+<li>Inc: norm, Dec: 1-norm, Saw: snorm</li>
+<li>Expodec: (1-norm)^n, Rexpodec: norm^n (and logarithmic versions for n&lt;0)</li>
+<li>Attack-release, attack-sustain-release, attack-decay-sustain-release and more complex linear, bezier or spline-segment shapes (some inspired by <a href="http://en.wikipedia.org/wiki/Synthesizer#ADSR_envelope">note-envelopes common to synthesizers</a>)</li>
+<li>Any symmetric window can be stretched by applying a non-symmetric transform to norm or snorm in advance.</li>
+</ul>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/ADSR_parameter.svg/213px-ADSR_parameter.svg.png" alt="ADSR"></p>
+<p>In some cases an envelope is not needed at all, when the content can be arranged to have a natural intrinsic envelope shape.</p>
+<h3 id="grain-distribution">Grain distribution</h3>
+<p>The principal method of combining grains into a cloud is called &quot;overlap-add&quot;. A <em>scheduler</em> maintains a list of grains to play, working through the list of grains (sorted by grain onset time) and playing each grain in turn. Each grain adds its samples to the output buffer, accumulating onto (rather than replacing) the samples of any other previously played grains with which it overlaps. This is essentially the same as mixing multiple musical notes together, only with much shorter durations (and more accurately placed onset times).</p>
+<blockquote>
+<p>In our software we already have sample-accurate overlap-add capability via audio.play() and audio.go()/audio.wait(). </p>
+</blockquote>
+<p>The great computer music problem appears again here: for populations of hundreds or thousands of grains, how to specify each grain&#39;s onset, duration, amplitude, spatial location and other parameters to create a meaningful result? Fortunately the situation for grains is more accessible than for individual samples.</p>
+<p>The spacing of grain onset times can be regular (<em>synchronous</em>) or irregular (<em>asynchronous</em>). Regular placement of grains can introduce another audible frequency effect. Holding the grain rate constant but varying the duration can achieve formant effects and simulate vocal sounds. With randomly distributed onset times however, density becomes a principal parameter. At longer time scales it can create <a href="http://www.youtube.com/watch?v=uIeA2ct5Sew">rhythmic</a> or <a href="http://www.youtube.com/watch?v=MA6ZXYIfLpA">&quot;bouncing&quot;</a> effects.</p>
+<p>For granulation techniques, varying the start-point of the source waveform for each grain can be used to create time-stretching effects, or shifting the playback rate can be used to create pitch-shifting effects. Adding some random distribution to onset and duration can create a more organic, less metallic effect, but may weaken the strength of transients in the original. </p>
+<p>More generally, all parameters of a stream or cloud can be held constant, gradually shifted, randomly selected from a set, or distributed randomly around a center value as desired, to create many different complex shapes. Beyond this level, the task is to arrange the grains, streams and clouds together over space in time to construct a meaningful musical space. Changing the shapes of distributions over time was an important composition method of Iannis Xenakis. Beyond regular and random distributions, we could also explore the use of more generative algorithms such as Markov-chains, swarm dynamics and evolutionary algorithms.</p>
+<hr>
+<h2 id="sounds-as-summations-of-cyclic-rotations-fourier">Sounds as summations of cyclic rotations (Fourier)</h2>
+<p><a href="http://toxicdump.org/stuff/FourierToy.swf">A great interactive, visual explanation</a></p>
+<hr>
+<h2 id="non-histories-of-computer-music">Non-histories of computer music</h2>
+<p>Delia Derbyshire (of Doctor Who fame):</p>
+<ul>
+<li><a href="http://youtu.be/szE5D-dPs_Y">Delia Derbyshire circa 1963!</a></li>
+<li><a href="http://youtu.be/K6pTdzt7BiI">Delia Derbyshire etc. circa 1969!</a></li>
+</ul>
+<hr>
+<h2 id="general-resources">General Resources</h2>
+<p>Online (free) texts:</p>
+<ul>
+<li><a href="https://ccrma.stanford.edu/~jos/">Julius Smith&#39;s online DSP books</a></li>
+<li><a href="http://crca.ucsd.edu/~msp/techniques.htm">Miller Puckette&#39;s book</a></li>
+<li><a href="http://www.dspguide.com/pdfbook.htm">Steven Smith&#39;s DSP book</a></li>
+</ul>
+<p>Non-free texts:</p>
+<ul>
+<li><a href="https://mitpress.mit.edu/books/audio-programming-book">Audio Programming Book</a></li>
+<li><a href="http://books.google.co.kr/books/about/The_Computer_Music_Tutorial.html?id=nZ-TetwzVcIC&amp;redir_esc=y">Computer Music Tutorial</a></li>
+<li><a href="http://www.musimathics.com/">Musimathics</a></li>
+<li><a href="http://www.amazon.com/Understanding-Digital-Processing-Edition-ebook/dp/B004DI7JIQ/ref=sr_1_1">Understanding DSP</a></li>
+<li><a href="http://www.amazon.com/Who-Is-Fourier-Mathematical-Adventure/dp/0964350408/ref=sr_1_2?ie=UTF8&amp;qid=1384225180&amp;sr=8-2&amp;keywords=who+is+fourier%3F">Understanding Fourier (if you don&#39;t know math)</a></li>
+</ul>
+<p>Forums</p>
+<ul>
+<li><a href="http://www.kvraudio.com/forum/">KVR (a lot of DSP and plugin development stuff, since years ago!)</a></li>
+<li><a href="http://createdigitalnoise.com/">Create Digital Noise</a></li>
+</ul>
+
+<footer>DIGM5010 2021-22</footer>
+</body>
+<script src="js/connect.js"></script>
+</html>
