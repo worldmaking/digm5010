@@ -73,7 +73,7 @@ week 2: what is computation
 |:--- |:--- |:--- |:--- |
 | [9/4](#week-0)    | [What is Research?](#what-is-research)                 | [Call for Papers](#a-call-for-papers) & discussion | Identify motivations, areas, research communities  |
 | [9/11](#week-1)   | [What is Computation?](#what-is-computation)           | [Computational Sketching](#computational-sketching) | Focused topic selection |
-| [9/18](#week-2)   | Introductions                                          |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
+| [9/18](#week-2)   | [Introductions](#introductions)                        |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
 | [9/25](#week-3)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail) | 1-on-1's                  | Problem/thesis statement |
 | [10/2](#week-4)   |                                                        |                                     | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
 | [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
@@ -190,11 +190,6 @@ Please add 2-4 slides to introduce yourself in The Google Slide deck here: https
 - Remember to include your name, and reference details (name, link etc.) for any images or media you add.
 - Please be careful not to delete your colleague's slides!
 
-## A reading
-
-I said in class we should look at others’ Masters & PhD theses/dissertations for inspiration. Here’s the Masters thesis of Golan Levin, from when he was a student at MIT. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. Have a good read and bring some thoughts and questions for next week:
-http://www.flong.com/archive/texts/publications/thesis/index.html
-
 
 ## Week 1 
 Sep 11, 2023
@@ -228,7 +223,11 @@ Maeda's courses challenged students to rethink the medium from its most basic el
 
 > Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
 
+### A reading
+
 Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?  (Also note the document structure.)
+
+Have a good read and bring some thoughts and questions for next week: http://www.flong.com/archive/texts/publications/thesis/index.html
 
 -----
 
@@ -255,7 +254,6 @@ https://codepen.io/grrrwaaa/pen/Yzdxwgj
 -----
 
 Can you continue by drawing an example from Golan Levin's research-creation thesis?
-
 
 
 ## Week 2 
