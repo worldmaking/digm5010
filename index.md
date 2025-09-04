@@ -5,24 +5,9 @@ Thursdays, 1.30pm-4.20pm, Fall 2024, Fine Arts building room ACW 102
 
 **Instructor:** [Graham Wakefield](https://discover.academics.yorku.ca/Graham.Wakefield) g rrr w aaa a t yor ku do t ca
 
-**Hello and welcome!**
+**Online resources**
 
-| Date | Topic | Activity | Academic paper workflow |
-|:--- |:--- |:--- |:--- |
-| [9/4](#week-0)   | [Computational Arts + Computer Science](#what-is-computation) |                              | Identify motivations, areas, &  [Call for Papers](#a-call-for-papers) |
-| [9/11](#week-1)   | [What is Research?](#what-is-research)                 | Introductions                       | Focused topic selection |
-| [9/18](#week-2)   | [Computational Sketching](#computational-sketching)    | Live Coding                         | [Initial reading list](#preparing-a-reading-list) |
-| [9/25](#week-3)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail) | Live Coding               | Problem/thesis statement |
-| [10/2](#week-4)   |                                                        |                                     | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
-| [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
-| [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
-| [10/23](#week-6)   |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
-| [10/30](#week-7)   | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
-| [11/6](#week-8)   |                                                        | Paper 1-on-1's                      | Revisions |
-| [11/13](#week-9)   |                                                        |                                     | [Final paper](#final-paper) |
-| [11/20](#week-10) |                                                        | Video/Tutorial                      |  |
-| [11/27](#week-11) | [Final presentations](#final-presentations)            |                                     |  |
-
+Almost everything about this course will be linked from https://alicelab.world/digm5010 -- bookmark this URL -- or it will be in [eClass](https://eclass.yorku.ca/course/view.php?id=144540)
 
 ## What is DIGM 5010 "Foundations"?
 
@@ -55,34 +40,56 @@ Establishing these foundations is ultimately evaluated through the potential to 
 
 Each weekly meeting will vary in format, but always at the heart is the discussion between all of us. This isn't a course with a static syllabus of material -- it is an adaptive living system. 
 
-In the early part of the course the instructor may bring lecture material or assign readings or research tasks; and we will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice. You are also expected to bring work to share, **making things** in response to our discussions and course topic. You should be keeping your notes, studies and practices documented in a **public journal**. (Class participation, making and journalling make up the first 25% of the course grade.)
+The course essentially has two parallel threads. 
 
-As this goes on, each of you will develop a focus on a specific topic to research in depth, leading to a project documented in a research paper. The project's goal is to functionally reproduce and/or interestingly mutate work from the research community and literature. 
-  - It will be grounded through an **extensive literature review** (25%),
-  - will demonstrate your foundational computational literacy and ability to understand and transfer research into creative applications (25%),
-  - and will be documented in **a research paper** with scholarly citations **suitable to submit to conferences or other appropriate venues** (25%).
+In one thread, you will work through the stages of developing a research topic and question into a publishable research paper. This includes several milestone stages (some with course evaluation components for a total of 75% of the course grade). 
+- Reflection and topic/area focus
+- Initial reading list (10%)
+- Problem/thesis question (10%)
+- Annotated bibliography (10%)
+- Paper outline & drafting 
+- Peer review session (10%)
+- Revisions
+- Final paper (20%)
+- Research presentation (10%)
+- "Post-mortem" reflection (5%)
+We will have focused seminar time to discuss these stages, contextualizing them in different academic research (and research-creation) cultures and traditions, as well as new developments. We will also have dedicated one-on-one time for individual support and advice.  
 
-We will go through draft processes and a simulated conference submission and review procedure later in the course to help understand academic research structures and refine your work. In the past years, some students have also been successful in submitting their final papers to real academic conferences.
+In the past years, some students have also been successful in submitting their final papers to real academic conferences. For example, in 2024, all 12 students completed their papers, 8 of whom submitted them to the ISEA conference (a leading conference in our field), and 4 of these were accepted and presented at the conference! 
 
-**Online resources**
+In the other thread of the course, we will examine digital media research and research-creation with a focus on practice. We will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice (and practice in theory). The specific topics vary from year to year and are adapted where possible to the interests of the group (and the expertise of the instructor). 
 
-Almost everything about this course will be linked from https://alicelab.world/digm5010 -- bookmark this URL!
-
-Previously we have also used a Microsoft Teams account for sharing file materials etc., but I have found it somewhat unreliable/unstable and I am open to alternatives if there are good suggestions.
-
-**Remote participation**
-
-Regardless whether we are meet in person or remotely, I usually prefer to open a Zoom session for my classes, and use share screen for the most part. 
-- [Zoom meeting (same link every week)](https://yorku.zoom.us/j/96026498749?pwd=GxDnvrbaakCBVHMnYGfjjV2BSzfnbz.1)
-- [Add it to your calendar (.ics file)](https://yorku.zoom.us/meeting/tJItde-spzMtHt2UWm0pooTbObZTyzHvRwPp/ics?icsToken=DJlLMsOiQytAOL9xOwAALAAAAP3hyC5IHSyy_0JNFK0XI0DAmhtXfKy49b4w4jNx0sBDpXbmJQkrwr_szFDfq7YyOSxD5SoN28ejXz-oBjAwMDAwMQ&meetingMasterEventId=NIR5etiQTrCVoHcvUzJ5zw)
-
-I normally also record sessions and share recordings with the course participants (so long as no participants have objections to this), as I have heard that it has been useful for many students to be able to review sessions after class hours, including when, due to factors outside their control, they could not attend in class time. *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the graduate situation, and moreover allows some time to review any material if it seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
-
-----
+You are also expected to bring work to share, **making things** in response to our discussions and course discussions. You should be keeping your notes, studies and practices documented in a journal, which you will submit at the end of the course. Class participation, making and journalling make up 25% of the course grade.
 
 *Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
 
------
+**Schedule**
+
+| Date | Topic | Activity | Academic paper workflow |
+|:--- |:--- |:--- |:--- |
+| [9/4](#week-0)   | [Computational Arts + Computer Science](#what-is-computation) |                              | Identify motivations, areas, &  [Call for Papers](#a-call-for-papers) |
+| [9/11](#week-1)   | [What is Research?](#what-is-research)                 | Introductions                       | Focused topic selection |
+| [9/18](#week-2)   | [Computational Sketching](#computational-sketching)    | Live Coding                         | [Initial reading list](#preparing-a-reading-list) |
+| [9/25](#week-3)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail) | Live Coding               | Problem/thesis statement |
+| [10/2](#week-4)   |                                                        |                                     | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
+| [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
+| [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
+| [10/23](#week-6)   |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
+| [10/30](#week-7)   | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
+| [11/6](#week-8)   |                                                        | Paper 1-on-1's                      | Revisions |
+| [11/13](#week-9)   |                                                        |                                     | [Final paper](#final-paper) |
+| [11/20](#week-10) |                                                        | Video/Tutorial                      |  |
+| [11/27](#week-11) | [Final presentations](#final-presentations)            |                                     | Post-mortem reflection |
+
+**Class recording**
+
+Classes are in-person. However, I usually prefer to open a Zoom session for my classes, and use share screen for the most part. 
+- [Zoom meeting (same link every week)](https://yorku.zoom.us/j/96026498749?pwd=GxDnvrbaakCBVHMnYGfjjV2BSzfnbz.1)
+- [Add it to your calendar (.ics file)](https://yorku.zoom.us/meeting/tJItde-spzMtHt2UWm0pooTbObZTyzHvRwPp/ics?icsToken=DJlLMsOiQytAOL9xOwAALAAAAP3hyC5IHSyy_0JNFK0XI0DAmhtXfKy49b4w4jNx0sBDpXbmJQkrwr_szFDfq7YyOSxD5SoN28ejXz-oBjAwMDAwMQ&meetingMasterEventId=NIR5etiQTrCVoHcvUzJ5zw)
+
+I normally also record sessions and share recordings with the course participants (so long as no participants have objections to this), as I have heard that it has been useful for many students to be able to review sessions after class hours.
+
+*Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the graduate situation, and moreover allows some time to review any material if it seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
 
 ## Week 0 
 Sep 4, 2023
@@ -102,8 +109,6 @@ So for example, what does "computation" mean to you?
 
 Deep dive: [What is computation?](automata.html) - History, theory, implementation; programs as data
 
----
-
 ## A question
 
 Take some time to think about this: 
@@ -112,9 +117,7 @@ Take some time to think about this:
   - why do you want to dedicate several precious years of your life to research in computational arts & computer science -- what does this mean for you? 
   - Is there a great risk, or a great unseen opportunity, in the computational/digital media world -- present and/or future -- one that also speaks to you?
 
-[Write into the form here](https://docs.google.com/forms/d/e/1FAIpQLSdGbObBWxsQpDoewMLRYDhqJ16EJEsZbbbrpbnNrNkN2u03EA/viewform?usp=sf_link)
-
----
+[Write into the form here](https://eclass.yorku.ca/mod/questionnaire/view.php?id=3790153)
 
 ## A Call for Papers
 
@@ -185,9 +188,6 @@ Please add 2-4 slides to introduce yourself in The Google Slide deck here: https
 
 I said in class we should look at others’ Masters & PhD theses/dissertations for inspiration. Here’s the Masters thesis of Golan Levin, from when he was a student at MIT. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. Have a good read and bring some thoughts and questions for next week:
 http://www.flong.com/archive/texts/publications/thesis/index.html
-
-## Your Journal
-
 
 
 ## Week 1 
