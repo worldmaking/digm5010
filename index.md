@@ -65,19 +65,23 @@ You are also expected to bring work to share, **making things** in response to o
 
 **Schedule**
 
-| Date | Topic | Activity | Academic paper workflow |
+week 1: what is research
+
+week 2: what is computation
+
+| Date | Topic | Activity | Research Paper Workflow |
 |:--- |:--- |:--- |:--- |
-| [9/4](#week-0)   | [Computational Arts + Computer Science](#what-is-computation) |                              | Identify motivations, areas, &  [Call for Papers](#a-call-for-papers) |
-| [9/11](#week-1)   | [What is Research?](#what-is-research)                 | Introductions                       | Focused topic selection |
-| [9/18](#week-2)   | [Computational Sketching](#computational-sketching)    | Live Coding                         | [Initial reading list](#preparing-a-reading-list) |
-| [9/25](#week-3)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail) | Live Coding               | Problem/thesis statement |
+| [9/4](#week-0)    | [What is Research?](#what-is-research)                 | [Call for Papers](#a-call-for-papers) & discussion | Identify motivations, areas, research communities  |
+| [9/11](#week-1)   | [What is Computation?](#what-is-computation)           | [Computational Sketching](#computational-sketching) | Focused topic selection |
+| [9/18](#week-2)   | Introductions                                          |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
+| [9/25](#week-3)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail) | 1-on-1's                  | Problem/thesis statement |
 | [10/2](#week-4)   |                                                        |                                     | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
 | [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
 | [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
-| [10/23](#week-6)   |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
-| [10/30](#week-7)   | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
+| [10/23](#week-6)  |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
+| [10/30](#week-7)  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
 | [11/6](#week-8)   |                                                        | Paper 1-on-1's                      | Revisions |
-| [11/13](#week-9)   |                                                        |                                     | [Final paper](#final-paper) |
+| [11/13](#week-9)  |                                                        |                                     | [Final paper](#final-paper) |
 | [11/20](#week-10) |                                                        | Video/Tutorial                      |  |
 | [11/27](#week-11) | [Final presentations](#final-presentations)            |                                     | Post-mortem reflection |
 
@@ -105,9 +109,11 @@ So, be comfortable to get out of your comfort zone. Learn from each other. It's 
 
 So for example, what does "computation" mean to you?
 
-## What is computation?
+What does "research" mean to you?
 
-Deep dive: [What is computation?](automata.html) - History, theory, implementation; programs as data
+## What is Research?
+
+Deep dive [presentation](research.html) & discussion
 
 ## A question
 
@@ -194,7 +200,9 @@ http://www.flong.com/archive/texts/publications/thesis/index.html
 Sep 11, 2023
 [Class Recording](#zoom-recordings)
 
-[Introductions](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU)
+## What is computation?
+
+Deep dive: [What is computation?](automata.html) - History, theory, implementation; programs as data
 
 ## Computational sketching
 
@@ -254,9 +262,10 @@ Can you continue by drawing an example from Golan Levin's research-creation thes
 Sep 18, 2023
 [Class Recording](#zoom-recordings)
 
-## What is Research?
+## Introductions
 
-Deep dive [presentation](research.html) & discussion
+[Introductions](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU)
+
 
 ## Preparing a Reading List
 
@@ -284,8 +293,6 @@ As we saw in class, good research needs a good research question, but that doesn
 - [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
 - [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
-
-----
 
 ## Making 2: animate drawing
 
