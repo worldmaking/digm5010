@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Space</title>
+<meta name="description" content="">
+<meta name="author" content="Graham Wakefield">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/github.css" type="text/css" />
+<style>
+header {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+
+footer {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+</style>
+</head>
+
+<body class="centremaxwidth960">
+<header><a href="index.html">Foundations of Digital Media</a></header>
+<ul>
+<li><a href="#space">Space</a><ul>
+<li><a href="#mathematical-representation">Mathematical representation</a><ul>
+<li><a href="#spaces-and-transformations">Spaces and transformations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#graphics-programming">Graphics programming</a><ul>
+<li><a href="#webgl-pipeline">WebGL pipeline</a></li>
+<li><a href="#image-order-and-object-order-rendering">Image-order and object-order rendering</a><ul>
+<li><a href="#glsl">GLSL</a></li>
+<li><a href="#ray-based-rendering">Ray-based rendering</a></li>
+<li><a href="#sphere-tracing">Sphere tracing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+<h1 id="space">Space</h1>
+<h2 id="mathematical-representation">Mathematical representation</h2>
+<p>Computer graphics builds upon Euclidean/<a href="http://en.wikipedia.org/wiki/Cartesian_coordinate_system">Cartesian</a> foundations, in which a space has dimensions defined by axes centred on an origin. For example, any point in a regular space of two dimensions (2D) may be described by two numbers, for the signed distance (coordinate) from the origin along X and Y axis values respectively. Similarly, in 3D, any point may be described by the triplet (x, y, z). Mathematically we treat the space as a direct mapping of N-dimensional real numbers, R<sup>2</sup> or R<sup>3</sup> respectively. The general term for pairs and triplets (and higher dimensions of grouped parameters) is a <em>tuple</em> or <em>vector</em>. </p>
+<p>Note that this representation assumes knowledge of the origin and axes, the <em>coordinate frame</em> convention of the space. In OpenGL, the standard coordinate convention is right-handed, with positive to the right, Y positive upwards, and Z positive coming out of the screen (toward your eye):</p>
+<p><img src="img/coordSystem.jpg" alt="OpenGL coordinate convention"></p>
+<p>The Cartesian model is not the only possible representation of a space. For example, we can also model the location of a point in 2D space relative to the origin in terms of a distance and angle; the <em>polar</em> representation](<a href="http://en.wikipedia.org/wiki/Polar_coordinate_system">http://en.wikipedia.org/wiki/Polar_coordinate_system</a>). To extend polar coordinates to 3D space we can use cylindrical (x, y, angle) or spherical (e.g. distance, azimuth, elevation) coordinate systems.f</p>
+<blockquote>
+<p>Note that we also use the term &#39;space&#39; for parametric, multi-dimensional systems that are not necessarily related to spatial extension as such. For example, we can consider a space of possible colors (perhaps three dimensions of red, green and blue components), or a space of possible joint positions and orientations of a robot arm (with as many dimensions as there are moveable parts), or even a space of possibly very high-dimensional input parameters to a neural network. </p>
+</blockquote>
+<h3 id="spaces-and-transformations">Spaces and transformations</h3>
+<p>The coordinate frame we take as the origin is arbitrary. One space may more closely represent perceptual properties, while another more closely maps to hardware representation (e.g. HCL vs RGB representation of color). The meaning of <em>distance</em> depends on the spatial representation, and thus also operations of translation, neighborhood and interpolation. Choosing the right space to operate in is very important for the meaning of the result.</p>
+<p>Even if we think about regular, &#39;spatial&#39; space, like the 3D space around us, it can be more useful to work with multiple coordinate frames (multiple &quot;spaces&quot;) in a world. For example, it is often convenient to transform into a coordinate system centered on a particular object (such as a character in a game), placing the origin at the object&#39;s center and the axes aligned to the object&#39;s current orientation, perhaps even scaled to the object&#39;s size. Having multiple spaces is very important because certain operations are much easier (or faster) to compute in one spatial representation than another. </p>
+<p>Then we will need a mapping to transform from one space to another. This can be a series of operations. If we have one coordinate frame, which we can all <code>world</code>, and other, which we can call <code>object</code>, then to transform from world to object we can apply:</p>
+<ul>
+<li><code>transate</code>: move by a vector from the world centre to the object&#39;s position, </li>
+<li><code>rotate</code>: by angle(s) from the world frame to the to the object&#39;s orientation,</li>
+<li><code>scale</code>: by relative factor(s) from the world gridsize to the object&#39;s gridsize</li>
+</ul>
+<p>And vice-versa, to transform from the object&#39;s point of view back up to the world&#39;s point of view, we can apply the reverse:</p>
+<ul>
+<li><code>scale</code>: by inverse factor back to world grid size</li>
+<li><code>rotate</code>: by reversed angles back to world orientation</li>
+<li><code>translate</code>: by subtracting vector back to world&#39;s origin</li>
+</ul>
+<p>Note that both the sign of the mappings, and their order of operation, is reversed. </p>
+<p>Often in computer graphics we combine all of these operations into a single transform expressed as a <strong>matrix</strong>. Most programming languages have good libraries for working with vectors, matrices, and so on; for example, in Javascript we can use the <a href="http://glmatrix.net/">gl-matrix</a> library:</p>
+<iframe width="720" height="540" src="https://youtube.com/embed/kYB8IZa5AuE" frameborder="0" allowfullscreen></iframe>
+
+<p>Note that the mappings we use in computer graphics extend linear transformations since they also change the position of the origin. In 2D space, a 2x2 matrix represents the coordinate transforms of rotation and scale (and possibly shear) but not transation. But here&#39;s a trick: if we embed our 2D space into a 3-dimensional space, we can add a third component to our matrix that represents translation. We then assume that our 2D vectors actually have 3 components, but the 3rd component is always <code>1</code>. (And for elegance, and some other purposes, we also add a 3rd column, whose unit vector componets are normally zero and whose translation component is normally 1).</p>
+<pre><code class="language-js"><span class="hljs-comment">// the components of a 2x2 matrix:</span>
+[xx, xy, <span class="hljs-comment">// X axis unit vector (captures rotation &amp; scale)</span>
+ yx, yy] <span class="hljs-comment">// Y axis unit vector (captures rotation &amp; scale)</span>
+
+<span class="hljs-comment">// multiply vector [U,V] by this matrix:</span>
+u = U*xx + U*yx;
+v = V*xy + V*yy;
+
+<span class="hljs-comment">// the components of a 3x3 matrix:</span>
+[xx, xy, <span class="hljs-number">0</span>, <span class="hljs-comment">// X axis unit vector as above</span>
+ yx, yy, <span class="hljs-number">0</span>, <span class="hljs-comment">// Y axis unit vector as above</span>
+ tx, ty, <span class="hljs-number">1</span>] <span class="hljs-comment">// the translation component</span>
+
+<span class="hljs-comment">// multiply vector [U,V,1] by this matrix:</span>
+u = U*xx + V*yx + <span class="hljs-number">1</span>*tx;
+v = U*xy + V*yy + <span class="hljs-number">1</span>*ty;
+<span class="hljs-comment">// 1 = U*0 + V*0 + 1*1</span>
+
+ <span class="hljs-comment">// the identity matrix (the transform that has no effect)</span>
+ [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+  <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,
+  <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>]</code></pre>
+<p>When working in 3D space we do the same trick, adding a 4th row to represent translation, and a a 4th column, whose unit vector componets are normally zero and whose translation component is normally 1:</p>
+<pre><code class="language-js"><span class="hljs-comment">// the components of a 4x4 matrix:</span>
+[xx, xy, xz, <span class="hljs-number">0</span>, <span class="hljs-comment">// X axis unit vector</span>
+ yx, yy, yz, <span class="hljs-number">0</span>, <span class="hljs-comment">// Y axis unit vector</span>
+ zx, zy, zz, <span class="hljs-number">0</span>, <span class="hljs-comment">// Z axis unit vector</span>
+ tx, ty, tz, <span class="hljs-number">1</span>] <span class="hljs-comment">// the translation component</span>
+
+ <span class="hljs-comment">// the identity matrix (the transform that has no effect)</span>
+ [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+  <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+  <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,
+  <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>]</code></pre>
+<blockquote>
+<p>Note: This 4th column has certain advantages later when dealing with perspective rendering -- and also happens to be just as efficient on a GPU, where most instructions work on vectors of 4 or 16 elements anyway. </p>
+</blockquote>
+<p>Now, to transform from any coordinate frame to another, we just multiploy by the matrix; and to transform back, we multiply by the <code>inverse</code> of the matrix. A large amount of the work in creating a 3D rendering is appropriate mapping between different spaces: object space, world space, view/eye space, screen/depth space, texture spaces, color spaces, light spaces, and so on; and we can use matrices for practically all of them. </p>
+<p><img src="img/space_is_big.gif" alt="Space is big."></p>
+<hr>
+<h1 id="graphics-programming">Graphics programming</h1>
+<p>Graphics programming has for many years been focused on organizing processing on dedicated graphics hardware: GPUs. What are the differences between a CPU and a GPU? </p>
+<ul>
+<li><strong>CPU</strong><ul>
+<li>A few processors that can each perform very complex tasks -- designed (historically) for large serial problems</li>
+<li>Each core has large memory and complex instructions</li>
+<li>Cores can communicate with each other (though this is complicated)</li>
+</ul>
+</li>
+<li><strong>GPU</strong><ul>
+<li>Thousands of microprocessors that can only perform simple tasks -- designed for operating on massively parallel problems</li>
+<li>Each core has small memory and simple instructions</li>
+<li>Cores cannot communicate with each other and do not retain results</li>
+</ul>
+</li>
+</ul>
+<p>For tasks like ray tracing, in which millions of independent but similar, small tasks are needed (like filling pixels), a GPU can often be hundreds of times faster than a CPU. It also happens to suit the nature of tasks like training deep learning networks, and bitcoin mining.</p>
+<p>There are various ways of setting up tasks on the GPU, but for the purposes of focusing on real-time rendering we will limit ourselves mostly to using OpenGL, one of the most established graphics interfaces in use today. <a href="http://www.khronos.org/opengl/">OpenGL is an open standard</a> implemented by most graphics processing unit (GPU) hardware in personal computers and mobile devices. Similarly, for writing programs on the GPU we will use OpenGL Shader Language (GLSL). Although some of the text here is specific to OpenGL/GLSL, the general process is applicable to many other rendering systems such as DirectX etc. We will work with the browser-based implementation of this API, known as WebGL. </p>
+<p>The OpenGL API (application programming interface) is specified for the C language, however we will be using it from within the web browser, where it is called WebGL. (Specifically we will target WebGL2, which mirrors the OpenGLES3 C API.) If you find C-based OpenGL ES code on the web, you can probably convert it to WebGL very easily; it is in most cases changing each function prefix from <code>gl</code> or <code>GL_</code> to <code>gl.</code>.)</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">WebGL2 guide on MDN</a></li>
+<li><a href="https://webgl2fundamentals.org/">A good, comprehensive tutorial series</a></li>
+</ul>
+<p>OpenGL/WebGL is a relatively low-level interface, giving you immense freedom but also a great deal of complexity in setting up the workflow. Many other graphics libraries have been written to present higher-level interfaces on top of OpenGL/WebGL; for the browser one of the most popular is <a href="Three.js">https://threejs.org/</a> -- another good <a href="https://threejsfundamentals.org/">tutorial here</a>. But even if using a higher-level library, it&#39;s well worth knowing the foundations on which it is built.</p>
+<h2 id="webgl-pipeline">WebGL pipeline</h2>
+<p>A typical 3D graphics program&#39;s job is to colour the 2D pixels of a screen (or window, or VR viewport, etc.), according to geometric data (such as triangle mesh objects, point clouds, surface textures, etc.) and global parameters (such as camera properties, lighting properties, etc.). </p>
+<p>Most of the work is carried out on the GPU on your computer. The GPU is <em>really good</em> and processing huge chunks of data with the same programs. It therefore has different structure and machine code to your CPU, and requires a different kind of programming. You will write GPU programs (known as <strong>shader programs</strong>) that runs on the GPU, you will send data (as buffers, textures, etc.) to the GPU, and you will set the global state of the GPU (telling it which program to use with which data and when). </p>
+<p>The typical workflow of uploading 3D geometry and other parameters, and rendering it by setting the color value for each pixel in the application window, involves a series of transformations between spaces, and different kinds of programming tasks at each stage of the transformation. Some of the earlier steps of these operations occur on the computer&#39;s CPU, while the later operations occur on the graphics hardware (GPU) -- the grey area in the image below. The flow of data through this process is mostly one-way , hence it is sometimes called the &#39;rendering pipeline&#39;:</p>
+<p><a href="http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Chapter-1:-The-Graphics-Pipeline.html"><img src="http://duriansoftware.com/joe/media/gl1-pipeline-01.png" alt="Duran Software image of pipeline"></a></p>
+<p>Your task is to organize the CPU code at the start to prepare the vertex/index/texture etc. data and parameters and manage scheduling these; and to write the GPU code for the <strong>vertex shader</strong> and the <strong>fragment shader</strong>. OpenGL/WebGL takes care of the other stages. </p>
+<p>Here, for example, is a minimal script to generate a coloured rectangle that fills the canvas:</p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="bmmGjL" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/bmmGjL">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>Here&#39;s the same example but using the webgl2fundamentals utils to simplify the setup code:</p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="XWKqypJ" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/XWKqypJ">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="image-order-and-object-order-rendering">Image-order and object-order rendering</h2>
+<p>There are essentially two main principles of how to render a 2D image of a 3D scene. </p>
+<p>In <strong>Image-order</strong> rendering, the task is to compute the light that would illuminate each pixel in turn; you can think of it as if the pixel is pulling or sucking up all the light contributions for it. In this paradigm, we are writing a program that runs per &quot;pixel&quot; (or, more generally, per <strong>fragment</strong>). This is what a basic raycasting or raytracing renderer might do. It is exactly what a <strong>fragment shader</strong> does. </p>
+<p>In <strong>Object-order</strong> rendering, we start at the other end, with the geometry of a scene, and push forward to compute how this geometry would contribute to the various parts of the output image. This is ordinarily how a scene-graph based system, such as a game engine, would start. Since most geometry is defined as a collection of <strong>vertex</strong> points, usually connected into faces to create a surface, this means computing where the vertices and faces fall in the image, what they occlude, what surface materials they may have, etc. The <strong>vertex shader</strong> is a program that runs on each vertex of a geometry, using the attributes of each vertex to compute various properties (which are normally interpolated over the faces between vertices); these output properties become inputs to the fragment shader.</p>
+<p>In fact one can write quite compelling scenes using almost image-order rendering alone. A massive collection of scenes that are almost entirely written as fragment shaders can be found at <a href="">https://www.shadertoy.com/</a>. Most of these use raycasting techniques to simulate scenes using emulations of lighting, and usually create geometry as implict functions (mathematical equations) rather than vertex meshes. </p>
+<p>But first, we need to know a bit of GLSL.</p>
+<h3 id="glsl">GLSL</h3>
+<p>GLSL is a language for writing shaders. It is similar to C, but has some significant differences to fit the nature of a GPU: </p>
+<ul>
+<li>No recursion, but there are loops. </li>
+<li>No libraries -- you have to put ALL the code in the shader.</li>
+<li>No dynamic memory; everything has to be declared statically in the code.</li>
+<li>Every item has to be typed and types need to be explicitly cast.</li>
+<li>No pointers, no object inheritance etc. (but there are structs)</li>
+<li>No strings, no console, no way to print debug/trace text.</li>
+</ul>
+<blockquote>
+<p>Instead, you must do visual debugging which is simply creative
+use of the one shader output you have: the pixel color!</p>
+</blockquote>
+<p>GLSL introduces new types specifically for getting data in and out of shaders, such as:</p>
+<ul>
+<li><strong>attributes</strong>: properties of each vertex, passed into the vertex shader via reference to buffers; typically describing a vertex&#39;s position, colour, normal, material, etc.</li>
+<li><strong>uniforms</strong>: read-only parameters that remain the same over all vertices/fragments. These are set by the CPU code. </li>
+<li><strong>varyings</strong>: variables output from the vertex shader that become (interpolated) inputs for the fragment shader.</li>
+</ul>
+<p>GLSL also has built in support for vector and matrix types, such as <code>vec3</code>, <code>mat4</code> etc. 
+    - Math operators and functions apply to each component of a vector. 
+    - Built in functions include trigonometrics such as <code>sin</code>, <code>atan</code> etc, but also <code>dot</code>, <code>cross</code>, <code>.pow</code>, <code>.max</code>, etc. 
+    - Vector components can be indexed as <code>.x, .y, .z, .w</code> etc, (or <code>.r, .g, .b, .a</code>, 
+    - and they can be <strong>swizzled</strong>, e.g. <code>vec3 gbr = some_vec3.zyx;</code>.</p>
+<p>GLSL has a few built-in variables with special meaning, such as <code>gl_Position</code>, <code>gl_FragData[]</code>, etc.</p>
+<p>GLSL function arguments can be marked <code>in</code> (read-only), <code>out</code> (write-only) or <code>inout</code> (the function can read and write the value).</p>
+<pre><code class="language-glsl"><span class="hljs-comment">// in shader:</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span> u_time;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec2</span> u_mouse;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">mat4</span> u_viewmatrix;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">mat4</span> u_viewmatrix_inverse;
+
+<span class="hljs-comment">// eye position is the first three elements of the 4th row of matrix</span>
+<span class="hljs-type">vec3</span> eye = u_viewmatrix_inverse[<span class="hljs-number">3</span>].xyz;</code></pre>
+<pre><code class="language-js"><span class="hljs-comment">// in Javascript</span>
+<span class="hljs-comment">// get references to the uniforms:</span>
+<span class="hljs-keyword">const</span> u_mouse = gl.getUniformLocation(program, <span class="hljs-string">&quot;u_mouse&quot;</span>);
+<span class="hljs-keyword">const</span> u_time = gl.getUniformLocation(program, <span class="hljs-string">&quot;u_time&quot;</span>);
+<span class="hljs-keyword">const</span> u_viewmatrix = gl.getUniformLocation(program, <span class="hljs-string">&quot;u_viewmatrix&quot;</span>);
+<span class="hljs-keyword">const</span> u_viewmatrix_inverse = gl.getUniformLocation(program, <span class="hljs-string">&quot;u_viewmatrix_inverse&quot;</span>);
+
+<span class="hljs-comment">// and set them:</span>
+gl.useProgram(program);
+gl.uniform2f(u_mouse, mouseX, mouseY);
+gl.uniform1f(u_time, performance.now * <span class="hljs-number">0.001</span>);
+
+<span class="hljs-keyword">let</span> viewmat = mat4.create();
+mat4.lookAt(viewmat, eye, center, up);
+<span class="hljs-keyword">let</span> viewmat_inverse = mat4.invert(mat4.create(), viewmat)
+gl.uniformMatrix4fv(u_viewmatrix, <span class="hljs-literal">false</span>, viewmat);
+gl.uniformMatrix4fv(u_viewmatrix_inverse, <span class="hljs-literal">false</span>, viewmat_inverse);</code></pre>
+<h3 id="ray-based-rendering">Ray-based rendering</h3>
+<p>Can be traced back to techniques of 16th century artist
+Albrecht Dürer -- using notions of perspective, optics, and more generally the <strong>simulation</strong> of the physics of light. A full simulation is practically impossible, but conducive effects can be achieved with a modicum of linear algebra and tricks.</p>
+<p><img src="img/durer.jpg" alt="durer"></p>
+<p>To start rendering we need an optical geometric model of the scene. The most typical is the perspective model, in which the screen is thought of as encompassing a &quot;frustrum&quot; between the eye and the world, bounded by a near and far plane, and the frame. (A frustum is like a pyramid with the top chopped off.)</p>
+<p><img src="img/440px-ViewFrustum.svg.png" alt="frustum"></p>
+<p>The near plane (and far plane) are divided up into a grid of fragments (think of them as &quot;pixels&quot;), and we are writing a program that runs on each one. So, we need to know, for a given point of view and camera, where the near-plane fragment is (the &quot;pixel&quot; of the picture plane), and which direction it points in space. These are the &quot;ray origin&quot; and the &quot;ray direction&quot;. For mathematical simplicity we typically <em>normalize</em> the ray direction (that means, set its length to be eactly 1.0).  This allows us to use a convenient representation of lines in 3D:</p>
+<pre><code class="language-js"><span class="hljs-comment">// basic line equation:</span>
+point = origin + direction*distance;
+<span class="hljs-comment">// or more concisely:</span>
+p = ro + rd*t;</code></pre>
+<p>In our fragment shader:</p>
+<pre><code class="language-glsl"><span class="hljs-comment">// an input variable that represents the clip space of the fragment</span>
+<span class="hljs-comment">// going from -1 to 1 between the frame edges in X and Y axes:</span>
+<span class="hljs-keyword">in</span> <span class="hljs-type">vec2</span> snorm; 
+
+<span class="hljs-comment">// assuming units of meters:</span>
+<span class="hljs-comment">// let&#x27;s make our near-plane 10cm from our eyes</span>
+<span class="hljs-type">float</span> near = <span class="hljs-number">0.1</span>; 
+<span class="hljs-comment">// and the far plane be 100m away:</span>
+<span class="hljs-type">float</span> far = <span class="hljs-number">100.0</span>;
+<span class="hljs-comment">// set our eye position to be 1.5 meters above the ground:</span>
+<span class="hljs-type">vec3</span> eye = <span class="hljs-type">vec3</span>(<span class="hljs-number">0.</span>, <span class="hljs-number">1.5</span>, <span class="hljs-number">0.</span>); 
+
+<span class="hljs-comment">// ray direction</span>
+<span class="hljs-comment">// a very simple ray direction can be computed from the screen UV coordinate</span>
+<span class="hljs-comment">// this assumes our screen is square and our field of view is 45 degrees at the frame edges</span>
+<span class="hljs-comment">// and points our view in the positive Z axis:</span>
+<span class="hljs-type">vec3</span> rd = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(snorm, <span class="hljs-number">1.</span>));
+<span class="hljs-comment">// compute near-plane ray origin from this:</span>
+<span class="hljs-type">vec3</span> ro = eye + rd * near;
+
+<span class="hljs-comment">// debug tests:</span>
+outColor = <span class="hljs-type">vec4</span>(ro, <span class="hljs-number">1.</span>);
+outColor = <span class="hljs-type">vec4</span>(rd, <span class="hljs-number">1.</span>);</code></pre>
+<p><img src="https://2.bp.blogspot.com/-GtcGfy5C5rY/VblG-Gn5saI/AAAAAAAAAKE/KVo3wT_dlhA/s640/ray_casting_tracing.png" alt="nearplane"></p>
+<p>For a more configurable frustum, we would need to pass in the aspect ratio (frame width divided by frame height) and the vertical field of view angle (in radians), and use these to scale our normalized coordinates accordingly. (And to change the view direction, we could multiply this vector by a rotation matrix.)</p>
+<pre><code class="language-glsl"><span class="hljs-keyword">uniform</span> u_aspect, u_fovy;
+
+<span class="hljs-comment">// ray direction</span>
+<span class="hljs-comment">// still pointing in Z axis, but now taking into account aspect ratio and field of view:</span>
+<span class="hljs-type">vec3</span> rd = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(snorm*<span class="hljs-type">vec2</span>(u_aspect, <span class="hljs-number">1.0</span>)*<span class="hljs-built_in">tan</span>(u_fovy/<span class="hljs-number">2.0</span>), <span class="hljs-number">1.</span>));</code></pre>
+<p>Now we have a ray, we just need a way to send that ray through space and see if it hits something -- and we need a something to hit. The simplest something is probably a sphere, which we can define as a point (the sphere centre) and a radius.  Now we just need a way to find out <a href="https://en.wikipedia.org/wiki/Line%E2%80%93sphere_intersection">if (and where) a line and sphere intersect</a>. </p>
+<hr>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="ZEORywY" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/ZEORywY">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>Working with direct intersection functions like this is not always possible -- we might be dealing with &#39;participating media&#39; (like looking through a haze or mist), or dealing with complex scenes made of objects that don&#39;t have analytic intersection functions. In these cases we may opt for a <strong>ray marching</strong> method instead: starting from the ray origin (or, from a surface facet for reflections), we move along the ray in small increments until we &#39;hit&#39; some object that changes our lighting. A basic ray marcher will do this in small sized steps, which can be incredibly expensive.</p>
+<h3 id="sphere-tracing">Sphere tracing</h3>
+<p>AKA signed distance-function based rendering. This is a very popular method for generating scenes in fragment shaders. The core idea is to represent all elements of a scene as an implicit distance function, that is, a function which, given a 3D point in space, returns the distance from that point to the object&#39;s nearest surface. For a number of shapes these functions are fairly simple. For example, to compute the distance to a sphere at the origin:</p>
+<pre><code class="language-glsl"><span class="hljs-type">float</span> fSphere(<span class="hljs-type">vec3</span> p, <span class="hljs-type">float</span> r) {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">length</span>(p) - r;
+}</code></pre>
+<blockquote>
+<p>This code is taken from the fantastic collection of functions, examples, and resources at <a href="https://mercury.sexy/hg_sdf/">hg_sdf</a> -- let&#39;s borrow some of these!</p>
+</blockquote>
+<p>Why do distance functions help? If we are marching a ray to find an intersection point, rather than stepping in small incremements, it would be better if we could ask, what is the largest step I could take from this point (or to put it another way, what is the <strong>minimum distance</strong> to the nearest surface)? This is exactly what a distanced field will tell you. (And a <strong>signed</strong> distance field will also tell you if you are inside a shape.) So, we can march along the ray by the distance computed until that (absolute0 distance becomes very small:</p>
+<p><img src="img/Illustration-of-the-sphere-tracing-algorithm-in-2D.png" alt=""></p>
+<pre><code class="language-glsl">
+<span class="hljs-type">vec3</span> p = ro;
+  <span class="hljs-type">float</span> t = <span class="hljs-number">0.0</span>;
+  <span class="hljs-type">float</span> d = <span class="hljs-number">0.0</span>;
+  <span class="hljs-type">float</span> threshold = <span class="hljs-number">0.0001</span>;
+  <span class="hljs-type">int</span> MAX_ITERATIONS = <span class="hljs-number">32</span>;
+  <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;
+  <span class="hljs-keyword">for</span> (; i&lt;MAX_ITERATIONS; i++) {
+    d = f(p);
+    t += d;
+    p = ro + rd*t;
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">abs</span>(d) &lt; threshold || d &gt; far) <span class="hljs-keyword">break</span>;
+  }
+</code></pre>
+<blockquote>
+<p><a href="https://www.scratchapixel.com/lessons/advanced-rendering/rendering-distance-fields">A more detailed explanation.</a></p>
+</blockquote>
+<p>We can also combine shapes (that is, combine functions). The simplest form is the additive operation, which in distance terms is the <code>min</code> operator, and which in Boolean terms is the <strong>union</strong> operation. But there are other interesting ways to combine functions, such <strong>intersection</strong>, <strong>difference</strong>, and others.</p>
+<pre><code class="language-glsl">t1 = fSphere(p, sphereradius);
+t2 = fBox(p, boxdims);
+tunion = <span class="hljs-built_in">min</span>(t1, t2); 
+tintersection = <span class="hljs-built_in">max</span>(t1, t2);
+tdifference1 = <span class="hljs-built_in">max</span>(t1, -t2);
+tdifference2 = <span class="hljs-built_in">max</span>(t2, -t1);</code></pre>
+<p>To move things from the origin we usse domain manipulations, which means, changes of coordinate frame. For example, to render a sphere at +1.0 unit in the X axis, we shift the coordinate space -1.0 unit in X. </p>
+<pre><code class="language-glsl">fSphere(p - <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>), radius);</code></pre>
+<p>Rotations work in the same way. But not scaling, since this breaks the metric of distance; the only safe way to scale is to scale uniformly in all dimensions, and apply the inverse scale to the distance that is computed. Other transformations including symmetries of mirroring: for example, by taking the absolute value of <code>p.x</code> we get a mirror in the YZ plane.  In the same vein, a rather interesting possibility is to apply a modulus operation to space -- that is, folding space by infinite mirrorrs -- which results in repeated shapes! </p>
+<p>So, with a combination of shape functions, shape combinations, and space foldings, a quite extensive range of possibilities emerge! </p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="zYBaaQX" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/zYBaaQX">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<hr>
+<blockquote>
+<p>Here&#39;s a tutorial on getting the amazing fragment shaders of <a href="">https://www.shadertoy.com/</a> into a webgl2 context: <a href="">https://webgl2fundamentals.org/webgl/lessons/webgl-shadertoy.html</a> -- along with the warnings about the risks of this! And here&#39;s a tutorial on doing the same for Three.js: <a href="">https://threejsfundamentals.org/threejs/lessons/threejs-shadertoy.html</a>, including mapping such shaders onto geometry -- this may be a good place to start to learn how to write your own GLSL shaders in a Three.js scene. </p>
+</blockquote>
+<hr>
+<!-- 
+### Phase spaces
+
+Any system that can be described by a set of parameters (dimensions) also invokes the notion of [*phase space*](http://en.wikipedia.org/wiki/Phase_space) or *configuration space*. This N-dimensional space has one dimension for each degree of freedom (parameter). Any configuration of the system is described by a point in this space. For a mechanical system, we generally require dimensions to capture the position and momentum of every moving part. For example, we can think of the phase space of the wheel velocities of the Braitenberg Vehicle, which has 2 parameters, as a 2D phase space. 
+
+> Mapping is also important for constrained systems. The robot arm described by M parameters ultimately maps to a 3D position (and perhaps orientation); forward and inverse kinematics are the maps between them. In this case we would like to position the arm exactly, but are limited to control of the motor parameters in a wholly different space.
+
+Plotting a point for every valid state in the space gives a shape that can tell us about the character of the system; this is the systems **manifold**. Not all points in a space are valid: certain combinations of parameters are not realizable by the system in question. The Vehicle had maximum velocities beyond which the system cannot go; points outside this space are said to be beyond the manifold of the system. Furthermore, we can also identify what states a system can evolve into from a certain point; a series of such changes would be a **phase trajectory**. The full phase portrait of a system tells us about the evolution of the system; in particular, whether it moves to a stable point, cyclic behavior, or chaotic behavior.
+
+![Pendulum](http://upload.wikimedia.org/wikipedia/en/thumb/d/da/Pendulum_Phase_Portrait.jpg/799px-Pendulum_Phase_Portrait.jpg)
+
+-->
+<footer>2020</footer>
+</body>
+</html>
