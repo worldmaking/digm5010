@@ -64,6 +64,7 @@ function generate(file) {
 	} else {
 		meta.src = meta.src
 		// auto hr break at heading 1 titles:
+		.replace(/\n(#\s[^\n]+)/g, '\n---\n<a href="#top"><img src="img/up.png"></a>\n$1')
 		.replace(/\n(##\s[^\n]+)/g, '\n---\n<a href="#top"><img src="img/up.png"></a>\n$1')
 		// replace @image:path as background contain 
 		.replace(/\n---image:([^\s]+)/g, `\n<img src="$1" />\n`)

@@ -95,7 +95,7 @@ I normally also record sessions and share recordings with the course participant
 
 *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the graduate situation, and moreover allows some time to review any material if it seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
 
-## Week 0 
+# Week 0 
 Sep 4, 2023
 [Class Recording](#zoom-recordings)
 
@@ -191,9 +191,11 @@ Please add 2-4 slides to introduce yourself in The Google Slide deck here: https
 - Please be careful not to delete your colleague's slides!
 
 
-## Week 1 
+# Week 1 
 Sep 11, 2023
 [Class Recording](#zoom-recordings)
+
+**A good conference call that may be interesting for you**: [Movement and Computing](https://moco26.movementcomputing.org) -- deadline Nov 1st -- we have had several DM students present at MOCO in the past. This year they specifically are interested in health applications, but any topic of motion & computing is of interest.
 
 ## What is computation?
 
@@ -256,7 +258,7 @@ https://codepen.io/grrrwaaa/pen/Yzdxwgj
 Can you continue by drawing an example from Golan Levin's research-creation thesis?
 
 
-## Week 2 
+# Week 2 
 Sep 18, 2023
 [Class Recording](#zoom-recordings)
 
@@ -443,7 +445,7 @@ Some rules of thumb while coding:
 - Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
 
 
-## Week 3 
+# Week 3 
 Sep 25, 2023
 [Class Recording](#zoom-recordings)
 
@@ -451,14 +453,17 @@ Sep 25, 2023
 
 - Reading list discussion
 
-## Week 4
+# Week 4
 Oct 2, 2023
 [Class Recording](#zoom-recordings)
 
+<!--
 
 **Reproducing & sharing research through making**: discussion & sharing of your codepens! 
 
 https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
+
+-->
 
 ---
 
@@ -564,7 +569,7 @@ Let's follow back through a selective history.
 
 -->
 
-## Week 5 
+# Week 5 
 Oct 9 
 [Class Recording](#zoom-recordings)
 
@@ -575,7 +580,7 @@ Oct 9
 
 
 
-## Week 6
+# Week 6
 Oct 23, 2023
 [Class Recording](#zoom-recordings)
 
@@ -601,7 +606,7 @@ Our script so far:
 https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
 -->
 
-## Week 7
+# Week 7
 Oct 30, 2023
 [Class Recording](#zoom-recordings)
 
@@ -661,7 +666,7 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 - **During class**:
   - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link)
 
-## Week 8
+# Week 8
 Nov 6, 2023
 [Class Recording](#zoom-recordings)
 
@@ -701,7 +706,7 @@ For the purposes of the course, please submit your final papers by December 8th,
 
 ---
 
-## Week 9
+# Week 9
 Nov 13, 2023
 [Class Recording](#zoom-recordings)
 
@@ -744,7 +749,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
-## Week 10
+# Week 10
 Nov 20, 2023
 [Class Recording](#zoom-recordings)
 
@@ -758,7 +763,7 @@ Nov 20, 2023
 -->
 
 
-## Week 11
+# Week 11
 Nov 27, 2023
 [Class Recording](#zoom-recordings)
 
@@ -881,7 +886,7 @@ This weekly post should include practice studies, such as links to (or embeds of
 As the course progresses, this journal will capture your progress in development towards the major assignments, which will also be added to the journal. 
 
 -----
-## Week 2
+# Week 2
 
 [What is research](research.html)?
 
@@ -915,7 +920,7 @@ You will investigate a **topic** that ideally intersects this year's topic/theme
 - [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
 -----
-## Week 3
+# Week 3
 
 Practice / Review
 
@@ -933,7 +938,7 @@ Places to look:
 
 -----
 
-## Week 4
+# Week 4
 
 - Sharing Explorable Explanations!
   - [My fireflies](https://codepen.io/grrrwaaa/pen/rNwXydw?editors=0010)
@@ -976,7 +981,7 @@ For example, [here's](https://alicelab.world/digm5010/vehicles.html#annotated-no
 Work on your annotated bibliography and your project!
 
 -----
-## Week 5
+# Week 5
 
 - News: [AI:Talks series in Digital Media](ai_talks.pdf)
 
@@ -996,7 +1001,7 @@ Work on your annotated bibliography and your project!
 - [An example JS library for advanced Markov-driven text analysis & resynthesis](https://github.com/dhowe/ritajs#a-simple-sketch)
   
 -----
-## Week 6
+# Week 6
 
 - Project work
  
@@ -1004,7 +1009,7 @@ Due next week: [Paper-project abstract](#final-paper)
 
 -----
 
-## Week 7
+# Week 7
 
 - [Paper-project abstracts](#final-paper) & discussion
 
@@ -1031,7 +1036,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like Dan Shiffman or 3Blue1Brown do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
 -----
-## Week 8
+# Week 8
 
 - Discussion about abstracts, final papers, and 
 - Peer review preview: 
@@ -1043,12 +1048,12 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 [Final paper](#final-paper) [draft for review](#peer-review)
 
 -----
-## Week 9
+# Week 9
 
 **[Zoom recording](https://yorku.zoom.us/rec/share/tcnLkfrrxxapfsjmWn15gcox0LM-MYQg8BQVgs3iCLqsFL82eqkj7oa1ruGgeIC1.erXQvut-v6uZlJDP)**
 
 -----
-## Week 10
+# Week 10
 
 - Time & Sound: gen~
 - **[Zoom recording](https://yorku.zoom.us/rec/share/5qPQPGpqXj3_Z0ZKsrRIQ80POnrvI0IPJNYPbGFl6CHngtp2ikOWHgf4QInXwsu4.xCE8R0lMZZfOKCwr)**
