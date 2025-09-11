@@ -190,7 +190,9 @@ notes:
 notes:
 
 
-The "Turing Machine" was originally an abstract reformulation of Gödel's incompletness theorem about the limits of proof and computability/decidability (that in any formal system, there are 'statements' that cannot be proved/decided within that system). Note: Gödel's proof depended on a digital encoding, by turning algebraic statements into numbers. That is, the 'data' (numbers) and the 'operations' (e.g. `+`) are flattened to the same ontological level. 
+The "Turing Machine" was originally an abstract reformulation of Gödel's incompletness theorem about the limits of proof and computability/decidability (that in any formal system, there are 'statements' that cannot be proved/decided within that system). 
+
+Gödel's proof depended on a digital encoding, by turning algebraic statements into numbers. That is, the 'data' (numbers) and the 'operations' (e.g. `+`) are flattened to the same ontological level. 
 
 ---
 
@@ -206,19 +208,18 @@ What are the implications of this?
 
 ----
 
-As a mathematician, Turing was interested in theoretical limits. 
+As a mathematician, Turing was interested in theoretical limits: 
 
 "It is possible to invent a single machine which can be used to compute **any** computable sequence. If this machine U is supplied with a tape on the beginning of which is written the S.D ["standard description" of an action table] of some computing machine M, then U will compute the same sequence as M." Alan Turing 1936, in Davis, Martin (2000), Engines of Logic: Mathematicians and the origin of the Computer.
 
 This is the "Universal Turing Machine" (UTM). Since no formal computing machine can compute something beyond what a UTM can, then the limits of computablity of a UTM apply to **all** such computing machines. That is, in theory, no computing machine can solve more problems than a UTM; anything that can be "computed" can be computed by a UTM. 
 
+notes:
+
+
 ...in theory there's no difference between theory and practice... 
 
 The UTM itself is an abstract idea, and doesn't physically exist, since it includes in its definition the possibility of infinite space (memory) and time (operations). 
-
-notes:
-
-The universal computing machine was simultaneously invented by [Emil Post](https://en.wikipedia.org/wiki/Emil_Leon_Post), also in 1936, based on string rewriting. It should really be called the Post-Turing Machine.
 
 ---
 <!-- .slide: data-background-image="img/metalinguistic_abstraction.png" data-background-size="contain" -->
@@ -226,6 +227,8 @@ The universal computing machine was simultaneously invented by [Emil Post](https
 notes:
 
 
+
+The universal computing machine was simultaneously invented by [Emil Post](https://en.wikipedia.org/wiki/Emil_Leon_Post), also in 1936, based on string rewriting. It should really be called the Post-Turing Machine.
 
 A near-equivalent (and arguably more elegant) model to the Post-Turing Machine was also put forward in the 1930's by Alonzo Church, in the form of the [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus), which flattens the ontology to functions rather than to numbers. The Lambda Calculus is the root of all functional programming languages such as LISP, Scheme, Haskell etc.
 
@@ -289,8 +292,7 @@ notes:
 
 notes:
 
-
-One thing that makes computers more intersting than mechanical looms is the way they can redirect themselves as they chew through the instructions: the **control flow**. There are a few common structures of control flow, such as `goto`, `if`, etc. Sometimes it's useful to understand these structures as if they are played out on a board game, with memory being stacks of cards, the instructions being the board, etc.
+One of the main things that make computers more intersting than mechanical looms is the way they can redirect themselves as they chew through the instructions: the **control flow**. There are a few common structures of control flow, such as `goto`, `if`, etc. Sometimes it's useful to understand these structures as if they are played out on a board game, with memory being stacks of cards, the instructions being the board, etc.
 
 If the program-data is a board of cells ordinarily stepped through one-by-one (sequential flow), then `goto` is like the snakes and ladders: a jump that must be taken. In the 1970's `goto` became "considered harmful" as a common source of tangled bugs, making code harder to maintain or reason about; instead it was hidden in all kinds of control structures we use today such as `if`, `switch`, `break`, `while`, `for`, and so on.
 
@@ -305,15 +307,12 @@ Perhaps the most striking form of control flow--though not always considered as 
 (A wonderful summary of these concepts is [Fisher, David A. "A survey of control structures in programming languages." ACM SIGPLAN Notices 7.11 (1972): 1-13.](https://dl.acm.org/doi/pdf/10.1145/987361.987363?casa_token=ok8oYYAQkTcAAAAA:O3WZ7upUTpQrrjpFIIHstf2UGtlBkbq1SNdfjk2-HsjldXWvIfdfJvoQpZZvs10QYJLJf3qr2TxL5g))
 
 
-
 ---
 
 For a moment, don't think of a program as a tool, but as a pattern of data, a string of bits. This is clearer in data-driven representations of programs, e.g. state machine tables, or cellular automata images. 
 
 - If different interpreter-programs read the same string of bits but do different things, where are the semantics? 
-- If an interpreter-program reads the string of bits to become a different interepreter-program, where are the semantics?
-
-
+- If an interpreter-program reads the string of bits to become a different interpreter-program, where are the semantics?
 
 
 ---

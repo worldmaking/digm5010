@@ -181,29 +181,112 @@ Submissions will be uploaded online. We also ask you to add a very short text ex
 
 Authors will be required to present their papers with a duration of 10 minutes. 
 
-## An introduction
-
-Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU/
- - I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
-- You can include a more formal bio, or artist statement, or something more informal about the inspirations that brought you to the program.
-- More importantly: let us know what you want to *do*, what you want to *research*!
-- Remember to include your name, and reference details (name, link etc.) for any images or media you add.
-- Please be careful not to delete your colleague's slides!
 
 
 # Week 1 
 Sep 11, 2023
 [Class Recording](#zoom-recordings)
 
-**A good conference call that may be interesting for you**: [Movement and Computing](https://moco26.movementcomputing.org) -- deadline Nov 1st -- we have had several DM students present at MOCO in the past. This year they specifically are interested in health applications, but any topic of motion & computing is of interest.
+**This week's paper workflow**
+- This week you should be selecting your focused topic, with keywords, search terms, etc. 
+- Using this you can begin to prepare for the next step -- identifying papers for your [initial reading list](#preparing-a-reading-list).  
+- One good way to do this is to find the most relevant conferences and journals in the topic area, and downloading recent conference proceedings and/or journal issues. 
+
+Here are some recent conference calls (I have also been sharing these on the DMgrad email list):
+- [Movement and Computing](https://moco26.movementcomputing.org) -- deadline Nov 1st -- we have had several DM students present at MOCO in the past. This year they specifically are interested in health applications, but any topic of motion & computing is of interest.
+- [EvoStar 2026 conference](http://www.evostar.org/2026/) -- deadline November 1st -- which includes **EvoMUSART 15th International Conference (and 19th European event) on Artificial Intelligence in Music, Sound, Art and Design.** 
+- [Toronto Aesthetics Sciences and Creativity Conference (TASC 2026), to be held on April 14th, 2026, at University College, University of Toronto](https://sites.google.com/view/tasc2026/) -- deadline January 9, 2026
+
+**Survey responses**
+
+From the responses of the survey last week, I can see that some of you have some advanced experience in some programming languages and creative software environments, with Javascript especially as well as Max, Unity being the most frequent ones, and Python, C, GLSL, TouchDesigner, Godot, and Unreal are also mentioned.  Some of you have only beginner level experience with these. 
+
+Topics of interest mentioned (repeated mentions marked with asterisks):
+- Generative Art**
+- AI (AI creativity)**
+- WebGL / Real-time 3D Graphics / Shader Programming**
+- Data Visualization*
+- Human-machine interaction*
+- Art through code
+- Web programming
+- Audio Synthesis
+- VR Interaction
+- Game Engines
+
+This is more than we can realistically cover in one semester, especially in a course in which at least half of our time is spent on research writing, but I can certainly do some deep-dives into some of these, and I will try to weave through the topics with the technical platforms mentioned! 
+
+I also compiled a list of conferences and journals for some of these topics -- which you might use in your search for related and exemplar papers for the writing:
+
+- Digital Arts / Computational Arts / Art and Code
+  - [ISEA (Inter-Society for the Electronic Arts) - Electronic arts symposium](https://www.isea-web.org/)
+  - SIGGRAPH - World's largest conference on computer graphics and interactive techniques. It has specific sections for [Art papers](https://s2025.siggraph.org/program/art-papers/) and [Art gallery](https://s2025.siggraph.org/program/art-gallery/) 
+  - [Ars Electronica Festival - Art, technology, and society](https://ars.electronica.art/festival/en/)
+  - [Leonardo (MIT Press) - Premier journal for art-science-technology intersections](https://direct.mit.edu/leon)
+  - [Digital Creativity (Taylor & Francis) - Covers digital arts and creative computing](https://www.tandfonline.com/journals/ndcr20)
+- Generative Art
+  - [Generative Art International Conference - Annual conference running for 28 years, held in Rome with proceedings published as books](https://www.generativeart.com/)
+  - [GAIDMA (International Conference on Generative AI and Digital Media Arts) - Focuses on generative AI applications in digital media arts](https://www.aischolar.org/attendees/index/NFQ77V)
+- AI & Creativity
+  - [NeurIPS Creative AI Track - Third year running, invites research papers and artworks exploring AI applications in art, design, and creative practice](https://neurips.cc/Conferences/2025/CallForCreativeAI)
+  - [AAAI/ACM Conference on AI, Ethics, and Society - Features research on AI applications in creative fields Foregrounding Artist Opinions: A Survey Study on Transparency, Ownership, and Fairness in AI Generative Art](https://dl.acm.org/conference/aies)
+  - [ICCC (International Conference on Computational Creativity)](http://www.computationalcreativity.net/)
+- Real-time 3D Graphics
+  - [SIGGRAPH - Premier graphics conference, featuring real-time graphics, generative AI, and graphics innovations](https://s2025.siggraph.org/)
+  - [Eurographics - European computer graphics conference](https://www.eurographics.org/)
+  - [Computer Graphics and Applications (IEEE) - Technical focus on graphics applications](https://www.computer.org/csdl/magazine/cg)
+- Graphics and Games
+  - [The Game Developers Conference (GDC) is the world’s premier event for developers who make the games we love](https://gdconf.com)
+  - [DiGRA (Digital Games Research Association) - Academic game development](https://digra.org/)
+  - [Computer Graphics Forum - Eurographics journal](https://onlinelibrary.wiley.com/journal/14678659)
+  - [Journal of Graphics, GPU, and Game Tools (Taylor & Francis)](https://www.tandfonline.com/journals/ujgt20)
+- Audio Synthesis
+  - [NIME (New Interfaces for Musical Expression) - Music technology and synthesis](https://nime.org/)
+  - [ICMC (International Computer Music Conference) - Computer music and synthesis](https://www.computermusic.org/)
+  - [DAFx (International Conference on Digital Audio Effects) - Audio processing](https://www.dafx.org/)
+  - [Computer Music Journal (MIT Press) - Premier computer music journal](https://direct.mit.edu/comj)
+- Data Visualization
+  - [IEEE VIS (Visualization Conference) - Premier visualization conference](http://ieeevis.org/) -- this conference has a specific Arts track, ["VISAP"](https://ieeevis.org/year/2024/program/event_a-visap.html)
+  - [EuroVis (Eurographics/IEEE VGTC Conference on Visualization)](https://www.eurovis.org/)
+  - [IEEE Transactions on Visualization and Computer Graphics - Top visualization journal](https://www.computer.org/csdl/journal/tg)
+  - [Information Visualization (SAGE) - Specialized visualization research](https://journals.sagepub.com/home/ivi)
+- Human-Machine Interaction
+  - [CHI (Computer-Human Interaction) - Leading international community for HCI research including visualization Upcoming Conferences | SIGCHI](https://sigchi.org/conferences/)
+  - [UIST (User Interface Software and Technology) - ACM's premier HCI/UI conference](https://uist.acm.org/)
+  - [TEI (Tangible, Embedded and Embodied Interaction) - Physical/tangible interaction](https://tei.acm.org/)
+  - [International Journal of Human-Computer Studies (Elsevier)](https://www.sciencedirect.com/journal/international-journal-of-human-computer-studies)
+- VR & XR interaction
+  - [IEEE VR (Virtual Reality) - Premier VR conference](https://ieeevr.org/)
+  - [VRST (Virtual Reality Software and Technology) - ACM VR conference](https://vrst.acm.org/)
+  - [Virtual Reality (Springer)](https://link.springer.com/journal/10055)
+  - [Presence (MIT Press) - VR & AR](https://direct.mit.edu/pvar)
+ 
+Goals that you mentioned include:
+- Developing understanding
+- Expanding skillset
+- To learn how computational arts and coding can expand design
+- Building portfolio, with intention toward industry
+- To use computation and art to create experiences that respond to humans' emotions in real time'
+- To make systems that are adaptive and ethical
+- To let users become better at *meaning-making* 
+- To build experiences that are effective, based on evidence, not just intuition
+- To be ready for the new digital interactive platforms that are coming as AI, VR, high-speed networks converge
+- Learn how to work alongside AI, rather than letting it be a threat, focus on human touch
+- To be a shaper, not a user, of technology -- especially with respect to AI
+- To make computation *expressive*
+
+These are *great*!
 
 ## What is computation?
 
-Deep dive: [What is computation?](automata.html) - History, theory, implementation; programs as data
+A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. 
+
+Let's step back a moment, and understand computation from its genealogical emergence, and conceptual foundations:
+
+[What is computation?](automata.html) - History, theory, implementation; programs as data
 
 ## Computational sketching
 
-A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. So it can be helful sometimes to step into the shoes of those that have gone before, to see how we ended up here, and what we may have lost or missed along the way. 
+It can be helful sometimes to step into the shoes of those that have gone before, to see how we ended up here, and what we may have lost or missed along the way. 
 
 Take [John Maeda](https://en.wikipedia.org/wiki/John_Maeda), the designer & MIT Media Lab professor, who pioneered reactive graphics in the era of the Macintosh and CD-ROM. 
 
@@ -212,14 +295,14 @@ Take [John Maeda](https://en.wikipedia.org/wiki/John_Maeda), the designer & MIT 
 > 
 > "Computation is intrinsically different from existing media because it is the only medium where the material and the process for shaping the material coexiist in the same entity: numbers. The only other medium where a similar phenomenon occurs is pure thought. It naturally follows that computational media could eventually present the rare opportunity to express a conceptual art that is not polluted by textual or other visual representation. This exciting future is still at least a decade or two away. For the moment, we are forced to settle with society's current search for true meaning in an enhanced, interactive version of the art that we have always known."
 
-Maeda studied with Muriel Cooper and Paul Rand, and redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, which helped lay the groundwork for interactive motion graphics as seen on the web today.
+Maeda studied with Muriel Cooper and Paul Rand, and redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, which helped lay the groundwork for interactive motion graphics as seen on the web today. ([This itself is part of a longer genealogical history that traces back to a movement of thought in the 1960's regarding how computers can augment intelligence, the nature of creativity -- with implications for AI development today](https://www.bostonreview.net/forum/the-ai-we-deserve/]))
 
 Other key insights from Maeda's interactive graphics explorations:
 
   - the most **interesting** pixels on the screen are the mouse
   - the mouse represents not just **space** but also **time** -- use it
 
-Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (and thence [P5.js](https://p5js.org/)). 
+Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (which led to [P5.js](https://p5js.org/)). 
 
 Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
 
@@ -227,9 +310,9 @@ Maeda's courses challenged students to rethink the medium from its most basic el
 
 ### A reading
 
-Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. (For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html).) He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from this thesis, both theoretically and practically. http://www.flong.com/archive/texts/publications/thesis/index.html -- what were your thoughts and questions after reading this?  (Also note the document structure.)
+Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from [his Master's thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), both theoretically and practically. 
 
-Have a good read and bring some thoughts and questions for next week: http://www.flong.com/archive/texts/publications/thesis/index.html
+For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html) -- we'll try to recreate this as our first example of "reproducing research". 
 
 -----
 
@@ -253,9 +336,21 @@ https://codepen.io/grrrwaaa/pen/yLdrXNQ
 
 https://codepen.io/grrrwaaa/pen/Yzdxwgj
 
------
 
-Can you continue by drawing an example from Golan Levin's research-creation thesis?
+## An introduction
+
+Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU/
+ - I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
+- You can include a more formal bio, or artist statement, or something more informal about the inspirations that brought you to the program.
+- More importantly: let us know what you want to *do*, what you want to *research*!
+- Remember to include your name, and reference details (name, link etc.) for any images or media you add.
+- Please be careful not to delete your colleague's slides!
+
+## Reading for sketching
+
+Have a good read of [Golan Levin's Master thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), and note down your thoughts and questions about it for our next coding session! 
+
+(Also note the document structure, as an example of a thesis in our field.)
 
 
 # Week 2 
