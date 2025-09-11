@@ -338,6 +338,10 @@ Let's start with a sketching application -- but let's think about how we can use
 - What are the events?
 - Begin with pseudo-code, then transform to working code?
 
+Today's code sketching progress:
+
+https://codepen.io/grrrwaaa/pen/gbaJjgv?editors=0010
+
 ---
 
 Examples from 2024's class
@@ -1176,6 +1180,8 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 ## Class Recordings
 
 Recordings of the weekly sessions will be here:
+
+- [Week 2: What is Computation; first Code Sketch](https://yorku.zoom.us/rec/share/BnT_EkFxUrBnY4JqEqHr9Idgi70cfyb7Bgdgn0NfgGOyduUIXx1IkZXVVdjXisrO.pDbOR8JPhlQ4-tZL)
 
 <!-- 
 - [Week 0 Class Recording - first patching](https://yorku.zoom.us/rec/share/ZL5_tEz7cuDZHNk585qCGx3GwyIf-ui4tt6ScNreRbT1ma-lIToigpasxu9n24I0.up3Jixd74Ti1Cb1j)
