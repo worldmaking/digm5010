@@ -631,12 +631,15 @@ By interacting with these elements we can verify statements, develop intuition, 
 - Many examples of [Explorable Explanations](https://explorabl.es)
   - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
 
+- Another collection, focused on [Complex Systems](https://www.complexity-explorables.org)
+  - Many of these are authored using [D3.js](https://d3js.org), perhaps the widest-used Javascript library for custom dynamic visualizations
+
 - An academic journal based on this format is [Distill](https://distill.pub)
 - A platform for "repdroducible research" is [Nextjournal](https://nextjournal.com) -- see [examples](https://nextjournal.com/explore)
 - A platform for building observable data apps at [Observable](https://observablehq.com) -- see [examples](https://observablehq.com/explore)
   
 - [Further reading](https://explorabl.es/reading/)
-  - An important precursor, also acknowledged by Explorabl.es, is Seymour Papert's [Mindstorms](https://mindstorms.media.mit.edu) for computation and early education in the 1980's, which we will read more about next
+  - An important precursor, also acknowledged by Explorabl.es, is Seymour Papert's [Mindstorms](https://mindstorms.media.mit.edu) for computation and early education in the 1980's -- itself also part of those historical threads from cybernetics to digital media
 
 ---
 
