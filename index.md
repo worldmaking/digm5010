@@ -183,7 +183,7 @@ Authors will be required to present their papers with a duration of 10 minutes.
 
 ## An introduction
 
-Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1lvAaIH7lXHz0sc02L7JXVsM_QySOY4SPPdc5tNI5HC4/edit
+Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU/
  - I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
 - You can include a more formal bio, or artist statement, or something more informal about the inspirations that brought you to the program.
 - More importantly: let us know what you want to *do*, what you want to *research*!
