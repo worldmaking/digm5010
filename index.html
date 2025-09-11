@@ -189,7 +189,7 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-0">Week 0</h1>
 <p>Sep 4, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <p><strong>Hello and welcome!</strong></p>
 <p>We are in a program of digital media, co-run by computational arts and computer science. Art &amp; science as &quot;two cultures&quot;, meeting through a cybernetic medium of computation. </p>
 <p>But perhaps &quot;meeting&quot; is too gentle a word. Sometimes it feels like a tectonic collision. To discover something new, we cannot follow a single path. Collisions between trajectories derail and open into new possibilities, that wouldn&#39;t be found if you only followed trend lines or deductive trails. </p>
@@ -266,7 +266,7 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-1">Week 1</h1>
 <p>Sep 11, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <p><strong>This week&#39;s paper workflow</strong></p>
 <ul>
 <li>This week you should be selecting your focused topic, with keywords, search terms, etc. </li>
@@ -398,35 +398,47 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 <p>Maeda&#39;s courses and research in the Aesthetics &amp; Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his <a href="https://en.wikipedia.org/wiki/Design_By_Numbers">Design By Numbers</a> software was the precursor of their Processing (which led to <a href="https://p5js.org/">P5.js</a>). </p>
 <p>Maeda&#39;s courses challenged students to rethink the medium from its most basic elements. A typical assignment:</p>
 <blockquote>
-<p>Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. <a href="https://acg.media.mit.edu/courses/mas964/presentation/panels.html">MAS 964 P</a></p>
+<p>Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. <a href="https://acg.media.mit.edu/courses/mas964/presentation/panels.html">MAS 964 P</a></p>
 </blockquote>
 <h3 id="a-reading">A reading</h3>
 <p>Golan Levin was one of Maeda&#39;s students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda&#39;s project. He is now a professor at Carnegie Mellon University, and a key figure in the Art &amp; Code community. There’s a lot to draw from <a href="http://www.flong.com/archive/texts/publications/thesis/index.html">his Master&#39;s thesis</a>, both theoretically and practically. </p>
-<p>For example, look at Curly and <a href="http://www.flong.com/archive/projects/yellowtail/index.html">Yellowtail</a> -- we&#39;ll try to recreate this as our first example of &quot;reproducing research&quot;. </p>
+<p>(Also note the document structure, as an example of a thesis in our field.)</p>
+<p>For example, look at Curly and <a href="http://www.flong.com/archive/projects/yellowtail/index.html">Yellowtail</a> -- perhaps we can try to recreate this as our first example of &quot;reproducing research&quot;. </p>
 <hr>
 <h3 id="lets-get-making">Let&#39;s get making</h3>
 <ul>
-<li>A shareable workspace: <a href="https://codepen.io">codepen</a></li>
+<li>A shareable workspace: <a href="https://codepen.io">codepen</a><ul>
 <li>The HTML5 trio: the HTML (DOM), CSS, and JavaScript<ul>
 <li>HMTL: the page container and structure. The language forms a <strong>declarative</strong> data structure, roughly in a tree structure. </li>
 <li>CSS: the rules of layout, rendering and style. The language forms a set of <strong>declarative</strong> definitions. </li>
 <li>JS: dynamic generation and behaviour. The language forms <strong>procedural</strong> steps of action, invoked in response to events. </li>
 </ul>
 </li>
-<li><a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes">Javascript</a> </li>
+</ul>
+</li>
+<li>Notes on <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes">Javascript</a></li>
 <li>What is an API? <ul>
 <li>E.g. the MDN <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial">canvas documentation</a>.  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.</li>
 </ul>
 </li>
-<li>2D drawing in the web using <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">Canvas, vectors, matrices</a> </li>
+<li>Notes on 2D drawing in the web using <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">Canvas, vectors, matrices</a> </li>
+</ul>
+<p>Let&#39;s start with a sketching application -- but let&#39;s think about how we can use computation to augment or transform our gestures in some way.</p>
+<ul>
+<li>First, what elements do we need? </li>
+<li>Starting from Maeda&#39;s observations, what concepts need to be mechanized?</li>
+<li>How do we look into API documentation to find the methods we need?</li>
+<li>How do we start? </li>
+<li>What are the events?</li>
+<li>Begin with pseudo-code, then transform to working code?</li>
 </ul>
 <hr>
+<p>Examples from 2024&#39;s class</p>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="yLdrXNQ" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/yLdrXNQ">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-<hr>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="Yzdxwgj" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/Yzdxwgj">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-
+<p><strong>Homework</strong></p>
+<p>Continue with your topic research for the paper, beginning to build your reading list.</p>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="an-introduction">An introduction</h2>
@@ -444,20 +456,20 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="reading-for-sketching">Reading for sketching</h2>
 <p>Have a good read of <a href="http://www.flong.com/archive/texts/publications/thesis/index.html">Golan Levin&#39;s Master thesis</a>, and note down your thoughts and questions about it for our next coding session! </p>
-<p>(Also note the document structure, as an example of a thesis in our field.)</p>
+<p>How would you respond to the example challenge, <em>&quot;Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm.&quot;</em>?  </p>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-2">Week 2</h1>
 <p>Sep 18, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="introductions">Introductions</h2>
-<p><a href="https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU">Introductions</a></p>
+<p><a href="https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU">Introduction Presentations</a> -- let&#39;s get to know each other, and our diverse backgrounds. And let&#39;s hear about your research topic areas and questions! </p>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="preparing-a-reading-list">Preparing a Reading List</h2>
-<p>As the first step in this process, you will begin with preparing a collection of papers related to your research topic/question.</p>
+<p>As the first output in the paper writing process, you will prepare a collection of papers related to your research topic/question.</p>
 <p><strong>Literature review part 1: Reading List</strong></p>
 <p>In this course you will investigate a topic within a sub-area of the digital media realm that intersects with something of value to your own research goals in the program. </p>
 <p>In the first phase you will build up a <strong>reading list</strong> on your chosen topic. Please create an online document that you can share (e.g. a github page, a google doc, etc.) to collect your notes and references as you develop this reading list.</p>
@@ -466,6 +478,7 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 <li><p>Some investigative tips:</p>
 <ul>
 <li>Use Wikipedia to identify <strong>keywords or terms</strong>, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellent network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.</li>
+<li>You can also use AI chatbots to explore topics, but be aware that they can misrepresent or even confabulate (hallucinate) things.</li>
 <li>Use these terms and publications in <a href="https://scholar.google.com/">Google Scholar</a>, <a href="https://www.zotero.org">Zotero</a> and other academic search engines to find for papers that address the questions and issues. Follow <code>cited by</code> and <code>related articles</code> trails to find new leads. Aim to find the most significant (qualitatively &amp; quantitatively) papers. You should be aiming for a collection of 25-50 potentially interesting papers on the topic at this point. </li>
 <li>At the same time, look for conferences or journals that are more specific to your topic, and see if they have collections of proceedings online to browse through. </li>
 <li>Not all papers are available as PDFs online. You might be able to find them via <a href="https://www.library.yorku.ca/web/bbl/e-resources/">York Libraries</a> or also communities like <a href="https://www.researchgate.net/">ResearchGate</a>, but do not let this roadblock your progress -- find alternatives to work from instead.</li>
@@ -486,7 +499,7 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="making-2-animate-drawing">Making 2: animate drawing</h2>
-<p>Let&#39;s continue from last week&#39;s drawing app. </p>
+<p>Let&#39;s continue with the sketching. </p>
 <blockquote>
 <p>First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have <code>line()</code> and <code>background()</code> etc.  That&#39;s good: we are in the stage of <em>reproducing research</em>. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that&#39;s good too -- we aren&#39;t limited to what&#39;s already given because we know how to remake it, and maybe we&#39;ll have a discovery that can advance research! </p>
 </blockquote>
@@ -502,10 +515,10 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 <p>A more complex example, inspired by Paul Haberli&#39;s <em>Dynadraw</em>: </p>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="gOYQyrd?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-<p><a href="https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011">Today&#39;s script</a></p>
+<p><a href="https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011">Example script from a previous class</a></p>
 <h3 id="reproducing-curlyyellowtail">Reproducing Curly/Yellowtail</h3>
 <ul>
-<li>Last week we saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?</li>
+<li>We can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?</li>
 <li>Or: how can we combine both sketching and animating? How can we draw a line that then animates?<ul>
 <li>Can we <em>reify</em> the drawing?</li>
 </ul>
@@ -631,7 +644,7 @@ draw:
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-3">Week 3</h1>
 <p>Sep 25, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <p><a href="https://yorku.zoom.us/rec/share/XAq2NPYpbqCVBtvR9gTmcTZspvcMPikuRRy7-m0ibmowUEfFi0B7Sp_LxRO3fScy.up7ZoH5Adud0amiq">Zoom recording</a></p>
 <ul>
 <li>Reading list discussion</li>
@@ -640,7 +653,7 @@ draw:
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-4">Week 4</h1>
 <p>Oct 2, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <!--
 
 **Reproducing & sharing research through making**: discussion & sharing of your codepens! 
@@ -773,7 +786,7 @@ Let's follow back through a selective history.
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-5">Week 5</h1>
 <p>Oct 9 
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <ul>
 <li>Review of schedule for remainder of semester</li>
 </ul>
@@ -784,7 +797,7 @@ Let's follow back through a selective history.
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-6">Week 6</h1>
 <p>Oct 23, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <!--
 **For next week**, complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
 
@@ -812,7 +825,7 @@ Our script so far:
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-7">Week 7</h1>
 <p>Oct 30, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="what-is-peer-review-of-research">What is peer review of research?</h2>
@@ -882,7 +895,7 @@ Our script so far:
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-8">Week 8</h1>
 <p>Nov 6, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <p><a href="https://yorku.zoom.us/rec/share/U81PF8sbNNdLunWTVUA49hy033RDKzB5N4UcseM54-L6kQODHyP7l5WENZfb8VNN.4y1sgYVagbvipCff">Zoom recording</a></p>
 <!--
 
@@ -926,7 +939,7 @@ Our script so far:
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-9">Week 9</h1>
 <p>Nov 13, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <!--
 
 - A quick introduction to [Node.js](nodejs.html)
@@ -975,7 +988,7 @@ Our script so far:
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-10">Week 10</h1>
 <p>Nov 20, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <!--
 - 1 on 1 paper sessions
 
@@ -990,7 +1003,7 @@ Our script so far:
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h1 id="week-11">Week 11</h1>
 <p>Nov 27, 2023
-<a href="#zoom-recordings">Class Recording</a></p>
+<a href="#class-recordings">Class Recording</a></p>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="final-presentations">Final presentations</h2>

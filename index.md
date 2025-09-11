@@ -97,7 +97,7 @@ I normally also record sessions and share recordings with the course participant
 
 # Week 0 
 Sep 4, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 **Hello and welcome!**
 
@@ -185,7 +185,7 @@ Authors will be required to present their papers with a duration of 10 minutes.
 
 # Week 1 
 Sep 11, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 **This week's paper workflow**
 - This week you should be selecting your focused topic, with keywords, search terms, etc. 
@@ -306,36 +306,49 @@ Maeda's courses and research in the Aesthetics & Computation group at MIT inspir
 
 Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
 
-> Given a point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
+> Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
 
 ### A reading
 
 Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from [his Master's thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), both theoretically and practically. 
 
-For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html) -- we'll try to recreate this as our first example of "reproducing research". 
+(Also note the document structure, as an example of a thesis in our field.)
+
+For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html) -- perhaps we can try to recreate this as our first example of "reproducing research". 
 
 -----
 
 ### Let's get making
 
 - A shareable workspace: [codepen](https://codepen.io)
-- The HTML5 trio: the HTML (DOM), CSS, and JavaScript
-  - HMTL: the page container and structure. The language forms a **declarative** data structure, roughly in a tree structure. 
-  - CSS: the rules of layout, rendering and style. The language forms a set of **declarative** definitions. 
-  - JS: dynamic generation and behaviour. The language forms **procedural** steps of action, invoked in response to events. 
-- [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes) 
+  - The HTML5 trio: the HTML (DOM), CSS, and JavaScript
+    - HMTL: the page container and structure. The language forms a **declarative** data structure, roughly in a tree structure. 
+    - CSS: the rules of layout, rendering and style. The language forms a set of **declarative** definitions. 
+    - JS: dynamic generation and behaviour. The language forms **procedural** steps of action, invoked in response to events. 
+- Notes on [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes)
 - What is an API? 
   - E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.
-- 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
+- Notes on 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
+
+Let's start with a sketching application -- but let's think about how we can use computation to augment or transform our gestures in some way.
+- First, what elements do we need? 
+- Starting from Maeda's observations, what concepts need to be mechanized?
+- How do we look into API documentation to find the methods we need?
+- How do we start? 
+- What are the events?
+- Begin with pseudo-code, then transform to working code?
 
 ---
+
+Examples from 2024's class
 
 https://codepen.io/grrrwaaa/pen/yLdrXNQ
 
----
-
 https://codepen.io/grrrwaaa/pen/Yzdxwgj
 
+**Homework**
+
+Continue with your topic research for the paper, beginning to build your reading list.
 
 ## An introduction
 
@@ -350,21 +363,19 @@ Please add 2-4 slides to introduce yourself in The Google Slide deck here: https
 
 Have a good read of [Golan Levin's Master thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), and note down your thoughts and questions about it for our next coding session! 
 
-(Also note the document structure, as an example of a thesis in our field.)
-
+How would you respond to the example challenge, *"Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm."*?  
 
 # Week 2 
 Sep 18, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 ## Introductions
 
-[Introductions](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU)
-
+[Introduction Presentations](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) -- let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
 
 ## Preparing a Reading List
 
-As the first step in this process, you will begin with preparing a collection of papers related to your research topic/question.
+As the first output in the paper writing process, you will prepare a collection of papers related to your research topic/question.
 
 **Literature review part 1: Reading List**
 
@@ -376,6 +387,7 @@ As we saw in class, good research needs a good research question, but that doesn
 
 - Some investigative tips:
     - Use Wikipedia to identify **keywords or terms**, questions and issues, foundational publications and controversies, etc. This can also help to make your search more narrow/specific. Look for the edges of a body of research. Wikipedia is an excellent network of conceptual nodes (but also a potential rabbithole). But remember that it is an encyclopedia, and should be used mainly as a guide map.
+    - You can also use AI chatbots to explore topics, but be aware that they can misrepresent or even confabulate (hallucinate) things.
     - Use these terms and publications in [Google Scholar](https://scholar.google.com/), [Zotero](https://www.zotero.org) and other academic search engines to find for papers that address the questions and issues. Follow `cited by` and `related articles` trails to find new leads. Aim to find the most significant (qualitatively & quantitatively) papers. You should be aiming for a collection of 25-50 potentially interesting papers on the topic at this point. 
     - At the same time, look for conferences or journals that are more specific to your topic, and see if they have collections of proceedings online to browse through. 
     - Not all papers are available as PDFs online. You might be able to find them via [York Libraries](https://www.library.yorku.ca/web/bbl/e-resources/) or also communities like [ResearchGate](https://www.researchgate.net/), but do not let this roadblock your progress -- find alternatives to work from instead.
@@ -388,10 +400,9 @@ As we saw in class, good research needs a good research question, but that doesn
 - [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
 - [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
-
 ## Making 2: animate drawing
 
-Let's continue from last week's drawing app. 
+Let's continue with the sketching. 
 
 > First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have `line()` and `background()` etc.  That's good: we are in the stage of *reproducing research*. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that's good too -- we aren't limited to what's already given because we know how to remake it, and maybe we'll have a discovery that can advance research! 
 
@@ -404,12 +415,11 @@ A more complex example, inspired by Paul Haberli's *Dynadraw*:
 
 https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010
 
-[Today's script](https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011)
-
+[Example script from a previous class](https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011)
 
 ### Reproducing Curly/Yellowtail
 
-  - Last week we saw how we can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
+  - We can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
   - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
     - Can we *reify* the drawing?
 
@@ -542,7 +552,7 @@ Some rules of thumb while coding:
 
 # Week 3 
 Sep 25, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 [Zoom recording](https://yorku.zoom.us/rec/share/XAq2NPYpbqCVBtvR9gTmcTZspvcMPikuRRy7-m0ibmowUEfFi0B7Sp_LxRO3fScy.up7ZoH5Adud0amiq)
 
@@ -550,7 +560,7 @@ Sep 25, 2023
 
 # Week 4
 Oct 2, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 <!--
 
@@ -666,7 +676,7 @@ Let's follow back through a selective history.
 
 # Week 5 
 Oct 9 
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 - Review of schedule for remainder of semester
 
@@ -677,7 +687,7 @@ Oct 9
 
 # Week 6
 Oct 23, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 <!--
 **For next week**, complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
@@ -703,7 +713,7 @@ https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
 
 # Week 7
 Oct 30, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 
   
@@ -763,7 +773,7 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 
 # Week 8
 Nov 6, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 [Zoom recording](https://yorku.zoom.us/rec/share/U81PF8sbNNdLunWTVUA49hy033RDKzB5N4UcseM54-L6kQODHyP7l5WENZfb8VNN.4y1sgYVagbvipCff)
 
@@ -803,7 +813,7 @@ For the purposes of the course, please submit your final papers by December 8th,
 
 # Week 9
 Nov 13, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 <!--
 
@@ -846,7 +856,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 
 # Week 10
 Nov 20, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 <!--
 - 1 on 1 paper sessions
@@ -860,7 +870,7 @@ Nov 20, 2023
 
 # Week 11
 Nov 27, 2023
-[Class Recording](#zoom-recordings)
+[Class Recording](#class-recordings)
 
 ## Final presentations
 
