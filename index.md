@@ -519,7 +519,7 @@ Please continue working on extending and mutating this into a new direction! We 
 - Each segment holds a relative time, but we aren't really using that in the animation yet. E.g. if you pause mid-gesture, then continue, the animated line moves but it does not have a pause. Can you figure out how to fix that?
 - With multiple lines, they are not aware of each other. Is there a way that they could be?
 - How about rhythm -- is there a way to synchronize them to an underlying meter, for example?
-- Can line mutate?
+- Can line mutate? Getting noisier, or more angular, or more smooth, etc. over time?
 - Can lines decay? Or grow?
 - Can lines split into two?
 
@@ -614,45 +614,6 @@ https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
 ---
 
-## Explorable explanations
-
-It was mentioned earlier that, as an alternative to a paper, one option for the final submission is an "explorable explanation". What does that mean?
-
-The term is borrowed from a website collection of [Explorable Explanations](https://explorabl.es), which took the term from a [2011 article](https://worrydream.com/ExplorableExplanations/) by [Bret Victor](https://worrydream.com). Here's a couple of quotes that are highly relevant to our goals in this course:
-
-> "What does it mean to be an active reader? An active reader asks questions, considers alternatives, questions assumptions, and even questions the trustworthiness of the author. An active reader tries to generalize specific examples, and devise specific examples for generalities. An active reader doesn't passively sponge up information, but uses the author's argument as a springboard for critical thought and deep understanding."
-
-This is great advice for a researcher, and great things to do while annotating a bibliography!
-
-> "A typical reading tool, such as a book or website, displays the author's argument, and nothing else. The reader's line of thought remains internal and invisible, vague and speculative. We form questions, but can't answer them. We consider alternatives, but can't explore them. We question assumptions, but can't verify them. And so, in the end, we blindly trust, or blindly don't, and we miss the deep understanding that comes from dialogue and exploration."
-
-Against this he suggests creating "Explorable Explanations":
-
-> "The goal is to change people's relationship with text. People currently think of text as information to be consumed. I want text to be used as an environment to think in."
-
-He shows a few examples of how we can embed reactive elements and interactive simulations within a document. This isn't just a novelty:
-
-> "It's tempting to be impressed by the novelty of an interactive widget such as this, but the interactivity itself is not really the point. The primary point of this example -- the reason I call it an "explorable explanation" -- is the subtlety with which the explorable is integrated with the explanation."
-
-By interacting with these elements we can verify statements, develop intuition, make discoveries, and explore new questions about the topic. 
-
-- A simple example is his [model-driven debate](https://worrydream.com/ClimateChange/#media-debate) -- drag the green text!
-
-- Many examples of [Explorable Explanations](https://explorabl.es)
-  - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
-
-- Another collection, focused on [Complex Systems](https://www.complexity-explorables.org)
-  - Many of these are authored using [D3.js](https://d3js.org), perhaps the widest-used Javascript library for custom dynamic visualizations
-
-- An academic journal based on this format is [Distill](https://distill.pub)
-- A platform for "repdroducible research" is [Nextjournal](https://nextjournal.com) -- see [examples](https://nextjournal.com/explore)
-- A platform for building observable data apps at [Observable](https://observablehq.com) -- see [examples](https://observablehq.com/explore)
-  
-- [Further reading](https://explorabl.es/reading/)
-  - An important precursor, also acknowledged by Explorabl.es, is Seymour Papert's [Mindstorms](https://mindstorms.media.mit.edu) for computation and early education in the 1980's -- itself also part of those historical threads from cybernetics to digital media
-
----
-
 <!--
 
 ## Machine intelligence and autonomous agents
@@ -692,6 +653,46 @@ Oct 9
 [Class Recording](#class-recordings)
 
 - Review of schedule for remainder of semester
+
+
+---
+
+## Explorable explanations
+
+It was mentioned earlier that, as an alternative to a paper, one option for the final submission is an "explorable explanation". What does that mean?
+
+The term is borrowed from a website collection of [Explorable Explanations](https://explorabl.es), which took the term from a [2011 article](https://worrydream.com/ExplorableExplanations/) by [Bret Victor](https://worrydream.com). Here's a couple of quotes that are highly relevant to our goals in this course:
+
+> "What does it mean to be an active reader? An active reader asks questions, considers alternatives, questions assumptions, and even questions the trustworthiness of the author. An active reader tries to generalize specific examples, and devise specific examples for generalities. An active reader doesn't passively sponge up information, but uses the author's argument as a springboard for critical thought and deep understanding."
+
+This is great advice for a researcher, and great things to do while annotating a bibliography!
+
+> "A typical reading tool, such as a book or website, displays the author's argument, and nothing else. The reader's line of thought remains internal and invisible, vague and speculative. We form questions, but can't answer them. We consider alternatives, but can't explore them. We question assumptions, but can't verify them. And so, in the end, we blindly trust, or blindly don't, and we miss the deep understanding that comes from dialogue and exploration."
+
+Against this he suggests creating "Explorable Explanations":
+
+> "The goal is to change people's relationship with text. People currently think of text as information to be consumed. I want text to be used as an environment to think in."
+
+He shows a few examples of how we can embed reactive elements and interactive simulations within a document. This isn't just a novelty:
+
+> "It's tempting to be impressed by the novelty of an interactive widget such as this, but the interactivity itself is not really the point. The primary point of this example -- the reason I call it an "explorable explanation" -- is the subtlety with which the explorable is integrated with the explanation."
+
+By interacting with these elements we can verify statements, develop intuition, make discoveries, and explore new questions about the topic. 
+
+- A simple example is his [model-driven debate](https://worrydream.com/ClimateChange/#media-debate) -- drag the green text!
+
+- Many examples of [Explorable Explanations](https://explorabl.es)
+  - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
+
+- Another collection, focused on [Complex Systems](https://www.complexity-explorables.org)
+  - Many of these are authored using [D3.js](https://d3js.org), perhaps the widest-used Javascript library for custom dynamic visualizations
+
+- An academic journal based on this format is [Distill](https://distill.pub)
+- A platform for "repdroducible research" is [Nextjournal](https://nextjournal.com) -- see [examples](https://nextjournal.com/explore)
+- A platform for building observable data apps at [Observable](https://observablehq.com) -- see [examples](https://observablehq.com/explore)
+  
+- [Further reading](https://explorabl.es/reading/)
+  - An important precursor, also acknowledged by Explorabl.es, is Seymour Papert's [Mindstorms](https://mindstorms.media.mit.edu) for computation and early education in the 1980's -- itself also part of those historical threads from cybernetics to digital media
 
 
 ## Reading Week
