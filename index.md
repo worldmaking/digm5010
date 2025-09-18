@@ -383,9 +383,11 @@ As the first output in the paper writing process, you will prepare a collection 
 
 **Literature review part 1: Reading List**
 
-In this course you will investigate a topic within a sub-area of the digital media realm that intersects with something of value to your own research goals in the program. 
+You will investigate a topic within a sub-area of the digital media realm that intersects with something of value to your own research goals in the program. 
 
-In the first phase you will build up a **reading list** on your chosen topic. Please create an online document that you can share (e.g. a github page, a google doc, etc.) to collect your notes and references as you develop this reading list.
+In the first phase you will build up a **reading list** on your chosen topic. Please create a document that you can share (e.g. a github page, a word doc, a google doc, etc.) to collect your notes and references as you develop this reading list.
+
+[Here's an example reading list for a grant proposal I'm currently developing](https://www.notion.so/Reading-list-27289a55d5e080058c94c7e41bdf28c3)
 
 As we saw in class, good research needs a good research question, but that doesn't always become apparent at first. Start wider until you are ready to go deep & narrow. Seek out key papers, conferences, and other key resources for the topic. 
 
@@ -403,6 +405,8 @@ As we saw in class, good research needs a good research question, but that doesn
 
 - [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
 - [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
+
+
 
 ## Making 2: animate drawing
 
@@ -513,9 +517,11 @@ Please continue working on extending and mutating this into a new direction! We 
 - Are there more interesting things we could do with the boundaries?
 - Should segments continue forever? 
 - Each segment holds a relative time, but we aren't really using that in the animation yet. E.g. if you pause mid-gesture, then continue, the animated line moves but it does not have a pause. Can you figure out how to fix that?
-- There was a good suggestion in class: with multiple lines, they are not aware of each other. Is there a way that they could be?
-- How about time -- is there a way to synchronize them to an underlying meter, for example?
-- Or if you want to try to figure it out, how would you add sound to each line?
+- With multiple lines, they are not aware of each other. Is there a way that they could be?
+- How about rhythm -- is there a way to synchronize them to an underlying meter, for example?
+- Can line mutate?
+- Can lines decay? Or grow?
+- Can lines split into two?
 
 ---
 
