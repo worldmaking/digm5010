@@ -507,7 +507,11 @@ draw:
 		drawpath(currentpath)
 ```
 
-And here's the final code we ended up with (with a couple of little refinements added):
+And here's the final code we ended up with:
+
+https://codepen.io/grrrwaaa/pen/myVdEZR?editors=0010
+
+Here's a more refined version from last year's class:
 
 https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
