@@ -1193,6 +1193,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 Recordings of the weekly sessions will be here:
 
 - [Week 2: What is Computation; first Code Sketch](https://yorku.zoom.us/rec/share/BnT_EkFxUrBnY4JqEqHr9Idgi70cfyb7Bgdgn0NfgGOyduUIXx1IkZXVVdjXisrO.pDbOR8JPhlQ4-tZL)
+- [Week 3: Paper: Reading list preparation + Coding: Rebuilding Yellowtail](https://yorku.zoom.us/rec/share/kG3MRtCzkT9iIrMz4ykj-1Wx8JX_jVBnX6om7BU3TirHZiOeGkYuSbbxIINOTRTH.pij6xVyBVvyWUbPt)
 
 <!-- 
 - [Week 0 Class Recording - first patching](https://yorku.zoom.us/rec/share/ZL5_tEz7cuDZHNk585qCGx3GwyIf-ui4tt6ScNreRbT1ma-lIToigpasxu9n24I0.up3Jixd74Ti1Cb1j)
