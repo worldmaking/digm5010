@@ -74,7 +74,7 @@ week 2: what is computation
 | [9/4](#week-0)    | [What is Research?](#what-is-research)                 | [Call for Papers](#a-call-for-papers) & discussion | Identify motivations, areas, research communities  |
 | [9/11](#week-1)   | [What is Computation?](#what-is-computation)           | [Computational Sketching](#computational-sketching) | Focused topic selection |
 | [9/18](#week-2)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail)  |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
-| [9/25](#week-3)   | [Introductions](#introductions)                       | 1-on-1's                  | Problem/thesis statement |
+| [9/25](#week-3)   | [Introductions](#introductions)                       | 1-on-1's                  | [Problem/thesis statement](#problem-statement) |
 | [10/2](#week-4)   |                                                        |                                     | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
 | [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
 | [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
@@ -568,8 +568,100 @@ Sep 25, 2023
 
 [Introduction Presentations](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) -- let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
 
+## Problem Statement
 
-Reading list discussion
+As we move through the next stages of your paper preparation, you will begin to refine and revise your paper's **research question** or **problem statement**.  
+
+> A research problem statement is the foundational element of any academic paper that clearly articulates the specific issue, gap, or question your research addresses. It serves as the bridge between existing knowledge and what your study aims to contribute to the field. 
+
+A good problem statement reflects the kind of intellectual sophistication expected at the graduate level and beyond, where research moves beyond summarizing existing knowledge toward generating new understanding.
+
+This can be surprisingly difficult to do well, but it is essential -- and the better the problem statement, the easier everything else becomes. 
+
+The key components of a problem statement (not necessarily in this order):
+- **Context**: Describes the existing situation, state of the art, or the problem as it currently stands. 
+  - This involves demonstrating your familiarity with relevant literature and showing how your work connects to ongoing scholarly conversations (which will be supported by your literature review).
+  - It may also be framed relative to a **motivation, goal or ideal state**: which describes what the situation should ideally look like. 
+- **The Gap**: The statement then identifies a specific gap, contradiction, or insufficiency in current understanding, i.e. the difference between the current and desired states. That is, it identifies what is missing, or what is wrong (wrongly addressed, wrongly assummed, etc.) in the current state of the art. 
+  - The gap might be empirical (lack of data), theoretical (inadequate explanations), methodological (limitations in existing approaches), or practical (unresolved real-world issues). 
+- The **specific research questions**: You articulate the specific research question or questions that emerge from this gap. These should be focused, researchable, and aligned with the methodological capabilities of your discipline. 
+  - It should be narrowly-defined, because research goes deep & narrow, not shallow & wide. It is a way to say what you will *not* do. 
+- **Addressability**: That you can identify how this is addressable through research (the most general summarized form of you would propose to resolve the gap)
+- **The Significance/Impact**: Why addressing this problem matters, both for advancing knowledge in your field and potentially for broader societal understanding. What is at stake (risks/opportunities). Who it affects. 
+
+What it should **not** contain:
+- **Value statements or opinion**: Only use objective facts and evidence. 
+
+What is the purpose of a problem statement?
+- **Clarity**: It puts the real issue into words and removes ambiguity. 
+- **Focus & guidance**: It serves as a clear direction to the research, to separate out what is not relevant and avoid getting sidetracked. 
+  - Your problem statement directly influences your methodology, determining whether you need qualitative, quantitative, or mixed-method approaches. It guides your literature review by defining which bodies of scholarship are most relevant to your inquiry.
+  - It also establishes the criteria for **evaluating your research's success**, and the scope and significance of potential conclusions
+- **Direction**: It sets the goal for the project and guides subsequent activities. 
+- **Credibility & Buy-in**: It helps reviewers (paper reviewers, grant reviewers) understand the value of the research
+
+That last point can be especially important -- think about this from a reviewer's point of view. What would make them consider this paper worth publishing, or this proposal worth funding?
+
+To a reviewer, a strong research problem statement shares several characteristics: 
+- It demonstrates specificity rather than broad generalization, focusing on a particular aspect of a larger phenomenon that can be meaningfully investigated within the scope of your study. 
+- It exhibits scholarly rigor by showing engagement with relevant theoretical frameworks and empirical findings. 
+- The problem should be significant enough to warrant investigation but manageable within your research constraints. 
+- Reviewers use the problem statement to assess whether your research makes a meaningful contribution to the field.
+- It should also be novel, either by addressing an unexplored question or by approaching a familiar question from a new angle. 
+- It should make clear the criteria for evaluating the success of the research -- if it doesn't, then it isn't clear enough. 
+- Additionally, effective problem statements maintain disciplinary relevance while potentially offering insights that cross disciplinary boundaries.
+
+Research problem statements vary considerably across different fields within arts and sciences. In the humanities, problems often emerge from interpretive gaps, textual ambiguities, or underexplored cultural phenomena. For example, a literature scholar might identify how existing criticism has overlooked the influence of specific historical contexts on an author's work. In the natural sciences, problems typically arise from observational anomalies, theoretical inconsistencies, or the need for new methodological approaches. In the arts, problem statements may be focused on analysis of works and practices, or the development of new practices or forms of expression, or particularly in our field, how new technologies make us rethink norms and practices in the arts. See guidance from Emily Carr [here](https://guides.ecuad.ca/mfa/researchquestion) and [here](https://writingcentre.ecuad-theshow.org/wp-content/uploads/2015/09/36bb1-writing-a-research-question.pdf)
+
+**Common pitfalls to avoid**
+- One common issue is stating problems too broadly, making them unmanageable within the scope of a single study.  **Keep it narrow!**
+- Another frequent problem is failing to adequately demonstrate the gap in existing knowledge, instead merely restating what others have already established. This is why it is so important to read the most recent literature in the topic! 
+- Some researchers also struggle with articulating why their problem matters, focusing too heavily on methodology without explaining the broader significance of their inquiry.
+
+**Look at examples**
+I suggest, as a productive activity, that you look at the papers in your reading list, and identify their problem statements. Usually this is given in a summarized form in the abstract, and with a more fleshed out form in the Introduction. For each one, identify the context, gap, question, addressability and significance. Imagine you are a reviewer: consider which ones you think are well-formed and clear, and which ones have pitfalls as written. This exercise can help you to better write your own problem statement.
+
+**Here are some from my current reading list**
+
+Hemment, Drew, Cory Kommers, Ruth Ahnert, Maria Antoniak, Glauco Arbix, Vaishak Belle, Steve Benford et al. "Doing AI differently: rethinking the foundations of AI via the humanities." (2025). https://www.turing.ac.uk/news/publications/doing-ai-differently
+
+> "Artificial Intelligence is rapidly becoming global infrastructure – shaping decisions in healthcare, education, industry, and everyday life. Yet current AI systems face a fundamental limitation: they are shaped by narrow operational metrics that fail to reflect the diversity, ambiguity, and richness of human experience. This white paper presents a research vision that positions interpretive depth as essential to building AI systems capable of engaging meaningfully with cultural complexity – while recognising that no technical solution alone can resolve the challenges these systems face in diverse human contexts."
+
+Rein, Patrick, Stefan Ramson, Jens Lincke, Robert Hirschfeld, and Tobias Pape. "Exploratory and live, programming and coding: a literature study comparing perspectives on liveness." arXiv preprint arXiv:1807.08578 (2018). https://arxiv.org/pdf/1807.08578
+
+> Various programming tools, languages, and environments give programmers the impression of changing a program while it is running. This experience of liveness has been discussed for over two decades and a broad spectrum of research on this topic exists. This work has been carried out in the communities around three major ideas which incorporate liveness as an important aspect: live programming, exploratory programming, and live coding.
+> While there have been publications on the focus of each particular community, the overall spectrum of liveness across these three communities has not been investigated yet. Thus, we want to delineate the variety of research on liveness. At the same time, we want to investigate overlaps and differences in the values and contributions between the three communities. Therefore, we conducted a literature study with a sample of 212 publications on the terms retrieved from three major indexing services. 
+> In delineating the spectrum of work on liveness, we hope to make the individual communities more aware of the work of the others. Further, by giving an overview of the values and methods of the individual communities, we hope to provide researchers new to the field of liveness with an initial overview.
+
+Xu, Feiyu, Hans Uszkoreit, Yangzhou Du, Wei Fan, Dongyan Zhao, and Jun Zhu. "Explainable AI: A brief survey on history, research areas, approaches and challenges." In CCF international conference on natural language processing and Chinese computing, pp. 563-574. Cham: Springer International Publishing, 2019. https://www.researchgate.net/profile/Feiyu-Xu/publication/336131051_Explainable_AI_A_Brief_Survey_on_History_Research_Areas_Approaches_and_Challenges/links/5e2b496f92851c3aadd7bf08/Explainable-AI-A-Brief-Survey-on-History-Research-Areas-Approaches-and-Challenges.pdf
+
+> Deep learning has made significant contribution to the recent progress in artificial intelligence. In comparison to traditional machine learning methods such as decision trees and support vector machines, deep learning methods have achieved substantial improvement in various prediction tasks. 
+> However, deep neural networks (DNNs) are comparably weak in explaining their inference processes and final results, and they are typically treated as a black-box by both developers and users. Some people even consider DNNs (deep neural networks) in the current stage rather as alchemy, than as real science. 
+> In many real-world applications such as business decision, medical diagnosis and investment recommendation, explainability and transparency of our AI systems become particularly essential for their users, for the people who are affected by AI decisions, and furthermore, for the researchers and developers who create the AI solutions. 
+> This paper first introduces Explainable AI, starting from expert systems and traditional machine learning approaches to the latest progress in the context of modern deep learning, and then describes the major research areas and the state-ofart approaches in recent years. 
+
+
+Michael Palumbo, Alexander Zonta, Graham Wakefield. "Modular reality: Analogues of patching in immersive space". Journal of New Music Research, DOI: 10.1080/09298215.2019.1706583. Taylor and Francis, 10 Jan 2020. https://www.researchgate.net/publication/338516272_Modular_reality_Analogues_of_patching_in_immersive_space
+
+> Despite decades of virtual reality (VR) research, current creative workflows remain far from VR founder Jaron Lanier’s musically inspired dream of collaboratively ‘improvising reality’ from within. Drawing inspiration from modular synthesis as a distinctive musically immersed culture and practice, this article presents a new environment for visual programming within VR that supports live, fine-grained, multi-artist collaboration, through a new framework for operational transformations on graph structures. Although presently focused on audio synthesis, it is articulated as a first step along a path to synthesising worlds.
+
+Ji, Haru Hyunkyung, and Graham Wakefield. "Entanglement: an immersive art of an engagement with non-conscious intelligence." In Proceedings of the International Symposium of Electronic Arts (ISEA), Seoul, Korea. 2025.
+
+> This paper describes an artwork combining procedural model- ing, generative AI, and dynamic simulation to create a seamless immersive installation inspired by the motif of the forest and its underground fungal network. The artwork is grounded in the imperative to draw attention to non-conscious cognition, in biological and machine senses, as a reminder of the essential more-than-human-world around us. It addresses these themes by integrating biologically-inspired dynamic simulations with non-narrative spatial storytelling. The paper’s contributions also include challenging the limitations of image-based generative AI in achieving consistency in long-form continuous video at high resolutions while balancing aesthetic control to create a valuable tool within an artist’s original workflow.
+
+Creative Human-AI Agency through Embodied Exploration and Ecological Thinking in XR (Grant draft work in progress)
+
+> At rapid rates, the application of AI is transforming nearly every aspect of real-life society with far-reaching cultural implications. Nevertheless, this progression remains severely unbalanced, driven by a technocentric orientation that privileges clear goal-oriented efficiency over qualitative depth and nuanced reflection. Such a trajectory tends to prioritize making AI smarter while pressuring humans to adapt to AI systems, rather than strengthening human capacities and agency. Ultimately, this orientation not only risks subordinating human values to technological imperatives but also diminishes opportunities for human problem-solving experiences, thereby threatening the long-term development and sustainability of diverse cognitive and creative abilities.
+> Within this landscape, the “CHAI4E” project aims to develop alternative human-centered AI designs and practices that support the expansion of human wisdom and agency. This is a fundamental shift that positions arts and humanities at the heart of innovation, emphasizing the qualitative richness of embodied experience through XR, as a foundation for new forms of human-AI co-creation. 
+> The proposed grant supports research that advances human-AI co-creation within XR environments through an integrated program comprising prototypes, case studies, and scholarship that reimagines Human–AI interactions within XR. To reorient AI development toward augmenting human capabilities and creating environments in which technology adapts to human needs, rather than the reverse, this project asks three interrelated questions: First, how can XR-based Human–AI systems foster environments that strengthen rather than constrain human agency and learning? Second, what design principles and workflows best ensure interpretive depth and experiential richness in Human–AI co-creation? And third, how creative agency and reflection-in-action can be meaningfully assessed in Human–AI–XR contexts?
+> Through practice-based experiments and case studies, this project aims to generate new theoretical and practical contributions to human–computer interaction, philosophy of creativity, and the arts, that can produce meaningful shifts in creative agency. The impact will extend beyond academia by empowering artists, students, and publics to engage AI not as passive consumers but as active co-creators, fostering broader cultural literacy around human agency in technologically mediated futures.
+
+
+**Homework**
+
+Please submit your Reading list, project title and problem statement via eClass here: [https://eclass.yorku.ca/mod/assign/view.php?id=3829664](https://eclass.yorku.ca/mod/assign/view.php?id=3829664)
+
+Next, you should be starting to develop this into your [Annotated Bibliography](#annotated-bibliography)
 
 # Week 4
 Oct 2, 2023
@@ -589,7 +681,7 @@ https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
 ## Annotated Bibliography
 
-- From your reading list, select at least 8 item to study in more careful detail as you create an **Annotated Bibliography**. 
+- From your reading list, select 8-12 items to study in more careful detail as you create an **Annotated Bibliography**. 
   - Use skimming/speed reading and organization to identify those that are most interesting or most worthy of more detailed review; and which would constitute an adquate treatment of the topic. 
   - Aim for diversity. Avoid using the same authors for the majority of the selection. Include distinct and opposing viewpoints if possible. 
   - Use primary sources where possible (in particular avoid blog posts, news articles, etc.), unless the secondary source adds a significant new idea (in which case you may want to cite both).
@@ -610,10 +702,10 @@ https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
   - The specific topic title or
   - The keywords or search terms
   - The research question/problem statement/abstract
-  - Your initial Reading List
   - Your final Annotated Bibliography
   - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
-- The final deadline for submission is **Sunday Oct 13th**.
+- The final deadline for submission is **Oct 9th**.
+- Submit via eClass here: [https://eclass.yorku.ca/mod/assign/view.php?id=3829706](https://eclass.yorku.ca/mod/assign/view.php?id=3829706)
 
 ---
 
