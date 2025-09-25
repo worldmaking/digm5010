@@ -73,8 +73,8 @@ week 2: what is computation
 |:--- |:--- |:--- |:--- |
 | [9/4](#week-0)    | [What is Research?](#what-is-research)                 | [Call for Papers](#a-call-for-papers) & discussion | Identify motivations, areas, research communities  |
 | [9/11](#week-1)   | [What is Computation?](#what-is-computation)           | [Computational Sketching](#computational-sketching) | Focused topic selection |
-| [9/18](#week-2)   | [Introductions](#introductions)                        |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
-| [9/25](#week-3)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail) | 1-on-1's                  | Problem/thesis statement |
+| [9/18](#week-2)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail)  |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
+| [9/25](#week-3)   | [Introductions](#introductions)                       | 1-on-1's                  | Problem/thesis statement |
 | [10/2](#week-4)   |                                                        |                                     | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
 | [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
 | [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
@@ -373,10 +373,6 @@ How would you respond to the example challenge, *"Given a mobile point in space 
 Sep 18, 2023
 [Class Recording](#class-recordings)
 
-## Introductions
-
-[Introduction Presentations](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) -- let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
-
 ## Preparing a Reading List
 
 As the first output in the paper writing process, you will prepare a collection of papers related to your research topic/question.
@@ -568,9 +564,12 @@ Some rules of thumb while coding:
 Sep 25, 2023
 [Class Recording](#class-recordings)
 
-[Zoom recording](https://yorku.zoom.us/rec/share/XAq2NPYpbqCVBtvR9gTmcTZspvcMPikuRRy7-m0ibmowUEfFi0B7Sp_LxRO3fScy.up7ZoH5Adud0amiq)
+## Introductions
 
-- Reading list discussion
+[Introduction Presentations](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) -- let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
+
+
+Reading list discussion
 
 # Week 4
 Oct 2, 2023
