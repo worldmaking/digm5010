@@ -8,13 +8,6 @@ function resize() {
 resize();
 window.addEventListener("resize", resize, false);
 
-if (window.max) {
-  // output a list
-  window.max.outlet("foo", 1, 2);
-} else {
-    console.log("This webpage is not loaded in Max.")
-}
-
 /////////////// All of our state ///////////////
 // 	list of finished paths
 let gestures = [];
@@ -68,7 +61,6 @@ function animate() {
 
     // the first segment of the line is moved to the end of the line
     let first = gesture.motions.shift();
-
     if (!gesture.isStationary) {
       // move the start point:
       gesture.start.x += first.dx;
@@ -100,9 +92,8 @@ function draw() {
   ctx.fillStyle = "rgba(0, 0, 0, 1)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  for (let g = 0; g < gesture.length; g++) {
-    let gesture = gestures[i]
-
+  for (let g=0; g<gestures.length; g++) {
+    let gesture = gestures[g]
     // if there is no data, skip it:
     if (gesture.motions.length < 1) continue;
 
@@ -146,7 +137,6 @@ function draw() {
       // wrap in the canvas
       toroidal(pt);
     }
-
     if (window.max) {
       window.max.outlet("point", g, pt.x, pt.y);
     }
