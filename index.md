@@ -76,7 +76,7 @@ week 2: what is computation
 | [9/18](#week-2)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail)  |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
 | [9/25](#week-3)   | [Introductions](#introductions)                       | 1-on-1's                  | [Problem/thesis statement](#problem-statement) |
 | [10/2](#week-4)   | [Digital Audio and Sound Synthesis](#digital-audio-and-sound-synthesis)                                      | Live Coding                                   | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
-| [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
+| [10/9](#week-5)   | [Audio II](#digital-audio-part-ii)                   ./m | Paper 1-on-1's                      | Complete paper outline |
 | [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
 | [10/23](#week-6)  |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
 | [10/30](#week-7)  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
@@ -674,11 +674,6 @@ Next, you should be starting to develop this into your [Annotated Bibliography](
 Oct 2, 2023
 [Class Recording](#class-recordings)
 
-
-[Introduction Presentations part II](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) -- let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
-
----
-
 **Research paper work**: 
 
 - Discussion of [reading list](#preparing-a-reading-list) & [problem statement](#problem-statement) progress
@@ -686,7 +681,19 @@ Oct 2, 2023
 
 ---
 
+[Introduction Presentations part II](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) 
+
+---
+
 **Sharing your code explorations** from our sketches of reproducing and extending Curly/Yellowtail in [Week 2](#week-2)
+
+https://codepen.io/Xingbang-Tang/pen/XJXbXqw
+
+https://codepen.io/jingwencat/pen/ByjoYPP
+
+https://codepen.io/Weeen-Luo/pen/raxOpPo
+
+https://codepen.io/johngzowskimaccom/pen/VYeZEVR
 
 ---
 
@@ -739,6 +746,8 @@ A very quick introduction to [Max](https://cycling74.com/products/max) and [`gen
   - Need to use a public URL, e.g. upload to github pages: https://alicelab.world/digm5010/yellowmax/index.html
 - Exporting via [RNBO](https://cycling74.com/products/rnbo)
   - See template here: https://rnbo.cycling74.com/learn/using-the-web-page-template
+
+**[The patcher from today's class](max_patchers/week4.maxpat)**
 
 
 ## Annotated Bibliography
@@ -811,6 +820,30 @@ Oct 9
 
 - Review of schedule for remainder of semester
 
+---
+
+### Digital Audio part II
+
+- Some key concepts and circuits:
+  - simplest filter of `mix` and `history`; cascade them; highpass; 
+    - control filter with envelope (LPG), control FM with envelope too?
+  - phasor ramp as meter, phasor manipulations (e.g. time division by `*` and `wrap 0 1`)
+    - triggers from ramps with `delta`, `abs`, `> 0.5`
+  - random steps by `latch`; source noise (gates?) or a related frequency (melodies?)
+    - lowpass filter to smooth gates and random sources
+  - mapping pitch to frequency, `mtof`, `exp2`
+    - quantizing with `* N`, `floor`, `/ N`; neat trick of quantizing twice (second to 12)
+  - effects with `delay` and mixing feedback, modulating time
+    - waveshaping -- magic sigmoid (e.g. `tanh`), filtering, etc. in the feedback loop
+      - more complex can become reverbs
+  
+- Embedding our yellowtail in Max:
+  - Export codepen (zip `dist`), use `readfile` message to `jweb` in Max
+  - Sending messages in & out: https://docs.cycling74.com/userguide/web_browser/
+- Embedding in Ableton Live?
+  - Need to use a public URL, e.g. upload to github pages: https://alicelab.world/digm5010/yellowmax/index.html
+- Exporting via [RNBO](https://cycling74.com/products/rnbo)
+  - See template here: https://rnbo.cycling74.com/learn/using-the-web-page-template
 
 ---
 
@@ -1345,9 +1378,10 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 
 Recordings of the weekly sessions will be here:
 
-- [Week 2: What is Computation; first Code Sketch](https://yorku.zoom.us/rec/share/BnT_EkFxUrBnY4JqEqHr9Idgi70cfyb7Bgdgn0NfgGOyduUIXx1IkZXVVdjXisrO.pDbOR8JPhlQ4-tZL)
-- [Week 3: Paper: Reading list preparation + Coding: Rebuilding Yellowtail](https://yorku.zoom.us/rec/share/kG3MRtCzkT9iIrMz4ykj-1Wx8JX_jVBnX6om7BU3TirHZiOeGkYuSbbxIINOTRTH.pij6xVyBVvyWUbPt)
-- [Week 4: Problem Statements, Introductions](https://yorku.zoom.us/rec/share/txYlNuGEcdmQO4-rHtTCznyM-On8WjBDp556Pxx7CvYuZves_nepaQoJeL0zzUfE.UYHpW1TtKt3-yUQz)
+- [Week 1: What is Computation; first Code Sketch](https://yorku.zoom.us/rec/share/BnT_EkFxUrBnY4JqEqHr9Idgi70cfyb7Bgdgn0NfgGOyduUIXx1IkZXVVdjXisrO.pDbOR8JPhlQ4-tZL)
+- [Week 2: Paper: Reading list preparation + Coding: Rebuilding Yellowtail](https://yorku.zoom.us/rec/share/kG3MRtCzkT9iIrMz4ykj-1Wx8JX_jVBnX6om7BU3TirHZiOeGkYuSbbxIINOTRTH.pij6xVyBVvyWUbPt)
+- [Week 3: Problem Statements, Introductions](https://yorku.zoom.us/rec/share/txYlNuGEcdmQO4-rHtTCznyM-On8WjBDp556Pxx7CvYuZves_nepaQoJeL0zzUfE.UYHpW1TtKt3-yUQz)
+- [Week 4: Introductions, Annotated Bibliographies, Code explorations, Digital Audio](https://yorku.zoom.us/rec/share/nRvsF6a-T1LFvXkHITRVD9g16d_n6JEkH9A-JU5XrAoN-qFaP-j3T5WADn85Lvz0.eLLEg6SsxPvXosKi)
 
 <!-- 
 - [Week 0 Class Recording - first patching](https://yorku.zoom.us/rec/share/ZL5_tEz7cuDZHNk585qCGx3GwyIf-ui4tt6ScNreRbT1ma-lIToigpasxu9n24I0.up3Jixd74Ti1Cb1j)

@@ -130,7 +130,7 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 </tr>
 <tr>
 <td align="left"><a href="#week-5">10/9</a></td>
-<td align="left"></td>
+<td align="left"><a href="#digital-audio-part-ii">Audio II</a>                   ./m</td>
 <td align="left">Paper 1-on-1&#39;s</td>
 <td align="left">Complete paper outline</td>
 </tr>
@@ -765,15 +765,20 @@ Through practice-based experiments and case studies, this project aims to genera
 <h1 id="week-4">Week 4</h1>
 <p>Oct 2, 2023
 <a href="#class-recordings">Class Recording</a></p>
-<p><a href="https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU">Introduction Presentations part II</a> -- let&#39;s get to know each other, and our diverse backgrounds. And let&#39;s hear about your research topic areas and questions! </p>
-<hr>
 <p><strong>Research paper work</strong>: </p>
 <ul>
 <li>Discussion of <a href="#preparing-a-reading-list">reading list</a> &amp; <a href="#problem-statement">problem statement</a> progress</li>
 <li>Begin developing your reading list into an <a href="#annotated-bibliography">annotated bibliography</a></li>
 </ul>
 <hr>
+<p><a href="https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU">Introduction Presentations part II</a> </p>
+<hr>
 <p><strong>Sharing your code explorations</strong> from our sketches of reproducing and extending Curly/Yellowtail in <a href="#week-2">Week 2</a></p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="Xingbang-Tang" data-slug-hash="XJXbXqw" data-preview="true"><span><a href="https://codepen.io/Xingbang-Tang/pen/XJXbXqw">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="jingwencat" data-slug-hash="ByjoYPP" data-preview="true"><span><a href="https://codepen.io/jingwencat/pen/ByjoYPP">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="Weeen-Luo" data-slug-hash="raxOpPo" data-preview="true"><span><a href="https://codepen.io/Weeen-Luo/pen/raxOpPo">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="johngzowskimaccom" data-slug-hash="VYeZEVR" data-preview="true"><span><a href="https://codepen.io/johngzowskimaccom/pen/VYeZEVR">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 <hr>
 <p>Here&#39;s where I got to after cleaning up the code and adding a little more visual refinement:</p>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="OPMRaqv?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/OPMRaqv?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
@@ -850,6 +855,7 @@ Through practice-based experiments and case studies, this project aims to genera
 </ul>
 </li>
 </ul>
+<p><strong><a href="max_patchers/week4.maxpat">The patcher from today&#39;s class</a></strong></p>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="annotated-bibliography">Annotated Bibliography</h2>
@@ -934,6 +940,53 @@ Let's follow back through a selective history.
 <a href="#class-recordings">Class Recording</a></p>
 <ul>
 <li>Review of schedule for remainder of semester</li>
+</ul>
+<hr>
+<h3 id="digital-audio-part-ii">Digital Audio part II</h3>
+<ul>
+<li><p>Some key concepts and circuits:</p>
+<ul>
+<li>simplest filter of <code>mix</code> and <code>history</code>; cascade them; highpass; <ul>
+<li>control filter with envelope (LPG), control FM with envelope too?</li>
+</ul>
+</li>
+<li>phasor ramp as meter, phasor manipulations (e.g. time division by <code>*</code> and <code>wrap 0 1</code>)<ul>
+<li>triggers from ramps with <code>delta</code>, <code>abs</code>, <code>&gt; 0.5</code></li>
+</ul>
+</li>
+<li>random steps by <code>latch</code>; source noise (gates?) or a related frequency (melodies?)<ul>
+<li>lowpass filter to smooth gates and random sources</li>
+</ul>
+</li>
+<li>mapping pitch to frequency, <code>mtof</code>, <code>exp2</code><ul>
+<li>quantizing with <code>* N</code>, <code>floor</code>, <code>/ N</code>; neat trick of quantizing twice (second to 12)</li>
+</ul>
+</li>
+<li>effects with <code>delay</code> and mixing feedback, modulating time<ul>
+<li>waveshaping -- magic sigmoid (e.g. <code>tanh</code>), filtering, etc. in the feedback loop<ul>
+<li>more complex can become reverbs</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Embedding our yellowtail in Max:</p>
+<ul>
+<li>Export codepen (zip <code>dist</code>), use <code>readfile</code> message to <code>jweb</code> in Max</li>
+<li>Sending messages in &amp; out: <a href="https://docs.cycling74.com/userguide/web_browser/">https://docs.cycling74.com/userguide/web_browser/</a></li>
+</ul>
+</li>
+<li><p>Embedding in Ableton Live?</p>
+<ul>
+<li>Need to use a public URL, e.g. upload to github pages: <a href="https://alicelab.world/digm5010/yellowmax/index.html">https://alicelab.world/digm5010/yellowmax/index.html</a></li>
+</ul>
+</li>
+<li><p>Exporting via <a href="https://cycling74.com/products/rnbo">RNBO</a></p>
+<ul>
+<li>See template here: <a href="https://rnbo.cycling74.com/learn/using-the-web-page-template">https://rnbo.cycling74.com/learn/using-the-web-page-template</a></li>
+</ul>
+</li>
 </ul>
 <hr>
 <hr>
@@ -1529,9 +1582,10 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 <h2 id="class-recordings">Class Recordings</h2>
 <p>Recordings of the weekly sessions will be here:</p>
 <ul>
-<li><a href="https://yorku.zoom.us/rec/share/BnT_EkFxUrBnY4JqEqHr9Idgi70cfyb7Bgdgn0NfgGOyduUIXx1IkZXVVdjXisrO.pDbOR8JPhlQ4-tZL">Week 2: What is Computation; first Code Sketch</a></li>
-<li><a href="https://yorku.zoom.us/rec/share/kG3MRtCzkT9iIrMz4ykj-1Wx8JX_jVBnX6om7BU3TirHZiOeGkYuSbbxIINOTRTH.pij6xVyBVvyWUbPt">Week 3: Paper: Reading list preparation + Coding: Rebuilding Yellowtail</a></li>
-<li><a href="https://yorku.zoom.us/rec/share/txYlNuGEcdmQO4-rHtTCznyM-On8WjBDp556Pxx7CvYuZves_nepaQoJeL0zzUfE.UYHpW1TtKt3-yUQz">Week 4: Problem Statements, Introductions</a></li>
+<li><a href="https://yorku.zoom.us/rec/share/BnT_EkFxUrBnY4JqEqHr9Idgi70cfyb7Bgdgn0NfgGOyduUIXx1IkZXVVdjXisrO.pDbOR8JPhlQ4-tZL">Week 1: What is Computation; first Code Sketch</a></li>
+<li><a href="https://yorku.zoom.us/rec/share/kG3MRtCzkT9iIrMz4ykj-1Wx8JX_jVBnX6om7BU3TirHZiOeGkYuSbbxIINOTRTH.pij6xVyBVvyWUbPt">Week 2: Paper: Reading list preparation + Coding: Rebuilding Yellowtail</a></li>
+<li><a href="https://yorku.zoom.us/rec/share/txYlNuGEcdmQO4-rHtTCznyM-On8WjBDp556Pxx7CvYuZves_nepaQoJeL0zzUfE.UYHpW1TtKt3-yUQz">Week 3: Problem Statements, Introductions</a></li>
+<li><a href="https://yorku.zoom.us/rec/share/nRvsF6a-T1LFvXkHITRVD9g16d_n6JEkH9A-JU5XrAoN-qFaP-j3T5WADn85Lvz0.eLLEg6SsxPvXosKi">Week 4: Introductions, Annotated Bibliographies, Code explorations, Digital Audio</a></li>
 </ul>
 <!-- 
 - [Week 0 Class Recording - first patching](https://yorku.zoom.us/rec/share/ZL5_tEz7cuDZHNk585qCGx3GwyIf-ui4tt6ScNreRbT1ma-lIToigpasxu9n24I0.up3Jixd74Ti1Cb1j)
