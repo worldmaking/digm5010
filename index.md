@@ -711,6 +711,8 @@ To complete the Yellowtail reproduction I'd like to add sound -- so that's our n
 - What kinds of things would maximize expression?
 - Should we modify behaviour in some ways that we suggested before (e.g. paths mutating, decaying, reacting to each other, etc.?)
 
+[Bouba/kiki](https://en.wikipedia.org/wiki/Bouba/kiki_effect)
+
 ## Digital Audio and Sound Synthesis 
 
 What is digital audio, computer music, and sound synthesis
