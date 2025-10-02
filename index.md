@@ -712,6 +712,8 @@ https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLo
 
 A very quick introduction to [Max](https://cycling74.com/products/max) and [`gen~`](https://docs.cycling74.com/userguide/gen/_gen_overview/)
 
+[Class notes for DATT3074: Creative Generative Audio Signal Processing](https://alicelab.world/datt3074/)
+
 - Some key concepts and circuits:
   - `noise`, `cycle`, `phasor` (look at scope~, spectroscope~, frequency and level)
     - adding signals superimposes; `mix`, `param`
