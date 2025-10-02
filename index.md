@@ -694,7 +694,15 @@ Here's where I got to after cleaning up the code and adding a little more visual
 
 https://codepen.io/grrrwaaa/pen/OPMRaqv?editors=0010
 
-To complete the Yellowtail reproduction I'd like to add sound -- so that's our next focus topic.
+To complete the Yellowtail reproduction I'd like to add sound -- so that's our next focus topic. But before we jump in -- how would *you* sonify it?
+- We can have many paths - do they all make sound? 
+- Should it sound continuously?  
+- What kinds of **movements** map well to changes of sound? What about **speed**?
+- Does **position** matter? Should we only hear the nearest to the mouse?
+- If it has color, what do we map that to?
+- Should we connect it to a rhythm?
+- What kinds of things would maximize expression?
+- Should we modify behaviour in some ways that we suggested before (e.g. paths mutating, decaying, reacting to each other, etc.?)
 
 ## Digital Audio and Sound Synthesis 
 
@@ -721,6 +729,7 @@ A very quick introduction to [Max](https://cycling74.com/products/max) and [`gen
   - effects with `delay` and mixing feedback, modulating time
     - waveshaping -- magic sigmoid (e.g. `tanh`), filtering, etc. in the feedback loop
       - more complex can become reverbs
+  
 - Embedding our yellowtail in Max:
   - Export codepen (zip `dist`), use `readfile` message to `jweb` in Max
   - Sending messages in & out: https://docs.cycling74.com/userguide/web_browser/
@@ -728,16 +737,6 @@ A very quick introduction to [Max](https://cycling74.com/products/max) and [`gen
   - Need to use a public URL, e.g. upload to github pages: https://alicelab.world/digm5010/yellowmax/index.html
 - Exporting via [RNBO](https://cycling74.com/products/rnbo)
   - See template here: https://rnbo.cycling74.com/learn/using-the-web-page-template
-
-Something suitable for Yellowtail?
-- We can have many paths - do they all make sound? 
-  - For now, we could keep it simple and just sonify one path?
-- Should it sound continuously?  
-- What kinds of **movements** map well to changes of sound? What about **speed**?
-- Does position matter? Should we only hear the nearest ones to the mouse?
-- If it has color, what do we map that to?
-- Should we connect it to a rhythm?
-
 
 
 ## Annotated Bibliography
