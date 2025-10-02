@@ -725,7 +725,7 @@ A very quick introduction to [Max](https://cycling74.com/products/max) and [`gen
   - Export codepen (zip `dist`), use `readfile` message to `jweb` in Max
   - Sending messages in & out: https://docs.cycling74.com/userguide/web_browser/
 - Embedding in Ableton Live?
-  - 
+  - Need to use a public URL, e.g. upload to github pages: https://alicelab.world/digm5010/yellowmax/index.html
 - Exporting via [RNBO](https://cycling74.com/products/rnbo)
 
 Something suitable for Yellowtail?
