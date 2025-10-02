@@ -75,7 +75,7 @@ week 2: what is computation
 | [9/11](#week-1)   | [What is Computation?](#what-is-computation)           | [Computational Sketching](#computational-sketching) | Focused topic selection |
 | [9/18](#week-2)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail)  |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
 | [9/25](#week-3)   | [Introductions](#introductions)                       | 1-on-1's                  | [Problem/thesis statement](#problem-statement) |
-| [10/2](#week-4)   |                                                        |                                     | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
+| [10/2](#week-4)   | [Digital Audio and Sound Synthesis](#digital-audio-and-sound-synthesis)                                      | Live Coding                                   | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
 | [10/9](#week-5)   |                                                        | Paper 1-on-1's                      | Complete paper outline |
 | [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
 | [10/23](#week-6)  |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
@@ -677,17 +677,67 @@ Oct 2, 2023
 
 [Introduction Presentations part II](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) -- let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
 
-<!--
+---
 
-**Reproducing & sharing research through making**: discussion & sharing of your codepens! 
+**Research paper work**: 
 
-https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
-
--->
+- Discussion of [reading list](#preparing-a-reading-list) & [problem statement](#problem-statement) progress
+- Begin developing your reading list into an [annotated bibliography](#annotated-bibliography)
 
 ---
 
-**Research paper work**: Begin developing your readling list into an **annotated bibliography**
+**Sharing your code explorations** from our sketches of reproducing and extending Curly/Yellowtail in [Week 2](#week-2)
+
+---
+
+Here's where I got to after cleaning up the code and adding a little more visual refinement:
+
+https://codepen.io/grrrwaaa/pen/OPMRaqv?editors=0010
+
+To complete the Yellowtail reproduction I'd like to add sound -- so that's our next focus topic.
+
+## Digital Audio and Sound Synthesis 
+
+What is digital audio, computer music, and sound synthesis
+
+https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLofdA/
+
+A very quick introduction to [Max](https://cycling74.com/products/max) and [`gen~`](https://docs.cycling74.com/userguide/gen/_gen_overview/)
+
+- Some key concepts and circuits:
+  - `noise`, `cycle`, `phasor` (look at scope~, spectroscope~, frequency and level)
+    - adding signals superimposes; `mix`, `param`
+    - multiply for amplitude shaping - e.g. `triangle` shape `phasor`
+  - lfo and audio modulations: from tremelo to AM, from vibrato to FM
+    - more complex examples can become very rich, especially with feedback!
+  - simplest filter of `mix` and `history`; cascade them; highpass; 
+    - control filter with envelope (LPG), control FM with envelope too?
+  - phasor ramp as meter, phasor manipulations (e.g. time division by `*` and `wrap 0 1`)
+    - triggers from ramps with `delta`, `abs`, `> 0.5`
+  - random steps by `latch`; source noise (gates?) or a related frequency (melodies?)
+    - lowpass filter to smooth gates and random sources
+  - mapping pitch to frequency, `mtof`, `exp2`
+    - quantizing with `* N`, `floor`, `/ N`; neat trick of quantizing twice (second to 12)
+  - effects with `delay` and mixing feedback, modulating time
+    - waveshaping -- magic sigmoid (e.g. `tanh`), filtering, etc. in the feedback loop
+      - more complex can become reverbs
+- Embedding our yellowtail in Max:
+  - Export codepen (zip `dist`), use `readfile` message to `jweb` in Max
+  - Sending messages in & out: https://docs.cycling74.com/userguide/web_browser/
+- Embedding in Ableton Live?
+  - 
+- Exporting via [RNBO](https://cycling74.com/products/rnbo)
+
+Something suitable for Yellowtail?
+- We can have many paths - do they all make sound? 
+  - For now, we could keep it simple and just sonify one path?
+- Should it sound continuously?  
+- What kinds of **movements** map well to changes of sound? What about **speed**?
+- Does position matter? Should we only hear the nearest ones to the mouse?
+- If it has color, what do we map that to?
+- Should we connect it to a rhythm?
+
+
 
 ## Annotated Bibliography
 

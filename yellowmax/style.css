@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  overflow: hidden; /* Hide scrollbars */
+}
+#overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: grey;
+}

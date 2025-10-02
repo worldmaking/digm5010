@@ -80,6 +80,13 @@ function generate(file) {
 		.replace(/\nhttps?:\/\/www.youtube.com\/watch\?v=([^\n\r\/]+)[^\n\r]*/g, `
 <iframe width="720" height="540" src="https://youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe>
 `)
+		
+		// auto-embed google slides: e.g. https://docs.google.com/presentation/d/1xrXM86cCE7vzykYYdINs1G9g9f7FaeiiZd6IRlKBEjI/
+		// auto-embed youtube e.g. https://www.youtube.com/watch?v=AbcZ2f5fdNc
+		.replace(/\n\s*(https:\/\/docs.google.com\/presentation\/d\/[^\n]*)/g, 
+			`<p>$1</p>
+			<iframe src="$1embed?start=false" frameborder="0" width="960" height="569" allowfullscreen></iframe>
+`)
 
 	}
 	

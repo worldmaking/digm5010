@@ -124,8 +124,8 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 </tr>
 <tr>
 <td align="left"><a href="#week-4">10/2</a></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><a href="#digital-audio-and-sound-synthesis">Digital Audio and Sound Synthesis</a></td>
+<td align="left">Live Coding</td>
 <td align="left"><a href="#annotated-bibliography">Annotated bibliography</a> (outline literature review)</td>
 </tr>
 <tr>
@@ -766,15 +766,82 @@ Through practice-based experiments and case studies, this project aims to genera
 <p>Oct 2, 2023
 <a href="#class-recordings">Class Recording</a></p>
 <p><a href="https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU">Introduction Presentations part II</a> -- let&#39;s get to know each other, and our diverse backgrounds. And let&#39;s hear about your research topic areas and questions! </p>
-<!--
-
-**Reproducing & sharing research through making**: discussion & sharing of your codepens! 
-<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="vYoOLqL?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
--->
-
 <hr>
-<p><strong>Research paper work</strong>: Begin developing your readling list into an <strong>annotated bibliography</strong></p>
+<p><strong>Research paper work</strong>: </p>
+<ul>
+<li>Discussion of <a href="#preparing-a-reading-list">reading list</a> &amp; <a href="#problem-statement">problem statement</a> progress</li>
+<li>Begin developing your reading list into an <a href="#annotated-bibliography">annotated bibliography</a></li>
+</ul>
+<hr>
+<p><strong>Sharing your code explorations</strong> from our sketches of reproducing and extending Curly/Yellowtail in <a href="#week-2">Week 2</a></p>
+<hr>
+<p>Here&#39;s where I got to after cleaning up the code and adding a little more visual refinement:</p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="OPMRaqv?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/OPMRaqv?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>To complete the Yellowtail reproduction I&#39;d like to add sound -- so that&#39;s our next focus topic.</p>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="digital-audio-and-sound-synthesis">Digital Audio and Sound Synthesis</h2>
+<p>What is digital audio, computer music, and sound synthesis<p><a href="https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLofdA/">https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLofdA/</a></p>
+            <iframe src="https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLofdA/embed?start=false" frameborder="0" width="960" height="569" allowfullscreen></iframe></p>
+<p>A very quick introduction to <a href="https://cycling74.com/products/max">Max</a> and <a href="https://docs.cycling74.com/userguide/gen/_gen_overview/"><code>gen~</code></a></p>
+<ul>
+<li>Some key concepts and circuits:<ul>
+<li><code>noise</code>, <code>cycle</code>, <code>phasor</code> (look at scope<del>, spectroscope</del>, frequency and level)<ul>
+<li>adding signals superimposes; <code>mix</code>, <code>param</code></li>
+<li>multiply for amplitude shaping - e.g. <code>triangle</code> shape <code>phasor</code></li>
+</ul>
+</li>
+<li>lfo and audio modulations: from tremelo to AM, from vibrato to FM<ul>
+<li>more complex examples can become very rich, especially with feedback!</li>
+</ul>
+</li>
+<li>simplest filter of <code>mix</code> and <code>history</code>; cascade them; highpass; <ul>
+<li>control filter with envelope (LPG), control FM with envelope too?</li>
+</ul>
+</li>
+<li>phasor ramp as meter, phasor manipulations (e.g. time division by <code>*</code> and <code>wrap 0 1</code>)<ul>
+<li>triggers from ramps with <code>delta</code>, <code>abs</code>, <code>&gt; 0.5</code></li>
+</ul>
+</li>
+<li>random steps by <code>latch</code>; source noise (gates?) or a related frequency (melodies?)<ul>
+<li>lowpass filter to smooth gates and random sources</li>
+</ul>
+</li>
+<li>mapping pitch to frequency, <code>mtof</code>, <code>exp2</code><ul>
+<li>quantizing with <code>* N</code>, <code>floor</code>, <code>/ N</code>; neat trick of quantizing twice (second to 12)</li>
+</ul>
+</li>
+<li>effects with <code>delay</code> and mixing feedback, modulating time<ul>
+<li>waveshaping -- magic sigmoid (e.g. <code>tanh</code>), filtering, etc. in the feedback loop<ul>
+<li>more complex can become reverbs</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Embedding our yellowtail in Max:<ul>
+<li>Export codepen (zip <code>dist</code>), use <code>readfile</code> message to <code>jweb</code> in Max</li>
+<li>Sending messages in &amp; out: <a href="https://docs.cycling74.com/userguide/web_browser/">https://docs.cycling74.com/userguide/web_browser/</a></li>
+</ul>
+</li>
+<li><h2 id="embedding-in-ableton-live">Embedding in Ableton Live?</h2>
+</li>
+<li>Exporting via <a href="https://cycling74.com/products/rnbo">RNBO</a></li>
+</ul>
+<p>Something suitable for Yellowtail?</p>
+<ul>
+<li>We can have many paths - do they all make sound? <ul>
+<li>For now, we could keep it simple and just sonify one path?</li>
+</ul>
+</li>
+<li>Should it sound continuously?  </li>
+<li>What kinds of <strong>movements</strong> map well to changes of sound? What about <strong>speed</strong>?</li>
+<li>Does position matter? Should we only hear the nearest ones to the mouse?</li>
+<li>If it has color, what do we map that to?</li>
+<li>Should we connect it to a rhythm?</li>
+</ul>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="annotated-bibliography">Annotated Bibliography</h2>
