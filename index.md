@@ -727,6 +727,7 @@ A very quick introduction to [Max](https://cycling74.com/products/max) and [`gen
 - Embedding in Ableton Live?
   - Need to use a public URL, e.g. upload to github pages: https://alicelab.world/digm5010/yellowmax/index.html
 - Exporting via [RNBO](https://cycling74.com/products/rnbo)
+  - See template here: https://rnbo.cycling74.com/learn/using-the-web-page-template
 
 Something suitable for Yellowtail?
 - We can have many paths - do they all make sound? 
