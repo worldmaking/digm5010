@@ -76,7 +76,7 @@ week 2: what is computation
 | [9/18](#week-2)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail)  |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
 | [9/25](#week-3)   | [Introductions](#introductions)                       | 1-on-1's                  | [Problem/thesis statement](#problem-statement) |
 | [10/2](#week-4)   | [Digital Audio and Sound Synthesis](#digital-audio-and-sound-synthesis)                                      | Live Coding                                   | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
-| [10/9](#week-5)   | [Audio II](#digital-audio-part-ii)                   ./m | Paper 1-on-1's                      | Complete paper outline |
+| [10/9](#week-5)   | [Audio II](#digital-audio-part-ii)                    | Paper 1-on-1's                      | Complete paper outline |
 | [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
 | [10/23](#week-6)  |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
 | [10/30](#week-7)  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
