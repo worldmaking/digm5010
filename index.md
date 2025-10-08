@@ -821,6 +821,11 @@ Oct 9
 [Class Recording](#class-recordings)
 
 - Review of schedule for remainder of semester
+- Reading week is writing week!
+
+---
+
+**1-on-1 feedback on paper progress**
 
 ---
 
@@ -849,6 +854,13 @@ Oct 9
 
 ---
 
+## Reading Week
+
+
+# Week 6
+Oct 23, 2023
+[Class Recording](#class-recordings)
+
 ## Explorable explanations
 
 It was mentioned earlier that, as an alternative to a paper, one option for the final submission is an "explorable explanation". What does that mean?
@@ -875,6 +887,7 @@ By interacting with these elements we can verify statements, develop intuition, 
 
 - Many examples of [Explorable Explanations](https://explorabl.es)
   - For example, [The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/)
+    - Let's take some time to go through this!
 
 - Another collection, focused on [Complex Systems](https://www.complexity-explorables.org)
   - Many of these are authored using [D3.js](https://d3js.org), perhaps the widest-used Javascript library for custom dynamic visualizations
@@ -886,14 +899,9 @@ By interacting with these elements we can verify statements, develop intuition, 
 - [Further reading](https://explorabl.es/reading/)
   - An important precursor, also acknowledged by Explorabl.es, is Seymour Papert's [Mindstorms](https://mindstorms.media.mit.edu) for computation and early education in the 1980's -- itself also part of those historical threads from cybernetics to digital media
 
-
-## Reading Week
-
+## Data Visualization and D3.js
 
 
-# Week 6
-Oct 23, 2023
-[Class Recording](#class-recordings)
 
 <!--
 **For next week**, complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
