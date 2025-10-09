@@ -8,6 +8,18 @@ function resize() {
 resize();
 window.addEventListener("resize", resize, false);
 
+const overlay = document.getElementById("overlay");
+
+function print() {
+  let args = [];
+  for (let i = 0; i < arguments.length; i++) {
+    args.push(JSON.stringify(arguments[i]));
+  }
+  overlay.innerText += args.join(" ") + "\n";
+}
+
+print("hello", 44, true);
+
 /////////////// All of our state ///////////////
 // 	list of finished paths
 let gestures = [];
@@ -23,7 +35,20 @@ let pointer = {
   t: performance.now()
 };
 // minimum duration of a gesture segment:
-let resolution_ms = 10;
+let resolution_ms = 1000 / 8;
+
+function quantize_ms(ms) {
+  // ratio of our resolution:
+  let q = ms / resolution_ms;
+  // as a power of 2:
+  let log2 = Math.log(q) / Math.log(2);
+  // quantize here:
+  log2 = Math.ceil(log2);
+  // return from power of 2:
+  let q1 = Math.pow(2, log2);
+  // return to timing base:
+  return resolution_ms * q1;
+}
 
 //////////////////////////////////////////////////
 //// Some useful math:
@@ -52,37 +77,69 @@ function toroidal(pt) {
   }
 }
 
+let t = performance.now();
 // the line animates
 // on every frame,
 function animate() {
+  // measure elapsed time
+  let t1 = performance.now();
+  let dt = t1 - t;
+  t = t1;
+
   for (let gesture of gestures) {
     if (gesture == currentGesture) continue;
     if (gesture.motions.length == 0) continue;
 
-    // the first segment of the line is moved to the end of the line
-    let first = gesture.motions.shift();
-    if (!gesture.isStationary) {
-      // move the start point:
-      gesture.start.x += first.dx;
-      gesture.start.y += first.dy;
+    while (gesture.t < t) {
+      // the first segment of the line is moved to the end of the line
+      let first = gesture.motions.shift();
+      if (!gesture.isStationary) {
+        // move the start point:
+        gesture.start.x += first.dx;
+        gesture.start.y += first.dy;
+      }
+      // gesture.start.t += first.dt
+
+      // jiggle the motion about a bit:
+      //let spd = 1;
+      //first.dx += spd * (Math.random() - 0.5);
+      //first.dy += spd * (Math.random() - 0.5);
+      // first.dx *= 0.9;
+      // first.dy *= 0.9;
+
+      // add it back on to the end:
+      gesture.motions.push(first);
+      toroidal(gesture.start);
+
+      gesture.t += first.dt;
     }
-    // gesture.start.t += first.dt
-
-    // jiggle the motion about a bit:
-    //let spd = 1;
-    //first.dx += spd * (Math.random() - 0.5);
-    //first.dy += spd * (Math.random() - 0.5);
-    // first.dx *= 0.9;
-    // first.dy *= 0.9;
-
-    // add it back on to the end:
-    gesture.motions.push(first);
-    toroidal(gesture.start);
+    // if this is running in Max, output the gesture data:
+    if (window.max) {
+      window.max.outlet(
+        "point",
+        g,
+        pt.x / canvas.width,
+        pt.y / canvas.height,
+        dx / canvas.width,
+        dy / canvas.height,
+        phase,
+        width
+      );
+    }
+  }
+  // if this is running in Max, output the mouse data:
+  if (window.max) {
+    window.max.outlet(
+      "pointer",
+      pointer.pos.x / canvas.width,
+      pointer.pos.y / canvas.height
+    );
   }
 }
 
 // the ability to draw lines (from line segments)
 function draw() {
+  overlay.innerText = "";
   // update scene data:
   animate();
 
@@ -92,8 +149,7 @@ function draw() {
   ctx.fillStyle = "rgba(0, 0, 0, 1)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  for (let g=0; g<gestures.length; g++) {
-    let gesture = gestures[g]
+  for (let gesture of gestures) {
     // if there is no data, skip it:
     if (gesture.motions.length < 1) continue;
 
@@ -110,8 +166,8 @@ function draw() {
       let length = length2d(dx, dy);
       let speed = length / dt;
       // what's the distance to the mouse?
-      let dist =
-        distance2d(pointer.pos, pt) / Math.max(canvas.width, canvas.height);
+      let dist = 0;
+      //distance2d(pointer.pos, pt) / Math.max(canvas.width, canvas.height);
       // the "phase" goes from 0 to 1 as we work through the path:
       let phase = i / gesture.motions.length;
       // stylize:
@@ -137,21 +193,7 @@ function draw() {
       // wrap in the canvas
       toroidal(pt);
     }
-
-    // if this is running in Max, output the data:
-    if (window.max) {
-      window.max.outlet("point", g, 
-        pt.x / canvas.width, pt.y / canvas.height, 
-        dx / canvas.width, dy / canvas.height, 
-        phase,
-        width
-      );
-    }
   }
-  // if this is running in Max, output the mouse data:
-  if (window.max) {
-      window.max.outlet("pointer", pointer.pos.x / canvas.width, pointer.pos.y / canvas.height );
-    }
   // schedule the next 'draw()' call
   requestAnimationFrame(draw);
 }
@@ -166,10 +208,10 @@ canvas.addEventListener(
     let t = performance.now();
 
     currentGesture = {
-      start: { x, y, t },
+      start: { x, y },
       motions: [],
       isStationary: isStationary,
-      t: pointer.t,
+      t: Math.floor(pointer.t),
       duration: 0,
       hue: Math.random() * 360
     };
@@ -194,8 +236,9 @@ window.addEventListener(
     let dx = x - pointer.pos.x;
     let dy = y - pointer.pos.y;
     let dt = t - pointer.t;
+
     // quantize `dt`
-    dt = Math.pow(2, Math.floor(Math.log(dt) / Math.log(2)));
+    dt = quantize_ms(dt);
 
     // when pointer is down, and we have a current gesture:
     if (pointer.isDown && currentGesture) {
@@ -220,9 +263,25 @@ window.addEventListener(
     let y = e.clientY;
     let t = performance.now();
 
-    console.log(currentGesture);
-    // we no longer have a currently-drawing gesture:
-    currentGesture = null;
+    if (currentGesture) {
+      // align start time to the grid:
+      let qt = Math.ceil(t / resolution_ms) * resolution_ms;
+      currentGesture.t = qt;
+
+      // we want to quantize the loop duration
+      let dur = currentGesture.duration;
+      // what's the next longest duration that aligns to the tempo?
+      let qdur = quantize_ms(dur);
+      // what's the difference we need to add?
+      let qdt = qdur - dur;
+      // add a motionless step for this:
+      currentGesture.motions.push({ dx: 0, dy: 0, dt: qdt });
+      currentGesture.duration = qdur;
+
+      console.log(currentGesture);
+      // we no longer have a currently-drawing gesture:
+      currentGesture = null;
+    }
 
     // now update the pointer state:
     pointer.pos.x = x;
