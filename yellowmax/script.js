@@ -18,6 +18,14 @@ function print() {
   overlay.innerText += args.join(" ") + "\n";
 }
 
+function send_to_max() {
+  if (window.max) {
+    window.max.outlet(...arguments);
+  } else {
+    print(...arguments);
+  }
+}
+
 /////////////// All of our state ///////////////
 // 	list of finished paths
 let gestures = [];
@@ -111,27 +119,6 @@ function animate() {
 
       gesture.t += first.dt;
     }
-    // if this is running in Max, output the gesture data:
-    if (window.max) {
-      window.max.outlet(
-        "point",
-        g,
-        pt.x / canvas.width,
-        pt.y / canvas.height,
-        dx / canvas.width,
-        dy / canvas.height,
-        phase,
-        width
-      );
-    }
-  }
-  // if this is running in Max, output the mouse data:
-  if (window.max) {
-    window.max.outlet(
-      "pointer",
-      pointer.pos.x / canvas.width,
-      pointer.pos.y / canvas.height
-    );
   }
 }
 
@@ -141,13 +128,21 @@ function draw() {
   // update scene data:
   animate();
 
+  // if this is running in Max, output the mouse data:
+  send_to_max(
+    "pointer",
+    pointer.pos.x / canvas.width,
+    pointer.pos.y / canvas.height
+  );
+
   // clear the canvas:
   //ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.globalCompositeOperation = "source-over";
   ctx.fillStyle = "rgba(0, 0, 0, 1)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  for (let gesture of gestures) {
+  for (let g = 0; g < gestures.length; g++) {
+    let gesture = gestures[g];
     // if there is no data, skip it:
     if (gesture.motions.length < 1) continue;
 
@@ -190,8 +185,22 @@ function draw() {
       pt = pt1;
       // wrap in the canvas
       toroidal(pt);
+
+      // last step?
+      if (i == gesture.motions.length - 1) {
+        send_to_max(
+          "point",
+          g,
+          pt.x / canvas.width,
+          pt.y / canvas.height,
+          dx / canvas.width,
+          dy / canvas.height,
+          width
+        );
+      }
     }
   }
+
   // schedule the next 'draw()' call
   requestAnimationFrame(draw);
 }
