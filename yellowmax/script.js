@@ -18,8 +18,6 @@ function print() {
   overlay.innerText += args.join(" ") + "\n";
 }
 
-print("hello", 44, true);
-
 /////////////// All of our state ///////////////
 // 	list of finished paths
 let gestures = [];
