@@ -137,10 +137,21 @@ function draw() {
       // wrap in the canvas
       toroidal(pt);
     }
+
+    // if this is running in Max, output the data:
     if (window.max) {
-      window.max.outlet("point", g, pt.x, pt.y);
+      window.max.outlet("point", g, 
+        pt.x / canvas.width, pt.y / canvas.height, 
+        dx / canvas.width, dy / canvas.height, 
+        phase,
+        width
+      );
     }
   }
+  // if this is running in Max, output the mouse data:
+  if (window.max) {
+      window.max.outlet("pointer", pointer.pos.x / canvas.width, pointer.pos.y / canvas.height );
+    }
   // schedule the next 'draw()' call
   requestAnimationFrame(draw);
 }
