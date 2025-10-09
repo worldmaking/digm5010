@@ -167,7 +167,7 @@ function draw() {
       let width = Math.sin(Math.PI * phase) * 0.01 * canvas.width;
       let lightness = 1 - 1 / (1 + speed);
       let saturation = 50;
-      let opacity = Math.exp(-10 * dist * dist);
+      let opacity = phase; //Math.exp(-10 * dist * dist);
       // set our color
       ctx.strokeStyle = `hsla(${gesture.hue}, ${
         100 * saturation
