@@ -864,6 +864,8 @@ Catching up unfinished work from a previous class:
   - See template here: https://rnbo.cycling74.com/learn/using-the-web-page-template
 - Alternatively, just send network messages, such as OSC, or MIDI messages, etc.
 
+[Today's patch](max_patchers/week7.maxpat)
+
 ## Explorable explanations
 
 It was mentioned earlier in this class, as an alternative to a paper, one option for the final submission is an "explorable explanation". What does that mean?
@@ -1165,7 +1167,7 @@ Correlation is not causation. [A wonderful example of spurious correlations](htt
 
 ---
 
-**For next week**, complete your paper draft. It **must be submitted before next week's class begins** so that we can run the peer review session. 
+**For next week**, complete your paper draft. It **must be submitted before next week's class begins** so that we can run the peer review session.  
 
 ## Paper Complete Draft for Peer Review
 
@@ -1193,27 +1195,8 @@ The article should contain:
 
 **Length:** Conference papers can be 3-8 pages in length, but 4 pages is the most typical. At approximately 700 words/page, this means a typical word count is around 2000-3000 words. 
 
-<!--
-**For next week**, complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
+[**Submit your paper via e-Class here**](https://eclass.yorku.ca/mod/assign/view.php?id=3856508)
 
-## Reproducing Research: Steering Behaviours
-
-First a quick reminder of what we looked at back in week 4:
-
-- **Slides**: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
-
-[Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
-    - Can we reproduce a Vehicle world?
-
-[Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
-    - Can we reproduce a flocking simulator?
-
-[Steering behaviours for vehicles and flocks](steering.html)
-
-Our script so far:
-
-https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
--->
 
 # Week 7
 Oct 30, 2023
@@ -1664,7 +1647,25 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 - **[Zoom recording](https://yorku.zoom.us/rec/share/5qPQPGpqXj3_Z0ZKsrRIQ80POnrvI0IPJNYPbGFl6CHngtp2ikOWHgf4QInXwsu4.xCE8R0lMZZfOKCwr)**
 
 
+**For next week**, complete your paper draft. It **must be submitted before next week's class** - [submit the paper with this form](https://docs.google.com/forms/d/e/1FAIpQLSecdNzeUZRAiSQcIViboyWTCAxnuyAfphUGJGKy91H9ZKDDPg/viewform?usp=sf_link)
 
+## Reproducing Research: Steering Behaviours
+
+First a quick reminder of what we looked at back in week 4:
+
+- **Slides**: [Tortoises, turtles, robot flocks and vehicle societies](agents.html)
+
+[Braitenberg, Valentino. Vehicles. 1984](https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA)
+    - Can we reproduce a Vehicle world?
+
+[Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999](https://www.red3d.com/cwr/steer/gdc99/)
+    - Can we reproduce a flocking simulator?
+
+[Steering behaviours for vehicles and flocks](steering.html)
+
+Our script so far:
+
+https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
 -->
 
 -------
