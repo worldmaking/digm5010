@@ -76,9 +76,9 @@ week 2: what is computation
 | [9/18](#week-2)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail)  |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
 | [9/25](#week-3)   | [Introductions](#introductions)                       | 1-on-1's                  | [Problem/thesis statement](#problem-statement) |
 | [10/2](#week-4)   | [Digital Audio and Sound Synthesis](#digital-audio-and-sound-synthesis)                                      | Live Coding                                   | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
-| [10/9](#week-5)   | [Audio II](#digital-audio-part-ii)                    | Paper 1-on-1's                      | Complete paper outline |
-| [*Reading Week*](#reading-week) |                                            |                                     | Complete first draft |
-| [10/23](#week-6)  |                                                        | Paper 1-on-1's                      | Proofreading, formatting & citations |
+| [10/9](#week-5)   |                     | Paper 1-on-1's                      | Complete paper outline |
+| [*Reading Week*](#reading-week) |                                         |                                     | [Complete first draft](#paper-complete-draft-for-peer-review) | 
+| [10/23](#week-6)  | [Explorable Explanations](#explorable-explanations) | [Audio II](#digital-audio-part-ii), [Data Visualization](#data-visualization-and-d3js) | [Complete first draft](#paper-complete-draft-for-peer-review) |
 | [10/30](#week-7)  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
 | [11/6](#week-8)   |                                                        | Paper 1-on-1's                      | Revisions |
 | [11/13](#week-9)  |                                                        |                                     | [Final paper](#final-paper) |
@@ -1050,7 +1050,9 @@ scale(212);  //returns 100
 
 Other scale types include pow, log, quantize, quantile, and ordinal, and d3.time.scale too.
 
-There are methods for creating [margins and axes](http://bost.ocks.org/mike/bar/3/). 
+---
+
+If the data is large, or came from a different data provider, it is probably in a separate JSON, CSV, or other external file. The D3 library has [many methods for loading and parsing external data](https://d3js.org/d3-fetch)
 
 ### The Ben Fry data visualization process
 
@@ -1092,7 +1094,20 @@ In the first chapter of the [Visualizing Data](http://www.amazon.com/gp/product/
 
 Open Data may come in the form of a whole static database (CSV, EXCEL, TXT etc.), or it may be served as an API. An API will require some kind of request structure, such as location for a weather report, and should describe the structure of the response to expect. The open data documentation should also explain whether it includes geospatial information, and how frequently it is refreshed (if appropriate).
 
+Most major online services have an API, and many allow you to acquire data surrounding your activity. If you have a Google site, Android/iOS app, or even a Unity game, you might already be collecting data via [Google Analytics](https://developers.google.com/analytics/devguides/collection). If you host a site or code repository at [Github](https://developer.github.com/v3/), they have some great APIs you can use. Similarly for accessing your [Facebook data](https://developers.facebook.com/docs/graph-api/overview/). Look further afield-- even your bank might have an API you can use, or offer you the option to download transaction histories as a static database. [You can probably browse your phone's location history here](https://maps.google.com/locationhistory/b/0/)
+ 
 Some examples:
+
+[Weather](http://openweathermap.org/API) -- free sign up for API key. See example [here](https://codepen.io/tutsplus/pen/gObLaEP?editors=0010)
+
+[Google Data APIs](https://developers.google.com/gdata/docs/directory)
+
+[Google Maps](https://developers.google.com/maps/documentation/javascript/)
+
+[Open Street Map](http://wiki.openstreetmap.org/wiki/API)
+- We used this and other open government data sources for our [Infranet](https://artificialnature.net/#infranet) artworks
+
+[NASA](http://open.nasa.gov/developer/)
 
 [Ontario open data catalogue](http://www.ontario.ca/government/open-data-ontario)
 
@@ -1101,6 +1116,24 @@ Some examples:
 For example, the [Bike Share database](https://open.toronto.ca/dataset/bike-share-toronto/) is updated in near real-time. 
 
 Unfortunately, like many open data resources, you can't just load this in D3 using `d3.json(url)` from a Codepen webpage because of CORS (Cross-Origin Resource Sharing) -- it becomes a security risk. But you *can* do this from a server, even a server running locally on your own machine using Node.js for example. 
+
+For security, browsers typically do not allow a website on one domain to dynamically pull in data from another domain; i.e. they typically apply a *same-domain policy*. Fortunately, in the case of XMLHttpRequests, the provider may explicitly allow CORS, as is the case for http://api.openweathermap.org. Moreover, most dynamic requests will fail when running the HTML file from a local filesystem. *They need to be running from a server.* 
+
+Node.js lets us write complex server applications, but it also provides a simple way to run a server from any location on your filesystem. First, install this capability on your computer by typing this in your terminal (you'll have to make sure node.js is installed first of course, see above):
+
+```
+npm install -g http-server
+```
+
+Once installed, you can run this from any location in your terminal like this:
+
+```
+http-server
+```
+
+And you can then open this in your browser at address http://0.0.0.0:8080/
+
+*If you are working in Max, you can also access these APIs via the `maxurl` object, or you can run a full-fledge Node.js application via the `node.script` object. 
 
 **Cleaning data**
 

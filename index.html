@@ -130,7 +130,7 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 </tr>
 <tr>
 <td align="left"><a href="#week-5">10/9</a></td>
-<td align="left"><a href="#digital-audio-part-ii">Audio II</a></td>
+<td align="left"></td>
 <td align="left">Paper 1-on-1&#39;s</td>
 <td align="left">Complete paper outline</td>
 </tr>
@@ -138,13 +138,13 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 <td align="left"><a href="#reading-week"><em>Reading Week</em></a></td>
 <td align="left"></td>
 <td align="left"></td>
-<td align="left">Complete first draft</td>
+<td align="left"><a href="#paper-complete-draft-for-peer-review">Complete first draft</a></td>
 </tr>
 <tr>
 <td align="left"><a href="#week-6">10/23</a></td>
-<td align="left"></td>
-<td align="left">Paper 1-on-1&#39;s</td>
-<td align="left">Proofreading, formatting &amp; citations</td>
+<td align="left"><a href="#explorable-explanations">Explorable Explanations</a></td>
+<td align="left"><a href="#digital-audio-part-ii">Audio II</a>, <a href="#data-visualization-and-d3js">Data Visualization</a></td>
+<td align="left"><a href="#paper-complete-draft-for-peer-review">Complete first draft</a></td>
 </tr>
 <tr>
 <td align="left"><a href="#week-7">10/30</a></td>
@@ -1145,7 +1145,8 @@ scale(32);  //returns 0
 scale(100);  //returns 37.7778
 scale(212);  //returns 100</code></pre>
 <p>Other scale types include pow, log, quantize, quantile, and ordinal, and d3.time.scale too.</p>
-<p>There are methods for creating <a href="http://bost.ocks.org/mike/bar/3/">margins and axes</a>. </p>
+<hr>
+<p>If the data is large, or came from a different data provider, it is probably in a separate JSON, CSV, or other external file. The D3 library has <a href="https://d3js.org/d3-fetch">many methods for loading and parsing external data</a></p>
 <h3 id="the-ben-fry-data-visualization-process">The Ben Fry data visualization process</h3>
 <p>In the first chapter of the <a href="http://www.amazon.com/gp/product/B0028N4WJC/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0028N4WJC&amp;linkCode=as2&amp;tag=dashi07-20">Visualizing Data</a> book, Ben Fry sets up the Data Visualization process as a series of steps:</p>
 <p>(prepare data)</p>
@@ -1195,11 +1196,27 @@ scale(212);  //returns 100</code></pre>
 <p>The notion of open data and specifically open government data - information, public or otherwise, which anyone is free to access and re-use for any purpose - has been around for some years. In 2009 open data started to become visible in the mainstream, with various governments (such as the USA, UK, Canada and New Zealand) announcing new initiatives towards opening up their public information.</p>
 </blockquote>
 <p>Open Data may come in the form of a whole static database (CSV, EXCEL, TXT etc.), or it may be served as an API. An API will require some kind of request structure, such as location for a weather report, and should describe the structure of the response to expect. The open data documentation should also explain whether it includes geospatial information, and how frequently it is refreshed (if appropriate).</p>
+<p>Most major online services have an API, and many allow you to acquire data surrounding your activity. If you have a Google site, Android/iOS app, or even a Unity game, you might already be collecting data via <a href="https://developers.google.com/analytics/devguides/collection">Google Analytics</a>. If you host a site or code repository at <a href="https://developer.github.com/v3/">Github</a>, they have some great APIs you can use. Similarly for accessing your <a href="https://developers.facebook.com/docs/graph-api/overview/">Facebook data</a>. Look further afield-- even your bank might have an API you can use, or offer you the option to download transaction histories as a static database. <a href="https://maps.google.com/locationhistory/b/0/">You can probably browse your phone&#39;s location history here</a></p>
 <p>Some examples:</p>
+<p><a href="http://openweathermap.org/API">Weather</a> -- free sign up for API key. See example <a href="https://codepen.io/tutsplus/pen/gObLaEP?editors=0010">here</a></p>
+<p><a href="https://developers.google.com/gdata/docs/directory">Google Data APIs</a></p>
+<p><a href="https://developers.google.com/maps/documentation/javascript/">Google Maps</a></p>
+<p><a href="http://wiki.openstreetmap.org/wiki/API">Open Street Map</a></p>
+<ul>
+<li>We used this and other open government data sources for our <a href="https://artificialnature.net/#infranet">Infranet</a> artworks</li>
+</ul>
+<p><a href="http://open.nasa.gov/developer/">NASA</a></p>
 <p><a href="http://www.ontario.ca/government/open-data-ontario">Ontario open data catalogue</a></p>
 <p><a href="https://open.toronto.ca/catalogue/">Open Data Toronto</a></p>
 <p>For example, the <a href="https://open.toronto.ca/dataset/bike-share-toronto/">Bike Share database</a> is updated in near real-time. </p>
 <p>Unfortunately, like many open data resources, you can&#39;t just load this in D3 using <code>d3.json(url)</code> from a Codepen webpage because of CORS (Cross-Origin Resource Sharing) -- it becomes a security risk. But you <em>can</em> do this from a server, even a server running locally on your own machine using Node.js for example. </p>
+<p>For security, browsers typically do not allow a website on one domain to dynamically pull in data from another domain; i.e. they typically apply a <em>same-domain policy</em>. Fortunately, in the case of XMLHttpRequests, the provider may explicitly allow CORS, as is the case for <a href="http://api.openweathermap.org">http://api.openweathermap.org</a>. Moreover, most dynamic requests will fail when running the HTML file from a local filesystem. <em>They need to be running from a server.</em> </p>
+<p>Node.js lets us write complex server applications, but it also provides a simple way to run a server from any location on your filesystem. First, install this capability on your computer by typing this in your terminal (you&#39;ll have to make sure node.js is installed first of course, see above):</p>
+<pre><code>npm install -g http-server</code></pre>
+<p>Once installed, you can run this from any location in your terminal like this:</p>
+<pre><code>http-server</code></pre>
+<p>And you can then open this in your browser at address <a href="http://0.0.0.0:8080/">http://0.0.0.0:8080/</a></p>
+<p>*If you are working in Max, you can also access these APIs via the <code>maxurl</code> object, or you can run a full-fledge Node.js application via the <code>node.script</code> object. </p>
 <p><strong>Cleaning data</strong></p>
 <p>Clean and great data is essential for good visualisations. Most online available data is not clean, not normalized, not well-structured, because life is not clean, normalized or well-structured. Good data is easily machine-readable, with semantic notes easily human-readable. Data is normalized, gaps are meaningfully handled, and noise reduced. This may mean:</p>
 <ul>
