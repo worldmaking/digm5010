@@ -1260,7 +1260,8 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 Nov 6, 2023
 [Class Recording](#class-recordings)
 
-[Zoom recording](https://yorku.zoom.us/rec/share/U81PF8sbNNdLunWTVUA49hy033RDKzB5N4UcseM54-L6kQODHyP7l5WENZfb8VNN.4y1sgYVagbvipCff)
+<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/fltfDB?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
 
 <!--
 
