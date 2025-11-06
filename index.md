@@ -80,7 +80,7 @@ week 2: what is computation
 | [*Reading Week*](#reading-week) |                                         |                                     | [Complete first draft](#paper-complete-draft-for-peer-review) | 
 | [10/23](#week-6)  | [Explorable Explanations](#explorable-explanations) | [Audio II](#digital-audio-part-ii), [Data Visualization](#data-visualization-and-d3js) | [Complete first draft](#paper-complete-draft-for-peer-review) |
 | [10/30](#week-7)  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
-| [11/6](#week-8)   |                                                        | Paper 1-on-1's                      | Revisions |
+| [11/6](#week-8)   | [GPU programming with GLSL](#gpu-programming-of-shaders-with-glsl)                        | Paper 1-on-1's                      | Revisions |
 | [11/13](#week-9)  |                                                        |                                     | [Final paper](#final-paper) |
 | [11/20](#week-10) |                                                        | Video/Tutorial                      |  |
 | [11/27](#week-11) | [Final presentations](#final-presentations)            |                                     | Post-mortem reflection |
@@ -1356,6 +1356,9 @@ If we wanted a *signed normalized* coordinate, from -1 to +1, with 0,0 in the im
 ```glsl
     // signed normalized pixel coordinates (from -1 to 1)
     vec2 suv = uv*2.0 - 1.0;
+
+    // to take into account aspect ratio:
+    suv.x *= iResolution.x / iResolution.y;
 ```
 
 So now we can use the normalized coordinate to make a pattern over space. Essentially here we are defining a field function, that maps a `vec2` position into a `vec4` color. 
@@ -1421,6 +1424,13 @@ It's a squashed looking circle because we are working in normalized coordinates,
     
     fragColor = vec4(spot);
 ```
+
+Or we could adjust for aspect ratio:
+
+```glsl
+    // to take into account aspect ratio:
+    suv.x *= iResolution.x / iResolution.y;
+``
 
 Notice how odd this is: we are drawing shapes (points, circles) not by geometry, but by specifying a function of a field.  We didn't trace a line, we didn't do any geometry really, we just defined a function of space that maps a 2D position into a color, using only the principle of *signed distance*. This method of drawing by 'distance function' can be surprisingly powerful, and we'll return to it later.  
 
@@ -1902,6 +1912,101 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 ---
 
 Now let's try something completely different. 
+
+
+Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects — [Wikipedia](https://en.wikipedia.org/wiki/Ray_tracing_(graphics))
+
+- https://www.shadertoy.com/view/tlXXzB
+
+First, for each pixel in the image, we need a 3D ray. A ray is a line with an origin and direction.  We can build these like this:
+
+```glsl
+    vec3 camera_pos = vec3(0, 0, 0);
+    vec3 camera_dir = normalize(vec3(suv.xy, 7));
+```
+
+We can put a simple object, such as a sphere, into this space. A sphere has a centre and radius:
+
+```glsl
+    vec3 sphere_pos = vec3(1, 0, 20);
+    float sphere_rad = 2.0;
+
+    // to make our life easier, let's combine this into a vec4:
+    vec4 sphere = vec4(sphere_pos, sphere_rad);
+
+    // let's also define a light position:
+    vec3 light_pos = vec3(8, 4, 10);
+```
+
+Now we need a function to test whether a given ray intersects with a sphere.  The explanation of this math is a bit beyond what we can cover here, but have a look [here](https://kylehalladay.com/blog/tutorial/math/2013/12/24/Ray-Sphere-Intersection.html)
+
+```glsl
+// returns distance to first intersection with the sphere from the ray:
+// returns -1 if the ray does not intersect with the sphere
+float intersectSphere(vec3 rayOrigin, vec3 rayDirection, vec3 sphereCenter, float sphereRadius) {
+    vec3 L = sphereCenter - rayOrigin;
+    float tca = dot(L, rayDirection);
+    float d2 = dot(L, L) - tca * tca;
+    float radius2 = sphereRadius * sphereRadius;
+
+    if (d2 > radius2) return -1.0; // No intersection
+
+    float thc = sqrt(radius2 - d2);
+    float t0 = tca - thc;
+    float t1 = tca + thc;
+
+    if (t0 < 0.0 && t1 < 0.0) return -1.0; // Both intersections behind ray origin
+    if (t0 < 0.0) return t1; // Ray origin inside sphere, return far intersection
+    return t0; // Return closest intersection
+}
+```
+
+Can we see it?
+
+```glsl
+    float d = intersectSphere(camera_pos, camera_dir, sphere_pos, sphere_rad);
+    if (d > 0.) {
+        fragColor = vec4(1);
+    }
+```
+
+
+To begin to light this sphere, we need to know where exactly our intersection point is, and from that we can determine the **normal**, which is to say, the direction pointing perpendicularly away from the sphere's surface:
+
+```glsl
+    // move the right distance along the ray to find the point:
+    vec3 pt = camera_pos + d*camera_dir;
+
+    // a sphere's normal is simple, it always points away from the sphere center
+    // we normalize it to ensure it has a length of 1 (a unit vector)
+    // this only gives direction, and is useful in the math later
+    vec3 normal = normalize(pt - sphere_pos);
+```
+
+We can do diffuse lighting relative to a particular light direction (for sunlight), or by deriving a light direction from the relative positions of the sphere and a light source:
+
+```glsl
+        // again, normalize it to get a unit length direction vector:
+        vec3 light_dir = normalize(pt - light_pos);
+
+        // similarity of light and ray:
+        float diffuse = max(dot(normal, light_dir), 0.);
+
+        // similarlity with ray reflection vector:
+        float specular = max(dot(-camera_dir, reflect(-light_dir, normal)), 0.);
+        fragColor = vec4(specular);
+```
+
+To continue:
+
+- Some lighting models. Ambient, diffuse, specular, etc. 
+- At some point here, Mat4 for model, view, proj matrices.
+- Introduce some other shapes.  Each one needs a way to ray-intersect and return position & normal.
+
+TODO: A different approach, using distance functions
+
+
+
 
 <!--
 

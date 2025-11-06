@@ -154,7 +154,7 @@ We will have focused seminar time to discuss these stages, contextualizing them 
 </tr>
 <tr>
 <td align="left"><a href="#week-8">11/6</a></td>
-<td align="left"></td>
+<td align="left"><a href="#gpu-programming-of-shaders-with-glsl">GPU programming with GLSL</a></td>
 <td align="left">Paper 1-on-1&#39;s</td>
 <td align="left">Revisions</td>
 </tr>
@@ -1412,7 +1412,10 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
     fragColor = <span class="hljs-type">vec4</span>(uv, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>);</code></pre>
 <p>If we wanted a <em>signed normalized</em> coordinate, from -1 to +1, with 0,0 in the image center, we can do this:</p>
 <pre><code class="language-glsl">    <span class="hljs-comment">// signed normalized pixel coordinates (from -1 to 1)</span>
-    <span class="hljs-type">vec2</span> suv = uv*<span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>;</code></pre>
+    <span class="hljs-type">vec2</span> suv = uv*<span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>;
+
+    <span class="hljs-comment">// to take into account aspect ratio:</span>
+    suv.x *= iResolution.x / iResolution.y;</code></pre>
 <p>So now we can use the normalized coordinate to make a pattern over space. Essentially here we are defining a field function, that maps a <code>vec2</code> position into a <code>vec4</code> color. </p>
 <p>For example, here&#39;s a repeating sinusoidal surface:</p>
 <pre><code class="language-glsl">    <span class="hljs-keyword">const</span> <span class="hljs-type">float</span> PI = <span class="hljs-number">3.141592653589793</span>;
@@ -1451,18 +1454,26 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
     <span class="hljs-type">float</span> spot = <span class="hljs-built_in">exp</span>(-sharpness * dist);
 
     fragColor = <span class="hljs-type">vec4</span>(spot);</code></pre>
-<p>Notice how odd this is: we are drawing shapes (points, circles) not by geometry, but by specifying a function of a field.  We didn&#39;t trace a line, we didn&#39;t do any geometry really, we just defined a function of space that maps a 2D position into a color, using only the principle of <em>signed distance</em>. This method of drawing by &#39;distance function&#39; can be surprisingly powerful, and we&#39;ll return to it later.  </p>
-<p>We used the <code>iResolution</code> uniform before to get the canvas size. (The &quot;Uniform&quot; terminology here really means an input parameter to the shader. It is &quot;uniform&quot; because the parameter has the same value for all pixels.) Shadertoy also gives us a few more uniforms to play with:</p>
-<pre><code class="language-glsl"><span class="hljs-keyword">uniform</span> <span class="hljs-type">vec3</span>      iResolution;           <span class="hljs-comment">// viewport resolution (in pixels)</span>
-<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iTime;                 <span class="hljs-comment">// shader playback time (in seconds)</span>
-<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iTimeDelta;            <span class="hljs-comment">// render time (in seconds)</span>
-<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iFrameRate;            <span class="hljs-comment">// shader frame rate</span>
-<span class="hljs-keyword">uniform</span> <span class="hljs-type">int</span>       iFrame;                <span class="hljs-comment">// shader playback frame</span>
-<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iChannelTime[<span class="hljs-number">4</span>];       <span class="hljs-comment">// channel playback time (in seconds)</span>
-<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec3</span>      iChannelResolution[<span class="hljs-number">4</span>]; <span class="hljs-comment">// channel resolution (in pixels)</span>
-<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec4</span>      iMouse;                <span class="hljs-comment">// mouse pixel coords. xy: current (if MLB down), zw: click</span>
-<span class="hljs-keyword">uniform</span> samplerXX iChannel0.<span class="hljs-number">.3</span>;          <span class="hljs-comment">// input channel. XX = 2D/Cube</span>
-<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec4</span>      iDate;                 <span class="hljs-comment">// (year, month, day, time in seconds)</span></code></pre>
+<p>Or we could adjust for aspect ratio:</p>
+<pre><code class="language-glsl">    // to take into account aspect ratio:
+    suv.x *= iResolution.x / iResolution.y;
+``
+
+Notice how odd this is: we are drawing shapes (points, circles) not by geometry, but by specifying a function of a field.  We didn&#x27;t trace a line, we didn&#x27;t do any geometry really, we just defined a function of space that maps a 2D position into a color, using only the principle of *signed distance*. This method of drawing by &#x27;distance function&#x27; can be surprisingly powerful, and we&#x27;ll return to it later.  
+
+We used the `iResolution` uniform before to get the canvas size. (The &quot;Uniform&quot; terminology here really means an input parameter to the shader. It is &quot;uniform&quot; because the parameter has the same value for all pixels.) Shadertoy also gives us a few more uniforms to play with:
+
+```glsl
+uniform vec3      iResolution;           // viewport resolution (in pixels)
+uniform float     iTime;                 // shader playback time (in seconds)
+uniform float     iTimeDelta;            // render time (in seconds)
+uniform float     iFrameRate;            // shader frame rate
+uniform int       iFrame;                // shader playback frame
+uniform float     iChannelTime[4];       // channel playback time (in seconds)
+uniform vec3      iChannelResolution[4]; // channel resolution (in pixels)
+uniform vec4      iMouse;                // mouse pixel coords. xy: current (if MLB down), zw: click
+uniform samplerXX iChannel0..3;          // input channel. XX = 2D/Cube
+uniform vec4      iDate;                 // (year, month, day, time in seconds)</code></pre>
 <p>So for example, we can use iMouse.xy to move the circle, and iTime to change its size:</p>
 <pre><code class="language-glsl">    <span class="hljs-type">vec2</span> centre = iMouse.xy;
     <span class="hljs-type">float</span> radius = <span class="hljs-number">100.</span> * <span class="hljs-built_in">abs</span>(<span class="hljs-built_in">sin</span>(iTime));</code></pre>
@@ -1830,6 +1841,71 @@ First, we define a kernel <span class="hljs-keyword">for</span> the relative wei
 }</code></pre>
 <hr>
 <p>Now let&#39;s try something completely different. </p>
+<p>Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects — <a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)">Wikipedia</a></p>
+<ul>
+<li><a href="https://www.shadertoy.com/view/tlXXzB">https://www.shadertoy.com/view/tlXXzB</a></li>
+</ul>
+<p>First, for each pixel in the image, we need a 3D ray. A ray is a line with an origin and direction.  We can build these like this:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec3</span> camera_pos = <span class="hljs-type">vec3</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-type">vec3</span> camera_dir = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(suv.xy, <span class="hljs-number">7</span>));</code></pre>
+<p>We can put a simple object, such as a sphere, into this space. A sphere has a centre and radius:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec3</span> sphere_pos = <span class="hljs-type">vec3</span>(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">20</span>);
+    <span class="hljs-type">float</span> sphere_rad = <span class="hljs-number">2.0</span>;
+
+    <span class="hljs-comment">// to make our life easier, let&#x27;s combine this into a vec4:</span>
+    <span class="hljs-type">vec4</span> sphere = <span class="hljs-type">vec4</span>(sphere_pos, sphere_rad);
+
+    <span class="hljs-comment">// let&#x27;s also define a light position:</span>
+    <span class="hljs-type">vec3</span> light_pos = <span class="hljs-type">vec3</span>(<span class="hljs-number">8</span>, <span class="hljs-number">4</span>, <span class="hljs-number">10</span>);</code></pre>
+<p>Now we need a function to test whether a given ray intersects with a sphere.  The explanation of this math is a bit beyond what we can cover here, but have a look <a href="https://kylehalladay.com/blog/tutorial/math/2013/12/24/Ray-Sphere-Intersection.html">here</a></p>
+<pre><code class="language-glsl"><span class="hljs-comment">// returns distance to first intersection with the sphere from the ray:</span>
+<span class="hljs-comment">// returns -1 if the ray does not intersect with the sphere</span>
+<span class="hljs-type">float</span> intersectSphere(<span class="hljs-type">vec3</span> rayOrigin, <span class="hljs-type">vec3</span> rayDirection, <span class="hljs-type">vec3</span> sphereCenter, <span class="hljs-type">float</span> sphereRadius) {
+    <span class="hljs-type">vec3</span> L = sphereCenter - rayOrigin;
+    <span class="hljs-type">float</span> tca = <span class="hljs-built_in">dot</span>(L, rayDirection);
+    <span class="hljs-type">float</span> d2 = <span class="hljs-built_in">dot</span>(L, L) - tca * tca;
+    <span class="hljs-type">float</span> radius2 = sphereRadius * sphereRadius;
+
+    <span class="hljs-keyword">if</span> (d2 &gt; radius2) <span class="hljs-keyword">return</span> <span class="hljs-number">-1.0</span>; <span class="hljs-comment">// No intersection</span>
+
+    <span class="hljs-type">float</span> thc = <span class="hljs-built_in">sqrt</span>(radius2 - d2);
+    <span class="hljs-type">float</span> t0 = tca - thc;
+    <span class="hljs-type">float</span> t1 = tca + thc;
+
+    <span class="hljs-keyword">if</span> (t0 &lt; <span class="hljs-number">0.0</span> &amp;&amp; t1 &lt; <span class="hljs-number">0.0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">-1.0</span>; <span class="hljs-comment">// Both intersections behind ray origin</span>
+    <span class="hljs-keyword">if</span> (t0 &lt; <span class="hljs-number">0.0</span>) <span class="hljs-keyword">return</span> t1; <span class="hljs-comment">// Ray origin inside sphere, return far intersection</span>
+    <span class="hljs-keyword">return</span> t0; <span class="hljs-comment">// Return closest intersection</span>
+}</code></pre>
+<p>Can we see it?</p>
+<pre><code class="language-glsl">    <span class="hljs-type">float</span> d = intersectSphere(camera_pos, camera_dir, sphere_pos, sphere_rad);
+    <span class="hljs-keyword">if</span> (d &gt; <span class="hljs-number">0.</span>) {
+        fragColor = <span class="hljs-type">vec4</span>(<span class="hljs-number">1</span>);
+    }</code></pre>
+<p>To begin to light this sphere, we need to know where exactly our intersection point is, and from that we can determine the <strong>normal</strong>, which is to say, the direction pointing perpendicularly away from the sphere&#39;s surface:</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// move the right distance along the ray to find the point:</span>
+    <span class="hljs-type">vec3</span> pt = camera_pos + d*camera_dir;
+
+    <span class="hljs-comment">// a sphere&#x27;s normal is simple, it always points away from the sphere center</span>
+    <span class="hljs-comment">// we normalize it to ensure it has a length of 1 (a unit vector)</span>
+    <span class="hljs-comment">// this only gives direction, and is useful in the math later</span>
+    <span class="hljs-type">vec3</span> normal = <span class="hljs-built_in">normalize</span>(pt - sphere_pos);</code></pre>
+<p>We can do diffuse lighting relative to a particular light direction (for sunlight), or by deriving a light direction from the relative positions of the sphere and a light source:</p>
+<pre><code class="language-glsl">        <span class="hljs-comment">// again, normalize it to get a unit length direction vector:</span>
+        <span class="hljs-type">vec3</span> light_dir = <span class="hljs-built_in">normalize</span>(pt - light_pos);
+
+        <span class="hljs-comment">// similarity of light and ray:</span>
+        <span class="hljs-type">float</span> diffuse = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(normal, light_dir), <span class="hljs-number">0.</span>);
+
+        <span class="hljs-comment">// similarlity with ray reflection vector:</span>
+        <span class="hljs-type">float</span> specular = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(-camera_dir, <span class="hljs-built_in">reflect</span>(-light_dir, normal)), <span class="hljs-number">0.</span>);
+        fragColor = <span class="hljs-type">vec4</span>(specular);</code></pre>
+<p>To continue:</p>
+<ul>
+<li>Some lighting models. Ambient, diffuse, specular, etc. </li>
+<li>At some point here, Mat4 for model, view, proj matrices.</li>
+<li>Introduce some other shapes.  Each one needs a way to ray-intersect and return position &amp; normal.</li>
+</ul>
+<p>TODO: A different approach, using distance functions</p>
 <!--
 
 - Paper process discussion -- one week to ISEA deadline: https://isea2025.isea-international.org/submission/submission-guideline/ 
