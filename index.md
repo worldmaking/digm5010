@@ -1909,6 +1909,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 }
 ```
 
+[Our shader from today](https://www.shadertoy.com/view/t3SfDW)
+
 ---
 
 Now let's try something completely different. 
@@ -2425,6 +2427,7 @@ Recordings of the weekly sessions will be here:
 - [Week 2: Paper: Reading list preparation + Coding: Rebuilding Yellowtail](https://yorku.zoom.us/rec/share/kG3MRtCzkT9iIrMz4ykj-1Wx8JX_jVBnX6om7BU3TirHZiOeGkYuSbbxIINOTRTH.pij6xVyBVvyWUbPt)
 - [Week 3: Problem Statements, Introductions](https://yorku.zoom.us/rec/share/txYlNuGEcdmQO4-rHtTCznyM-On8WjBDp556Pxx7CvYuZves_nepaQoJeL0zzUfE.UYHpW1TtKt3-yUQz)
 - [Week 4: Introductions, Annotated Bibliographies, Code explorations, Digital Audio](https://yorku.zoom.us/rec/share/nRvsF6a-T1LFvXkHITRVD9g16d_n6JEkH9A-JU5XrAoN-qFaP-j3T5WADn85Lvz0.eLLEg6SsxPvXosKi)
+- [Week 8: GPU programming with GLSL](https://yorku.zoom.us/rec/share/sRwZA88tsjUSIpJsCjBsAWoRKY4FEQhFms5l_rKn_uNZUig8_BLKjqAPFRkgLEAz.6Y9HztksWKYH-ozi)
 
 <!-- 
 - [Week 0 Class Recording - first patching](https://yorku.zoom.us/rec/share/ZL5_tEz7cuDZHNk585qCGx3GwyIf-ui4tt6ScNreRbT1ma-lIToigpasxu9n24I0.up3Jixd74Ti1Cb1j)
