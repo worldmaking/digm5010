@@ -80,8 +80,8 @@ week 2: what is computation
 | [*Reading Week*](#reading-week) |                                         |                                     | [Complete first draft](#paper-complete-draft-for-peer-review) | 
 | [10/23](#week-6)  | [Explorable Explanations](#explorable-explanations) | [Audio II](#digital-audio-part-ii), [Data Visualization](#data-visualization-and-d3js) | [Complete first draft](#paper-complete-draft-for-peer-review) |
 | [10/30](#week-7)  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
-| [11/6](#week-8)   | [GPU programming with GLSL](#gpu-programming-of-shaders-with-glsl)                        | Paper 1-on-1's                      | Revisions |
-| [11/13](#week-9)  |                                                        |                                     | [Final paper](#final-paper) |
+| [11/6](#week-8)   | [GPU programming with GLSL](#gpu-programming-of-shaders-with-glsl)                        |   | Revisions |
+| [11/13](#week-9)  | Paper 1-on-1's                              | Catching up on any material we missed | [Final paper](#final-paper) |
 | [11/20](#week-10) |                                                        | Video/Tutorial                      |  |
 | [11/27](#week-11) | [Final presentations](#final-presentations)            |                                     | Post-mortem reflection |
 
