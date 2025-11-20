@@ -1455,25 +1455,20 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
 
     fragColor = <span class="hljs-type">vec4</span>(spot);</code></pre>
 <p>Or we could adjust for aspect ratio:</p>
-<pre><code class="language-glsl">    // to take into account aspect ratio:
-    suv.x *= iResolution.x / iResolution.y;
-``
-
-Notice how odd this is: we are drawing shapes (points, circles) not by geometry, but by specifying a function of a field.  We didn&#x27;t trace a line, we didn&#x27;t do any geometry really, we just defined a function of space that maps a 2D position into a color, using only the principle of *signed distance*. This method of drawing by &#x27;distance function&#x27; can be surprisingly powerful, and we&#x27;ll return to it later.  
-
-We used the `iResolution` uniform before to get the canvas size. (The &quot;Uniform&quot; terminology here really means an input parameter to the shader. It is &quot;uniform&quot; because the parameter has the same value for all pixels.) Shadertoy also gives us a few more uniforms to play with:
-
-```glsl
-uniform vec3      iResolution;           // viewport resolution (in pixels)
-uniform float     iTime;                 // shader playback time (in seconds)
-uniform float     iTimeDelta;            // render time (in seconds)
-uniform float     iFrameRate;            // shader frame rate
-uniform int       iFrame;                // shader playback frame
-uniform float     iChannelTime[4];       // channel playback time (in seconds)
-uniform vec3      iChannelResolution[4]; // channel resolution (in pixels)
-uniform vec4      iMouse;                // mouse pixel coords. xy: current (if MLB down), zw: click
-uniform samplerXX iChannel0..3;          // input channel. XX = 2D/Cube
-uniform vec4      iDate;                 // (year, month, day, time in seconds)</code></pre>
+<pre><code class="language-glsl">    <span class="hljs-comment">// to take into account aspect ratio:</span>
+    suv.x *= iResolution.x / iResolution.y;</code></pre>
+<p>Notice how odd this is: we are drawing shapes (points, circles) not by geometry, but by specifying a function of a field.  We didn&#39;t trace a line, we didn&#39;t do any geometry really, we just defined a function of space that maps a 2D position into a color, using only the principle of <em>signed distance</em>. This method of drawing by &#39;distance function&#39; can be surprisingly powerful, and we&#39;ll return to it later.  </p>
+<p>We used the <code>iResolution</code> uniform before to get the canvas size. (The &quot;Uniform&quot; terminology here really means an input parameter to the shader. It is &quot;uniform&quot; because the parameter has the same value for all pixels.) Shadertoy also gives us a few more uniforms to play with:</p>
+<pre><code class="language-glsl"><span class="hljs-keyword">uniform</span> <span class="hljs-type">vec3</span>      iResolution;           <span class="hljs-comment">// viewport resolution (in pixels)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iTime;                 <span class="hljs-comment">// shader playback time (in seconds)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iTimeDelta;            <span class="hljs-comment">// render time (in seconds)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iFrameRate;            <span class="hljs-comment">// shader frame rate</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">int</span>       iFrame;                <span class="hljs-comment">// shader playback frame</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iChannelTime[<span class="hljs-number">4</span>];       <span class="hljs-comment">// channel playback time (in seconds)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec3</span>      iChannelResolution[<span class="hljs-number">4</span>]; <span class="hljs-comment">// channel resolution (in pixels)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec4</span>      iMouse;                <span class="hljs-comment">// mouse pixel coords. xy: current (if MLB down), zw: click</span>
+<span class="hljs-keyword">uniform</span> samplerXX iChannel0.<span class="hljs-number">.3</span>;          <span class="hljs-comment">// input channel. XX = 2D/Cube</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec4</span>      iDate;                 <span class="hljs-comment">// (year, month, day, time in seconds)</span></code></pre>
 <p>So for example, we can use iMouse.xy to move the circle, and iTime to change its size:</p>
 <pre><code class="language-glsl">    <span class="hljs-type">vec2</span> centre = iMouse.xy;
     <span class="hljs-type">float</span> radius = <span class="hljs-number">100.</span> * <span class="hljs-built_in">abs</span>(<span class="hljs-built_in">sin</span>(iTime));</code></pre>
@@ -1906,7 +1901,7 @@ First, we define a kernel <span class="hljs-keyword">for</span> the relative wei
 <li>At some point here, Mat4 for model, view, proj matrices.</li>
 <li>Introduce some other shapes.  Each one needs a way to ray-intersect and return position &amp; normal.</li>
 </ul>
-<p>TODO: A different approach, using distance functions</p>
+<p>Next: A different approach, using distance functions.</p>
 <!--
 
 - Paper process discussion -- one week to ISEA deadline: https://isea2025.isea-international.org/submission/submission-guideline/ 

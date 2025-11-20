@@ -1430,7 +1430,7 @@ Or we could adjust for aspect ratio:
 ```glsl
     // to take into account aspect ratio:
     suv.x *= iResolution.x / iResolution.y;
-``
+```
 
 Notice how odd this is: we are drawing shapes (points, circles) not by geometry, but by specifying a function of a field.  We didn't trace a line, we didn't do any geometry really, we just defined a function of space that maps a 2D position into a color, using only the principle of *signed distance*. This method of drawing by 'distance function' can be surprisingly powerful, and we'll return to it later.  
 
@@ -2005,7 +2005,7 @@ To continue:
 - At some point here, Mat4 for model, view, proj matrices.
 - Introduce some other shapes.  Each one needs a way to ray-intersect and return position & normal.
 
-TODO: A different approach, using distance functions
+Next: A different approach, using distance functions.
 
 
 
