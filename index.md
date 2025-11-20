@@ -2116,7 +2116,7 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 # Final submissions
 
 - [Video Tutorials](#video-tutorial) -- please [add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing) by **Dec 12th**. 
-- [Final paper](#final-paper) -- please send me an email with your reading list, annotated bibliography, and final paper, by **Dec 19th**. 
+- [Final paper](#final-paper)
 - **Class journal** -- please submit the link to your online documentation of notes, study sketches (codepen or otherwise), and your reflections on your work in this course to the [slides here](https://docs.google.com/presentation/d/1spwP4te6kYoF5Qs_e75gHoALJbpJsQjchhWollwP4hs/edit?usp=sharing). Please ensure that your documentation is public access.  Due by **Dec 19th**. 
 
 Thank you everyone for a wonderful semester! 
