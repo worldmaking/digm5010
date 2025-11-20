@@ -2072,25 +2072,15 @@ Nov 13, 2023
   - Submit your [Video Tutorial](#video-tutorial)
 -->
 
-## Video Tutorial
-
-Research is about *sharing*. Sometimes, that requires sharing *how*. 
-
-1. Create a video-based tutorial (roughly 10-20mins) to introduce a technical topic.
-	- It could be an introduction to a platform we are not covering in class
-	- or an exploration of a library/API or SDK etc. in Javascript
-	- or alternatively, it could be a tutorial on a technique or algorithm or mechanism or a part of mathematics etc.
-2. Whichever you choose, it should cover both of: 
-	- introducing the key concepts, the unusual and interesting parts, and related work
-	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
-3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
-
 # Week 10
 Nov 20, 2023
 [Class Recording](#class-recordings)
 
+1 on 1 paper sessions
+
+Catching up on tutorials we didn't complete in previous weeks
+
 <!--
-- 1 on 1 paper sessions
 
 - A quick introduction to [Git](gitnotes.html)
 
@@ -2105,15 +2095,29 @@ Nov 27, 2023
 
 ## Final presentations
 
-We have about 10 minutes per presentation, plus 5 minutes for questions & discussion! 
+We have about 15 minutes per presentation, plus 5 minutes for questions & discussion! 
 
 ---
+
+## Video Tutorial
+
+Research is about *sharing*. Sometimes, that requires sharing *how*. 
+
+1. Create a video-based tutorial (roughly 10-20mins) to introduce a technical topic.
+	- It could be an introduction to a platform we are not covering in class
+	- or an exploration of a library/API or SDK etc. in Javascript
+	- or alternatively, it could be a tutorial on a technique or algorithm or mechanism or a part of mathematics etc.
+2. Whichever you choose, it should cover both of: 
+	- introducing the key concepts, the unusual and interesting parts, and related work
+	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
+3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
+
 
 # Final submissions
 
 - [Video Tutorials](#video-tutorial) -- please [add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing) by **Dec 12th**. 
 - [Final paper](#final-paper) -- please send me an email with your reading list, annotated bibliography, and final paper, by **Dec 19th**. 
-- **Class journal** -- please submit the link to your online documentation of notes, study sketches (codepen or otherwise), and your reflections on your work in this course to the [slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing). Please ensure that your documentation is public access.  Due by **Dec 19th**. 
+- **Class journal** -- please submit the link to your online documentation of notes, study sketches (codepen or otherwise), and your reflections on your work in this course to the [slides here](https://docs.google.com/presentation/d/1spwP4te6kYoF5Qs_e75gHoALJbpJsQjchhWollwP4hs/edit?usp=sharing). Please ensure that your documentation is public access.  Due by **Dec 19th**. 
 
 Thank you everyone for a wonderful semester! 
 
