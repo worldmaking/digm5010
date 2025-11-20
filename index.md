@@ -1627,7 +1627,7 @@ The `texture` function needs the specific "sampler" input to sample from (in thi
     //vec2 coord = 0.5 + 0.5*mix(suv, suv*sin(iTime), 1.-length(suv));
     //vec2 coord = uv + 0.1*(noise.xy-0.5)*length(suv);  // a little noise can be a bit like a blur
     vec4 image = texture(iChannel0, coord);
-``
+```
 
 This can get pretty complex: https://www.shadertoy.com/view/
 
@@ -1735,10 +1735,10 @@ If we apply this to our `uv` coordinate, we can rotate the image:
 We can also scale using a mat2:
 
 ```glsl
-mat2 scaleMat2(float scale) {
+mat2 scaleMat2(float s) {
     return mat2(
-        s,  s,
-        s,  s
+        s,  0,
+        0,  s
     );
 }
 ```
@@ -1746,9 +1746,9 @@ mat2 scaleMat2(float scale) {
 If we wanted to *translate* however, we need to use `mat3`.  The idea is simple: we assume that there is a 3rd coordinate to the input vector, equvalent to `uv3 = vec3(uv, 1)`, so that we can then multiply this with the `mat3`.  Then our transforms look like this:
 
 ```glsl
-mat3 translateMat3(x, y) {
-    mat3(
-        1, 1, 0,        // First column (accessed as m[0])
+mat3 translateMat3(float x, float y) {
+    return mat3(
+        1, 0, 0,        // First column (accessed as m[0])
         0, 1, 0,        // Second column (accessed as m[1])
         x, y, 1         // Third column (accessed as m[2])
   );
@@ -1757,7 +1757,7 @@ mat3 translateMat3(x, y) {
 mat3 rotateMat3(float angle) {
     float c = cos(angle);
     float s = sin(angle);
-    return mat2(
+    return mat3(
         c,  s, 0,
         -s, c, 0,
         0,  0, 1
@@ -1766,8 +1766,8 @@ mat3 rotateMat3(float angle) {
 
 mat3 scaleMat3(float s) {
     return mat2(
-        s, s, 0,
-        s, s, 0,
+        s, 0, 0,
+        0, s, 0,
         0, 0, 1
     );
 }

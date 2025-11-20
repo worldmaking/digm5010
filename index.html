@@ -1609,17 +1609,11 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
     <span class="hljs-comment">//vec2 coord = 0.5 + (suv)*exp(sin(iTime)*length(suv));</span>
     <span class="hljs-comment">//vec2 coord = 0.5 + 0.5*mix(suv, suv*sin(iTime), 1.-length(suv));</span>
     <span class="hljs-comment">//vec2 coord = uv + 0.1*(noise.xy-0.5)*length(suv);  // a little noise can be a bit like a blur</span>
-    <span class="hljs-type">vec4</span> image = <span class="hljs-built_in">texture</span>(iChannel0, coord);
-``
-
-This can get pretty complex: https:<span class="hljs-comment">//www.shadertoy.com/view/</span>
-
-We can also use this to <span class="hljs-keyword">do</span> things like comparing or blending nearest pixels. This is a common type of image effect that includes blur, sharpen, erode, edge highlight, etc.  These are called [convolution filters](https:<span class="hljs-comment">//en.wikipedia.org/wiki/Kernel_(image_processing)). Convolution simply means multiplying several pairs of terms together and summing the results. In image processing, this is usually means multiplying a square (or rectangular) region of an image with a &quot;kernel&quot; matrix. </span>
-
-First, we define a kernel <span class="hljs-keyword">for</span> the relative weights of the neighboring pixels. Then we loop over these pixels, sampling the image at each point, and multiplying it with the corresponding kernel weight, summing up the results. 
-
-```glsl
-    <span class="hljs-comment">// some example kernels:</span>
+    <span class="hljs-type">vec4</span> image = <span class="hljs-built_in">texture</span>(iChannel0, coord);</code></pre>
+<p>This can get pretty complex: <a href="https://www.shadertoy.com/view/">https://www.shadertoy.com/view/</a></p>
+<p>We can also use this to do things like comparing or blending nearest pixels. This is a common type of image effect that includes blur, sharpen, erode, edge highlight, etc.  These are called <a href="https://en.wikipedia.org/wiki/Kernel_(image_processing)">convolution filters</a>. Convolution simply means multiplying several pairs of terms together and summing the results. In image processing, this is usually means multiplying a square (or rectangular) region of an image with a &quot;kernel&quot; matrix. </p>
+<p>First, we define a kernel for the relative weights of the neighboring pixels. Then we loop over these pixels, sampling the image at each point, and multiplying it with the corresponding kernel weight, summing up the results. </p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// some example kernels:</span>
 
     <span class="hljs-type">mat3</span> identity = <span class="hljs-type">mat3</span>(
         <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
@@ -1705,16 +1699,16 @@ First, we define a kernel <span class="hljs-keyword">for</span> the relative wei
 <p>If we apply this to our <code>uv</code> coordinate, we can rotate the image:</p>
 <pre><code class="language-glsl">    uv = rotate(iTime) * uv;</code></pre>
 <p>We can also scale using a mat2:</p>
-<pre><code class="language-glsl"><span class="hljs-type">mat2</span> scaleMat2(<span class="hljs-type">float</span> scale) {
+<pre><code class="language-glsl"><span class="hljs-type">mat2</span> scaleMat2(<span class="hljs-type">float</span> s) {
     <span class="hljs-keyword">return</span> <span class="hljs-type">mat2</span>(
-        s,  s,
-        s,  s
+        s,  <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>,  s
     );
 }</code></pre>
 <p>If we wanted to <em>translate</em> however, we need to use <code>mat3</code>.  The idea is simple: we assume that there is a 3rd coordinate to the input vector, equvalent to <code>uv3 = vec3(uv, 1)</code>, so that we can then multiply this with the <code>mat3</code>.  Then our transforms look like this:</p>
-<pre><code class="language-glsl"><span class="hljs-type">mat3</span> translateMat3(x, y) {
-    <span class="hljs-type">mat3</span>(
-        <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,        <span class="hljs-comment">// First column (accessed as m[0])</span>
+<pre><code class="language-glsl"><span class="hljs-type">mat3</span> translateMat3(<span class="hljs-type">float</span> x, <span class="hljs-type">float</span> y) {
+    <span class="hljs-keyword">return</span> <span class="hljs-type">mat3</span>(
+        <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,        <span class="hljs-comment">// First column (accessed as m[0])</span>
         <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,        <span class="hljs-comment">// Second column (accessed as m[1])</span>
         x, y, <span class="hljs-number">1</span>         <span class="hljs-comment">// Third column (accessed as m[2])</span>
   );
@@ -1723,7 +1717,7 @@ First, we define a kernel <span class="hljs-keyword">for</span> the relative wei
 <span class="hljs-type">mat3</span> rotateMat3(<span class="hljs-type">float</span> angle) {
     <span class="hljs-type">float</span> c = <span class="hljs-built_in">cos</span>(angle);
     <span class="hljs-type">float</span> s = <span class="hljs-built_in">sin</span>(angle);
-    <span class="hljs-keyword">return</span> <span class="hljs-type">mat2</span>(
+    <span class="hljs-keyword">return</span> <span class="hljs-type">mat3</span>(
         c,  s, <span class="hljs-number">0</span>,
         -s, c, <span class="hljs-number">0</span>,
         <span class="hljs-number">0</span>,  <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
@@ -1732,8 +1726,8 @@ First, we define a kernel <span class="hljs-keyword">for</span> the relative wei
 
 <span class="hljs-type">mat3</span> scaleMat3(<span class="hljs-type">float</span> s) {
     <span class="hljs-keyword">return</span> <span class="hljs-type">mat2</span>(
-        s, s, <span class="hljs-number">0</span>,
-        s, s, <span class="hljs-number">0</span>,
+        s, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>, s, <span class="hljs-number">0</span>,
         <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
     );
 }</code></pre>
