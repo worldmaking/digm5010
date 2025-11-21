@@ -1845,7 +1845,7 @@ Another common pattern here is to set up an initialization on the first frame, b
 
 Notice it blurring over time? That's because we are using linear interpolation on the iChannel0 settings. Change the filter to "nearest" and it will not blur. 
 
-Try doing some spatial transforms on the image in the feedback loop!
+Try doing some spatial transforms on the image in a feedback loop!
 
 ---
 
