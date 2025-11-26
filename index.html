@@ -1830,14 +1830,35 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
 }</code></pre>
 <p><a href="https://www.shadertoy.com/view/t3SfDW">Our shader from today</a></p>
 <hr>
-<p>Now let&#39;s try something completely different. </p>
+<p><strong>A Fluid simulation:</strong></p>
+<p>Modeling the ideas in <a href="https://wyattflanders.com/MeAndMyNeighborhood.pdf">Wyatt Flander&#39;s tutorial here</a></p>
+<p>A cellular automaton that looks a lot less digital/discrete! </p>
+<ul>
+<li>Every cell has energy, including velocity (.xy) and omnidirectional divergence (.z).  We can also imagine the fluid transporting some matter, with a density (.w)</li>
+</ul>
+<p>Fluid simulation: <a href="https://www.shadertoy.com/view/WcccDf">https://www.shadertoy.com/view/WcccDf</a> </p>
+<hr>
+<p><strong>A minimal raytracer</strong></p>
 <p>Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects — <a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)">Wikipedia</a></p>
 <ul>
 <li><a href="https://www.shadertoy.com/view/tlXXzB">https://www.shadertoy.com/view/tlXXzB</a></li>
 </ul>
-<p>First, for each pixel in the image, we need a 3D ray. A ray is a line with an origin and direction.  We can build these like this:</p>
-<pre><code class="language-glsl">    <span class="hljs-type">vec3</span> camera_pos = <span class="hljs-type">vec3</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
-    <span class="hljs-type">vec3</span> camera_dir = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(suv.xy, <span class="hljs-number">7</span>));</code></pre>
+<p>First, for each pixel in the image, we need a 3D ray. A ray is a line with an origin and direction.  </p>
+<p><code>p = pos + dir*t</code></p>
+<p>vec3 pos, vec3 dir (normalized)
+t is distance along ray</p>
+<p>OK for a screen, each ray should have a slightly different direction. Need diagram. Think of the image plane as a mesh a little in front of the camera/eye.  That&#39;s our &quot;near plane&quot;. Think of the Albrecht Durer drawing diagram! </p>
+<p>We can build these like this:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec3</span> ro = <span class="hljs-type">vec3</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-type">vec3</span> rd = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(suv.xy, <span class="hljs-number">7</span>));
+
+    <span class="hljs-comment">// or more realistic:</span>
+
+    <span class="hljs-comment">// put camera &quot;behind&quot; origin </span>
+    ro = <span class="hljs-type">vec3</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">5</span>); 
+    <span class="hljs-comment">// handles aspect ratio:</span>
+    <span class="hljs-comment">// the &quot;7&quot; is a way to set a &quot;focal length&quot;</span>
+    rd = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(suv * iResolution.xy/iResolution.y, <span class="hljs-number">7</span>)); </code></pre>
 <p>We can put a simple object, such as a sphere, into this space. A sphere has a centre and radius:</p>
 <pre><code class="language-glsl">    <span class="hljs-type">vec3</span> sphere_pos = <span class="hljs-type">vec3</span>(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">20</span>);
     <span class="hljs-type">float</span> sphere_rad = <span class="hljs-number">2.0</span>;
@@ -1867,13 +1888,13 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
     <span class="hljs-keyword">return</span> t0; <span class="hljs-comment">// Return closest intersection</span>
 }</code></pre>
 <p>Can we see it?</p>
-<pre><code class="language-glsl">    <span class="hljs-type">float</span> d = intersectSphere(camera_pos, camera_dir, sphere_pos, sphere_rad);
-    <span class="hljs-keyword">if</span> (d &gt; <span class="hljs-number">0.</span>) {
+<pre><code class="language-glsl">    <span class="hljs-type">float</span> t = intersectSphere(ro, rd, sphere_pos, sphere_rad);
+    <span class="hljs-keyword">if</span> (t &gt; <span class="hljs-number">0.</span>) {
         fragColor = <span class="hljs-type">vec4</span>(<span class="hljs-number">1</span>);
     }</code></pre>
 <p>To begin to light this sphere, we need to know where exactly our intersection point is, and from that we can determine the <strong>normal</strong>, which is to say, the direction pointing perpendicularly away from the sphere&#39;s surface:</p>
 <pre><code class="language-glsl">    <span class="hljs-comment">// move the right distance along the ray to find the point:</span>
-    <span class="hljs-type">vec3</span> pt = camera_pos + d*camera_dir;
+    <span class="hljs-type">vec3</span> pt = ro + t*rd;
 
     <span class="hljs-comment">// a sphere&#x27;s normal is simple, it always points away from the sphere center</span>
     <span class="hljs-comment">// we normalize it to ensure it has a length of 1 (a unit vector)</span>
@@ -1889,13 +1910,57 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
         <span class="hljs-comment">// similarlity with ray reflection vector:</span>
         <span class="hljs-type">float</span> specular = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(-camera_dir, <span class="hljs-built_in">reflect</span>(-light_dir, normal)), <span class="hljs-number">0.</span>);
         fragColor = <span class="hljs-type">vec4</span>(specular);</code></pre>
-<p>To continue:</p>
-<ul>
-<li>Some lighting models. Ambient, diffuse, specular, etc. </li>
-<li>At some point here, Mat4 for model, view, proj matrices.</li>
-<li>Introduce some other shapes.  Each one needs a way to ray-intersect and return position &amp; normal.</li>
-</ul>
+<p>Minimal raytracer: <a href="https://www.shadertoy.com/view/wc3yWf">https://www.shadertoy.com/view/wc3yWf</a></p>
 <p>Next: A different approach, using distance functions.</p>
+<hr>
+<p><strong>A minimal raymarcher</strong></p>
+<p>Raymarcher</p>
+<p>Just like we had a function of 2D space (pixel distance to circle), we can do the same for 3D space (3D distance to sphere)</p>
+<pre><code class="language-glsl"><span class="hljs-comment">// signed distance to a sphere at position 0,0,0</span>
+sdSphere(<span class="hljs-type">vec3</span> p, <span class="hljs-type">float</span> radius) {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">length</span>(p) - radius;
+}</code></pre>
+<p>Now, we start from <code>ro</code> and step along <code>rd</code> until we hit something</p>
+<p>A basic marcher steps in fixed steps. We could step through an arbitrary 3D volume (like a 3D texture) this way, making each step the size of a voxel.
+That&#39;s expensive though.</p>
+<p>If we have a distance function of space, it tells us the distance to the closest object; so we know we can always move the ray by at least this much. Also known as sphere tracing.</p>
+<pre><code class="language-glsl"><span class="hljs-type">float</span> depth = <span class="hljs-number">0.</span>;
+<span class="hljs-type">vec3</span> p = ro;
+<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>; i&lt;MAX_STEPS; i++) {
+    <span class="hljs-comment">// get distance from p to nearest surface</span>
+    <span class="hljs-type">float</span> d = sdScene(p);
+    <span class="hljs-comment">// move to next point on ray:</span>
+    depth += d;
+    p = ro + depth*rd;
+    <span class="hljs-comment">// did we arrive?</span>
+    <span class="hljs-keyword">if</span> (d &lt; threshold || d &gt; FAR) <span class="hljs-keyword">break</span>;
+}</code></pre>
+<p>Now we can paint the pixel according to whether depth is &gt;= FAR or not</p>
+<p>We can position the sphere (or any group) by subtracting the position from <code>p</code> -- a good example to animate</p>
+<p>OK normal: there&#39;s a kind of a neat hack here. Normal is just perpendicular to gradient (tangent) of surface. Think 2D, this is perp to slope of line. Slope can approximate by sampling two locations close to each other &amp; comparing. In 3D it is the same: subtract two points slightly offset. We can do this directly on the distance field. </p>
+<pre><code class="language-glsl"><span class="hljs-type">vec3</span> calcNormal(<span class="hljs-type">vec3</span> p) {
+  <span class="hljs-type">float</span> e = <span class="hljs-number">0.0005</span>; <span class="hljs-comment">// epsilon</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(
+    sdScene(<span class="hljs-type">vec3</span>(p.x + e, p.y, p.z)) - sdScene(<span class="hljs-type">vec3</span>(p.x - e, p.y, p.z)),
+    sdScene(<span class="hljs-type">vec3</span>(p.x, p.y + e, p.z)) - sdScene(<span class="hljs-type">vec3</span>(p.x, p.y - e, p.z)),
+    sdScene(<span class="hljs-type">vec3</span>(p.x, p.y, p.z  + e)) - sdScene(<span class="hljs-type">vec3</span>(p.x, p.y, p.z - e))
+  ));
+}
+
+<span class="hljs-comment">// a more efficient version:</span>
+<span class="hljs-type">vec3</span> calcNormal(<span class="hljs-type">vec3</span> p) {
+  <span class="hljs-type">vec2</span> e = <span class="hljs-type">vec2</span>(<span class="hljs-number">1.0</span>, <span class="hljs-number">-1.0</span>) * <span class="hljs-number">0.0005</span>; <span class="hljs-comment">// epsilon</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">normalize</span>(
+    e.xyy * sdScene(p + e.xyy) +
+    e.yyx * sdScene(p + e.yyx) +
+    e.yxy * sdScene(p + e.yxy) +
+    e.xxx * sdScene(p + e.xxx));
+}</code></pre>
+<p>Minimal raymarcher: <a href="https://www.shadertoy.com/view/wf3yWf">https://www.shadertoy.com/view/wf3yWf</a></p>
+<p>More references:</p>
+<p><a href="https://mercury.sexy/hg_sdf/">https://mercury.sexy/hg_sdf/</a>
+<a href="https://www.shadertoy.com/view/ctKyzt">https://www.shadertoy.com/view/ctKyzt</a>
+<a href="https://www.shadertoy.com/view/Xds3zN">https://www.shadertoy.com/view/Xds3zN</a></p>
 <!--
 
 - Paper process discussion -- one week to ISEA deadline: https://isea2025.isea-international.org/submission/submission-guideline/ 
@@ -1989,6 +2054,9 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="final-presentations">Final presentations</h2>
 <p>We have about 15 minutes per presentation, plus 5 minutes for questions &amp; discussion! </p>
+<hr>
+<p><strong>Course evaluations</strong></p>
+<p>Please remember to <a href="https://courseevaluations.yorku.ca">fill in the course evaluations here</a></p>
 <hr>
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>

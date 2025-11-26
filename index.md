@@ -1913,19 +1913,48 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 ---
 
-Now let's try something completely different. 
+**A Fluid simulation:**
 
+Modeling the ideas in [Wyatt Flander's tutorial here](https://wyattflanders.com/MeAndMyNeighborhood.pdf)
+
+A cellular automaton that looks a lot less digital/discrete! 
+- Every cell has energy, including velocity (.xy) and omnidirectional divergence (.z).  We can also imagine the fluid transporting some matter, with a density (.w)
+
+Fluid simulation: https://www.shadertoy.com/view/WcccDf 
+
+---
+
+**A minimal raytracer**
 
 Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects — [Wikipedia](https://en.wikipedia.org/wiki/Ray_tracing_(graphics))
 
 - https://www.shadertoy.com/view/tlXXzB
 
-First, for each pixel in the image, we need a 3D ray. A ray is a line with an origin and direction.  We can build these like this:
+First, for each pixel in the image, we need a 3D ray. A ray is a line with an origin and direction.  
+
+```p = pos + dir*t```
+
+vec3 pos, vec3 dir (normalized)
+t is distance along ray
+
+OK for a screen, each ray should have a slightly different direction. Need diagram. Think of the image plane as a mesh a little in front of the camera/eye.  That's our "near plane". Think of the Albrecht Durer drawing diagram! 
+
+We can build these like this:
 
 ```glsl
-    vec3 camera_pos = vec3(0, 0, 0);
-    vec3 camera_dir = normalize(vec3(suv.xy, 7));
+    vec3 ro = vec3(0, 0, 0);
+    vec3 rd = normalize(vec3(suv.xy, 7));
+
+    // or more realistic:
+    
+    // put camera "behind" origin 
+    ro = vec3(0, 0, 5); 
+    // handles aspect ratio:
+    // the "7" is a way to set a "focal length"
+    rd = normalize(vec3(suv * iResolution.xy/iResolution.y, 7)); 
 ```
+
+
 
 We can put a simple object, such as a sphere, into this space. A sphere has a centre and radius:
 
@@ -1966,18 +1995,17 @@ float intersectSphere(vec3 rayOrigin, vec3 rayDirection, vec3 sphereCenter, floa
 Can we see it?
 
 ```glsl
-    float d = intersectSphere(camera_pos, camera_dir, sphere_pos, sphere_rad);
-    if (d > 0.) {
+    float t = intersectSphere(ro, rd, sphere_pos, sphere_rad);
+    if (t > 0.) {
         fragColor = vec4(1);
     }
 ```
-
 
 To begin to light this sphere, we need to know where exactly our intersection point is, and from that we can determine the **normal**, which is to say, the direction pointing perpendicularly away from the sphere's surface:
 
 ```glsl
     // move the right distance along the ray to find the point:
-    vec3 pt = camera_pos + d*camera_dir;
+    vec3 pt = ro + t*rd;
 
     // a sphere's normal is simple, it always points away from the sphere center
     // we normalize it to ensure it has a length of 1 (a unit vector)
@@ -1999,16 +2027,80 @@ We can do diffuse lighting relative to a particular light direction (for sunligh
         fragColor = vec4(specular);
 ```
 
-To continue:
-
-- Some lighting models. Ambient, diffuse, specular, etc. 
-- At some point here, Mat4 for model, view, proj matrices.
-- Introduce some other shapes.  Each one needs a way to ray-intersect and return position & normal.
+Minimal raytracer: https://www.shadertoy.com/view/wc3yWf
 
 Next: A different approach, using distance functions.
 
+---
 
+**A minimal raymarcher**
 
+Raymarcher
+
+Just like we had a function of 2D space (pixel distance to circle), we can do the same for 3D space (3D distance to sphere)
+
+```glsl
+// signed distance to a sphere at position 0,0,0
+sdSphere(vec3 p, float radius) {
+	return length(p) - radius;
+}
+```
+
+Now, we start from `ro` and step along `rd` until we hit something
+
+A basic marcher steps in fixed steps. We could step through an arbitrary 3D volume (like a 3D texture) this way, making each step the size of a voxel.
+That's expensive though.
+
+If we have a distance function of space, it tells us the distance to the closest object; so we know we can always move the ray by at least this much. Also known as sphere tracing.
+
+```glsl
+float depth = 0.;
+vec3 p = ro;
+for (int i=0; i<MAX_STEPS; i++) {
+	// get distance from p to nearest surface
+	float d = sdScene(p);
+	// move to next point on ray:
+	depth += d;
+	p = ro + depth*rd;
+	// did we arrive?
+	if (d < threshold || d > FAR) break;
+}
+```
+
+Now we can paint the pixel according to whether depth is >= FAR or not
+
+We can position the sphere (or any group) by subtracting the position from `p` -- a good example to animate
+
+OK normal: there's a kind of a neat hack here. Normal is just perpendicular to gradient (tangent) of surface. Think 2D, this is perp to slope of line. Slope can approximate by sampling two locations close to each other & comparing. In 3D it is the same: subtract two points slightly offset. We can do this directly on the distance field. 
+
+```glsl
+vec3 calcNormal(vec3 p) {
+  float e = 0.0005; // epsilon
+  return normalize(vec3(
+    sdScene(vec3(p.x + e, p.y, p.z)) - sdScene(vec3(p.x - e, p.y, p.z)),
+    sdScene(vec3(p.x, p.y + e, p.z)) - sdScene(vec3(p.x, p.y - e, p.z)),
+    sdScene(vec3(p.x, p.y, p.z  + e)) - sdScene(vec3(p.x, p.y, p.z - e))
+  ));
+}
+
+// a more efficient version:
+vec3 calcNormal(vec3 p) {
+  vec2 e = vec2(1.0, -1.0) * 0.0005; // epsilon
+  return normalize(
+    e.xyy * sdScene(p + e.xyy) +
+    e.yyx * sdScene(p + e.yyx) +
+    e.yxy * sdScene(p + e.yxy) +
+    e.xxx * sdScene(p + e.xxx));
+}
+```
+
+Minimal raymarcher: https://www.shadertoy.com/view/wf3yWf
+
+More references:
+
+https://mercury.sexy/hg_sdf/
+https://www.shadertoy.com/view/ctKyzt
+https://www.shadertoy.com/view/Xds3zN
 
 <!--
 
@@ -2096,6 +2188,12 @@ Nov 27, 2023
 ## Final presentations
 
 We have about 15 minutes per presentation, plus 5 minutes for questions & discussion! 
+
+---
+
+**Course evaluations**
+
+Please remember to [fill in the course evaluations here](https://courseevaluations.yorku.ca)
 
 ---
 
