@@ -1913,6 +1913,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 ---
 
+[Zoom Recording Part II](https://yorku.zoom.us/rec/share/a-Lofly0Zgqu2N5qFo1eswhgbCTY1RiIMBLBqslon3nI3Zi_VDnFIu3piwrg099q.VCc-OPDiftZNCk95)
+
 **A Fluid simulation:**
 
 Modeling the ideas in [Wyatt Flander's tutorial here](https://wyattflanders.com/MeAndMyNeighborhood.pdf)
@@ -2530,6 +2532,7 @@ Recordings of the weekly sessions will be here:
 - [Week 3: Problem Statements, Introductions](https://yorku.zoom.us/rec/share/txYlNuGEcdmQO4-rHtTCznyM-On8WjBDp556Pxx7CvYuZves_nepaQoJeL0zzUfE.UYHpW1TtKt3-yUQz)
 - [Week 4: Introductions, Annotated Bibliographies, Code explorations, Digital Audio](https://yorku.zoom.us/rec/share/nRvsF6a-T1LFvXkHITRVD9g16d_n6JEkH9A-JU5XrAoN-qFaP-j3T5WADn85Lvz0.eLLEg6SsxPvXosKi)
 - [Week 8: GPU programming with GLSL](https://yorku.zoom.us/rec/share/sRwZA88tsjUSIpJsCjBsAWoRKY4FEQhFms5l_rKn_uNZUig8_BLKjqAPFRkgLEAz.6Y9HztksWKYH-ozi)
+- [Week 10: GPU Programming Part II](https://yorku.zoom.us/rec/share/a-Lofly0Zgqu2N5qFo1eswhgbCTY1RiIMBLBqslon3nI3Zi_VDnFIu3piwrg099q.VCc-OPDiftZNCk95)
 
 <!-- 
 - [Week 0 Class Recording - first patching](https://yorku.zoom.us/rec/share/ZL5_tEz7cuDZHNk585qCGx3GwyIf-ui4tt6ScNreRbT1ma-lIToigpasxu9n24I0.up3Jixd74Ti1Cb1j)
