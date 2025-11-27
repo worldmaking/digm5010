@@ -52,14 +52,16 @@ In one thread, you will work through the stages of developing a research topic a
 - Revisions
 - Final paper (20%)
 - Research presentation (10%)
-- "Post-mortem" reflection (5%)
+- "Post-mortem" reflection (10%)
+- Class journal, based on code experimentation (20%)
+
 We will have focused seminar time to discuss these stages, contextualizing them in different academic research (and research-creation) cultures and traditions, as well as new developments. We will also have dedicated one-on-one time for individual support and advice.  
 
 In the past years, some students have also been successful in submitting their final papers to real academic conferences. For example, in 2024, all 12 students completed their papers, 8 of whom submitted them to the ISEA conference (a leading conference in our field), and 4 of these were accepted and presented at the conference! 
 
 In the other thread of the course, we will examine digital media research and research-creation with a focus on practice. We will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice (and practice in theory). The specific topics vary from year to year and are adapted where possible to the interests of the group (and the expertise of the instructor). 
 
-You are also expected to bring work to share, **making things** in response to our discussions and course discussions. You should be keeping your notes, studies and practices documented in a journal, which you will submit at the end of the course. Class participation, making and journalling make up 25% of the course grade.
+You are also expected to bring work to share, **making things** in response to our discussions and course discussions. You should be keeping your notes, studies and practices documented in a journal, which you will submit at the end of the course. Class participation, making and journalling make up 20% of the course grade.
 
 *Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
 
