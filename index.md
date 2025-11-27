@@ -47,13 +47,14 @@ In one thread, you will work through the stages of developing a research topic a
 - Initial reading list (10%)
 - Problem/thesis question (10%)
 - Annotated bibliography (10%)
-- Paper outline & drafting 
+- Paper outline & drafting (10%)
 - Peer review session (10%)
 - Revisions
-- Final paper (20%)
 - Research presentation (10%)
-- "Post-mortem" reflection (10%)
-- Class journal, based on code experimentation (20%)
+- Final paper (20%)
+- Class journal, based on code experimentation (10%)
+- Video Tutorial (5%)
+- "Post-mortem" reflection (5%)
 
 We will have focused seminar time to discuss these stages, contextualizing them in different academic research (and research-creation) cultures and traditions, as well as new developments. We will also have dedicated one-on-one time for individual support and advice.  
 
@@ -61,7 +62,7 @@ In the past years, some students have also been successful in submitting their f
 
 In the other thread of the course, we will examine digital media research and research-creation with a focus on practice. We will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice (and practice in theory). The specific topics vary from year to year and are adapted where possible to the interests of the group (and the expertise of the instructor). 
 
-You are also expected to bring work to share, **making things** in response to our discussions and course discussions. You should be keeping your notes, studies and practices documented in a journal, which you will submit at the end of the course. Class participation, making and journalling make up 20% of the course grade.
+You are also expected to bring work to share, **making things** in response to our discussions and course discussions. You should be keeping your notes, studies and practices documented in a journal, which you will submit at the end of the course. Class participation, making and journalling make up 10% of the course grade.
 
 *Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
 
@@ -2218,8 +2219,9 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 # Final submissions
 
 - [Video Tutorials](#video-tutorial) -- please [add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing) by **Dec 12th**. 
-- [Final paper](#final-paper)
+- [Final paper](#final-paper) -- via [eClass here](https://eclass.yorku.ca/mod/assign/view.php?id=3899526) Due by **Dec 19th**. 
 - **Class journal** -- please submit the link to your online documentation of notes, study sketches (codepen or otherwise), and your reflections on your work in this course to the [slides here](https://docs.google.com/presentation/d/1spwP4te6kYoF5Qs_e75gHoALJbpJsQjchhWollwP4hs/edit?usp=sharing). Please ensure that your documentation is public access.  Due by **Dec 19th**. 
+- [Post-mortem questionnaire](https://eclass.yorku.ca/mod/questionnaire/view.php?id=3899543) -- thank you :-)
 
 Thank you everyone for a wonderful semester! 
 
