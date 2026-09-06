@@ -1,92 +1,103 @@
 
 # DIGM5010 Foundations of Digital Media
 
-Thursdays, 1.30pm-4.20pm, Fall 2024, Fine Arts building room ACW 102
+Thursdays, 12:30pm-15:20pm, Fall 2024, Fine Arts building room ACW 102
 
 **Instructor:** [Graham Wakefield](https://discover.academics.yorku.ca/Graham.Wakefield) g rrr w aaa a t yor ku do t ca
 
-**Online resources**
+Office hours: Thursdays, 9:30am-11:30am, in the [Alice Lab](https://alicelab.world/#location) - GCFA 309
 
-Almost everything about this course will be linked from https://alicelab.world/digm5010 -- bookmark this URL -- or it will be in [eClass](https://eclass.yorku.ca/course/view.php?id=144540)
+Almost everything about this course will be linked from https://alicelab.world/digm5010 -- bookmark this URL -- or it will be in [eClass - **LINK TBC**]()
 
-## What is DIGM 5010 "Foundations"?
-
-**Synopsis:** The purpose of Foundations is to equip and assist students to undertake **graduate-level research** in **Digital Media**. 
-
-DIGM5010 is foundational core course in the [Digital Media Graduate Program](https://www.yorku.ca/gradstudies/digitalmedia/) (MA/MSc/PhD), co-organized by the [Department of Computational Arts](https://computationalarts.ampd.yorku.ca) in the School of the Arts, Media, Performance & Design, and the department of [Electrical Engineering and Computer Science](https://lassonde.yorku.ca/eecs/) in the Lassonde School of Engineering, York University.
-
-> "The Graduate Program in Digital Media provides highly qualified students with the opportunity to do specialised hybrid research work in a program that uniquely combines computational science and artistic practices. Work in digital media focuses on a broad range of current and emerging forms of digitally supported media, with applications that range from computer games to interactive art."
-
-> The Digital Media graduate program's academic objectives include promotion of an interdisciplinary approach to computational art-making and technology development, providing students with 21st century “real-world” skills in tandem with research acumen. To work and conduct research in this area means skillfully bridging literacies in art, science and engineering practices. 
-
-Developing these research literacies is what DIGM5010 is all about. 
-
-The goals of the *Foundations* course are therefore:
-- to learn the essential methodological skills of graduate-level research in areas of digital media and computational arts
-- to develop deep understanding and a real feel for computation as a creative medium, 
-- to develop the skills to attain literacy in mathematical, theoretical, and computational bases as they intersect with worlds of digital art-making,
-- to be able to adequately place your research within a larger network of relations and lineages, and to be able to articulate its relevance and identify its values in context.
-
-This means:
-- being aware of the broad range of the field along with its nearer and farther histories, narrow and broader presents, and implicated or possible futures,
-- being able to find, read, and understand the languages through which research is articulated, in both theoretical and practical terms, 
-- being able to create work across of a broad range of digital media that is effective and/or innovative.
-  
-Establishing these foundations is ultimately evaluated through the potential to understand, transfer, and extend published research in these fields into new creative applications, recreating or mutating established research results, projects, or works to the specific interests of your research area(s) and creative domain(s). 
-
-*(Reading, writing, making!)*
-
-**Format and evaluation** 
-
-Each weekly meeting will vary in format, but always at the heart is the discussion between all of us. This isn't a course with a static syllabus of material -- it is an adaptive living system. 
-
-The course essentially has two parallel threads. 
-
-In one thread, you will work through the stages of developing a research topic and question into a publishable research paper. This includes several milestone stages (some with course evaluation components for a total of 75% of the course grade). 
-- Reflection and topic/area focus
-- Initial reading list (10%)
-- Problem/thesis question (10%)
-- Annotated bibliography (10%)
-- Paper outline & drafting (10%)
-- Peer review session (10%)
-- Revisions
-- Research presentation (10%)
-- Final paper (20%)
-- Class journal, based on code experimentation (10%)
-- Video Tutorial (5%)
-- "Post-mortem" reflection (5%)
-
-We will have focused seminar time to discuss these stages, contextualizing them in different academic research (and research-creation) cultures and traditions, as well as new developments. We will also have dedicated one-on-one time for individual support and advice.  
-
-In the past years, some students have also been successful in submitting their final papers to real academic conferences. For example, in 2024, all 12 students completed their papers, 8 of whom submitted them to the ISEA conference (a leading conference in our field), and 4 of these were accepted and presented at the conference! 
-
-In the other thread of the course, we will examine digital media research and research-creation with a focus on practice. We will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice (and practice in theory). The specific topics vary from year to year and are adapted where possible to the interests of the group (and the expertise of the instructor). 
-
-You are also expected to bring work to share, **making things** in response to our discussions and course discussions. You should be keeping your notes, studies and practices documented in a journal, which you will submit at the end of the course. Class participation, making and journalling make up 10% of the course grade.
-
-*Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
-
-**Schedule**
-
-week 1: what is research
-
-week 2: what is computation
+# Schedule
 
 | Date | Topic | Activity | Research Paper Workflow |
 |:--- |:--- |:--- |:--- |
-| [9/4](#week-0)    | [What is Research?](#what-is-research)                 | [Call for Papers](#a-call-for-papers) & discussion | Identify motivations, areas, research communities  |
-| [9/11](#week-1)   | [What is Computation?](#what-is-computation)           | [Computational Sketching](#computational-sketching) | Focused topic selection |
-| [9/18](#week-2)   | [Reproducing Research: Yellowtail](#reproducing-curlyyellowtail)  |  Live Coding                        | [Initial reading list](#preparing-a-reading-list) |
-| [9/25](#week-3)   | [Introductions](#introductions)                       | 1-on-1's                  | [Problem/thesis statement](#problem-statement) |
-| [10/2](#week-4)   | [Digital Audio and Sound Synthesis](#digital-audio-and-sound-synthesis)                                      | Live Coding                                   | [Annotated bibliography](#annotated-bibliography) (outline literature review) |
-| [10/9](#week-5)   |                     | Paper 1-on-1's                      | Complete paper outline |
-| [*Reading Week*](#reading-week) |                                         |                                     | [Complete first draft](#paper-complete-draft-for-peer-review) | 
-| [10/23](#week-6)  | [Explorable Explanations](#explorable-explanations) | [Audio II](#digital-audio-part-ii), [Data Visualization](#data-visualization-and-d3js) | [Complete first draft](#paper-complete-draft-for-peer-review) |
-| [10/30](#week-7)  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review) | Revisions |
-| [11/6](#week-8)   | [GPU programming with GLSL](#gpu-programming-of-shaders-with-glsl)                        |   | Revisions |
-| [11/13](#week-9)  | Paper 1-on-1's                              | Catching up on any material we missed | [Final paper](#final-paper) |
-| [11/20](#week-10) |                                                        | Video/Tutorial                      |  |
-| [11/27](#week-11) | [Final presentations](#final-presentations)            |                                     | Post-mortem reflection |
+| <nobr>Week 1  [9/9](#week-1)</nobr>    | [What is Research?](#what-is-research)                 | Discussion, Survey | Respond to the [Call for Papers](#a-call-for-papers): identify motivations, areas, research communities  |
+| <nobr>Week 2  [9/16](#week-2)</nobr>   | [What is Computation?](#what-is-computation)           | [Computational Sketching](sketching.html) | Articulate your topic and questions with [introduction slides](#an-introduction) |
+| <nobr>Week 3  [9/23](#week-3)</nobr>   | [Who Are You & What Is Your Topic](#introductions)? | Topic 1-on-1's | Develop your [Reading List](#preparing-a-reading-list)  |
+| <nobr>Week 4  [9/30](#week-4)</nobr>   | [What is a Problem Statement](#problem-statement)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) | Draft a [Problem Statement](#problem-statement)  |
+| <nobr>Week 5  [10/7](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
+| <nobr>[*Reading Week*](#reading-week)</nobr> | Flesh out Annotated Bibliography and Draft Paper Outline |  |  | 
+| <nobr>Week 6  [10/21](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
+| <nobr>Week 7  [10/28](#week-7)</nobr>  | [Data Visualization](d3js.html) |                                      | ... |
+| <nobr>Week 8  [11/4](#week-8)</nobr>   | [Digital Audio and Sound Synthesis](gen.html) | Paper Draft 1-on-1's                                     | [Complete first draft](#paper-complete-draft-for-peer-review)|
+| <nobr>Week 9  [11/11](#week-9)</nobr>  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review)  | Incorporate feedback into drafting the [Final Paper](#final-paper) |
+| <nobr>Week 10 [11/18](#week-10)</nobr> | [GPU programming with GLSL](glsl.html) | Paper 1-on-1's                       | Revisions to [Final Paper](#final-paper) |
+| <nobr>Week 11 [11/25](#week-11)</nobr> |                                                        | Paper 1-on-1's                       | Submit [Final Paper](#final-paper) |
+| <nobr>Week 12 [12/2](#week-12)</nobr>  | [Final presentations](#final-presentations)            |                                      | [Video/Tutorial](#video-tutorial) + Post-mortem reflection |
+
+
+
+ 
+
+
+
+
+
+# What is DIGM 5010 Foundations?
+
+**Synopsis:** The purpose is to equip and assist students to undertake **graduate-level research** in **Digital Media**. 
+
+DIGM5010 is foundational core course in the [Digital Media Graduate Program](https://www.yorku.ca/gradstudies/digitalmedia/) (MA/MSc/PhD), co-organized by the [Department of Computational Arts](https://computationalarts.ampd.yorku.ca) in the School of the Arts, Media, Performance & Design, and the department of [Electrical Engineering and Computer Science](https://lassonde.yorku.ca/eecs/) in the Lassonde School of Engineering, York University.
+
+> "The Graduate Program in Digital Media provides highly qualified students with the opportunity to do specialised **hybrid research** work in a program that uniquely combines **computational science and artistic practices**. Work in digital media focuses on a broad range of current and emerging forms of digitally supported media, with applications that range from computer games to interactive art."
+
+> The Digital Media graduate program's academic objectives include promotion of an interdisciplinary approach to computational art-making and technology development, providing students with 21st century **“real-world” skills** in tandem with **research acumen**. To work and conduct research in this area means skillfully **bridging literacies in art, science and engineering** practices. 
+
+Developing these **research literacies** is what [DIGM5010](index.html) is all about. The goals of the *Foundations* course are therefore:
+
+- to learn the essential methodological skills of **graduate-level research** in areas of **digital media and computational arts**
+- to develop deep understanding and a real feel for **computation as a creative medium**, 
+- to develop the **skills to attain literacy** in mathematical, theoretical, and computational bases as they intersect with worlds of digital art-making,
+- to be able to adequately **place your research within a larger network of relations and lineages**, and to be able to **articulate its relevance** and identify its values in context.
+
+*This means:*
+- *developing understanding of the broad range of the field, including its nearer and farther histories, narrower and broader presents, and implicated or possible futures*
+- *being able to find, read, and understand the languages through which research is articulated, in both theoretical and practical terms*
+- *being able to create work across of a broad range of digital media that is effective and/or innovative*
+  
+Establishing these foundations is ultimately evaluated through the potential to understand, transfer, and extend published research in these fields into new creative applications, recreating or mutating established research results, projects, or works to the specific interests of your research area(s) and creative domain(s). 
+
+> *Reading & writing + making!*
+
+**Format and evaluation** 
+
+Each weekly meeting will vary in format, but always at the heart is **discussion** between all of us. This isn't a course with a static syllabus of material -- it is an adaptive living system. 
+
+The course essentially has two parallel threads -- research & practice:
+
+---
+
+In one thread, you will work through the stages of **developing a research topic and question into a publishable research paper**. This includes several milestone stages (with course evaluation components for the majority of the course grade). 
+
+- Reflection and topic/area focus
+- [Initial reading list (10%)](#preparing-a-reading-list)
+- [Problem/thesis question (10%)](#problem-statement)
+- [Annotated bibliography (10%)](#annotated-bibliography)
+- [Paper outline & drafting (10%)](#paper-complete-draft-for-peer-review)
+- [Peer review session (10%)](#peer-review)
+- Paper Revision
+- [Research presentation (10%)](#final-presentations)
+- [Final paper (20%)](#final-paper)
+
+We will have focused seminar time to discuss these stages, contextualizing them in different academic research (and research-creation) cultures and traditions, as well as new developments. We will also have dedicated one-on-one time for individual support and advice.  
+
+In the past years, some students have also been successful in submitting their final papers to real academic conferences. For example, in 2024, all 12 students completed their papers, 8 of whom submitted them to the ISEA conference (a leading conference in our field), and **4 of these were accepted and presented at the conference!** 
+
+---
+
+In the other thread of the course, we will examine digital media research-creation and R&D with a focus on **technical practice**. We will often dive into collectively coding or algorithmically reconstructing and reinterpreting work drawn from the literature, nestling theory in practice (and practice in theory). The specific topics vary from year to year and are adapted where possible to the interests of the group and the expertise of the instructor. 
+
+You are also expected to bring work to share, **making things** in response to our discussions and course discussions. You will keep your notes, studies and practices documented in a journal, which you will submit at the end of the course.
+
+- Class journal, based on code experimentation (10%)
+- [Video Tutorial (5%)](#video-tutorial)
+- **"Post-mortem" reflection (5%)**
+
+---
+
+*Note: The [grading scheme for graduate study at York](https://gradstudies.yorku.ca/current-students/regulations/courses-grading/) is as follows: 90+ A+ (exceptional), 85+ A (excellent), 80+ A- (high), 75+ B+ (highly satisfactory), 70+ B (satisfactory), 60+ C (conditional), <60 F (fail) or I (incomplete).*
 
 **Class recording**
 
@@ -94,39 +105,43 @@ Classes are in-person. However, I usually prefer to open a Zoom session for my c
 - [Zoom meeting (same link every week)](https://yorku.zoom.us/j/97306421811?pwd=6nmu0vyUAAy2FeDraAW36aphXb4jUq.1)
 - [Add it to your calendar (.ics file)](https://yorku.zoom.us/meeting/tJMud--srDoiG9UGPyIvzfwOlLJlxBjk2LNR/ics?icsToken=DFR4whEsRtzH-LhInQAALAAAAMA-GzE-T7yb9swb7QB2YkwDNOySqgYFmZfGGKuz_YOpgp_WgS98woV6Kdo2uInnlTiRmvFI2499-48ngzAwMDAwMg&meetingMasterEventId=_sljr_ShQ2OdKvZ4KySl2w)
 
-I normally also record sessions and share recordings with the course participants (so long as no participants have objections to this), as I have heard that it has been useful for many students to be able to review sessions after class hours.
+I normally also record sessions and share recordings with the course participants (so long as no participants have objections to this), as I have heard that it has been useful for many students to be able to review sessions after class hours. All [class recordings are collected here](#class-recordings)
 
 *Synchronous attendance is highly recommended given the importance of critical discussion on the development of your studies in the program and your research/research-creation; but if you are expecting challenges in attending all times please do not worry. Having the sessions recorded alleviates some inevitable challenges of the graduate situation, and moreover allows some time to review any material if it seemed to fly too fast. You are all coming from different backgrounds so this is also inevitable.*
 
-# Week 0 
-Sep 4, 2023
+
+
+# Week 1 
 [Class Recording](#class-recordings)
 
-**Hello and welcome!**
-
-We are in a program of digital media, co-run by computational arts and computer science. Art & science as "two cultures", meeting through a cybernetic medium of computation. 
-
-But perhaps "meeting" is too gentle a word. Sometimes it feels like a tectonic collision. To discover something new, we cannot follow a single path. Collisions between trajectories derail and open into new possibilities, that wouldn't be found if you only followed trend lines or deductive trails. 
-
-So, be comfortable to get out of your comfort zone. Learn from each other. It's OK to be awkward. Children are the most awkward, and the fastest learners, so let us be children again from time to time -- so long as we work hard at it! 
-
-So for example, what does "computation" mean to you?
-
-What does "research" mean to you?
+[Course overview](#what-is-digm-5010-foundations)
 
 ## What is Research?
 
-Deep dive [presentation](research.html) & discussion
+We are in a program of digital media, co-run by **computational arts** and **computer science**. Art & science as ["two cultures"](https://en.wikipedia.org/wiki/The_Two_Cultures), meeting through a [cybernetic](https://en.wikipedia.org/wiki/Cybernetics) medium of computation. 
 
-## A question
+But perhaps "meeting" is too gentle a word. Sometimes it feels like tectonic collisions. Collisions between trajectories derail and open into new possibilities, that wouldn't be found if you only followed trend lines or deductive trails. To discover something genuinely new, we cannot follow a single path. 
+
+So, be comfortable with getting out of your comfort zone. Learn from each other. It's OK to be awkward. Children are the most awkward, asking the the most awkward questions and being the fastest learners, so let us be children again from time to time -- so long as we work rigourously at it! 
+
+So for example, what does **computation** mean to you? 
+
+What is meaningful or interesting to you? Or to the world? What makes a question **interesting** or **meaningful**?
+
+<iframe src="research.html" title="What is research?" width=100% height=100%></iframe>
+
+[What is research?](research.html)
+
+
+## A Question
 
 Take some time to think about this: 
 
 - Why did you want to study in the Digital Media program?
-  - why do you want to dedicate several precious years of your life to research in computational arts & computer science -- what does this mean for you? 
+  - why do you want to **dedicate several precious years** of your life to research in computational arts & computer science -- what does this mean for you? 
   - Is there a great risk, or a great unseen opportunity, in the computational/digital media world -- present and/or future -- one that also speaks to you?
 
-[Write into the form here](https://eclass.yorku.ca/mod/questionnaire/view.php?id=3790153)
+[Write into the form here](https://docs.google.com/forms/d/e/1FAIpQLSdyicvyeq6NudO4qHvX26J-rmivprPelWa-sboWx8hJUe7I0w/viewform?usp=dialog)
 
 ## A Call for Papers
 
@@ -182,12 +197,9 @@ We invite paper submissions for original and substantial research, both traditio
 
 Submissions will be uploaded online. We also ask you to add a very short text explaining why your submission is important for the academic and wider community, from raising critical issues to opening perspectives or generating solutions. In doing so, we aim to enhance the impact of your cultural contributions.
 
-Authors will be required to present their papers with a duration of 10 minutes. 
+Authors will be required to present their papers with a duration of 15 minutes. 
 
-
-
-# Week 1 
-Sep 11, 2023
+# Week 2 
 [Class Recording](#class-recordings)
 
 **This week's paper workflow**
@@ -195,13 +207,16 @@ Sep 11, 2023
 - Using this you can begin to prepare for the next step -- identifying papers for your [initial reading list](#preparing-a-reading-list).  
 - One good way to do this is to find the most relevant conferences and journals in the topic area, and downloading recent conference proceedings and/or journal issues. 
 
+<!--
 Here are some recent conference calls (I have also been sharing these on the DMgrad email list):
 - [Movement and Computing](https://moco26.movementcomputing.org) -- deadline Nov 1st -- we have had several DM students present at MOCO in the past. This year they specifically are interested in health applications, but any topic of motion & computing is of interest.
 - [EvoStar 2026 conference](http://www.evostar.org/2026/) -- deadline November 1st -- which includes **EvoMUSART 15th International Conference (and 19th European event) on Artificial Intelligence in Music, Sound, Art and Design.** 
 - [Toronto Aesthetics Sciences and Creativity Conference (TASC 2026), to be held on April 14th, 2026, at University College, University of Toronto](https://sites.google.com/view/tasc2026/) -- deadline January 9, 2026
+-->
 
 **Survey responses**
 
+<!--
 From the responses of the survey last week, I can see that some of you have some advanced experience in some programming languages and creative software environments, with Javascript especially as well as Max, Unity being the most frequent ones, and Python, C, GLSL, TouchDesigner, Godot, and Unreal are also mentioned.  Some of you have only beginner level experience with these. 
 
 Topics of interest mentioned (repeated mentions marked with asterisks):
@@ -279,102 +294,38 @@ Goals that you mentioned include:
 
 These are *great*!
 
+-->
+
 ## What is computation?
 
 A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. 
 
 Let's step back a moment, and understand computation from its genealogical emergence, and conceptual foundations:
 
-[What is computation?](automata.html) - History, theory, implementation; programs as data
+<iframe src="automata.html" title="What is Computation?" width=100% height=100%></iframe>
 
-## Computational sketching
+[What is computation?](automata.html)
 
-It can be helful sometimes to step into the shoes of those that have gone before, to see how we ended up here, and what we may have lost or missed along the way. 
-
-Take [John Maeda](https://en.wikipedia.org/wiki/John_Maeda), the designer & MIT Media Lab professor, who pioneered reactive graphics in the era of the Macintosh and CD-ROM. 
-
-> **Design By Numbers (John Maeda, 1999)**   
-> "Drawing by hand, using pencil on paper, is undisputedly the most natural means for visual expression. When moving on to the world of digital expression, however, the most natural means is not pencil and paper, but rather, computation. Today, many people strive to combine the traditional arts with the computer, and while they may succeed at producing a digitally empowered version of their art, they are not producing true digital art. True digital art embodies the core characteristics of the digital medium, which cannot be replicated in any other.
-> 
-> "Computation is intrinsically different from existing media because it is the only medium where the material and the process for shaping the material coexiist in the same entity: numbers. The only other medium where a similar phenomenon occurs is pure thought. It naturally follows that computational media could eventually present the rare opportunity to express a conceptual art that is not polluted by textual or other visual representation. This exciting future is still at least a decade or two away. For the moment, we are forced to settle with society's current search for true meaning in an enhanced, interactive version of the art that we have always known."
-
-Maeda studied with Muriel Cooper and Paul Rand, and redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, which helped lay the groundwork for interactive motion graphics as seen on the web today. ([This itself is part of a longer genealogical history that traces back to a movement of thought in the 1960's regarding how computers can augment intelligence, the nature of creativity -- with implications for AI development today](https://www.bostonreview.net/forum/the-ai-we-deserve/]))
-
-Other key insights from Maeda's interactive graphics explorations:
-
-  - the most **interesting** pixels on the screen are the mouse
-  - the mouse represents not just **space** but also **time** -- use it
-
-Maeda's courses and research in the Aesthetics & Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his [Design By Numbers](https://en.wikipedia.org/wiki/Design_By_Numbers) software was the precursor of their Processing (which led to [P5.js](https://p5js.org/)). 
-
-Maeda's courses challenged students to rethink the medium from its most basic elements. A typical assignment:
-
-> Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. [MAS 964 P](https://acg.media.mit.edu/courses/mas964/presentation/panels.html)
-
-### A reading
-
-Golan Levin was one of Maeda's students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda's project. He is now a professor at Carnegie Mellon University, and a key figure in the Art & Code community. There’s a lot to draw from [his Master's thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), both theoretically and practically. 
-
-(Also note the document structure, as an example of a thesis in our field.)
-
-For example, look at Curly and [Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html) -- perhaps we can try to recreate this as our first example of "reproducing research". 
-
------
-
-### Let's get making
-
-- A shareable workspace: [codepen](https://codepen.io)
-  - The HTML5 trio: the HTML (DOM), CSS, and JavaScript
-    - HMTL: the page container and structure. The language forms a **declarative** data structure, roughly in a tree structure. 
-    - CSS: the rules of layout, rendering and style. The language forms a set of **declarative** definitions. 
-    - JS: dynamic generation and behaviour. The language forms **procedural** steps of action, invoked in response to events. 
-- Notes on [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes)
-- What is an API? 
-  - E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.
-- Notes on 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
-
-Let's start with a sketching application -- but let's think about how we can use computation to augment or transform our gestures in some way.
-- First, what elements do we need? 
-- Starting from Maeda's observations, what concepts need to be mechanized?
-- How do we look into API documentation to find the methods we need?
-- How do we start? 
-- What are the events?
-- Begin with pseudo-code, then transform to working code?
-
-Today's code sketching progress:
-
-https://codepen.io/grrrwaaa/pen/gbaJjgv?editors=0010
-
----
-
-Examples from 2024's class
-
-https://codepen.io/grrrwaaa/pen/yLdrXNQ
-
-https://codepen.io/grrrwaaa/pen/Yzdxwgj
-
-**Homework**
-
-Continue with your topic research for the paper, beginning to build your reading list.
+[Computational Sketching](sketching.html)
 
 ## An introduction
 
-Please add 2-4 slides to introduce yourself in The Google Slide deck here: https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU/
- - I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
+Please add 2-4 slides to introduce yourself in [the Google Slide deck here](https://docs.google.com/presentation/d/1j3J97EouJPrMhh7IQ_uRnDmpjlUKGQWRBXJzy1SjPVc/)
+- I suggest a brief (~100 words) of your background and the key words/ideas/questions for your work, with representative images/video etc. 
 - You can include a more formal bio, or artist statement, or something more informal about the inspirations that brought you to the program.
 - More importantly: let us know what you want to *do*, what you want to *research*!
 - Remember to include your name, and reference details (name, link etc.) for any images or media you add.
 - Please be careful not to delete your colleague's slides!
 
-## Reading for sketching
 
-Have a good read of [Golan Levin's Master thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), and note down your thoughts and questions about it for our next coding session! 
-
-How would you respond to the example challenge, *"Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm."*?  
-
-# Week 2 
-Sep 18, 2023
+# Week 3 
 [Class Recording](#class-recordings)
+
+## Introductions
+
+Let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
+
+https://docs.google.com/presentation/d/1j3J97EouJPrMhh7IQ_uRnDmpjlUKGQWRBXJzy1SjPVc/
 
 ## Preparing a Reading List
 
@@ -405,171 +356,8 @@ As we saw in class, good research needs a good research question, but that doesn
 - [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
 - [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
-
-
-## Making 2: animate drawing
-
-Let's continue with the sketching. 
-
-> First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have `line()` and `background()` etc.  That's good: we are in the stage of *reproducing research*. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that's good too -- we aren't limited to what's already given because we know how to remake it, and maybe we'll have a discovery that can advance research! 
-
-- We saw how we can draw in response to mouse/touch movements, and add generative variation to them. 
-- We talked about Maeda's comment "the most interesting pixels are the mouse" and this represents not just space but also **time**. How can we use the timing of a drawing gesture to modify the result? Can you think of ways to use speeds, rhythms, echoes, ?
-
-  - Can we *reify* the time of the gesture?
-
-A more complex example, inspired by Paul Haberli's *Dynadraw*: 
-
-https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010
-
-[Example script from a previous class](https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011)
-
-### Reproducing Curly/Yellowtail
-
-  - We can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
-  - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
-    - Can we *reify* the drawing?
-
-With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
-
-**This is an example of reproducing research.**  First we should sketch out what is required based on the source material, and work from there to refine from a sketch through pseudo-code and implementation of components until we have the final result. 
-
-> "Yellowtail repeats a user's strokes end-over-end, enabling simultaneous specification of a line's shape and quality of movement. Each line repeats according to its own period, producing an ever-changing and responsive display of lively, worm-like textures."
-
-Detailed description from page 73 of the [thesis](http://www.flong.com/archive/storage/pdf/articles/thesis300.pdf):
-
-> "a user’s linear marks transform into an animated display of lively,
-worm-like lines. After the user deposited a mark, the system
-would then procedurally displace that mark end-over-end, making
-possible the simultaneous specification of both a line’s shape as
-well as its quality of movement. Straight marks would move along
-the direction of their own principal axes, while circular marks
-would chase their own tails. Marks with more irregular shapes
-would move in similarly irregular, but nonetheless rhythmic
-patterns."
-
-> The " screen space obeyed periodic (toroidal-topology)
-boundary conditions, such that marks which crossed the edge of
-the screen would reëmerge on the screen’s opposite side, rather
-than disappearing altogether."
-
-Notice also the self-observation and critique, see p79. Although this project does not achieve the goal of the thesis, these observations inform the progress that follows. This is a positive research path. 
-
----
-
-OK so let's start by pseudo-coding Yellowtail!
-
-Here's what we ended up with as pseudo-code in class, before we started coding:
-
-```
-there is a canvas
-
-state:
-	mouse: x, y, buttonstate
-	time
-	currentpath = null
-	list of finished paths
-		start position
-		list of segments (dx, dy change vectors)
-
-pointerdown:
-	create a new currentpath object, with start position at mouse x,y & t
-
-pointerup:
-	if currentpath
-		add my currentpath to the list of finished paths
-		currentpath = null again
-
-pointermove:
-	if currentpath exists
-		add mouse dx,dy & t to currentpath's list of segments
-
-animate:
-	for each path of finished paths
-		remove 1st segment (shift)
-		(something about coordinates)
-		stick it onto the end (push)
-		wrap around canvas width/height 
-			e.g. if x > width; x -= width, etc. for 4 boundaries
-
-drawpath:
-	begin position at path's start position
-	for each segment of the path
-		line from last position to new position by adding segment change
-		(path, moveto, lineto, stroke)
-
-draw:
-	clear screen
-	for each path of finished paths
-		drawpath(line)
-	if currentpath exists
-		drawpath(currentpath)
-```
-
-And here's the final code we ended up with:
-
-https://codepen.io/grrrwaaa/pen/myVdEZR?editors=0010
-
-Here's a more refined version from last year's class:
-
-https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
-
-Please continue working on extending and mutating this into a new direction! We will share each other's codepens in the next class. 
-- We talked about how these lines are still fairly passive, as they just follow the series of instructions given to them by the initial gesture. How could they become a bit more autonomous?
-- Each segment holds a relative change. Can we do something interesting with that?
-- Are there more interesting things we could do with the boundaries?
-- Should segments continue forever? 
-- Each segment holds a relative time, but we aren't really using that in the animation yet. E.g. if you pause mid-gesture, then continue, the animated line moves but it does not have a pause. Can you figure out how to fix that?
-- With multiple lines, they are not aware of each other. Is there a way that they could be?
-- How about rhythm -- is there a way to synchronize them to an underlying meter, for example?
-- Can line mutate? Getting noisier, or more angular, or more smooth, etc. over time?
-- Can lines decay? Or grow?
-- Can lines split into two?
-
----
-
-[past version 1](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
-
-[past version 2](https://codepen.io/grrrwaaa/pen/aagQzY?editors=0010)
-
----
-
-Some rules of thumb while coding:
-
-- Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
-
-- Break a problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.
-
-- Try to work out a problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
-
-- Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. 
-
-- Figure out working conditions logically from basic requirements. E.g. for anything to animate we're going to need to clear the screen on each frame, which means we're going to have to redraw everything every time, which means...
-
-- Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.
-
-- Test often. Each time you add one minor element, make sure it works for all likely input. 
-
-- Handle special cases: starting values, boundary cases, error handling... 
-
-- Don't worry about trying to make anything optimal -- make the most naive way that works, then refine from there. 
-
-- Use abstractions (functions, objects) to encapsulate and structure ideas more easily & clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable "support routines" from the code that represents the main ideas. 
-
-- Comment the code and use good variable names -- you'll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)
-
-- Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
-
-- Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
-
-
-# Week 3 
-Sep 25, 2023
+# Week 4 
 [Class Recording](#class-recordings)
-
-## Introductions
-
-[Introduction Presentations](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) -- let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
 
 ## Problem Statement
 
@@ -669,12 +457,15 @@ My Master's thesis: Wakefield, G. "Vessel: A platform for computer music composi
 
 **Homework**
 
-Please submit your Reading list, project title and problem statement via eClass here: [https://eclass.yorku.ca/mod/assign/view.php?id=3829664](https://eclass.yorku.ca/mod/assign/view.php?id=3829664)
+Please submit your Reading list, project title and problem statement via eClass here: [LINK TBC]()
 
 Next, you should be starting to develop this into your [Annotated Bibliography](#annotated-bibliography)
 
-# Week 4
-Oct 2, 2023
+---
+
+[Computational Sketching II](sketching.html)
+
+# Week 5
 [Class Recording](#class-recordings)
 
 **Research paper work**: 
@@ -684,11 +475,11 @@ Oct 2, 2023
 
 ---
 
-[Introduction Presentations part II](https://docs.google.com/presentation/d/1y77v3C8q-2MuFzcvDynw2mqwjO-ng7peo9vcHvXhQtU) 
+**Sharing your code explorations** 
 
----
+<!--
 
-**Sharing your code explorations** from our sketches of reproducing and extending Curly/Yellowtail in [Week 2](#week-2)
+from our sketches of reproducing and extending Curly/Yellowtail in [Week 2](#week-2)
 
 https://codepen.io/Xingbang-Tang/pen/XJXbXqw
 
@@ -716,44 +507,7 @@ To complete the Yellowtail reproduction I'd like to add sound -- so that's our n
 
 [Bouba/kiki](https://en.wikipedia.org/wiki/Bouba/kiki_effect)
 
-## Digital Audio and Sound Synthesis 
-
-What is digital audio, computer music, and sound synthesis
-
-https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLofdA/
-
-A very quick introduction to [Max](https://cycling74.com/products/max) and [`gen~`](https://docs.cycling74.com/userguide/gen/_gen_overview/)
-
-[Class notes for DATT3074: Creative Generative Audio Signal Processing](https://alicelab.world/datt3074/)
-
-- Some key concepts and circuits:
-  - `noise`, `cycle`, `phasor` (look at scope~, spectroscope~, frequency and level)
-    - adding signals superimposes; `mix`, `param`
-    - multiply for amplitude shaping - e.g. `triangle` shape `phasor`
-  - lfo and audio modulations: from tremelo to AM, from vibrato to FM
-    - more complex examples can become very rich, especially with feedback!
-  - simplest filter of `mix` and `history`; cascade them; highpass; 
-    - control filter with envelope (LPG), control FM with envelope too?
-  - phasor ramp as meter, phasor manipulations (e.g. time division by `*` and `wrap 0 1`)
-    - triggers from ramps with `delta`, `abs`, `> 0.5`
-  - random steps by `latch`; source noise (gates?) or a related frequency (melodies?)
-    - lowpass filter to smooth gates and random sources
-  - mapping pitch to frequency, `mtof`, `exp2`
-    - quantizing with `* N`, `floor`, `/ N`; neat trick of quantizing twice (second to 12)
-  - effects with `delay` and mixing feedback, modulating time
-    - waveshaping -- magic sigmoid (e.g. `tanh`), filtering, etc. in the feedback loop
-      - more complex can become reverbs
-  
-- Embedding our yellowtail in Max:
-  - Export codepen (zip `dist`), use `readfile` message to `jweb` in Max
-  - Sending messages in & out: https://docs.cycling74.com/userguide/web_browser/
-- Embedding in Ableton Live?
-  - Need to use a public URL, e.g. upload to github pages: https://alicelab.world/digm5010/yellowmax/index.html
-- Exporting via [RNBO](https://cycling74.com/products/rnbo)
-  - See template here: https://rnbo.cycling74.com/learn/using-the-web-page-template
-
-**[The patcher from today's class](max_patchers/week4.maxpat)**
-
+-->
 
 ## Annotated Bibliography
 
@@ -819,55 +573,16 @@ Let's follow back through a selective history.
 
 -->
 
-# Week 5 
-Oct 9 
+
+# Reading Week
+
+Flesh out Annotated Bibliography and Draft Paper Outline
+
+# Week 6
 [Class Recording](#class-recordings)
 
 - Review of schedule for remainder of semester
-- Reading week is writing week!
 
----
-
-**1-on-1 feedback on paper progress**
-
----
-
-## Reading Week
-
-
-# Week 6
-Oct 23, 2023
-[Class Recording](#class-recordings)
-
-**For next week**, complete your paper draft. It **must be submitted before next week's class begins** so that we can run the peer review session. 
-
-Catching up unfinished work from a previous class:
-
-### Digital Audio part II
-
-- Some key concepts and circuits:
-  - simplest filter of `mix` and `history`; cascade them; highpass; 
-    - control filter with envelope (LPG), control FM with envelope too?
-  - phasor ramp as meter, phasor manipulations (e.g. time division by `*` and `wrap 0 1`)
-    - triggers from ramps with `delta`, `abs`, `> 0.5`
-  - random steps by `latch`; source noise (gates?) or a related frequency (melodies?)
-    - lowpass filter to smooth gates and random sources
-  - mapping pitch to frequency, `mtof`, `exp2`
-    - quantizing with `* N`, `floor`, `/ N`; neat trick of quantizing twice (second to 12)
-  - effects with `delay` and mixing feedback, modulating time
-    - waveshaping -- magic sigmoid (e.g. `tanh`), filtering, etc. in the feedback loop
-      - more complex can become reverbs
-  
-- Embedding our yellowtail in Max:
-  - Export codepen (zip `dist`), use `readfile` message to `jweb` in Max
-  - Sending messages in & out: https://docs.cycling74.com/userguide/web_browser/
-- Embedding in Ableton Live?
-  - Need to use a public URL, e.g. upload to github pages: https://alicelab.world/digm5010/yellowmax/index.html
-- Exporting via [RNBO](https://cycling74.com/products/rnbo)
-  - See template here: https://rnbo.cycling74.com/learn/using-the-web-page-template
-- Alternatively, just send network messages, such as OSC, or MIDI messages, etc.
-
-[Today's patch](max_patchers/week7.maxpat)
 
 ## Explorable explanations
 
@@ -916,261 +631,26 @@ It has also inspired a recent phenomenon of sharing academic research in interac
 
 **Can your research papers be presented in this kind of format?**
 
-## Data Visualization and D3.js
+---
 
-[D3.js](https://d3js.org) is a JavaScript library for manipulating documents based on data. It has been one of the most widely used platforms for online data visualization for [over a decade](https://d3js.org/what-is-d3).   
-
-To pull in D3, either grab the latest version (`https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js` at the time of writing) and add this to your `<head>`
-tag -- or in Codepen, just search for "d3" in the "Add External Scripts" of the "JS" options. 
-
-```
-<head>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-</head>
-```
-
-D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML bar chart from an array of numbers:
-
----https://codepen.io/grrrwaaa/pen/VYeXJPJ
-
-In that example, D3 is working by manipulating the HTML's Document Object Model (DOM), the tree of elements within the page.  We're using CSS to style those elements, and javascript to control the number and parameters of those elements according to existing data. 
-
-D3 does this by means of a query/attribute system on the DOM. E.g., to change all paragraph text to be white:
-
-```
-d3.selectAll("p").style("color", "white");
-```
-
-Yet styles, attributes, and other properties can be specified as functions of data in D3, not just simple constants. For example, to alternate shades of gray for even and odd nodes:
-
-```
-d3.selectAll("p").style("color", function(d, i) {
-  return i % 2 ? "#fff" : "#eee";
-});
-```
-
-Despite their apparent simplicity, these functions can be surprisingly powerful. 
-
-Computed properties often refer to bound data. Data is specified as an array of values, and each value is passed as the first argument (d) to selection functions. 
-
-```
-d3.selectAll("p")
-    .data([4, 8, 15, 16, 23, 42])
-    .style("font-size", function(d) { return d + "px"; });
-```
-
-The data() method maps each element of the array to each DOM node in the selection. 
-
-> Instead of generating data in JavaScript, it can be loaded from local files with d3.tsv(), [d3.csv()](https://github.com/mbostock/d3/wiki/CSV), [d3.json()](https://github.com/mbostock/d3/wiki/Requests), d3.xhr(), d3.text() etc.
-
-(The strange dot syntax is called "chaining": when a function returns an object, we can call methods on that object in turn.)
-
-Don't worry about matching the array length: using D3’s enter(), you can create new nodes for incoming data:
-
-```
-d3.select("body").selectAll("p")
-	.data([4, 8, 15, 16, 23, 42])
-	.enter()
-	.append("p")
-	.html(function(d) { return "I’m number " + d + "!"; });
-```
-
-D3 lets you transform documents based on data; this includes both creating (`enter`) and destroying (`exit`) elements. D3 allows you to change an existing document in response to user interaction, animation over time, or even asynchronous notification from a third-party. D3 is easy to debug using the browser’s built-in element inspector: the nodes that you manipulate with D3 are exactly those that the browser understands natively.
-
-In addition to using standard HTML and CSS, D3 allows you to use another web standard, SVG (scalable vector graphics) for drawing graphical representations of data in the DOM. You can create SVG elements using D3 and style them with external stylesheets. SVG can be embedded in HTML pages just like any other tag, e.g. a blue circle:
-
-```
-<svg width="50" height="50">
-    <circle cx="25" cy="25" r="22"
-     fill="blue"/>
-</svg>
-```
-
-Whereas Canvas drawing is all pixel based, SVG drawing is vector based. Moreover, every element in and SVG is part of the DOM, so it can be manipulated dynamically by D3.js.  Here's an example SVG:
-
-```
-<svg id="mysvg" width=500 height=500>
-	<rect x="0" y="0" width="500" height="10" />
-	<circle cx="250" cy="20" r="5" fill="yellow" stroke="orange" stroke-width="2"/>
-	<g transform="translate(250,30)">
-		<ellipse cx="0" cy="0" rx="10" ry="5" class="pumpkin"/>
-	</g>
-	<line x1="0" y1="40" x2="500" y2="50" stroke="black"/>
-	<text x="250" y="60">Easy-peasy</text>
-</svg>
-```
-
-SVG is always wrapped in an ```<svg>``` element, which should have a width & height (graphics will be clipped to this box). Within that, SVG code itself is a form of XML. Simple SVG shapes include rect, circle, ellipse, line, text, and path. The coordinate system is pixel based, with 0,0 at the top left. Common SVG properties are: fill (CSS color), stroke (CSS color), stroke-width, opacity (0.0 is transparent, 1.0 is opaque). [These can all be set with CSS styles](http://www.w3.org/TR/SVG/styling.html). All text will inherit the CSS-specified font styles of its parent element unless specified otherwise via CSS.
-
-```
-let svg = d3.select("#mysvg");
-
-svg
-  .selectAll("circle")
-  .data([4, 8, 15, 16, 23, 42])
-  .enter()
-  .append("circle")
-  .attr("fill", "blue")
-  .attr("cy", 50);
-  .attr("r", (d, i) => d)
-```
-
-D3’s focus on transformation extends naturally to animated transitions. Transitions gradually interpolate styles and attributes over time. For example, to resize circles in a symbol map with a staggered delay:
-
-```
-svg
-  .selectAll("circle")
-  .transition()
-  .duration(750)
-  .delay(function (d, i) {
-    return i * 40;
-  })
-  .attr("cx", function (d, i) {
-    return (i + 1) * 50;
-  });
-```
-
-D3 can also very easily, and powerfully, animate transitions. [A great in-browser demo here](http://alignedleft.com/projects/2014/easy-as-pi/).
-
-With dynamically changing data of varying length, we often need to specify how items appear, update, and disappear.  This is the common enter/update/exit pattern:
-
----https://codepen.io/grrrwaaa/pen/VYeXJqL
-
-When using transitions and dynamically updated data, it is very important to pass a second **key** argument to the ```data()``` call; this key is a function that returns the unique identifier of a given data record; that way D3 knows which records to animate when the data changes.  The example above used the letter value itself as the unique identifier key. 
-
-The data array does not need to be simply an array of numbers; it can be an array of objects. Each one of those objects will be passed to the attr() handlers for each item. It therefore makes a whole lot of sense to prepare and annotate this array of objects before passing to D3 rendering. If each item is an object, we can store the unique identifier in this object. 
-
-Scales are functions that map from an *input domain* to an *output range*. Since data is unlikely to be in the same range as the svg pixels, a scale function can be used to provide the transformation from an input domain of fahrenheit to an output range of celsius:
-
-```
-var scale = d3.scale.linear()
-                    .domain([0, 100])				// fahrenheit
-                    .range([-17.7778, 37.7778]);	// celsius	
-                    // .clamp(true) 
-                    // .nice()
-scale(32);  //returns 0
-scale(100);  //returns 37.7778
-scale(212);  //returns 100
-```
-
-Other scale types include pow, log, quantize, quantile, and ordinal, and d3.time.scale too.
+**1-on-1 feedback on paper progress**
 
 ---
 
-If the data is large, or came from a different data provider, it is probably in a separate JSON, CSV, or other external file. The D3 library has [many methods for loading and parsing external data](https://d3js.org/d3-fetch)
 
-### The Ben Fry data visualization process
 
-In the first chapter of the [Visualizing Data](http://www.amazon.com/gp/product/B0028N4WJC/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0028N4WJC&linkCode=as2&tag=dashi07-20) book, Ben Fry sets up the Data Visualization process as a series of steps:
+# Week 7
+[Class Recording](#class-recordings)
 
-(prepare data)
+<!--**For next week**, complete your paper draft. It **must be submitted before next week's class begins** so that we can run the peer review session. 
 
-1. Acquire (discovery)  
-> Obtain the data, whether from a file on a disk or a source over a network. 
-- Clean, parse & filter ("munging")
-> Provide some structure for the data's meaning, and order it into categories. Remove all but the data of interest. 
-- Mine (analysis)
-> Apply methods from statistics or data mining as a way to discern patterns or place the data in mathematical context.
+Catching up unfinished work from a previous class:-->
 
-(visualise)
-
-- Represent
-> Choose a basic visual model, such as a bar graph, list, or tree.
-- Refine
-> Improve the basic representation to make it clearer and more visually engaging.
-- Interact
-> Add methods for manipulating the data or controlling what features are visible.
-
-(publish)
+[Data Visualization](d3js.html)
 
 ---
 
-### Open Public Data
-
-[The Open Data Handbook](http://opendatahandbook.org/en/index.html)
-
-[Tim Berners-Lee (www founder) TED talk](http://www.ted.com/talks/tim_berners_lee_the_year_open_data_went_worldwide?language=en)
-
-> Do you know exactly how much of your tax money is spent on street lights or on cancer research? What is the shortest, safest and most scenic bicycle route from your home to your work? And what is in the air that you breathe along the way? Where in your region will you find the best job opportunities and the highest number of fruit trees per capita? When can you influence decisions about topics you deeply care about, and whom should you talk to?
-
-> New technologies now make it possible to build the services to answer these questions automatically. Much of the data you would need to answer these questions is generated by public bodies. However, often the data required is not yet available in a form which is easy to use. This book is about how to unlock the potential of official and other information to enable new services, to improve the lives of citizens and to make government and society work better.
-
-> The notion of open data and specifically open government data - information, public or otherwise, which anyone is free to access and re-use for any purpose - has been around for some years. In 2009 open data started to become visible in the mainstream, with various governments (such as the USA, UK, Canada and New Zealand) announcing new initiatives towards opening up their public information.
-
-Open Data may come in the form of a whole static database (CSV, EXCEL, TXT etc.), or it may be served as an API. An API will require some kind of request structure, such as location for a weather report, and should describe the structure of the response to expect. The open data documentation should also explain whether it includes geospatial information, and how frequently it is refreshed (if appropriate).
-
-Most major online services have an API, and many allow you to acquire data surrounding your activity. If you have a Google site, Android/iOS app, or even a Unity game, you might already be collecting data via [Google Analytics](https://developers.google.com/analytics/devguides/collection). If you host a site or code repository at [Github](https://developer.github.com/v3/), they have some great APIs you can use. Similarly for accessing your [Facebook data](https://developers.facebook.com/docs/graph-api/overview/). Look further afield-- even your bank might have an API you can use, or offer you the option to download transaction histories as a static database. [You can probably browse your phone's location history here](https://maps.google.com/locationhistory/b/0/)
- 
-Some examples:
-
-[Weather](http://openweathermap.org/API) -- free sign up for API key. See example [here](https://codepen.io/tutsplus/pen/gObLaEP?editors=0010)
-
-[Google Data APIs](https://developers.google.com/gdata/docs/directory)
-
-[Google Maps](https://developers.google.com/maps/documentation/javascript/)
-
-[Open Street Map](http://wiki.openstreetmap.org/wiki/API)
-- We used this and other open government data sources for our [Infranet](https://artificialnature.net/#infranet) artworks
-
-[NASA](http://open.nasa.gov/developer/)
-
-[Ontario open data catalogue](http://www.ontario.ca/government/open-data-ontario)
-
-[Open Data Toronto](https://open.toronto.ca/catalogue/)
-
-For example, the [Bike Share database](https://open.toronto.ca/dataset/bike-share-toronto/) is updated in near real-time. 
-
-Unfortunately, like many open data resources, you can't just load this in D3 using `d3.json(url)` from a Codepen webpage because of CORS (Cross-Origin Resource Sharing) -- it becomes a security risk. But you *can* do this from a server, even a server running locally on your own machine using Node.js for example. 
-
-For security, browsers typically do not allow a website on one domain to dynamically pull in data from another domain; i.e. they typically apply a *same-domain policy*. Fortunately, in the case of XMLHttpRequests, the provider may explicitly allow CORS, as is the case for http://api.openweathermap.org. Moreover, most dynamic requests will fail when running the HTML file from a local filesystem. *They need to be running from a server.* 
-
-Node.js lets us write complex server applications, but it also provides a simple way to run a server from any location on your filesystem. First, install this capability on your computer by typing this in your terminal (you'll have to make sure node.js is installed first of course, see above):
-
-```
-npm install -g http-server
-```
-
-Once installed, you can run this from any location in your terminal like this:
-
-```
-http-server
-```
-
-And you can then open this in your browser at address http://0.0.0.0:8080/
-
-*If you are working in Max, you can also access these APIs via the `maxurl` object, or you can run a full-fledge Node.js application via the `node.script` object. 
-
-**Cleaning data**
-
-Clean and great data is essential for good visualisations. Most online available data is not clean, not normalized, not well-structured, because life is not clean, normalized or well-structured. Good data is easily machine-readable, with semantic notes easily human-readable. Data is normalized, gaps are meaningfully handled, and noise reduced. This may mean:
-
-- converting spreadsheets into flat data (e.g. CSV, JSON)
-- removing unnecessary fields, headers, separating out annotations etc. 
-- remove specialized numeric formatting (e.g. convert "1,000" to "1000", "50%" to "0.5")
-- convert to international standards (dates, locations, temperatures etc.) when possible
-- deal with missing values in a consistent way
-- sort in the way you need
-- combine multiple datasets into one, ensuring no duplication
-
-It may also imply some "mining" or analysis passes to generate more useful field values
-
-**Further reading**
-
-Web mining is defined as the use of data mining, text mining, and information retrieval techniques to extract useful patterns and knowledge from the Web. A [mashup](http://en.wikipedia.org/wiki/Mashup_(web_application_hybrid), in web development, is a web page, or web application, that uses content from more than one source to create a single new service displayed in a single graphical interface. The term implies easy, fast integration, frequently using open application programming interfaces (open API) and data sources to produce enriched results that were not necessarily the original reason for producing the raw source data. The main characteristics of a mashup are combination, visualization, and aggregation. 
-
-[Visual Complexity](http://www.visualcomplexity.com/vc/)
-
-[Infosthetics](http://infosthetics.com)
-
-[D3 gallery](https://github.com/mbostock/d3/wiki/Gallery)
-
-[Jer Thorp](http://blog.blprnt.com/selected-works)
-
-Correlation is not causation. [A wonderful example of spurious correlations](http://www.tylervigen.com).
-
----
-
-**For next week**, complete your paper draft. It **must be submitted before next week's class begins** so that we can run the peer review session.  
+**Before week 9's class (Nov 11)** complete your paper draft. It **must be submitted before next week's class begins** so that we can run the peer review session.  
 
 ## Paper Complete Draft for Peer Review
 
@@ -1198,12 +678,17 @@ The article should contain:
 
 **Length:** Conference papers can be 3-8 pages in length, but 4 pages is the most typical. At approximately 700 words/page, this means a typical word count is around 2000-3000 words. 
 
-[**Submit your paper via e-Class here**](https://eclass.yorku.ca/mod/assign/view.php?id=3856508)
+[**Submit your paper via e-Class here** -- LINK TBC]()
 
 
-# Week 7
-Oct 30, 2023
+# Week 8
 [Class Recording](#class-recordings)
+
+[Digital Audio and Sound Synthesis](gen.html)
+
+# Week 9
+[Class Recording](#class-recordings)
+
 
 ## What is peer review of research?
 
@@ -1257,858 +742,7 @@ We are running an 'internal review' process, emulating what is frequently done i
 As a structure, our review is based on materials as used by the [SIGGRAPH Art Papers](https://s2023.siggraph.org/program/art-papers/) review body. Each of you will be randomly assigned up to 3 papers to review. 
 
 - **During class**:
-  - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSeLBcwJXSRJCwpN54hRq7j1hvmryhlkrrE4OqGqazs43qIc9Q/viewform?usp=sf_link)
-
-# Week 8
-Nov 6, 2023
-[Class Recording](#class-recordings)
-
-
-## GPU Programming of Shaders with GLSL
-
-Why GPU programming? 
-- massive scale performance, far better than CPU for data parallelism -- and high frame rates/low latency!
-- visual quality, with incredible flexibility!  
-- an interesting constrained space in its own right
-- Use it to process images you generate in another space (e.g. easy for us to map a web canvas into a GLSL image processor)
-- Create custom materials for environments like Three.js, TouchDesigner, Jitter, etc. 
-- Build unique self-contained renderers and scenes entirely in the GPU
-- VJing and Live Coding
-- Explore cellular automata, fluid simulations, fractals, ... 
-- Not just for images -- GPGPU: generating and simulating geometries, swarms, etc. 
-
-An example of the power of this technique: https://www.shadertoy.com/view/XsBXWt
-Notice that, apart from the cat gif, **everything else in this example is from around 200 lines of code**. It runs at a high frame rate, even when in full screen. This is the kind of thing that is lauded in the "demoscene" world. 
-
-The language this is written in is GLSL. It is a way to write programs that will run directly on your GPU. GLSL can be used in the web like on ShaderToy, or in Three.js, or basically any web page in a modern browser -- even when opened on your phone or a VR headset like the Quest 3. GLSL is also used in desktop OpenGL envionments, including TouchDesigner, Max/MSP/Jitter, Ossia, Hydra, and so on.  It can also be used in Unity or Unreal, though they prefer you to use a more abstract language (HLSL) which then translates to GLSL. 
-
-There are several kinds of shaders:
-- **vertex shaders** process geometry: modifying and adding data to a geometry of points. 
-- **fragment shaders** are programs that run on fragments, which you can think of as a pixel-by-pixel basis. This is what [ShaderToy](https://www.shadertoy.com/) is all about. 
-- **compute shaders** are the most general, often used to adapt simulation algorithms such as particle systems, for example. See [ComputeToys](https://compute.toys/) for some examples. 
-
-Today we'll be looking at fragment shaders. 
-
-We'll use ShaderToy for convenience; but you should now that the required code to set up a shader in a webpage is not that complex -- it can be done in around 100 lines of code. 
-
----
-
-The fragment shader is a program that runs separately for each fragment (think of it as a pixel). The main output of the fragment shader is a pixel colour, as a `vec4` representing red, green, blue and alpha (opacity) components, between 0 and 1.  
-
-Sample code:
-
-```glsl
-void mainImage(out vec4 fragColor, in vec2 fragCoord) {
-    vec4 yellow = vec4(1, 1, 0, 1); // red, green, blue, alpha
-    
-    fragColor = yellow;
-}
-```
-
-For the most part, GLSL here looks a lot like C, Java, and similar procedural, typed languages.  You can think of the main function here as defining a program that runs per pixel (per fragment actually) of the output image. In this case, we set all pixels to a single color. 
-
-One slightly unusual feature is the `out` keyword: a function can have arguments that you can modify. In this case, the output pixel color. 
-
-The output pixel is a `vec4`, which means it has four values, for Red, Green, Blue, and Alpha (opacity).  `vec4` is a built in type in GLSL, along with `vec2` and `vec3`. 
-
-There are a few slightly idisyncratic GLSL language features of vectors. You can index their components in a few different ways, including swizzling (re-ordering) them, 
-
-```glsl
-    vec4 v = vec4(1, 0.5, 0.2, 0);
-
-    // these two are the same:
-    fragColor = vec4(v.x, v.y, v.z, v.w);    
-    fragColor = v.xyzw;
-
-    // these two are the same:
-    fragColor = vec4(v.w, v.z, v.y, v.x);
-    fragColor = v.wxyz; 
-
-    // these two are the same:
-    fragColor = vec4(v.x, v.x, v.x, v.x);    
-    fragColor = v.xxxx; 
-
-    // .r .g .b .a == .x .y .z .w 
-    // these two are the same:
-    fragColor = v.xxxx; 
-    fragColor = v.rrrr;  
-
-    // compound a vec4 from vec3's, vec2's, and floats:
-    // these two are the same:
-    fragColor = vec4(v.xy, v.z, 1);
-    fragColor = vec4(v.rgb, 1);
-
-    // we can also create a vec4 from a single float like this:
-    // these two are the same:
-    fragColor = vec4(1, 1, 1, 1);
-    fragColor = vec4(1);
-```
-
-The `vec2 fragCoord` argument is the pixel location in integer pixel numbers, starting at the bottom-left.  To turn that into a *normalized* coordinate, that goes from `vec2(0.0, 0.0)` at the bottom left, to `vec2(1.0, 1.0)` at the top right, we can divide by the image resolution.  Shadertoy gives us the image resolution in the variable `iResolution.xy`.
-
-```glsl
-    // Normalized pixel coordinates (from 0 to 1)
-    vec2 uv = fragCoord/iResolution.xy;
-
-    // visualize X coordinate in red, Y coordinate in green:
-    fragColor = vec4(uv, 0, 1);
-```
-
-If we wanted a *signed normalized* coordinate, from -1 to +1, with 0,0 in the image center, we can do this:
-
-```glsl
-    // signed normalized pixel coordinates (from -1 to 1)
-    vec2 suv = uv*2.0 - 1.0;
-
-    // to take into account aspect ratio:
-    suv.x *= iResolution.x / iResolution.y;
-```
-
-So now we can use the normalized coordinate to make a pattern over space. Essentially here we are defining a field function, that maps a `vec2` position into a `vec4` color. 
-
-For example, here's a repeating sinusoidal surface:
-
-```glsl 
-    const float PI = 3.141592653589793;
-    vec2 grid = cos(10.0 * PI * suv);
-    fragColor = vec4(grid, 0, 1);
-```
-
-Notice how the `cos` function is quite happy to accept a `vec2` and produce a `vec2` result. This is true for most math functions in GLSL. 
-
-Or we consider the pixel's distance from the center:
-
-```glsl
-    vec2 centre = vec2(0, 0);
-    float dist = distance(suv, centre);  
-    // equivalent: length(suv - centre);
-    fragColor = vec4(dist); 
-```
-
-To draw a point, a common approach here is to use an exponential decay of distance via `exp(-sharpness * dist)`:
-
-```glsl
-    float sharpness = 50.0;
-    float spot = exp(-sharpness * dist);
-    fragColor = vec4(spot);
-```
-
-What we are doing is drawing a rapid falloff on the distance from a point.  
-
-We can also turn this into a distance-from-circle, simply by subtracting the circle's radius from the distance.  
-
-```glsl
-    vec2 centre = vec2(0, 0);
-    float radius = 0.2;
-    float dist = distance(suv, centre) - radius;
-    
-    float sharpness = 50.0;
-    float spot = exp(-sharpness * dist);
-    
-    fragColor = vec4(spot);
-```
-
-Or to draw several, we can use a modulo operation to divide up the space:
-
-```glsl
-    vec2 pos = mod(uv * 5.0, 1.0);
-    float dist = length(pos - 0.5);
-    float smoothResult = smoothstep(0.5, 0.46, dist);
-    fragColor = vec4(pos.xy, 1, 1) * smoothResult;
-```
-
-It's a squashed looking circle because we are working in normalized coordinates, and the canvas is not square. We could instead do this in pixel coordinates:
-
-```glsl
-    vec2 centre = vec2(400, 400);
-    float radius = 100.0;
-    float dist = distance(fragCoord, centre) - radius;
-    
-    float sharpness = 50.0;
-    float spot = exp(-sharpness * dist);
-    
-    fragColor = vec4(spot);
-```
-
-Or we could adjust for aspect ratio:
-
-```glsl
-    // to take into account aspect ratio:
-    suv.x *= iResolution.x / iResolution.y;
-```
-
-Notice how odd this is: we are drawing shapes (points, circles) not by geometry, but by specifying a function of a field.  We didn't trace a line, we didn't do any geometry really, we just defined a function of space that maps a 2D position into a color, using only the principle of *signed distance*. This method of drawing by 'distance function' can be surprisingly powerful, and we'll return to it later.  
-
-We used the `iResolution` uniform before to get the canvas size. (The "Uniform" terminology here really means an input parameter to the shader. It is "uniform" because the parameter has the same value for all pixels.) Shadertoy also gives us a few more uniforms to play with:
-
-```glsl
-uniform vec3      iResolution;           // viewport resolution (in pixels)
-uniform float     iTime;                 // shader playback time (in seconds)
-uniform float     iTimeDelta;            // render time (in seconds)
-uniform float     iFrameRate;            // shader frame rate
-uniform int       iFrame;                // shader playback frame
-uniform float     iChannelTime[4];       // channel playback time (in seconds)
-uniform vec3      iChannelResolution[4]; // channel resolution (in pixels)
-uniform vec4      iMouse;                // mouse pixel coords. xy: current (if MLB down), zw: click
-uniform samplerXX iChannel0..3;          // input channel. XX = 2D/Cube
-uniform vec4      iDate;                 // (year, month, day, time in seconds)
-```
-
-So for example, we can use iMouse.xy to move the circle, and iTime to change its size:
-
-```glsl
-    vec2 centre = iMouse.xy;
-    float radius = 100. * abs(sin(iTime));
-```
-
-There's a lot you can do with math to procedurally generate images as functions of space (and time). Here's a more colourful example of a field varying in time:
-
-```glsl
-    // Normalized pixel coordinates (from 0 to 1)
-    vec2 uv = fragCoord/iResolution.xy;
-
-    // Time varying pixel color
-    vec3 col = 0.5 + 0.5*cos(iTime + uv.xyx+vec3(0,2,4));
-
-    // Output to screen
-    fragColor = vec4(col, 1.0);
-```
-
-One thing GLSL doesn't provide is a noise or random number generator. Some people have worked around this by finding mathematical functions that are pseudo-random -- noisy enough and cheap enough for many simple use cases. 
-
-This is generic library code -- you can put this directly into the top of your shader, or in Shadertoy you can click the + to add a "Common" tab, in which you can place library code like this that will be visible to all shaders.
-
-```glsl
-#define RANDOM_SCALE vec4(.1031, .1030, .0973, .1099)
-
-vec2 random2(float p) {
-    vec3 p3 = fract(vec3(p) * RANDOM_SCALE.xyz);
-    p3 += dot(p3, p3.yzx + 19.19);
-    return fract((p3.xx + p3.yz) * p3.zy);
-}
-
-vec2 random2(vec2 p) {
-    vec3 p3 = fract(p.xyx * RANDOM_SCALE.xyz);
-    p3 += dot(p3, p3.yzx + 19.19);
-    return fract((p3.xx + p3.yz) * p3.zy);
-}
-
-vec2 random2(vec3 p3) {
-    p3 = fract(p3 * RANDOM_SCALE.xyz);
-    p3 += dot(p3, p3.yzx + 19.19);
-    return fract((p3.xx + p3.yz) * p3.zy);
-}
-
-vec3 random3(float p) {
-    vec3 p3 = fract(vec3(p) * RANDOM_SCALE.xyz);
-    p3 += dot(p3, p3.yzx + 19.19);
-    return fract((p3.xxy + p3.yzz) * p3.zyx); 
-}
-
-vec3 random3(vec2 p) {
-    vec3 p3 = fract(vec3(p.xyx) * RANDOM_SCALE.xyz);
-    p3 += dot(p3, p3.yxz + 19.19);
-    return fract((p3.xxy + p3.yzz) * p3.zyx);
-}
-
-vec3 random3(vec3 p) {
-    p = fract(p * RANDOM_SCALE.xyz);
-    p += dot(p, p.yxz + 19.19);
-    return fract((p.xxy + p.yzz) * p.zyx);
-}
-
-vec4 random4(float p) {
-    vec4 p4 = fract(p * RANDOM_SCALE);
-    p4 += dot(p4, p4.wzxy + 19.19);
-    return fract((p4.xxyz + p4.yzzw) * p4.zywx);   
-}
-
-vec4 random4(vec2 p) {
-    vec4 p4 = fract(p.xyxy * RANDOM_SCALE);
-    p4 += dot(p4, p4.wzxy + 19.19);
-    return fract((p4.xxyz + p4.yzzw) * p4.zywx);
-}
-
-vec4 random4(vec3 p) {
-    vec4 p4 = fract(p.xyzx * RANDOM_SCALE);
-    p4 += dot(p4, p4.wzxy + 19.19);
-    return fract((p4.xxyz + p4.yzzw) * p4.zywx);
-}
-
-vec4 random4(vec4 p4) {
-    p4 = fract(p4  * RANDOM_SCALE);
-    p4 += dot(p4, p4.wzxy + 19.19);
-    return fract((p4.xxyz + p4.yzzw) * p4.zywx);
-}
-```
-
-Try out a quick example: 
-
-```glsl
-    vec4 noise = random4(vec3(fragCoord.xy, iTime));
-    fragColor = vec4(noise);
-```
-
-Note that this is not a very good pseudo-random generator, and sometimes you will see patterns. Better generators are more expensive. Here is a good example: https://www.shadertoy.com/view/ftsfDf  
-
-We can also pull in external images into a shader to process them, including videos, webcam streams, and so on.  Click on the `iChannel0` box under the editor and choose an image or stream to use.  We can then access this using the `texture` function:
-
-```glsl
-    vec4 image = texture(iChannel0, uv);
-    
-    fragColor = image;
-```
-
-So now we can do all kinds of math on that image for classic webcam effects:
-
-```glsl
-    // invert
-    fragColor = 1.-image;
-    // recolor:
-    fragColor = image.gbra;
-    // a kind of saturation:
-    fragColor = smoothstep(0., 1., image);
-    // a kind of saturation:
-    fragColor = smoothstep(0.4, 0.6, image);
-    // simple greyscale:
-    fragColor = image.ggga;
-    // threshold:
-    fragColor = smoothstep(0.4, 0.41, image.ggga); 
-    // brightness:
-    fragColor = pow(image, vec4(sin(iTime)+1.5));
-```
-
-Some more library code for common image manipulations: 
-
-```glsl
-vec3 desaturate(in vec3 v, in float a ) {
-    return mix(v, vec3(dot(vec3(.3, .59, .11), v)), a);
-}
-vec4 desaturate(in vec4 v, in float a ) { return vec4(desaturate(v.rgb, a), v.a); }
-
-float brightnessContrast( float v, float b, float c ) { return ( v - 0.5 ) * c + 0.5 + b; }
-vec3 brightnessContrast( vec3 v, float b, float c ) { return ( v - 0.5 ) * c + 0.5 + b; }
-vec4 brightnessContrast( vec4 v, float b, float c ) { return vec4(( v.rgb - 0.5 ) * c + 0.5 + b, v.a); }
-
-float rgb2luma(const in vec3 rgb) { return dot(rgb, vec3(0.2126, 0.7152, 0.0722)); }
-float rgb2luma(const in vec4 rgb) { return rgb2luma(rgb.rgb); }
-
-vec3 hue2rgb(const in float hue) {
-    float R = abs(hue * 6.0 - 3.0) - 1.0;
-    float G = 2.0 - abs(hue * 6.0 - 2.0);
-    float B = 2.0 - abs(hue * 6.0 - 4.0);
-    return clamp(vec3(R,G,B), 0., 1.);
-}
-
-vec3 hsv2rgb(const in vec3 hsv) { return ((hue2rgb(hsv.x) - 1.0) * hsv.y + 1.0) * hsv.z; }
-vec4 hsv2rgb(const in vec4 hsv) { return vec4(hsv2rgb(hsv.rgb), hsv.a); }
-
-vec3 rgb2hsv(const in vec3 c) {
-    vec4 K = vec4(0., -0.33333333333333333333, 0.6666666666666666666, -1.0);
-    vec4 p = c.g < c.b ? vec4(c.bg, K.wz) : vec4(c.gb, K.xy);
-    vec4 q = c.r < p.x ? vec4(p.xyw, c.r) : vec4(c.r, p.yzx);
-    float d = q.x - min(q.w, q.y);
-    return vec3(abs(q.z + (q.w - q.y) / (6. * d + 1e-10)), 
-                d / (q.x + 1e-10), 
-                q.x);
-}
-vec4 rgb2hsv(const in vec4 c) { return vec4(rgb2hsv(c.rgb), c.a); }
-```
-
-(see more at https://github.com/patriciogonzalezvivo/lygia -- for example, pretty much all the photoshop layer modes are at https://github.com/patriciogonzalezvivo/lygia/blob/main/color/layer.glsl)
-
-Obviously, some of these image effects can also use the coordinate to transform them, to create for example vignette effects. 
-
-```glsl
-    fragColor *= exp(-length(suv));
-```
-
-The `texture` function needs the specific "sampler" input to sample from (in this case, `iChannel0` which Shadertoy provides), as well as a vec2 normalized coordinate for where in the image to sample it. That means of course, we can sample from different places, not only the current location! 
-
-```glsl
-    vec2 coord = 0.5 + (suv)*sin(iTime);
-    //vec2 coord = 0.5 + (suv)*exp(-length(suv));
-    //vec2 coord = 0.5 + (suv)*exp(sin(iTime)*length(suv));
-    //vec2 coord = 0.5 + 0.5*mix(suv, suv*sin(iTime), 1.-length(suv));
-    //vec2 coord = uv + 0.1*(noise.xy-0.5)*length(suv);  // a little noise can be a bit like a blur
-    vec4 image = texture(iChannel0, coord);
-```
-
-This can get pretty complex: https://www.shadertoy.com/view/
-
-We can also use this to do things like comparing or blending nearest pixels. This is a common type of image effect that includes blur, sharpen, erode, edge highlight, etc.  These are called [convolution filters](https://en.wikipedia.org/wiki/Kernel_(image_processing)). Convolution simply means multiplying several pairs of terms together and summing the results. In image processing, this is usually means multiplying a square (or rectangular) region of an image with a "kernel" matrix. 
-
-First, we define a kernel for the relative weights of the neighboring pixels. Then we loop over these pixels, sampling the image at each point, and multiplying it with the corresponding kernel weight, summing up the results. 
-
-```glsl
-    // some example kernels:
-
-    mat3 identity = mat3(
-        0, 0, 0,
-        0, 1, 0,
-        0, 0, 0,
-    );
-
-    mat3 edge0 = mat3(
-         1,  0, -1,
-         0,  0,  0,
-        -1,  0,  1,
-    );
-
-    mat3 edge1 = mat3(
-         0, -1,  0,
-        -1,  4, -1,
-         0, -1,  0
-    );
-
-    mat3 edge2 = mat3(
-        -1, -1, -1,
-        -1,  8, -1,
-        -1, -1, -1
-    );
-    mat3 sharpen = mat3(
-         0, -1,  0,
-        -1,  5, -1,
-         0, -1,  0
-    );
-
-    mat3 emboss = mat3(
-        -2, -1,  0, 
-        -1,  1,  1, 
-         0,  1,  2
-    );
-
-    mat3 boxBlur = mat3(
-        1, 1, 1,
-        1, 1, 1,
-        1, 1, 1
-    ) * 1.0/9.0;
-
-    mat3 gaussBlur = mat3(
-        1, 2, 1,
-        2, 4, 2,
-        1, 2, 1
-    ) * 1.0/16.0;
-
-    kernel = identity;
-    
-    vec2 oneTexel = 1./iResolution.xy;
-    
-    // loop over a 3x3 region, summing results:
-    vec4 sum = vec4(0.0);
-    for (int i = -1; i <= 1; i++) {
-        for (int j = -1; j <= 1; j++) {
-            // get the texture coordinate offset for this texel:
-            vec2 offset = vec2(float(i), float(j)) * oneTexel;
-            // get the image at this texel:
-            vec4 pixelColor = texture(iChannel0, uv + offset);
-            // Apply kernel weight and sum:
-            sum += pixelColor * kernel[i+1][j+1]; 
-        }
-    }
-
-    fragColor = sum;
-```
-
-There are some other spatial image processes that are similar to convolution, but not using summation (so they are not strictly convolution), which you could explore:
-
-- Erode searches surrounding pixels looking for minimum values
-- Dilate searches surrounding pixels looking for maximum values
-- Frosted Glass can blend together several local pixels in a non-standard pattern
-
----
-
-We can also use mat objects to perform spatial transformations of the image. Here's a rotation matrix:
-
-```glsl
-mat2 rotateMat2(float angle) {
-    float c = cos(angle);
-    float s = sin(angle);
-    return mat2(
-        c,  s,
-        -s,  c
-    );
-}
-```
-
-If we apply this to our `uv` coordinate, we can rotate the image:
-
-```glsl
-    uv = rotate(iTime) * uv;
-```
-
-We can also scale using a mat2:
-
-```glsl
-mat2 scaleMat2(float s) {
-    return mat2(
-        s,  0,
-        0,  s
-    );
-}
-```
-
-If we wanted to *translate* however, we need to use `mat3`.  The idea is simple: we assume that there is a 3rd coordinate to the input vector, equvalent to `uv3 = vec3(uv, 1)`, so that we can then multiply this with the `mat3`.  Then our transforms look like this:
-
-```glsl
-mat3 translateMat3(float x, float y) {
-    return mat3(
-        1, 0, 0,        // First column (accessed as m[0])
-        0, 1, 0,        // Second column (accessed as m[1])
-        x, y, 1         // Third column (accessed as m[2])
-  );
-}
-
-mat3 rotateMat3(float angle) {
-    float c = cos(angle);
-    float s = sin(angle);
-    return mat3(
-        c,  s, 0,
-        -s, c, 0,
-        0,  0, 1
-    );
-}
-
-mat3 scaleMat3(float s) {
-    return mat2(
-        s, 0, 0,
-        0, s, 0,
-        0, 0, 1
-    );
-}
-```
-
-With these we can create quite complex transformations:
-
-```glsl
-    // convert to a vec3:
-    uv3 = vec3(uv, 1.);
-    // apply several transformations:
-    uv3 = translateMat3(-0.5) * scaleMat3(sin(iTime)) * rotateMat3(iTime) * translateMat3(0.5) * uv3;
-    // convert back to vec2:
-    uv = uv3.xy;
-```
-
-So far we are processing the image over value (color), and over space. But we can also process it over time.  To do that, we need to set up a feedback loop. 
-
-For example, what if we wanted to apply a feedback blur that is also creating spiral trails?
-
-In shadertoy we can do this by adding a "Buffer" stage. Again, use the **+** button, and select "Buffer A".  Now in the Buffer A tab, let's set up **iChannel0** input to also be "Buffer A", so that it can read its own previous frame. 
-
-In the Image tab, which defines what we actually see, let's also set up **iChannel0** input to also be "Buffer A", and display it:
-
-```glsl
-    // in Image tab, show the Buffer A content from iChannel0
-    vec2 uv = fragCoord/iResolution.xy;
-    fragColor = texture(iChannel0, uv);
-```
-
-Back in the Buffer A tab, first let's set it up to display its own last frame:
-
-```glsl
-    vec2 uv = fragCoord/iResolution.xy;
-    fragColor = texture(iChannel0, uv);
-```
-
-Now we can add something to this to see the feedback:
-
-```glsl
-
-    vec4 noise = random4(vec3(fragCoord.xy, iTime));
-    // add a white dot if the noise function is >= 0.999:
-    fragColor = fragColor + vec4(step(0.999, noise.x));
-```
-
-This will gradually fill up the image. We can also let the image decay:
-
-```glsl
-    vec4 noise = random4(vec3(fragCoord.xy, iTime));
-    float decay = 0.99;
-    fragColor = fragColor*decay + vec4(step(0.999, noise.x));
-```
-
-And for something more intersting, intead of feeding back the same pixel, we could read from the pixel above it:
-
-```glsl
-    vec2 uv = fragCoord/iResolution.xy;
-    fragColor = texture(iChannel0, uv + vec2(0., 0.01));
-```
-
-Another common pattern here is to set up an initialization on the first frame, by using `iFrame == 0`, and the Rewind button on the shader view to reset this to zero:
-
-```glsl
-    vec2 uv = fragCoord/iResolution.xy;
-    fragColor = texture(iChannel0, uv + vec2(0., 0.01));
-    
-    vec4 noise = random4(vec3(fragCoord.xy, iTime));
-    
-    // initialize:
-    if (iFrame == 0) {
-        fragColor = noise;
-    }
-```
-
-Notice it blurring over time? That's because we are using linear interpolation on the iChannel0 settings. Change the filter to "nearest" and it will not blur. 
-
-Try doing some spatial transforms on the image in a feedback loop!
-
----
-
-Feedback is also essential for making simulations of complex systems. 
-
-We now have enough to write a cellular automaton, such as the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life):
-
-```glsl
-void mainImage( out vec4 fragColor, in vec2 fragCoord )
-{
-    // get self state
-    vec4 C  = texture(iChannel0, (fragCoord+vec2( 0, 0))/iResolution.xy);
-    // am I alive?
-    int alive = int(C.x > 0.5);
-    
-    // get state of all neighbour pixels:
-    vec4 E  = texture(iChannel0, (fragCoord+vec2( 1, 0))/iResolution.xy);
-    vec4 W  = texture(iChannel0, (fragCoord+vec2(-1, 0))/iResolution.xy);
-    vec4 N  = texture(iChannel0, (fragCoord+vec2( 0, 1))/iResolution.xy);
-    vec4 NE = texture(iChannel0, (fragCoord+vec2( 1, 1))/iResolution.xy);
-    vec4 NW = texture(iChannel0, (fragCoord+vec2(-1, 1))/iResolution.xy);
-    vec4 S  = texture(iChannel0, (fragCoord+vec2( 0,-1))/iResolution.xy);
-    vec4 SE = texture(iChannel0, (fragCoord+vec2( 1,-1))/iResolution.xy);
-    vec4 SW = texture(iChannel0, (fragCoord+vec2(-1,-1))/iResolution.xy);
-    // count number of living neighbours:
-    int neighbours = int(E.x > 0.5) + int(W.x > 0.5) 
-                   + int(NE.x > 0.5) + int(NW.x > 0.5) 
-                   + int(SE.x > 0.5) + int(SW.x > 0.5) 
-                   + int(N.x > 0.5) + int(S.x > 0.5);
-                
-    // should I live on?
-    int liveon = alive; 
-    // the rules (see https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
-    if (alive == 1) {
-        // die by loneliness or overcrowding:
-        if (neighbours < 2 || neighbours > 3) liveon = 0;
-    } else {
-        // birth:
-        if (neighbours == 3) liveon = 1;
-    }
-    
-    // update my state:
-    fragColor = vec4(float(liveon));
-    // or for a more colourful variant:
-    // fragColor = vec4(liveon, int(alive != liveon), alive, 1);
-    
-    vec4 noise = random4(fragCoord.xy);
-    
-    // initialize:
-    if (iFrame == 0) {
-        fragColor = vec4(step(0.8, noise.x));
-    }
-    
-    // add some noise near the mouse:
-    if (iMouse.z > 0.0) {
-        // if the mouse is held, randomize some pixels near the mouse
-        if (distance(fragCoord, iMouse.xy) < 10.0) {
-            fragColor = vec4(step(0.8, noise.x));
-        }
-    } 
-}
-```
-
-[Our shader from today](https://www.shadertoy.com/view/t3SfDW)
-
----
-
-[Zoom Recording Part II](https://yorku.zoom.us/rec/share/a-Lofly0Zgqu2N5qFo1eswhgbCTY1RiIMBLBqslon3nI3Zi_VDnFIu3piwrg099q.VCc-OPDiftZNCk95)
-
-**A Fluid simulation:**
-
-Modeling the ideas in [Wyatt Flander's tutorial here](https://wyattflanders.com/MeAndMyNeighborhood.pdf)
-
-A cellular automaton that looks a lot less digital/discrete! 
-- Every cell has energy, including velocity (.xy) and omnidirectional divergence (.z).  We can also imagine the fluid transporting some matter, with a density (.w)
-
-Fluid simulation: https://www.shadertoy.com/view/WcccDf 
-
----
-
-**A minimal raytracer**
-
-Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects — [Wikipedia](https://en.wikipedia.org/wiki/Ray_tracing_(graphics))
-
-- https://www.shadertoy.com/view/tlXXzB
-
-First, for each pixel in the image, we need a 3D ray. A ray is a line with an origin and direction.  
-
-```p = pos + dir*t```
-
-vec3 pos, vec3 dir (normalized)
-t is distance along ray
-
-OK for a screen, each ray should have a slightly different direction. Need diagram. Think of the image plane as a mesh a little in front of the camera/eye.  That's our "near plane". Think of the Albrecht Durer drawing diagram! 
-
-We can build these like this:
-
-```glsl
-    vec3 ro = vec3(0, 0, 0);
-    vec3 rd = normalize(vec3(suv.xy, 7));
-
-    // or more realistic:
-    
-    // put camera "behind" origin 
-    ro = vec3(0, 0, 5); 
-    // handles aspect ratio:
-    // the "7" is a way to set a "focal length"
-    rd = normalize(vec3(suv * iResolution.xy/iResolution.y, 7)); 
-```
-
-
-
-We can put a simple object, such as a sphere, into this space. A sphere has a centre and radius:
-
-```glsl
-    vec3 sphere_pos = vec3(1, 0, 20);
-    float sphere_rad = 2.0;
-
-    // to make our life easier, let's combine this into a vec4:
-    vec4 sphere = vec4(sphere_pos, sphere_rad);
-
-    // let's also define a light position:
-    vec3 light_pos = vec3(8, 4, 10);
-```
-
-Now we need a function to test whether a given ray intersects with a sphere.  The explanation of this math is a bit beyond what we can cover here, but have a look [here](https://kylehalladay.com/blog/tutorial/math/2013/12/24/Ray-Sphere-Intersection.html)
-
-```glsl
-// returns distance to first intersection with the sphere from the ray:
-// returns -1 if the ray does not intersect with the sphere
-float intersectSphere(vec3 rayOrigin, vec3 rayDirection, vec3 sphereCenter, float sphereRadius) {
-    vec3 L = sphereCenter - rayOrigin;
-    float tca = dot(L, rayDirection);
-    float d2 = dot(L, L) - tca * tca;
-    float radius2 = sphereRadius * sphereRadius;
-
-    if (d2 > radius2) return -1.0; // No intersection
-
-    float thc = sqrt(radius2 - d2);
-    float t0 = tca - thc;
-    float t1 = tca + thc;
-
-    if (t0 < 0.0 && t1 < 0.0) return -1.0; // Both intersections behind ray origin
-    if (t0 < 0.0) return t1; // Ray origin inside sphere, return far intersection
-    return t0; // Return closest intersection
-}
-```
-
-Can we see it?
-
-```glsl
-    float t = intersectSphere(ro, rd, sphere_pos, sphere_rad);
-    if (t > 0.) {
-        fragColor = vec4(1);
-    }
-```
-
-To begin to light this sphere, we need to know where exactly our intersection point is, and from that we can determine the **normal**, which is to say, the direction pointing perpendicularly away from the sphere's surface:
-
-```glsl
-    // move the right distance along the ray to find the point:
-    vec3 pt = ro + t*rd;
-
-    // a sphere's normal is simple, it always points away from the sphere center
-    // we normalize it to ensure it has a length of 1 (a unit vector)
-    // this only gives direction, and is useful in the math later
-    vec3 normal = normalize(pt - sphere_pos);
-```
-
-We can do diffuse lighting relative to a particular light direction (for sunlight), or by deriving a light direction from the relative positions of the sphere and a light source:
-
-```glsl
-        // again, normalize it to get a unit length direction vector:
-        vec3 light_dir = normalize(pt - light_pos);
-
-        // similarity of light and ray:
-        float diffuse = max(dot(normal, light_dir), 0.);
-
-        // similarlity with ray reflection vector:
-        float specular = max(dot(-camera_dir, reflect(-light_dir, normal)), 0.);
-        fragColor = vec4(specular);
-```
-
-Minimal raytracer: https://www.shadertoy.com/view/wc3yWf
-
-Next: A different approach, using distance functions.
-
----
-
-**A minimal raymarcher**
-
-Raymarcher
-
-Just like we had a function of 2D space (pixel distance to circle), we can do the same for 3D space (3D distance to sphere)
-
-```glsl
-// signed distance to a sphere at position 0,0,0
-sdSphere(vec3 p, float radius) {
-	return length(p) - radius;
-}
-```
-
-Now, we start from `ro` and step along `rd` until we hit something
-
-A basic marcher steps in fixed steps. We could step through an arbitrary 3D volume (like a 3D texture) this way, making each step the size of a voxel.
-That's expensive though.
-
-If we have a distance function of space, it tells us the distance to the closest object; so we know we can always move the ray by at least this much. Also known as sphere tracing.
-
-```glsl
-float depth = 0.;
-vec3 p = ro;
-for (int i=0; i<MAX_STEPS; i++) {
-	// get distance from p to nearest surface
-	float d = sdScene(p);
-	// move to next point on ray:
-	depth += d;
-	p = ro + depth*rd;
-	// did we arrive?
-	if (d < threshold || d > FAR) break;
-}
-```
-
-Now we can paint the pixel according to whether depth is >= FAR or not
-
-We can position the sphere (or any group) by subtracting the position from `p` -- a good example to animate
-
-OK normal: there's a kind of a neat hack here. Normal is just perpendicular to gradient (tangent) of surface. Think 2D, this is perp to slope of line. Slope can approximate by sampling two locations close to each other & comparing. In 3D it is the same: subtract two points slightly offset. We can do this directly on the distance field. 
-
-```glsl
-vec3 calcNormal(vec3 p) {
-  float e = 0.0005; // epsilon
-  return normalize(vec3(
-    sdScene(vec3(p.x + e, p.y, p.z)) - sdScene(vec3(p.x - e, p.y, p.z)),
-    sdScene(vec3(p.x, p.y + e, p.z)) - sdScene(vec3(p.x, p.y - e, p.z)),
-    sdScene(vec3(p.x, p.y, p.z  + e)) - sdScene(vec3(p.x, p.y, p.z - e))
-  ));
-}
-
-// a more efficient version:
-vec3 calcNormal(vec3 p) {
-  vec2 e = vec2(1.0, -1.0) * 0.0005; // epsilon
-  return normalize(
-    e.xyy * sdScene(p + e.xyy) +
-    e.yyx * sdScene(p + e.yyx) +
-    e.yxy * sdScene(p + e.yxy) +
-    e.xxx * sdScene(p + e.xxx));
-}
-```
-
-Minimal raymarcher: https://www.shadertoy.com/view/wf3yWf
-
-More references:
-
-https://mercury.sexy/hg_sdf/
-https://www.shadertoy.com/view/ctKyzt
-https://www.shadertoy.com/view/Xds3zN
-
+  - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSfgUtSQ6iaieWLtTBebMRhnSHP7_SOj8Rsftjkqs1vGKSbFww/viewform?usp=dialog)
 <!--
 
 - Paper process discussion -- one week to ISEA deadline: https://isea2025.isea-international.org/submission/submission-guideline/ 
@@ -2119,31 +753,12 @@ https://www.shadertoy.com/view/Xds3zN
 https://codepen.io/grrrwaaa/pen/KKOGLqW?editors=0010
 -->
 
-## Final Paper
-
-1. The final paper continues from the [Literature Review](#annotated-bibliography[), and responds to the [Call for Papers](#a-call-for-papers). 
-  - Find a few other papers online that have similar focus, and analyze their structure as a guide.
-  - Find related conferences/symposia/journals/etc. to contrast other papers as well as submission and review criteria. 
-  - You should identify at least one conference/festival/other appropriate venue to submit your research or research-creation. Investigate papers submitted to this in past years, and the submission requirements and review criteria. 
-  - Document these findings in your journal.
-2. Papers can range from 2000-5000 words. You have three choices for publication format. 
-   1. A traditional conference-style paper. Papers must follow the standard template (adapted from ISEA2024) available [here](https://docs.google.com/document/d/1WZkAN9oaT8pvVVKBRwRRgbwnuKmAU0JJ/edit?usp=share_link&ouid=112275914788197824145&rtpof=true&sd=true) or [here](https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx)
-   2. A very modern, online-first academic article. That is, one designed to be read online, with at least some active components, rather than primarily on paper. The notion of publishing in academia has been rapidly changing, and these changes accelerated during the pandemic.
-     - See [https://www.pubpub.org](https://www.pubpub.org) for an example of a modern online-first collaborative publishing venue. Many conferences in recent years have moved over to this format (e.g. NIME, ICLC). [Here's an example of an online-first paper I published in 2021](https://nime.pubpub.org/pub/0u3ruj23/release/1)
-     - See [https://distill.pub](https://distill.pub) for an example of a modern, web-based peer-reviewed journal with embedded visualizations and interactive components. 
-     - See [https://jar-online.net](https://jar-online.net) for a different example more focused on art theory & practice.
-     - Alternatively, create your own using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
-     - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
-   3. An "Explorable Explanation", following the ideas outlined [here](#explorable-explanations) 
-3. Post your final paper online to our final submission form.
-
-For the purposes of the course, please submit your final papers by December 8th, thank you!!
-
 ---
 
-# Week 9
-Nov 13, 2023
+# Week 10
 [Class Recording](#class-recordings)
+
+[GPU programming with GLSL](glsl.html)
 
 <!--
 
@@ -2171,13 +786,10 @@ Nov 13, 2023
   - Submit your [Video Tutorial](#video-tutorial)
 -->
 
-# Week 10
-Nov 20, 2023
+# Week 11
 [Class Recording](#class-recordings)
 
 1 on 1 paper sessions
-
-Catching up on tutorials we didn't complete in previous weeks
 
 <!--
 
@@ -2188,13 +800,12 @@ Catching up on tutorials we didn't complete in previous weeks
 -->
 
 
-# Week 11
-Nov 27, 2023
+# Week 12
 [Class Recording](#class-recordings)
 
 ## Final presentations
 
-We have about 15 minutes per presentation, plus 5 minutes for questions & discussion! 
+We have about 15 minutes per presentation, plus 5-10 minutes for questions & discussion! 
 
 ---
 
@@ -2212,20 +823,43 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 	- It could be an introduction to a platform we are not covering in class
 	- or an exploration of a library/API or SDK etc. in Javascript
 	- or alternatively, it could be a tutorial on a technique or algorithm or mechanism or a part of mathematics etc.
+	- I highly recommend choosing a topic that overlaps with your research paper topic *if you can*
 2. Whichever you choose, it should cover both of: 
 	- introducing the key concepts, the unusual and interesting parts, and related work
 	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
-
+<!--
 # Final submissions
 
 - [Video Tutorials](#video-tutorial) -- please [add your video tutorial to the slides here](https://docs.google.com/presentation/d/1L8oUYKt1oO6vrxgB36ArqI_stz8U0TyHMAWhnPjafPs/edit?usp=sharing) by **Dec 12th**. 
 - [Final paper](#final-paper) -- via [eClass here](https://eclass.yorku.ca/mod/assign/view.php?id=3899526) Due by **Dec 19th**. 
 - **Class journal** -- please submit the link to your online documentation of notes, study sketches (codepen or otherwise), and your reflections on your work in this course to the [slides here](https://docs.google.com/presentation/d/1spwP4te6kYoF5Qs_e75gHoALJbpJsQjchhWollwP4hs/edit?usp=sharing). Please ensure that your documentation is public access.  Due by **Dec 19th**. 
 - [Post-mortem questionnaire](https://eclass.yorku.ca/mod/questionnaire/view.php?id=3899543) -- thank you :-)
+-->
 
 Thank you everyone for a wonderful semester! 
+
+
+# Final Paper
+
+1. The final paper continues from the [Literature Review](#annotated-bibliography[), and responds to the [Call for Papers](#a-call-for-papers). 
+  - Find a few other papers online that have similar focus, and analyze their structure as a guide.
+  - Find related conferences/symposia/journals/etc. to contrast other papers as well as submission and review criteria. 
+  - You should identify at least one conference/festival/other appropriate venue to submit your research or research-creation. Investigate papers submitted to this in past years, and the submission requirements and review criteria. 
+  - Document these findings in your journal.
+2. Papers can range from 2000-5000 words. You have three choices for publication format. 
+   1. A traditional conference-style paper. Papers must follow the standard template (adapted from ISEA2024) available [here](https://docs.google.com/document/d/1WZkAN9oaT8pvVVKBRwRRgbwnuKmAU0JJ/edit?usp=share_link&ouid=112275914788197824145&rtpof=true&sd=true) or [here](https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx)
+   2. A very modern, online-first academic article. That is, one designed to be read online, with at least some active components, rather than primarily on paper. The notion of publishing in academia has been rapidly changing, and these changes accelerated during the pandemic.
+     - See [https://www.pubpub.org](https://www.pubpub.org) for an example of a modern online-first collaborative publishing venue. Many conferences in recent years have moved over to this format (e.g. NIME, ICLC). [Here's an example of an online-first paper I published in 2021](https://nime.pubpub.org/pub/0u3ruj23/release/1)
+     - See [https://distill.pub](https://distill.pub) for an example of a modern, web-based peer-reviewed journal with embedded visualizations and interactive components. 
+     - See [https://jar-online.net](https://jar-online.net) for a different example more focused on art theory & practice.
+     - Alternatively, create your own using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
+     - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
+   3. An "Explorable Explanation", following the ideas outlined [here](#explorable-explanations) 
+3. Post your final paper online to our final submission form.
+
+<!--For the purposes of the course, please submit your final papers by December 8th, thank you!!-->
 
 <!--
 
@@ -2533,6 +1167,9 @@ https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
 
 Recordings of the weekly sessions will be here:
 
+
+<!-- 
+2025:
 - [Week 1: What is Computation; first Code Sketch](https://yorku.zoom.us/rec/share/BnT_EkFxUrBnY4JqEqHr9Idgi70cfyb7Bgdgn0NfgGOyduUIXx1IkZXVVdjXisrO.pDbOR8JPhlQ4-tZL)
 - [Week 2: Paper: Reading list preparation + Coding: Rebuilding Yellowtail](https://yorku.zoom.us/rec/share/kG3MRtCzkT9iIrMz4ykj-1Wx8JX_jVBnX6om7BU3TirHZiOeGkYuSbbxIINOTRTH.pij6xVyBVvyWUbPt)
 - [Week 3: Problem Statements, Introductions](https://yorku.zoom.us/rec/share/txYlNuGEcdmQO4-rHtTCznyM-On8WjBDp556Pxx7CvYuZves_nepaQoJeL0zzUfE.UYHpW1TtKt3-yUQz)
@@ -2540,7 +1177,7 @@ Recordings of the weekly sessions will be here:
 - [Week 8: GPU programming with GLSL](https://yorku.zoom.us/rec/share/sRwZA88tsjUSIpJsCjBsAWoRKY4FEQhFms5l_rKn_uNZUig8_BLKjqAPFRkgLEAz.6Y9HztksWKYH-ozi)
 - [Week 10: GPU Programming Part II](https://yorku.zoom.us/rec/share/a-Lofly0Zgqu2N5qFo1eswhgbCTY1RiIMBLBqslon3nI3Zi_VDnFIu3piwrg099q.VCc-OPDiftZNCk95)
 
-<!-- 
+2026:
 - [Week 0 Class Recording - first patching](https://yorku.zoom.us/rec/share/ZL5_tEz7cuDZHNk585qCGx3GwyIf-ui4tt6ScNreRbT1ma-lIToigpasxu9n24I0.up3Jixd74Ti1Cb1j)
 - [Week 1 Class Recording - ramps and beat slicer](https://yorku.zoom.us/rec/share/c48SeyUAO5fOMAsi4FHKUKhfC0cuqSElXscdCOm3_45viQCBLXB_2ntBETZTwlS_.T6avFZCTHbIMSuZz)
 - [Week 2 Class Recording - more ramp processing, from ramps to LFOs, and other shapes](https://yorku.zoom.us/rec/share/FgkO9V8vK-bC27z-XJsfaLdsN4dWlLjAPzCVJFIwj404-GM60I0Nblq0rZ3OLW4h.moN-NS8z43sjb4Z4)

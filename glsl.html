@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="author" content="Graham Wakefield">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/github.css" type="text/css" />
+<style>
+img {
+	max-height: 75vh;
+}
+td { vertical-align: top;}
+header {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+
+footer {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+</style>
+</head>
+
+<body class="centremaxwidth960">
+<header><a href="index.html">Foundations of Digital Media</a></header>
+<h1 id="gpu-programming-of-shaders-with-glsl">GPU Programming of Shaders with GLSL</h1>
+<p>Why GPU programming? </p>
+<ul>
+<li>massive scale performance, far better than CPU for data parallelism -- and high frame rates/low latency!</li>
+<li>visual quality, with incredible flexibility!  </li>
+<li>an interesting constrained space in its own right</li>
+<li>Use it to process images you generate in another space (e.g. easy for us to map a web canvas into a GLSL image processor)</li>
+<li>Create custom materials for environments like Three.js, TouchDesigner, Jitter, etc. </li>
+<li>Build unique self-contained renderers and scenes entirely in the GPU</li>
+<li>VJing and Live Coding</li>
+<li>Explore cellular automata, fluid simulations, fractals, ... </li>
+<li>Not just for images -- GPGPU: generating and simulating geometries, swarms, etc. </li>
+</ul>
+<p>An example of the power of this technique: <a href="https://www.shadertoy.com/view/XsBXWt">https://www.shadertoy.com/view/XsBXWt</a>
+Notice that, apart from the cat gif, <strong>everything else in this example is from around 200 lines of code</strong>. It runs at a high frame rate, even when in full screen. This is the kind of thing that is lauded in the &quot;demoscene&quot; world. </p>
+<p>The language this is written in is GLSL. It is a way to write programs that will run directly on your GPU. GLSL can be used in the web like on ShaderToy, or in Three.js, or basically any web page in a modern browser -- even when opened on your phone or a VR headset like the Quest 3. GLSL is also used in desktop OpenGL envionments, including TouchDesigner, Max/MSP/Jitter, Ossia, Hydra, and so on.  It can also be used in Unity or Unreal, though they prefer you to use a more abstract language (HLSL) which then translates to GLSL. </p>
+<p>There are several kinds of shaders:</p>
+<ul>
+<li><strong>vertex shaders</strong> process geometry: modifying and adding data to a geometry of points. </li>
+<li><strong>fragment shaders</strong> are programs that run on fragments, which you can think of as a pixel-by-pixel basis. This is what <a href="https://www.shadertoy.com/">ShaderToy</a> is all about. </li>
+<li><strong>compute shaders</strong> are the most general, often used to adapt simulation algorithms such as particle systems, for example. See <a href="https://compute.toys/">ComputeToys</a> for some examples. </li>
+</ul>
+<p>Today we&#39;ll be looking at fragment shaders. </p>
+<p>We&#39;ll use ShaderToy for convenience; but you should now that the required code to set up a shader in a webpage is not that complex -- it can be done in around 100 lines of code. </p>
+<hr>
+<p>The fragment shader is a program that runs separately for each fragment (think of it as a pixel). The main output of the fragment shader is a pixel colour, as a <code>vec4</code> representing red, green, blue and alpha (opacity) components, between 0 and 1.  </p>
+<p>Sample code:</p>
+<pre><code class="language-glsl"><span class="hljs-type">void</span> mainImage(<span class="hljs-keyword">out</span> <span class="hljs-type">vec4</span> fragColor, <span class="hljs-keyword">in</span> <span class="hljs-type">vec2</span> fragCoord) {
+    <span class="hljs-type">vec4</span> yellow = <span class="hljs-type">vec4</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>); <span class="hljs-comment">// red, green, blue, alpha</span>
+
+    fragColor = yellow;
+}</code></pre>
+<p>For the most part, GLSL here looks a lot like C, Java, and similar procedural, typed languages.  You can think of the main function here as defining a program that runs per pixel (per fragment actually) of the output image. In this case, we set all pixels to a single color. </p>
+<p>One slightly unusual feature is the <code>out</code> keyword: a function can have arguments that you can modify. In this case, the output pixel color. </p>
+<p>The output pixel is a <code>vec4</code>, which means it has four values, for Red, Green, Blue, and Alpha (opacity).  <code>vec4</code> is a built in type in GLSL, along with <code>vec2</code> and <code>vec3</code>. </p>
+<p>There are a few slightly idisyncratic GLSL language features of vectors. You can index their components in a few different ways, including swizzling (re-ordering) them, </p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec4</span> v = <span class="hljs-type">vec4</span>(<span class="hljs-number">1</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">0.2</span>, <span class="hljs-number">0</span>);
+
+    <span class="hljs-comment">// these two are the same:</span>
+    fragColor = <span class="hljs-type">vec4</span>(v.x, v.y, v.z, v.w);    
+    fragColor = v.xyzw;
+
+    <span class="hljs-comment">// these two are the same:</span>
+    fragColor = <span class="hljs-type">vec4</span>(v.w, v.z, v.y, v.x);
+    fragColor = v.wxyz; 
+
+    <span class="hljs-comment">// these two are the same:</span>
+    fragColor = <span class="hljs-type">vec4</span>(v.x, v.x, v.x, v.x);    
+    fragColor = v.xxxx; 
+
+    <span class="hljs-comment">// .r .g .b .a == .x .y .z .w </span>
+    <span class="hljs-comment">// these two are the same:</span>
+    fragColor = v.xxxx; 
+    fragColor = v.rrrr;  
+
+    <span class="hljs-comment">// compound a vec4 from vec3&#x27;s, vec2&#x27;s, and floats:</span>
+    <span class="hljs-comment">// these two are the same:</span>
+    fragColor = <span class="hljs-type">vec4</span>(v.xy, v.z, <span class="hljs-number">1</span>);
+    fragColor = <span class="hljs-type">vec4</span>(v.rgb, <span class="hljs-number">1</span>);
+
+    <span class="hljs-comment">// we can also create a vec4 from a single float like this:</span>
+    <span class="hljs-comment">// these two are the same:</span>
+    fragColor = <span class="hljs-type">vec4</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>);
+    fragColor = <span class="hljs-type">vec4</span>(<span class="hljs-number">1</span>);</code></pre>
+<p>The <code>vec2 fragCoord</code> argument is the pixel location in integer pixel numbers, starting at the bottom-left.  To turn that into a <em>normalized</em> coordinate, that goes from <code>vec2(0.0, 0.0)</code> at the bottom left, to <code>vec2(1.0, 1.0)</code> at the top right, we can divide by the image resolution.  Shadertoy gives us the image resolution in the variable <code>iResolution.xy</code>.</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// Normalized pixel coordinates (from 0 to 1)</span>
+    <span class="hljs-type">vec2</span> uv = fragCoord/iResolution.xy;
+
+    <span class="hljs-comment">// visualize X coordinate in red, Y coordinate in green:</span>
+    fragColor = <span class="hljs-type">vec4</span>(uv, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>);</code></pre>
+<p>If we wanted a <em>signed normalized</em> coordinate, from -1 to +1, with 0,0 in the image center, we can do this:</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// signed normalized pixel coordinates (from -1 to 1)</span>
+    <span class="hljs-type">vec2</span> suv = uv*<span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>;
+
+    <span class="hljs-comment">// to take into account aspect ratio:</span>
+    suv.x *= iResolution.x / iResolution.y;</code></pre>
+<p>So now we can use the normalized coordinate to make a pattern over space. Essentially here we are defining a field function, that maps a <code>vec2</code> position into a <code>vec4</code> color. </p>
+<p>For example, here&#39;s a repeating sinusoidal surface:</p>
+<pre><code class="language-glsl">    <span class="hljs-keyword">const</span> <span class="hljs-type">float</span> PI = <span class="hljs-number">3.141592653589793</span>;
+    <span class="hljs-type">vec2</span> grid = <span class="hljs-built_in">cos</span>(<span class="hljs-number">10.0</span> * PI * suv);
+    fragColor = <span class="hljs-type">vec4</span>(grid, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>);</code></pre>
+<p>Notice how the <code>cos</code> function is quite happy to accept a <code>vec2</code> and produce a <code>vec2</code> result. This is true for most math functions in GLSL. </p>
+<p>Or we consider the pixel&#39;s distance from the center:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> centre = <span class="hljs-type">vec2</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-type">float</span> dist = <span class="hljs-built_in">distance</span>(suv, centre);  
+    <span class="hljs-comment">// equivalent: length(suv - centre);</span>
+    fragColor = <span class="hljs-type">vec4</span>(dist); </code></pre>
+<p>To draw a point, a common approach here is to use an exponential decay of distance via <code>exp(-sharpness * dist)</code>:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">float</span> sharpness = <span class="hljs-number">50.0</span>;
+    <span class="hljs-type">float</span> spot = <span class="hljs-built_in">exp</span>(-sharpness * dist);
+    fragColor = <span class="hljs-type">vec4</span>(spot);</code></pre>
+<p>What we are doing is drawing a rapid falloff on the distance from a point.  </p>
+<p>We can also turn this into a distance-from-circle, simply by subtracting the circle&#39;s radius from the distance.  </p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> centre = <span class="hljs-type">vec2</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-type">float</span> radius = <span class="hljs-number">0.2</span>;
+    <span class="hljs-type">float</span> dist = <span class="hljs-built_in">distance</span>(suv, centre) - radius;
+
+    <span class="hljs-type">float</span> sharpness = <span class="hljs-number">50.0</span>;
+    <span class="hljs-type">float</span> spot = <span class="hljs-built_in">exp</span>(-sharpness * dist);
+
+    fragColor = <span class="hljs-type">vec4</span>(spot);</code></pre>
+<p>Or to draw several, we can use a modulo operation to divide up the space:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> pos = <span class="hljs-built_in">mod</span>(uv * <span class="hljs-number">5.0</span>, <span class="hljs-number">1.0</span>);
+    <span class="hljs-type">float</span> dist = <span class="hljs-built_in">length</span>(pos - <span class="hljs-number">0.5</span>);
+    <span class="hljs-type">float</span> smoothResult = <span class="hljs-built_in">smoothstep</span>(<span class="hljs-number">0.5</span>, <span class="hljs-number">0.46</span>, dist);
+    fragColor = <span class="hljs-type">vec4</span>(pos.xy, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>) * smoothResult;</code></pre>
+<p>It&#39;s a squashed looking circle because we are working in normalized coordinates, and the canvas is not square. We could instead do this in pixel coordinates:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> centre = <span class="hljs-type">vec2</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
+    <span class="hljs-type">float</span> radius = <span class="hljs-number">100.0</span>;
+    <span class="hljs-type">float</span> dist = <span class="hljs-built_in">distance</span>(fragCoord, centre) - radius;
+
+    <span class="hljs-type">float</span> sharpness = <span class="hljs-number">50.0</span>;
+    <span class="hljs-type">float</span> spot = <span class="hljs-built_in">exp</span>(-sharpness * dist);
+
+    fragColor = <span class="hljs-type">vec4</span>(spot);</code></pre>
+<p>Or we could adjust for aspect ratio:</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// to take into account aspect ratio:</span>
+    suv.x *= iResolution.x / iResolution.y;</code></pre>
+<p>Notice how odd this is: we are drawing shapes (points, circles) not by geometry, but by specifying a function of a field.  We didn&#39;t trace a line, we didn&#39;t do any geometry really, we just defined a function of space that maps a 2D position into a color, using only the principle of <em>signed distance</em>. This method of drawing by &#39;distance function&#39; can be surprisingly powerful, and we&#39;ll return to it later.  </p>
+<p>We used the <code>iResolution</code> uniform before to get the canvas size. (The &quot;Uniform&quot; terminology here really means an input parameter to the shader. It is &quot;uniform&quot; because the parameter has the same value for all pixels.) Shadertoy also gives us a few more uniforms to play with:</p>
+<pre><code class="language-glsl"><span class="hljs-keyword">uniform</span> <span class="hljs-type">vec3</span>      iResolution;           <span class="hljs-comment">// viewport resolution (in pixels)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iTime;                 <span class="hljs-comment">// shader playback time (in seconds)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iTimeDelta;            <span class="hljs-comment">// render time (in seconds)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iFrameRate;            <span class="hljs-comment">// shader frame rate</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">int</span>       iFrame;                <span class="hljs-comment">// shader playback frame</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span>     iChannelTime[<span class="hljs-number">4</span>];       <span class="hljs-comment">// channel playback time (in seconds)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec3</span>      iChannelResolution[<span class="hljs-number">4</span>]; <span class="hljs-comment">// channel resolution (in pixels)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec4</span>      iMouse;                <span class="hljs-comment">// mouse pixel coords. xy: current (if MLB down), zw: click</span>
+<span class="hljs-keyword">uniform</span> samplerXX iChannel0.<span class="hljs-number">.3</span>;          <span class="hljs-comment">// input channel. XX = 2D/Cube</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec4</span>      iDate;                 <span class="hljs-comment">// (year, month, day, time in seconds)</span></code></pre>
+<p>So for example, we can use iMouse.xy to move the circle, and iTime to change its size:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> centre = iMouse.xy;
+    <span class="hljs-type">float</span> radius = <span class="hljs-number">100.</span> * <span class="hljs-built_in">abs</span>(<span class="hljs-built_in">sin</span>(iTime));</code></pre>
+<p>There&#39;s a lot you can do with math to procedurally generate images as functions of space (and time). Here&#39;s a more colourful example of a field varying in time:</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// Normalized pixel coordinates (from 0 to 1)</span>
+    <span class="hljs-type">vec2</span> uv = fragCoord/iResolution.xy;
+
+    <span class="hljs-comment">// Time varying pixel color</span>
+    <span class="hljs-type">vec3</span> col = <span class="hljs-number">0.5</span> + <span class="hljs-number">0.5</span>*<span class="hljs-built_in">cos</span>(iTime + uv.xyx+<span class="hljs-type">vec3</span>(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>));
+
+    <span class="hljs-comment">// Output to screen</span>
+    fragColor = <span class="hljs-type">vec4</span>(col, <span class="hljs-number">1.0</span>);</code></pre>
+<p>One thing GLSL doesn&#39;t provide is a noise or random number generator. Some people have worked around this by finding mathematical functions that are pseudo-random -- noisy enough and cheap enough for many simple use cases. </p>
+<p>This is generic library code -- you can put this directly into the top of your shader, or in Shadertoy you can click the + to add a &quot;Common&quot; tab, in which you can place library code like this that will be visible to all shaders.</p>
+<pre><code class="language-glsl"><span class="hljs-meta">#define RANDOM_SCALE vec4(.1031, .1030, .0973, .1099)</span>
+
+<span class="hljs-type">vec2</span> random2(<span class="hljs-type">float</span> p) {
+    <span class="hljs-type">vec3</span> p3 = <span class="hljs-built_in">fract</span>(<span class="hljs-type">vec3</span>(p) * RANDOM_SCALE.xyz);
+    p3 += <span class="hljs-built_in">dot</span>(p3, p3.yzx + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p3.xx + p3.yz) * p3.zy);
+}
+
+<span class="hljs-type">vec2</span> random2(<span class="hljs-type">vec2</span> p) {
+    <span class="hljs-type">vec3</span> p3 = <span class="hljs-built_in">fract</span>(p.xyx * RANDOM_SCALE.xyz);
+    p3 += <span class="hljs-built_in">dot</span>(p3, p3.yzx + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p3.xx + p3.yz) * p3.zy);
+}
+
+<span class="hljs-type">vec2</span> random2(<span class="hljs-type">vec3</span> p3) {
+    p3 = <span class="hljs-built_in">fract</span>(p3 * RANDOM_SCALE.xyz);
+    p3 += <span class="hljs-built_in">dot</span>(p3, p3.yzx + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p3.xx + p3.yz) * p3.zy);
+}
+
+<span class="hljs-type">vec3</span> random3(<span class="hljs-type">float</span> p) {
+    <span class="hljs-type">vec3</span> p3 = <span class="hljs-built_in">fract</span>(<span class="hljs-type">vec3</span>(p) * RANDOM_SCALE.xyz);
+    p3 += <span class="hljs-built_in">dot</span>(p3, p3.yzx + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p3.xxy + p3.yzz) * p3.zyx); 
+}
+
+<span class="hljs-type">vec3</span> random3(<span class="hljs-type">vec2</span> p) {
+    <span class="hljs-type">vec3</span> p3 = <span class="hljs-built_in">fract</span>(<span class="hljs-type">vec3</span>(p.xyx) * RANDOM_SCALE.xyz);
+    p3 += <span class="hljs-built_in">dot</span>(p3, p3.yxz + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p3.xxy + p3.yzz) * p3.zyx);
+}
+
+<span class="hljs-type">vec3</span> random3(<span class="hljs-type">vec3</span> p) {
+    p = <span class="hljs-built_in">fract</span>(p * RANDOM_SCALE.xyz);
+    p += <span class="hljs-built_in">dot</span>(p, p.yxz + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p.xxy + p.yzz) * p.zyx);
+}
+
+<span class="hljs-type">vec4</span> random4(<span class="hljs-type">float</span> p) {
+    <span class="hljs-type">vec4</span> p4 = <span class="hljs-built_in">fract</span>(p * RANDOM_SCALE);
+    p4 += <span class="hljs-built_in">dot</span>(p4, p4.wzxy + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p4.xxyz + p4.yzzw) * p4.zywx);   
+}
+
+<span class="hljs-type">vec4</span> random4(<span class="hljs-type">vec2</span> p) {
+    <span class="hljs-type">vec4</span> p4 = <span class="hljs-built_in">fract</span>(p.xyxy * RANDOM_SCALE);
+    p4 += <span class="hljs-built_in">dot</span>(p4, p4.wzxy + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p4.xxyz + p4.yzzw) * p4.zywx);
+}
+
+<span class="hljs-type">vec4</span> random4(<span class="hljs-type">vec3</span> p) {
+    <span class="hljs-type">vec4</span> p4 = <span class="hljs-built_in">fract</span>(p.xyzx * RANDOM_SCALE);
+    p4 += <span class="hljs-built_in">dot</span>(p4, p4.wzxy + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p4.xxyz + p4.yzzw) * p4.zywx);
+}
+
+<span class="hljs-type">vec4</span> random4(<span class="hljs-type">vec4</span> p4) {
+    p4 = <span class="hljs-built_in">fract</span>(p4  * RANDOM_SCALE);
+    p4 += <span class="hljs-built_in">dot</span>(p4, p4.wzxy + <span class="hljs-number">19.19</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fract</span>((p4.xxyz + p4.yzzw) * p4.zywx);
+}</code></pre>
+<p>Try out a quick example: </p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec4</span> noise = random4(<span class="hljs-type">vec3</span>(fragCoord.xy, iTime));
+    fragColor = <span class="hljs-type">vec4</span>(noise);</code></pre>
+<p>Note that this is not a very good pseudo-random generator, and sometimes you will see patterns. Better generators are more expensive. Here is a good example: <a href="https://www.shadertoy.com/view/ftsfDf">https://www.shadertoy.com/view/ftsfDf</a>  </p>
+<p>We can also pull in external images into a shader to process them, including videos, webcam streams, and so on.  Click on the <code>iChannel0</code> box under the editor and choose an image or stream to use.  We can then access this using the <code>texture</code> function:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec4</span> image = <span class="hljs-built_in">texture</span>(iChannel0, uv);
+
+    fragColor = image;</code></pre>
+<p>So now we can do all kinds of math on that image for classic webcam effects:</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// invert</span>
+    fragColor = <span class="hljs-number">1.</span>-image;
+    <span class="hljs-comment">// recolor:</span>
+    fragColor = image.gbra;
+    <span class="hljs-comment">// a kind of saturation:</span>
+    fragColor = <span class="hljs-built_in">smoothstep</span>(<span class="hljs-number">0.</span>, <span class="hljs-number">1.</span>, image);
+    <span class="hljs-comment">// a kind of saturation:</span>
+    fragColor = <span class="hljs-built_in">smoothstep</span>(<span class="hljs-number">0.4</span>, <span class="hljs-number">0.6</span>, image);
+    <span class="hljs-comment">// simple greyscale:</span>
+    fragColor = image.ggga;
+    <span class="hljs-comment">// threshold:</span>
+    fragColor = <span class="hljs-built_in">smoothstep</span>(<span class="hljs-number">0.4</span>, <span class="hljs-number">0.41</span>, image.ggga); 
+    <span class="hljs-comment">// brightness:</span>
+    fragColor = <span class="hljs-built_in">pow</span>(image, <span class="hljs-type">vec4</span>(<span class="hljs-built_in">sin</span>(iTime)+<span class="hljs-number">1.5</span>));</code></pre>
+<p>Some more library code for common image manipulations: </p>
+<pre><code class="language-glsl"><span class="hljs-type">vec3</span> desaturate(<span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> v, <span class="hljs-keyword">in</span> <span class="hljs-type">float</span> a ) {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">mix</span>(v, <span class="hljs-type">vec3</span>(<span class="hljs-built_in">dot</span>(<span class="hljs-type">vec3</span>(<span class="hljs-number">.3</span>, <span class="hljs-number">.59</span>, <span class="hljs-number">.11</span>), v)), a);
+}
+<span class="hljs-type">vec4</span> desaturate(<span class="hljs-keyword">in</span> <span class="hljs-type">vec4</span> v, <span class="hljs-keyword">in</span> <span class="hljs-type">float</span> a ) { <span class="hljs-keyword">return</span> <span class="hljs-type">vec4</span>(desaturate(v.rgb, a), v.a); }
+
+<span class="hljs-type">float</span> brightnessContrast( <span class="hljs-type">float</span> v, <span class="hljs-type">float</span> b, <span class="hljs-type">float</span> c ) { <span class="hljs-keyword">return</span> ( v - <span class="hljs-number">0.5</span> ) * c + <span class="hljs-number">0.5</span> + b; }
+<span class="hljs-type">vec3</span> brightnessContrast( <span class="hljs-type">vec3</span> v, <span class="hljs-type">float</span> b, <span class="hljs-type">float</span> c ) { <span class="hljs-keyword">return</span> ( v - <span class="hljs-number">0.5</span> ) * c + <span class="hljs-number">0.5</span> + b; }
+<span class="hljs-type">vec4</span> brightnessContrast( <span class="hljs-type">vec4</span> v, <span class="hljs-type">float</span> b, <span class="hljs-type">float</span> c ) { <span class="hljs-keyword">return</span> <span class="hljs-type">vec4</span>(( v.rgb - <span class="hljs-number">0.5</span> ) * c + <span class="hljs-number">0.5</span> + b, v.a); }
+
+<span class="hljs-type">float</span> rgb2luma(<span class="hljs-keyword">const</span> <span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> rgb) { <span class="hljs-keyword">return</span> <span class="hljs-built_in">dot</span>(rgb, <span class="hljs-type">vec3</span>(<span class="hljs-number">0.2126</span>, <span class="hljs-number">0.7152</span>, <span class="hljs-number">0.0722</span>)); }
+<span class="hljs-type">float</span> rgb2luma(<span class="hljs-keyword">const</span> <span class="hljs-keyword">in</span> <span class="hljs-type">vec4</span> rgb) { <span class="hljs-keyword">return</span> rgb2luma(rgb.rgb); }
+
+<span class="hljs-type">vec3</span> hue2rgb(<span class="hljs-keyword">const</span> <span class="hljs-keyword">in</span> <span class="hljs-type">float</span> hue) {
+    <span class="hljs-type">float</span> R = <span class="hljs-built_in">abs</span>(hue * <span class="hljs-number">6.0</span> - <span class="hljs-number">3.0</span>) - <span class="hljs-number">1.0</span>;
+    <span class="hljs-type">float</span> G = <span class="hljs-number">2.0</span> - <span class="hljs-built_in">abs</span>(hue * <span class="hljs-number">6.0</span> - <span class="hljs-number">2.0</span>);
+    <span class="hljs-type">float</span> B = <span class="hljs-number">2.0</span> - <span class="hljs-built_in">abs</span>(hue * <span class="hljs-number">6.0</span> - <span class="hljs-number">4.0</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">clamp</span>(<span class="hljs-type">vec3</span>(R,G,B), <span class="hljs-number">0.</span>, <span class="hljs-number">1.</span>);
+}
+
+<span class="hljs-type">vec3</span> hsv2rgb(<span class="hljs-keyword">const</span> <span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> hsv) { <span class="hljs-keyword">return</span> ((hue2rgb(hsv.x) - <span class="hljs-number">1.0</span>) * hsv.y + <span class="hljs-number">1.0</span>) * hsv.z; }
+<span class="hljs-type">vec4</span> hsv2rgb(<span class="hljs-keyword">const</span> <span class="hljs-keyword">in</span> <span class="hljs-type">vec4</span> hsv) { <span class="hljs-keyword">return</span> <span class="hljs-type">vec4</span>(hsv2rgb(hsv.rgb), hsv.a); }
+
+<span class="hljs-type">vec3</span> rgb2hsv(<span class="hljs-keyword">const</span> <span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> c) {
+    <span class="hljs-type">vec4</span> K = <span class="hljs-type">vec4</span>(<span class="hljs-number">0.</span>, <span class="hljs-number">-0.33333333333333333333</span>, <span class="hljs-number">0.6666666666666666666</span>, <span class="hljs-number">-1.0</span>);
+    <span class="hljs-type">vec4</span> p = c.g &lt; c.b ? <span class="hljs-type">vec4</span>(c.bg, K.wz) : <span class="hljs-type">vec4</span>(c.gb, K.xy);
+    <span class="hljs-type">vec4</span> q = c.r &lt; p.x ? <span class="hljs-type">vec4</span>(p.xyw, c.r) : <span class="hljs-type">vec4</span>(c.r, p.yzx);
+    <span class="hljs-type">float</span> d = q.x - <span class="hljs-built_in">min</span>(q.w, q.y);
+    <span class="hljs-keyword">return</span> <span class="hljs-type">vec3</span>(<span class="hljs-built_in">abs</span>(q.z + (q.w - q.y) / (<span class="hljs-number">6.</span> * d + <span class="hljs-number">1e-10</span>)), 
+                d / (q.x + <span class="hljs-number">1e-10</span>), 
+                q.x);
+}
+<span class="hljs-type">vec4</span> rgb2hsv(<span class="hljs-keyword">const</span> <span class="hljs-keyword">in</span> <span class="hljs-type">vec4</span> c) { <span class="hljs-keyword">return</span> <span class="hljs-type">vec4</span>(rgb2hsv(c.rgb), c.a); }</code></pre>
+<p>(see more at <a href="https://github.com/patriciogonzalezvivo/lygia">https://github.com/patriciogonzalezvivo/lygia</a> -- for example, pretty much all the photoshop layer modes are at <a href="https://github.com/patriciogonzalezvivo/lygia/blob/main/color/layer.glsl">https://github.com/patriciogonzalezvivo/lygia/blob/main/color/layer.glsl</a>)</p>
+<p>Obviously, some of these image effects can also use the coordinate to transform them, to create for example vignette effects. </p>
+<pre><code class="language-glsl">    fragColor *= <span class="hljs-built_in">exp</span>(-<span class="hljs-built_in">length</span>(suv));</code></pre>
+<p>The <code>texture</code> function needs the specific &quot;sampler&quot; input to sample from (in this case, <code>iChannel0</code> which Shadertoy provides), as well as a vec2 normalized coordinate for where in the image to sample it. That means of course, we can sample from different places, not only the current location! </p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> coord = <span class="hljs-number">0.5</span> + (suv)*<span class="hljs-built_in">sin</span>(iTime);
+    <span class="hljs-comment">//vec2 coord = 0.5 + (suv)*exp(-length(suv));</span>
+    <span class="hljs-comment">//vec2 coord = 0.5 + (suv)*exp(sin(iTime)*length(suv));</span>
+    <span class="hljs-comment">//vec2 coord = 0.5 + 0.5*mix(suv, suv*sin(iTime), 1.-length(suv));</span>
+    <span class="hljs-comment">//vec2 coord = uv + 0.1*(noise.xy-0.5)*length(suv);  // a little noise can be a bit like a blur</span>
+    <span class="hljs-type">vec4</span> image = <span class="hljs-built_in">texture</span>(iChannel0, coord);</code></pre>
+<p>This can get pretty complex: <a href="https://www.shadertoy.com/view/">https://www.shadertoy.com/view/</a></p>
+<p>We can also use this to do things like comparing or blending nearest pixels. This is a common type of image effect that includes blur, sharpen, erode, edge highlight, etc.  These are called <a href="https://en.wikipedia.org/wiki/Kernel_(image_processing)">convolution filters</a>. Convolution simply means multiplying several pairs of terms together and summing the results. In image processing, this is usually means multiplying a square (or rectangular) region of an image with a &quot;kernel&quot; matrix. </p>
+<p>First, we define a kernel for the relative weights of the neighboring pixels. Then we loop over these pixels, sampling the image at each point, and multiplying it with the corresponding kernel weight, summing up the results. </p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// some example kernels:</span>
+
+    <span class="hljs-type">mat3</span> identity = <span class="hljs-type">mat3</span>(
+        <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+    );
+
+    <span class="hljs-type">mat3</span> edge0 = <span class="hljs-type">mat3</span>(
+         <span class="hljs-number">1</span>,  <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>,
+         <span class="hljs-number">0</span>,  <span class="hljs-number">0</span>,  <span class="hljs-number">0</span>,
+        <span class="hljs-number">-1</span>,  <span class="hljs-number">0</span>,  <span class="hljs-number">1</span>,
+    );
+
+    <span class="hljs-type">mat3</span> edge1 = <span class="hljs-type">mat3</span>(
+         <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>,  <span class="hljs-number">0</span>,
+        <span class="hljs-number">-1</span>,  <span class="hljs-number">4</span>, <span class="hljs-number">-1</span>,
+         <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>,  <span class="hljs-number">0</span>
+    );
+
+    <span class="hljs-type">mat3</span> edge2 = <span class="hljs-type">mat3</span>(
+        <span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>,
+        <span class="hljs-number">-1</span>,  <span class="hljs-number">8</span>, <span class="hljs-number">-1</span>,
+        <span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>
+    );
+    <span class="hljs-type">mat3</span> sharpen = <span class="hljs-type">mat3</span>(
+         <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>,  <span class="hljs-number">0</span>,
+        <span class="hljs-number">-1</span>,  <span class="hljs-number">5</span>, <span class="hljs-number">-1</span>,
+         <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>,  <span class="hljs-number">0</span>
+    );
+
+    <span class="hljs-type">mat3</span> emboss = <span class="hljs-type">mat3</span>(
+        <span class="hljs-number">-2</span>, <span class="hljs-number">-1</span>,  <span class="hljs-number">0</span>, 
+        <span class="hljs-number">-1</span>,  <span class="hljs-number">1</span>,  <span class="hljs-number">1</span>, 
+         <span class="hljs-number">0</span>,  <span class="hljs-number">1</span>,  <span class="hljs-number">2</span>
+    );
+
+    <span class="hljs-type">mat3</span> boxBlur = <span class="hljs-type">mat3</span>(
+        <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>,
+        <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>,
+        <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>
+    ) * <span class="hljs-number">1.0</span>/<span class="hljs-number">9.0</span>;
+
+    <span class="hljs-type">mat3</span> gaussBlur = <span class="hljs-type">mat3</span>(
+        <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>,
+        <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>,
+        <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>
+    ) * <span class="hljs-number">1.0</span>/<span class="hljs-number">16.0</span>;
+
+    kernel = identity;
+
+    <span class="hljs-type">vec2</span> oneTexel = <span class="hljs-number">1.</span>/iResolution.xy;
+
+    <span class="hljs-comment">// loop over a 3x3 region, summing results:</span>
+    <span class="hljs-type">vec4</span> sum = <span class="hljs-type">vec4</span>(<span class="hljs-number">0.0</span>);
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">-1</span>; i &lt;= <span class="hljs-number">1</span>; i++) {
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">-1</span>; j &lt;= <span class="hljs-number">1</span>; j++) {
+            <span class="hljs-comment">// get the texture coordinate offset for this texel:</span>
+            <span class="hljs-type">vec2</span> <span class="hljs-keyword">offset</span> = <span class="hljs-type">vec2</span>(<span class="hljs-type">float</span>(i), <span class="hljs-type">float</span>(j)) * oneTexel;
+            <span class="hljs-comment">// get the image at this texel:</span>
+            <span class="hljs-type">vec4</span> pixelColor = <span class="hljs-built_in">texture</span>(iChannel0, uv + <span class="hljs-keyword">offset</span>);
+            <span class="hljs-comment">// Apply kernel weight and sum:</span>
+            sum += pixelColor * kernel[i+<span class="hljs-number">1</span>][j+<span class="hljs-number">1</span>]; 
+        }
+    }
+
+    fragColor = sum;</code></pre>
+<p>There are some other spatial image processes that are similar to convolution, but not using summation (so they are not strictly convolution), which you could explore:</p>
+<ul>
+<li>Erode searches surrounding pixels looking for minimum values</li>
+<li>Dilate searches surrounding pixels looking for maximum values</li>
+<li>Frosted Glass can blend together several local pixels in a non-standard pattern</li>
+</ul>
+<hr>
+<p>We can also use mat objects to perform spatial transformations of the image. Here&#39;s a rotation matrix:</p>
+<pre><code class="language-glsl"><span class="hljs-type">mat2</span> rotateMat2(<span class="hljs-type">float</span> angle) {
+    <span class="hljs-type">float</span> c = <span class="hljs-built_in">cos</span>(angle);
+    <span class="hljs-type">float</span> s = <span class="hljs-built_in">sin</span>(angle);
+    <span class="hljs-keyword">return</span> <span class="hljs-type">mat2</span>(
+        c,  s,
+        -s,  c
+    );
+}</code></pre>
+<p>If we apply this to our <code>uv</code> coordinate, we can rotate the image:</p>
+<pre><code class="language-glsl">    uv = rotate(iTime) * uv;</code></pre>
+<p>We can also scale using a mat2:</p>
+<pre><code class="language-glsl"><span class="hljs-type">mat2</span> scaleMat2(<span class="hljs-type">float</span> s) {
+    <span class="hljs-keyword">return</span> <span class="hljs-type">mat2</span>(
+        s,  <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>,  s
+    );
+}</code></pre>
+<p>If we wanted to <em>translate</em> however, we need to use <code>mat3</code>.  The idea is simple: we assume that there is a 3rd coordinate to the input vector, equvalent to <code>uv3 = vec3(uv, 1)</code>, so that we can then multiply this with the <code>mat3</code>.  Then our transforms look like this:</p>
+<pre><code class="language-glsl"><span class="hljs-type">mat3</span> translateMat3(<span class="hljs-type">float</span> x, <span class="hljs-type">float</span> y) {
+    <span class="hljs-keyword">return</span> <span class="hljs-type">mat3</span>(
+        <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,        <span class="hljs-comment">// First column (accessed as m[0])</span>
+        <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,        <span class="hljs-comment">// Second column (accessed as m[1])</span>
+        x, y, <span class="hljs-number">1</span>         <span class="hljs-comment">// Third column (accessed as m[2])</span>
+  );
+}
+
+<span class="hljs-type">mat3</span> rotateMat3(<span class="hljs-type">float</span> angle) {
+    <span class="hljs-type">float</span> c = <span class="hljs-built_in">cos</span>(angle);
+    <span class="hljs-type">float</span> s = <span class="hljs-built_in">sin</span>(angle);
+    <span class="hljs-keyword">return</span> <span class="hljs-type">mat3</span>(
+        c,  s, <span class="hljs-number">0</span>,
+        -s, c, <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>,  <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
+    );
+}
+
+<span class="hljs-type">mat3</span> scaleMat3(<span class="hljs-type">float</span> s) {
+    <span class="hljs-keyword">return</span> <span class="hljs-type">mat2</span>(
+        s, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>, s, <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
+    );
+}</code></pre>
+<p>With these we can create quite complex transformations:</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// convert to a vec3:</span>
+    uv3 = <span class="hljs-type">vec3</span>(uv, <span class="hljs-number">1.</span>);
+    <span class="hljs-comment">// apply several transformations:</span>
+    uv3 = translateMat3(<span class="hljs-number">-0.5</span>) * scaleMat3(<span class="hljs-built_in">sin</span>(iTime)) * rotateMat3(iTime) * translateMat3(<span class="hljs-number">0.5</span>) * uv3;
+    <span class="hljs-comment">// convert back to vec2:</span>
+    uv = uv3.xy;</code></pre>
+<p>So far we are processing the image over value (color), and over space. But we can also process it over time.  To do that, we need to set up a feedback loop. </p>
+<p>For example, what if we wanted to apply a feedback blur that is also creating spiral trails?</p>
+<p>In shadertoy we can do this by adding a &quot;Buffer&quot; stage. Again, use the <strong>+</strong> button, and select &quot;Buffer A&quot;.  Now in the Buffer A tab, let&#39;s set up <strong>iChannel0</strong> input to also be &quot;Buffer A&quot;, so that it can read its own previous frame. </p>
+<p>In the Image tab, which defines what we actually see, let&#39;s also set up <strong>iChannel0</strong> input to also be &quot;Buffer A&quot;, and display it:</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// in Image tab, show the Buffer A content from iChannel0</span>
+    <span class="hljs-type">vec2</span> uv = fragCoord/iResolution.xy;
+    fragColor = <span class="hljs-built_in">texture</span>(iChannel0, uv);</code></pre>
+<p>Back in the Buffer A tab, first let&#39;s set it up to display its own last frame:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> uv = fragCoord/iResolution.xy;
+    fragColor = <span class="hljs-built_in">texture</span>(iChannel0, uv);</code></pre>
+<p>Now we can add something to this to see the feedback:</p>
+<pre><code class="language-glsl">
+    <span class="hljs-type">vec4</span> noise = random4(<span class="hljs-type">vec3</span>(fragCoord.xy, iTime));
+    <span class="hljs-comment">// add a white dot if the noise function is &gt;= 0.999:</span>
+    fragColor = fragColor + <span class="hljs-type">vec4</span>(<span class="hljs-built_in">step</span>(<span class="hljs-number">0.999</span>, noise.x));</code></pre>
+<p>This will gradually fill up the image. We can also let the image decay:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec4</span> noise = random4(<span class="hljs-type">vec3</span>(fragCoord.xy, iTime));
+    <span class="hljs-type">float</span> decay = <span class="hljs-number">0.99</span>;
+    fragColor = fragColor*decay + <span class="hljs-type">vec4</span>(<span class="hljs-built_in">step</span>(<span class="hljs-number">0.999</span>, noise.x));</code></pre>
+<p>And for something more intersting, intead of feeding back the same pixel, we could read from the pixel above it:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> uv = fragCoord/iResolution.xy;
+    fragColor = <span class="hljs-built_in">texture</span>(iChannel0, uv + <span class="hljs-type">vec2</span>(<span class="hljs-number">0.</span>, <span class="hljs-number">0.01</span>));</code></pre>
+<p>Another common pattern here is to set up an initialization on the first frame, by using <code>iFrame == 0</code>, and the Rewind button on the shader view to reset this to zero:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec2</span> uv = fragCoord/iResolution.xy;
+    fragColor = <span class="hljs-built_in">texture</span>(iChannel0, uv + <span class="hljs-type">vec2</span>(<span class="hljs-number">0.</span>, <span class="hljs-number">0.01</span>));
+
+    <span class="hljs-type">vec4</span> noise = random4(<span class="hljs-type">vec3</span>(fragCoord.xy, iTime));
+
+    <span class="hljs-comment">// initialize:</span>
+    <span class="hljs-keyword">if</span> (iFrame == <span class="hljs-number">0</span>) {
+        fragColor = noise;
+    }</code></pre>
+<p>Notice it blurring over time? That&#39;s because we are using linear interpolation on the iChannel0 settings. Change the filter to &quot;nearest&quot; and it will not blur. </p>
+<p>Try doing some spatial transforms on the image in a feedback loop!</p>
+<hr>
+<p>Feedback is also essential for making simulations of complex systems. </p>
+<p>We now have enough to write a cellular automaton, such as the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a>:</p>
+<pre><code class="language-glsl"><span class="hljs-type">void</span> mainImage( <span class="hljs-keyword">out</span> <span class="hljs-type">vec4</span> fragColor, <span class="hljs-keyword">in</span> <span class="hljs-type">vec2</span> fragCoord )
+{
+    <span class="hljs-comment">// get self state</span>
+    <span class="hljs-type">vec4</span> C  = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>( <span class="hljs-number">0</span>, <span class="hljs-number">0</span>))/iResolution.xy);
+    <span class="hljs-comment">// am I alive?</span>
+    <span class="hljs-type">int</span> alive = <span class="hljs-type">int</span>(C.x &gt; <span class="hljs-number">0.5</span>);
+
+    <span class="hljs-comment">// get state of all neighbour pixels:</span>
+    <span class="hljs-type">vec4</span> E  = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>( <span class="hljs-number">1</span>, <span class="hljs-number">0</span>))/iResolution.xy);
+    <span class="hljs-type">vec4</span> W  = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>(<span class="hljs-number">-1</span>, <span class="hljs-number">0</span>))/iResolution.xy);
+    <span class="hljs-type">vec4</span> N  = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>( <span class="hljs-number">0</span>, <span class="hljs-number">1</span>))/iResolution.xy);
+    <span class="hljs-type">vec4</span> NE = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>( <span class="hljs-number">1</span>, <span class="hljs-number">1</span>))/iResolution.xy);
+    <span class="hljs-type">vec4</span> NW = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>(<span class="hljs-number">-1</span>, <span class="hljs-number">1</span>))/iResolution.xy);
+    <span class="hljs-type">vec4</span> S  = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>( <span class="hljs-number">0</span>,<span class="hljs-number">-1</span>))/iResolution.xy);
+    <span class="hljs-type">vec4</span> SE = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>( <span class="hljs-number">1</span>,<span class="hljs-number">-1</span>))/iResolution.xy);
+    <span class="hljs-type">vec4</span> SW = <span class="hljs-built_in">texture</span>(iChannel0, (fragCoord+<span class="hljs-type">vec2</span>(<span class="hljs-number">-1</span>,<span class="hljs-number">-1</span>))/iResolution.xy);
+    <span class="hljs-comment">// count number of living neighbours:</span>
+    <span class="hljs-type">int</span> neighbours = <span class="hljs-type">int</span>(E.x &gt; <span class="hljs-number">0.5</span>) + <span class="hljs-type">int</span>(W.x &gt; <span class="hljs-number">0.5</span>) 
+                   + <span class="hljs-type">int</span>(NE.x &gt; <span class="hljs-number">0.5</span>) + <span class="hljs-type">int</span>(NW.x &gt; <span class="hljs-number">0.5</span>) 
+                   + <span class="hljs-type">int</span>(SE.x &gt; <span class="hljs-number">0.5</span>) + <span class="hljs-type">int</span>(SW.x &gt; <span class="hljs-number">0.5</span>) 
+                   + <span class="hljs-type">int</span>(N.x &gt; <span class="hljs-number">0.5</span>) + <span class="hljs-type">int</span>(S.x &gt; <span class="hljs-number">0.5</span>);
+
+    <span class="hljs-comment">// should I live on?</span>
+    <span class="hljs-type">int</span> liveon = alive; 
+    <span class="hljs-comment">// the rules (see https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)</span>
+    <span class="hljs-keyword">if</span> (alive == <span class="hljs-number">1</span>) {
+        <span class="hljs-comment">// die by loneliness or overcrowding:</span>
+        <span class="hljs-keyword">if</span> (neighbours &lt; <span class="hljs-number">2</span> || neighbours &gt; <span class="hljs-number">3</span>) liveon = <span class="hljs-number">0</span>;
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// birth:</span>
+        <span class="hljs-keyword">if</span> (neighbours == <span class="hljs-number">3</span>) liveon = <span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-comment">// update my state:</span>
+    fragColor = <span class="hljs-type">vec4</span>(<span class="hljs-type">float</span>(liveon));
+    <span class="hljs-comment">// or for a more colourful variant:</span>
+    <span class="hljs-comment">// fragColor = vec4(liveon, int(alive != liveon), alive, 1);</span>
+
+    <span class="hljs-type">vec4</span> noise = random4(fragCoord.xy);
+
+    <span class="hljs-comment">// initialize:</span>
+    <span class="hljs-keyword">if</span> (iFrame == <span class="hljs-number">0</span>) {
+        fragColor = <span class="hljs-type">vec4</span>(<span class="hljs-built_in">step</span>(<span class="hljs-number">0.8</span>, noise.x));
+    }
+
+    <span class="hljs-comment">// add some noise near the mouse:</span>
+    <span class="hljs-keyword">if</span> (iMouse.z &gt; <span class="hljs-number">0.0</span>) {
+        <span class="hljs-comment">// if the mouse is held, randomize some pixels near the mouse</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">distance</span>(fragCoord, iMouse.xy) &lt; <span class="hljs-number">10.0</span>) {
+            fragColor = <span class="hljs-type">vec4</span>(<span class="hljs-built_in">step</span>(<span class="hljs-number">0.8</span>, noise.x));
+        }
+    } 
+}</code></pre>
+<p><a href="https://www.shadertoy.com/view/t3SfDW">Our shader from today</a></p>
+<hr>
+<p><a href="https://yorku.zoom.us/rec/share/a-Lofly0Zgqu2N5qFo1eswhgbCTY1RiIMBLBqslon3nI3Zi_VDnFIu3piwrg099q.VCc-OPDiftZNCk95">Zoom Recording Part II</a></p>
+<p><strong>A Fluid simulation:</strong></p>
+<p>Modeling the ideas in <a href="https://wyattflanders.com/MeAndMyNeighborhood.pdf">Wyatt Flander&#39;s tutorial here</a></p>
+<p>A cellular automaton that looks a lot less digital/discrete! </p>
+<ul>
+<li>Every cell has energy, including velocity (.xy) and omnidirectional divergence (.z).  We can also imagine the fluid transporting some matter, with a density (.w)</li>
+</ul>
+<p>Fluid simulation: <a href="https://www.shadertoy.com/view/WcccDf">https://www.shadertoy.com/view/WcccDf</a> </p>
+<hr>
+<p><strong>A minimal raytracer</strong></p>
+<p>Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects — <a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)">Wikipedia</a></p>
+<ul>
+<li><a href="https://www.shadertoy.com/view/tlXXzB">https://www.shadertoy.com/view/tlXXzB</a></li>
+</ul>
+<p>First, for each pixel in the image, we need a 3D ray. A ray is a line with an origin and direction.  </p>
+<p><code>p = pos + dir*t</code></p>
+<p>vec3 pos, vec3 dir (normalized)
+t is distance along ray</p>
+<p>OK for a screen, each ray should have a slightly different direction. Need diagram. Think of the image plane as a mesh a little in front of the camera/eye.  That&#39;s our &quot;near plane&quot;. Think of the Albrecht Durer drawing diagram! </p>
+<p>We can build these like this:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec3</span> ro = <span class="hljs-type">vec3</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-type">vec3</span> rd = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(suv.xy, <span class="hljs-number">7</span>));
+
+    <span class="hljs-comment">// or more realistic:</span>
+
+    <span class="hljs-comment">// put camera &quot;behind&quot; origin </span>
+    ro = <span class="hljs-type">vec3</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">5</span>); 
+    <span class="hljs-comment">// handles aspect ratio:</span>
+    <span class="hljs-comment">// the &quot;7&quot; is a way to set a &quot;focal length&quot;</span>
+    rd = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(suv * iResolution.xy/iResolution.y, <span class="hljs-number">7</span>)); </code></pre>
+<p>We can put a simple object, such as a sphere, into this space. A sphere has a centre and radius:</p>
+<pre><code class="language-glsl">    <span class="hljs-type">vec3</span> sphere_pos = <span class="hljs-type">vec3</span>(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">20</span>);
+    <span class="hljs-type">float</span> sphere_rad = <span class="hljs-number">2.0</span>;
+
+    <span class="hljs-comment">// to make our life easier, let&#x27;s combine this into a vec4:</span>
+    <span class="hljs-type">vec4</span> sphere = <span class="hljs-type">vec4</span>(sphere_pos, sphere_rad);
+
+    <span class="hljs-comment">// let&#x27;s also define a light position:</span>
+    <span class="hljs-type">vec3</span> light_pos = <span class="hljs-type">vec3</span>(<span class="hljs-number">8</span>, <span class="hljs-number">4</span>, <span class="hljs-number">10</span>);</code></pre>
+<p>Now we need a function to test whether a given ray intersects with a sphere.  The explanation of this math is a bit beyond what we can cover here, but have a look <a href="https://kylehalladay.com/blog/tutorial/math/2013/12/24/Ray-Sphere-Intersection.html">here</a></p>
+<pre><code class="language-glsl"><span class="hljs-comment">// returns distance to first intersection with the sphere from the ray:</span>
+<span class="hljs-comment">// returns -1 if the ray does not intersect with the sphere</span>
+<span class="hljs-type">float</span> intersectSphere(<span class="hljs-type">vec3</span> rayOrigin, <span class="hljs-type">vec3</span> rayDirection, <span class="hljs-type">vec3</span> sphereCenter, <span class="hljs-type">float</span> sphereRadius) {
+    <span class="hljs-type">vec3</span> L = sphereCenter - rayOrigin;
+    <span class="hljs-type">float</span> tca = <span class="hljs-built_in">dot</span>(L, rayDirection);
+    <span class="hljs-type">float</span> d2 = <span class="hljs-built_in">dot</span>(L, L) - tca * tca;
+    <span class="hljs-type">float</span> radius2 = sphereRadius * sphereRadius;
+
+    <span class="hljs-keyword">if</span> (d2 &gt; radius2) <span class="hljs-keyword">return</span> <span class="hljs-number">-1.0</span>; <span class="hljs-comment">// No intersection</span>
+
+    <span class="hljs-type">float</span> thc = <span class="hljs-built_in">sqrt</span>(radius2 - d2);
+    <span class="hljs-type">float</span> t0 = tca - thc;
+    <span class="hljs-type">float</span> t1 = tca + thc;
+
+    <span class="hljs-keyword">if</span> (t0 &lt; <span class="hljs-number">0.0</span> &amp;&amp; t1 &lt; <span class="hljs-number">0.0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">-1.0</span>; <span class="hljs-comment">// Both intersections behind ray origin</span>
+    <span class="hljs-keyword">if</span> (t0 &lt; <span class="hljs-number">0.0</span>) <span class="hljs-keyword">return</span> t1; <span class="hljs-comment">// Ray origin inside sphere, return far intersection</span>
+    <span class="hljs-keyword">return</span> t0; <span class="hljs-comment">// Return closest intersection</span>
+}</code></pre>
+<p>Can we see it?</p>
+<pre><code class="language-glsl">    <span class="hljs-type">float</span> t = intersectSphere(ro, rd, sphere_pos, sphere_rad);
+    <span class="hljs-keyword">if</span> (t &gt; <span class="hljs-number">0.</span>) {
+        fragColor = <span class="hljs-type">vec4</span>(<span class="hljs-number">1</span>);
+    }</code></pre>
+<p>To begin to light this sphere, we need to know where exactly our intersection point is, and from that we can determine the <strong>normal</strong>, which is to say, the direction pointing perpendicularly away from the sphere&#39;s surface:</p>
+<pre><code class="language-glsl">    <span class="hljs-comment">// move the right distance along the ray to find the point:</span>
+    <span class="hljs-type">vec3</span> pt = ro + t*rd;
+
+    <span class="hljs-comment">// a sphere&#x27;s normal is simple, it always points away from the sphere center</span>
+    <span class="hljs-comment">// we normalize it to ensure it has a length of 1 (a unit vector)</span>
+    <span class="hljs-comment">// this only gives direction, and is useful in the math later</span>
+    <span class="hljs-type">vec3</span> normal = <span class="hljs-built_in">normalize</span>(pt - sphere_pos);</code></pre>
+<p>We can do diffuse lighting relative to a particular light direction (for sunlight), or by deriving a light direction from the relative positions of the sphere and a light source:</p>
+<pre><code class="language-glsl">        <span class="hljs-comment">// again, normalize it to get a unit length direction vector:</span>
+        <span class="hljs-type">vec3</span> light_dir = <span class="hljs-built_in">normalize</span>(pt - light_pos);
+
+        <span class="hljs-comment">// similarity of light and ray:</span>
+        <span class="hljs-type">float</span> diffuse = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(normal, light_dir), <span class="hljs-number">0.</span>);
+
+        <span class="hljs-comment">// similarlity with ray reflection vector:</span>
+        <span class="hljs-type">float</span> specular = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(-camera_dir, <span class="hljs-built_in">reflect</span>(-light_dir, normal)), <span class="hljs-number">0.</span>);
+        fragColor = <span class="hljs-type">vec4</span>(specular);</code></pre>
+<p>Minimal raytracer: <a href="https://www.shadertoy.com/view/wc3yWf">https://www.shadertoy.com/view/wc3yWf</a></p>
+<p>Next: A different approach, using distance functions.</p>
+<hr>
+<p><strong>A minimal raymarcher</strong></p>
+<p>Raymarcher</p>
+<p>Just like we had a function of 2D space (pixel distance to circle), we can do the same for 3D space (3D distance to sphere)</p>
+<pre><code class="language-glsl"><span class="hljs-comment">// signed distance to a sphere at position 0,0,0</span>
+sdSphere(<span class="hljs-type">vec3</span> p, <span class="hljs-type">float</span> radius) {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">length</span>(p) - radius;
+}</code></pre>
+<p>Now, we start from <code>ro</code> and step along <code>rd</code> until we hit something</p>
+<p>A basic marcher steps in fixed steps. We could step through an arbitrary 3D volume (like a 3D texture) this way, making each step the size of a voxel.
+That&#39;s expensive though.</p>
+<p>If we have a distance function of space, it tells us the distance to the closest object; so we know we can always move the ray by at least this much. Also known as sphere tracing.</p>
+<pre><code class="language-glsl"><span class="hljs-type">float</span> depth = <span class="hljs-number">0.</span>;
+<span class="hljs-type">vec3</span> p = ro;
+<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>; i&lt;MAX_STEPS; i++) {
+    <span class="hljs-comment">// get distance from p to nearest surface</span>
+    <span class="hljs-type">float</span> d = sdScene(p);
+    <span class="hljs-comment">// move to next point on ray:</span>
+    depth += d;
+    p = ro + depth*rd;
+    <span class="hljs-comment">// did we arrive?</span>
+    <span class="hljs-keyword">if</span> (d &lt; threshold || d &gt; FAR) <span class="hljs-keyword">break</span>;
+}</code></pre>
+<p>Now we can paint the pixel according to whether depth is &gt;= FAR or not</p>
+<p>We can position the sphere (or any group) by subtracting the position from <code>p</code> -- a good example to animate</p>
+<p>OK normal: there&#39;s a kind of a neat hack here. Normal is just perpendicular to gradient (tangent) of surface. Think 2D, this is perp to slope of line. Slope can approximate by sampling two locations close to each other &amp; comparing. In 3D it is the same: subtract two points slightly offset. We can do this directly on the distance field. </p>
+<pre><code class="language-glsl"><span class="hljs-type">vec3</span> calcNormal(<span class="hljs-type">vec3</span> p) {
+  <span class="hljs-type">float</span> e = <span class="hljs-number">0.0005</span>; <span class="hljs-comment">// epsilon</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">normalize</span>(<span class="hljs-type">vec3</span>(
+    sdScene(<span class="hljs-type">vec3</span>(p.x + e, p.y, p.z)) - sdScene(<span class="hljs-type">vec3</span>(p.x - e, p.y, p.z)),
+    sdScene(<span class="hljs-type">vec3</span>(p.x, p.y + e, p.z)) - sdScene(<span class="hljs-type">vec3</span>(p.x, p.y - e, p.z)),
+    sdScene(<span class="hljs-type">vec3</span>(p.x, p.y, p.z  + e)) - sdScene(<span class="hljs-type">vec3</span>(p.x, p.y, p.z - e))
+  ));
+}
+
+<span class="hljs-comment">// a more efficient version:</span>
+<span class="hljs-type">vec3</span> calcNormal(<span class="hljs-type">vec3</span> p) {
+  <span class="hljs-type">vec2</span> e = <span class="hljs-type">vec2</span>(<span class="hljs-number">1.0</span>, <span class="hljs-number">-1.0</span>) * <span class="hljs-number">0.0005</span>; <span class="hljs-comment">// epsilon</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">normalize</span>(
+    e.xyy * sdScene(p + e.xyy) +
+    e.yyx * sdScene(p + e.yyx) +
+    e.yxy * sdScene(p + e.yxy) +
+    e.xxx * sdScene(p + e.xxx));
+}</code></pre>
+<p>Minimal raymarcher: <a href="https://www.shadertoy.com/view/wf3yWf">https://www.shadertoy.com/view/wf3yWf</a></p>
+<p>More references:</p>
+<ul>
+<li><a href="https://mercury.sexy/hg_sdf/">https://mercury.sexy/hg_sdf/</a></li>
+<li><a href="https://www.shadertoy.com/view/ctKyzt">https://www.shadertoy.com/view/ctKyzt</a></li>
+<li><a href="https://www.shadertoy.com/view/Xds3zN">https://www.shadertoy.com/view/Xds3zN</a></li>
+</ul>
+
+<footer>DIGM5010 2021-22</footer>
+</body>
+<script src="js/connect.js"></script>
+</html>

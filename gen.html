@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="author" content="Graham Wakefield">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/github.css" type="text/css" />
+<style>
+img {
+	max-height: 75vh;
+}
+td { vertical-align: top;}
+header {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+
+footer {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+</style>
+</head>
+
+<body class="centremaxwidth960">
+<header><a href="index.html">Foundations of Digital Media</a></header>
+<h2 id="digital-audio-and-sound-synthesis">Digital Audio and Sound Synthesis</h2>
+<p>What is digital audio, computer music, and sound synthesis</p>
+<iframe src="https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLofdA/embed?start=false" frameborder="0" width="960" height="569" allowfullscreen></iframe>
+
+<p><a href="https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLofdA/" target="_blank">https://docs.google.com/presentation/d/1jmVITeEwAtnMNNFXJgHRgKLdmk44TF8D4J01wHLofdA/</a></p>
+<p>A very quick introduction to <a href="https://cycling74.com/products/max">Max</a> and <a href="https://docs.cycling74.com/userguide/gen/_gen_overview/"><code>gen~</code></a></p>
+<p><a href="https://alicelab.world/datt3074/">Class notes for DATT3074: Creative Generative Audio Signal Processing</a></p>
+<ul>
+<li><p>Some key concepts and circuits:</p>
+<ul>
+<li><code>noise</code>, <code>cycle</code>, <code>phasor</code> (look at scope<del>, spectroscope</del>, frequency and level)<ul>
+<li>adding signals superimposes; <code>mix</code>, <code>param</code></li>
+<li>multiply for amplitude shaping - e.g. <code>triangle</code> shape <code>phasor</code></li>
+</ul>
+</li>
+<li>lfo and audio modulations: from tremelo to AM, from vibrato to FM<ul>
+<li>more complex examples can become very rich, especially with feedback!</li>
+</ul>
+</li>
+<li>simplest filter of <code>mix</code> and <code>history</code>; cascade them; highpass; <ul>
+<li>control filter with envelope (LPG), control FM with envelope too?</li>
+</ul>
+</li>
+<li>phasor ramp as meter, phasor manipulations (e.g. time division by <code>*</code> and <code>wrap 0 1</code>)<ul>
+<li>triggers from ramps with <code>delta</code>, <code>abs</code>, <code>&gt; 0.5</code></li>
+</ul>
+</li>
+<li>random steps by <code>latch</code>; source noise (gates?) or a related frequency (melodies?)<ul>
+<li>lowpass filter to smooth gates and random sources</li>
+</ul>
+</li>
+<li>mapping pitch to frequency, <code>mtof</code>, <code>exp2</code><ul>
+<li>quantizing with <code>* N</code>, <code>floor</code>, <code>/ N</code>; neat trick of quantizing twice (second to 12)</li>
+</ul>
+</li>
+<li>effects with <code>delay</code> and mixing feedback, modulating time<ul>
+<li>waveshaping -- magic sigmoid (e.g. <code>tanh</code>), filtering, etc. in the feedback loop<ul>
+<li>more complex can become reverbs</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Embedding our yellowtail in Max:</p>
+<ul>
+<li>Export codepen (zip <code>dist</code>), use <code>readfile</code> message to <code>jweb</code> in Max</li>
+<li>Sending messages in &amp; out: <a href="https://docs.cycling74.com/userguide/web_browser/">https://docs.cycling74.com/userguide/web_browser/</a></li>
+</ul>
+</li>
+<li><p>Embedding in Ableton Live?</p>
+<ul>
+<li>Need to use a public URL, e.g. upload to github pages: <a href="https://alicelab.world/digm5010/yellowmax/index.html">https://alicelab.world/digm5010/yellowmax/index.html</a></li>
+</ul>
+</li>
+<li><p>Exporting via <a href="https://cycling74.com/products/rnbo">RNBO</a></p>
+<ul>
+<li>See template here: <a href="https://rnbo.cycling74.com/learn/using-the-web-page-template">https://rnbo.cycling74.com/learn/using-the-web-page-template</a></li>
+</ul>
+</li>
+</ul>
+<p><strong><a href="max_patchers/week4.maxpat">The patcher from today&#39;s class</a></strong></p>
+<ul>
+<li><p>Some key concepts and circuits:</p>
+<ul>
+<li>simplest filter of <code>mix</code> and <code>history</code>; cascade them; highpass; <ul>
+<li>control filter with envelope (LPG), control FM with envelope too?</li>
+</ul>
+</li>
+<li>phasor ramp as meter, phasor manipulations (e.g. time division by <code>*</code> and <code>wrap 0 1</code>)<ul>
+<li>triggers from ramps with <code>delta</code>, <code>abs</code>, <code>&gt; 0.5</code></li>
+</ul>
+</li>
+<li>random steps by <code>latch</code>; source noise (gates?) or a related frequency (melodies?)<ul>
+<li>lowpass filter to smooth gates and random sources</li>
+</ul>
+</li>
+<li>mapping pitch to frequency, <code>mtof</code>, <code>exp2</code><ul>
+<li>quantizing with <code>* N</code>, <code>floor</code>, <code>/ N</code>; neat trick of quantizing twice (second to 12)</li>
+</ul>
+</li>
+<li>effects with <code>delay</code> and mixing feedback, modulating time<ul>
+<li>waveshaping -- magic sigmoid (e.g. <code>tanh</code>), filtering, etc. in the feedback loop<ul>
+<li>more complex can become reverbs</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Embedding our yellowtail in Max:</p>
+<ul>
+<li>Export codepen (zip <code>dist</code>), use <code>readfile</code> message to <code>jweb</code> in Max</li>
+<li>Sending messages in &amp; out: <a href="https://docs.cycling74.com/userguide/web_browser/">https://docs.cycling74.com/userguide/web_browser/</a></li>
+</ul>
+</li>
+<li><p>Embedding in Ableton Live?</p>
+<ul>
+<li>Need to use a public URL, e.g. upload to github pages: <a href="https://alicelab.world/digm5010/yellowmax/index.html">https://alicelab.world/digm5010/yellowmax/index.html</a></li>
+</ul>
+</li>
+<li><p>Exporting via <a href="https://cycling74.com/products/rnbo">RNBO</a></p>
+<ul>
+<li>See template here: <a href="https://rnbo.cycling74.com/learn/using-the-web-page-template">https://rnbo.cycling74.com/learn/using-the-web-page-template</a></li>
+</ul>
+</li>
+<li><p>Alternatively, just send network messages, such as OSC, or MIDI messages, etc.</p>
+</li>
+</ul>
+<p><a href="max_patchers/week7.maxpat">Today&#39;s patch</a></p>
+
+<footer>DIGM5010 2021-22</footer>
+</body>
+<script src="js/connect.js"></script>
+</html>

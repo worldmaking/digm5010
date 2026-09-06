@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Computational sketching</title>
+<meta name="description" content="">
+<meta name="author" content="Graham Wakefield">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/github.css" type="text/css" />
+<style>
+img {
+	max-height: 75vh;
+}
+td { vertical-align: top;}
+header {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+
+footer {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+</style>
+</head>
+
+<body class="centremaxwidth960">
+<header><a href="index.html">Foundations of Digital Media</a></header>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h1 id="computational-sketching">Computational sketching</h1>
+<p>It can be helful sometimes to step into the shoes of those that have gone before, to see how we ended up here, and <strong>what we may have lost or missed along the way</strong>. </p>
+<p>Take <a href="https://en.wikipedia.org/wiki/John_Maeda">John Maeda</a>, the designer &amp; MIT Media Lab professor, who pioneered reactive graphics in the era of the Macintosh and CD-ROM. </p>
+<blockquote>
+<p><strong>Design By Numbers (John Maeda, 1999)</strong><br>&quot;Drawing by hand, using pencil on paper, is undisputedly the most natural means for visual expression. When moving on to the world of digital expression, however, the most natural means is not pencil and paper, but rather, computation. Today, many people strive to combine the traditional arts with the computer, and while they may succeed at producing a digitally empowered version of their art, they are not producing true digital art. True digital art embodies the core characteristics of the digital medium, which cannot be replicated in any other.</p>
+<p>&quot;Computation is intrinsically different from existing media because it is the only medium where the material and the process for shaping the material coexiist in the same entity: numbers. The only other medium where a similar phenomenon occurs is pure thought. It naturally follows that computational media could eventually present the rare opportunity to express a conceptual art that is not polluted by textual or other visual representation. This exciting future is still at least a decade or two away. For the moment, we are forced to settle with society&#39;s current search for true meaning in an enhanced, interactive version of the art that we have always known.&quot;</p>
+</blockquote>
+<p>Maeda studied with Muriel Cooper and Paul Rand, and redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic technique, which helped lay the groundwork for interactive motion graphics as seen on the web today. (<a href="https://www.bostonreview.net/forum/the-ai-we-deserve/%5D">This itself is part of a longer genealogical history that traces back to a movement of thought in the 1960&#39;s regarding how computers can augment intelligence, the nature of creativity -- with implications for AI development today</a>)</p>
+<p>Other key insights from Maeda&#39;s interactive graphics explorations:</p>
+<ul>
+<li>the most <strong>interesting</strong> pixels on the screen are the mouse</li>
+<li>the mouse represents not just <strong>space</strong> but also <strong>time</strong> -- use it</li>
+</ul>
+<p>Maeda&#39;s courses and research in the Aesthetics &amp; Computation group at MIT inspired a whole generation of creative coders. He taught Casey Reas and Ben Fry, and his <a href="https://en.wikipedia.org/wiki/Design_By_Numbers">Design By Numbers</a> software was the precursor of their Processing (which led to <a href="https://p5js.org/">P5.js</a>). </p>
+<p>Maeda&#39;s courses challenged students to rethink the medium from its most basic elements. A typical assignment:</p>
+<blockquote>
+<p>Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm. <a href="https://acg.media.mit.edu/courses/mas964/presentation/panels.html">MAS 964 P</a></p>
+</blockquote>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="a-reading">A reading</h2>
+<p>Golan Levin was one of Maeda&#39;s students, and went on to focus specifically on the creation of audiovisual instruments, responding directly to Maeda&#39;s project. He is now a professor at Carnegie Mellon University, and a key figure in the Art &amp; Code community. There’s a lot to draw from <a href="http://www.flong.com/archive/texts/publications/thesis/index.html">his Master&#39;s thesis</a>, both theoretically and practically. </p>
+<p>(Also note the document structure, as an example of a thesis in our field.)</p>
+<p>For example, look at Curly and <a href="http://www.flong.com/archive/projects/yellowtail/index.html">Yellowtail</a> -- perhaps we can try to recreate this as our first example of &quot;reproducing research&quot;. </p>
+<hr>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="lets-get-making">Let&#39;s get making</h2>
+<ul>
+<li>A shareable workspace: <a href="https://codepen.io">codepen</a><ul>
+<li>The HTML5 trio: the HTML (DOM), CSS, and JavaScript<ul>
+<li>HMTL: the page container and structure. The language forms a <strong>declarative</strong> data structure, roughly in a tree structure. </li>
+<li>CSS: the rules of layout, rendering and style. The language forms a set of <strong>declarative</strong> definitions. </li>
+<li>JS: dynamic generation and behaviour. The language forms <strong>procedural</strong> steps of action, invoked in response to events. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Notes on <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes">Javascript</a></li>
+<li>What is an API? <ul>
+<li>E.g. the MDN <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial">canvas documentation</a>.  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.</li>
+</ul>
+</li>
+<li>Notes on 2D drawing in the web using <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">Canvas, vectors, matrices</a> </li>
+</ul>
+<p>Let&#39;s start with a sketching application -- but let&#39;s think about how we can use computation to augment or transform our gestures in some way.</p>
+<ul>
+<li>First, what elements do we need? </li>
+<li>Starting from Maeda&#39;s observations, what concepts need to be mechanized?</li>
+<li>How do we look into API documentation to find the methods we need?</li>
+<li>How do we start? </li>
+<li>What are the events?</li>
+<li>Begin with pseudo-code, then transform to working code?</li>
+</ul>
+<hr>
+<p>Examples from course in 2024-25</p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="gbaJjgv" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/gbaJjgv">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="yLdrXNQ" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/yLdrXNQ">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="Yzdxwgj" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/Yzdxwgj">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p><strong>Homework</strong></p>
+<p>Have a good read of <a href="http://www.flong.com/archive/texts/publications/thesis/index.html">Golan Levin&#39;s Master thesis</a>, and note down your thoughts and questions about it for our next coding session! </p>
+<p>How would you respond to the example challenge, <em>&quot;Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm.&quot;</em>?  </p>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="animate-drawing">Animate drawing</h2>
+<p>Let&#39;s continue with the sketching. </p>
+<!--
+
+> First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have `line()` and `background()` etc.  That's good: we are in the stage of *reproducing research*. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that's good too -- we aren't limited to what's already given because we know how to remake it, and maybe we'll have a discovery that can advance research! 
+
+- We saw how we can draw in response to mouse/touch movements, and add generative variation to them. 
+- We talked about Maeda's comment "the most interesting pixels are the mouse" and this represents not just space but also **time**. How can we use the timing of a drawing gesture to modify the result? Can you think of ways to use speeds, rhythms, echoes, ?
+
+  - Can we *reify* the time of the gesture?
+
+A more complex example, inspired by Paul Haberli's *Dynadraw*: 
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="gOYQyrd?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+[Example script from a previous class](https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011)
+
+### Reproducing Curly/Yellowtail
+
+  - We can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
+  - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
+    - Can we *reify* the drawing?
+
+With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
+
+**This is an example of reproducing research.**  First we should sketch out what is required based on the source material, and work from there to refine from a sketch through pseudo-code and implementation of components until we have the final result. 
+
+> "Yellowtail repeats a user's strokes end-over-end, enabling simultaneous specification of a line's shape and quality of movement. Each line repeats according to its own period, producing an ever-changing and responsive display of lively, worm-like textures."
+
+Detailed description from page 73 of the [thesis](http://www.flong.com/archive/storage/pdf/articles/thesis300.pdf):
+
+> "a user’s linear marks transform into an animated display of lively,
+worm-like lines. After the user deposited a mark, the system
+would then procedurally displace that mark end-over-end, making
+possible the simultaneous specification of both a line’s shape as
+well as its quality of movement. Straight marks would move along
+the direction of their own principal axes, while circular marks
+would chase their own tails. Marks with more irregular shapes
+would move in similarly irregular, but nonetheless rhythmic
+patterns."
+
+> The " screen space obeyed periodic (toroidal-topology)
+boundary conditions, such that marks which crossed the edge of
+the screen would reëmerge on the screen’s opposite side, rather
+than disappearing altogether."
+
+Notice also the self-observation and critique, see p79. Although this project does not achieve the goal of the thesis, these observations inform the progress that follows. This is a positive research path. 
+
+---
+
+OK so let's start by pseudo-coding Yellowtail!
+
+Here's what we ended up with as pseudo-code in class, before we started coding:
+
+```
+there is a canvas
+
+state:
+    mouse: x, y, buttonstate
+    time
+    currentpath = null
+    list of finished paths
+        start position
+        list of segments (dx, dy change vectors)
+
+pointerdown:
+    create a new currentpath object, with start position at mouse x,y & t
+
+pointerup:
+    if currentpath
+        add my currentpath to the list of finished paths
+        currentpath = null again
+
+pointermove:
+    if currentpath exists
+        add mouse dx,dy & t to currentpath's list of segments
+
+animate:
+    for each path of finished paths
+        remove 1st segment (shift)
+        (something about coordinates)
+        stick it onto the end (push)
+        wrap around canvas width/height 
+            e.g. if x > width; x -= width, etc. for 4 boundaries
+
+drawpath:
+    begin position at path's start position
+    for each segment of the path
+        line from last position to new position by adding segment change
+        (path, moveto, lineto, stroke)
+
+draw:
+    clear screen
+    for each path of finished paths
+        drawpath(line)
+    if currentpath exists
+        drawpath(currentpath)
+```
+
+And here's the final code we ended up with:
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="myVdEZR?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/myVdEZR?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+Here's a more refined version from last year's class:
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="vYoOLqL?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+Please continue working on extending and mutating this into a new direction! We will share each other's codepens in the next class. 
+- We talked about how these lines are still fairly passive, as they just follow the series of instructions given to them by the initial gesture. How could they become a bit more autonomous?
+- Each segment holds a relative change. Can we do something interesting with that?
+- Are there more interesting things we could do with the boundaries?
+- Should segments continue forever? 
+- Each segment holds a relative time, but we aren't really using that in the animation yet. E.g. if you pause mid-gesture, then continue, the animated line moves but it does not have a pause. Can you figure out how to fix that?
+- With multiple lines, they are not aware of each other. Is there a way that they could be?
+- How about rhythm -- is there a way to synchronize them to an underlying meter, for example?
+- Can line mutate? Getting noisier, or more angular, or more smooth, etc. over time?
+- Can lines decay? Or grow?
+- Can lines split into two?
+
+---
+
+[past version 1](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
+
+[past version 2](https://codepen.io/grrrwaaa/pen/aagQzY?editors=0010)
+
+---
+
+Some rules of thumb while coding:
+
+- Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
+
+- Break a problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.
+
+- Try to work out a problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
+
+- Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. 
+
+- Figure out working conditions logically from basic requirements. E.g. for anything to animate we're going to need to clear the screen on each frame, which means we're going to have to redraw everything every time, which means...
+
+- Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.
+
+- Test often. Each time you add one minor element, make sure it works for all likely input. 
+
+- Handle special cases: starting values, boundary cases, error handling... 
+
+- Don't worry about trying to make anything optimal -- make the most naive way that works, then refine from there. 
+
+- Use abstractions (functions, objects) to encapsulate and structure ideas more easily & clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable "support routines" from the code that represents the main ideas. 
+
+- Comment the code and use good variable names -- you'll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)
+
+- Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
+
+- Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
+
+-->
+<footer>DIGM5010 2021-22</footer>
+</body>
+<script src="js/connect.js"></script>
+</html>
