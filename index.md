@@ -7,7 +7,7 @@ Thursdays, 12:30pm-15:20pm, Fall 2024, Fine Arts building room ACW 102
 
 Office hours: Thursdays, 9:30am-11:30am, in the [Alice Lab](https://alicelab.world/#location) - GCFA 309
 
-Almost everything about this course will be linked from https://alicelab.world/digm5010 -- bookmark this URL -- or it will be in [eClass - **LINK TBC**]()
+Almost everything about this course will be linked from https://alicelab.world/digm5010 -- bookmark this URL -- or it will be in [eClass](https://eclass.yorku.ca/course/view.php?id=157215)
 
 # Schedule
 
@@ -26,12 +26,6 @@ Almost everything about this course will be linked from https://alicelab.world/d
 | <nobr>Week 10 [11/18](#week-10)</nobr> | [GPU programming with GLSL](glsl.html) | Paper 1-on-1's                       | Revisions to [Final Paper](#final-paper) |
 | <nobr>Week 11 [11/25](#week-11)</nobr> |                                                        | Paper 1-on-1's                       | Submit [Final Paper](#final-paper) |
 | <nobr>Week 12 [12/2](#week-12)</nobr>  | [Final presentations](#final-presentations)            |                                      | [Video/Tutorial](#video-tutorial) + Post-mortem reflection |
-
-
-
- 
-
-
 
 
 
@@ -114,6 +108,8 @@ I normally also record sessions and share recordings with the course participant
 # Week 1 
 [Class Recording](#class-recordings)
 
+[Zoom meeting (same link every week)](https://yorku.zoom.us/j/97306421811?pwd=6nmu0vyUAAy2FeDraAW36aphXb4jUq.1)
+
 [Course overview](#what-is-digm-5010-foundations)
 
 ## What is Research?
@@ -132,7 +128,6 @@ What is meaningful or interesting to you? Or to the world? What makes a question
 
 [What is research?](research.html)
 
-
 ## A Question
 
 Take some time to think about this: 
@@ -141,7 +136,9 @@ Take some time to think about this:
   - why do you want to **dedicate several precious years** of your life to research in computational arts & computer science -- what does this mean for you? 
   - Is there a great risk, or a great unseen opportunity, in the computational/digital media world -- present and/or future -- one that also speaks to you?
 
-[Write into the form here](https://docs.google.com/forms/d/e/1FAIpQLSdyicvyeq6NudO4qHvX26J-rmivprPelWa-sboWx8hJUe7I0w/viewform?usp=dialog)
+[Write into the form here](https://eclass.yorku.ca/mod/questionnaire/view.php?id=4439444)
+
+**If you do not have eClass set up yet, use [this one instead](https://docs.google.com/forms/d/e/1FAIpQLSdyicvyeq6NudO4qHvX26J-rmivprPelWa-sboWx8hJUe7I0w/viewform?usp=dialog)**
 
 ## A Call for Papers
 
@@ -201,6 +198,8 @@ Authors will be required to present their papers with a duration of 15 minutes.
 
 # Week 2 
 [Class Recording](#class-recordings)
+
+[Zoom meeting (same link every week)](https://yorku.zoom.us/j/97306421811?pwd=6nmu0vyUAAy2FeDraAW36aphXb4jUq.1)
 
 **This week's paper workflow**
 - This week you should be selecting your focused topic, with keywords, search terms, etc. 
