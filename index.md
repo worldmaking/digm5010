@@ -55,7 +55,7 @@ Establishing these foundations is ultimately evaluated through the potential to 
 
 > *Reading & writing + making!*
 
-**Format and evaluation** 
+## Format and evaluation
 
 Each weekly meeting will vary in format, but always at the heart is **discussion** between all of us. This isn't a course with a static syllabus of material -- it is an adaptive living system. 
 
@@ -85,7 +85,7 @@ In the other thread of the course, we will examine digital media research-creati
 
 You are also expected to bring work to share, **making things** in response to our discussions and course discussions. You will keep your notes, studies and practices documented in a journal, which you will submit at the end of the course.
 
-- Class journal, based on code experimentation (10%)
+- Class journal, including code experimentations (10%) 
 - [Video Tutorial (5%)](#video-tutorial)
 - **"Post-mortem" reflection (5%)**
 
@@ -355,6 +355,8 @@ As we saw in class, good research needs a good research question, but that doesn
 - [York off-campus library access](https://www.library.yorku.ca/web/ask-services/printing-and-computing/computing/off-campus-access/)
 - [York VPN links](http://www.yorku.ca/computing/vpn-choice.html)
 
+[When it is completed, submit your reading list on eClass here](https://eclass.yorku.ca/mod/assign/view.php?id=4439445)
+
 # Week 4 
 [Class Recording](#class-recordings)
 
@@ -533,8 +535,9 @@ To complete the Yellowtail reproduction I'd like to add sound -- so that's our n
   - The research question/problem statement/abstract
   - Your final Annotated Bibliography
   - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
-- The final deadline for submission is **Oct 9th**.
-- Submit via eClass here: [https://eclass.yorku.ca/mod/assign/view.php?id=3829706](https://eclass.yorku.ca/mod/assign/view.php?id=3829706)
+- The final deadline for submission is **TBC**.
+
+[Submit via eClass here](https://eclass.yorku.ca/mod/assign/view.php?id=4439446)
 
 ---
 
@@ -677,7 +680,7 @@ The article should contain:
 
 **Length:** Conference papers can be 3-8 pages in length, but 4 pages is the most typical. At approximately 700 words/page, this means a typical word count is around 2000-3000 words. 
 
-[**Submit your paper via e-Class here** -- LINK TBC]()
+[**Submit your paper via e-Class here**](https://eclass.yorku.ca/mod/assign/view.php?id=4439447)
 
 
 # Week 8
@@ -742,6 +745,8 @@ As a structure, our review is based on materials as used by the [SIGGRAPH Art Pa
 
 - **During class**:
   - Submit your [Peer reviews](#peer-review) to [the peer review form here](https://docs.google.com/forms/d/e/1FAIpQLSfgUtSQ6iaieWLtTBebMRhnSHP7_SOj8Rsftjkqs1vGKSbFww/viewform?usp=dialog)
+
+
 <!--
 
 - Paper process discussion -- one week to ISEA deadline: https://isea2025.isea-international.org/submission/submission-guideline/ 
@@ -828,6 +833,14 @@ Research is about *sharing*. Sometimes, that requires sharing *how*.
 	- deep-dive developing a demonstration (coding a sketch) from the ground up, explaining via voiceover what you are doing at each step and why. 
 3. You are welcome to use any screen-recording tool. Zoom is OK, Camtasia is pretty fancy, OBS is very powerful and free. Whatever you use, I recommend doing a few takes. Sometimes the first take is the best, sometimes the third. You are welcome to edit them together if it makes sense. But don't lose time making it 'slick' -- that's not the point here. People like [Dan Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) or [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) do make beautiful videos but the most important part is that they convey *what* is interesting/valuable/powerful/etc. about the technical system/tool/algorithm/etc by explaining *how* it works.  
 
+[Post your video (upload, embed, link, or screen record directly) via eClass here](https://eclass.yorku.ca/mod/forum/view.php?id=4457391)
+
+## Post-mortem questionnaire
+
+Please fill in the post-mortem questionnaire.  This is not only useful in a process of self-reflection, it will also help me refine DIGM5010 for next year. 
+
+[Submit on eClass here](https://eclass.yorku.ca/mod/questionnaire/view.php?id=4439449) -- thank you :-)
+
 <!--
 # Final submissions
 
@@ -856,7 +869,8 @@ Thank you everyone for a wonderful semester!
      - Alternatively, create your own using github, github-pages, html5/css/js, markdown/pandoc, D3.js, webgl or similar. 
      - Whichever platform is used, the paper should meet academic standards of relevance, clarity of writing, structure, balanced and evidence-based argument, critical thinking, and appropriate level and kinds of academic references. 
    3. An "Explorable Explanation", following the ideas outlined [here](#explorable-explanations) 
-3. Post your final paper online to our final submission form.
+
+[Post your final paper online to our final submission form here](https://eclass.yorku.ca/mod/assign/view.php?id=4439448)
 
 <!--For the purposes of the course, please submit your final papers by December 8th, thank you!!-->
 
