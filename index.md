@@ -1244,6 +1244,7 @@ https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
 Recordings of the weekly sessions will be here:
 
 - [Week 1](https://yorku.zoom.us/rec/share/lI-SVjY1cFZjYTKCyxFj44mxTRRlhntIPRTWN1hQrtl7-kBaiyznBxXup8dBZ3Bj.bwjdbsNHAEnGoq7U)
+- [Week 2](https://yorku.zoom.us/rec/share/RtxWk56TcN_BCp7VWbCaK1vrahcA9DjFchtM0aqdiWeLAcx9-w141EdwPGcsFVLv.hldpIkSDpUFihiYa)
 
 
 <!-- 
