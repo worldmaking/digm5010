@@ -366,9 +366,17 @@ Let's step back a moment, and understand computation from its genealogical emerg
 
 ## Homework Week 2
 
-Have a good read of [Golan Levin's Master thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), and note down your thoughts and questions about it for our next coding session! 
+1. Have a good read of [Golan Levin's Master thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), and note down your thoughts and questions about it for our next coding session! 
 
 How would you respond to the example challenge, *"Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm."*?  
+
+2. Sign up for an account on [Codepen](https://codepen.io/)
+
+If you have time, maybe take a shot at the Maeda proposal: *"Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm."*
+
+(If you do, you can add it to your introduction slides below)
+
+3. Add your pages to the [Introduction Slides](#an-introduction):
 
 ## An introduction
 
