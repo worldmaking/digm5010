@@ -13,10 +13,10 @@ Almost everything about this course will be linked from https://alicelab.world/d
 
 | Date | Topic | Activity | Research Paper Workflow |
 |:--- |:--- |:--- |:--- |
-| <nobr>Week 1  [9/9](#week-1)</nobr>    | [What is Research?](#what-is-research)                 | Discussion, Survey | Respond to the [Call for Papers](#a-call-for-papers): identify motivations, areas, research communities  |
-| <nobr>Week 2  [9/16](#week-2)</nobr>   | [What is Computation?](#what-is-computation)           | [Computational Sketching](sketching.html) | Articulate your topic and questions with [introduction slides](#an-introduction) |
-| <nobr>Week 3  [9/23](#week-3)</nobr>   | [Who Are You & What Is Your Topic](#introductions)? | Topic 1-on-1's | Develop your [Reading List](#preparing-a-reading-list)  |
-| <nobr>Week 4  [9/30](#week-4)</nobr>   | [What is a Problem Statement](#problem-statement)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) | Draft a [Problem Statement](#problem-statement)  |
+| <nobr>Week 1  [9/10](#week-1)</nobr>    | [What is Research?](#what-is-research)                 | Discussion, Survey | Respond to the [Call for Papers](#a-call-for-papers): identify motivations, areas, research communities  |
+| <nobr>Week 2  [9/17](#week-2)</nobr>   | [What is Computation?](#what-is-computation)           | [Computational Sketching](sketching.html) | Articulate your topic and questions with [introduction slides](#an-introduction) |
+| <nobr>Week 3  [9/24](#week-3)</nobr>   | [Who Are You & What Is Your Topic](#introductions)? | Topic 1-on-1's | Develop your [Reading List](#preparing-a-reading-list)  |
+| <nobr>Week 4  [9/31](#week-4)</nobr>   | [What is a Problem Statement](#problem-statement)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) | Draft a [Problem Statement](#problem-statement)  |
 | <nobr>Week 5  [10/7](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
 | <nobr>[*Reading Week*](#reading-week)</nobr> | Flesh out Annotated Bibliography and Draft Paper Outline |  |  | 
 | <nobr>Week 6  [10/21](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
