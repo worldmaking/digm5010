@@ -35,46 +35,66 @@ For example, look at Curly and [Yellowtail](http://www.flong.com/archive/project
 
 ## Let's get making
 
-- A shareable workspace: [codepen](https://codepen.io)
+Let's start with a sketching application -- but let's think about how we can use computation to augment or transform our gestures in some way. How do we start? 
+
+- First, what elements do we need? 
+  - Starting from Maeda's observations, what concepts need to be mechanized?
+  - What are the events?
+
+- Begin with pseudo-code, then transform to working code?
+- How do we look into documentation to find the methods we need?
+
+First let's get a shareable workspace:
+
+- [codepen](https://codepen.io)
+
+What is the **ontology** of this space?
+
   - The HTML5 trio: the HTML (DOM), CSS, and JavaScript
-    - HMTL: the page container and structure. The language forms a **declarative** data structure, roughly in a tree structure. 
+    - HTML: the page container and structure. The language forms a **declarative** data structure, roughly in a tree structure. 
+      - Codepen gives us most of the HTML structure we need already.
     - CSS: the rules of layout, rendering and style. The language forms a set of **declarative** definitions. 
     - JS: dynamic generation and behaviour. The language forms **procedural** steps of action, invoked in response to events. 
-- Notes on [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes)
+      - Quick notes on [Javascript](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes)
+
+Paint requires a canvas.  HTML provides a [`canvas`](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial) element that can be interfaced via a 2D `context` via `canvas.getContext("2d")`
+  - [Get a reference to an HTML element in Javascript](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+
 - What is an API? 
   - E.g. the MDN [canvas documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.
-- Notes on 2D drawing in the web using [Canvas, vectors, matrices](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
 
-Let's start with a sketching application -- but let's think about how we can use computation to augment or transform our gestures in some way.
-- First, what elements do we need? 
-- Starting from Maeda's observations, what concepts need to be mechanized?
-- How do we look into API documentation to find the methods we need?
-- How do we start? 
-- What are the events?
-- Begin with pseudo-code, then transform to working code?
-  
----
+We're working in pixel coordinates in X and Y axes, from zero to `canvas.width` and `canvas.height`.
 
-Examples from course in 2024-25
+Drawing lines:
+- beginPath, moveTo, lineTo, stroke
+- Quick Notes on 2D drawing in the web using [Canvas and vectors](https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes) 
+
+We're working with mouse (pointer) events. 
+
+- [Events, addEventListener](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events)
+  - [HTML element events](https://developer.mozilla.org/en-US/docs/Web/API/Element/pointermove_event) -- for drawing, we will want mouse and pointer events in particular!
+
+Let the canvas fill the window:
+
+```js
+window.addEventListener("resize", resize);
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resize();
+```
+
+--- 
+
+Example from 2024
 
 https://codepen.io/grrrwaaa/pen/gbaJjgv
-
-https://codepen.io/grrrwaaa/pen/yLdrXNQ
-
-https://codepen.io/grrrwaaa/pen/Yzdxwgj
-
-**Homework**
-
-Have a good read of [Golan Levin's Master thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), and note down your thoughts and questions about it for our next coding session! 
-
-How would you respond to the example challenge, *"Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm."*?  
 
 
 ## Animate drawing
 
 Let's continue with the sketching. 
-
-<!--
 
 > First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have `line()` and `background()` etc.  That's good: we are in the stage of *reproducing research*. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that's good too -- we aren't limited to what's already given because we know how to remake it, and maybe we'll have a discovery that can advance research! 
 
@@ -171,6 +191,17 @@ draw:
 		drawpath(currentpath)
 ```
 
+---
+
+Examples from 2024-25
+
+https://codepen.io/grrrwaaa/pen/yLdrXNQ
+
+https://codepen.io/grrrwaaa/pen/Yzdxwgj
+
+
+----
+
 And here's the final code we ended up with:
 
 https://codepen.io/grrrwaaa/pen/myVdEZR?editors=0010
@@ -179,7 +210,7 @@ Here's a more refined version from last year's class:
 
 https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010
 
-Please continue working on extending and mutating this into a new direction! We will share each other's codepens in the next class. 
+Please continue working on extending and mutating this into a new direction! We will share each other's codepens in the following classes. 
 - We talked about how these lines are still fairly passive, as they just follow the series of instructions given to them by the initial gesture. How could they become a bit more autonomous?
 - Each segment holds a relative change. Can we do something interesting with that?
 - Are there more interesting things we could do with the boundaries?
@@ -226,5 +257,3 @@ Some rules of thumb while coding:
 - Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
 
 - Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
-
--->

@@ -20,11 +20,11 @@ Almost everything about this course will be linked from https://alicelab.world/d
 | <nobr>Week 5  [10/7](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
 | <nobr>[*Reading Week*](#reading-week)</nobr> | Flesh out Annotated Bibliography and Draft Paper Outline |  |  | 
 | <nobr>Week 6  [10/21](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
-| <nobr>Week 7  [10/28](#week-7)</nobr>  | [Data Visualization](d3js.html) |                                      | ... |
+| <nobr>Week 7  [10/28](#week-7)</nobr>  | [GPU programming with GLSL](glsl.html)  |                                      | ... |
 | <nobr>Week 8  [11/4](#week-8)</nobr>   | [Digital Audio and Sound Synthesis](gen.html) | Paper Draft 1-on-1's                                     | [Complete first draft](#paper-complete-draft-for-peer-review)|
 | <nobr>Week 9  [11/11](#week-9)</nobr>  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review)  | Incorporate feedback into drafting the [Final Paper](#final-paper) |
-| <nobr>Week 10 [11/18](#week-10)</nobr> | [GPU programming with GLSL](glsl.html) | Paper 1-on-1's                       | Revisions to [Final Paper](#final-paper) |
-| <nobr>Week 11 [11/25](#week-11)</nobr> |                                                        | Paper 1-on-1's                       | Submit [Final Paper](#final-paper) |
+| <nobr>Week 10 [11/18](#week-10)</nobr> | [Data Visualization](d3js.html)                                                       | Paper 1-on-1's                       | Revisions to [Final Paper](#final-paper) |
+| <nobr>Week 11 [11/25](#week-11)</nobr> |  | Paper 1-on-1's                       | Submit [Final Paper](#final-paper) |
 | <nobr>Week 12 [12/2](#week-12)</nobr>  | [Final presentations](#final-presentations)            |                                      | [Video/Tutorial](#video-tutorial) + Post-mortem reflection |
 
 
@@ -206,33 +206,10 @@ Authors will be required to present their papers with a duration of 15 minutes.
 - Using this you can begin to prepare for the next step -- identifying papers for your [initial reading list](#preparing-a-reading-list).  
 - One good way to do this is to find the most relevant conferences and journals in the topic area, and downloading recent conference proceedings and/or journal issues. 
 
-<!--
-Here are some recent conference calls (I have also been sharing these on the DMgrad email list):
-- [Movement and Computing](https://moco26.movementcomputing.org) -- deadline Nov 1st -- we have had several DM students present at MOCO in the past. This year they specifically are interested in health applications, but any topic of motion & computing is of interest.
-- [EvoStar 2026 conference](http://www.evostar.org/2026/) -- deadline November 1st -- which includes **EvoMUSART 15th International Conference (and 19th European event) on Artificial Intelligence in Music, Sound, Art and Design.** 
-- [Toronto Aesthetics Sciences and Creativity Conference (TASC 2026), to be held on April 14th, 2026, at University College, University of Toronto](https://sites.google.com/view/tasc2026/) -- deadline January 9, 2026
--->
 
-**Survey responses**
+## A list of conferences and journals by topic
 
-<!--
-From the responses of the survey last week, I can see that some of you have some advanced experience in some programming languages and creative software environments, with Javascript especially as well as Max, Unity being the most frequent ones, and Python, C, GLSL, TouchDesigner, Godot, and Unreal are also mentioned.  Some of you have only beginner level experience with these. 
-
-Topics of interest mentioned (repeated mentions marked with asterisks):
-- Generative Art**
-- AI (AI creativity)**
-- WebGL / Real-time 3D Graphics / Shader Programming**
-- Data Visualization*
-- Human-machine interaction*
-- Art through code
-- Web programming
-- Audio Synthesis
-- VR Interaction
-- Game Engines
-
-This is more than we can realistically cover in one semester, especially in a course in which at least half of our time is spent on research writing, but I can certainly do some deep-dives into some of these, and I will try to weave through the topics with the technical platforms mentioned! 
-
-I also compiled a list of conferences and journals for some of these topics -- which you might use in your search for related and exemplar papers for the writing:
+You may use these in your search for related and exemplar papers for the writing:
 
 - Digital Arts / Computational Arts / Art and Code
   - [ISEA (Inter-Society for the Electronic Arts) - Electronic arts symposium](https://www.isea-web.org/)
@@ -244,7 +221,7 @@ I also compiled a list of conferences and journals for some of these topics -- w
   - [Generative Art International Conference - Annual conference running for 28 years, held in Rome with proceedings published as books](https://www.generativeart.com/)
   - [GAIDMA (International Conference on Generative AI and Digital Media Arts) - Focuses on generative AI applications in digital media arts](https://www.aischolar.org/attendees/index/NFQ77V)
 - AI & Creativity
-  - [NeurIPS Creative AI Track - Third year running, invites research papers and artworks exploring AI applications in art, design, and creative practice](https://neurips.cc/Conferences/2025/CallForCreativeAI)
+  - [NeurIPS Creative AI Track - Invites research papers and artworks exploring AI applications in art, design, and creative practice](https://neurips.cc/Conferences/2025/CallForCreativeAI)
   - [AAAI/ACM Conference on AI, Ethics, and Society - Features research on AI applications in creative fields Foregrounding Artist Opinions: A Survey Study on Transparency, Ownership, and Fairness in AI Generative Art](https://dl.acm.org/conference/aies)
   - [ICCC (International Conference on Computational Creativity)](http://www.computationalcreativity.net/)
 - Real-time 3D Graphics
@@ -276,6 +253,82 @@ I also compiled a list of conferences and journals for some of these topics -- w
   - [VRST (Virtual Reality Software and Technology) - ACM VR conference](https://vrst.acm.org/)
   - [Virtual Reality (Springer)](https://link.springer.com/journal/10055)
   - [Presence (MIT Press) - VR & AR](https://direct.mit.edu/pvar)
+
+
+## Recent calls for submissions
+
+I will collect here some recent conference calls (I will also be sharing these on the DMgrad email list):
+
+- [EvoStar 2027](https://www.evostar.org/2027/evomusart/) which includes **EvoMUSART International Conference on Artificial Intelligence in Music, Sound, Art and Design.**  Deadline Nov 1
+- [Generative Art](https://www.generativeart.com) Deadline Sep 23
+
+Lists of calls for papers: 
+
+- http://www.wikicfp.com/cfp/ -- with specific lists for 
+  - art http://www.wikicfp.com/cfp/call?conference=art 
+  - music http://www.wikicfp.com/cfp/call?conference=music 
+  - games http://www.wikicfp.com/cfp/call?conference=games
+  - VR http://www.wikicfp.com/cfp/call?conference=vr
+  - etc.
+- DiGRA (games) https://digra.org/category/call-for-papers/
+- https://newmediacaucus.org/opportunities/tag:Call%20for%20Papers
+
+## Survey responses
+
+Thank you to those that have completed the survey (half of you) -- everyone else please do this, it helps me shape the course to the group.  Here's a brief summary of results so far:
+
+**Why Digital Media?**
+
+- how AI connects engineering with film production, "**an opportunity to rethink**" methods and what the medium can become
+- "a big aspect of video games **may not be understood as well or taken as seriously as it should be**"
+- games as "the mechanics of choice and interactivity"
+- VR + games "a never-before-seen advantage comparing to all other" media forms
+- "making creatures come to life"
+- programming + narrative
+- against "conformity"
+- "a community", not alone, "a space for sharing" knowledge and work
+- to "shed a light on the human condition"
+- access to information: "a great opportunity provided that we don't become derailed in the ocean of slop"
+- AI raises concerns about safety and employment 
+- not letting algorithms decide for you, "a risk not a lot of people are willing to acknowledge"
+- responsibility for accessibility
+- digital ownership, censorship, and artist's control over their work
+
+**Existing kills mentioned:**
+- A full spectrum from beginner to advanced
+- Java/C#, Python, C/C++, Unity, Unreal, Max/MSP, ChucK, hardware communications (mobile), filmmaking, video game production
+
+**Topics to develop:**
+- Human-machine interaction
+- Web programming
+- Shader programming
+- VR
+- Programming (in general)
+- AI (LLMs, genAI)
+- Cybernetics
+- Video games
+- Film
+- Digital media arts
+
+This is more than we can realistically cover in one semester, especially in a course in which at least half of our time is spent on research writing, but I can certainly do some deep-dives into some of these, and I will try to weave through the topics with the technical platforms mentioned! 
+
+<!--
+From the responses of the survey last week, I can see that some of you have some advanced experience in some programming languages and creative software environments, with Javascript especially as well as Max, Unity being the most frequent ones, and Python, C, GLSL, TouchDesigner, Godot, and Unreal are also mentioned.  Some of you have only beginner level experience with these. 
+
+Topics of interest mentioned (repeated mentions marked with asterisks):
+- Generative Art**
+- AI (AI creativity)**
+- WebGL / Real-time 3D Graphics / Shader Programming**
+- Data Visualization*
+- Human-machine interaction*
+- Art through code
+- Web programming
+- Audio Synthesis
+- VR Interaction
+- Game Engines
+
+This is more than we can realistically cover in one semester, especially in a course in which at least half of our time is spent on research writing, but I can certainly do some deep-dives into some of these, and I will try to weave through the topics with the technical platforms mentioned! 
+
  
 Goals that you mentioned include:
 - Developing understanding
@@ -307,6 +360,12 @@ Let's step back a moment, and understand computation from its genealogical emerg
 
 [Computational Sketching](sketching.html)
 
+## Homework Week 2
+
+Have a good read of [Golan Levin's Master thesis](http://www.flong.com/archive/texts/publications/thesis/index.html), and note down your thoughts and questions about it for our next coding session! 
+
+How would you respond to the example challenge, *"Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm."*?  
+
 ## An introduction
 
 Please add 2-4 slides to introduce yourself in [the Google Slide deck here](https://docs.google.com/presentation/d/1j3J97EouJPrMhh7IQ_uRnDmpjlUKGQWRBXJzy1SjPVc/)
@@ -316,7 +375,6 @@ Please add 2-4 slides to introduce yourself in [the Google Slide deck here](http
 - Remember to include your name, and reference details (name, link etc.) for any images or media you add.
 - Please be careful not to delete your colleague's slides!
 
-
 # Week 3 
 [Class Recording](#class-recordings)
 
@@ -325,6 +383,7 @@ Please add 2-4 slides to introduce yourself in [the Google Slide deck here](http
 Let's get to know each other, and our diverse backgrounds. And let's hear about your research topic areas and questions! 
 
 https://docs.google.com/presentation/d/1j3J97EouJPrMhh7IQ_uRnDmpjlUKGQWRBXJzy1SjPVc/
+
 
 ## Preparing a Reading List
 

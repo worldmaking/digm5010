@@ -61,74 +61,109 @@ footer {
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="lets-get-making">Let&#39;s get making</h2>
+<p>Let&#39;s start with a sketching application -- but let&#39;s think about how we can use computation to augment or transform our gestures in some way. How do we start? </p>
 <ul>
-<li>A shareable workspace: <a href="https://codepen.io">codepen</a><ul>
+<li><p>First, what elements do we need? </p>
+<ul>
+<li>Starting from Maeda&#39;s observations, what concepts need to be mechanized?</li>
+<li>What are the events?</li>
+</ul>
+</li>
+<li><p>Begin with pseudo-code, then transform to working code?</p>
+</li>
+<li><p>How do we look into documentation to find the methods we need?</p>
+</li>
+</ul>
+<p>First let&#39;s get a shareable workspace:</p>
+<ul>
+<li><a href="https://codepen.io">codepen</a></li>
+</ul>
+<p>What is the <strong>ontology</strong> of this space?</p>
+<ul>
 <li>The HTML5 trio: the HTML (DOM), CSS, and JavaScript<ul>
-<li>HMTL: the page container and structure. The language forms a <strong>declarative</strong> data structure, roughly in a tree structure. </li>
+<li>HTML: the page container and structure. The language forms a <strong>declarative</strong> data structure, roughly in a tree structure. <ul>
+<li>Codepen gives us most of the HTML structure we need already.</li>
+</ul>
+</li>
 <li>CSS: the rules of layout, rendering and style. The language forms a set of <strong>declarative</strong> definitions. </li>
-<li>JS: dynamic generation and behaviour. The language forms <strong>procedural</strong> steps of action, invoked in response to events. </li>
+<li>JS: dynamic generation and behaviour. The language forms <strong>procedural</strong> steps of action, invoked in response to events. <ul>
+<li>Quick notes on <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes">Javascript</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Notes on <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-notes">Javascript</a></li>
+</ul>
+<p>Paint requires a canvas.  HTML provides a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"><code>canvas</code></a> element that can be interfaced via a 2D <code>context</code> via <code>canvas.getContext(&quot;2d&quot;)</code></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">Get a reference to an HTML element in Javascript</a></li>
+</ul>
+<ul>
 <li>What is an API? <ul>
 <li>E.g. the MDN <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial">canvas documentation</a>.  Canvas is a rectangular object in an HTML page, suitable for static and dynamic 2D or 3D graphics rendering.</li>
 </ul>
 </li>
-<li>Notes on 2D drawing in the web using <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">Canvas, vectors, matrices</a> </li>
 </ul>
-<p>Let&#39;s start with a sketching application -- but let&#39;s think about how we can use computation to augment or transform our gestures in some way.</p>
+<p>We&#39;re working in pixel coordinates in X and Y axes, from zero to <code>canvas.width</code> and <code>canvas.height</code>.</p>
+<p>Drawing lines:</p>
 <ul>
-<li>First, what elements do we need? </li>
-<li>Starting from Maeda&#39;s observations, what concepts need to be mechanized?</li>
-<li>How do we look into API documentation to find the methods we need?</li>
-<li>How do we start? </li>
-<li>What are the events?</li>
-<li>Begin with pseudo-code, then transform to working code?</li>
+<li>beginPath, moveTo, lineTo, stroke</li>
+<li>Quick Notes on 2D drawing in the web using <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">Canvas and vectors</a> </li>
 </ul>
+<p>We&#39;re working with mouse (pointer) events. </p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events">Events, addEventListener</a><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/pointermove_event">HTML element events</a> -- for drawing, we will want mouse and pointer events in particular!</li>
+</ul>
+</li>
+</ul>
+<p>Let the canvas fill the window:</p>
+<pre><code class="language-js"><span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&quot;resize&quot;</span>, resize);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resize</span>(<span class="hljs-params"></span>) </span>{
+  canvas.width = <span class="hljs-built_in">window</span>.innerWidth;
+  canvas.height = <span class="hljs-built_in">window</span>.innerHeight;
+}
+resize();</code></pre>
 <hr>
-<p>Examples from course in 2024-25</p>
+<p>Example from 2024</p>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="gbaJjgv" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/gbaJjgv">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="yLdrXNQ" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/yLdrXNQ">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="Yzdxwgj" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/Yzdxwgj">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-<p><strong>Homework</strong></p>
-<p>Have a good read of <a href="http://www.flong.com/archive/texts/publications/thesis/index.html">Golan Levin&#39;s Master thesis</a>, and note down your thoughts and questions about it for our next coding session! </p>
-<p>How would you respond to the example challenge, <em>&quot;Given a mobile point in space over a finite rectangular area, create a parametric drawing that illustrates repetition, variety, or rhythm.&quot;</em>?  </p>
+
 <hr>
 <p><a href="#top"><img src="img/up.png"></a></p>
 <h2 id="animate-drawing">Animate drawing</h2>
 <p>Let&#39;s continue with the sketching. </p>
-<!--
-
-> First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have `line()` and `background()` etc.  That's good: we are in the stage of *reproducing research*. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that's good too -- we aren't limited to what's already given because we know how to remake it, and maybe we'll have a discovery that can advance research! 
-
-- We saw how we can draw in response to mouse/touch movements, and add generative variation to them. 
-- We talked about Maeda's comment "the most interesting pixels are the mouse" and this represents not just space but also **time**. How can we use the timing of a drawing gesture to modify the result? Can you think of ways to use speeds, rhythms, echoes, ?
-
-  - Can we *reify* the time of the gesture?
-
-A more complex example, inspired by Paul Haberli's *Dynadraw*: 
+<blockquote>
+<p>First a quick note -- what we are doing looks a bit like p5.js. In fact, if we remember to refactor code that we will re-use into re-usable functions, then it might start to look even more like p5.js -- maybe we will have <code>line()</code> and <code>background()</code> etc.  That&#39;s good: we are in the stage of <em>reproducing research</em>. And if we find there are moments where we want to do things a little differently, because of the needs of our project, that&#39;s good too -- we aren&#39;t limited to what&#39;s already given because we know how to remake it, and maybe we&#39;ll have a discovery that can advance research! </p>
+</blockquote>
+<ul>
+<li><p>We saw how we can draw in response to mouse/touch movements, and add generative variation to them. </p>
+</li>
+<li><p>We talked about Maeda&#39;s comment &quot;the most interesting pixels are the mouse&quot; and this represents not just space but also <strong>time</strong>. How can we use the timing of a drawing gesture to modify the result? Can you think of ways to use speeds, rhythms, echoes, ?</p>
+<ul>
+<li>Can we <em>reify</em> the time of the gesture?</li>
+</ul>
+</li>
+</ul>
+<p>A more complex example, inspired by Paul Haberli&#39;s <em>Dynadraw</em>: </p>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="gOYQyrd?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-[Example script from a previous class](https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011)
-
-### Reproducing Curly/Yellowtail
-
-  - We can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?
-  - Or: how can we combine both sketching and animating? How can we draw a line that then animates?
-    - Can we *reify* the drawing?
-
-With these steps, we should be in a position to attempt to reconstruct Golan Levin's Curly/[Yellowtail](http://www.flong.com/archive/projects/yellowtail/index.html), for example. 
-
-**This is an example of reproducing research.**  First we should sketch out what is required based on the source material, and work from there to refine from a sketch through pseudo-code and implementation of components until we have the final result. 
-
-> "Yellowtail repeats a user's strokes end-over-end, enabling simultaneous specification of a line's shape and quality of movement. Each line repeats according to its own period, producing an ever-changing and responsive display of lively, worm-like textures."
-
-Detailed description from page 73 of the [thesis](http://www.flong.com/archive/storage/pdf/articles/thesis300.pdf):
-
-> "a user’s linear marks transform into an animated display of lively,
+<p><a href="https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011">Example script from a previous class</a></p>
+<h3 id="reproducing-curlyyellowtail">Reproducing Curly/Yellowtail</h3>
+<ul>
+<li>We can make animations through an erase/draw loop, demonstrated by drawing random lines on each frame. But these have no consistency from one frame to the next. How can we add consistency?</li>
+<li>Or: how can we combine both sketching and animating? How can we draw a line that then animates?<ul>
+<li>Can we <em>reify</em> the drawing?</li>
+</ul>
+</li>
+</ul>
+<p>With these steps, we should be in a position to attempt to reconstruct Golan Levin&#39;s Curly/<a href="http://www.flong.com/archive/projects/yellowtail/index.html">Yellowtail</a>, for example. </p>
+<p><strong>This is an example of reproducing research.</strong>  First we should sketch out what is required based on the source material, and work from there to refine from a sketch through pseudo-code and implementation of components until we have the final result. </p>
+<blockquote>
+<p>&quot;Yellowtail repeats a user&#39;s strokes end-over-end, enabling simultaneous specification of a line&#39;s shape and quality of movement. Each line repeats according to its own period, producing an ever-changing and responsive display of lively, worm-like textures.&quot;</p>
+</blockquote>
+<p>Detailed description from page 73 of the <a href="http://www.flong.com/archive/storage/pdf/articles/thesis300.pdf">thesis</a>:</p>
+<blockquote>
+<p>&quot;a user’s linear marks transform into an animated display of lively,
 worm-like lines. After the user deposited a mark, the system
 would then procedurally displace that mark end-over-end, making
 possible the simultaneous specification of both a line’s shape as
@@ -136,23 +171,19 @@ well as its quality of movement. Straight marks would move along
 the direction of their own principal axes, while circular marks
 would chase their own tails. Marks with more irregular shapes
 would move in similarly irregular, but nonetheless rhythmic
-patterns."
-
-> The " screen space obeyed periodic (toroidal-topology)
+patterns.&quot;</p>
+</blockquote>
+<blockquote>
+<p>The &quot; screen space obeyed periodic (toroidal-topology)
 boundary conditions, such that marks which crossed the edge of
 the screen would reëmerge on the screen’s opposite side, rather
-than disappearing altogether."
-
-Notice also the self-observation and critique, see p79. Although this project does not achieve the goal of the thesis, these observations inform the progress that follows. This is a positive research path. 
-
----
-
-OK so let's start by pseudo-coding Yellowtail!
-
-Here's what we ended up with as pseudo-code in class, before we started coding:
-
-```
-there is a canvas
+than disappearing altogether.&quot;</p>
+</blockquote>
+<p>Notice also the self-observation and critique, see p79. Although this project does not achieve the goal of the thesis, these observations inform the progress that follows. This is a positive research path. </p>
+<hr>
+<p>OK so let&#39;s start by pseudo-coding Yellowtail!</p>
+<p>Here&#39;s what we ended up with as pseudo-code in class, before we started coding:</p>
+<pre><code>there is a canvas
 
 state:
     mouse: x, y, buttonstate
@@ -163,7 +194,7 @@ state:
         list of segments (dx, dy change vectors)
 
 pointerdown:
-    create a new currentpath object, with start position at mouse x,y & t
+    create a new currentpath object, with start position at mouse x,y &amp; t
 
 pointerup:
     if currentpath
@@ -172,7 +203,7 @@ pointerup:
 
 pointermove:
     if currentpath exists
-        add mouse dx,dy & t to currentpath's list of segments
+        add mouse dx,dy &amp; t to currentpath&#x27;s list of segments
 
 animate:
     for each path of finished paths
@@ -180,10 +211,10 @@ animate:
         (something about coordinates)
         stick it onto the end (push)
         wrap around canvas width/height 
-            e.g. if x > width; x -= width, etc. for 4 boundaries
+            e.g. if x &gt; width; x -= width, etc. for 4 boundaries
 
 drawpath:
-    begin position at path's start position
+    begin position at path&#x27;s start position
     for each segment of the path
         line from last position to new position by adding segment change
         (path, moveto, lineto, stroke)
@@ -193,64 +224,67 @@ draw:
     for each path of finished paths
         drawpath(line)
     if currentpath exists
-        drawpath(currentpath)
-```
+        drawpath(currentpath)</code></pre>
+<hr>
+<p>Examples from 2024-25</p>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="yLdrXNQ" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/yLdrXNQ">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="Yzdxwgj" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/Yzdxwgj">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-And here's the final code we ended up with:
+
+<hr>
+<p>And here&#39;s the final code we ended up with:</p>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="myVdEZR?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/myVdEZR?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-Here's a more refined version from last year's class:
+<p>Here&#39;s a more refined version from last year&#39;s class:</p>
 <p class="codepen" data-height="520" data-default-tab="js,result" data-user="grrrwaaa" data-slug-hash="vYoOLqL?editors=0010" data-preview="true"><span><a href="https://codepen.io/grrrwaaa/pen/vYoOLqL?editors=0010">Open pen.</a></span></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-Please continue working on extending and mutating this into a new direction! We will share each other's codepens in the next class. 
-- We talked about how these lines are still fairly passive, as they just follow the series of instructions given to them by the initial gesture. How could they become a bit more autonomous?
-- Each segment holds a relative change. Can we do something interesting with that?
-- Are there more interesting things we could do with the boundaries?
-- Should segments continue forever? 
-- Each segment holds a relative time, but we aren't really using that in the animation yet. E.g. if you pause mid-gesture, then continue, the animated line moves but it does not have a pause. Can you figure out how to fix that?
-- With multiple lines, they are not aware of each other. Is there a way that they could be?
-- How about rhythm -- is there a way to synchronize them to an underlying meter, for example?
-- Can line mutate? Getting noisier, or more angular, or more smooth, etc. over time?
-- Can lines decay? Or grow?
-- Can lines split into two?
+<p>Please continue working on extending and mutating this into a new direction! We will share each other&#39;s codepens in the following classes. </p>
+<ul>
+<li>We talked about how these lines are still fairly passive, as they just follow the series of instructions given to them by the initial gesture. How could they become a bit more autonomous?</li>
+<li>Each segment holds a relative change. Can we do something interesting with that?</li>
+<li>Are there more interesting things we could do with the boundaries?</li>
+<li>Should segments continue forever? </li>
+<li>Each segment holds a relative time, but we aren&#39;t really using that in the animation yet. E.g. if you pause mid-gesture, then continue, the animated line moves but it does not have a pause. Can you figure out how to fix that?</li>
+<li>With multiple lines, they are not aware of each other. Is there a way that they could be?</li>
+<li>How about rhythm -- is there a way to synchronize them to an underlying meter, for example?</li>
+<li>Can line mutate? Getting noisier, or more angular, or more smooth, etc. over time?</li>
+<li>Can lines decay? Or grow?</li>
+<li>Can lines split into two?</li>
+</ul>
+<hr>
+<p><a href="https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010">past version 1</a></p>
+<p><a href="https://codepen.io/grrrwaaa/pen/aagQzY?editors=0010">past version 2</a></p>
+<hr>
+<p>Some rules of thumb while coding:</p>
+<ul>
+<li><p>Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let&#39;s focus on behaviour first.</p>
+</li>
+<li><p>Break a problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.</p>
+</li>
+<li><p>Try to work out a problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn&#39;t often the right thing to do. Once the method becomes clearer, start converting pseudocode into &quot;minimum viable&quot; code.</p>
+</li>
+<li><p>Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. </p>
+</li>
+<li><p>Figure out working conditions logically from basic requirements. E.g. for anything to animate we&#39;re going to need to clear the screen on each frame, which means we&#39;re going to have to redraw everything every time, which means...</p>
+</li>
+<li><p>Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.</p>
+</li>
+<li><p>Test often. Each time you add one minor element, make sure it works for all likely input. </p>
+</li>
+<li><p>Handle special cases: starting values, boundary cases, error handling... </p>
+</li>
+<li><p>Don&#39;t worry about trying to make anything optimal -- make the most naive way that works, then refine from there. </p>
+</li>
+<li><p>Use abstractions (functions, objects) to encapsulate and structure ideas more easily &amp; clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable &quot;support routines&quot; from the code that represents the main ideas. </p>
+</li>
+<li><p>Comment the code and use good variable names -- you&#39;ll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)</p>
+</li>
+<li><p>Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.</p>
+</li>
+<li><p>Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.</p>
+</li>
+</ul>
 
----
-
-[past version 1](https://codepen.io/grrrwaaa/pen/jOXYdMd?editors=0010)
-
-[past version 2](https://codepen.io/grrrwaaa/pen/aagQzY?editors=0010)
-
----
-
-Some rules of thumb while coding:
-
-- Use the simplest limits you can -- e.g. limiting yourself to drawing only black lines. More colour, shape and style variations can always be added later. Let's focus on behaviour first.
-
-- Break a problem down into sub-problems. Approach the problem from a simpler approximation first -- the simplest version. E.g. make it work in a static way before a dynamic way, or make it work for one, before making it work for many, etc.
-
-- Try to work out a problem in pseudocode first -- just write it in commments, draw it on paper, etc, any form that is concrete will help to see the problem more clearly, and diving head first into code isn't often the right thing to do. Once the method becomes clearer, start converting pseudocode into "minimum viable" code.
-
-- Use event handlers (draw-frame, mouse, keyboard, timers, ...) to animate and interact with things. 
-
-- Figure out working conditions logically from basic requirements. E.g. for anything to animate we're going to need to clear the screen on each frame, which means we're going to have to redraw everything every time, which means...
-
-- Use state (variables for numbers, strings, objects, arrays) to make things exist over time. Once captured, data can be replayed, modified, etc. Often you can represent state in a few different ways, and the choice will make some processes easier than others.
-
-- Test often. Each time you add one minor element, make sure it works for all likely input. 
-
-- Handle special cases: starting values, boundary cases, error handling... 
-
-- Don't worry about trying to make anything optimal -- make the most naive way that works, then refine from there. 
-
-- Use abstractions (functions, objects) to encapsulate and structure ideas more easily & clearly. Any time you feel like you are writing the same code several times, replace it with a function or loop. Separate out reusable "support routines" from the code that represents the main ideas. 
-
-- Comment the code and use good variable names -- you'll thank yourself in the future when you come back to it! (And anyone else looking at the code will thank you more -- remember research is about sharing!)
-
-- Take notes as you go. At any time you might have an idea of a different direction to explore -- you can only do one at once, so write them down! Even if they are just comments in the code.
-
-- Make many copies, saving a version (in Codepen you can do this via a Fork) for each minor milestone. If it goes wrong but in an interesting way (a happy accident), save a version of that too.
-
--->
 <footer>DIGM5010 2021-22</footer>
 </body>
 <script src="js/connect.js"></script>
