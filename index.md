@@ -350,6 +350,10 @@ These are *great*!
 
 ## What is computation?
 
+Today's discussion:
+
+![chalkboard](img/chalkboard.jpg)
+
 A futorologist said to me: to understand the future, we must go much further into the past; to see patterns that recur and trajectories behind the present. However this doesn't mean entering the future through a rear-view mirror (McLuhan's warning); it is to understand the language and concepts we see the world in today, and see their gaps and limitations. 
 
 Let's step back a moment, and understand computation from its genealogical emergence, and conceptual foundations:
