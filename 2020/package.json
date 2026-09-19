@@ -15,7 +15,7 @@
     "ngrok": "^3.4.0",
     "normalize.css": "^8.0.1",
     "telebit": "^0.20.6",
-    "ws": "^7.3.1"
+    "ws": "^7.5.10"
   },
   "devDependencies": {},
   "scripts": {
