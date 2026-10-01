@@ -1246,7 +1246,6 @@ https://codepen.io/grrrwaaa/pen/VworXVj?editors=0010
 
 -------
 
-
 ## Class Recordings
 
 Recordings of the weekly sessions will be here:
