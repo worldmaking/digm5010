@@ -140,6 +140,13 @@ Notice also the self-observation and critique, see p79. Although this project do
 
 ---
 
+Code from Oct 1 2026:
+
+https://codepen.io/editor/grrrwaaa/pen/01a0f8d2-15ef-7deb-a142-828bcb9c57fd
+
+---
+
+
 OK so let's start by pseudo-coding Yellowtail!
 
 Here's what we ended up with as pseudo-code in class, before we started coding:
