@@ -16,16 +16,16 @@ Almost everything about this course will be linked from https://alicelab.world/d
 | <nobr>Week 1  [9/10](#week-1)</nobr>    | [What is Research?](#what-is-research)                 | Discussion, Survey | Respond to the [Call for Papers](#a-call-for-papers): identify motivations, areas, research communities  |
 | <nobr>Week 2  [9/17](#week-2)</nobr>   | [What is Computation?](#what-is-computation)           | [Computational Sketching](sketching.html) | Articulate your topic and questions with [introduction slides](#an-introduction) |
 | <nobr>Week 3  [9/24](#week-3)</nobr>   | [Who Are You & What Is Your Topic](#introductions)? | Topic 1-on-1's | Develop your [Reading List](#preparing-a-reading-list)  |
-| <nobr>Week 4  [9/31](#week-4)</nobr>   | [What is a Problem Statement](#problem-statement)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) | Draft a [Problem Statement](#problem-statement)  |
-| <nobr>Week 5  [10/7](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
+| <nobr>Week 4  [10/1](#week-4)</nobr>   | [What is a Problem Statement](#problem-statement)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) | Draft a [Problem Statement](#problem-statement)  |
+| <nobr>Week 5  [10/8](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
 | <nobr>[*Reading Week*](#reading-week)</nobr> | Flesh out Annotated Bibliography and Draft Paper Outline |  |  | 
-| <nobr>Week 6  [10/21](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
-| <nobr>Week 7  [10/28](#week-7)</nobr>  | [GPU programming with GLSL](glsl.html)  |                                      | ... |
-| <nobr>Week 8  [11/4](#week-8)</nobr>   | [Digital Audio and Sound Synthesis](gen.html) | Paper Draft 1-on-1's                                     | [Complete first draft](#paper-complete-draft-for-peer-review)|
-| <nobr>Week 9  [11/11](#week-9)</nobr>  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review)  | Incorporate feedback into drafting the [Final Paper](#final-paper) |
-| <nobr>Week 10 [11/18](#week-10)</nobr> | [Data Visualization](d3js.html)                                                       | Paper 1-on-1's                       | Revisions to [Final Paper](#final-paper) |
-| <nobr>Week 11 [11/25](#week-11)</nobr> |  | Paper 1-on-1's                       | Submit [Final Paper](#final-paper) |
-| <nobr>Week 12 [12/2](#week-12)</nobr>  | [Final presentations](#final-presentations)            |                                      | [Video/Tutorial](#video-tutorial) + Post-mortem reflection |
+| <nobr>Week 6  [10/22](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
+| <nobr>Week 7  [10/29](#week-7)</nobr>  | [GPU programming with GLSL](glsl.html)  |                                      | ... |
+| <nobr>Week 8  [11/5](#week-8)</nobr>   | [Digital Audio and Sound Synthesis](gen.html) | Paper Draft 1-on-1's                                     | [Complete first draft](#paper-complete-draft-for-peer-review)|
+| <nobr>Week 9  [11/12](#week-9)</nobr>  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review)  | Incorporate feedback into drafting the [Final Paper](#final-paper) |
+| <nobr>Week 10 [11/19](#week-10)</nobr> | [Data Visualization](d3js.html)                                                       | Paper 1-on-1's                       | Revisions to [Final Paper](#final-paper) |
+| <nobr>Week 11 [11/26](#week-11)</nobr> |  | Paper 1-on-1's                       | Submit [Final Paper](#final-paper) |
+| <nobr>Week 12 [12/3](#week-12)</nobr>  | [Final presentations](#final-presentations)            |                                      | [Video/Tutorial](#video-tutorial) + Post-mortem reflection |
 
 
 
@@ -447,13 +447,15 @@ The key components of a problem statement (not necessarily in this order):
   - It may also be framed relative to a **motivation, goal or ideal state**: which describes what the situation should ideally look like. 
 - **The Gap**: The statement then identifies a specific gap, contradiction, or insufficiency in current understanding, i.e. the difference between the current and desired states. That is, it identifies what is missing, or what is wrong (wrongly addressed, wrongly assummed, etc.) in the current state of the art. 
   - The gap might be empirical (lack of data), theoretical (inadequate explanations), methodological (limitations in existing approaches), or practical (unresolved real-world issues). 
-- The **specific research questions**: You articulate the specific research question or questions that emerge from this gap. These should be focused, researchable, and aligned with the methodological capabilities of your discipline. 
-  - It should be narrowly-defined, because research goes deep & narrow, not shallow & wide. It is a way to say what you will *not* do. 
+- The **specific research question**: You articulate the specific research question (or questions) that emerge from this gap. These should be focused, researchable, and aligned with the methodological capabilities of your discipline. 
+  - It should be **narrow**ly-defined, because research goes deep & narrow, not shallow & wide. It is a way to say **what you will not do**. 
 - **Addressability**: That you can identify how this is addressable through research (the most general summarized form of you would propose to resolve the gap)
 - **The Significance/Impact**: Why addressing this problem matters, both for advancing knowledge in your field and potentially for broader societal understanding. What is at stake (risks/opportunities). Who it affects. 
 
 What it should **not** contain:
-- **Value statements or opinion**: Only use objective facts and evidence. 
+- **Value statements or opinion**: Only use objective facts and evidence, supported with references in the literature. 
+
+> **Personal relevance**: It's very important that this is something that you care about, enough to dedicate precious time to it, but that personal motivation is not something you need to include in a problem statement. In a grant proposal you need to show that you are a good candidate for the research to support the grant's feasibility, but otherwise in academic writing this is generally not considered relevant information.  However, there may be specific research problems or methodologies (such as autoethnographic approaches) where personal history may be relevant. 
 
 What is the purpose of a problem statement?
 - **Clarity**: It puts the real issue into words and removes ambiguity. 
@@ -463,26 +465,31 @@ What is the purpose of a problem statement?
 - **Direction**: It sets the goal for the project and guides subsequent activities. 
 - **Credibility & Buy-in**: It helps reviewers (paper reviewers, grant reviewers) understand the value of the research
 
-That last point can be especially important -- think about this from a reviewer's point of view. What would make them consider this paper worth publishing, or this proposal worth funding?
+---
+
+That last point can be especially important -- **think about this from a reviewer's point of view**. What would make them consider this paper worth publishing, or this proposal worth funding?
 
 To a reviewer, a strong research problem statement shares several characteristics: 
-- It demonstrates specificity rather than broad generalization, focusing on a particular aspect of a larger phenomenon that can be meaningfully investigated within the scope of your study. 
-- It exhibits scholarly rigor by showing engagement with relevant theoretical frameworks and empirical findings. 
-- The problem should be significant enough to warrant investigation but manageable within your research constraints. 
-- Reviewers use the problem statement to assess whether your research makes a meaningful contribution to the field.
-- It should also be novel, either by addressing an unexplored question or by approaching a familiar question from a new angle. 
-- It should make clear the criteria for evaluating the success of the research -- if it doesn't, then it isn't clear enough. 
-- Additionally, effective problem statements maintain disciplinary relevance while potentially offering insights that cross disciplinary boundaries.
+- It demonstrates **specificity** rather than broad generalization, focusing on a particular aspect of a larger phenomenon that **can be meaningfully investigated** within the scope of your study. 
+- It exhibits scholarly rigor by showing **engagement with relevant theoretical frameworks and empirical findings**. 
+  - Additionally, effective problem statements maintain **disciplinary relevance** while potentially offering insights that cross disciplinary boundaries.
+- The problem should be **significant enough** to warrant investigation **but manageable** within your research constraints. 
+  - Reviewers use the problem statement to assess whether your research makes **a meaningful contribution to the field**.
+  - It should also be **novel**, either by addressing an unexplored question or by approaching a familiar question from a new angle. 
+- It should make clear the **criteria for evaluating the success** of the research -- if it doesn't, then it isn't clear enough. 
 
-Research problem statements vary considerably across different fields within arts and sciences. In the humanities, problems often emerge from interpretive gaps, textual ambiguities, or underexplored cultural phenomena. For example, a literature scholar might identify how existing criticism has overlooked the influence of specific historical contexts on an author's work. In the natural sciences, problems typically arise from observational anomalies, theoretical inconsistencies, or the need for new methodological approaches. In the arts, problem statements may be focused on analysis of works and practices, or the development of new practices or forms of expression, or particularly in our field, how new technologies make us rethink norms and practices in the arts. See guidance from Emily Carr [here](https://guides.ecuad.ca/mfa/researchquestion) and [here](https://writingcentre.ecuad-theshow.org/wp-content/uploads/2015/09/36bb1-writing-a-research-question.pdf)
+
+Research problem statements vary considerably across different fields within arts and sciences. 
+- In the **humanities**, problems often emerge from interpretive gaps, textual ambiguities, or underexplored cultural phenomena. For example, a literature scholar might identify how existing criticism has overlooked the influence of specific historical contexts on an author's work. 
+- In the **natural sciences**, problems typically arise from observational anomalies, theoretical inconsistencies, or the need for new methodological approaches. 
+- In the **arts**, problem statements may be focused on analysis of works and practices, or the development of new practices or forms of expression, or particularly in our field, how new technologies make us rethink norms and practices in the arts. See guidance from Emily Carr University [here](https://guides.ecuad.ca/mfa/researchquestion) and [here](https://writingcentre.ecuad-theshow.org/wp-content/uploads/2015/09/36bb1-writing-a-research-question.pdf)
 
 **Common pitfalls to avoid**
 - One common issue is stating problems too broadly, making them unmanageable within the scope of a single study.  **Keep it narrow!**
 - Another frequent problem is failing to adequately demonstrate the gap in existing knowledge, instead merely restating what others have already established. This is why it is so important to read the most recent literature in the topic! 
 - Some researchers also struggle with articulating why their problem matters, focusing too heavily on methodology without explaining the broader significance of their inquiry.
 
-**Look at examples**
-I suggest, as a productive activity, that you look at the papers in your reading list, and identify their problem statements. Usually this is given in a summarized form in the abstract, and with a more fleshed out form in the Introduction. For each one, identify the context, gap, question, addressability and significance. Imagine you are a reviewer: consider which ones you think are well-formed and clear, and which ones have pitfalls as written. This exercise can help you to better write your own problem statement.
+**Look at examples**: I suggest, as a productive activity, that you look at the papers in your reading list, and identify their problem statements. Usually this is given in a summarized form in the abstract, and with a more fleshed out form in the Introduction. For each one, identify the context, gap, question, addressability and significance. Imagine you are a reviewer: consider which ones you think are well-formed and clear, and which ones have pitfalls as written. This exercise can help you to better write your own problem statement.
 
 **Here are some from my current reading list**
 
@@ -512,13 +519,6 @@ Ji, Haru Hyunkyung, and Graham Wakefield. "Entanglement: an immersive art of an 
 
 > This paper describes an artwork combining procedural model- ing, generative AI, and dynamic simulation to create a seamless immersive installation inspired by the motif of the forest and its underground fungal network. The artwork is grounded in the imperative to draw attention to non-conscious cognition, in biological and machine senses, as a reminder of the essential more-than-human-world around us. It addresses these themes by integrating biologically-inspired dynamic simulations with non-narrative spatial storytelling. The paper’s contributions also include challenging the limitations of image-based generative AI in achieving consistency in long-form continuous video at high resolutions while balancing aesthetic control to create a valuable tool within an artist’s original workflow.
 
-Creative Human-AI Agency through Embodied Exploration and Ecological Thinking in XR (Grant draft work in progress)
-
-> At rapid rates, the application of AI is transforming nearly every aspect of real-life society with far-reaching cultural implications. Nevertheless, this progression remains severely unbalanced, driven by a technocentric orientation that privileges clear goal-oriented efficiency over qualitative depth and nuanced reflection. Such a trajectory tends to prioritize making AI smarter while pressuring humans to adapt to AI systems, rather than strengthening human capacities and agency. Ultimately, this orientation not only risks subordinating human values to technological imperatives but also diminishes opportunities for human problem-solving experiences, thereby threatening the long-term development and sustainability of diverse cognitive and creative abilities.
-> Within this landscape, the “CHAI4E” project aims to develop alternative human-centered AI designs and practices that support the expansion of human wisdom and agency. This is a fundamental shift that positions arts and humanities at the heart of innovation, emphasizing the qualitative richness of embodied experience through XR, as a foundation for new forms of human-AI co-creation. 
-> The proposed grant supports research that advances human-AI co-creation within XR environments through an integrated program comprising prototypes, case studies, and scholarship that reimagines Human–AI interactions within XR. To reorient AI development toward augmenting human capabilities and creating environments in which technology adapts to human needs, rather than the reverse, this project asks three interrelated questions: First, how can XR-based Human–AI systems foster environments that strengthen rather than constrain human agency and learning? Second, what design principles and workflows best ensure interpretive depth and experiential richness in Human–AI co-creation? And third, how creative agency and reflection-in-action can be meaningfully assessed in Human–AI–XR contexts?
-> Through practice-based experiments and case studies, this project aims to generate new theoretical and practical contributions to human–computer interaction, philosophy of creativity, and the arts, that can produce meaningful shifts in creative agency. The impact will extend beyond academia by empowering artists, students, and publics to engage AI not as passive consumers but as active co-creators, fostering broader cultural literacy around human agency in technologically mediated futures.
-
 My PhD: Wakefield, Graham. Real-time meta-programming for interactive computational arts. University of California at Santa Barbara, 2012
 
 > In the interactive computer arts, any advance that significantly amplifies or extends the limits and capacities of software can enable genuinely novel aesthetic experiences. Within compute-intensive media arts, flexibility is often sacrificed for needs of efficiency, through the total separation of machine code optimization and run-time execution. Compromises based on modular run-time combinations of prior-optimized 'black box' components confine results to a pre-defined palette with less computational efficiency overall: limiting the open-endedness of development environments and the generative scope of artworks. This dissertation demonstrates how the trade-off between flexibility and efficiency can be relaxed using reflective meta-programming and dynamic compilation: extending a program with new efficient routines while it runs. It promises benefits of more open-ended real-time systems, more complex algorithms, richer media, and ultimately unprecedented aesthetic experiences. The dissertation charts the significant differences that this approach implies for interactive computational arts, builds a conceptual framework of techniques and requirements to respond to its challenges, and documents supporting implementations in two specific scenarios. The first concentrates on open-ended creativity support within always-on authoring environments for studio work and live coding performance, while the second concerns the open-endedness of generative art through interactive, immersive artificial-life worlds.
@@ -529,7 +529,7 @@ My Master's thesis: Wakefield, G. "Vessel: A platform for computer music composi
 
 **Homework**
 
-Please submit your Reading list, project title and problem statement via eClass here: [LINK TBC]()
+Please submit your Reading list, project title and problem statement [via eClass here](https://eclass.yorku.ca/mod/assign/view.php?id=4439445).
 
 Next, you should be starting to develop this into your [Annotated Bibliography](#annotated-bibliography)
 
@@ -600,15 +600,15 @@ To complete the Yellowtail reproduction I'd like to add sound -- so that's our n
   - However, unlike the format and examples in that guide, I support and encourage bullet-point style summaries.
   - I also encourage you to copy out any specific quotations that you find significant, inspiring, or which neatly summarize the authors' points. 
 - After deep note-taking on each paper, read them again with your notes, and correct any mistakes or misunderstandings, amend your analyses, and note any new thoughts. This is your **annotation** for each paper. 
-- [You can submit the Annotated Reading list in this form, including](https://forms.gle/dw2CuCxeAnHWRJ2u6)
+
+[Submit via eClass here](https://eclass.yorku.ca/mod/assign/view.php?id=4439446)
+
+- Your annotated reading list submission should include:
   - The specific topic title or
   - The keywords or search terms
   - The research question/problem statement/abstract
   - Your final Annotated Bibliography
   - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
-- The final deadline for submission is **TBC**.
-
-[Submit via eClass here](https://eclass.yorku.ca/mod/assign/view.php?id=4439446)
 
 ---
 

@@ -103,11 +103,9 @@ Let's continue with the sketching.
 
   - Can we *reify* the time of the gesture?
 
-A more complex example, inspired by Paul Haberli's *Dynadraw*: 
+A more complex example, inspired by [Paul Haberli's *Dynadraw*](https://www.graficaobscura.com/dyna/): 
 
 https://codepen.io/grrrwaaa/pen/gOYQyrd?editors=0010
-
-[Example script from a previous class](https://codepen.io/grrrwaaa/pen/GRbVYrw?editors=0011)
 
 ### Reproducing Curly/Yellowtail
 
