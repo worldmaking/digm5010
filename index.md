@@ -659,6 +659,8 @@ Let's follow back through a selective history.
 
 Flesh out Annotated Bibliography and Draft Paper Outline
 
+- Office Hours (Same Zoom link as class), Thu 9.30am-11.30am
+
 # Week 6
 [Class Recording](#class-recordings)
 
