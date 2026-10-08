@@ -16,8 +16,8 @@ Almost everything about this course will be linked from https://alicelab.world/d
 | <nobr>Week 1  [9/10](#week-1)</nobr>    | [What is Research?](#what-is-research)                 | Discussion, Survey | Respond to the [Call for Papers](#a-call-for-papers): identify motivations, areas, research communities  |
 | <nobr>Week 2  [9/17](#week-2)</nobr>   | [What is Computation?](#what-is-computation)           | [Computational Sketching](sketching.html) | Articulate your topic and questions with [introduction slides](#an-introduction) |
 | <nobr>Week 3  [9/24](#week-3)</nobr>   | [Who Are You & What Is Your Topic](#introductions)? | Topic 1-on-1's | Develop your [Reading List](#preparing-a-reading-list)  |
-| <nobr>Week 4  [10/1](#week-4)</nobr>   | [What is a Problem Statement](#problem-statement)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) | Draft a [Problem Statement](#problem-statement)  |
-| <nobr>Week 5  [10/8](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
+| <nobr>Week 4  [10/1](#week-4)</nobr>   | [What is a Problem Statement](#problem-statement)? | [Computational Sketching II](sketching.html#lets-get-making) | Draft a [Problem Statement](#problem-statement)  |
+| <nobr>Week 5  [10/8](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) / Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
 | <nobr>[*Reading Week*](#reading-week)</nobr> | Flesh out Annotated Bibliography and Draft Paper Outline |  |  | 
 | <nobr>Week 6  [10/22](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
 | <nobr>Week 7  [10/29](#week-7)</nobr>  | [GPU programming with GLSL](glsl.html)  |                                      | ... |
@@ -542,14 +542,14 @@ Next, you should be starting to develop this into your [Annotated Bibliography](
 
 **Research paper work**: 
 
-- Discussion of [reading list](#preparing-a-reading-list) & [problem statement](#problem-statement) progress
 - Begin developing your reading list into an [annotated bibliography](#annotated-bibliography)
+
+<!--
 
 ---
 
 **Sharing your code explorations** 
 
-<!--
 
 from our sketches of reproducing and extending Curly/Yellowtail in [Week 2](#week-2)
 
@@ -611,6 +611,14 @@ To complete the Yellowtail reproduction I'd like to add sound -- so that's our n
   - Any meta-commentary on observations you found while researching the topic that are not specific to any one paper -- in particular, did you find a "gap" in the treatment of the topic that could be an important avenue for your own work?
 
 ---
+
+## Computational Sketching III: Yellowtail
+
+[Computational Sketching continued](sketching.html)
+
+---
+
+1-to-1 discussion of [reading list](#preparing-a-reading-list) & [problem statement](#problem-statement) progress
 
 <!--
 
