@@ -1264,7 +1264,7 @@ Recordings of the weekly sessions will be here:
 - [Week 2](https://yorku.zoom.us/rec/share/RtxWk56TcN_BCp7VWbCaK1vrahcA9DjFchtM0aqdiWeLAcx9-w141EdwPGcsFVLv.hldpIkSDpUFihiYa)
 - [Week 3](https://yorku.zoom.us/rec/share/6POGKxGxfM1vcwDBOt6jgMAh-aj5FS_vTmSnCPuQXBUZeZUgjaGSUhVtXf14HSfn.bbeqA50Ck5wi5fAd)
 - [Week 4](https://yorku.zoom.us/rec/share/W8JS_yVLL2NjIzRp98Hjt5WoxatD4Jotf-N0AdIgYdEz9uRrHK8XmkIbSuzSVZT8.53xBO9N-gtGeohkK)
-
+- [Week 5](https://yorku.zoom.us/rec/share/jaEGYTotbv68_bRxcymp9Yggm_iMXiB-IO0yc9fXg7vC8LpyHwaGesKn_yLH9e8X.HyOIGr-jCfuElYto)
 <!-- 
 2025:
 - [Week 1: What is Computation; first Code Sketch](https://yorku.zoom.us/rec/share/BnT_EkFxUrBnY4JqEqHr9Idgi70cfyb7Bgdgn0NfgGOyduUIXx1IkZXVVdjXisrO.pDbOR8JPhlQ4-tZL)
