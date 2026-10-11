@@ -198,6 +198,12 @@ draw:
 
 ---
 
+## Code from Oct 8 2026
+
+https://codepen.io/editor/grrrwaaa/pen/01a11cba-5bc4-74f9-b711-057b39cd0cdd
+
+---
+
 Examples from 2024-25
 
 https://codepen.io/grrrwaaa/pen/yLdrXNQ
