@@ -215,6 +215,10 @@ https://codepen.io/grrrwaaa/pen/Yzdxwgj
 
 And here's the final code we ended up with:
 
+https://codepen.io/editor/grrrwaaa/pen/01a164aa-4f06-738c-819b-b99b563734b6
+
+Here's another from a previous class:
+
 https://codepen.io/grrrwaaa/pen/myVdEZR?editors=0010
 
 Here's a more refined version from last year's class:
