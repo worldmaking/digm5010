@@ -648,20 +648,15 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 }
 ```
 
-[Our shader from today](https://www.shadertoy.com/view/t3SfDW)
+[Our shader from last year's DIGM5010 class](https://www.shadertoy.com/view/t3SfDW)
 
 ---
 
-[Zoom Recording Part II](https://yorku.zoom.us/rec/share/a-Lofly0Zgqu2N5qFo1eswhgbCTY1RiIMBLBqslon3nI3Zi_VDnFIu3piwrg099q.VCc-OPDiftZNCk95)
+> Last year, I taught an entire course on modeling **Artificial Life** and other biologically-inspired systems using GLSL shaders; [see the course notes on Cellular Automata for DATT4950/DIGM5950 here if you are curious!](https://alicelab.world/digm5950/ca.html)
 
-**A Fluid simulation:**
-
-Modeling the ideas in [Wyatt Flander's tutorial here](https://wyattflanders.com/MeAndMyNeighborhood.pdf)
-
-A cellular automaton that looks a lot less digital/discrete! 
-- Every cell has energy, including velocity (.xy) and omnidirectional divergence (.z).  We can also imagine the fluid transporting some matter, with a density (.w)
-
-Fluid simulation: https://www.shadertoy.com/view/WcccDf 
+Astoundingly, you can even use Cellular Automata to models fluid systems and particle systems. 
+- Here's a fluid simulation by modeling the ideas in [Wyatt Flander's tutorial here](https://wyattflanders.com/MeAndMyNeighborhood.pdf): https://www.shadertoy.com/view/WcccDf 
+- Here's a particle simulation by the "nearest particle tracking" method: https://www.shadertoy.com/view/scs3zH
 
 ---
 

@@ -1,3 +1,8 @@
+<!--
+{
+	notoc: true
+}
+-->
 
 # DIGM5010 Foundations of Digital Media
 
@@ -20,14 +25,12 @@ Almost everything about this course will be linked from https://alicelab.world/d
 | <nobr>Week 5  [10/8](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) / Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
 | <nobr>[*Reading Week*](#reading-week)</nobr> | Flesh out Annotated Bibliography and Draft Paper Outline |  |  | 
 | <nobr>Week 6  [10/22](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
-| <nobr>Week 7  [10/29](#week-7)</nobr>  | [Digital Audio and Sound Synthesis](gen.html)   |   | ... |
-| <nobr>Week 8  [11/5](#week-8)</nobr>   | [GPU programming with GLSL](glsl.html) | Paper Draft 1-on-1's   | [Complete first draft](#paper-complete-draft-for-peer-review)|
+| <nobr>Week 7  [10/29](#week-7)</nobr>  | [Reproducing Research: Tortoises, Vehicles and Flocks](steering.html) or [GPU programming with GLSL](glsl.html) |   | ... |
+| <nobr>Week 8  [11/5](#week-8)</nobr>   | [Reproducing Research: Tortoises, Vehicles and Flocks](steering.html) or [GPU programming with GLSL](glsl.html) | Paper Draft 1-on-1's   | [Complete first draft](#paper-complete-draft-for-peer-review)|
 | <nobr>Week 9  [11/12](#week-9)</nobr>  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review)  | Incorporate feedback into drafting the [Final Paper](#final-paper) |
-| <nobr>Week 10 [11/19](#week-10)</nobr> | [Data Visualization](d3js.html) | Paper 1-on-1's | Revisions to [Final Paper](#final-paper) |
-| <nobr>Week 11 [11/26](#week-11)</nobr> |  | Paper 1-on-1's | Submit [Final Paper](#final-paper) |
+| <nobr>Week 10 [11/19](#week-10)</nobr> | [Digital Audio and Sound Synthesis](gen.html) | Paper 1-on-1's | Revisions to [Final Paper](#final-paper) |
+| <nobr>Week 11 [11/26](#week-11)</nobr> | [Data Visualization](d3js.html) or VR/XR | Paper 1-on-1's | Submit [Final Paper](#final-paper) |
 | <nobr>Week 12 [12/3](#week-12)</nobr>  | [Final presentations](#final-presentations)            |  | [Video/Tutorial](#video-tutorial) + Post-mortem reflection |
-
-
 
 # What is DIGM 5010 Foundations?
 
@@ -720,16 +723,10 @@ It has also inspired a recent phenomenon of sharing academic research in interac
 
 ---
 
-
-
 # Week 7
 [Class Recording](#class-recordings)
 
-<!--**For next week**, complete your paper draft. It **must be submitted before next week's class begins** so that we can run the peer review session. 
-
-Catching up unfinished work from a previous class:-->
-
-[Data Visualization](d3js.html)
+Special topic as per [schedule](#schedule)
 
 ---
 
@@ -767,11 +764,10 @@ The article should contain:
 # Week 8
 [Class Recording](#class-recordings)
 
-[Digital Audio and Sound Synthesis](gen.html)
+Special topic as per [schedule](#schedule)
 
 # Week 9
 [Class Recording](#class-recordings)
-
 
 ## What is peer review of research?
 
@@ -843,7 +839,7 @@ https://codepen.io/grrrwaaa/pen/KKOGLqW?editors=0010
 # Week 10
 [Class Recording](#class-recordings)
 
-[GPU programming with GLSL](glsl.html)
+Special topic as per [schedule](#schedule)
 
 <!--
 
@@ -873,6 +869,8 @@ https://codepen.io/grrrwaaa/pen/KKOGLqW?editors=0010
 
 # Week 11
 [Class Recording](#class-recordings)
+
+Special topic as per [schedule](#schedule)
 
 1 on 1 paper sessions
 

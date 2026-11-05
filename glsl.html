@@ -31,6 +31,7 @@ footer {
 
 <body class="centremaxwidth960">
 <header><a href="index.html">Foundations of Digital Media</a></header>
+
 <h1 id="gpu-programming-of-shaders-with-glsl">GPU Programming of Shaders with GLSL</h1>
 <p>Why GPU programming? </p>
 <ul>
@@ -520,16 +521,16 @@ Notice that, apart from the cat gif, <strong>everything else in this example is 
         }
     } 
 }</code></pre>
-<p><a href="https://www.shadertoy.com/view/t3SfDW">Our shader from today</a></p>
+<p><a href="https://www.shadertoy.com/view/t3SfDW">Our shader from last year&#39;s DIGM5010 class</a></p>
 <hr>
-<p><a href="https://yorku.zoom.us/rec/share/a-Lofly0Zgqu2N5qFo1eswhgbCTY1RiIMBLBqslon3nI3Zi_VDnFIu3piwrg099q.VCc-OPDiftZNCk95">Zoom Recording Part II</a></p>
-<p><strong>A Fluid simulation:</strong></p>
-<p>Modeling the ideas in <a href="https://wyattflanders.com/MeAndMyNeighborhood.pdf">Wyatt Flander&#39;s tutorial here</a></p>
-<p>A cellular automaton that looks a lot less digital/discrete! </p>
+<blockquote>
+<p>Last year, I taught an entire course on modeling <strong>Artificial Life</strong> and other biologically-inspired systems using GLSL shaders; <a href="https://alicelab.world/digm5950/ca.html">see the course notes on Cellular Automata for DATT4950/DIGM5950 here if you are curious!</a></p>
+</blockquote>
+<p>Astoundingly, you can even use Cellular Automata to models fluid systems and particle systems. </p>
 <ul>
-<li>Every cell has energy, including velocity (.xy) and omnidirectional divergence (.z).  We can also imagine the fluid transporting some matter, with a density (.w)</li>
+<li>Here&#39;s a fluid simulation by modeling the ideas in <a href="https://wyattflanders.com/MeAndMyNeighborhood.pdf">Wyatt Flander&#39;s tutorial here</a>: <a href="https://www.shadertoy.com/view/WcccDf">https://www.shadertoy.com/view/WcccDf</a> </li>
+<li>Here&#39;s a particle simulation by the &quot;nearest particle tracking&quot; method: <a href="https://www.shadertoy.com/view/scs3zH">https://www.shadertoy.com/view/scs3zH</a></li>
 </ul>
-<p>Fluid simulation: <a href="https://www.shadertoy.com/view/WcccDf">https://www.shadertoy.com/view/WcccDf</a> </p>
 <hr>
 <p><strong>A minimal raytracer</strong></p>
 <p>Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects — <a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)">Wikipedia</a></p>

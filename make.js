@@ -118,8 +118,11 @@ function generate(file) {
 	});
 
 	meta.body = marked(meta.src);
-	//meta.toc = toc.length > 1 ? marked(toc.map(item => `${"  ".repeat(item.level-1)}- [${item.text}](#${item.id})`).join("\n")) : "";
-	// console.log(meta.toc)
+	meta.toc = ""
+	if (!meta.notoc) {
+		meta.toc = toc.length > 1 ? marked(toc.map(item => `${"  ".repeat(item.level-1)}- [${item.text}](#${item.id})`).join("\n")) : "";
+		// console.log(meta.toc)
+	}
 
 	let html = template(fs.readFileSync(meta.template, "utf8"), meta);
 
