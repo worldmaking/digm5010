@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Steering Behaviours</title>
+<meta name="description" content="">
+<meta name="author" content="Graham Wakefield">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/basic.css" type="text/css" />
+<link rel="stylesheet" href="css/github.css" type="text/css" />
+<style>
+img {
+	max-height: 75vh;
+}
+td { vertical-align: top;}
+header {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+
+footer {
+	background-color:#f5f5f5;
+	font-size: 75%;
+	padding: 0.5em;
+}
+</style>
+</head>
+
+<body class="centremaxwidth960">
+<header><a href="index.html">Foundations of Digital Media</a></header>
+<ul>
+<li><a href="#reproducing-research-tortoises-vehicles-and-flocks">Reproducing Research: Tortoises, Vehicles and Flocks</a><ul>
+<li><a href="#foundations">Foundations</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+<li><a href="#steering-behaviours">Steering Behaviours</a><ul>
+<li><a href="#vectors">Vectors</a></li>
+<li><a href="#setting-up-a-basic-template">Setting up a basic template</a></li>
+<li><a href="#rendering">Rendering</a></li>
+<li><a href="#simulation">Simulation</a></li>
+<li><a href="#refinements">Refinements</a></li>
+</ul>
+</li>
+<li><a href="#how-to-do-things-with-2d-vectors">How to do things with 2D vectors</a><ul>
+<li><a href="#how-to-represent-a-vector">How to represent a vector?</a></li>
+<li><a href="#how-do-we-get-the-individual-x-and-y-components-of-a-vector">How do we get the individual x and y components of a vector?</a></li>
+<li><a href="#how-do-we-set-the-x-and-y-components-of-a-vector">How do we set the x and y components of a vector?</a></li>
+<li><a href="#a-re-usable-library">A re-usable library</a></li>
+<li><a href="#how-do-we-make-a-copy-of-a-vector">How do we make a copy of a vector?</a></li>
+<li><a href="#how-do-you-get-the-length-of-a-vector">How do you get the length of a vector?</a></li>
+<li><a href="#how-do-you-scale-a-vectors-length-multiply-negate-and-divide">How do you scale a vector&#39;s length (multiply, negate, and divide)?</a></li>
+<li><a href="#how-to-add-or-subtract-vectors-how-to-get-the-distance-between-two-positions-two-coordinate-vectors">How to add or subtract vectors? How to get the distance between two positions (two coordinate vectors)?</a></li>
+<li><a href="#how-do-you-get-the-angle-of-a-vector-working-with-radians">How do you get the angle of a vector? (Working with Radians)</a></li>
+<li><a href="#how-do-you-rotate-an-vector-by-a-given-angle">How do you rotate an vector by a given angle?</a></li>
+<li><a href="#how-do-you-create-a-random-vector">How do you create a random vector?</a></li>
+<li><a href="#how-do-you-force-a-vectors-length-to-be-one-normalization">How do you force a vector&#39;s length to be one? (Normalization)</a></li>
+<li><a href="#how-to-limit-the-length-of-a-vector">How to limit the length of a vector?</a></li>
+<li><a href="#how-to-limit-a-vector-within-a-bounded-range-of-values">How to limit a vector within a bounded range of values?</a></li>
+<li><a href="#how-to-get-the-angle-between-two-vectors">How to get the angle between two vectors?</a></li>
+<li><a href="#how-to-make-one-vector-interpolate-toward-another">How to make one vector interpolate toward another?</a></li>
+<li><a href="#everything-together-in-one-vec2-collection">Everything together in one <code>vec2</code> collection</a></li>
+</ul>
+</li>
+</ul>
+
+<h1 id="reproducing-research-tortoises-vehicles-and-flocks">Reproducing Research: Tortoises, Vehicles and Flocks</h1>
+<p>One of the most timely topics of focus today is that of machine learning and artificial intelligence, and particularly now the cohabitation of human/biological and machine agents and intelligences in the world.</p>
+<p>For instance, York University recently established <a href="https://www.yorku.ca/research/cais/">The Center for AI &amp; Society</a> organized research unit, and was awarded $80M from federal funding for the <a href="https://www.yorku.ca/research/connected-minds/">Connected Minds</a> program, whose aims include:</p>
+<ul>
+<li>&quot;Neural and Machine Systems for a Healthy, Just Society&quot;</li>
+<li>&quot;Understand how the interplay of humans and intelligent technologies produces unexpected, emergent properties at the community/whole society levels&quot;</li>
+<li>&quot;Conducting research on promoting a healthy, resilient, and just techno-social collective&quot;</li>
+<li>&quot;Investigating the different scales of social interaction, from the smallest cellular and algorithmic processes involved in individual behaviour to complete social networks comprising both humans and machines.&quot;</li>
+<li>&quot;How human brain function changes when people interact with AI versus each other&quot;</li>
+<li>&quot;Explorations into a more inclusive metaverse&quot;</li>
+<li>and more</li>
+</ul>
+<p>There are many multidisciplinary projects funded through this, for which you might be hired as research assistants. There are also scholarships for graduate students (and post-doctroral research appointments) through this, to which you may apply.</p>
+<blockquote>
+<p>Where and how can <em>our field</em> contribute to this? Where does this overlap or intersect with <em>your</em> research interests? How would you articulate this?</p>
+</blockquote>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="foundations">Foundations</h2>
+<p>For the purposes of our DIGM5010 course: what are some of the <strong>foundations</strong> of our field that may inform this? Let&#39;s start by tracing this back through a selective history of human and machine societies and cohabitation.</p>
+<iframe src="agents.html" title="Tortoises, turtles, robot flocks and vehicle societies" width=100% height=100%></iframe>
+
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://drive.google.com/drive/folders/1nUFDBRNpvKXp3-JiYwBIuN0a55T4vb-Y">Papert, Seymour A. Mindstorms (Excerpts)</a></li>
+<li><a href="https://tinlizzie.org/tinkertoy/">Alan Kay. Marvin Minsky &amp; The Ultimate Tinkertoy</a> -- with an embedded explorable<ul>
+<li><a href="https://archive.org/stream/byte-magazine-1982-08/1982_08_BYTE_07-08_Logo#page/n0/mode/2up">An archive from Byte magazine, 1982</a> -- pages 88 to 290</li>
+<li>Can you make a Logo emulator?</li>
+</ul>
+</li>
+<li><a href="https://drive.google.com/file/d/1FcBQEl6E3hvNy3q-ow4HaFn2jtOPaxvA/edit">Braitenberg, Valentino. Vehicles. 1984</a><ul>
+<li>Can you make a Vehicle world?</li>
+</ul>
+</li>
+<li><a href="https://www.red3d.com/cwr/steer/gdc99/">Craig Reynolds. Steering Behaviors For Autonomous Characters, Game Developers Conference. 1999</a><ul>
+<li>Can you make a flocking simulator?</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h1 id="steering-behaviours">Steering Behaviours</h1>
+<iframe width="720" height="540" src="https://youtube.com/embed/V4f_1_r80RY" frameborder="0" allowfullscreen></iframe>
+
+
+<p>In the late 1980s Craig Reynolds proposed a model of animal motion to model flocks, herds and schools, which he named boids. Reynolds&#39; paper Steering Behaviors for Autonomous Characters covers boids as an aggregate of other steering behaviours. The paper has been very influential in robotics, game design, special effects and simulation, and remains well worth exploring as a collection of patterns for autonomous agent movements, so we will work through it in more detail.</p>
+<h3 id="reynolds-three-layers">Reynold&#39;s three layers</h3>
+<p>The paper breaks agent movement in general into three layers:</p>
+<ul>
+<li><strong>Action Selection</strong>: selecting actions to perform according to environmental input and goals to achieve.</li>
+<li><strong>Steering</strong>: path determination according to the action selected. Many different behaviors can be used; the essential strategy is to compute a new force, which is often in terms of a desired velocity minus current velocity</li>
+<li><strong>Locomotion</strong>: mechanisms of conversion of steering into actual movement.</li>
+</ul>
+<p>His paper concentrates on several different steering algorithms. Action selection is not dealt with, as it is considered independent. Locomotion is extremely simple -- equivalent to a single force vector on a point mass -- but a more complex (and thus constrained) locomotion system could be swapped in without changing the steering model significantly. Many ideas for combining different steering force behaviours are given.</p>
+<blockquote>
+<p>Notice that in the &quot;related work&quot; section the paper refences Grey Walter&#39;s Tortoises, Rodney Brooks&#39; robotics, and Valentino Braitenberg&#39;s Vehicles.</p>
+</blockquote>
+<h3 id="locomotion">Locomotion</h3>
+<p><strong>Position</strong> is a vector coordinate <code>[x, y]</code> in the world&#39;s coordinate system (e.g. pixels of the canvas).  The rate of change of position is the velocity.</p>
+<p><strong>Velocity</strong> is a vector <code>[x, y]</code> that represents heading (the vector direction) and speed (the vector length).  The rate of change of velocity is acceleration.</p>
+<p><strong>Acceleration</strong> is a vector <code>[x, y]</code> that repreents how our velocity is changing, in direction and speed.  It is typically thought of as the result of forces. </p>
+<p><strong>Forces</strong> are also vectors <code>[x, y]</code> because each force has a direction and a magnitude.  Gravity on Earth is a force whose direction is always down (the Y axis) and a constant magnitude (the gravitational constant <code>g</code>).</p>
+<ul>
+<li>Acceleration = (sum of forces) / mass (we often assume mass=1 for simplicity)<ul>
+<li>Limit magnitude of acceleration as pseudo-friction</li>
+<li>(Or, accel = (old accel * inertia) + force)</li>
+</ul>
+</li>
+<li>Velocity += acceleration<ul>
+<li>Limit to max speed</li>
+</ul>
+</li>
+<li>Position += velocity<ul>
+<li>Limit or wrap in space?</li>
+</ul>
+</li>
+</ul>
+<p>In order to build a microworld like this, we&#39;ll need some re-usable math for working with vectors. </p>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="vectors">Vectors</h2>
+<p>The simple vehicle model, and all of the behaviours, make use of vectors -- representing positions in space, relative distances, velocities, forces and accelerations etc. We might need to add, subtract, scale, rotate, randomize etc. vectors. </p>
+<blockquote>
+<p>We could make use of an existing library such as <a href="https://glmatrix.net/docs/module-vec2.html">gl-matrix</a> by means of adding <code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/3.4.2/gl-matrix-min.js&quot; /&gt;</code> to our HTML page.  If you do use a library like this, I highly recommend looking over the API keeping a personal &#39;cheat sheet&#39; set of notes for the most useful functions and concepts.  <a href="https://github.com/worldmaking/worldmaking.github.io/wiki/JS-Canvas,-Vector,-Matrix-etc.-notes">I have a set of cheat-sheets for <code>gl-matrix</code> here.</a></p>
+</blockquote>
+<p>Or, we could write a set of routines to do these things, adding functions as we need them as a way to learn and re-use code. <a href="#how-to-do-things-with-2d-vectors">At the end of this page, there&#39;s a walk-through of building up such a set of routines, including how each one was written and why, solving one problem at a time.</a></p>
+<h3 id="steering">Steering</h3>
+<p>The majority of the paper is devoted to different models of how to set up &quot;desired velocities&quot; that update the agent, and a common process to convert the desired veloicty into a &quot;steering force&quot;. </p>
+<p>Reynolds provides a variety of different kinds of desired velocity generators including <strong>pursuit, evasion, arrival, avoidance, wander, follow, containment, flow field, collision avoidance, separation, cohesion, and alignment</strong>, where the last three are the basis of <strong>flocking</strong>. </p>
+<p>The central model shared by all of these is the calculation of a <strong>steering force</strong> that is determined by a <strong>desired velocity</strong> relative to the agent&#39;s <strong>current velocity</strong>. In the pseudo-code given, this looks like:</p>
+<pre><code>    steering_force = desired_velocity - current_velocity</code></pre>
+<p>In practice, the system tends to work better if we normalize the desired_velocity to some <code>max_speed</code> limit. This steering_force can then scaled by some kind of weighting factor (so we can make it stronger or weaker relative to other steering forces), and then capped by a reasonable <code>max_force</code> limit to prevent the system blowing up.  </p>
+<pre><code>get_steering_force(current_velocity, desired_velocity, weighting_factor) {
+    // re-scale desired_velocity to the max_speed:
+    desired_velocity = normalize(desired_velocity) * max_speed
+    // get change required (as a &quot;force&quot;)
+    relative = desired_velocity - current_velocity
+    // limit this force:
+    return limit_force(relative, max_force) * weighting_factor
+}</code></pre>
+<p>A system can be a combination of many different steering forces, which are all added together to get the total force acting upon an agent. This total force is then fed into the locomotion engine to update the agent&#39;s velocity and position. </p>
+<hr>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="setting-up-a-basic-template">Setting up a basic template</h2>
+<p>We can borrow some starter code from what we have done previously. </p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> canvas = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;mycanvas&quot;</span>);
+canvas.style.cursor = <span class="hljs-string">&#x27;crosshair&#x27;</span>;
+<span class="hljs-keyword">const</span> ctx = canvas.getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+
+<span class="hljs-comment">// resize canvas to fill available space:</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onResize</span>(<span class="hljs-params"></span>) </span>{
+    canvas.width = <span class="hljs-built_in">window</span>.innerWidth;
+    canvas.height = <span class="hljs-built_in">window</span>.innerHeight;
+}
+onResize(); <span class="hljs-comment">// do it now!</span>
+<span class="hljs-built_in">window</span>.onresize = onResize; <span class="hljs-comment">// also do it if the window changes size</span>
+
+<span class="hljs-comment">// add mouse handlers:</span>
+canvas.addEventListener(<span class="hljs-string">&#x27;pointerdown&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">let</span> x = e.clientX;
+    <span class="hljs-keyword">let</span> y = e.clientY;
+
+})
+canvas.addEventListener(<span class="hljs-string">&#x27;pointermove&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">let</span> dx = e.movementX;
+    <span class="hljs-keyword">let</span> dy = e.movementY;
+
+})
+canvas.addEventListener(<span class="hljs-string">&#x27;pointerup&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+
+})
+
+<span class="hljs-comment">// here&#x27;s where we update the state of the system frame by frame</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">animate</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// get time in seconds</span>
+    <span class="hljs-keyword">let</span> t = performance.now() / <span class="hljs-number">1000</span>;
+
+}
+
+<span class="hljs-comment">// here&#x27;s where we render the system to the canvas</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-comment">// clear the canvas</span>
+    ctx.clearRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, canvas.width, canvas.height)
+}
+
+<span class="hljs-comment">// the &#x27;main loop&#x27;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span>(<span class="hljs-params"></span>) </span>{
+    animate();
+    draw();
+    requestAnimationFrame(update);
+}
+
+<span class="hljs-comment">// start it up:</span>
+update();</code></pre>
+<h3 id="ontology">Ontology</h3>
+<p>We are certainly going to need to create a population of agents. This could be a list of objects, where each object represents an agent. </p>
+<p>What does each agent require? At the very least, a position vector in space, and a velocity vector, since both of these are incrementally modified frame by frame. </p>
+<p>Perhaps we may want a <strong>factory function</strong> to create an agent with these properties, appropriately randomly initialized. </p>
+<h3 id="parameters">Parameters</h3>
+<p>Any simulation is going to need a set of parameters to control it. I suggest creating an object to store these, perhaps calling it <code>params</code>.  In general, whenever we want to add some kind of numeric control to the simulation, rather than putting the number in the code, we can put the number in the <code>params</code> object and refer to it from there. </p>
+<p>For example, we might have a <code>params.population_size</code> to keep track of how many agents we want. </p>
+<p>One advantage of doing it this way is that we can then create a user interface (<strong>UI</strong>) for modifying these parameters, and also a way to save and load sets of parameters from data files. We&#39;ll come back to that later. </p>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="rendering">Rendering</h2>
+<p>On each frame, after clearing the canvas we&#39;ll have to loop over our population of agents and draw each one in turn. </p>
+<pre><code class="language-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; agents.length; i++) {
+    <span class="hljs-keyword">const</span> me = agents[i];
+
+    <span class="hljs-comment">// render me</span>
+}</code></pre>
+<p>Our focus is on behaviour, so for now we can make our agent rendering as simple as possible. All we need is to see their position and direction.  A simple elongated triangle would suffice. </p>
+<p>We know we can draw a triangle using beginPath, moveTo, lineTo, and stroke or fill commands. Here&#39;s a simple triangle pointing along the positive X axis:</p>
+<pre><code class="language-js">    ctx.beginPath();
+    ctx.moveTo(<span class="hljs-number">200</span>, <span class="hljs-number">100</span>);
+    ctx.lineTo(<span class="hljs-number">30</span>,  <span class="hljs-number">150</span>);
+    ctx.lineTo(<span class="hljs-number">30</span>,  <span class="hljs-number">50</span>);
+    ctx.closePath();
+    ctx.fill();  <span class="hljs-comment">// or ctx.stroke()</span></code></pre>
+<p>But we are going to be drawing hundreds or thousands of them, according to their position and velocity vectors. We might also want to define their size according to a paramter. </p>
+<p>It would be tiresome to have to compute the relative positions of each point of the path to render each one. Fortunately, there&#39;s a much easier way. </p>
+<p>The trick, which is used by nearly every rendering engine in software, is to <strong>redefine the coordinate system</strong> to match the object being drawn, rather than the canvas being drawn to.   That is, if we move the <code>[0, 0]</code> origin of our coordinate system to the centre of our object, and rotate the coordinate system to the direction our object is facing, and scale the coordinate system to the size of our object, then we can re-use the same drawing commands for every single object. </p>
+<p>The 2D canvas offers ways to redefine our current coordinate system using <code>translate(x, y)</code>, <code>rotate(radians)</code>, and <code>scale(x, y)</code>. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// set up local coordinate system of the object `o`:</span>
+    ctx.translate(x, y);
+    <span class="hljs-comment">// face the direction of travel</span>
+    ctx.rotate(angle)
+    ctx.scale(size, size);
+
+    <span class="hljs-comment">// now draw the object</span>
+    <span class="hljs-comment">// e.g. a triangle pointing along +x</span>
+    <span class="hljs-comment">// where 1 unit is no longer a pixel, but rather the `params.size`</span>
+    ctx.beginPath();
+    ctx.moveTo(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>);
+    ctx.lineTo(<span class="hljs-number">-0.7</span>, <span class="hljs-number">0.5</span>);
+    ctx.lineTo(<span class="hljs-number">-0.7</span>, <span class="hljs-number">-0.5</span>);
+    ctx.fill();</code></pre>
+<p>For the rotation angle, I suggest deriving this from the agent&#39;s velocity direction. </p>
+<p>However, these transformations are cumulative: they are modifying the current coordinate system. So, after drawing our object, we need to restore our coordinate system back to the previous canvas-based pixel coordinate system before we modify it for the next object to draw. </p>
+<p>Fortunately there&#39;s a simple way to do this too, using <code>ctx.save()</code> to make a copy of the current coordinate system, and <code>ctx.restore()</code> to go back to the previously saved one.  So the overall process is (in pseudocode):</p>
+<pre><code>save current coordinate system for later
+    translate, rotate and scale coordinate system
+    draw object
+restore the saved coordinate system</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="simulation">Simulation</h2>
+<p>As with rendering, our main task is to loop over the population to update each agent in turn. </p>
+<p>Following Reynold&#39;s paper, this is essentially a case of computing a total force (a 2D vector) acting upon the agent, and then applying the force through locomotion. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// our goal will be to compute the total forces acting on me</span>
+    <span class="hljs-comment">// we will add them into this vector:</span>
+    <span class="hljs-keyword">let</span> force_total = [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>]
+
+    <span class="hljs-comment">// ... compute whatever steering forces we are modeling and add them to force_total</span>
+
+    <span class="hljs-comment">// then apply the force_total as locomotion</span>
+    <span class="hljs-comment">// my velocity += force_total</span>
+    <span class="hljs-comment">// limit my velocity between min &amp; max speed constraints</span>
+
+    <span class="hljs-comment">// my position += my velocity</span>
+    <span class="hljs-comment">// limit my position in the world bounds</span></code></pre>
+<ul>
+<li>Try first with a simple force acting in one direction.  </li>
+<li>Then try with a global random force (like a wind).  </li>
+<li>Then try with each agent having its own random direction force (a &#39;random walk&#39;).</li>
+</ul>
+<h3 id="steering-forces">Steering forces</h3>
+<p>Perhaps we can also try something like an attraction or repulsion from the mouse location, using the <strong>seek</strong> or <strong>flee</strong> models of Reynold&#39;s paper. </p>
+<p>In this case, we need to get the relative vector from agent to mouse (or mouse to agent), which is vector subtraction. We might also want to ensure that the distance between them is below a certain threshold, by testing the length of the relative vector.  Here&#39;s some pseudocode:</p>
+<pre><code>mouse_rel = mouse_pos - agent_pos
+mouse_distance = length(mouse_rel)
+if mouse_distance &lt; threshold_distance
+    mouse_force = get_steering_force(agent_velocity, mouse_rel, strength)
+    force_total += mouse_force</code></pre>
+<p>Finally we compute that steering force using the method in Reynold&#39;s paper. This part is generic -- it is used for very many different steering force behaviours, so we can wrap it up in a re-usable function. Here&#39;s pseudocode again:</p>
+<pre><code>get_steering_force(current_velocity, desired_velocity, weighting_factor) {
+    // re-scale desired_velocity to the max_speed:
+    desired_velocity = normalize(desired_velocity) * max_speed
+    // get change required (as a &quot;force&quot;)
+    relative = desired_velocity - current_velocity
+    // limit this force:
+    return limit_force(relative, max_force) * weighting_factor
+}</code></pre>
+<h3 id="attraction-to-neighbors-cohesion">Attraction to neighbors (Cohesion)</h3>
+<p>The Cohesion behaviour is defined as one boids&#39; attraction toward the mid-point of all the nearby boids. We&#39;ll need to define what &quot;nearby&quot; means, e.g up to a certain distance. And then to get the mid-point, we take the average of the positions of those boids. </p>
+<p>To do this, we&#39;ll have to iterate over all the potential neigbours, figure out which ones are close enough to consider, and apply a  &#39;seek&#39; like force to their averaged position. </p>
+<p>To visit every potential neighbor we&#39;ll need another loop over the population, nested within our main loop over the population, being careful to use different variable names.  That&#39;s a 2D nested loop, making sure that every agent considers every other.  </p>
+<blockquote>
+<p>This is not the most efficient method: for N agents, we will end up doing NxN tests. In computer science terms it is called an O-squared algorithm, because as the order of the system increases, the amount of computation increases by the square of it.  For a small population of a few hundred agents this isn&#39;t a big deal so we will not worry about it now, but for bigger populations we&#39;d want to think about more optimized methods to limit how many comparisons we need to make -- most of which revolve around partitioning the space into subregions to consider, so we never test against very distant neighbours. </p>
+</blockquote>
+<p>We also need to make sure we don&#39;t test against ourself!  If the current agent is <code>me</code> and the neighbor being tested is <code>you</code>, we can skip this iteration when they are equal using <code>continue</code>. The <code>continue</code> command in Javascript (and many other languages) essentially aborts the current iteration of the for loop and moves to the next one. </p>
+<pre><code class="language-js">        <span class="hljs-keyword">if</span> (me == you) <span class="hljs-keyword">continue</span>;</code></pre>
+<p>We can also skip comparing neigbours if they are too far away -- our &#39;boids&#39; only care about flocking with nearby agents.  We can start by getting the relative vector and the distance from that. In pseudo-code:</p>
+<pre><code>    rel = you_pos - me_pos
+    distance = length(rel)
+
+    if distance &gt; threshold
+        continue</code></pre>
+<p>Computing the average position means adding things up and dividing by the total number.  So, before we loop over neigbors, we can establish variables to hold these values:</p>
+<pre><code>count = 0
+position_sum = [0, 0]</code></pre>
+<p>And for each neigbor in range, we do </p>
+<pre><code>    count = count + 1
+    position_sum = position_sum + you_pos</code></pre>
+<p>And after visiting all neigbors, we can get the average</p>
+<pre><code>if count &gt; 0
+    position_average = position_sum / count</code></pre>
+<p>To turn that into a desired velocity, we make that relative to us by subtracting our position, then pass this to the same get_steering_force:</p>
+<pre><code>    relative_position = position_average - my_pos
+    cohesion_force = get_steering_force(agent_velocity, relative_position, cohesion_strength)
+    force_total += cohesion_force</code></pre>
+<h3 id="separation">Separation</h3>
+<p>Notice that agents can fly right through each other; this is not very realistic. We&#39;d like the agents to avoid hitting each other! </p>
+<p>Here we want to use a different distance threshold, since our &quot;personal space&quot; is much closer to us than our visible range. </p>
+<p>The force applied however needs to be much stronger when very close.  A common method is to use a 1/distance or 1/(distance squared) law.</p>
+<p>To make it a repulsion, we negate this direction</p>
+<pre><code>    if distance &lt; personal_space
+        avoidance = negate( rel / distance )
+        separation_force = get_steering_force(agent_velocity, avoidance, separation_strength)
+        force_total += separation_force</code></pre>
+<h3 id="alignment">Alignment</h3>
+<p>The third and final aspect of flocking.  Here our boid wants to point in the same direction and go at the same speed as its nearby neighbors. That is, our goal is to match the average velocity of the neigborhood.</p>
+<p>Again, we can sum up our visible neigbor&#39;s velocities in a <code>velocity_sum</code> variable, and then after the loop get the average:</p>
+<pre><code>    alignment = velocity_sum / count
+    alignment_force = get_steering_force(agent_velocity, alignment, alignment_strength)
+    force_total += alignment_force</code></pre>
+<hr>
+<p>With that, we should have all of the components for a flocking simulation.  Whether or not it displays good flocking may depend on the actual parameters we are using, and a couple of other refinements we can add. </p>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="refinements">Refinements</h2>
+<h3 id="field-of-view">Field of view</h3>
+<p>To be even more realistic, we might also consider that our boids don&#39;t have 360 degree vision; perhaps they only see each other within a limited field of view. </p>
+<pre><code>    rel_angle = angle_between(my_velocity, rel)
+    if abs(rel_angle) &gt; field_of_view/2
+        continue</code></pre>
+<h3 id="a-parameter-modification-ui">A parameter modification UI</h3>
+<p>It would be nice to be able to tweak parameters to see how it changes behviours. </p>
+<p>For a quick solution, we can add the <strong>dat-gui</strong> library to our javascript, by adding this to our HTML code before our script:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<p>The <strong>dat-gui</strong> library adds a simple drop down system for modifying our parameters. </p>
+<p><a href="https://github.com/dataarts/dat.gui/blob/master/API.md">Here&#39;s the API docs</a>, and my quick cheatsheet:</p>
+<pre><code class="language-js"><span class="hljs-comment">// an container of parameters to control:</span>
+<span class="hljs-keyword">let</span> params = {
+    <span class="hljs-attr">speed</span>: <span class="hljs-number">1</span>
+}
+
+<span class="hljs-comment">// create the interface:</span>
+<span class="hljs-keyword">let</span> gui = <span class="hljs-keyword">new</span> dat.GUI({<span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;My GUI&#x27;</span>});
+<span class="hljs-comment">// add a slider for params.speed, in the range of 0 to 10, stepping in 1&#x27;s</span>
+gui.add(params, <span class="hljs-string">&#x27;speed&#x27;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">1</span>);
+gui.close();   <span class="hljs-comment">// start collapsed</span>
+
+<span class="hljs-comment">// create a subgroup of parameters:</span>
+<span class="hljs-keyword">const</span> see = gui.addFolder(<span class="hljs-string">&#x27;Perception&#x27;</span>);
+see.add(params, <span class="hljs-string">&#x27;perception&#x27;</span>, <span class="hljs-number">10</span>, <span class="hljs-number">200</span>, <span class="hljs-number">1</span>).name(<span class="hljs-string">&#x27;radius&#x27;</span>);
+see.open(); <span class="hljs-comment">// have this subgroup open by default:</span></code></pre>
+<blockquote>
+<p>(If it doesn&#39;t show up, it might be because of the CSS setting: if you have <code>* { overflow: hidden; }</code> change it to <code>body { overflow: hidden; }</code>)</p>
+</blockquote>
+<h3 id="trails">Trails</h3>
+<p>A cheap way to render trails is that instead of erasing the canvas, we draw a not-quite-opaque white box over the entire canvas:</p>
+<pre><code class="language-js">    ctx.fillStyle = <span class="hljs-string">&#x27;rgba(255, 255, 255, 0.12)&#x27;</span>;
+    ctx.fillRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, canvas.width, canvas.height);</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h1 id="how-to-do-things-with-2d-vectors">How to do things with 2D vectors</h1>
+<p>In this section I provide a walk-through of how a library of re-usable 2D vector functions can be written, solving one problem at a time. </p>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-to-represent-a-vector">How to represent a vector?</h2>
+<p>One way is just to use two variables, <code>x</code> and <code>y</code>, every time. But maybe it is more useful to pass vectors around as singular objects.  In that case, here are the two most common formats:</p>
+<pre><code class="language-js"><span class="hljs-comment">// as an object:</span>
+v = { <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span> }; 
+
+<span class="hljs-comment">// as an array:</span>
+v = [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>]; </code></pre>
+<p>The object form is more readable, but the array form is more compact and flexible, which is why it is a more common choice. It&#39;s what I&#39;ll use here.  </p>
+<pre><code class="language-js"><span class="hljs-keyword">let</span> v = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];</code></pre>
+<hr>
+<p>Having them as single objects makes it easier to store them inside other objects, and pass them around as arguments and return values for functions, and modify them in-place. </p>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-we-get-the-individual-x-and-y-components-of-a-vector">How do we get the individual x and y components of a vector?</h2>
+<pre><code class="language-js"><span class="hljs-keyword">let</span> x = v[<span class="hljs-number">0</span>];
+<span class="hljs-keyword">let</span> y = v[<span class="hljs-number">1</span>];
+<span class="hljs-comment">// or in one line:</span>
+<span class="hljs-keyword">let</span> x = v[<span class="hljs-number">0</span>], y = v[<span class="hljs-number">1</span>];
+<span class="hljs-comment">// or using a neat &quot;destructuring&quot; syntax:</span>
+<span class="hljs-keyword">let</span> [x, y] = v; 
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">create</span>(<span class="hljs-params">x, y</span>) </span>{ <span class="hljs-keyword">return</span> [x, y]; }
+
+<span class="hljs-keyword">let</span> v = create(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-we-set-the-x-and-y-components-of-a-vector">How do we set the x and y components of a vector?</h2>
+<pre><code class="language-js">v[<span class="hljs-number">0</span>] = <span class="hljs-number">3</span>;
+v[<span class="hljs-number">1</span>] = <span class="hljs-number">4</span>;
+
+<span class="hljs-comment">// or:</span>
+<span class="hljs-comment">// set the components of vector `v` to the number values `x` anx `y`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">set</span>(<span class="hljs-params">v, x, y</span>) </span>{
+    v[<span class="hljs-number">0</span>] = x;
+    v[<span class="hljs-number">1</span>] = y;
+    <span class="hljs-keyword">return</span> v;
+}</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="a-re-usable-library">A re-usable library</h2>
+<p>We&#39;ve already seen a couple of functions that we could use in a 2D vector library -- and we will see many more. To keep all of the functions together in a tidy way, we can define an object <code>vec2</code> to hold them. </p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> vec2 = {
+    <span class="hljs-comment">// create a vector from two values:</span>
+    create(x, y) { <span class="hljs-keyword">return</span> [x, y]; },
+    <span class="hljs-comment">// set values of a vector:</span>
+    set(v, x, y) {
+        v[<span class="hljs-number">0</span>] = x;
+        v[<span class="hljs-number">1</span>] = y;
+        <span class="hljs-keyword">return</span> v;
+    },
+
+    <span class="hljs-comment">// add more functions here... </span>
+}
+
+<span class="hljs-comment">// using it:</span>
+<span class="hljs-keyword">let</span> v = vec2.create(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+vec2.set(v, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-we-make-a-copy-of-a-vector">How do we make a copy of a vector?</h2>
+<p>Remember, it is very important to know that passing an object around between variables does not make a copy. </p>
+<pre><code class="language-js"><span class="hljs-keyword">let</span> a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
+<span class="hljs-keyword">let</span> b = a; </code></pre>
+<p>Both <code>b</code> and <code>a</code> now refer to the same object in memory! If I modify <code>b</code>, it will also modify <code>a</code>. They are both <strong>references</strong> to the same memory. That might be want you want, or you might actually want ot make an independent <strong>copy</strong>. </p>
+<pre><code class="language-js"><span class="hljs-comment">// one way is to unpack the vector then pack it into a new vector:</span>
+<span class="hljs-keyword">let</span> [x, y] = v;
+<span class="hljs-keyword">let</span> copy = [x, y];
+<span class="hljs-comment">// or in one line:</span>
+<span class="hljs-keyword">let</span> copy = [...v];  <span class="hljs-comment">// this creates a new array using the elements of v</span>
+
+<span class="hljs-comment">// or wrap this into a reusable function so you don&#x27;t have to remember it:</span>
+<span class="hljs-keyword">const</span> vec2 = {
+    <span class="hljs-comment">// create(), set(), etc. </span>
+    <span class="hljs-comment">// ...</span>
+    copy(v) { <span class="hljs-keyword">return</span> [...v]; },
+    <span class="hljs-comment">// ...</span>
+}</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-you-get-the-length-of-a-vector">How do you get the length of a vector?</h2>
+<p>By the Pythagorean formula, the length of the hypoteneuse is the square root of the sum of the squares of the two sides.  That is, <code>len = Math.sqrt(x*x + y*y)</code>.  Or more simply, <code>Math.hypot(x, y)</code>. </p>
+<pre><code class="language-js">  len(v) {
+      <span class="hljs-keyword">let</span> [x, y] = v;
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.hypot(x, y);
+  }</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-you-scale-a-vectors-length-multiply-negate-and-divide">How do you scale a vector&#39;s length (multiply, negate, and divide)?</h2>
+<p>Let&#39;s say the vector represents a velocity, and we want to slow it down to a half of its original speed.  Then we want the length of the vector (the speed) to be multiplied by 0.5, which we can simply do by multiplying the <code>x</code> and <code>y</code> parts by 0.5. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// scale vector `v` by number `s`</span>
+    scale(v, s) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">return</span> [x * s, y * s];
+    }</code></pre>
+<pre><code class="language-js">    <span class="hljs-comment">// negating a vector&#x27;s components will reverse its direction:</span>
+    negate(v) {
+        <span class="hljs-keyword">return</span> [-x, -y];
+    }</code></pre>
+<p>What about division?  To divide by <code>d</code>, we can simply multiply (<code>scale</code>) by <code>1/d</code>. But there&#39;s a gotcha here: what if d=0?  Division by zero is mathematically undefined, and would cause problems in our simulations. What should we do in this case? One option is to simply ignore the operation.  Since <code>scale</code> makes a new vector, we can simply create an unchanged copy of the vector when d==0.</p>
+<pre><code class="language-js">    <span class="hljs-comment">// scaling by division needs to handle the undefined case of division by zero</span>
+    <span class="hljs-comment">// here we simply create an unchanged duplicate</span>
+    divide(v, d) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">if</span> (d) {
+            <span class="hljs-keyword">return</span> [x / d, y / d];
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> [x, y];
+        }
+    }</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-to-add-or-subtract-vectors-how-to-get-the-distance-between-two-positions-two-coordinate-vectors">How to add or subtract vectors? How to get the distance between two positions (two coordinate vectors)?</h2>
+<p>Simply subtract one vector from the other, then get the length of the result.  You add and subtract vectors just by adding or subtracting their <code>x</code> and <code>y</code> parts.  </p>
+<p>Given two points A and B, then the vector <code>A-B</code> tells you how to get to A from B.  This is a <strong>relative vector</strong>, which is a very useful concept.  </p>
+<pre><code class="language-js">    <span class="hljs-comment">// add vectors `a` and `b`</span>
+    add(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> [x1 + x2, y1 + y2];
+    },
+    <span class="hljs-comment">// subtract vectors `a` and `b`</span>
+    sub(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> [x1 - x2, y1 - y2];
+    },
+    <span class="hljs-comment">// get the distnace between coordinate vectors `a` and `b`</span>
+    distance(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.hypot(x1-x2, y1-y2);
+    },</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-you-get-the-angle-of-a-vector-working-with-radians">How do you get the angle of a vector? (Working with Radians)</h2>
+<p>We&#39;ll need this to figure out what direction it is facing.  The most typical method is to use the arctangent, (the angle of a right triangle is the opposite length divided by the adjacent length). In code, <code>angle = Math.atan2(y, x)</code>.  <em>Notice that the argument order is y, x!</em></p>
+<pre><code class="language-js">    <span class="hljs-comment">// get angle of vector `v` in radians</span>
+    angle(v) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.atan2(y, x);
+    },</code></pre>
+<p>Note that this angle is given in <strong>radians</strong>, not degrees.  There are 2 x pi radians in one circle, i.e. 2 x pi radians = 360 degrees, or pi radians = 180 degrees. (Why use radians and not degrees? Because it is a mathematically more meaningful value, relating radius, circumference and area of a circle, for example.) If we need to convert between them we can use conversion factors like this:</p>
+<pre><code class="language-js">    <span class="hljs-comment">// convert angles between degrees and radians representations:</span>
+    degrees(radians) { <span class="hljs-keyword">return</span> radians * <span class="hljs-built_in">Math</span>.PI / <span class="hljs-number">180</span>; },
+    radians(degrees) { <span class="hljs-keyword">return</span> degrees * <span class="hljs-built_in">Math</span>.PI / <span class="hljs-number">180</span>; },</code></pre>
+<p>OK now we know how to convert an <code>[x, y]</code> vector into a direction angle and length (which is converting from <strong>Cartesian to polar</strong> representation), but what if we want to go the other way, to go from polar angle &amp; length back to a Cartesian <code>[x, y]</code> representation?  First, we use the trigonometric rules of sine &amp; cosine of the angle to get our unit right triangle components, then we scale that by the desired length:</p>
+<pre><code class="language-js">    <span class="hljs-comment">// create a vector from an angle (in radians) and length</span>
+    from_polar(angle, length = <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">let</span> x = length * <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> y = length * <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-keyword">return</span> [x, y]
+    },</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-you-rotate-an-vector-by-a-given-angle">How do you rotate an vector by a given angle?</h2>
+<p>We can use the cosine &amp; sine components of an angle to rotate a vector. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// rotate vector `v` by an `angle` in radians</span>
+    rotate(v, angle) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">let</span> c = <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> s = <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-keyword">return</span> [ x*c - y*s, x*s + y*c ]
+    },</code></pre>
+<p>This is actually a 2D matrix transformation.  The matrix form of this looks as follows: </p>
+<pre><code>[ c, s 
+ -s, c ]</code></pre>
+<p>Note that this is rotating the vector around the origin [0, 0]. To rotate around a different pivot point, first translate that point so that the pivot point becomes the origin (i.e. subtract the pivot), rotate, then translate back by adding the pivot again. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// rotate vector `v` by `angle` in radians around a `pivot` coordinate</span>
+    rotate_around(v, pivot, angle) {
+        <span class="hljs-keyword">let</span> [x1, y1] = v
+        <span class="hljs-keyword">let</span> [x2, y2] = pivot
+        <span class="hljs-comment">// subtract pivot:</span>
+        <span class="hljs-keyword">let</span> x = x1 - x2;
+        <span class="hljs-keyword">let</span> y = y1 - y2;
+        <span class="hljs-keyword">let</span> c = <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> s = <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-comment">// rotate and add pivot</span>
+        <span class="hljs-keyword">return</span> [x2 + (x*c - y*s), y2 + (x*s + y*c)]
+    }</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-you-create-a-random-vector">How do you create a random vector?</h2>
+<p>Let&#39;s say we are creating agents and we want to place them randomly in a coordinate space. In that case, we may want a random <code>x</code> between 0 and <code>canvas.width</code>, and <code>y</code> between 0 and <code>canvas.height</code>.  Then we could use something like <code>[ Math.random()*width, Math.random()*height ]</code>. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// get a random vector in the box between [0, 0] and [width, height]</span>
+    <span class="hljs-comment">// here I set the default width to be 1, and the default height to match</span>
+    <span class="hljs-comment">// so calling `random()` with no arguments returns a random coordinate with values between 0 and 1 on each axis</span>
+    random(width = <span class="hljs-number">1</span>, height = width) {
+        <span class="hljs-keyword">let</span> x = <span class="hljs-built_in">Math</span>.random() * width
+        <span class="hljs-keyword">let</span> y = <span class="hljs-built_in">Math</span>.random() * height
+        <span class="hljs-keyword">return</span> [x, y];
+    }</code></pre>
+<p>But what if we want to have a vector that has a random direction? For example, if we wanted to set an agent&#39;s initial velocity. That would have to be equally balanced in terms of angle, and that would include negative as well as positive values.  And maybe we also want to define what the initial speed is.  </p>
+<p>In that case, we need a function that takes a magnitude, and creates a vector that has that magnitude and a random angle. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// get a vector of specified length in a random direction</span>
+    <span class="hljs-comment">// again the default argument means `random_direction()` </span>
+    <span class="hljs-comment">// with no arguments gives a random direction vector of length 1</span>
+    random_direction(length = <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">let</span> angle = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">2</span>
+        <span class="hljs-keyword">let</span> x = length * <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> y = length * <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-keyword">return</span> [x, y]
+    },
+    <span class="hljs-comment">// get a vector of a random length (from 0 to `max`) in a random direction</span>
+    random_disc(max = <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">let</span> angle = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">2</span>
+        <span class="hljs-keyword">let</span> length = ath.random() * max
+        <span class="hljs-keyword">let</span> x = length * <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> y = length * <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-keyword">return</span> [x, y]
+    },</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-do-you-force-a-vectors-length-to-be-one-normalization">How do you force a vector&#39;s length to be one? (Normalization)</h2>
+<p>This is called <strong>normalizing</strong> a vector. It throws away the length and keeps only the direction, which is a very useful thing to be able to do.  And its simple: get the length, then rescale the vector by dividing by the length (or equivalently, multiplying by <code>1/length</code>). </p>
+<p>However there&#39;s a gotcha here: what if the vector is [0, 0]? In that case, the length is zero. But dividing by zero will lead to an undefined infinite value, which the computation can&#39;t process. We need to guard against this case. </p>
+<blockquote>
+<p>Intuitively it makes sense.  If your velocity is [0, 0], then you have a speed of 0, and there is no defined direction at all -- you could be pointing in any direction, it doesn&#39;t matter!</p>
+</blockquote>
+<p>Here we have a few options. We could ignore the call to normalize the vector, or we could ask it to create a random vector of length 1. I chose the latter as the more interesting option! </p>
+<pre><code class="language-js">    <span class="hljs-comment">// force the vector length = 1</span>
+    <span class="hljs-comment">// if the vector was [0, 0] it will produce a random direction vector</span>
+    normalize(v) {
+        <span class="hljs-keyword">const</span> [x, y] = v;
+        <span class="hljs-keyword">const</span> len = <span class="hljs-built_in">Math</span>.hypot(x, y);
+        <span class="hljs-keyword">if</span> (len &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">const</span> s = <span class="hljs-number">1</span>/len
+            <span class="hljs-keyword">return</span> [x * s, y * s];
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">// vector of length 1 with random angular direction:</span>
+            <span class="hljs-keyword">let</span> angle = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">2</span>
+            <span class="hljs-keyword">return</span> [<span class="hljs-built_in">Math</span>.cos(angle), <span class="hljs-built_in">Math</span>.sin(angle)];
+        }
+    },</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-to-limit-the-length-of-a-vector">How to limit the length of a vector?</h2>
+<p>Sometimes we don&#39;t want a vector&#39;s length to get too big. Maybe we want a maximum speed limit on their movement, for example, without changing the direction.  Then we need a scaling factor that is the ratio between our limit and our </p>
+<pre><code class="language-js">    <span class="hljs-comment">// limit vector &#x27;v&#x27; to maximum length `max` </span>
+    <span class="hljs-comment">// `max` must be &gt;= 0</span>
+    limit(v, max) {
+        <span class="hljs-keyword">const</span> [x, y] = v;
+        <span class="hljs-keyword">const</span> len = <span class="hljs-built_in">Math</span>.hypot(x, y);
+        <span class="hljs-keyword">if</span> (len &gt; max) {
+            <span class="hljs-keyword">const</span> d = max/len;
+            <span class="hljs-keyword">return</span> [x * d, y * d];
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> [x, y]
+        }
+    },
+
+    <span class="hljs-comment">// limit vector &#x27;v&#x27; length between `min` and `max` </span>
+    <span class="hljs-comment">// `min` and `max` must be &gt;= 0</span>
+    limit2(v, min, max = <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">const</span> len = <span class="hljs-built_in">Math</span>.hypot(x, y);
+        <span class="hljs-keyword">const</span> d = len || <span class="hljs-number">1</span>; <span class="hljs-comment">// to avoid divide by zero</span>
+        <span class="hljs-keyword">const</span> clamped = <span class="hljs-built_in">Math</span>.min(<span class="hljs-built_in">Math</span>.max(d, min), max);
+        <span class="hljs-keyword">const</span> d = clamped / d;
+        <span class="hljs-keyword">return</span> [x * d, y * d];
+    },</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-to-limit-a-vector-within-a-bounded-range-of-values">How to limit a vector within a bounded range of values?</h2>
+<p>Let&#39;s say the vector represents a coordinate position on a canvas of <code>width</code> and <code>height</code>, and we want to prevent the position from going outside those bounds. </p>
+<p>We could clamp, it in the bounds, or we could wrap it around the edges like a toroidal (pac man) space. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// clamp vector `v` in the bounds of `width` and `height`</span>
+    clamp(v, width, height) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        x = <span class="hljs-built_in">Math</span>.min(<span class="hljs-built_in">Math</span>.max(x, <span class="hljs-number">0</span>), width);
+        y = <span class="hljs-built_in">Math</span>.min(<span class="hljs-built_in">Math</span>.max(y, <span class="hljs-number">0</span>), height);
+        <span class="hljs-keyword">return</span> [x, y]
+    },
+    <span class="hljs-comment">// wrap vector `v` in the bounds of `width` and `height`</span>
+    wrap(v, width, height) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>) x += width; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x &gt; width) x -= width;
+        <span class="hljs-keyword">if</span> (y &lt; <span class="hljs-number">0</span>) y += height; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (y &gt; height) y -= height;
+        <span class="hljs-keyword">return</span> [x, y]
+    },
+</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-to-get-the-angle-between-two-vectors">How to get the angle between two vectors?</h2>
+<p>This is an extremely useful thing to do -- for example, to know if we are traveling in the same direction as someone else, or to know how much to turn to point somewhere.  The math of this is a little trickier.  It involves two 2D vector calculations, one called the determinant (sometimes called the 2D cross product), the other called the dot product. </p>
+<blockquote>
+<p>An interesting property of the determinant: if the value is zero, the two vectors are on the same line (either same direction or opposite direction).  It is the signed area of the parallelogram formed by the two vectors. </p>
+</blockquote>
+<blockquote>
+<p>An interesting property of the dot product: if the two vectors are orthogonal to each other (90 degrees apart), the dot product is zero.  The dot product of two <strong>normalized</strong> vectors is 1 if they are the same direction, -1 if they are opposite. </p>
+</blockquote>
+<pre><code class="language-js">    <span class="hljs-comment">// dot product of two vectors `a` and `b`</span>
+    <span class="hljs-comment">// returns 0 if the vectors are orthogonal</span>
+    <span class="hljs-comment">// if `a` and `b` are unit vectors (normalized vectors), </span>
+    <span class="hljs-comment">//   returns 1 if the directions are equal, and -1 if the directions are opposite</span>
+    dot(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> x1 * x2 + y1 * y2;
+    },
+    <span class="hljs-comment">// determinant (2D cross product) of two vectors `a` and `b`</span>
+    <span class="hljs-comment">// it is the (signed) area of the parallelogram formed by a and b</span>
+    <span class="hljs-comment">// returns 0 if the two vectors have equal or opposite directions</span>
+    det(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> x1 * y2 - y1 * x2;
+    },
+    <span class="hljs-comment">// return the angle (in radians) between vectors A and B:</span>
+    angle_between(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">let</span> det = x1 * y2 - y1 * x2; <span class="hljs-comment">// determinant (&quot;2D cross product&quot;) of a and b</span>
+        <span class="hljs-keyword">let</span> dot = x1 * x2 + y1 * y2; <span class="hljs-comment">// dot product</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.atan2(det, dot);
+    },</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="how-to-make-one-vector-interpolate-toward-another">How to make one vector interpolate toward another?</h2>
+<p>Let&#39;s say I have a vector coordinate A, and I want it to move 25% of the way toward vector coordinate B.  A simple <strong>linear interpolation</strong> (also known as &quot;lerp&quot;) here is to take the weighted average, that is, 75% of A plus 25% of B. </p>
+<pre><code class="language-js">    <span class="hljs-comment">// linear interpolation between point `a` and point `b` with weight `t` </span>
+    <span class="hljs-comment">// when t=0, returns `a`; when t=1, returns `b`; </span>
+    <span class="hljs-comment">// when t=0.5, returns mid-point between `a` and `b`, etc.</span>
+    lerp(a, b, t) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> [x1 + t * (x2 - x1), y1 + t * (y2 - y1)];
+    }</code></pre>
+<hr>
+<p><a href="#top"><img src="img/up.png"></a></p>
+<h2 id="everything-together-in-one-vec2-collection">Everything together in one <code>vec2</code> collection</h2>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> vec2 = {
+    <span class="hljs-comment">// convert angles between degrees and radians representations:</span>
+    degrees(radians) { <span class="hljs-keyword">return</span> radians * <span class="hljs-built_in">Math</span>.PI / <span class="hljs-number">180</span>; },
+    radians(degrees) { <span class="hljs-keyword">return</span> degrees * <span class="hljs-built_in">Math</span>.PI / <span class="hljs-number">180</span>; },
+    <span class="hljs-comment">// create a vector from two values:</span>
+    create(x, y) { <span class="hljs-keyword">return</span> [x, y]; },
+    <span class="hljs-comment">// create a duplicate of a vector `v`</span>
+    copy(v) { <span class="hljs-keyword">return</span> [...v]; },
+    <span class="hljs-comment">// set values of a vector:</span>
+    set(v, x, y) {
+        v[<span class="hljs-number">0</span>] = x;
+        v[<span class="hljs-number">1</span>] = y;
+        <span class="hljs-keyword">return</span> v;
+    },
+    <span class="hljs-comment">// create a vector from an angle (in radians) and length</span>
+    from_polar(angle, length = <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">let</span> x = length * <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> y = length * <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-keyword">return</span> [x, y]
+    },
+    <span class="hljs-comment">// get length of vector `v`</span>
+    len(v) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.hypot(x, y);
+    },
+    <span class="hljs-comment">// add vectors `a` and `b`</span>
+    add(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> [x1 + x2, y1 + y2];
+    },
+    <span class="hljs-comment">// subtract vectors `a` and `b`</span>
+    sub(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> [x1 - x2, y1 - y2];
+    },
+    <span class="hljs-comment">// get the distnace between coordinate vectors `a` and `b`</span>
+    distance(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.hypot(x1-x2, y1-y2);
+    },
+    <span class="hljs-comment">// scale vector `v` by number `s`</span>
+    scale(v, s) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">return</span> [x * s, y * s];
+    },
+    <span class="hljs-comment">// negating a vector&#x27;s components will reverse its direction:</span>
+    negate(v) {
+        <span class="hljs-keyword">return</span> [-x, -y];
+    },
+    <span class="hljs-comment">// scaling by division needs to handle the undefined case of division by zero</span>
+    <span class="hljs-comment">// here we simply create an unchanged duplicate</span>
+    divide(v, d) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">if</span> (d) {
+            <span class="hljs-keyword">return</span> [x / d, y / d];
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> [x, y];
+        }
+    },
+    <span class="hljs-comment">// get angle of vector `v` in radians</span>
+    angle(v) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.atan2(y, x);
+    },
+    <span class="hljs-comment">// rotate vector `v` by an `angle` in radians</span>
+    rotate(v, angle) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">let</span> c = <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> s = <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-keyword">return</span> [x * c - y * s, x * s + y * c]
+    },
+    <span class="hljs-comment">// rotate vector `v` by `angle` in radians around a `pivot` coordinate</span>
+    rotate_around(v, pivot, angle) {
+        <span class="hljs-keyword">let</span> [x1, y1] = v
+        <span class="hljs-keyword">let</span> [x2, y2] = pivot
+        <span class="hljs-comment">// subtract pivot:</span>
+        <span class="hljs-keyword">let</span> x = x1 - x2;
+        <span class="hljs-keyword">let</span> y = y1 - y2;
+        <span class="hljs-keyword">let</span> c = <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> s = <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-comment">// rotate and add pivot</span>
+        <span class="hljs-keyword">return</span> [x2 + (x * c - y * s), y2 + (x * s + y * c)]
+    },
+    <span class="hljs-comment">// get a random vector in the box between [0, 0] and [width, height]</span>
+    random(width = <span class="hljs-number">1</span>, height = width) {
+        <span class="hljs-keyword">let</span> x = <span class="hljs-built_in">Math</span>.random() * width
+        <span class="hljs-keyword">let</span> y = <span class="hljs-built_in">Math</span>.random() * height
+        <span class="hljs-keyword">return</span> [x, y];
+    },
+    <span class="hljs-comment">// get a vector of specified length in a random direction</span>
+    <span class="hljs-comment">// again the default argument means `random_direction()` </span>
+    <span class="hljs-comment">// with no arguments gives a random direction vector of length 1</span>
+    random_direction(length = <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">let</span> angle = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">2</span>
+        <span class="hljs-keyword">let</span> x = length * <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> y = length * <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-keyword">return</span> [x, y]
+    },
+    <span class="hljs-comment">// get a vector of a random length (from 0 to `max`) in a random direction</span>
+    random_disc(max = <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">let</span> angle = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">2</span>
+        <span class="hljs-keyword">let</span> length = ath.random() * max
+        <span class="hljs-keyword">let</span> x = length * <span class="hljs-built_in">Math</span>.cos(angle)
+        <span class="hljs-keyword">let</span> y = length * <span class="hljs-built_in">Math</span>.sin(angle)
+        <span class="hljs-keyword">return</span> [x, y]
+    },
+    <span class="hljs-comment">// force the vector length = 1</span>
+    <span class="hljs-comment">// if the vector was [0, 0] it will produce a random direction vector</span>
+    normalize(v) {
+        <span class="hljs-keyword">const</span> [x, y] = v;
+        <span class="hljs-keyword">const</span> len = <span class="hljs-built_in">Math</span>.hypot(x, y);
+        <span class="hljs-keyword">if</span> (len &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">const</span> s = <span class="hljs-number">1</span>/len
+            <span class="hljs-keyword">return</span> [x * s, y * s];
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">// vector of length 1 with random angular direction:</span>
+            <span class="hljs-keyword">let</span> angle = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">2</span>
+            <span class="hljs-keyword">return</span> [<span class="hljs-built_in">Math</span>.cos(angle), <span class="hljs-built_in">Math</span>.sin(angle)];
+        }
+    },
+    <span class="hljs-comment">// limit vector &#x27;v&#x27; to maximum length `max` </span>
+    <span class="hljs-comment">// `max` must be &gt;= 0</span>
+    limit(v, max) {
+        <span class="hljs-keyword">const</span> [x, y] = v;
+        <span class="hljs-keyword">const</span> len = <span class="hljs-built_in">Math</span>.hypot(x, y);
+        <span class="hljs-keyword">if</span> (len &gt; max) {
+            <span class="hljs-keyword">const</span> d = max/len;
+            <span class="hljs-keyword">return</span> [x * d, y * d];
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> [x, y]
+        }
+    },
+    <span class="hljs-comment">// limit vector &#x27;v&#x27; length between `min` and `max` </span>
+    <span class="hljs-comment">// `min` and `max` must be &gt;= 0</span>
+    limit2(v, min, max = <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">const</span> len = <span class="hljs-built_in">Math</span>.hypot(x, y);
+        <span class="hljs-keyword">const</span> d = len || <span class="hljs-number">1</span>; <span class="hljs-comment">// to avoid divide by zero</span>
+        <span class="hljs-keyword">const</span> clamped = <span class="hljs-built_in">Math</span>.min(<span class="hljs-built_in">Math</span>.max(d, min), max);
+        <span class="hljs-keyword">const</span> d = clamped / d;
+        <span class="hljs-keyword">return</span> [x * d, y * d];
+    },
+    <span class="hljs-comment">// dot product of two vectors `a` and `b`</span>
+    <span class="hljs-comment">// returns 0 if the vectors are orthogonal</span>
+    <span class="hljs-comment">// if `a` and `b` are unit vectors (normalized vectors), </span>
+    <span class="hljs-comment">//   returns 1 if the directions are equal, and -1 if the directions are opposite</span>
+    dot(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> x1 * x2 + y1 * y2;
+    },
+    <span class="hljs-comment">// determinant (2D cross product) of two vectors `a` and `b`</span>
+    <span class="hljs-comment">// it is the (signed) area of the parallelogram formed by a and b</span>
+    <span class="hljs-comment">// returns 0 if the two vectors have equal or opposite directions</span>
+    det(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> x1 * y2 - y1 * x2;
+    },
+    <span class="hljs-comment">// return the angle (in radians) between vectors A and B:</span>
+    angle_between(a, b) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">let</span> det = x1 * y2 - y1 * x2; <span class="hljs-comment">// determinant (&quot;2D cross product&quot;) of a and b</span>
+        <span class="hljs-keyword">let</span> dot = x1 * x2 + y1 * y2; <span class="hljs-comment">// dot product</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.atan2(det, dot);
+    },
+    <span class="hljs-comment">// clamp vector `v` in the bounds of `width` and `height`</span>
+    clamp(v, width, height) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        x = <span class="hljs-built_in">Math</span>.min(<span class="hljs-built_in">Math</span>.max(x, <span class="hljs-number">0</span>), width);
+        y = <span class="hljs-built_in">Math</span>.min(<span class="hljs-built_in">Math</span>.max(y, <span class="hljs-number">0</span>), height);
+        <span class="hljs-keyword">return</span> [x, y]
+    },
+    <span class="hljs-comment">// wrap vector `v` in the bounds of `width` and `height`</span>
+    wrap(v, width, height) {
+        <span class="hljs-keyword">let</span> [x, y] = v;
+        <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>) x += width; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x &gt; width) x -= width;
+        <span class="hljs-keyword">if</span> (y &lt; <span class="hljs-number">0</span>) y += height; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (y &gt; height) y -= height;
+        <span class="hljs-keyword">return</span> [x, y]
+    },
+    <span class="hljs-comment">// linear interpolation between point `a` and point `b` with weight `t` </span>
+    <span class="hljs-comment">// when t=0, returns `a`; when t=1, returns `b`; </span>
+    <span class="hljs-comment">// when t=0.5, returns mid-point between `a` and `b`, etc.</span>
+    lerp(a, b, t) {
+        <span class="hljs-keyword">let</span> [x1, y1] = a
+        <span class="hljs-keyword">let</span> [x2, y2] = b
+        <span class="hljs-keyword">return</span> [x1 + t * (x2 - x1), y1 + t * (y2 - y1)];
+    }
+};</code></pre>
+<hr>
+<p>More examples</p>
+<p><a href="https://codepen.io/editor/grrrwaaa/pen/01a1a2b2-8d06-727e-8b8a-f9773163f90e">https://codepen.io/editor/grrrwaaa/pen/01a1a2b2-8d06-727e-8b8a-f9773163f90e</a></p>
+<p><a href="https://codepen.io/grrrwaaa/full/XXevBb">https://codepen.io/grrrwaaa/full/XXevBb</a></p>
+<p><a href="https://codepen.io/grrrwaaa/full/GRqWxMx">https://codepen.io/grrrwaaa/full/GRqWxMx</a></p>
+
+<footer>DIGM5010 2021-22</footer>
+</body>
+<script src="js/connect.js"></script>
+</html>
