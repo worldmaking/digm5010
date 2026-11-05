@@ -730,6 +730,7 @@ Special topic as per [schedule](#schedule)
 
 ---
 
+
 **Before week 9's class (Nov 11)** complete your paper draft. It **must be submitted before next week's class begins** so that we can run the peer review session.  
 
 ## Paper Complete Draft for Peer Review
