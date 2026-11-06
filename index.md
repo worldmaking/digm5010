@@ -26,10 +26,10 @@ Almost everything about this course will be linked from https://alicelab.world/d
 | <nobr>[*Reading Week*](#reading-week)</nobr> | Flesh out Annotated Bibliography and Draft Paper Outline |  |  | 
 | <nobr>Week 6  [10/22](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
 | <nobr>Week 7  [10/29](#week-7)</nobr>  | Topic focus |   | ... |
-| <nobr>Week 8  [11/5](#week-8)</nobr>   | [Reproducing Research: Tortoises, Vehicles and Flocks](steering.html)  | Paper Draft 1-on-1's   | [Complete first draft](#paper-complete-draft-for-peer-review)|
+| <nobr>Week 8  [11/5](#week-8)</nobr>   | | [Reproducing Research: Tortoises, Vehicles and Flocks](steering.html)  |  [Complete first draft](#paper-complete-draft-for-peer-review)|
 | <nobr>Week 9  [11/12](#week-9)</nobr>  | [How to peer review](#what-is-peer-review-of-research) | [Peer review session](#peer-review)  | Incorporate feedback into drafting the [Final Paper](#final-paper) |
-| <nobr>Week 10 [11/19](#week-10)</nobr> | [Digital Audio and Sound Synthesis](gen.html) or [GPU programming with GLSL](glsl.html) | Paper 1-on-1's | Revisions to [Final Paper](#final-paper) |
-| <nobr>Week 11 [11/26](#week-11)</nobr> | [Data Visualization](d3js.html) or VR/XR | Paper 1-on-1's | Submit [Final Paper](#final-paper) |
+| <nobr>Week 10 [11/19](#week-10)</nobr> | Topic focus: [Digital Audio and Sound Synthesis](gen.html) or [GPU programming with GLSL](glsl.html) | Paper 1-on-1's | Revisions to [Final Paper](#final-paper) |
+| <nobr>Week 11 [11/26](#week-11)</nobr> | Topic focus: [Data Visualization](d3js.html) or VR/XR | Paper 1-on-1's | Submit [Final Paper](#final-paper) |
 | <nobr>Week 12 [12/3](#week-12)</nobr>  | [Final presentations](#final-presentations)            |  | [Video/Tutorial](#video-tutorial) + Post-mortem reflection |
 
 # What is DIGM 5010 Foundations?
