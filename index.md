@@ -22,7 +22,7 @@ Almost everything about this course will be linked from https://alicelab.world/d
 | <nobr>Week 2  [9/17](#week-2)</nobr>   | [What is Computation?](#what-is-computation) | [Computational Sketching](sketching.html) | Articulate your topic and questions with [introduction slides](#an-introduction) |
 | <nobr>Week 3  [9/24](#week-3)</nobr>   | [Who Are You & What Is Your Topic](#introductions)? | Topic 1-on-1's | Develop your [Reading List](#preparing-a-reading-list)  |
 | <nobr>Week 4  [10/1](#week-4)</nobr>   | [What is a Problem Statement](#problem-statement)? | [Computational Sketching II](sketching.html#lets-get-making) | Draft a [Problem Statement](#problem-statement)  |
-| <nobr>Week 5  [10/8](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | [Reproducing Research: Yellowtail](sketching.html#animate-drawing) / Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
+| <nobr>Week 5  [10/8](#week-5)</nobr>   | [What is an Annotated bibliography](#annotated-bibliography)? | [Reproducing Research: Golan Levin's Yellowtail](sketching.html#animate-drawing) / Problem Statement 1-on-1's | Begin your [Annotated bibliography](#annotated-bibliography) |
 | <nobr>[*Reading Week*](#reading-week)</nobr> | Flesh out Annotated Bibliography and Draft Paper Outline |  |  | 
 | <nobr>Week 6  [10/22](#week-6)</nobr>  | [Explorable Explanations](#explorable-explanations) | Paper Outline 1-on-1's | ... |
 | <nobr>Week 7  [10/29](#week-7)</nobr>  | Topic focus |   | ... |
