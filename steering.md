@@ -382,7 +382,11 @@ Again, we can sum up our visible neigbor's velocities in a `velocity_sum` variab
 
 ---
 
-With that, we should have all of the components for a flocking simulation.  Whether or not it displays good flocking may depend on the actual parameters we are using, and a couple of other refinements we can add. 
+With that, we should have all of the most essential components for a flocking simulation.  
+
+[Here's the code that we built in class](https://codepen.io/editor/grrrwaaafancy/pen/01a1ad13-8507-7433-86b8-28fff571564b)
+
+Whether or not it displays good flocking may depend on the actual parameters we are using, and a couple of other refinements we can add. 
 
 ## Refinements
 
